@@ -1,0 +1,578 @@
+prompt idx,default prompt,method,language style,prompt template,correct,prompt format,prompt length,samples
+1,True,default,,"Q: Which word rhymes with the word ""{query}"", ""{word1}"" or ""{word2}""?
+A:",1,Q&A,24,100
+2,True,default,,"Q: Which is a rhyme of the word ""{query}"", ""{word1}"" or ""{word2}""?
+A:",1,Q&A,24,100
+3,True,default,,"Q: Of the words ""{word1}"" and ""{word2}"", which one rhymes with ""{query}""?
+A:",1,Q&A,25,100
+4,False,rephrase,,"Can you tell me which word rhymes with ""{query}"" - ""{word1}"" or ""{word2}""?",1,other,23,100
+5,False,rephrase,,"Can you tell me which word, ""{word1}"" or ""{word2}"", rhymes with ""{query}""?",1,other,23,100
+6,False,rephrase,,"Can you tell me which of these words, ""{word1}"" or ""{word2}"", rhymes with ""{query}""?",1,other,25,100
+7,False,rephrase,,"Which word is a rhyme for ""{query}"": ""{word1}"" or ""{word2}""?",1,other,20,100
+8,False,rephrase,,"Can you provide me with the word that rhymes with either ""{word1}"" or ""{word2}""?",0,other,22,100
+9,False,rephrase,,"Can you tell me which of the two words, ""{word1}"" or ""{word2}"", rhymes with ""{query}""?",1,other,26,100
+10,False,rephrase,,"Could you tell me which of these two words, ""{word1}"" or ""{word2}"", rhymes with ""{query}""?",1,other,26,100
+11,False,rephrase,,"Rewritten prompt: Can you tell me which of the two words, ""{word1}"" or ""{word2}"", rhymes with ""{query}""?",0,other,30,100
+12,False,rephrase,,"Can you provide the word that rhymes with either ""{word1}"" or ""{word2}""?",0,other,20,100
+13,False,rephrase,,"Which word rhymes with ""{query}"", ""{word1}"" or ""{word2}""?",1,other,18,100
+14,False,rephrase,,"Which word rhymes with ""{query}"" - ""{word1}"" or ""{word2}""?",1,other,19,100
+15,False,rephrase,,"Q: Does ""{word1}"" or ""{word2}"" rhyme with ""{query}""?
+A:",0,Q&A,22,100
+16,False,rephrase,,"Can you provide a word that rhymes with both ""{word1}"" and ""{word2}""?",0,other,20,100
+17,False,rephrase,,"Can you identify which word rhymes with ""{query}"" - ""{word1}"" or ""{word2}""?",1,other,22,100
+18,False,rephrase,,"Can you provide a word that rhymes with ""{query}""? Is it ""{word1}"" or ""{word2}""?",1,other,25,100
+19,False,rephrase,,"Can you provide the rhyme for ""{query}""; is it ""{word1}"" or ""{word2}""?",1,other,22,100
+20,False,rephrase,,"Which word, ""{word1}"" or ""{word2}"", rhymes with ""{query}""?",1,other,19,100
+21,False,rephrase,,"Which word among ""{word1}"" and ""{word2}"" rhymes with ""{query}""?",1,other,19,100
+22,False,rephrase,,"Which one of the words ""{word1}"" and ""{word2}"" rhymes with ""{query}""?",1,other,21,100
+23,False,rephrase,,"Which word, {word1} or {word2}, rhymes with the word ""{query}?",1,other,20,100
+24,False,rephrase,,"Which word between ""{word1}"" and ""{word2}"" rhymes with ""{query}""?",1,other,19,100
+25,False,rephrase,,"Which of the two words, ""{word1}"" and ""{word2}"", has a rhyme with the word ""{query}""?",1,other,25,100
+26,False,rephrase,,"Which of the two words, ""{word1}"" or ""{word2}"", is a rhyme for ""{query}""?",1,other,23,100
+27,False,rephrase,,"Which one of the following words, ""{word1}"" or ""{word2}"", rhymes with ""{query}""?",1,other,23,100
+28,False,rephrase,,"What is the word that rhymes with ""{query}"" - ""{word1}"" or ""{word2}""?",1,other,22,100
+29,False,rephrase,,"What is a word that rhymes with ""{query}"" - ""{word1}"" or ""{word2}""?",1,other,22,100
+30,False,rephrase,,"What is a word that rhymes with ""{query}""? Is it ""{word1}"" or ""{word2}""?",1,other,24,100
+31,False,rephrase,,"What is a word that rhymes with '{query}', is it '{word1}' or '{word2}'?",1,other,23,100
+32,False,rephrase,,What is the word that rhymes with '{query}' - '{word1}' or '{word2}'?,1,other,22,100
+33,False,rephrase,,"What is a word that rhymes with '{query}', '{word1}' or '{word2}'?",1,other,21,100
+34,False,rephrase,,Provide a word that rhymes with '{query}' and specify whether it rhymes with '{word1}' or '{word2}'.,0,other,26,100
+35,False,rephrase,,What is a word that rhymes with {query} - {word1} or {word2}?,1,other,21,100
+36,False,rephrase,,"What are some words that rhyme with ""{query}""?",0,other,11,100
+37,False,rephrase,,"Can you provide a word that rhymes with ""{query}"" and I will give you two options for words that might rhyme?",0,other,25,100
+38,False,rephrase,,Generate a rhyming word for {query} that matches either {word1} or {word2}.,0,other,22,100
+39,False,rephrase,,"What word rhymes with ""{query}"" - ""{word1}"" or ""{word2}""?",1,other,19,100
+40,False,rephrase,,Provide a word that rhymes with '{query}' - is it '{word1}' or '{word2}'?,1,other,23,100
+41,False,rephrase,,Generate a rhyming word for '{query}' from the given options '{word1}' and '{word2}'.,0,other,23,100
+42,False,rephrase,,"Provide a rhyme for the word ""{query}"" by choosing between ""{word1}"" and ""{word2}"".",1,other,22,100
+43,False,rephrase,,"What is the word that rhymes with {query} out of ""{word1}"" and ""{word2}""?",1,other,23,100
+44,False,rephrase,,"Which word among ""{word1}"" and ""{word2}"" rhymes with the word ""{query}""?",1,other,21,100
+45,False,rephrase,,What is the word that rhymes with '{query}' out of '{word1}' and '{word2}'?,1,other,23,100
+46,False,rephrase,,What word rhymes with '{query}' - '{word1}' or '{word2}'?,1,other,19,100
+47,False,rephrase,,"What is the word that rhymes with ""{query}"" out of ""{word1}"" and ""{word2}""?",1,other,23,100
+48,False,rephrase,,Which of the following words - {word1} or {word2} - rhymes with {query}?,1,other,22,100
+49,False,rephrase,,"Which of the two words, ""{word1}"" or ""{word2}"", rhymes with the term ""{query}""?",1,other,24,100
+50,False,rephrase,,"Can you determine whether ""{word1}"" or ""{word2}"" rhymes with the word ""{query}""?",1,other,22,100
+51,False,meta_cot,,Which of these words rhymes with {query}: {word1} or {word2}?,1,SEP_VARS,19,100
+52,False,meta_cot,,"Do {word1} and {word2} rhyme with {query}? If not, which one does?",1,other,22,100
+53,False,meta_cot,,"Out of {word1} and {word2}, which one rhymes with {query}?",1,other,19,100
+54,False,meta_cot,,Can you tell me which word rhymes with {query} - {word1} or {word2}?,1,other,22,100
+55,False,meta_cot,,"Which word, {word1} or {word2}, rhymes with {query}?",1,other,18,100
+56,False,meta_cot,,"I'm trying to find out which word rhymes with {query}, {word1} or {word2}?",1,other,23,100
+57,False,meta_cot,,Is {word1} or {word2} a rhyme for {query}?,0,other,16,100
+58,False,meta_cot,,"Tell me, which of these words rhymes with {query}: {word1} or {word2}?",1,SEP_VARS,22,100
+59,False,meta_cot,,"Which word, {word1} or {word2}, is a rhyme for {query}?",1,other,19,100
+60,False,meta_cot,,"Which of these two words, {word1} or {word2}, rhymes with {query}?",1,other,21,100
+61,False,meta_cot,,"Can you tell me which word, {word1} or {word2}, rhymes with {query}?",1,other,22,100
+62,False,meta_cot,,"I'm trying to find out which word, {word1} or {word2}, rhymes with {query}. Can you help me?",1,other,29,100
+63,False,meta_cot,,"If I say {query}, which word comes to your mind, {word1} or {word2}?",0,other,22,100
+64,False,meta_cot,,"Which word do you think rhymes with {query}, {word1} or {word2}?",1,other,20,100
+65,False,meta_cot,,I'm looking for a word that rhymes with {query}. Is it {word1} or {word2}?,1,other,24,100
+66,False,meta_cot,,"Do you know which of these two words, {word1} or {word2}, rhymes with {query}?",1,other,24,100
+67,False,meta_cot,,"Which one of these words, {word1} or {word2}, do you think rhymes with {query}?",1,other,24,100
+68,False,meta_cot,,Can you tell me which of {word1} and {word2} rhymes with {query}?,1,other,21,100
+69,False,meta_cot,,"I need to know which word, {word1} or {word2}, rhymes with {query}.",1,other,22,100
+70,False,meta_cot,,Which of {word1} and {word2} is a rhyme for {query}?,1,other,18,100
+71,False,meta_cot,,"Which of these words, {word1} or {word2}, rhymes with {query}?",1,other,20,100
+72,False,meta_cot,,I need to know whether {word1} or {word2} is the word that rhymes with {query}.,1,other,24,100
+73,False,meta_cot,,"Out of {word1} and {word2}, which one would you say rhymes with {query}?",1,other,22,100
+74,False,meta_cot,,"Please tell me, does {word1} or {word2} rhyme with {query}?",0,other,19,100
+75,False,meta_cot,,"Out of {word1} and {word2}, which word rhymes with {query}?",1,other,19,100
+76,False,meta_cot,,"Determine which word, {word1} or {word2}, rhymes with the word {query}.",1,other,22,100
+77,False,meta_cot,,Can you tell me which one of {word1} and {word2} rhymes with {query}?,1,other,22,100
+78,False,meta_cot,,"Which word, {word1} or {word2}, is a perfect rhyme for {query}?",1,other,20,100
+79,False,meta_cot,,"Out of the words ""{word1}"" and ""{word2}"", which one rhymes with ""{query}""?",1,other,22,100
+80,False,meta_cot,,"Which of the words ""{word1}"" and ""{word2}"" is a rhyme for ""{query}""?",1,other,21,100
+81,False,meta_cot,,"Determine if ""{word1}"" or ""{word2}"" rhymes with the word ""{query}""?",1,other,21,100
+82,False,meta_cot,,"Given ""{word1}"" and ""{word2}"", which one rhymes with ""{query}""?",1,other,19,100
+83,False,meta_cot,,"Which word is a rhyme for ""{query}"", ""{word1}"" or ""{word2}""?",1,other,19,100
+84,False,meta_cot,,"Please identify the word that rhymes with ""{query}"", is it ""{word1}"" or ""{word2}""?",1,other,23,100
+85,False,meta_cot,,"Provide the word that rhymes with ""{query}"", is it ""{word1}"" or ""{word2}""?",1,other,22,100
+86,False,meta_cot,,"Out of ""{word1}"" and ""{word2}"", which one is a rhyme for ""{query}""?",1,other,21,100
+87,False,meta_cot,,"Is it ""{word1}"" or ""{word2}"" that rhymes with the word ""{query}""?",1,other,21,100
+88,False,meta_cot,,"Which word, ""{word1}"" or ""{word2}"", rhymes with ""{query}""?",1,other,19,100
+89,False,meta_cot,,"Does ""{word1}"" or ""{word2}"" sound like a rhyme for the word ""{query}""?",1,other,21,100
+90,False,meta_cot,,Which of these two words rhymes with '{query}': '{word1}' or '{word2}'?,1,other,22,100
+91,False,meta_cot,,Can you tell me which word rhymes with '{query}' out of '{word1}' and '{word2}'?,1,other,24,100
+92,False,meta_cot,,"Out of the words '{word1}' and '{word2}', which one rhymes with '{query}'?",1,other,22,100
+93,False,meta_cot,,"Which of ""{word1}"" and ""{word2}"" rhymes with the word ""{query}?""",1,other,20,100
+94,False,meta_cot,,"Which word, ""{word1}"" or ""{word2},"" rhymes with ""{query}?""",1,other,19,100
+95,False,meta_cot,,"Out of the words ""{word1}"" and ""{word2},"" which one rhymes with ""{query}?""",1,other,22,100
+96,False,meta_cot,,"Can you tell me if ""{word1}"" or ""{word2}"" rhymes with ""{query}?""",0,other,21,100
+97,False,meta_cot,,"Identify which word rhymes with the given word ""{query}"", ""{word1}"" or ""{word2}?""",1,other,23,100
+98,False,meta_cot,,"Can you tell me which word rhymes with {query}, {word1} or {word2}?",1,other,21,100
+99,False,meta_cot,,Do you know if {word1} or {word2} is a rhyme for {query}?,0,other,20,100
+100,False,meta_cot,,"Out of {word1} and {word2}, which one do you think is a rhyming word for {query}?",1,other,26,100
+101,False,meta_cot,,Please let me know if {word1} or {word2} is a rhyme of {query}.,1,other,21,100
+102,False,meta_cot,,"Which of the two words, {word1} and {word2}, sounds like {query}?",0,other,20,100
+103,False,meta_cot,,"Can you determine which word, {word1} or {word2}, rhymes with {query}?",1,other,21,100
+104,False,meta_cot,,I need to know: does {word1} or {word2} rhyme with {query}?,0,other,20,100
+105,False,meta_cot,rich_vocab,"Please tell me, which of the words {word1} and {word2} rhymes with the word {query}?",1,other,25,100
+106,False,meta_cot,rich_vocab,"Can you tell me which word, {word1} or {word2}, rhymes with the word {query}?",1,other,24,100
+107,False,meta_cot,rich_vocab,"I am looking for a word that rhymes with {query}, would it be {word1} or {word2}?",1,other,25,100
+108,False,meta_cot,rich_vocab,"Out of {word1} and {word2}, which one rhymes with the word {query}?",1,other,21,100
+109,False,meta_cot,rich_vocab,I'm searching for a word that rhymes with {query}. Is it {word1} or {word2}?,1,other,24,100
+110,False,meta_cot,rich_vocab,Please identify the word that rhymes with {query}: {word1} or {word2}?,1,SEP_VARS,20,100
+111,False,meta_cot,rich_vocab,Which of the words {word1} and {word2} rhymes with {query}?,1,other,19,100
+112,False,meta_cot,rich_vocab,Can you tell me which of the words {word1} and {word2} rhymes with {query}?,1,other,23,100
+113,False,meta_cot,rich_vocab,I'm trying to find out which of {word1} and {word2} rhymes with {query}. Can you help me?,1,other,28,100
+114,False,meta_cot,rich_vocab,"In the words {word1} and {word2}, which one rhymes with {query}?",1,other,20,100
+115,False,meta_cot,rich_vocab,"Please tell me, which word rhymes with {query}: {word1} or {word2}?",1,SEP_VARS,21,100
+116,False,meta_cot,rich_vocab,"Can you identify which of these words, {word1} or {word2}, rhymes with {query}?",1,other,23,100
+117,False,meta_cot,rich_vocab,I am looking for a word that rhymes with {query}. Would it be {word1} or {word2}?,1,other,25,100
+118,False,meta_cot,rich_vocab,"Out of {word1} and {word2}, which one rhymes with {query}?",1,other,19,100
+119,False,meta_cot,rich_vocab,"I need to know which word, {word1} or {word2}, rhymes with {query}.",1,other,22,100
+120,False,meta_cot,rich_vocab,"Can you determine which word, {word1} or {word2}, rhymes with {query}?",1,other,21,100
+121,False,meta_cot,rich_vocab,I'm looking for the word that rhymes with {query}. Is it {word1} or {word2}?,1,other,24,100
+122,False,meta_cot,rich_vocab,"Out of {word1} and {word2}, which one is a rhyme of {query}?",1,other,20,100
+123,False,meta_cot,rich_vocab,"Which word, {word1} or {word2}, is a rhyme of {query}?",1,other,19,100
+124,False,meta_cot,common_vocab,Which of these words rhymes with {query}: {word1} or {word2}?,1,SEP_VARS,19,100
+125,False,meta_cot,common_vocab,Can you tell me which word rhymes with {query}: {word1} or {word2}?,1,SEP_VARS,21,100
+126,False,meta_cot,common_vocab,I'm trying to find out which word rhymes with {query}. Is it {word1} or {word2}?,1,other,25,100
+127,False,meta_cot,common_vocab,Do you know if {word1} or {word2} rhymes with {query}?,1,other,19,100
+128,False,meta_cot,common_vocab,Is {word1} or {word2} a rhyme for {query}?,0,other,16,100
+129,False,meta_cot,common_vocab,"Which of these two words, {word1} or {word2}, rhymes with {query}?",1,other,21,100
+130,False,meta_cot,common_vocab,Does {word1} or {word2} rhyme with {query}? Choose the rhyming word.,1,other,22,100
+131,False,meta_cot,common_vocab,"Can you tell me which word, {word1} or {word2}, rhymes with {query}?",1,other,22,100
+132,False,meta_cot,common_vocab,Can you tell me which word rhymes with {query} - {word1} or {word2}?,1,other,22,100
+133,False,meta_cot,common_vocab,I'm trying to figure out which word rhymes with {query}. Is it {word1} or {word2}?,1,other,25,100
+134,False,meta_cot,common_vocab,Do you know which word rhymes with {query}? Is it {word1} or {word2}?,1,other,22,100
+135,False,meta_cot,common_vocab,"Out of {word1} and {word2}, which one rhymes with {query}?",1,other,19,100
+136,False,meta_cot,common_vocab,"Which of the words ""{word1}"" and ""{word2}"" rhymes with ""{query}""?",1,other,20,100
+137,False,meta_cot,common_vocab,"Does the word ""{query}"" rhyme with ""{word1}"" or ""{word2}""?",1,other,18,100
+138,False,meta_cot,common_vocab,"Out of ""{word1}"" and ""{word2}"", which one rhymes with ""{query}""?",1,other,20,100
+139,False,meta_cot,common_vocab,"Which word, ""{word1}"" or ""{word2}"", rhymes with the word ""{query}""?",1,other,21,100
+140,False,meta_cot,common_vocab,"If we were to say the word ""{query}"", would it rhyme with ""{word1}"" or ""{word2}""?",1,other,24,100
+141,False,meta_cot,common_vocab,"I'm trying to find out which of these two words, ""{word1}"" and ""{word2}"", rhymes with ""{query}"".",1,other,27,100
+142,False,meta_cot,common_vocab,"Can you tell me which of the words ""{word1}"" and ""{word2}"" rhymes with the word ""{query}""?",1,other,26,100
+143,False,meta_cot,formal,"Please determine which of the two words, {word1} or {word2}, rhymes with the word {query}.",1,other,25,100
+144,False,meta_cot,formal,"Which word, {word1} or {word2}, rhymes with {query}? Please provide the answer.",1,other,23,100
+145,False,meta_cot,formal,"Can you tell me which of the words, {word1} and {word2}, rhymes with {query}? Thank you.",1,other,27,100
+146,False,meta_cot,formal,"Given the query word {query}, please indicate which of the two words, {word1} or {word2}, rhymes with it.",1,other,29,100
+147,False,meta_cot,formal,"Please choose which of the words, {word1} or {word2}, rhymes with the query word {query}.",1,other,25,100
+148,False,meta_cot,formal,"Which of the two words, {word1} or {word2}, rhymes with {query}? Please provide the answer.",1,other,26,100
+149,False,meta_cot,formal,Please identify the word that rhymes with {query}: {word1} or {word2}.,1,SEP_VARS,20,100
+150,False,meta_cot,formal,Which of the words {word1} and {word2} rhymes with {query}?,1,other,19,100
+151,False,meta_cot,formal,"Can you tell me which word, {word1} or {word2}, rhymes with {query}?",1,other,22,100
+152,False,meta_cot,formal,"I need to know which word, {word1} or {word2}, rhymes with {query}.",1,other,22,100
+153,False,meta_cot,formal,Please determine which of the words {word1} and {word2} is a rhyme of {query}.,1,other,22,100
+154,False,meta_cot,formal,"Which word, {word1} or {word2}, is a rhyme of {query}?",1,other,19,100
+155,False,meta_cot,formal,"Please identify which of the words, {word1} or {word2}, rhymes with the word {query}.",1,other,24,100
+156,False,meta_cot,formal,Which of the words {word1} and {word2} is a rhyme for the word {query}?,1,other,22,100
+157,False,meta_cot,formal,"I need to know which word, {word1} or {word2}, rhymes with the word {query}.",1,other,24,100
+158,False,meta_cot,formal,Please indicate which of the words {word1} and {word2} rhymes with {query}.,1,other,21,100
+159,False,meta_cot,formal,"Please determine which of the words, {word1} or {word2}, rhymes with {query}.",1,other,22,100
+160,False,meta_cot,formal,"Which of the words, {word1} or {word2}, is a rhyme for {query}?",1,other,21,100
+161,False,meta_cot,informal,Which of these words rhymes with {query}: {word1} or {word2}?,1,SEP_VARS,19,100
+162,False,meta_cot,informal,Can you tell me which word rhymes with {query} - {word1} or {word2}?,1,other,22,100
+163,False,meta_cot,informal,Do you know which word rhymes with {query}? Is it {word1} or {word2}?,1,other,22,100
+164,False,meta_cot,informal,"Out of {word1} and {word2}, which one rhymes with {query}?",1,other,19,100
+165,False,meta_cot,informal,I'm trying to figure out which word rhymes with {query}. Is it {word1} or {word2}?,1,other,25,100
+166,False,meta_cot,informal,Which word sounds like {query}: {word1} or {word2}?,0,SEP_VARS,16,100
+167,False,meta_cot,informal,I'm looking for a word that rhymes with {query}. Is it {word1} or {word2}?,1,other,24,100
+168,False,meta_cot,informal,Which of these two words is a rhyme for {query}: {word1} or {word2}?,1,SEP_VARS,21,100
+169,False,meta_cot,informal,Can you help me find which word rhymes with {query}? Is it {word1} or {word2}?,1,other,24,100
+170,False,meta_cot,informal,I'm trying to find out which of these two words rhymes with {query}: {word1} or {word2}?,1,SEP_VARS,26,100
+171,False,meta_cot,informal,Which one of these words rhymes with {query}: {word1} or {word2}?,1,SEP_VARS,20,100
+172,False,meta_cot,informal,Which word sounds like {query}? Is it {word1} or {word2}?,0,other,18,100
+173,False,meta_cot,informal,I'm trying to find a word that rhymes with {query}. Is it {word1} or {word2}?,1,other,25,100
+174,False,meta_cot,informal,Can you help me find the word that rhymes with {query}? Is it {word1} or {word2}?,1,other,25,100
+175,False,meta_cot,informal,"Do you know which word rhymes with {query}, {word1} or {word2}?",1,other,20,100
+176,False,meta_desc,,"
+Given two words and a query word, determine which of the two words rhymes with the query word.
+Query word: {query}
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,46,100
+177,False,meta_desc,,"
+Given two words and a query word, determine which of the two words rhymes with the query word. The input will consist of three words separated by commas. The first two words will be the words to compare and the third word will be the query word. The output should be the word that rhymes with the query word.
+Words: {word1}, {word2}, {query}
+Output word:",1,SEP_VARS,83,100
+178,False,meta_desc,,"
+Determine which word, either word1 or word2, rhymes with the given query word.
+Query word: {query}
+Word1: {word1}
+Word2: {word2}
+Output: The word that rhymes with {query} is:",1,SEP_VARS,54,100
+179,False,meta_desc,,"
+Determine which word, either word1 or word2, rhymes with the given query word.
+Query word: {query}
+Word1: {word1}
+Word2: {word2}
+Output: The word that rhymes with {query} is 
+
+",1,SEP_VARS,54,100
+180,False,meta_desc,,"
+Please generate a sentence that determines which word, either ""{word1}"" or ""{word2}"", rhymes with the given word ""{query}"".
+Output sentence:",0,other,33,100
+181,False,meta_desc,,"
+Please generate a sentence that determines which word, either ""{word1}"" or ""{word2}"", rhymes with the given word ""{query}"".
+Sentence: 
+The word that rhymes with {query} is {word1} or {word2}.",0,other,52,100
+182,False,meta_desc,,"
+Given a query word and two candidate words, determine which of the candidate words rhymes with the query word.
+Query word: {query}
+Candidate word 1: {word1}
+Candidate word 2: {word2}
+Output word:",1,SEP_VARS,50,100
+183,False,meta_desc,,"
+Given a query word and two candidate words, determine which of the two candidate words rhymes with the query word.
+Query word: {query}
+Candidate word 1: {word1}
+Candidate word 2: {word2}
+Output:",1,SEP_VARS,50,100
+184,False,meta_desc,,"
+Given a query word and two options, determine which of the two options rhymes with the query word.
+Query word: {query}
+Option 1: {word1}
+Option 2: {word2}
+Output:",1,SEP_VARS,46,100
+185,False,meta_desc,,"
+Given a query word and two candidate words, determine which of the two candidate words rhymes with the query word.
+Query word: {query}
+Candidate word 1: {word1}
+Candidate word 2: {word2}
+Output word:",1,SEP_VARS,51,100
+186,False,meta_desc,,"
+Given a query word and two candidate words, determine which of the two candidate words rhymes with the query word. The rhyme should be perfect, meaning that the last syllable of the query word and the candidate word should have the same sound.
+Query word: {query}
+Candidate word 1: {word1}
+Candidate word 2: {word2}
+Output:",1,SEP_VARS,76,100
+187,False,meta_desc,,"
+Given a query word and two candidate words, identify which of the two candidate words rhymes with the query word.
+Query word: {query}
+Candidate word 1: {word1}
+Candidate word 2: {word2}
+Output: 
+
+",1,SEP_VARS,51,100
+188,False,meta_desc,,"
+Given a query word and two candidate words, identify which of the candidate words rhymes with the query word.
+Query word: {query}
+Candidate word 1: {word1}
+Candidate word 2: {word2}
+Output:",1,SEP_VARS,49,100
+189,False,meta_desc,,"
+Given a query word and two candidate words, identify which of the two candidate words rhymes with the query word. The rhyme should be based on the last syllable of the words. 
+Query word: {query}
+Candidate word 1: {word1}
+Candidate word 2: {word2}
+Output word:",1,SEP_VARS,66,100
+190,False,meta_desc,,"
+Given a query word and two candidate words, determine which candidate word rhymes with the query word. Your response should be the candidate word that rhymes with the query word. 
+Query word: {query}
+Candidate word 1: {word1}
+Candidate word 2: {word2}
+Output word:",1,SEP_VARS,64,100
+191,False,meta_desc,,"
+Given a query word and two candidate words, determine which of the candidate words rhymes with the query word. The query word and candidate words will be provided as input strings. Please output the candidate word that rhymes with the query word.
+Query word: {query}
+Candidate word 1: {word1}
+Candidate word 2: {word2}
+Output word:",1,SEP_VARS,76,100
+192,False,meta_desc,,"
+Please identify which word, ""word1"" or ""word2"", rhymes with the given query word.
+Query word: {query}
+Word1: {word1}
+Word2: {word2}
+Output: The word that rhymes with {query} is 
+
+",1,SEP_VARS,56,100
+193,False,meta_desc,,"
+Please determine which word, either ""word1"" or ""word2"", rhymes with the provided ""{query}"".
+Word 1: {word1}
+Word 2: {word2}
+Output word:",1,SEP_VARS,44,100
+194,False,meta_desc,,"
+Please determine which word, either {word1} or {word2}, rhymes with the provided word.
+Query: {query}
+Output: The word that rhymes with {query} is:",1,SEP_VARS,41,100
+195,False,meta_desc,,"
+Given a query word {query} and two comparison words {word1} and {word2}, determine which of the comparison words rhymes with the query word. Please provide the rhyming word as the output.
+Query word: {query}
+Word 1: {word1}
+Word 2: {word2}
+Output word:",1,SEP_VARS,70,100
+196,False,meta_desc,,"
+Given a query word {query} and two candidate words {word1} and {word2}, determine which of the candidate words rhymes with the query word. Please provide the rhyming candidate word as the output.
+Query word: {query}
+Candidate word 1: {word1}
+Candidate word 2: {word2}
+Output word:",1,SEP_VARS,73,100
+197,False,meta_desc,,"
+Given a query word {query} and two candidate words {word1} and {word2}, determine which of the two candidates rhymes with the query word. Please provide the rhyming candidate word as output.
+Query word: {query}
+Candidate word 1: {word1}
+Candidate word 2: {word2}
+Output word:",1,SEP_VARS,72,100
+198,False,meta_desc,,"
+Given a query word {query} and two candidate words {word1} and {word2}, determine which of the two candidate words rhymes with the query word. Please provide the rhyming candidate word as the output.
+Query word: {query}
+Word 1: {word1}
+Word 2: {word2}
+Output word:",1,SEP_VARS,72,100
+199,False,meta_desc,,"
+Given a query word {query} and two candidate words {word1} and {word2}, determine which of the two candidate words rhymes with the query word. Please provide the rhyming word as the output.
+Query word: {query}
+Word 1: {word1}
+Word 2: {word2}
+Output word:",1,SEP_VARS,71,100
+200,False,meta_desc,,"
+Given a specified word represented by the keyword {query} and two word options represented by the keywords {word1} and {word2}, determine which of the two options rhymes with the specified word. Please provide the rhyming word as the output.
+query: {query}
+word1: {word1}
+word2: {word2}
+Output word:",1,SEP_VARS,75,100
+201,False,meta_desc,,"
+Please determine which of the following two words, {word1} or {word2}, rhymes with the word {query}.
+Output word:",1,other,30,100
+202,False,meta_desc,,"
+Given two words, {word1} and {word2}, and a query word, {query}, determine which of the two words rhymes with the query word. Please provide the rhyming word as the output.
+Word 1: {word1}
+Word 2: {word2}
+Query word: {query}
+Output word:",1,SEP_VARS,71,100
+203,False,meta_desc,,"
+Given a query word and two candidate words, determine which of the candidate words rhymes with the query word. The rhyme should be based on the last syllable of the words. Please provide the candidate words in the format ""word1, word2"".
+Query word: {query}
+Candidate words: {word1}, {word2}
+Output word:",1,SEP_VARS,72,100
+204,False,meta_desc,,"
+Given a word {query}, identify which of the two words {word1} and {word2} rhymes with it. Please provide the rhyming word.
+query: {query}
+word1: {word1}
+word2: {word2}
+Output word:",1,SEP_VARS,57,100
+205,False,meta_desc,,"
+Given a word {query}, identify which of the two words {word1} and {word2} rhymes with it.
+The word that rhymes with {query} is:",1,other,38,100
+206,False,meta_desc,,"
+Given a query word and two other words, determine which of the two words rhymes with the query word.
+Query word: {query}
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,47,100
+207,False,meta_desc,,"
+Given a query word and two candidate words, determine which of the candidate words rhymes with the query word.
+Query word: {query}
+Candidate words: [{word1}, {word2}]
+Output word:",1,SEP_VARS,43,100
+208,False,meta_desc,,"
+Given a word to query for, determine which of two given words rhymes with it. Please provide the word to query for and the two words to compare.
+Word to query for: {query}
+Word 1: {word1}
+Word 2: {word2}
+The word that rhymes with {query} is:",1,SEP_VARS,68,100
+209,False,meta_desc,,"
+Given a word to query for, determine which of two given words rhymes with it. The input will consist of three words: the query word, and two candidate words. The output should be the word that rhymes with the query word, or ""None"" if neither candidate word rhymes with the query word.
+Query word: {query}
+Candidate word 1: {word1}
+Candidate word 2: {word2}
+Output word:",1,SEP_VARS,92,100
+210,False,meta_desc,,"
+Given a query word, determine which of the two options, word1 or word2, rhymes with it.
+Query word: {query}
+Option 1: {word1}
+Option 2: {word2}
+Output:",1,SEP_VARS,48,100
+211,False,meta_desc,,"
+Please determine which of the following words, {word1} or {word2}, rhymes with the given query word.
+Query word: {query}
+Word1: {word1}
+Word2: {word2}
+Output: The word that rhymes with {query} is 
+
+",1,SEP_VARS,59,100
+212,False,meta_desc,,"
+Given a query word and two candidate words, determine which of the candidate words rhymes with the query word. Please provide the candidate words in the format ""Option A: word1, Option B: word2"". 
+Query word: {query}
+Option A: {word1}
+Option B: {word2}
+Output:",0,SEP_VARS,67,100
+213,False,meta_desc,,"
+Given a query word and two candidate words, determine which candidate word rhymes with the query word.
+Query word: {query}
+Candidate words: {word1}, {word2}
+Output: The candidate word that rhymes with {query} is:",1,SEP_VARS,52,100
+214,False,meta_desc,,"
+Given a query word and two options, determine which option rhymes with the query word. 
+Query word: {query}
+Option 1: {word1}
+Option 2: {word2}
+Output option:",1,SEP_VARS,45,100
+215,False,meta_desc,,"
+Given a query word and two candidate words, determine which candidate word rhymes with the query word.
+Query word: {query}
+Candidate word 1: {word1}
+Candidate word 2: {word2}
+Output word:",1,SEP_VARS,48,100
+216,False,meta_desc,,"
+Determine which word rhymes with a given word.
+Query: {query}
+Word 1: {word1}
+Word 2: {word2}
+The word that rhymes with {query} is:",1,SEP_VARS,44,100
+217,False,meta_desc,,"
+Determine which word rhymes with a given word.
+Query: {query}
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,35,100
+218,False,meta_desc,,"
+Complete the following sentence with the word that rhymes with the query word: ""Which word rhymes with [query word]: [option 1] or [option 2]?""
+Query word: {query}
+Option 1: {word1}
+Option 2: {word2}
+Output sentence:",1,SEP_VARS,63,100
+219,False,meta_desc,,"
+Given a query word and two candidate words, determine which of the two candidate words rhymes with the query word.
+Query word: {query}
+Candidate word 1: {word1}
+Candidate word 2: {word2}
+Output: The candidate word that rhymes with {query} is:",1,SEP_VARS,62,100
+220,False,meta_desc,,"
+Given a query word and two candidate words, determine which of the candidate words rhymes with the query word.
+Query word: {query}
+Candidate word 1: {word1}
+Candidate word 2: {word2}
+Output: The candidate word that rhymes with {query} is:",1,SEP_VARS,61,100
+221,False,meta_desc,,"
+Given a query word and two candidate words, identify which of the two candidate words rhymes with the query word.
+Query word: {query}
+Candidate word 1: {word1}
+Candidate word 2: {word2}
+The candidate word that rhymes with {query} is:",1,SEP_VARS,60,100
+222,False,meta_desc,,"
+Given a query word and two options, identify which of the two options rhymes with the query word. Please provide your answer as either ""Option 1"" or ""Option 2"".
+Query word: {query}
+Option 1: {word1}
+Option 2: {word2}
+Answer:",0,SEP_VARS,63,100
+223,False,meta_desc,,"
+Given a query word and two options, select the word that rhymes with the query word.
+Query word: {query}
+Option 1: {word1}
+Option 2: {word2}
+Output word:",1,SEP_VARS,45,100
+224,False,meta_desc,,"
+Given a query word and two candidate words, identify which of the candidate words rhymes with the query word. Please provide the candidate word that rhymes with the query word.
+Query word: {query}
+Candidate word 1: {word1}
+Candidate word 2: {word2}
+Candidate word that rhymes with query word:",1,SEP_VARS,69,100
+225,False,meta_desc,,"
+Given a query word and two candidate words, determine which of the candidate words rhymes with the query word.
+Query word: {query}
+Candidate words: {word1}, {word2}
+Output word:",1,SEP_VARS,43,100
+226,False,meta_desc,,"
+Given a query word, identify which of the two words, {word1} or {word2}, rhymes with it.
+Query word: {query}
+Word1: {word1}
+Word2: {word2}
+The word that rhymes with {query} is:",1,SEP_VARS,58,100
+227,False,meta_desc,,"
+Given a query word, identify which of two words, ""{word1}"" or ""{word2}"", rhymes with it.
+Query word: {query}
+Word1: {word1}
+Word2: {word2}
+The word that rhymes with {query} is:",1,SEP_VARS,57,100
+228,False,meta_desc,,"
+Determine which word, ""word1"" or ""word2"", rhymes with the given ""{query}"". Please provide the correct word.
+Query: {query}
+Output word:",0,SEP_VARS,37,100
+229,False,meta_desc,,"
+Determine which word, either {word1} or {word2}, rhymes with the provided word {query}.
+Output word:",1,other,28,100
+230,False,meta_desc,,"
+Given a query word and two candidate words, determine which of the candidate words rhymes with the query word.
+Query: {query}
+Word 1: {word1}
+Word 2: {word2}
+The word that rhymes with {query} is:",1,SEP_VARS,55,100
+231,False,meta_desc,,"
+Given a query word and two candidate words, identify which of the candidate words rhymes with the query word.
+Query word: {query}
+Candidate word 1: {word1}
+Candidate word 2: {word2}
+The candidate word that rhymes with {query} is:",1,SEP_VARS,59,100
+232,False,meta_desc,,"
+Given a query word and two candidate words, determine which of the candidate words rhymes with the query word. Please provide the rhyming candidate word.
+Query word: {query}
+Candidate word 1: {word1}
+Candidate word 2: {word2}
+Rhyming candidate word:",1,SEP_VARS,62,100
+233,False,meta_desc,,"
+Given a query word {query} and two candidate words {word1} and {word2}, determine which of the two candidate words rhymes with the query word.
+Candidate word 1: {word1}
+Candidate word 2: {word2}
+Output word:",1,SEP_VARS,56,100
+234,False,meta_desc,,"
+Given a word {query} and two options {word1} and {word2}, determine which of the two options rhymes with the specified word.
+query: {query}
+word1: {word1}
+word2: {word2}
+Output:",1,SEP_VARS,53,100
+235,False,meta_desc,,"
+Given a word {query}, determine which of the two options {word1} and {word2} rhymes with it.
+query: {query}
+word1: {word1}
+word2: {word2}
+The word that rhymes with {query} is:",1,SEP_VARS,57,100
+236,False,meta_desc,,"
+Given three words, determine which of the two words rhymes with the third word.
+word1: {word1}
+word2: {word2}
+query: {query}
+The word that rhymes with {query} is:",1,SEP_VARS,48,100
+237,False,meta_desc,,"
+Given three words, {word1}, {word2}, and {query}, determine which of the two words, {word1} or {word2}, rhymes with the query word.
+word1: {word1}
+word2: {word2}
+query: {query}
+Output: The word that rhymes with {query} is:",1,SEP_VARS,72,100
+238,False,meta_desc,,"
+Given a query word and two options, determine which option rhymes with the query word.
+Query word: {query}
+Option 1: {word1}
+Option 2: {word2}
+Output option:",1,SEP_VARS,44,100
+239,False,meta_desc,,"
+Given a word {query}, identify which of the two words {word1} and {word2} rhymes with it.
+Query: {query}
+Word1: {word1}
+Word2: {word2}
+The word that rhymes with {query} is:",1,SEP_VARS,57,100
+240,False,meta_desc,,"
+Given a word {query}, identify which of the two words {word1} and {word2} rhymes with it.
+Output: The word that rhymes with {query} is either {word1} or {word2}.",0,other,49,100
+241,False,meta_desc,,"
+Given a query word and two options, identify which option rhymes with the query word.
+Query word: {query}
+Option 1: {word1}
+Option 2: {word2}
+Output option:",1,SEP_VARS,44,100
+242,False,meta_desc,,"
+Given a query word and two candidate words, determine which of the candidate words rhymes with the query word.
+Query word: {query}
+Candidate words: {word1}, {word2}
+Output:",1,SEP_VARS,42,100
+243,False,meta_desc,,"
+Find which of two given words rhymes with a query word.
+Query word: {query}
+Word 1: {word1}
+Word 2: {word2}
+The word that rhymes with {query} is:",1,SEP_VARS,47,100
+244,False,meta_desc,,"
+Given a word to query for, determine which of two provided words rhymes with it. Please provide the word to query for and the two words to compare.
+Word to query for: {query}
+Word 1: {word1}
+Word 2: {word2}
+The word that rhymes with {query} is:",1,SEP_VARS,68,100
+245,False,meta_desc,,"
+Given a query word, determine which of the two options, word1 or word2, rhymes with it.
+Query word: {query}
+Option 1: {word1}
+Option 2: {word2}
+Output option:",1,SEP_VARS,49,100

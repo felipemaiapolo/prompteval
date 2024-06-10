@@ -1,0 +1,584 @@
+prompt idx,default prompt,method,language style,prompt template,correct,prompt format,prompt length,samples
+1,True,default,,"Q: ""{input}""
+Is the argument, given the explicitly stated premises, deductively valid or invalid?
+Options:
+- valid
+- invalid
+A:",1,Q&A,31,100
+2,False,rephrase,,"Distinguish whether the argument, given the explicitly stated premises, is a formal fallacy or deductively valid argument. 
+Q: ""{input}""
+Choose from the following options:
+- valid
+- invalid
+A:",1,Q&A,43,100
+3,False,rephrase,,"Distinguish whether the argument, given the explicitly stated premises, is {input} or a formal fallacy.",0,other,22,100
+4,False,rephrase,,"Distinguish whether the argument, given the explicitly stated premises, is a formal fallacy or deductively {input}.",0,other,23,100
+5,False,rephrase,,"Distinguish whether the argument, given the explicitly stated premises, is a formal fallacy or a deductively valid argument: ""{input}"". Choose from the following options:
+- valid
+- invalid",1,other,38,100
+6,False,rephrase,,"Distinguish whether the argument, given the explicitly stated premises, is a formal fallacy or deductively valid. Is it {input}? Choose from the following options:
+- valid
+- invalid",0,other,38,100
+7,False,rephrase,,"Q: ""Please classify the argument as either valid or invalid, given the explicitly stated premises: {input}""
+Is the argument a deductively valid argument or a formal fallacy? 
+Options:
+- valid
+- invalid
+A:",1,Q&A,47,100
+8,False,rephrase,,"Q: ""Please classify the argument as {input}. Is it deductively valid or invalid, given the explicitly stated premises?""
+Options:
+- valid
+- invalid",1,other,32,100
+9,False,rephrase,,"Distinguish between formal fallacies and deductively valid arguments given the explicitly stated premises in ""{input}"". Classify the argument as either valid or invalid.",1,other,30,100
+10,False,rephrase,,"Q: ""Identify the formal fallacy in the argument {input}.""
+Is the argument, given the explicitly stated premises, deductively valid or invalid?
+Options:
+- valid
+- invalid
+A:",0,Q&A,42,100
+11,False,rephrase,,Distinguish whether the argument presented for the explicitly stated premises regarding {input} is a formal fallacy or deductively valid argument. Is it valid or invalid?,1,other,32,100
+12,False,rephrase,,"Q: ""Please classify the argument based on whether it is deductively {input} or a {input} argument, given the explicitly stated premises.""
+What are your options?
+- Valid
+- Invalid",0,other,40,100
+13,False,rephrase,,"Distinguish whether the argument, based on the explicitly stated premises, constitutes a formal fallacy or a {input} argument.",0,other,25,100
+14,False,rephrase,,"Distinguish whether the argument provided, with the explicitly stated premises, is a formal fallacy or deductively valid. 
+Q: ""{input}""
+Classification: 
+- valid
+- invalid",1,other,37,100
+15,False,rephrase,,"Q: ""Please classify the argument as either valid or invalid, based on the explicitly stated premises: {input}""
+Is the argument, given the explicitly stated premises, deductively valid or invalid?",1,SEP_VARS,39,100
+16,False,rephrase,,"Distinguish between formal fallacies and deductively valid arguments using the explicitly stated premises in ""{input}"". Is the argument classified as a formal fallacy or deductively valid?
+Options:
+- Formal fallacy
+- Deductively valid argument",0,other,47,100
+17,False,rephrase,,"Distinguish between formal fallacies and deductively valid arguments for the following proposition: ""{input}"". Is the argument deductively valid or are there formal fallacies present?
+Options:
+- valid 
+- invalid",1,other,40,100
+18,False,rephrase,,"Distinguish whether the argument presented in ""{input}"", given the explicitly stated premises, is a formal fallacy or deductively valid.
+Options:
+- Deductively valid
+- Formal fallacy",0,other,38,100
+19,False,rephrase,,"Q: ""Please classify the argument as valid or invalid given the explicitly stated premises of {input}.""
+Is the argument, given the explicitly stated premises, deductively valid or invalid?
+Options:
+- valid
+- invalid",1,other,44,100
+20,False,rephrase,,"Q: ""Identify whether the argument, based on the given explicitly stated premises, is {input} or a formal fallacy.""
+What is your classification of the argument?
+Options:
+- valid
+- invalid",0,other,42,100
+21,False,rephrase,,"Q: ""Please classify the argument as either valid or invalid based on the explicitly stated premises provided in {input}.""
+Is the argument given in the prompt an example of a deductively valid argument or a formal fallacy?
+Options:
+- valid
+- invalid",1,other,52,100
+22,False,rephrase,,"Can the argument {input}, given the explicitly stated premises, be classified as a deductively valid or invalid argument? Please choose from the following options:
+- Valid
+- Invalid",1,other,35,100
+23,False,rephrase,,Distinguish {input} as either a deductively valid argument or a formal fallacy. Is it valid or invalid based on the explicitly stated premises?,1,other,30,100
+24,False,rephrase,,"Q: ""Distinguish deductively valid arguments from {input}.""
+Is the argument, based on the explicitly stated premises, considered as a valid or invalid deductive argument? 
+Options:
+- valid
+- invalid",1,other,43,100
+25,False,rephrase,,"Q: ""Can you identify if the argument is {input} based on the explicitly stated premises?""
+Please choose from the following options:
+- deductively valid
+- a formal fallacy",0,other,37,100
+26,False,rephrase,,"Q: ""Identify if this argument is {input}.""
+Is the argument, given the explicitly stated premises, deductively {input} or is it a formal fallacy?
+Options:
+- valid
+- invalid",0,other,43,100
+27,False,rephrase,,"Q: ""Is the argument, given the explicitly stated premises, deductively valid or invalid for {input}?""
+Please classify the argument as either valid or invalid based on the formal fallacies present in the premises. Choose one of the following options:
+- valid
+- invalid",1,other,55,100
+28,False,rephrase,,"Q: ""Is the argument, given the explicitly stated premises, deductively valid or invalid for {input}?""
+Please classify the argument as either deductively valid or invalid based on the explicitly stated premises. 
+Options:
+- valid
+- invalid
+A:",1,Q&A,52,100
+29,False,rephrase,,"Q: ""Is the argument, given the explicitly stated premises, deductively valid or invalid for {input}?""
+Please classify the argument as either valid or invalid based on the given premises.",0,other,38,100
+30,False,rephrase,,"Q: ""Is the argument, given the explicitly stated premises, deductively valid or invalid for {input}?""
+Please classify the argument as either valid or invalid based on its deductive reasoning.",0,other,39,100
+31,False,rephrase,,"Q: ""Is the argument, given the explicitly stated premises, deductively valid or invalid? {input}""
+Can you classify the argument as either valid or invalid based on the formal fallacies present in {input}?
+Options:
+- valid
+- invalid
+A:",1,Q&A,54,100
+32,False,rephrase,,"Q: ""Is {input} a deductively valid argument or a formal fallacy?""
+Options:
+- deductively valid
+- formal fallacy",0,other,29,100
+33,False,rephrase,,"Q: ""Distinguish between deductively valid arguments and {input} using the explicitly stated premises.""
+Is the argument valid or invalid?
+Options:
+- valid
+- invalid
+A:",0,Q&A,37,100
+34,False,rephrase,,"Q: ""Distinguish between deductively valid arguments and {input} using explicitly stated premises.""
+Is the argument deductively {input} given the explicitly stated premises?
+Options:
+- valid
+- invalid
+A:",0,Q&A,43,100
+35,False,rephrase,,"Q: ""Distinguish between formal fallacies and deductively valid arguments based on the explicitly stated premises.""
+Is the argument {input} valid or invalid?
+Options:
+- valid
+- invalid
+A:",0,Q&A,41,100
+36,False,rephrase,,"Q: ""Distinguish whether the argument, given the explicitly stated premises, is deductively valid or a formal fallacy: {input}""
+Options:
+- valid
+- invalid
+A:",1,Q&A,38,100
+37,False,rephrase,,"Q: ""Classify the argument as either a formal fallacy or deducively valid. The explicitly stated premises are {input}.""
+Options:
+- deductively valid
+- formal fallacy",0,other,39,100
+38,False,rephrase,,"Q: ""Is the argument {input}, given the explicitly stated premises, an example of a formal fallacy or is it deductively valid?""
+Options:
+- formal fallacy
+- deductively valid",0,other,40,100
+39,False,rephrase,,"Q: ""Is the {input} deductively valid or invalid?""
+Please choose one of the following options:
+- valid
+- invalid
+A:",0,Q&A,30,100
+40,False,rephrase,,"Q: ""Distinguish whether the argument, given the explicitly stated premises, is a formal fallacy or a deductively valid argument: {input}""
+Do you classify the argument as:
+Options:
+- Formal fallacy
+- Deductively valid
+A:",0,Q&A,52,100
+41,False,rephrase,,"Q: ""Identify {input} as a deductively valid argument or a formal fallacy, given the explicitly stated premises.""
+Options:
+- valid
+- invalid",0,other,33,100
+42,False,rephrase,,"Q: ""Is {input} a deductively valid argument or a formal fallacy, given the explicitly stated premises?""
+Options:
+- deductively valid
+- formal fallacy",0,other,35,100
+43,False,rephrase,,"Q: ""Is the argument, given the explicitly stated premises, deductively valid or invalid for {input}?""
+Please classify the argument as either valid or invalid based on the explicitly stated premises.",0,other,39,100
+44,False,rephrase,,"Q: ""Distinguish whether the argument, given the explicitly stated premises, represents a formal fallacy or a deductively valid argument: {input}""
+Select the applicable option:
+- Deductively valid argument
+- Formal fallacy argument",0,SEP_VARS,47,100
+45,False,rephrase,,"Q: ""Based on the explicitly stated premises, determine if the argument exhibits a formal fallacy or is it {input}.""
+Choose from the following options:
+- valid
+- invalid",0,other,37,100
+46,False,rephrase,,"Q: ""Distinguish whether the following argument, which contains explicitly stated premises, is an example of a formal fallacy or a deductively valid argument: {input}.""
+Options:
+- formal fallacy
+- deductively valid",0,SEP_VARS,46,100
+47,False,rephrase,,"Q: ""Distinguish between {input} that are deductively valid and those that are formal fallacies.""
+Classify the argument as:
+- Valid
+- Invalid",0,other,33,100
+48,False,rephrase,,"Q: ""Distinguish between deductively valid arguments and {input}.""
+Is the argument, considering the explicitly stated premises, {input} or valid?
+Options:
+- valid
+- {input}",0,other,40,100
+49,False,rephrase,,"Q: ""Identify whether {input} is a formal fallacy or a deductively valid argument.""
+Options: 
+- Formal fallacy
+- Deductively valid",0,other,34,100
+50,False,rephrase,,"Q: ""Is the argument, given the explicitly stated premises, deductively valid or invalid based on the above information: {input}?""
+Options:
+- valid
+- invalid
+A:",1,Q&A,38,100
+51,False,rephrase,,"Q: ""Distinguish between deductively valid arguments and {input} using explicitly stated premises.""
+What is the classification of the argument?
+Options:
+- valid
+- invalid",0,other,34,100
+52,False,meta_cot,,"Determine if the deductive argument is valid or invalid based on the given premises: ""{input}"". Choose from the following options: valid or invalid.",1,other,30,100
+53,False,meta_cot,,"Given the explicitly stated premises, determine if the argument is deductively valid or invalid: ""{input}"". Please select either valid or invalid as your answer.",1,other,30,100
+54,False,meta_cot,,"Evaluate the deductive argument based on the provided premises: ""{input}"". Indicate whether the argument is valid or invalid by selecting from the following options: valid or invalid.",1,other,34,100
+55,False,meta_cot,,"Determine whether the argument, given the explicitly stated premises, is deductively valid or invalid for the provided statement: ""{input}"". Choose from the following options: valid or invalid.",1,other,36,100
+56,False,meta_cot,,"Given the explicitly stated premises in the statement ""{input}"", determine whether the argument is deductively valid or invalid. Select either valid or invalid as your answer.",1,other,31,100
+57,False,meta_cot,,"Your task is to determine whether the argument, based on the explicitly stated premises in the statement ""{input}"", is deductively valid or invalid. Choose from the following options: valid or invalid.",1,other,38,100
+58,False,meta_cot,,"Decide whether the argument, based on the explicitly stated premises in the statement ""{input}"", is deductively valid or invalid. You can choose from the following options: valid or invalid.",1,other,37,100
+59,False,meta_cot,,"Determine whether the argument, given the explicitly stated premises, is deductively valid or invalid. The argument is presented as ""{input}"". Choose one of the following options: valid or invalid.",1,other,38,100
+60,False,meta_cot,,"Given the explicitly stated premises in ""{input}"", decide if the argument is deductively valid or invalid. Your options are: valid or invalid.",1,other,28,100
+61,False,meta_cot,,"You are given an argument in ""{input}"". Determine if it is deductively valid or invalid based on the explicitly stated premises. Choose either valid or invalid.",1,other,31,100
+62,False,meta_cot,,"In ""{input}"", there is an argument with explicitly stated premises. Determine if the argument is deductively valid or invalid. You can choose from the following options: valid or invalid.",1,other,36,100
+63,False,meta_cot,,"Evaluate the deductive validity of the argument presented in ""{input}"". Choose between the options ""valid"" or ""invalid"".",1,other,24,100
+64,False,meta_cot,,"Given the premises in ""{input}"", determine if the argument is deductively valid or invalid. Select either ""valid"" or ""invalid"".",1,other,27,100
+65,False,meta_cot,,"Decide whether the argument presented in ""{input}"" is deductively valid or invalid based on the given premises. Choose either ""valid"" or ""invalid"".",1,other,31,100
+66,False,meta_cot,,"Classify the argument in ""{input}"" as either deductively valid or invalid based on the given premises. Choose between the options ""valid"" or ""invalid"".",1,other,32,100
+67,False,meta_cot,,"Given the premises, is the argument logically sound? Choose between valid and invalid. Input: {input}",1,SEP_VARS,21,100
+68,False,meta_cot,,"Your task is to determine whether the argument given in the input is valid or invalid, based on the explicitly stated premises. Input: {input}",1,SEP_VARS,29,100
+69,False,meta_cot,,"Evaluate the deductive validity of the argument provided in the input, based on the given premises. Choose between valid and invalid. Input: {input}",1,SEP_VARS,30,100
+70,False,meta_cot,,"Determine whether the argument in the input is logically valid or invalid, based on the explicitly stated premises. Input: {input}",1,SEP_VARS,26,100
+71,False,meta_cot,,"Your task is to classify the argument in the input as either valid or invalid, based on the given premises. Input: {input}",1,SEP_VARS,27,100
+72,False,meta_cot,,"Given the {input}, determine whether the argument is deductively valid or invalid. Select either ""valid"" or ""invalid"" as your answer.",1,other,29,100
+73,False,meta_cot,,"Your task is to identify whether the argument, based on the provided {input}, is deductively valid or invalid. Please choose from the options ""valid"" or ""invalid"".",0,other,35,100
+74,False,meta_cot,,"You are given an argument in the {input} keyword. Your task is to determine whether it is deductively valid or invalid. You may choose between ""valid"" and ""invalid"".",0,other,37,100
+75,False,meta_cot,,"Given the premises in ""{input}"", determine if the argument is deductively valid or invalid.",1,other,18,100
+76,False,meta_cot,,"Is the argument in ""{input}"" deductively valid or invalid based on the given premises?",1,other,18,100
+77,False,meta_cot,,"Evaluate the deductive validity of the argument in ""{input}"" based on the given premises.",1,other,18,100
+78,False,meta_cot,,"Determine whether the argument in ""{input}"" is deductively valid or invalid given the premises.",1,other,19,100
+79,False,meta_cot,,"Are the premises in ""{input}"" sufficient to make the argument deductively valid or invalid?",0,other,18,100
+80,False,meta_cot,,"Determine if the argument provided in ""{input}"" is deductively valid or invalid based on the explicitly stated premises.",1,other,23,100
+81,False,meta_cot,,"Given the premises stated in ""{input}"", classify the argument as either valid or invalid.",1,other,17,100
+82,False,meta_cot,,"Is the argument presented in ""{input}"" deductively valid or invalid based on the explicitly stated premises?",1,other,20,100
+83,False,meta_cot,,"Decide whether the argument in ""{input}"" is valid or invalid based on the given premises.",1,other,19,100
+84,False,meta_cot,,"Based on the premises provided in ""{input}"", determine if the argument is deductively valid or invalid.",1,other,20,100
+85,False,meta_cot,,"Classify the argument in ""{input}"" as valid or invalid based on the explicitly stated premises.",1,other,19,100
+86,False,meta_cot,,"Determine whether the argument presented in ""{input}"" is deductively valid or invalid.",1,other,17,100
+87,False,meta_cot,,"Given the premises in ""{input}"", classify the argument as either valid or invalid.",1,other,16,100
+88,False,meta_cot,,"Classify the argument in ""{input}"" as either valid or invalid, given the explicitly stated premises.",1,other,20,100
+89,False,meta_cot,,"Deduce whether the argument in ""{input}"" is valid or invalid based on the given premises.",1,other,20,100
+90,False,meta_cot,,"Determine if the argument presented in ""{input}"" is deductively valid or invalid, based on the explicitly stated premises. Choose from the options: valid or invalid.",1,other,33,100
+91,False,meta_cot,,"Given the explicitly stated premises in ""{input}"", decide if the argument is deductively valid or invalid. Select one of the following options: valid or invalid.",1,other,31,100
+92,False,meta_cot,,"You are presented with an argument in ""{input}"". Your task is to determine if it is deductively valid or invalid based on the explicitly stated premises. Choose from the options: valid or invalid.",1,other,39,100
+93,False,meta_cot,,"In ""{input}"", you are given an argument with explicitly stated premises. Your task is to determine if it is deductively valid or invalid. Choose from the options: valid or invalid.",1,other,37,100
+94,False,meta_cot,,"Evaluate the deductive validity of the argument in ""{input}"" based on the explicitly stated premises.",0,other,19,100
+95,False,meta_cot,,"Is the argument in ""{input}"" deductively valid or invalid based on the explicitly stated premises?",1,other,19,100
+96,False,meta_cot,,"Based on the explicitly stated premises in ""{input}"", determine if the argument is valid or invalid.",1,other,19,100
+97,False,meta_cot,,"Deduce the validity of the argument in ""{input}"" based on the explicitly stated premises.",1,other,19,100
+98,False,meta_cot,,"Determine whether the argument provided in ""{input}"" is a formal fallacy or deductively valid based on the explicitly stated premises.",0,other,26,100
+99,False,meta_cot,,"Given the premises stated in {input}, is the argument deductively valid or invalid? Please select either ""valid"" or ""invalid"".",1,other,27,100
+100,False,meta_cot,,"Decide whether the argument presented in {input} is deductively valid or invalid. You may choose either ""valid"" or ""invalid"".",1,other,28,100
+101,False,meta_cot,,"Based on the explicitly stated premises in {input}, is the argument deductively valid or invalid? Please select either ""valid"" or ""invalid"".",1,other,29,100
+102,False,meta_cot,,"Given the premises stated as ""{input}"", is the argument valid or invalid? Please choose from the options ""valid"" or ""invalid"".",1,other,27,100
+103,False,meta_cot,,"Please analyze the argument presented as ""{input}"" and determine if it is deductively valid or invalid. You may choose from the options ""valid"" or ""invalid"".",1,other,33,100
+104,False,meta_cot,,"Based on the explicitly stated premises given as ""{input}"", is the argument deductively valid or invalid? Please select either ""valid"" or ""invalid"".",1,other,30,100
+105,False,meta_cot,,"Given the premises stated in ""{input}"", is the argument deductively valid or invalid? Choose from the options: valid or invalid.",1,other,26,100
+106,False,meta_cot,,"Determine whether the argument provided in ""{input}"" is deductively valid or invalid, based on the explicitly stated premises. Select from the options: valid or invalid.",1,other,33,100
+107,False,meta_cot,,"Is the argument presented in ""{input}"" deductively valid or invalid, given the explicitly stated premises? Choose either valid or invalid from the options provided.",1,other,30,100
+108,False,meta_desc,,"
+Given a set of premises and a conclusion, determine whether the argument is deductively valid or a formal fallacy. Provide an explanation for your decision.
+Premises and conclusion: {input}
+Output:",0,SEP_VARS,41,100
+109,False,meta_desc,,"
+Classify the deductively valid arguments from the formal fallacies based on explicitly stated premises. Given the premises and conclusion of an argument, determine whether the argument is valid or not.
+Premises and conclusion: {input}
+Output:",1,SEP_VARS,47,100
+110,False,meta_desc,,"
+Classify the deductive validity of arguments based on given premises and options of valid or invalid. Your task is to determine whether the argument is deductively valid or contains a formal fallacy. You will be provided with a set of premises and options of valid or invalid. Use logical reasoning to derive the correct classification. 
+Premises and options: {input}
+Output:",1,SEP_VARS,75,100
+111,False,meta_desc,,"
+Classify the deductively valid arguments from formal fallacies based on the given premises and options of valid or invalid. Use logical reasoning to derive the correct classification. 
+Premises and option: {input}
+Output:",1,SEP_VARS,44,100
+112,False,meta_desc,,"
+Determine whether the given argument is deductively valid or invalid based on the explicitly stated premises. Choose ""valid"" if the conclusion necessarily follows from the premises, and ""invalid"" if the conclusion does not necessarily follow from the premises. The argument may contain formal fallacies, which should be identified as invalid. 
+Premises and conclusion: {input}
+Output:",1,SEP_VARS,74,100
+113,False,meta_desc,,"
+Determine whether the given argument is deductively valid or invalid based on explicitly stated premises. Choose ""Valid"" if the conclusion necessarily follows from the premises, and ""Invalid"" if it does not. Be sure to carefully consider the logical reasoning used to derive your answer. 
+Premises and conclusion: {input}
+Output:",1,SEP_VARS,66,100
+114,False,meta_desc,,"
+Determine whether the deductive argument presented is valid or invalid based on the explicitly stated premises. Choose ""valid"" or ""invalid"" as your answer.
+Premises and conclusion: {input}
+Output:",1,SEP_VARS,42,100
+115,False,meta_desc,,"
+Determine whether the argument is deductively valid or contains a formal fallacy based on the explicitly stated premises. Choose either ""valid"" or ""invalid"" as the answer.
+Premises and conclusion: {input}
+Output:",1,SEP_VARS,46,100
+116,False,meta_desc,,"
+Given a set of explicitly stated premises, classify the deductive argument as either valid or invalid. Choose one of the following options: ""valid"" or ""invalid"". If the argument is invalid, identify the formal fallacy committed. 
+Premises and conclusion: {input}
+Output:",1,SEP_VARS,58,100
+117,False,meta_desc,,"
+Given a set of explicitly stated premises, determine whether the argument is deductively valid or a formal fallacy. Select ""Valid"" if the argument is deductively valid, or select ""Invalid"" if the argument is a formal fallacy.
+Premises and conclusion: {input}
+Output:",1,SEP_VARS,59,100
+118,False,meta_desc,,"
+Classify the deductively valid arguments from formal fallacies based on explicitly stated premises. Given a set of premises and a conclusion, determine whether the argument is valid or invalid. Provide your reasoning for your classification. 
+Input: {input}
+Output:",1,SEP_VARS,51,100
+119,False,meta_desc,,"
+Classify the deductively valid arguments from formal fallacies based on explicitly stated premises. Given an argument with explicitly stated premises, determine whether it is valid or invalid. Provide your reasoning for your classification. 
+Premises and conclusion: {input}
+Output:",1,SEP_VARS,52,100
+120,False,meta_desc,,"
+Classify the deductive validity of arguments based on explicitly stated premises. Choose ""valid"" if the argument is deductively valid, or ""invalid"" if it contains a formal fallacy.
+Premises and conclusion: {input}
+Output:",1,SEP_VARS,49,100
+121,False,meta_desc,,"
+Classify the deductive validity of arguments based on explicitly stated premises. Choose ""valid"" or ""invalid"" for each argument.
+Premises and conclusion: {input}
+Output:",1,SEP_VARS,37,100
+122,False,meta_desc,,"
+Determine whether the argument is valid or invalid based on the explicitly stated premises. Select ""valid"" if the conclusion necessarily follows from the premises, and ""invalid"" if the conclusion does not necessarily follow from the premises.
+Premises and conclusion: {input}
+Output:",1,SEP_VARS,55,100
+123,False,meta_desc,,"
+Determine whether the argument presented is valid or invalid based on the explicitly stated premises. Choose ""valid"" or ""invalid"" as your answer.
+Premises and conclusion: {input}
+Output:",1,SEP_VARS,40,100
+124,False,meta_desc,,"
+Determine whether the following argument is valid or invalid based on the explicitly stated premises. Choose ""valid"" if the argument is deductively valid and ""invalid"" if it contains a formal fallacy.
+Premises and conclusion: {input}
+Output:",1,SEP_VARS,51,100
+125,False,meta_desc,,"
+Determine whether the following argument is valid or invalid based on the explicitly stated premises. Select ""valid"" or ""invalid"" as your answer.
+Premises and conclusion: {input}
+Output:",1,SEP_VARS,40,100
+126,False,meta_desc,,"
+Determine whether the given argument is deductively valid or invalid based on the explicitly stated premises. Choose the appropriate option for each. 
+Premises and conclusion: {input}
+Answer:",1,SEP_VARS,38,100
+127,False,meta_desc,,"
+Given a set of explicitly stated premises, classify whether the argument is deductively valid or invalid.
+Premises and conclusion: {input}
+Output:",1,SEP_VARS,30,100
+128,False,meta_desc,,"
+Determine whether the following argument is deductively valid or invalid based on the explicitly stated premises: ""{input}""
+Output:",1,other,25,100
+129,False,meta_desc,,"
+Determine whether the following argument is deductively valid or invalid based on the explicitly stated premises: ""{input}"".
+Output:
+
+",1,other,26,100
+130,False,meta_desc,,"
+Determine whether the argument, given the explicitly stated premises, is deductively valid or invalid. Choose between the options: valid or invalid.
+Premises and conclusion: {input}
+Output:",1,SEP_VARS,39,100
+131,False,meta_desc,,"
+Determine whether the argument, given the explicitly stated premises, is deductively valid or invalid. Provide your answer as either ""valid"" or ""invalid"".
+Premises and conclusion: {input}
+Output:",1,SEP_VARS,42,100
+132,False,meta_desc,,"
+Determine whether the given argument is deductively valid or not. The argument is provided as input in the form of premises. If the argument is valid, output ""Valid"". Otherwise, output ""Invalid"".
+Premises and conclusion: {input}
+Output:",1,SEP_VARS,52,100
+133,False,meta_desc,,"
+Determine if the provided argument is deductively valid or not. The argument is given in the form of premises, and the model must classify it as either valid or invalid.
+Input: {input}
+Output:",1,SEP_VARS,43,100
+134,False,meta_desc,,"
+Determine whether a given argument is valid or invalid based on the explicitly stated premises. The argument is presented as a question with the placeholder {input}. Choose between two options: valid or invalid.
+Question: {input}
+Output:
+
+",1,SEP_VARS,47,100
+135,False,meta_desc,,"
+Determine whether the following argument is deductively valid or a formal fallacy. The argument is presented as a question with the placeholder {input}. Choose between two options: valid or invalid.
+Question: {input}
+Output:",1,SEP_VARS,46,100
+136,False,meta_desc,,"
+Classify the following argument as either deductively valid or a formal fallacy. Provide a brief explanation for your classification.
+Argument: {input}
+Output:",0,SEP_VARS,32,100
+137,False,meta_desc,,"
+Determine whether the following argument is deductively valid or a formal fallacy. Provide your reasoning for your classification. 
+Input keyword: {input}
+Output:",0,SEP_VARS,33,100
+138,False,meta_desc,,"
+Determine if the argument is valid or invalid based on the explicitly stated premises.
+Premises and conclusion: {input}
+Output:",1,SEP_VARS,27,100
+139,False,meta_desc,,"
+Determine if the following argument is deductively valid or a formal fallacy. The argument is given with explicitly stated premises.
+Premises and conclusion: {input}
+Output:
+
+",0,SEP_VARS,36,100
+140,False,meta_desc,,"
+Determine whether the given argument is deductively valid or invalid based on the explicitly stated premises. If the argument is deductively valid, output ""Valid"". Otherwise, output ""Invalid"". 
+Argument: {input}
+Output:",1,SEP_VARS,46,100
+141,False,meta_desc,,"
+Determine whether the given argument is deductively valid or invalid. If the argument is deductively valid, return ""Valid"". Otherwise, return ""Invalid"". Remember to base your evaluation solely on the explicitly stated premises.
+Argument: {input}
+Output:",1,SEP_VARS,51,100
+142,False,meta_desc,,"
+Determine whether the following argument is deductively valid or a formal fallacy: {input}
+Output:",0,SEP_VARS,22,100
+143,False,meta_desc,,"
+Determine whether the following argument is deductively valid or a formal fallacy: {input} 
+Output:",0,SEP_VARS,23,100
+144,False,meta_desc,,"
+Determine whether the given argument is deductively valid or a formal fallacy. The argument is provided as the input keyword and the premises are explicitly stated. 
+Input: {input}
+Output:",0,SEP_VARS,40,100
+145,False,meta_desc,,"
+Determine whether the given argument is deductively valid or contains a formal fallacy. The argument is provided as the input keyword.
+Input: {input}
+Output:",0,SEP_VARS,34,100
+146,False,meta_desc,,"
+Determine the validity of a deductive argument based on the given premises. Your response should be ""valid"" or ""invalid"".
+Premises and conclusion: {input}
+Output:
+
+",1,SEP_VARS,37,100
+147,False,meta_desc,,"
+Determine whether the given deductive argument is valid or invalid based on the premises provided. Your response should be either ""valid"" or ""invalid"".
+Premises and conclusion: {input}
+Output:",1,SEP_VARS,41,100
+148,False,meta_desc,,"
+Given a set of premises and a conclusion, determine whether the argument is deductively valid or contains a formal fallacy. Use your knowledge of logical reasoning to make your determination. 
+Input: {input}
+Output:",0,SEP_VARS,44,100
+149,False,meta_desc,,"
+Given a set of premises and an argument, determine if the argument is deductively valid or contains a formal fallacy. Use the provided input-output samples to guide your classification.
+Input: {input}
+Output:",0,SEP_VARS,43,100
+150,False,meta_desc,,"
+Given a set of premises and options of valid or invalid, classify deductively valid arguments from formal fallacies. Use logical reasoning to derive the correct classification. 
+Premises: {input}
+Options: Valid, Invalid
+Output:",1,SEP_VARS,47,100
+151,False,meta_desc,,"
+Given a set of premises and options of valid or invalid, determine whether the argument is deductively valid or a formal fallacy. Use logical reasoning to derive the correct classification.
+Premises and options: {input}
+Output:
+
+",1,SEP_VARS,46,100
+152,False,meta_desc,,"
+Given a set of explicitly stated premises, determine whether the argument is deductively valid or invalid. Choose ""valid"" if the conclusion necessarily follows from the premises, and ""invalid"" if it does not.
+Premises and conclusion: {input}
+Output:",1,SEP_VARS,52,100
+153,False,meta_desc,,"
+Given a set of premises, determine whether the argument presented is deductively valid or invalid. Choose from the options provided.
+Premises and conclusion: {input}
+Output:",1,SEP_VARS,35,100
+154,False,meta_desc,,"
+Determine the validity of an argument based on explicitly stated premises. Choose either ""valid"" or ""invalid"" as your answer.
+Premises and conclusion: {input}
+Output:",1,SEP_VARS,37,100
+155,False,meta_desc,,"
+Determine the validity of an argument by applying logical reasoning. Is the argument valid or invalid? Choose between the options valid or invalid. Use the explicitly stated premises to make your decision.
+Premises and conclusion: {input}
+Output:",1,SEP_VARS,48,100
+156,False,meta_desc,,"
+Given a set of explicitly stated premises, determine whether a deductive argument is valid or invalid. Choose ""valid"" or ""invalid"" as your answer.
+Premises and conclusion: {input}
+Output:",1,SEP_VARS,42,100
+157,False,meta_desc,,"
+Given a set of explicitly stated premises, determine whether the argument is deductively valid or contains a formal fallacy. Select ""valid"" or ""invalid"" as your answer.
+Premises and conclusion: {input}
+Output:",1,SEP_VARS,46,100
+158,False,meta_desc,,"
+Given a set of premises, determine whether the argument is deductively valid or a formal fallacy. Provide the logical reasoning for your decision.
+Premises and conclusion: {input}
+Output:
+
+",0,SEP_VARS,39,100
+159,False,meta_desc,,"
+Given a set of premises, determine whether the argument is deductively valid or contains a formal fallacy. Provide the logical reasoning for your decision.
+Premises and conclusion: {input}
+Output:
+
+",0,SEP_VARS,40,100
+160,False,meta_desc,,"
+Given a set of explicitly stated premises, determine if the argument is deductively valid or contains a formal fallacy. Respond with either ""valid"" or ""invalid"".
+Premises and conclusion: {input}
+Output:",1,SEP_VARS,44,100
+161,False,meta_desc,,"
+Given a set of premises, determine whether the argument is deductively valid or contains a formal fallacy. Respond with either ""valid"" or ""invalid"".
+Premises and conclusion: {input}
+Output:",1,SEP_VARS,42,100
+162,False,meta_desc,,"
+Determine whether a given argument is valid or invalid based on the explicitly stated premises. Choose between the options ""valid"" or ""invalid"".
+Premises and conclusion: {input}
+Output:",1,SEP_VARS,39,100
+163,False,meta_desc,,"
+Given a set of premises and a conclusion, determine whether the argument is deductively valid or contains a formal fallacy. Choose ""valid"" if the conclusion necessarily follows from the premises, and ""invalid"" if it does not. 
+Premises and conclusion: {input}
+Output:",1,SEP_VARS,58,100
+164,False,meta_desc,,"
+Given a set of explicitly stated premises, determine whether the argument is deductively valid or a formal fallacy. Respond with ""valid"" or ""invalid"".
+Premises and conclusion: {input}
+Output:",1,SEP_VARS,42,100
+165,False,meta_desc,,"
+Given a set of explicitly stated premises, determine whether the argument is deductively valid or contains a formal fallacy. Respond with either ""valid"" or ""invalid"".
+Premises and conclusion: {input}
+Output:",1,SEP_VARS,44,100
+166,False,meta_desc,,"
+Given a set of premises and a conclusion, determine whether the argument is deductively valid or invalid. Choose ""valid"" if the conclusion necessarily follows from the premises, and ""invalid"" if it does not. 
+Premises and conclusion: {input}
+Output:",1,SEP_VARS,54,100
+167,False,meta_desc,,"
+Given a set of explicitly stated premises, determine whether the argument is deductively valid or invalid. Select ""valid"" or ""invalid"" as your answer.
+Premises and conclusion: {input}
+Output:",1,SEP_VARS,42,100
+168,False,meta_desc,,"
+Determine whether a given argument is deductively valid or invalid based on the explicitly stated premises. Provide your reasoning for your answer.
+Premises and conclusion: {input}
+Output:",1,SEP_VARS,37,100
+169,False,meta_desc,,"
+Determine whether a given argument is deductively valid or invalid based on the explicitly stated premises. Provide your reasoning for your decision.
+Premises and conclusion: {input}
+Output:",1,SEP_VARS,37,100
+170,False,meta_desc,,"
+Given the explicitly stated premises, determine whether the argument is deductively valid or invalid. Please choose between the options: valid or invalid.
+Premises and conclusion: {input}
+Output:
+
+",1,SEP_VARS,38,100
+171,False,meta_desc,,"
+Classify the given argument as either valid or invalid. The argument is provided as input in the form of premises, and your task is to determine if the argument is deductively valid or not.
+Premises and conclusion: {input}
+Output:",1,SEP_VARS,50,100
+172,False,meta_desc,,"
+Given a set of premises, determine whether the argument is deductively valid or not. Your task is to classify the argument as either valid or invalid.
+Premises and conclusion: {input}
+Output:",1,SEP_VARS,41,100
+173,False,meta_desc,,"
+Given a deductive argument presented as a question with the placeholder {input}, determine whether it is valid or invalid based on the explicitly stated premises. Choose between two options: valid or invalid. 
+Question: {input}
+Output:",0,SEP_VARS,47,100
+174,False,meta_desc,,"
+Classify the following argument as either valid or invalid based on the given premises. Keep in mind that a valid argument is one in which the conclusion necessarily follows from the premises, while a formal fallacy is an argument that is flawed due to its structure or form. 
+Argument: {input}
+Output:",1,SEP_VARS,62,100
+175,False,meta_desc,,"
+Classify the given argument as either deductively valid or a formal fallacy. Provide a brief explanation for your classification.
+Argument: {input}
+Output:",0,SEP_VARS,32,100
+176,False,meta_desc,,"
+Determine whether an argument is deductively valid or a formal fallacy. Provide your answer based on the explicitly stated premises.
+Premises and conclusion: {input}
+Output:",0,SEP_VARS,36,100
+177,False,meta_desc,,"
+Determine whether an argument is deductively valid or a formal fallacy. Provide your answer based on the explicitly stated premises of the argument.
+Premises and conclusion: {input}
+Output:",0,SEP_VARS,39,100
+178,False,meta_desc,,"
+Evaluate the deductive validity of an argument based on its explicitly stated premises. Provide a ""valid"" or ""invalid"" response.
+Argument: {input}
+Output:",1,SEP_VARS,34,100
+179,False,meta_desc,,"
+Given a set of premises, determine whether the argument is deductively valid or invalid. Keep in mind that a deductively valid argument is one where the conclusion necessarily follows from the premises, while a formal fallacy is an argument that is invalid due to a flaw in its logical structure. 
+Argument: {input}
+Output:",1,SEP_VARS,66,100
+180,False,meta_desc,,"
+Determine the validity of an argument based on explicitly stated premises. Your task is to distinguish between deductively valid arguments and formal fallacies. Provide your reasoning for your answer.
+Premises and conclusion: {input}
+Output:",0,SEP_VARS,46,100
+181,False,meta_desc,,"
+Determine whether an argument is valid or invalid based on explicitly stated premises. Your task is to distinguish deductively valid arguments from formal fallacies. Provide your reasoning for your answer.
+Premises and conclusion: {input}
+Output:",1,SEP_VARS,47,100
+182,False,meta_desc,,"
+Please determine whether the following argument is valid or invalid based on the explicitly stated premises.
+Premises and conclusion: {input}
+Output:",1,SEP_VARS,28,100
+183,False,meta_desc,,"
+Evaluate the validity of an argument based on its explicitly stated premises. Determine whether the argument is deductively valid or contains a formal fallacy. Provide a clear explanation for your decision.
+Argument: {input}
+Output:",0,SEP_VARS,44,100
+184,False,meta_desc,,"
+Determine the validity of a deductive argument based on the given premises. Provide your reasoning for your answer.
+Premises and conclusion: {input}
+Output:",1,SEP_VARS,33,100

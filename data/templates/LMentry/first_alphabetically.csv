@@ -1,0 +1,484 @@
+prompt idx,default prompt,method,language style,prompt template,correct,prompt format,prompt length,samples
+1,True,default,,"Q: In an alphabetical order, which of the words ""{word1}"" and ""{word2}"" comes first?
+A:",1,Q&A,25,100
+2,True,default,,"Q: In an alphabetical order, which word comes first, ""{word1}"" or ""{word2}""?
+A:",1,Q&A,24,100
+3,True,default,,"Q: Of the words ""{word1}"" and ""{word2}"", which word comes first alphabetically?
+A:",1,Q&A,23,100
+4,False,rephrase,,"Which word comes first in alphabetical order: ""{word1}"" or ""{word2}""?",1,other,18,100
+5,False,rephrase,,"Which word comes first in alphabetical order, ""{word1}"" or ""{word2}""?",1,other,18,100
+6,False,rephrase,,"Which word between ""{word1}"" and ""{word2}"" appears first in alphabetical order?",1,other,18,100
+7,False,rephrase,,"Here's a rephrased prompt:
+'''Q: Which word comes first in alphabetical order: ""{word1}"" or ""{word2}""?
+A:'''",0,Q&A,33,100
+8,False,rephrase,,"Which word comes first in alphabetical order - ""{word1}"" or ""{word2}""?",1,other,18,100
+9,False,rephrase,,"Rewritten prompt: ""Which word between ""{word1}"" and ""{word2}"" appears first when arranged in alphabetical order?""",0,other,25,100
+10,False,rephrase,,"Which word comes first in alphabetical order between ""{word1}"" and ""{word2}""?",1,other,18,100
+11,False,rephrase,,"Which of the words ""{word1}"" and ""{word2}"" precedes the other in alphabetical order?",1,other,21,100
+12,False,rephrase,,"Which word precedes the other in alphabetical order, ""{word1}"" or ""{word2}""?",1,other,20,100
+13,False,rephrase,,"Which word appears first in alphabetical order, ""{word1}"" or ""{word2}""?",1,other,18,100
+14,False,rephrase,,"Which word appears first in alphabetical order between ""{word1}"" and ""{word2}""?",1,other,18,100
+15,False,rephrase,,"What is the first word in alphabetical order between ""{word1}"" and ""{word2}""?",1,other,19,100
+16,False,rephrase,,"Which of the two given words, ""{word1}"" or ""{word2}"", appears first in alphabetical order?",1,other,22,100
+17,False,rephrase,,"Which word appears first in alphabetical order- ""{word1}"" or ""{word2}""?",1,other,18,100
+18,False,rephrase,,"Which word comes first alphabetically, ""{word1}"" or ""{word2}""?",1,other,17,100
+19,False,rephrase,,"Which word is listed first in alphabetical order - ""{word1}"" or ""{word2}""?",1,other,19,100
+20,False,rephrase,,"Which of the two words ""{word1}"" and ""{word2}"" appears first in alphabetical order?",1,other,20,100
+21,False,rephrase,,"Which of the two words, ""{word1}"" and ""{word2}"", is alphabetically first?",1,other,20,100
+22,False,rephrase,,"Which of the two words, ""{word1}"" and ""{word2}"", is the first in alphabetical order?",1,other,22,100
+23,False,rephrase,,"Which word between ""{word1}"" and ""{word2}"" comes first in alphabetical order?",1,other,18,100
+24,False,rephrase,,"Which of the two words ""{word1}"" and ""{word2}"" is listed first alphabetically?",1,other,20,100
+25,False,rephrase,,"Which word, ""{word1}"" or ""{word2}"", is first in alphabetical order?",1,other,18,100
+26,False,rephrase,,"Which one of the words ""{word1}"" and ""{word2}"" appears first in alphabetical order?",1,other,20,100
+27,False,rephrase,,"Which of the two words, ""{word1}"" and ""{word2}"", comes first in alphabetical order?",1,other,21,100
+28,False,rephrase,,"Arrange the words ""{word1}"" and ""{word2}"" in alphabetical order and indicate which one comes first.",0,other,22,100
+29,False,rephrase,,"Please provide the alphabetical order of ""{word1}"" and ""{word2}"" and indicate which word comes first.",1,other,22,100
+30,False,rephrase,,"Please determine the position of ""{word1}"" and ""{word2}"" in alphabetical order.",0,other,18,100
+31,False,rephrase,,"Arrange the words ""{word1}"" and ""{word2}"" in alphabetical order and provide the word that comes first.",1,other,23,100
+32,False,rephrase,,"What is the alphabetical order of the words ""{word1}"" and ""{word2}""?",0,other,18,100
+33,False,rephrase,,"""Please determine the word that comes first in alphabetical order between ""{word1}"" and ""{word2}"".",1,other,21,100
+34,False,rephrase,,Arrange the words '{word1}' and '{word2}' in alphabetical order and provide the word that comes first.,1,other,23,100
+35,False,rephrase,,"Please determine which of the two words, ""{word1}"" and ""{word2}"", appears first in alphabetical order.",1,other,23,100
+36,False,rephrase,,"Prompt GPT-3 to determine the alphabetical order of two words, ""{word1}"" and ""{word2}"".",0,other,23,100
+37,False,rephrase,,"Please provide the alphabetical order of the words ""{word1}"" and ""{word2}"" and indicate which word comes first.",1,other,24,100
+38,False,rephrase,,"Provide the alphabetical order of the words ""{word1}"" and ""{word2}"".",0,other,16,100
+39,False,rephrase,,"Which word would appear first in alphabetical order, ""{word1}"" or ""{word2}""?",1,other,19,100
+40,False,rephrase,,"Provide the word that comes first in alphabetical order between ""{word1}"" and ""{word2}"".",1,other,19,100
+41,False,rephrase,,"What is the alphabetical order of ""{word1}"" and ""{word2}""?",0,other,16,100
+42,False,rephrase,,"Which word would come first in alphabetical order: ""{word1}"" or ""{word2}""?",1,other,19,100
+43,False,rephrase,,"Which of the following words, ""{word1}"" or ""{word2}"", comes first in alphabetical order?",1,other,21,100
+44,False,rephrase,,"Which of the two words, ""{word1}"" and ""{word2}"", comes first when arranged in alphabetical order?",1,other,23,100
+45,False,rephrase,,"""Please provide the alphabetical order of ""{word1}"" and ""{word2}"".",0,other,16,100
+46,False,rephrase,,"Which of the two words, ""{word1}"" and ""{word2}"", appears first in alphabetical order?",1,other,21,100
+47,False,rephrase,,"Which of the two words ""{word1}"" and ""{word2}"" comes first in alphabetical order?",1,other,20,100
+48,False,rephrase,,"Which word, ""{word1}"" or ""{word2}"", comes first in alphabetical order?",1,other,18,100
+49,False,rephrase,,"Which one of the following two words, ""{word1}"" and ""{word2}"", comes first alphabetically?",1,other,22,100
+50,False,rephrase,,"Please determine which of the two words, ""{word1}"" or ""{word2}"", is sorted first in alphabetical order.",1,other,24,100
+51,False,meta_cot,,"Which word comes first in alphabetical order: ""{word1}"" or ""{word2}""?",1,other,18,100
+52,False,meta_cot,,"Which of the words ""{word1}"" and ""{word2}"" comes first in alphabetical order?",1,other,19,100
+53,False,meta_cot,,"Determine which word comes first alphabetically between ""{word1}"" and ""{word2}"".",1,other,18,100
+54,False,meta_cot,,"Which word comes first in alphabetical order, ""{word1}"" or ""{word2}""?",1,other,18,100
+55,False,meta_cot,,"Which of the words ""{word1}"" and ""{word2}"" comes first alphabetically?",1,other,18,100
+56,False,meta_cot,,"Determine which word comes first in alphabetical order: ""{word1}"" or ""{word2}""",1,other,19,100
+57,False,meta_cot,,"Which of the words ""{word1}"" and ""{word2}"" would appear first if sorted alphabetically?",1,other,21,100
+58,False,meta_cot,,"Arrange ""{word1}"" and ""{word2}"" in alphabetical order and tell me which one comes first.",1,other,21,100
+59,False,meta_cot,,"If you were to sort ""{word1}"" and ""{word2}"" alphabetically, which one would come first?",1,other,23,100
+60,False,meta_cot,,"Which word would come first if you sorted ""{word1}"" and ""{word2}"" in alphabetical order?",1,other,21,100
+61,False,meta_cot,,"Determine which of the words ""{word1}"" and ""{word2}"" comes first when arranged in alphabetical order.",1,other,23,100
+62,False,meta_cot,,"Which of ""{word1}"" and ""{word2}"" appears first in alphabetical order?",1,other,17,100
+63,False,meta_cot,,"Which word comes first alphabetically, ""{word1}"" or ""{word2}""?",1,other,17,100
+64,False,meta_cot,,"Determine which of the words ""{word1}"" and ""{word2}"" comes first in alphabetical order.",1,other,21,100
+65,False,meta_cot,,"Of the words ""{word1}"" and ""{word2}"", which one comes first alphabetically?",1,other,19,100
+66,False,meta_cot,,"Which word between ""{word1}"" and ""{word2}"" appears first in alphabetical order?",1,other,18,100
+67,False,meta_cot,,"Of the words ""{word1}"" and ""{word2}"", which comes first alphabetically?",1,other,18,100
+68,False,meta_cot,,"Of ""{word1}"" and ""{word2}"", which one comes first in alphabetical order?",1,other,18,100
+69,False,meta_cot,,"Arrange the words {word1} and {word2} in alphabetical order, then tell which one comes first.",0,other,23,100
+70,False,meta_cot,,"Out of {word1} and {word2}, which word would come first if you were to list them in alphabetical order?",1,other,26,100
+71,False,meta_cot,,Which of the words {word1} and {word2} is the first one when arranged in alphabetical order?,1,other,23,100
+72,False,meta_cot,,"Given the words ""{word1}"" and ""{word2}"", which comes first alphabetically?",1,other,18,100
+73,False,meta_cot,,"Arrange ""{word1}"" and ""{word2}"" in alphabetical order. Which comes first?",1,other,18,100
+74,False,meta_cot,,"Between ""{word1}"" and ""{word2}"", which word appears first when listed alphabetically?",1,other,19,100
+75,False,meta_cot,,Please determine the first word alphabetically between {word1} and {word2}.,1,other,17,100
+76,False,meta_cot,,Which of the provided words comes first when arranged in alphabetical order: {word1} or {word2}?,1,SEP_VARS,22,100
+77,False,meta_cot,,"Out of the two presented words ({word1} and {word2}), which is alphabetically smaller?",1,other,21,100
+78,False,meta_cot,,"When they are arranged alphabetically, which word comes first: {word1} or {word2}?",1,SEP_VARS,21,100
+79,False,meta_cot,,Order {word1} and {word2} alphabetically then select the first one.,0,other,18,100
+80,False,meta_cot,,Which word is first in alphabetical order - {word1} or {word2}?,1,other,17,100
+81,False,meta_cot,,"For which word comes first when ordered alphabetically out of {word1} and {word2}, which could it be?",1,other,25,100
+82,False,meta_cot,,"{word1} and {word2} are the words being compared, please compare to determine the first alphabetically.",1,other,24,100
+83,False,meta_cot,,Which word appears first alphabetically between {word1} and {word2}? ,1,other,17,100
+84,False,meta_cot,,"Determine which of the words ""{word1}"" and ""{word2}"" comes first alphabetically.",1,other,20,100
+85,False,meta_cot,,"Which word comes first in alphabetical order - ""{word1}"" or ""{word2}""?",1,other,18,100
+86,False,meta_cot,,"Compare the words ""{word1}"" and ""{word2}"" and identify which one appears earlier in alphabetical order.",1,other,22,100
+87,False,meta_cot,,Which word comes first in alphabetical order: {word1} or {word2}?,1,SEP_VARS,17,100
+88,False,meta_cot,,Consider the words {word1} and {word2}. Which one appears first if we arrange them alphabetically?,1,other,23,100
+89,False,meta_cot,,"Sort {word1} and {word2} in alphabetical order, and tell me which one comes first?",1,other,22,100
+90,False,meta_cot,,Which word comes first alphabetically: {word1} or {word2}?,1,SEP_VARS,16,100
+91,False,meta_cot,,Determine which word comes earlier in an alphabetical order: {word1} or {word2}.,1,SEP_VARS,20,100
+92,False,meta_cot,,"If {word1} and {word2} were to be ordered alphabetically, which one comes first?",1,other,22,100
+93,False,meta_cot,,Which one precedes the other in alphabetical order: {word1} or {word2}?,1,SEP_VARS,19,100
+94,False,meta_cot,,"Out of {word1} and {word2}, which comes first when arranged in alphabetical order?",1,other,20,100
+95,False,meta_cot,,"Which of the words ""{word1}"" and ""{word2}"" occurs first in alphabetical order?",1,other,19,100
+96,False,meta_cot,,"Which of ""{word1}"" and ""{word2}"" precedes the other when the words are arranged alphabetically?",1,other,23,100
+97,False,meta_cot,,"If we arrange ""{word1}"" and ""{word2}"" in alphabetical order, which one would come first?",1,other,22,100
+98,False,meta_cot,,"Between ""{word1}"" and ""{word2}"", which word is the first one when the words are sorted alphabetically?",1,other,24,100
+99,False,meta_cot,,"Consider ""{word1}"" and ""{word2}"": which one comes first alphabetically?",1,other,18,100
+100,False,meta_cot,,"Given the words ""{word1}"" and ""{word2}"", in what sequence do they appear when ordered in alphabetical order? Which word precedes the other?",1,other,31,100
+101,False,meta_cot,rich_vocab,"Please provide the word that comes first alphabetically between ""{word1}"" and ""{word2}"".",1,other,19,100
+102,False,meta_cot,rich_vocab,"Which of the words ""{word1}"" and ""{word2}"" is alphabetically first?",1,other,18,100
+103,False,meta_cot,rich_vocab,"In the alphabetical order, which word precedes the other between ""{word1}"" and ""{word2}""?",1,other,22,100
+104,False,meta_cot,rich_vocab,"Please indicate the word that comes first in alphabetical order between ""{word1}"" and ""{word2}"".",1,other,20,100
+105,False,meta_cot,rich_vocab,"Which of the words ""{word1}"" and ""{word2}"" comes first in alphabetical order?",1,other,19,100
+106,False,meta_cot,rich_vocab,"Please indicate which of the words ""{word1}"" and ""{word2}"" appears first in alphabetical order.",1,other,21,100
+107,False,meta_cot,rich_vocab,"Which word comes first in alphabetical order, ""{word1}"" or ""{word2}""?",1,other,18,100
+108,False,meta_cot,rich_vocab,"Of the words ""{word1}"" and ""{word2}"", which one comes first alphabetically?",1,other,19,100
+109,False,meta_cot,rich_vocab,"Please specify which of the words ""{word1}"" and ""{word2}"" appears first in alphabetical order.",1,other,21,100
+110,False,meta_cot,rich_vocab,"Which of the words ""{word1}"" and ""{word2}"" comes first alphabetically?",1,other,18,100
+111,False,meta_cot,rich_vocab,"Please determine which of the words ""{word1}"" and ""{word2}"" comes first in alphabetical order using your rich and sophisticated vocabulary.",0,other,27,100
+112,False,meta_cot,rich_vocab,"Which word comes first alphabetically, ""{word1}"" or ""{word2}""? Please provide your answer using your extensive lexicon.",1,other,27,100
+113,False,meta_cot,rich_vocab,"Of the words ""{word1}"" and ""{word2}"", which word comes first in alphabetical order? Please use your refined vocabulary to provide your answer.",0,other,30,100
+114,False,meta_cot,rich_vocab,"Please indicate which of the two words, {word1} and {word2}, comes first in alphabetical order.",1,other,23,100
+115,False,meta_cot,rich_vocab,"Which of the words, {word1} and {word2}, is the first one when listed alphabetically?",1,other,23,100
+116,False,meta_cot,rich_vocab,"Out of {word1} and {word2}, which word would appear first in alphabetical order?",1,other,20,100
+117,False,meta_cot,rich_vocab,"Please determine which of the two words, {word1} and {word2}, is alphabetically first.",1,other,22,100
+118,False,meta_cot,rich_vocab,"Which of the two words, {word1} and {word2}, comes first when arranged in alphabetical order?",1,other,23,100
+119,False,meta_cot,rich_vocab,"In alphabetical order, which word between {word1} and {word2} appears first?",1,other,19,100
+120,False,meta_cot,rich_vocab,"Which of the words, {word1} and {word2}, would come first if listed alphabetically?",1,other,22,100
+121,False,meta_cot,common_vocab,"Which word comes first in alphabetical order, ""{word1}"" or ""{word2}""?",1,other,18,100
+122,False,meta_cot,common_vocab,"Which word is alphabetically first, ""{word1}"" or ""{word2}""?",1,other,17,100
+123,False,meta_cot,common_vocab,"Which of the words ""{word1}"" and ""{word2}"" comes first in alphabetical order?",1,other,19,100
+124,False,meta_cot,common_vocab,"Which word would appear first in a dictionary, ""{word1}"" or ""{word2}""?",1,other,19,100
+125,False,meta_cot,common_vocab,"Which word precedes the other in alphabetical order, ""{word1}"" or ""{word2}""?",1,other,20,100
+126,False,meta_cot,common_vocab,"Which word comes first alphabetically, ""{word1}"" or ""{word2}""?",1,other,17,100
+127,False,meta_cot,common_vocab,"Which word comes first alphabetically between ""{word1}"" and ""{word2}""?",1,other,17,100
+128,False,meta_cot,common_vocab,"Which word comes first in alphabetical order, {word1} or {word2}?",1,other,17,100
+129,False,meta_cot,common_vocab,"Which word comes before the other, {word1} or {word2}, in alphabetical order?",1,other,20,100
+130,False,meta_cot,common_vocab,"Which of the words ""{word1}"" and ""{word2}"" is alphabetically first?",1,other,18,100
+131,False,meta_cot,common_vocab,"Determine which word comes first in alphabetical order between ""{word1}"" and ""{word2}""",1,other,19,100
+132,False,meta_cot,common_vocab,Which one of {word1} and {word2} comes first if we sort them alphabetically?,1,other,21,100
+133,False,meta_cot,common_vocab,"If we were to arrange {word1} and {word2} in alphabetical order, which one would come first?",1,other,24,100
+134,False,meta_cot,common_vocab,"To put {word1} and {word2} in order, which one comes first alphabetically?",1,other,21,100
+135,False,meta_cot,formal,"Please determine which of the following words comes first alphabetically: ""{word1}"" or ""{word2}"".",1,other,21,100
+136,False,meta_cot,formal,"Which of the words ""{word1}"" and ""{word2}"" is first alphabetically?",1,other,18,100
+137,False,meta_cot,formal,"Please compare the words ""{word1}"" and ""{word2}"" and tell me which one comes first alphabetically.",1,other,23,100
+138,False,meta_cot,formal,"Which word comes first alphabetically, ""{word1}"" or ""{word2}""?",1,other,17,100
+139,False,meta_cot,formal,"Determine the alphabetical order of ""{word1}"" and ""{word2}"" and tell me which one comes first.",1,other,23,100
+140,False,meta_cot,formal,"Please determine which of the words, {word1} and {word2}, comes first in alphabetical order.",1,other,22,100
+141,False,meta_cot,formal,"Which of the words, {word1} and {word2}, is alphabetically first?",1,other,19,100
+142,False,meta_cot,formal,Identify the word that comes first alphabetically between {word1} and {word2}.,1,other,19,100
+143,False,meta_cot,formal,"In alphabetical order, which word precedes the other, {word1} or {word2}?",1,other,20,100
+144,False,meta_cot,formal,"Please compare the two words, {word1} and {word2}, and determine which one comes first alphabetically.",1,other,24,100
+145,False,meta_cot,formal,"Which of the words, {word1} and {word2}, is listed first in alphabetical order?",1,other,21,100
+146,False,meta_cot,formal,"Of the two words, {word1} and {word2}, which one comes first alphabetically?",1,other,21,100
+147,False,meta_cot,formal,"Please determine the alphabetical order of the words {word1} and {word2}, and identify which one comes first.",1,other,24,100
+148,False,meta_cot,formal,"Please determine which of the words ""{word1}"" and ""{word2}"" comes first in alphabetical order.",1,other,21,100
+149,False,meta_cot,formal,"Out of the words ""{word1}"" and ""{word2}"", which one comes first in alphabetical order?",1,other,21,100
+150,False,meta_cot,formal,"According to alphabetical order, which word comes first between '{word1}' and '{word2}'?",1,other,20,100
+151,False,meta_cot,formal,Which of the words '{word1}' and '{word2}' comes first in alphabetical order?,1,other,19,100
+152,False,meta_cot,formal,Determine the alphabetical order of '{word1}' and '{word2}' and identify which comes first.,1,other,21,100
+153,False,meta_cot,informal,"Which word comes first alphabetically, {word1} or {word2}?",1,other,16,100
+154,False,meta_cot,informal,Which of the words {word1} and {word2} is alphabetically first?,1,other,18,100
+155,False,meta_cot,informal,"Which word is first in alphabetical order, {word1} or {word2}?",1,other,17,100
+156,False,meta_cot,informal,"Between {word1} and {word2}, which word comes first alphabetically?",1,other,17,100
+157,False,meta_cot,informal,"Which word precedes the other in alphabetical order, {word1} or {word2}?",1,other,19,100
+158,False,meta_cot,informal,"Which word is listed first in the dictionary, {word1} or {word2}?",1,other,18,100
+159,False,meta_cot,informal,"Which word would you find first if you looked it up in the dictionary, {word1} or {word2}?",1,other,24,100
+160,False,meta_cot,informal,"Which word comes earlier in alphabetical order, {word1} or {word2}?",1,other,17,100
+161,False,meta_cot,informal,"Which word is the first one alphabetically, {word1} or {word2}?",1,other,18,100
+162,False,meta_cot,informal,"Which word is alphabetically superior, {word1} or {word2}?",1,other,16,100
+163,False,meta_cot,informal,"Which word comes first in alphabetical order, {word1} or {word2}?",1,other,17,100
+164,False,meta_cot,informal,Which of the words {word1} and {word2} comes first alphabetically?,1,other,18,100
+165,False,meta_cot,informal,"Which word is alphabetically first, {word1} or {word2}?",1,other,16,100
+166,False,meta_cot,informal,"Which word comes first in the alphabet, {word1} or {word2}?",1,other,17,100
+167,False,meta_cot,informal,"Which of the given words, {word1} and {word2}, comes first in alphabetical order?",1,other,21,100
+168,False,meta_cot,informal,"Which word is listed first in alphabetical order, {word1} or {word2}?",1,other,18,100
+169,False,meta_cot,informal,"Which word would appear first in a dictionary, {word1} or {word2}?",1,other,18,100
+170,False,meta_cot,informal,"Which word is the earliest in alphabetical order, {word1} or {word2}?",1,other,18,100
+171,False,meta_cot,informal,"Which word is the first in alphabetical order, {word1} or {word2}?",1,other,18,100
+172,False,meta_desc,,"
+Please determine which of the following two words comes first in alphabetical order:
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,33,100
+173,False,meta_desc,,"
+Please determine which of the following two words comes first in alphabetical order: {word1} or {word2}.
+The word that comes first in alphabetical order is:",1,SEP_VARS,34,100
+174,False,meta_desc,,"
+Please determine which word comes first in alphabetical order between the two given words.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,34,100
+175,False,meta_desc,,"
+Given two words, determine which word comes first in alphabetical order.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,32,100
+176,False,meta_desc,,"
+Please determine which of the following two words comes first alphabetically.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,32,100
+177,False,meta_desc,,"
+Please determine which of the following two words comes first alphabetically:
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,32,100
+178,False,meta_desc,,"
+Please determine which word comes first alphabetically out of the two given words.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,34,100
+179,False,meta_desc,,"
+Given two words, determine which word comes first alphabetically.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,31,100
+180,False,meta_desc,,"
+Please determine which of the following two words comes first alphabetically:
+Word 1: {word1}
+Word 2: {word2}
+The word that comes first alphabetically is:",1,SEP_VARS,39,100
+181,False,meta_desc,,"
+Please determine which word comes first in the alphabet between two given words.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,33,100
+182,False,meta_desc,,"
+Please determine which of the two given words comes earlier in alphabetical order.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,33,100
+183,False,meta_desc,,"
+Determine which of two given words comes earlier in alphabetical order.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,32,100
+184,False,meta_desc,,"
+Please determine the alphabetical order of two given words.
+Word 1: {word1}
+Word 2: {word2}
+The alphabetical order of the given words is:",0,SEP_VARS,36,100
+185,False,meta_desc,,"
+Please determine the alphabetical order of two given words.
+Word 1: {word1}
+Word 2: {word2}
+The alphabetical order is:",0,SEP_VARS,32,100
+186,False,meta_desc,,"
+Determine the alphabetical order of two given words and identify which one comes first. Please provide the two words separated by a comma.
+Words: {word1}, {word2}
+Output:",0,SEP_VARS,39,100
+187,False,meta_desc,,"
+Given two words, determine their alphabetical order and identify which one comes first.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,34,100
+188,False,meta_desc,,"
+Given two words, determine which one comes first alphabetically by comparing the first letter and proceeding through the word until a difference is found, or one word is completely alphabetically before the other.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,57,100
+189,False,meta_desc,,"
+Given two words, determine which word comes first when ordering them alphabetically. To do this, compare the first letter of each word and proceed through the word until a difference is found, or one word is completely alphabetically before the other. Return the word that comes first in alphabetical order.
+Word 1: {word1}
+Word 2: {word2}
+Output word:",1,SEP_VARS,78,100
+190,False,meta_desc,,"
+Given two words, determine which one comes first alphabetically.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,31,100
+191,False,meta_desc,,"
+Please determine which of the two given words comes first in alphabetical order.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,33,100
+192,False,meta_desc,,"
+Given two words, determine which one comes first when sorted alphabetically.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,33,100
+193,False,meta_desc,,"
+Given two words, determine which one comes first in alphabetical order.
+Word 1: {word1}
+Word 2: {word2}
+Output word:",1,SEP_VARS,33,100
+194,False,meta_desc,,"
+Please write a program that takes two words as input and determines which one comes first in alphabetical order.
+Word 1: {word1}
+Word 2: {word2}
+Output:",0,SEP_VARS,39,100
+195,False,meta_desc,,"
+Please determine which of the two given words comes first alphabetically.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,32,100
+196,False,meta_desc,,"
+Given two words, determine which comes first alphabetically.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,30,100
+197,False,meta_desc,,"
+Please compare the two words alphabetically and determine which one comes first.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,33,100
+198,False,meta_desc,,"
+Compare the alphabetical order of two words and determine which one comes first. The two words are represented by placeholders {word1} and {word2}.
+Which comes first alphabetically, {word1} or {word2}?
+Output:",1,other,49,100
+199,False,meta_desc,,"
+Please determine which of the two provided words is the first one alphabetically. The two words to be compared are denoted by placeholders {word1} and {word2}.
+Word 1: {word1}
+Word 2: {word2}
+Output: The first word alphabetically is",1,SEP_VARS,60,100
+200,False,meta_desc,,"
+Compare two words and determine which one precedes the other in alphabetical order.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,34,100
+201,False,meta_desc,,"
+Please write a program that takes two words as input and determines which word comes first in alphabetical order.
+Word 1: {word1}
+Word 2: {word2}
+Output:",0,SEP_VARS,39,100
+202,False,meta_desc,,"
+Which comes first, {word1} or {word2}?
+Output:",0,other,17,100
+203,False,meta_desc,,"
+Write a program that determines which of two given words comes first in alphabetical order. Your program should take two words as input and output the word that comes first in alphabetical order.
+Word 1: {word1}
+Word 2: {word2}
+Output word:",1,SEP_VARS,55,100
+204,False,meta_desc,,"
+Write a sentence that includes two words and ask GPT-3 to determine which word comes first in alphabetical order.
+Words: {word1} and {word2}
+Output:",0,SEP_VARS,37,100
+205,False,meta_desc,,"
+Given two words, determine which one comes first alphabetically.
+Word 1: {word1}
+Word 2: {word2}
+Output word:",1,SEP_VARS,32,100
+206,False,meta_desc,,"
+Which comes first alphabetically, {word1} or {word2}?
+Output:",1,other,19,100
+207,False,meta_desc,,"
+Please provide the word that comes first alphabetically out of two given words.
+Word 1: {word1}
+Word 2: {word2}
+Output word:",1,SEP_VARS,35,100
+208,False,meta_desc,,"
+Write a program that compares two words and determines which one comes first in the alphabet.
+Word 1: {word1}
+Word 2: {word2}
+Output:",0,SEP_VARS,36,100
+209,False,meta_desc,,"
+Write a program that determines which of two given words comes first in the alphabet. Your program should take two words as input and output the word that comes first in alphabetical order.
+Word 1: {word1}
+Word 2: {word2}
+Output word:",1,SEP_VARS,55,100
+210,False,meta_desc,,"
+Given two words, determine which one comes earlier in alphabetical order.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,32,100
+211,False,meta_desc,,"
+Write a program that determines the alphabetical order of two given words. Your program should output the words in alphabetical order.
+Word 1: {word1}
+Word 2: {word2}
+Output: The words in alphabetical order are:",0,SEP_VARS,49,100
+212,False,meta_desc,,"
+Write a sentence that compares two words and indicates which one comes first in the alphabet.
+Word 1: {word1}
+Word 2: {word2}
+Sentence:",0,SEP_VARS,36,100
+213,False,meta_desc,,"
+Given two words, determine which one comes first in alphabetical order.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,32,100
+214,False,meta_desc,,"
+Write a sentence that compares two words and determines which one comes first in alphabetical order.
+Compare the words {word1} and {word2}.
+Sentence:",0,other,32,100
+215,False,meta_desc,,"
+Write a program that determines which of two given words comes first when ordering them alphabetically. Your program should compare the first letter and proceed through the word until a difference is found, or one word is completely alphabetically before the other. 
+Word 1: {word1}
+Word 2: {word2}
+Output:",0,SEP_VARS,67,100
+216,False,meta_desc,,"
+Write a program that compares two words and determines which one comes first when ordering them alphabetically.
+word1: {word1}
+word2: {word2}
+Output:",0,SEP_VARS,36,100
+217,False,meta_desc,,"
+Write a program that compares two words and outputs which one comes first alphabetically.
+Word 1: {word1}
+Word 2: {word2}
+Output:",0,SEP_VARS,35,100
+218,False,meta_desc,,"
+Write a program that determines which of two given words comes first alphabetically. Your program should take two words as input and output the word that comes first.
+Word 1: {word1}
+Word 2: {word2}
+Output:",0,SEP_VARS,50,100
+219,False,meta_desc,,"
+Write a program that compares two words and returns the one that comes first when sorted alphabetically. Your program should take two words as input and output the word that comes first.
+Word 1: {word1}
+Word 2: {word2}
+Output word:",1,SEP_VARS,55,100
+220,False,meta_desc,,"
+Write a program that compares two words and outputs which one comes first when sorted alphabetically.
+word1: {word1}
+word2: {word2}
+Output:",0,SEP_VARS,35,100
+221,False,meta_desc,,"
+Write a program that compares two words and outputs which one comes first in alphabetical order. Your program should take two words as input and output the word that comes first.
+Word 1: {word1}
+Word 2: {word2}
+Output word:",1,SEP_VARS,53,100
+222,False,meta_desc,,"
+Write a program that compares two words and determines which one comes first in alphabetical order. Your program should return the word that comes first.
+Word 1: {word1}
+Word 2: {word2}
+Output word:",1,SEP_VARS,47,100
+223,False,meta_desc,,"
+Write a program that takes two words as input and outputs which word comes first in alphabetical order.
+Word 1: {word1}
+Word 2: {word2}
+Output:",0,SEP_VARS,38,100
+224,False,meta_desc,,"
+Write a program that compares two words and outputs the one that comes first in alphabetical order.
+Word 1: {word1}
+Word 2: {word2}
+Output word:",1,SEP_VARS,38,100
+225,False,meta_desc,,"
+Write a program that determines which of two given words comes first alphabetically. Your program should take two words as input and output the word that comes first in alphabetical order.
+Word 1: {word1}
+Word 2: {word2}
+Output:",0,SEP_VARS,53,100
+226,False,meta_desc,,"
+Write a program that determines which of two given words comes first alphabetically. Your program should take two strings as input and output the string that comes first alphabetically.
+Word 1: {word1}
+Word 2: {word2}
+Output word:",1,SEP_VARS,53,100
+227,False,meta_desc,,"
+Compare two words and determine which one comes first alphabetically.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,31,100
+228,False,meta_desc,,"
+Compare two words alphabetically and determine which one comes first.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,31,100
+229,False,meta_desc,,"
+Write a program that determines which of the two provided words comes first alphabetically. You can assume that both words are in lowercase and contain only alphabetical characters.
+Word 1: {word1}
+Word 2: {word2}
+Output:",0,SEP_VARS,50,100
+230,False,meta_desc,,"
+Write a program that compares two words and outputs which one comes first alphabetically. The words to be compared are denoted by placeholders {word1} and {word2}.
+word1: {word1}
+word2: {word2}
+Output:",0,SEP_VARS,52,100
+231,False,meta_desc,,"
+Compare two words and determine which one comes first in alphabetical order.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,32,100
+232,False,meta_desc,,"
+Write a program that compares two words and determines which one comes first in alphabetical order.
+Word 1: {word1}
+Word 2: {word2}
+Output:",0,SEP_VARS,36,100
+233,False,meta_desc,,"
+Write a program that takes two words as input and outputs which word comes first in alphabetical order.
+Word1: {word1}
+Word2: {word2}
+Output:",0,SEP_VARS,36,100
+234,False,meta_desc,,"
+Write a program that compares two words and outputs which one comes first in alphabetical order.
+Word 1: {word1}
+Word 2: {word2}
+Output: The word that comes first in alphabetical order is 
+
+",1,SEP_VARS,46,100

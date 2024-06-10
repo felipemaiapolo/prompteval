@@ -1,0 +1,609 @@
+prompt idx,default prompt,method,language style,prompt template,correct,prompt format,prompt length,samples
+1,True,default,,"Q: Which word sounds like the word ""{query}"", ""{word1}"" or ""{word2}""?
+A:",1,Q&A,23,100
+2,True,default,,"Q: Of the two words ""{word1}"" and ""{word2}"", which one sounds more like ""{query}""?
+A:",1,Q&A,26,100
+3,True,default,,"Q: Which is a homophone of the word ""{query}"", ""{word1}"" or ""{word2}""?
+A:",1,Q&A,25,100
+4,False,rephrase,,"Can you identify which word, ""{word1}"" or ""{word2}"", sounds similar to ""{query}""?",1,other,22,100
+5,False,rephrase,,"Which of these two words, ""{word1}"" or ""{word2}"", sounds similar to the word ""{query}""?",1,other,24,100
+6,False,rephrase,,"Which of the two words, ""{word1}"" or ""{word2}"", sounds similar to ""{query}""?",1,other,22,100
+7,False,rephrase,,"Can you tell which word, ""{word1}"" or ""{word2}"", sounds similar to ""{query}""?",1,other,22,100
+8,False,rephrase,,"Can you identify which word, ""{word1}"" or ""{word2}"", has a similar sound to ""{query}""?",1,other,24,100
+9,False,rephrase,,"Can you identify which word, between ""{word1}"" and ""{word2}"", sounds similar to ""{query}""?",1,other,23,100
+10,False,rephrase,,"""Out of the two words, ""{word1}"" and ""{word2}"", which one sounds similar to ""{query}""?",1,other,25,100
+11,False,rephrase,,"Between the words ""{word1}"" and ""{word2}"", which one sounds similar to the word ""{query}""? ",1,other,24,100
+12,False,rephrase,,"Which word, ""{word1}"" or ""{word2}"", has a closer phonetic resemblance to ""{query}""?",1,other,23,100
+13,False,rephrase,,"Which of the words ""{word1}"" and ""{word2}"" has a closer phonetic resemblance to ""{query}""?",1,other,24,100
+14,False,rephrase,,"Which of the words ""{word1}"" and ""{word2}"" has a closer sound to ""{query}""?",1,other,22,100
+15,False,rephrase,,"Which of the words ""{word1}"" and ""{word2}"" has a closer phonetic resemblance to the term ""{query}""?",1,other,26,100
+16,False,rephrase,,"Which of the two words, ""{word1}"" or ""{word2}"", has a closer phonetic resemblance to ""{query}""?",1,other,26,100
+17,False,rephrase,,"Which of the two words, ""{word1}"" or ""{word2}"", has a closer sound to ""{query}""?",1,other,24,100
+18,False,rephrase,,"Which of the words ""{word1}"" and ""{word2}"" has a sound that is more similar to ""{query}""?",1,other,25,100
+19,False,rephrase,,"Which word, ""{word1}"" or ""{word2}"", has a closer sound to ""{query}""?",1,other,21,100
+20,False,rephrase,,"Can you identify the homophone of ""{query}"" - is it ""{word1}"" or ""{word2}""?",1,other,23,100
+21,False,rephrase,,"Can you identify the homophone of ""{query}"" between ""{word1}"" and ""{word2}""?",1,other,21,100
+22,False,rephrase,,"What is the homophone of the word ""{query}"" - ""{word1}"" or ""{word2}""?",1,other,22,100
+23,False,rephrase,,"""Identify the homophone of the term ""{query}"" among ""{word1}"" and ""{word2}"".",1,other,22,100
+24,False,rephrase,,"Can you identify the homophone of the term ""{query}"" - is it ""{word1}"" or ""{word2}""?",1,other,25,100
+25,False,rephrase,,"Can you identify the homophone of ""{query}"" - ""{word1}"" or ""{word2}""?",1,other,21,100
+26,False,rephrase,,"Can you identify which word, ""{query}"", is a homophone, ""{word1}"" or ""{word2}""?",0,other,24,100
+27,False,rephrase,,"Which word is a homophone of ""{query}"" - ""{word1}"" or ""{word2}""?",1,other,21,100
+28,False,rephrase,,"What is the word that sounds similar to ""{query}"" - ""{word1}"" or ""{word2}""?",1,other,22,100
+29,False,rephrase,,"Can you identify which word, between ""{word1}"" and ""{word2}"", sounds similar to the word ""{query}""?",1,other,25,100
+30,False,rephrase,,"What is the word that sounds similar to '{query}', is it '{word1}' or '{word2}'?",1,other,23,100
+31,False,rephrase,,What is the word that sounds similar to '{query}' - '{word1}' or '{word2}'?,1,other,22,100
+32,False,rephrase,,What is the word that sounds similar to '{query}'? Is it '{word1}' or '{word2}'?,1,other,24,100
+33,False,rephrase,,"Can you determine which word, {word1} or {word2}, sounds similar to the word ""{query}""?",1,other,24,100
+34,False,rephrase,,"Choose the word that sounds similar to ""{query}"" - ""{word1}"" or ""{word2}""?",1,other,21,100
+35,False,rephrase,,Complete the sentence: '{query}' and choose the word that fits best: '{word1}' or '{word2}'?,0,other,25,100
+36,False,rephrase,,"Which of the following words, ""{word1}"" or ""{word2}"", has a closer sound to the query ""{query}""?",1,other,26,100
+37,False,rephrase,,"""Which of the two terms, ""{word1}"" or ""{word2}"", do you think best matches the description of ""{query}""?",0,other,28,100
+38,False,rephrase,,"Which of the following words, ""{word1}"" or ""{word2}"", has a closer phonetic resemblance to the term ""{query}""?",1,other,28,100
+39,False,rephrase,,"Which of the following words, ""{word1}"" or ""{word2}"", has a sound that is more similar to ""{query}""?",1,other,27,100
+40,False,rephrase,,"Which of the following two words, ""{word1}"" or ""{word2}"", sounds more similar to the term ""{query}""?",1,other,26,100
+41,False,rephrase,,"Which of the following words, ""{word1}"" or ""{word2}"", sounds more similar to the term ""{query}""?",1,other,25,100
+42,False,rephrase,,"Which word, '{word1}' or '{word2}', do you think best matches the sound of the word '{query}'?",1,other,26,100
+43,False,rephrase,,"Which word, '{word1}' or '{word2}', sounds more similar to the term '{query}'?",1,other,22,100
+44,False,rephrase,,What are the two homophones of the word '{query}'?,0,other,14,100
+45,False,rephrase,,What is the homophone for the word '{query}' - '{word1}' or '{word2}'?,1,other,22,100
+46,False,rephrase,,"What are the homophones of the word ""{query}""?",0,other,13,100
+47,False,rephrase,,Can you identify the homophone of '{query}' from the options '{word1}' and '{word2}'?,1,other,23,100
+48,False,rephrase,,"What is the homophone for ""{query}"" - ""{word1}"" or ""{word2}""?",1,other,20,100
+49,False,rephrase,,"Please provide the homophone for the word ""{query}"" - is it ""{word1}"" or ""{word2}""?",1,other,24,100
+50,False,rephrase,,Can you provide me with the homophone for the word '{query}' - is it '{word1}' or '{word2}'?,1,other,27,100
+51,False,rephrase,,"What is a homophone for the term ""{query}"" - ""{word1}"" or ""{word2}""?",1,other,22,100
+52,False,meta_cot,,"Which of these two words, {word1} and {word2}, sounds more like {query}?",1,other,21,100
+53,False,meta_cot,,"Out of {word1} and {word2}, which one sounds like {query}?",1,other,18,100
+54,False,meta_cot,,"Which word, {word1} or {word2}, sounds like {query}?",1,other,17,100
+55,False,meta_cot,,Do {word1} and {word2} sound the same as {query}?,0,other,17,100
+56,False,meta_cot,,"Which word, {word1} or {word2}, is pronounced similarly to {query}?",1,other,19,100
+57,False,meta_cot,,"Can you tell me which word, {word1} or {word2}, has the same pronunciation as {query}?",1,other,24,100
+58,False,meta_cot,,"Which word, {word1} or {word2}, is a homophone of {query}?",1,other,20,100
+59,False,meta_cot,,"Which of the two words, {word1} and {word2}, sounds more like {query}?",1,other,21,100
+60,False,meta_cot,,Do you think {word1} or {word2} sounds more like {query}?,0,other,18,100
+61,False,meta_cot,,"Out of {word1} and {word2}, which one do you think sounds more like {query}?",1,other,22,100
+62,False,meta_cot,,"Can you tell me which word, {word1} or {word2}, sounds more like {query}?",1,other,22,100
+63,False,meta_cot,,"Which word, {word1} or {word2}, do you think sounds more like {query}?",1,other,21,100
+64,False,meta_cot,,"Please tell me, does {word1} or {word2} sound more like {query}?",1,other,20,100
+65,False,meta_cot,,"I need to know which word, {word1} or {word2}, sounds more like {query}.",1,other,22,100
+66,False,meta_cot,,Which one of {word1} and {word2} sounds more like {query}?,1,other,18,100
+67,False,meta_cot,,"Which of the two words, {word1} and {word2}, sounds more like the word ""{query}""?",1,other,24,100
+68,False,meta_cot,,"Out of the two words, {word1} and {word2}, which one sounds like ""{query}""?",1,other,23,100
+69,False,meta_cot,,"Do ""{word1}"" and ""{word2}"" sound the same as the word ""{query}""?",0,other,20,100
+70,False,meta_cot,,"Which word, ""{word1}"" or ""{word2}"", sounds like ""{query}""?",1,other,18,100
+71,False,meta_cot,,"If you say ""{word1}"" and ""{word2}"" out loud, which one sounds more like ""{query}""?",1,other,24,100
+72,False,meta_cot,,"Which word, ""{word1}"" or ""{word2}"", is a homophone of ""{query}""?",1,other,21,100
+73,False,meta_cot,,"Which word, ""{word1}"" or ""{word2}"", has the same pronunciation as ""{query}""?",1,other,21,100
+74,False,meta_cot,,"Are ""{word1}"" and ""{word2}"" pronounced the same as ""{query}""?",0,other,18,100
+75,False,meta_cot,,"Which word, ""{word1}"" or ""{word2}"", is pronounced like ""{query}""?",1,other,19,100
+76,False,meta_cot,,"If you were to say ""{word1}"" and ""{word2}"" aloud, which one would sound more like ""{query}""?",1,other,26,100
+77,False,meta_cot,,"Which word sounds more like {query}, {word1} or {word2}?",1,other,17,100
+78,False,meta_cot,,"Can you tell me which word, {word1} or {word2}, sounds like {query}?",1,other,21,100
+79,False,meta_cot,,Do you think {word1} or {word2} is a better match for the sound of {query}?,1,other,23,100
+80,False,meta_cot,,Identify the homophone of {query}: {word1} or {word2}?,1,SEP_VARS,18,100
+81,False,meta_cot,,Which of the words '{word1}' and '{word2}' sounds more like '{query}'?,1,other,20,100
+82,False,meta_cot,,"Out of the two words '{word1}' and '{word2}', which one do you think sounds more like '{query}'?",1,other,26,100
+83,False,meta_cot,,"Can you tell me which word, '{word1}' or '{word2}', sounds more like '{query}'?",1,other,23,100
+84,False,meta_cot,,"Among '{word1}' and '{word2}', which one is the homophone of '{query}'?",1,other,21,100
+85,False,meta_cot,,"Which word, '{word1}' or '{word2}', has the same pronunciation as '{query}'?",1,other,21,100
+86,False,meta_cot,,"Which of these words, {word1} or {word2}, sounds more like {query}?",1,other,20,100
+87,False,meta_cot,,"Out of the two options, {word1} and {word2}, which one do you think sounds more like {query}?",1,other,26,100
+88,False,meta_cot,,"When you hear the word {query}, which word comes to mind, {word1} or {word2}?",0,other,23,100
+89,False,meta_cot,,"If you had to choose between {word1} and {word2}, which one do you think sounds more like {query}?",1,other,26,100
+90,False,meta_cot,,"Which of the words, {word1} and {word2}, do you think is a homophone of {query}?",1,other,25,100
+91,False,meta_cot,,"Which of the two words, {word1} or {word2}, sounds more like the word {query}?",1,other,23,100
+92,False,meta_cot,,"Which word is a homophone of {query}, {word1} or {word2}?",1,other,19,100
+93,False,meta_cot,,Do {word1} and {word2} sound similar to {query}?,0,other,16,100
+94,False,meta_cot,,"Out of {word1} and {word2}, which one is pronounced similarly to {query}?",1,other,20,100
+95,False,meta_cot,,"Can you tell which word, {word1} or {word2}, sounds like {query}?",1,other,20,100
+96,False,meta_cot,,"If you had to choose between {word1} and {word2}, which one sounds more like {query}?",1,other,23,100
+97,False,meta_cot,,I'm trying to figure out which word is a homophone of {query}. Would you say it's {word1} or {word2}?,1,other,30,100
+98,False,meta_cot,,"Between {word1} and {word2}, which one do you think sounds like {query}?",1,other,20,100
+99,False,meta_cot,,"Which word, {word1} or {word2}, sounds like {query} to you?",1,other,20,100
+100,False,meta_cot,,Is {word1} or {word2} more likely to be a homophone of {query}?,1,other,21,100
+101,False,meta_cot,,"Let me ask you, does {word1} or {word2} sound more like {query} to your ears?",0,other,25,100
+102,False,meta_cot,,"I'm trying to think of which word, {word1} or {word2}, sounds like {query} when spoken aloud. Can you help me out?",1,other,33,100
+103,False,meta_cot,,"Which of the two options, {word1} or {word2}, do you think is a homophone of {query}?",1,other,26,100
+104,False,meta_cot,,"If you had to guess, which word, {word1} or {word2}, do you think sounds more like {query}?",1,other,27,100
+105,False,meta_cot,,"Which of the following words, {word1} or {word2}, sounds more similar in pronunciation to the word ""{query}""?",1,other,27,100
+106,False,meta_cot,,"In reference to the word ""{query}"", which of the words ""{word1}"" and ""{word2}"" sounds more like it?",1,other,26,100
+107,False,meta_cot,,"Which word, ""{word1}"" or ""{word2}"", sounds like the word ""{query}""?",1,other,20,100
+108,False,meta_cot,,"Of the two words ""{word1}"" and ""{word2}"", which one is pronounced more similarly to the word ""{query}""?",1,other,26,100
+109,False,meta_cot,,"Which of the words ""{word1}"" and ""{word2}"" is a homophone of the word ""{query}""?",1,other,24,100
+110,False,meta_cot,,Which of the words {word1} and {word2} sounds more like {query}?,1,other,19,100
+111,False,meta_cot,,"Out of {word1} and {word2}, which word sounds more like {query}?",1,other,19,100
+112,False,meta_cot,rich_vocab,"Which of the two words, {word1} or {word2}, do you think sounds more like the word {query}?",1,other,26,100
+113,False,meta_cot,rich_vocab,"Can you tell me which word, {word1} or {word2}, sounds more like the word {query}?",1,other,24,100
+114,False,meta_cot,rich_vocab,"Out of the two words, {word1} and {word2}, which one do you think sounds more like {query}?",1,other,26,100
+115,False,meta_cot,rich_vocab,"Do you know which of the two words, {word1} or {word2}, sounds more like the word {query}?",1,other,26,100
+116,False,meta_cot,rich_vocab,"Which word, {word1} or {word2}, is a homophone of the word {query}?",1,other,22,100
+117,False,meta_cot,rich_vocab,"Which of these words, {word1} or {word2}, sounds more like {query}?",1,other,20,100
+118,False,meta_cot,rich_vocab,"Out of {word1} and {word2}, which one is a better homophone for {query}?",1,other,22,100
+119,False,meta_cot,rich_vocab,"Which word, {word1} or {word2}, has a more similar sound to {query}?",1,other,21,100
+120,False,meta_cot,rich_vocab,"If you had to choose between {word1} and {word2}, which one would you say sounds more like {query}?",1,other,26,100
+121,False,meta_cot,rich_vocab,"Which word, {word1} or {word2}, do you think is a closer match to the sound of {query}?",1,other,26,100
+122,False,meta_cot,rich_vocab,"Can you tell me which of these two words, {word1} and {word2}, is a better homophone for {query}?",1,other,28,100
+123,False,meta_cot,rich_vocab,"Which word, {word1} or {word2}, do you think is more likely to be confused with {query} due to their similar sounds?",1,other,31,100
+124,False,meta_cot,rich_vocab,"Between {word1} and {word2}, which one do you think is a better match to the sound of {query}?",1,other,26,100
+125,False,meta_cot,rich_vocab,"Which of these two words, {word1} and {word2}, do you think is a better homophone for {query}?",1,other,27,100
+126,False,meta_cot,rich_vocab,"Of the two words, {word1} and {word2}, which one do you think sounds more like {query}?",1,other,25,100
+127,False,meta_cot,rich_vocab,"Which of the two words, {word1} and {word2}, sounds more similar to the word {query}?",1,other,24,100
+128,False,meta_cot,rich_vocab,"Out of the two words, {word1} and {word2}, which one has a similar sound to the word {query}?",1,other,27,100
+129,False,meta_cot,rich_vocab,"Which word, {word1} or {word2}, has a homophonic relation with the word {query}?",1,other,24,100
+130,False,meta_cot,rich_vocab,Does the word {query} sound more like {word1} or {word2}?,1,other,18,100
+131,False,meta_cot,rich_vocab,"Of the two words, {word1} and {word2}, which one is a homophone of the word {query}?",1,other,26,100
+132,False,meta_cot,common_vocab,Which of the words {word1} and {word2} sounds more like {query}?,1,other,19,100
+133,False,meta_cot,common_vocab,"Out of {word1} and {word2}, which one sounds more like {query}?",1,other,19,100
+134,False,meta_cot,common_vocab,Is {word1} or {word2} a homophone of {query}?,0,other,17,100
+135,False,meta_cot,common_vocab,"Which word, {word1} or {word2}, sounds like {query}?",1,other,17,100
+136,False,meta_cot,common_vocab,"Can you tell me which word, {word1} or {word2}, sounds more like {query}?",1,other,22,100
+137,False,meta_cot,common_vocab,"If I say {query}, which word do you think sounds more similar, {word1} or {word2}?",1,other,24,100
+138,False,meta_cot,common_vocab,"I'm trying to figure out which word, {word1} or {word2}, sounds like {query}. Can you help me?",1,other,28,100
+139,False,meta_cot,common_vocab,Do you know if {word1} or {word2} is a homophone of {query}?,0,other,21,100
+140,False,meta_cot,common_vocab,"Which word, {word1} or {word2}, do you think sounds similar to {query}?",1,other,21,100
+141,False,meta_cot,common_vocab,"I'm trying to find out which word, {word1} or {word2}, is pronounced similarly to {query}. Can you assist me?",1,other,30,100
+142,False,meta_cot,common_vocab,"Which of the two words, {word1} and {word2}, sounds more like the word {query}?",1,other,23,100
+143,False,meta_cot,common_vocab,"Out of {word1} and {word2}, which one sounds like {query}?",1,other,18,100
+144,False,meta_cot,common_vocab,"Can you tell me which word, {word1} or {word2}, sounds like {query}?",1,other,21,100
+145,False,meta_cot,common_vocab,Do you think {word1} or {word2} sounds more like {query}?,0,other,18,100
+146,False,meta_cot,common_vocab,Identify the homophone of {query} from {word1} and {word2}.,1,other,19,100
+147,False,meta_cot,common_vocab,"Which of these two words, {word1} and {word2}, sounds more like the word {query}?",1,other,23,100
+148,False,meta_cot,common_vocab,Identify the homophone of {query} from the options {word1} and {word2}.,1,other,21,100
+149,False,meta_cot,common_vocab,"Out of {word1} and {word2}, which one sounds similar to {query}?",1,other,19,100
+150,False,meta_cot,common_vocab,Is {word1} or {word2} a better match for the sound of {query}?,1,other,20,100
+151,False,meta_cot,common_vocab,Do you think {word1} or {word2} is the homophone of {query}?,0,other,20,100
+152,False,meta_cot,formal,"Please identify which of the two words, {word1} and {word2}, sounds more like the word {query}?",1,other,25,100
+153,False,meta_cot,formal,"Which of the two words, {word1} and {word2}, do you think is a homophone of the word {query}?",1,other,28,100
+154,False,meta_cot,formal,"Can you tell me which word, {word1} or {word2}, sounds like the word {query}?",1,other,23,100
+155,False,meta_cot,formal,"Out of the two words, {word1} and {word2}, which one do you think is pronounced similarly to the word {query}?",1,other,29,100
+156,False,meta_cot,formal,"Given the word {query}, which of the two words, {word1} and {word2}, do you think has the same pronunciation?",1,other,29,100
+157,False,meta_cot,formal,"Please select the word, {word1} or {word2}, that is a homophone of the word {query}.",1,other,25,100
+158,False,meta_cot,formal,Please determine which of the words {word1} and {word2} sounds more like the word {query}.,1,other,23,100
+159,False,meta_cot,formal,Which of the two words {word1} and {word2} do you think sounds more like {query}?,1,other,23,100
+160,False,meta_cot,formal,"Can you tell me which word, {word1} or {word2}, sounds more like the word {query}?",1,other,24,100
+161,False,meta_cot,formal,"I need to know which word, {word1} or {word2}, is a homophone of {query}.",1,other,24,100
+162,False,meta_cot,formal,Please identify the homophone of the word {query} from the two options {word1} and {word2}.,1,other,24,100
+163,False,meta_cot,formal,"Please determine which of the two words, {word1} and {word2}, sounds more like the word {query}.",1,other,25,100
+164,False,meta_cot,formal,Which of the words {word1} and {word2} sounds more like the word {query}?,1,other,21,100
+165,False,meta_cot,formal,"Given the words {word1} and {word2}, which one sounds more like {query}?",1,other,20,100
+166,False,meta_cot,formal,Please compare the words {word1} and {word2} and determine which one sounds more like {query}.,1,other,23,100
+167,False,meta_cot,formal,"Which word, {word1} or {word2}, sounds more like {query}?",1,other,18,100
+168,False,meta_cot,formal,"Please identify the homophone of the word {query}. Which of the two words, {word1} or {word2}, sounds more like it?",1,other,31,100
+169,False,meta_cot,formal,"Which of the two words, {word1} and {word2}, is a homophone of the word {query}?",1,other,25,100
+170,False,meta_cot,formal,"Please identify which of the two words, {word1} and {word2}, sounds more like the word {query}.",1,other,25,100
+171,False,meta_cot,formal,"Which of the words, {word1} or {word2}, sounds like {query}?",1,other,19,100
+172,False,meta_cot,informal,"Which of these two words, {word1} or {word2}, sounds more like {query}?",1,other,21,100
+173,False,meta_cot,informal,Do you think {word1} or {word2} sounds more like {query}?,1,other,18,100
+174,False,meta_cot,informal,"Out of {word1} and {word2}, which one do you think sounds more like {query}?",1,other,22,100
+175,False,meta_cot,informal,"Can you tell me which word, {word1} or {word2}, sounds more like {query}?",1,other,22,100
+176,False,meta_cot,informal,"Which word, {word1} or {word2}, do you think sounds more like {query}?",1,other,21,100
+177,False,meta_cot,informal,"I'm trying to figure out which word, {word1} or {word2}, sounds more like {query}. What do you think?",1,other,29,100
+178,False,meta_cot,informal,"If you had to choose, which word, {word1} or {word2}, would you say sounds more like {query}?",1,other,27,100
+179,False,meta_cot,informal,"Which one of these words, {word1} or {word2}, sounds more like {query} to you?",1,other,24,100
+180,False,meta_cot,informal,"Between {word1} and {word2}, which word do you think sounds more like {query}?",1,other,21,100
+181,False,meta_cot,informal,"Which word do you think sounds more like {query}, {word1} or {word2}?",1,other,20,100
+182,False,meta_cot,informal,"Can you tell me which of the two words, {word1} or {word2}, sounds more like {query}?",1,other,25,100
+183,False,meta_cot,informal,"If you had to choose, which word, {word1} or {word2}, do you think sounds more like {query}?",1,other,27,100
+184,False,meta_cot,informal,Which one of {word1} and {word2} sounds more like {query} to you?,1,other,21,100
+185,False,meta_cot,informal,"Between {word1} and {word2}, which one do you think sounds more like {query}?",1,other,21,100
+186,False,meta_cot,informal,"Which one of the two words, {word1} and {word2}, do you think is a homophone of {query}?",1,other,27,100
+187,False,meta_cot,informal,"Which one of these words, {word1} or {word2}, sounds more like the word {query}?",1,other,23,100
+188,False,meta_cot,informal,Do you think that {word1} or {word2} sounds more like {query}?,0,other,19,100
+189,False,meta_cot,informal,"If you had to choose between {word1} and {word2}, which one would you say sounds more like {query}?",1,other,26,100
+190,False,meta_cot,informal,"Out of {word1} and {word2}, which word do you think sounds more like {query}?",1,other,22,100
+191,False,meta_cot,informal,"Which word, {word1} or {word2}, sounds like {query}?",1,other,17,100
+192,False,meta_desc,,"
+Given two words and a query word, determine which of the two words is a homophone of the query word or sounds more like the query word.
+Query word: {query}
+Word 1: {word1}
+Word 2: {word2}
+Homophone:",1,SEP_VARS,56,100
+193,False,meta_desc,,"
+Given two words, determine which one is a homophone or sounds more like a query word.
+Query word: {query}
+Word 1: {word1}
+Word 2: {word2}
+The word that sounds more like {query} is:",1,SEP_VARS,53,100
+194,False,meta_desc,,"
+Given two words and a query word, determine which of the two words is a homophone of the query word or sounds more similar to it.
+Word 1: {word1}
+Word 2: {word2}
+Query word: {query}
+Output:",1,SEP_VARS,54,100
+195,False,meta_desc,,"
+Given two words and a query word, identify which of the two words is a homophone or sounds more like the query word.
+Word 1: {word1}
+Word 2: {word2}
+Query word: {query}
+Output:",1,SEP_VARS,51,100
+196,False,meta_desc,,"
+Given two words, determine which one is a homophone or sounds more like a provided query word.
+Word 1: {word1}
+Word 2: {word2}
+Query word: {query}
+The word that sounds more like the query word {query} is:",1,SEP_VARS,57,100
+197,False,meta_desc,,"
+Given two words and a reference word, determine which of the two words sounds or is spelled like the reference word.
+Reference word: {query}
+Word 1: {word1}
+Word 2: {word2}
+Output word:",1,SEP_VARS,49,100
+198,False,meta_desc,,"
+Given two words, determine which one sounds or is spelled like a provided word.
+Word 1: {word1}
+Word 2: {word2}
+Provided word: {query}
+Output:",0,SEP_VARS,42,100
+199,False,meta_desc,,"
+Determine which of two words is a homophone or sounds more like a provided query word. Provide the query word and the two options to choose from.
+Query word: {query}
+Option 1: {word1}
+Option 2: {word2}
+Output word:",1,SEP_VARS,57,100
+200,False,meta_desc,,"
+Determine which of two given words is a homophone or sounds more like a provided query word. Please provide the query word and the two options to choose from.
+Query word: {query}
+Option 1: {word1}
+Option 2: {word2}
+Output:",1,SEP_VARS,58,100
+201,False,meta_desc,,"
+Given two words and a query word, determine which of the two words is a homophone of the query word. A homophone is a word that is pronounced the same as another word but has a different meaning, and may or may not be spelled differently.
+Query word: {query}
+Word 1: {word1}
+Word 2: {word2}
+Output word:",1,SEP_VARS,78,100
+202,False,meta_desc,,"
+Determine which of two words is a homophone of a specified query word. Provide the query word and the two words to compare. Your response should indicate which of the two words is a homophone of the query word or if neither are homophones.
+Query word: {query}
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,77,100
+203,False,meta_desc,,"
+Please determine which of the two given words is a homophone or sounds more like a query word. Provide your answer as a single word.
+Word 1: {word1}
+Word 2: {word2}
+Query word: {query}
+Homophone:",1,SEP_VARS,54,100
+204,False,meta_desc,,"
+Determine which of the two words is a homophone or sounds more like a query word. Provide an explanation for your choice.
+Word 1: {word1}
+Word 2: {word2}
+Query word: {query}
+Output word:
+Explanation:",0,SEP_VARS,54,100
+205,False,meta_desc,,"
+Given a query word and two other words, determine which of the two words sounds like or is a homophone of the query word. You can assume that the two words are spelled differently from each other and the query word.
+Query word: {query}
+Word 1: {word1}
+Word 2: {word2}
+Output word:",1,SEP_VARS,71,100
+206,False,meta_desc,,"
+Given a query word and two candidate words, determine which candidate word sounds like or is a homophone of the query word.
+Query word: {query}
+Candidate word 1: {word1}
+Candidate word 2: {word2}
+Output:",1,SEP_VARS,52,100
+207,False,meta_desc,,"
+Given a query word and two other words, determine which of the two words sounds like or is a homophone of the query word.
+Query word: {query}
+Word 1: {word1}
+Word 2: {word2}
+Output word:",1,SEP_VARS,53,100
+208,False,meta_desc,,"
+Given a query word and two candidate words, determine which candidate word sounds like or is a homophone of the query word. The input will consist of three words separated by commas. The output should be either ""1"" or ""2"", indicating which candidate word is the homophone of the query word.
+Input: {query}, {word1}, {word2}
+Output:",0,SEP_VARS,77,100
+209,False,meta_desc,,"
+Determine which of the two words is most similar or a homophone of the provided query word. The words will be provided in a list format, with the query word followed by the two comparison words. Use your natural language processing capabilities to determine the best match.
+Query word: {query}
+Comparison words: {word1}, {word2}
+Output word:",1,SEP_VARS,74,100
+210,False,meta_desc,,"
+Please determine which of the two given words is most similar or a homophone of the provided query word.
+Query word: {query}
+Word 1: {word1}
+Word 2: {word2}
+Output word:",0,SEP_VARS,47,100
+211,False,meta_desc,,"
+Identify which of two words, {word1} and {word2}, sounds more like a given word, {query}, which is a homophone of one of them. Homophones are words that sound the same but have different meanings and spellings.
+Output word:",1,other,57,100
+212,False,meta_desc,,"
+Identify which of two words, {word1} or {word2}, sounds more like a given word, {query}. Homophones are words that sound the same but have different meanings and spellings.
+Word 1: {word1}
+Word 2: {word2}
+Query: {query}
+Output:",1,SEP_VARS,67,100
+213,False,meta_desc,,"
+Given two words, {word1} and {word2}, and a query word, {query}, determine which word sounds more similar to the query word. Remember that homophones are words that sound the same but have different meanings and spellings.
+Output word:",1,other,55,100
+214,False,meta_desc,,"
+Given two words, {word1} and {word2}, and a query word, {query}, determine which of the two words sounds more like the query word. Remember that homophones are words that sound the same but have different meanings and spellings.
+Output word:",1,other,57,100
+215,False,meta_desc,,"
+Identify the homophone that sounds more like a given word. You will be given two words, {word1} and {word2}, and a query word, {query}. Determine which of the two words sounds more like the query word.
+Word 1: {word1}
+Word 2: {word2}
+Query word: {query}
+Output:",1,SEP_VARS,75,100
+216,False,meta_desc,,"
+Identify which of two words, {word1} and {word2}, sounds more like a given word, {query}, which is a homophone of both words.
+Word 1: {word1}
+Word 2: {word2}
+Query: {query}
+Output:",1,SEP_VARS,59,100
+217,False,meta_desc,,"
+Identify which of two words, {word1} and {word2}, sounds more like the word {query}. Remember that homophones are words that sound the same but have different meanings and spellings.
+Word 1: {word1}
+Word 2: {word2}
+Query: {query}
+Output:",1,SEP_VARS,67,100
+218,False,meta_desc,,"
+Identify which of two words sounds more like a given query. The task presents two words, {word1} and {word2}, and asks which one sounds more like the word {query}. Homophones are words that sound the same but have different meanings and spellings.
+Word 1: {word1}
+Word 2: {word2}
+Query: {query}
+Output:",1,SEP_VARS,81,100
+219,False,meta_desc,,"
+Please identify the homophone for the word {query} by choosing between {word1} and {word2}. Remember that homophones are words that sound the same but have different meanings and spellings.
+Output word:",1,other,46,100
+220,False,meta_desc,,"
+Identify the homophone for {query} from the given options {word1} and {word2}. Remember that homophones are words that sound the same but have different meanings and spellings. Choose the correct option that matches the definition of {query}.
+Output word:",0,other,57,100
+221,False,meta_desc,,"
+Given three words, determine which of the two words sounds more like the query word or if either of the two words is a homophone of the query word.
+Query word: {query}
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,57,100
+222,False,meta_desc,,"
+Given two words A and B, and a query word Q, determine which of the two words sounds more like the query word, or if either of them is a homophone of the query word.
+A: {word1}
+B: {word2}
+Q: {query}
+Output:",1,Q&A,60,100
+223,False,meta_desc,,"
+Identify the homophone or the word that sounds more like the query word. You are given two words, {word1} and {word2}, and a query word, {query}. Determine which of the two words is a homophone of the query word or which one sounds more like the query word.
+word1: {word1}
+word2: {word2}
+query: {query}
+Output:",1,SEP_VARS,85,100
+224,False,meta_desc,,"
+Identify which of two words, {word1} and {word2}, is a homophone of the query word, {query}, or which one sounds more like the query word. Remember that a homophone is a word that sounds the same as another word but has a different meaning and spelling.
+Word 1: {word1}
+Word 2: {word2}
+Query: {query}
+Output:",1,SEP_VARS,85,100
+225,False,meta_desc,,"
+Given two words {word1} and {word2}, and a query word {query}, determine which of the two words is more similar in sound to the query word.
+Output:",1,other,38,100
+226,False,meta_desc,,"
+Given two words, {word1} and {word2}, and a query word, {query}, determine which of the two words is more similar in sound to the query word. Please provide your answer as either ""word1"" or ""word2"".
+word1: {word1}
+word2: {word2}
+query: {query}
+Output:",0,SEP_VARS,74,100
+227,False,meta_desc,,"
+Given a query and two words, determine which of the two words is a homophone of the word specified in the query. The input will consist of the query, word1, and word2 separated by commas. The output should be the word that is a homophone of the query, or ""Neither"" if neither word is a homophone.
+Query: {query}
+Word 1: {word1}
+Word 2: {word2}
+Output word:",1,SEP_VARS,95,100
+228,False,meta_desc,,"
+Given two words, determine which one is a homophone of a word specified in the query.
+Query: {query}
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,43,100
+229,False,meta_desc,,"
+Given two words, determine which one is a homophone or sounds more like the query word.
+Query word: {query}
+Word 1: {word1}
+Word 2: {word2}
+The word that sounds more like {query} is:",1,SEP_VARS,53,100
+230,False,meta_desc,,"
+Given two words, determine which one is a homophone or sounds more like a query word.
+Word 1: {word1}
+Word 2: {word2}
+Query word: {query}
+Output:",1,SEP_VARS,44,100
+231,False,meta_desc,,"
+Given two words, determine which one is a homophone or sounds more like a query word.
+Query word: {query}
+Word 1: {word1}
+Word 2: {word2}
+Output word:",1,SEP_VARS,45,100
+232,False,meta_desc,,"
+Determine which of two words is a homophone or sounds more similar to a given query word.
+Word 1: {word1}
+Word 2: {word2}
+Query word: {query}
+Output word:",1,SEP_VARS,46,100
+233,False,meta_desc,,"
+Identify which of two words is a homophone or sounds more like a provided query word.
+Word 1: {word1}
+Word 2: {word2}
+Query word: {query}
+The word that sounds more like the query word is:",1,SEP_VARS,53,100
+234,False,meta_desc,,"
+Given a word, determine which of two options sounds or is spelled more similar to it. This task will test your language and vocabulary skills.
+Word: {query}
+Option 1: {word1}
+Option 2: {word2}
+Output:",1,SEP_VARS,52,100
+235,False,meta_desc,,"
+Determine which of two words is similar in sound or spelling to a given word.
+Word 1: {word1}
+Word 2: {word2}
+Given word: {query}
+Output:",0,SEP_VARS,42,100
+236,False,meta_desc,,"
+Determine which of two words is a homophone or sounds more like a provided query word. 
+Query word: {query}
+Word 1: {word1}
+Word 2: {word2}
+The word that sounds more like {query} is:",1,SEP_VARS,54,100
+237,False,meta_desc,,"
+Determine which of two words is a homophone or sounds more like a provided query word.
+Word 1: {word1}
+Word 2: {word2}
+Query word: {query}
+Output:",1,SEP_VARS,44,100
+238,False,meta_desc,,"
+Given two words and a query word, determine which of the two words is a homophone of the query word.
+Word 1: {word1}
+Word 2: {word2}
+Query word: {query}
+Output:",1,SEP_VARS,48,100
+239,False,meta_desc,,"
+Given a query word and two other words, determine which of the two words is a homophone of the query word.
+Query word: {query}
+Word 1: {word1}
+Word 2: {word2}
+Output: The homophone of {query} is",1,SEP_VARS,57,100
+240,False,meta_desc,,"
+Determine which of two words is a homophone or sounds more like a query word.
+Word 1: {word1}
+Word 2: {word2}
+Query word: {query}
+Answer:",1,SEP_VARS,43,100
+241,False,meta_desc,,"
+Determine which of two words is a homophone or sounds more like a query word.
+Word 1: {word1}
+Word 2: {word2}
+Query word: {query}
+Output word:",1,SEP_VARS,44,100
+242,False,meta_desc,,"
+Determine which of two words is a homophone of a given query word.
+Query word: {query}
+Word 1: {word1}
+Word 2: {word2}
+The homophone of {query} is:",1,SEP_VARS,48,100
+243,False,meta_desc,,"
+Given a query word and two options, determine which option sounds like or is a homophone of the query word.
+Query word: {query}
+Option 1: {word1}
+Option 2: {word2}
+Output:",1,SEP_VARS,48,100
+244,False,meta_desc,,"
+Given a query word and two other words, determine which of the two words sounds like or is a homophone of the query word.
+Query word: {query}
+Word 1: {word1}
+Word 2: {word2}
+The word that sounds like or is a homophone of {query} is:",1,SEP_VARS,66,100
+245,False,meta_desc,,"
+Given a query word and two other words, determine which of the two sounds like or is a homophone of the query word.
+Query word: {query}
+Word 1: {word1}
+Word 2: {word2}
+The word that sounds like or is a homophone of {query} is:",1,SEP_VARS,65,100
+246,False,meta_desc,,"
+Given a query word and two options, determine which option is most similar or a homophone of the query word.
+Query word: {query}
+Option 1: {word1}
+Option 2: {word2}
+Output:",0,SEP_VARS,48,100
+247,False,meta_desc,,"
+Given a query word and two options, determine which option is either most similar or a homophone of the query word.
+Query word: {query}
+Option 1: {word1}
+Option 2: {word2}
+Output:",0,SEP_VARS,49,100
+248,False,meta_desc,,"
+Fill in the blank with the correct homophone for the query word {query}.
+Sentence: I {query}",0,other,23,100
+249,False,meta_desc,,"
+Compare two words to determine which one sounds more like a given word.
+Compare {word1} and {word2} to determine which one sounds more like {query}.
+Output:",1,other,37,100
+250,False,meta_desc,,"
+Given two words, determine which one sounds more similar to a given query word. These words are homophones, meaning they sound the same but have different meanings and spellings.
+Word 1: {word1}
+Word 2: {word2}
+Query word: {query}
+Output:",1,SEP_VARS,61,100
+251,False,meta_desc,,"
+Given two words, determine which one sounds more like the given word.
+word1: {word1}, word2: {word2}, query: {query}
+Output word:",1,SEP_VARS,37,100
+252,False,meta_desc,,"
+Given two words that sound the same but have different meanings and spellings, determine which one sounds more like a given word.
+Word 1: {word1}
+Word 2: {word2}
+Query: {query}
+Output: The word that sounds more like {query} is:",1,SEP_VARS,60,100
+253,False,meta_desc,,"
+Given two words, identify which one sounds more like a given word.
+word1: {word1}, word2: {word2}, query: {query}
+Output word:",1,SEP_VARS,37,100
+254,False,meta_desc,,"
+Identify which of two words sounds more like a given query word. The two words presented are homophones, meaning they sound the same but have different meanings and spellings.
+Word 1: {word1}
+Word 2: {word2}
+Query word: {query}
+Which word sounds more like {query}:",0,SEP_VARS,67,100
+255,False,meta_desc,,"
+Identify which of the two words sounds more like the given query. The words presented are homophones, meaning they sound the same but have different meanings and spellings. 
+Word 1: {word1}
+Word 2: {word2}
+Query: {query}
+Output:",0,SEP_VARS,60,100
+256,False,meta_desc,,"
+Please provide the homophone for {query} by selecting the correct option from {word1} and {word2}. Remember, homophones are words that sound the same but have different meanings and spellings.
+{query}:
+{word1}:
+{word2}:
+Homophone for {query} is:",1,other,66,100
+257,False,meta_desc,,"
+Identify the homophone for a given word. Homophones are words that sound the same but have different meanings and spellings. Given two options, choose the correct homophone for the given word.
+Query: {query}
+Word 1: {word1}
+Word 2: {word2}
+Output: 
+
+",1,SEP_VARS,66,100
+258,False,meta_desc,,"
+Given a query word and two other words, determine which of the two words sounds more like the query word or if either of the two words is a homophone of the query word.
+Query word: {query}
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,62,100
+259,False,meta_desc,,"
+Given two words and a query word, determine which of the two words sounds more like the query word, or if either of them is a homophone of the query word. Please provide the two words and the query word, and specify which one of the two words sounds more like the query word or if they are homophones.
+Word 1: {word1}
+Word 2: {word2}
+Query word: {query}
+Output:",0,SEP_VARS,92,100
+260,False,meta_desc,,"
+Given two words and a query word, determine which of the two words sounds more like the query word, or if either of them is a homophone of the query word. Please provide the two words and the query word, and I will tell you which word sounds more similar to the query word or if either of them is a homophone.
+Word 1: {word1}
+Word 2: {word2}
+Query word: {query}
+Output word:",1,SEP_VARS,95,100
+261,False,meta_desc,,"
+Given two words, {word1} and {word2}, and a query word, {query}, identify which word is a homophone of the query word or which one sounds more like the query word.
+word1: {word1}
+word2: {word2}
+query: {query}
+Output word:",1,SEP_VARS,65,100
+262,False,meta_desc,,"
+Given two words, {word1} and {word2}, and a query word, {query}, identify which word is a homophone of the query or which one sounds more like the query.
+Output word:",1,other,44,100
+263,False,meta_desc,,"
+Given two words, which one sounds more similar to a reference word?
+word1: {word1}
+word2: {word2}
+query: {query}
+Which word sounds more similar to {query} - {word1} or {word2}?",1,SEP_VARS,53,100
+264,False,meta_desc,,"
+Given two words, which one sounds more similar to a third word?
+Word 1: {word1}
+Word 2: {word2}
+Query word: {query}
+Output word:",1,SEP_VARS,40,100
+265,False,meta_desc,,"
+Given two words, determine which one is a homophone of a specified query word.
+Query word: {query}
+Word 1: {word1}
+Word 2: {word2}
+Homophone of {query}:",1,SEP_VARS,46,100

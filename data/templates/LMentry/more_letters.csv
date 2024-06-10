@@ -1,0 +1,483 @@
+prompt idx,default prompt,method,language style,prompt template,correct,prompt format,prompt length,samples
+1,True,default,,"Q: Which word has more letters, ""{word1}"" or ""{word2}""?
+A:",1,Q&A,20,100
+2,True,default,,"Q: Which word is longer, ""{word1}"" or ""{word2}""?
+A:",1,Q&A,19,100
+3,True,default,,"Q: Of the words ""{word1}"" and ""{word2}"" which one has more letters?
+A:",1,Q&A,22,100
+4,False,rephrase,,"Compare the number of letters in ""{word1}"" and ""{word2}"" and determine which one has more.",1,other,22,100
+5,False,rephrase,,"Can you determine which of the two words, ""{word1}"" or ""{word2}"", has a greater number of letters?",1,other,25,100
+6,False,rephrase,,Compare the number of letters in '{word1}' and '{word2}' and determine which one has more letters.,1,other,23,100
+7,False,rephrase,,"Which of the two words, ""{word1}"" or ""{word2}"", has a greater number of letters?",1,other,22,100
+8,False,rephrase,,Compare the number of letters in the words '{word1}' and '{word2}' and determine which one has more letters.,1,other,25,100
+9,False,rephrase,,"Compare the number of letters in ""{word1}"" and ""{word2}"" and state which one has more.",1,other,22,100
+10,False,rephrase,,"Compare the number of letters in the words ""{word1}"" and ""{word2}"" and determine which one has more.",1,other,24,100
+11,False,rephrase,,"Compare the number of letters in ""{word1}"" and ""{word2}"" and determine which one has more letters.",1,other,23,100
+12,False,rephrase,,"Which of the two words, ""{word1}"" or ""{word2}"", is longer?",1,other,18,100
+13,False,rephrase,,Compare the length of the words '{word1}' and '{word2}'. Which one is longer?,1,other,20,100
+14,False,rephrase,,Compare the length of '{word1}' and '{word2}' and determine which one is longer.,1,other,20,100
+15,False,rephrase,,"Can you compare the length of ""{word1}"" and ""{word2}"" and tell me which one is longer?",1,other,23,100
+16,False,rephrase,,"What is the length comparison between ""{word1}"" and ""{word2}""?",0,other,16,100
+17,False,rephrase,,"How do the lengths of the words ""{word1}"" and ""{word2}"" compare?",0,other,18,100
+18,False,rephrase,,Compare the length of '{word1}' and '{word2}' and identify which one is longer.,1,other,20,100
+19,False,rephrase,,"Can you determine which word between ""{word1}"" and ""{word2}"" is longer?",1,other,18,100
+20,False,rephrase,,"Which word between ""{word1}"" and ""{word2}"" has a greater number of letters?",1,other,19,100
+21,False,rephrase,,"Which word has a greater number of letters, ""{word1}"" or ""{word2}""?",1,other,19,100
+22,False,rephrase,,"Which word has a greater number of letters between ""{word1}"" and ""{word2}""?",1,other,19,100
+23,False,rephrase,,"Which word has more letters, ""{word1}"" or ""{word2}""?",1,other,16,100
+24,False,rephrase,,"Which one of the two words, ""{word1}"" and ""{word2}"", has a greater number of letters?",1,other,23,100
+25,False,rephrase,,"Which word has more letters between ""{word1}"" and ""{word2}""?",1,other,16,100
+26,False,rephrase,,"Which word between ""{word1}"" and ""{word2}"" contains more letters?",1,other,16,100
+27,False,rephrase,,"Q: Which word out of ""{word1}"" and ""{word2}"" has a greater number of letters? 
+A:",1,Q&A,25,100
+28,False,rephrase,,"Please compare the length of the words ""{word1}"" and ""{word2}"" and indicate which one has more letters.",1,other,24,100
+29,False,rephrase,,"""Compare the number of letters in ""{word1}"" and ""{word2}"".",0,other,16,100
+30,False,rephrase,,Compare the length of the words '{word1}' and '{word2}'. Which one has more letters?,1,other,21,100
+31,False,rephrase,,Compare the length of the words '{word1}' and '{word2}' and determine which one has more letters.,1,other,23,100
+32,False,rephrase,,"Compare the length of ""{word1}"" and ""{word2}"" and determine which one has more letters.",1,other,21,100
+33,False,rephrase,,"Compare the number of letters in the words ""{word1}"" and ""{word2}"" and provide the word with more letters.",1,other,25,100
+34,False,rephrase,,"Please compare the length of the words ""{word1}"" and ""{word2}"" and provide the name of the word with more letters.",1,other,27,100
+35,False,rephrase,,"Can you compare the length of the words ""{word1}"" and ""{word2}"" and tell me which one has more letters?",1,other,26,100
+36,False,rephrase,,"Compare the length of ""{word1}"" and ""{word2}"" and determine which one is longer.",1,other,20,100
+37,False,rephrase,,"Please compare the length of ""{word1}"" and ""{word2}"" and indicate which one is longer.",1,other,21,100
+38,False,rephrase,,"Please compare the length of ""{word1}"" and ""{word2}"" and provide the longer word.",1,other,20,100
+39,False,rephrase,,"Compare the length of ""{word1}"" and ""{word2}"". Which one is longer?",1,other,18,100
+40,False,rephrase,,"Please determine which of the two words, ""{word1}"" or ""{word2}"", has a greater number of characters.",1,other,24,100
+41,False,rephrase,,"Which of the following words is longer: ""{word1}"" or ""{word2}""?",1,other,18,100
+42,False,rephrase,,"Compare the length of the words ""{word1}"" and ""{word2}"" and provide the longer one.",1,other,21,100
+43,False,rephrase,,Please compare the lengths of the words '{word1}' and '{word2}' and indicate which one is longer.,1,other,23,100
+44,False,rephrase,,"Please determine which of the two words, ""{word1}"" or ""{word2}"", has a greater number of letters.",1,other,24,100
+45,False,rephrase,,"Which word has a greater number of letters: ""{word1}"" or ""{word2}""?",1,other,19,100
+46,False,rephrase,,"Which of the two words, ""{word1}"" and ""{word2}"", has a greater number of letters?",1,other,22,100
+47,False,rephrase,,"Which word between ""{word1}"" and ""{word2}"" contains a greater number of letters?",1,other,19,100
+48,False,rephrase,,"Which of the two given words, ""{word1}"" and ""{word2}"", has a greater number of letters?",1,other,23,100
+49,False,meta_cot,,"Which of the two words, '{word1}' and '{word2}', has more letters?",1,other,19,100
+50,False,meta_cot,,"Determine which of the two words, '{word1}' and '{word2}', has a greater number of letters.",1,other,24,100
+51,False,meta_cot,,Compare the length of '{word1}' and '{word2}' and determine which one has more letters.,1,other,21,100
+52,False,meta_cot,,"Which word has a greater number of letters, '{word1}' or '{word2}'?",1,other,19,100
+53,False,meta_cot,,"Determine which word has a longer length, '{word1}' or '{word2}'.",1,other,18,100
+54,False,meta_cot,,"Which of the two words, ""{word1}"" and ""{word2}"", has more letters?",1,other,19,100
+55,False,meta_cot,,"Compare the length of ""{word1}"" and ""{word2}"" and tell me which one is longer.",1,other,21,100
+56,False,meta_cot,,"Which word has a greater number of letters, ""{word1}"" or ""{word2}""?",1,other,19,100
+57,False,meta_cot,,"Tell me which word is longer, ""{word1}"" or ""{word2}"".",1,other,16,100
+58,False,meta_cot,,"Which word has more letters, ""{word1}"" or ""{word2}""?",1,other,16,100
+59,False,meta_cot,,"Of the two words ""{word1}"" and ""{word2}"", which one has more letters?",1,other,19,100
+60,False,meta_cot,,Compare the length of '{word1}' and '{word2}'. Which one has more letters?,1,other,19,100
+61,False,meta_cot,,"Determine which word, '{word1}' or '{word2}', has a greater number of letters.",1,other,21,100
+62,False,meta_cot,,Are there more letters in '{word1}' or '{word2}'?,1,other,15,100
+63,False,meta_cot,,"Which word has a longer length, '{word1}' or '{word2}'?",1,other,17,100
+64,False,meta_cot,,"Out of '{word1}' and '{word2}', which one has a greater number of letters?",1,other,20,100
+65,False,meta_cot,,"Which word has a higher letter count, '{word1}' or '{word2}'?",1,other,18,100
+66,False,meta_cot,,"Which of the two words, {word1} and {word2}, has more letters?",1,other,19,100
+67,False,meta_cot,,"Determine which word, {word1} or {word2}, has a greater number of letters.",1,other,21,100
+68,False,meta_cot,,Compare the length of {word1} and {word2} and state which one is longer.,1,other,20,100
+69,False,meta_cot,,"Out of {word1} and {word2}, which one has a larger number of letters?",1,other,20,100
+70,False,meta_cot,,Identify the word with more letters between {word1} and {word2}.,1,other,17,100
+71,False,meta_cot,,"Which of the two words ""{word1}"" and ""{word2}"" has more letters?",1,other,18,100
+72,False,meta_cot,,"Comparing ""{word1}"" and ""{word2}"", which one has more letters?",1,other,17,100
+73,False,meta_cot,,"Determine which word has more letters between ""{word1}"" and ""{word2}"".",1,other,17,100
+74,False,meta_cot,,"Which of these two words has more letters: ""{word1}"" or ""{word2}""?",1,other,19,100
+75,False,meta_cot,,"Determine which word is longer: ""{word1}"" or ""{word2}"".",1,other,16,100
+76,False,meta_cot,,"Compare the length of the words ""{word1}"" and ""{word2}"".",0,other,15,100
+77,False,meta_cot,,"Out of the words ""{word1}"" and ""{word2}"", which one has a longer length?",1,other,20,100
+78,False,meta_cot,,"Which word is longer, ""{word1}"" or ""{word2}""?",1,other,15,100
+79,False,meta_cot,,"Of the words ""{word1}"" and ""{word2}"", which one has more letters?",1,other,18,100
+80,False,meta_cot,,Compare the length of {word1} and {word2}.,0,other,13,100
+81,False,meta_cot,,Which of {word1} and {word2} is longer?,1,other,14,100
+82,False,meta_cot,,"Determine which word is longer, {word1} or {word2}.",1,other,16,100
+83,False,meta_cot,,"Identify which word has more letters, {word1} or {word2}.",1,other,17,100
+84,False,meta_cot,,"Please identify which word has more letters, {word1} or {word2}.",1,other,17,100
+85,False,meta_cot,,"Which of these two words, {word1} and {word2}, has more letters?",1,other,19,100
+86,False,meta_cot,,Compare the length of {word1} and {word2}. Which one has more letters?,1,other,19,100
+87,False,meta_cot,,"Which of the two words, {word1} and {word2}, has a greater number of letters?",1,other,22,100
+88,False,meta_cot,,Identify which word has a larger number of letters: {word1} or {word2}.,1,SEP_VARS,20,100
+89,False,meta_cot,,Which word between {word1} and {word2} has more characters?,1,other,16,100
+90,False,meta_cot,,Compare the number of characters between {word1} and {word2}. Which one is greater?,1,other,20,100
+91,False,meta_cot,,Determine which word has more letters between {word1} and {word2}.,1,other,17,100
+92,False,meta_cot,,"Which word contains the most letters, {word1} or {word2}?",1,other,16,100
+93,False,meta_cot,,"Of {word1} and {word2}, which contains more letters?",1,other,15,100
+94,False,meta_cot,,"Tell me, which has more letters, {word1} or {word2}?",1,other,17,100
+95,False,meta_cot,,Which of {word1} and {word2} has a greater number of letters?,1,other,18,100
+96,False,meta_cot,,"Which one of the two words, ""{word1}"" or ""{word2}"", has more letters?",1,other,20,100
+97,False,meta_cot,,"Determine which of the two words, ""{word1}"" or ""{word2}"", has a greater number of letters.",1,other,24,100
+98,False,meta_cot,,"Are there more letters in ""{word1}"" or ""{word2}""?",1,other,15,100
+99,False,meta_cot,,"Out of ""{word1}"" and ""{word2}"", which word has a longer length?",1,other,18,100
+100,False,meta_cot,,Determine whether {word1} or {word2} has a greater number of letters,1,other,18,100
+101,False,meta_cot,,"Find out which word, {word1} or {word2}, has more letters",1,other,17,100
+102,False,meta_cot,,Compare the length of {word1} and {word2} and determine which has more letters,1,other,19,100
+103,False,meta_cot,,"Which of the two words, {word1} or {word2}, has a higher letter count?",1,other,21,100
+104,False,meta_cot,,Identify the word with more letters between {word1} and {word2},1,other,17,100
+105,False,meta_cot,rich_vocab,Please compare the length of {word1} and {word2} and tell me which one has more letters.,1,other,23,100
+106,False,meta_cot,rich_vocab,"Which of the two words, {word1} or {word2}, has a greater number of letters?",1,other,22,100
+107,False,meta_cot,rich_vocab,"I need to know which word, {word1} or {word2}, has more letters. Can you help me with that?",1,other,27,100
+108,False,meta_cot,rich_vocab,"Out of {word1} and {word2}, which one has a longer length?",1,other,18,100
+109,False,meta_cot,rich_vocab,Please compare the length of {word1} and {word2} and let me know which one is longer.,1,other,23,100
+110,False,meta_cot,rich_vocab,"Which of the two words, {word1} or {word2}, has a greater length?",1,other,20,100
+111,False,meta_cot,rich_vocab,Please compare the length of the words {word1} and {word2} and tell me which one is longer.,1,other,24,100
+112,False,meta_cot,rich_vocab,"Which of the two words, {word1} or {word2}, has more letters?",1,other,19,100
+113,False,meta_cot,rich_vocab,"Determine which word, {word1} or {word2}, has a greater number of letters.",1,other,21,100
+114,False,meta_cot,rich_vocab,"I need to know which word, {word1} or {word2}, has a higher letter count.",1,other,22,100
+115,False,meta_cot,rich_vocab,"Can you tell me which of the words, {word1} and {word2}, has a longer length?",1,other,23,100
+116,False,meta_cot,rich_vocab,"Can you determine which of the two words, {word1} or {word2}, has a greater number of letters?",1,other,25,100
+117,False,meta_cot,rich_vocab,I would like you to compare the length of {word1} and {word2} and indicate which one has a greater number of letters.,1,other,29,100
+118,False,meta_cot,rich_vocab,"Of the two words, {word1} and {word2}, which one has the greater number of letters?",1,other,23,100
+119,False,meta_cot,rich_vocab,"Please ascertain which of the two words, {word1} and {word2}, has more letters.",1,other,21,100
+120,False,meta_cot,rich_vocab,"Determine which of the words, {word1} and {word2}, has a greater number of letters.",1,other,23,100
+121,False,meta_cot,rich_vocab,"Which of the two words, {word1} and {word2}, has a larger number of letters?",1,other,22,100
+122,False,meta_cot,rich_vocab,"Can you tell me which of the words, {word1} and {word2}, has more letters?",1,other,22,100
+123,False,meta_cot,common_vocab,Compare the length of {word1} and {word2}. Which one is longer?,1,other,18,100
+124,False,meta_cot,common_vocab,"Which of the two words, {word1} or {word2}, has more letters?",1,other,19,100
+125,False,meta_cot,common_vocab,"Determine which word, {word1} or {word2}, has the greater number of letters.",1,other,21,100
+126,False,meta_cot,common_vocab,Are there more letters in {word1} or {word2}?,1,other,14,100
+127,False,meta_cot,common_vocab,"Out of {word1} and {word2}, which one has a greater number of letters?",1,other,20,100
+128,False,meta_cot,common_vocab,"Which word has a greater length, {word1} or {word2}?",1,other,16,100
+129,False,meta_cot,common_vocab,"Which of the two words, {word1} or {word2}, is longer?",1,other,18,100
+130,False,meta_cot,common_vocab,Compare {word1} and {word2} and tell me which one has more letters.,1,other,19,100
+131,False,meta_cot,common_vocab,"Which word has a higher letter count, {word1} or {word2}?",1,other,17,100
+132,False,meta_cot,common_vocab,"Which of the two words, {word1} or {word2}, has a greater number of letters?",1,other,22,100
+133,False,meta_cot,common_vocab,"Which word has more letters, {word1} or {word2}?",1,other,15,100
+134,False,meta_cot,common_vocab,"Tell me which word, {word1} or {word2}, has more letters.",1,other,18,100
+135,False,meta_cot,common_vocab,Compare the length of {word1} and {word2} and tell me which one has more letters.,1,other,22,100
+136,False,meta_cot,common_vocab,Which word between {word1} and {word2} has a greater number of letters?,1,other,19,100
+137,False,meta_cot,common_vocab,"Tell me which word has more letters, {word1} or {word2}.",1,other,17,100
+138,False,meta_cot,common_vocab,"Which one of the two words, {word1} or {word2}, is longer in terms of the number of letters?",1,other,26,100
+139,False,meta_cot,common_vocab,Determine which of {word1} and {word2} has more letters.,1,other,17,100
+140,False,meta_cot,common_vocab,"Which of the two words, {word1} and {word2}, has more letters?",1,other,19,100
+141,False,meta_cot,common_vocab,"Determine which word, {word1} or {word2}, has a greater number of letters.",1,other,21,100
+142,False,meta_cot,formal,Please compare the length of the words {word1} and {word2} and identify which one has more letters.,1,other,24,100
+143,False,meta_cot,formal,"Which of the two words, {word1} or {word2}, has more letters?",1,other,19,100
+144,False,meta_cot,formal,"Determine which word, {word1} or {word2}, has a greater number of letters.",1,other,21,100
+145,False,meta_cot,formal,Compare the length of the words {word1} and {word2} and indicate which one has a greater number of letters.,1,other,26,100
+146,False,meta_cot,formal,"Which word has a greater number of letters, {word1} or {word2}?",1,other,18,100
+147,False,meta_cot,formal,Identify the word with more letters between {word1} and {word2}.,1,other,17,100
+148,False,meta_cot,formal,Please compare the length of {word1} and {word2} and tell me which one has more letters.,1,other,23,100
+149,False,meta_cot,formal,"Which word has a greater number of letters, {word1} or {word2}? Please compare their lengths.",1,other,23,100
+150,False,meta_cot,formal,"Of the words {word1} and {word2}, which one has more letters?",1,other,18,100
+151,False,meta_cot,formal,"Please determine which of the two words, {word1} or {word2}, has more letters.",1,other,21,100
+152,False,meta_cot,formal,"Which of the words, {word1} or {word2}, has a greater number of letters?",1,other,21,100
+153,False,meta_cot,formal,"Determine which of the two words, {word1} or {word2}, has a longer length.",1,other,22,100
+154,False,meta_cot,formal,"Please compare the length of the words {word1} and {word2}, and determine which one is longer.",1,other,23,100
+155,False,meta_cot,formal,"Which of the words, {word1} or {word2}, has a greater number of characters?",1,other,21,100
+156,False,meta_cot,formal,"Of the two words, {word1} and {word2}, which one has more letters?",1,other,20,100
+157,False,meta_cot,formal,"Please determine which word, {word1} or {word2}, has more letters.",1,other,18,100
+158,False,meta_cot,formal,"Which of the two words, {word1} or {word2}, has a greater number of letters?",1,other,22,100
+159,False,meta_cot,formal,Please compare the length of {word1} and {word2} and tell me which one is longer.,1,other,22,100
+160,False,meta_cot,formal,"Which word is lengthier, {word1} or {word2}?",1,other,15,100
+161,False,meta_cot,informal,"Which one of these two words has more letters, ""{word1}"" or ""{word2}""?",1,other,20,100
+162,False,meta_cot,informal,"Which word is longer, ""{word1}"" or ""{word2}""?",1,other,15,100
+163,False,meta_cot,informal,"Between ""{word1}"" and ""{word2}"", which word has more letters?",1,other,16,100
+164,False,meta_cot,informal,"Which word has more letters, ""{word1}"" or ""{word2}""?",1,other,16,100
+165,False,meta_cot,informal,"Between ""{word1}"" and ""{word2}"", which one has more letters?",1,other,16,100
+166,False,meta_cot,informal,"Which of these two words, {word1} or {word2}, has more letters?",1,other,19,100
+167,False,meta_cot,informal,Do you think {word1} or {word2} has more letters?,0,other,16,100
+168,False,meta_cot,informal,Compare the number of letters in {word1} and {word2}. Which one is greater?,1,other,20,100
+169,False,meta_cot,informal,"Out of {word1} and {word2}, which word has more letters?",1,other,17,100
+170,False,meta_cot,informal,"Tell me, which word do you think has more letters, {word1} or {word2}?",1,other,21,100
+171,False,meta_cot,informal,Which word is lengthier between {word1} and {word2}?,1,other,15,100
+172,False,meta_cot,informal,"Of the two words, {word1} and {word2}, which one has more letters?",1,other,20,100
+173,False,meta_cot,informal,"Which word has more letters between ""{word1}"" and ""{word2}""?",1,other,16,100
+174,False,meta_cot,informal,"Which of ""{word1}"" and ""{word2}"" is longer?",1,other,14,100
+175,False,meta_cot,informal,"Do ""{word1}"" and ""{word2}"" have the same number of letters?",0,other,17,100
+176,False,meta_desc,,"
+Compare the length of two given words and determine which one has more letters. Please provide the two words separated by a comma.
+Words: {word1}, {word2}
+Output:",1,SEP_VARS,38,100
+177,False,meta_desc,,"
+Compare the length of two words and determine which one has more letters.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,33,100
+178,False,meta_desc,,"
+Compare the length of two words and determine which one has more letters. Please provide the two words as inputs.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,41,100
+179,False,meta_desc,,"
+Given two words, determine which one has more letters. You can count the number of letters in each word and compare them.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,44,100
+180,False,meta_desc,,"
+Compare the length of two given words and determine which one has more letters. To do this, count the number of letters in each word and compare them.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,50,100
+181,False,meta_desc,,"
+Compare the length of two words and determine which one has more letters. Provide the two words as input and output the word with more letters.
+Word1: {word1}
+Word2: {word2}
+Output word:",1,SEP_VARS,46,100
+182,False,meta_desc,,"
+Compare the length of two words and determine which one has more letters. Provide the length of each word and indicate which one is longer.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,46,100
+183,False,meta_desc,,"
+Compare the length of two words and determine which one has more letters. Please provide the two words separated by a comma.
+Words: {word1}, {word2}
+Output:",1,SEP_VARS,37,100
+184,False,meta_desc,,"
+Compare the length of two words and determine which one has more letters. Please provide two words separated by a comma.
+Words: {word1}, {word2}
+Output:",1,SEP_VARS,36,100
+185,False,meta_desc,,"
+Compare the length of two given words and determine which one has more letters. The words are specified in the template as ""{word1}"" and ""{word2}"". Please write a program that takes in two words and outputs which word has more letters.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,68,100
+186,False,meta_desc,,"
+Please compare the length of two given words and determine which one has more letters. The words are specified in the template as ""{word1}"" and ""{word2}"".
+word1: {word1}
+word2: {word2}
+Output:",1,SEP_VARS,51,100
+187,False,meta_desc,,"
+Compare the length of two words and determine which one has more letters. The words to be compared are specified as ""{word1}"" and ""{word2}"" in the prompt.
+word1: {word1}
+word2: {word2}
+Output:",1,SEP_VARS,52,100
+188,False,meta_desc,,"
+Please compare the length of the words {word1} and {word2} and determine which one has more letters.
+word1: {word1}
+word2: {word2}
+Output:",1,SEP_VARS,41,100
+189,False,meta_desc,,"
+Please compare the length of the two given words and determine which one has more letters.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,36,100
+190,False,meta_desc,,"
+Compare the length of two words and determine which one has more letters. You can count the letters in each word or compare their lengths directly. Provide the two words as input and output which one has more letters.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,61,100
+191,False,meta_desc,,"
+Compare the length of two given words and determine which one has more letters. You can count the letters in each word or compare their lengths directly. Please provide the two words as input and the output should be the word with more letters.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,66,100
+192,False,meta_desc,,"
+Compare the length of two words. The words to be compared are represented by the placeholders {word1} and {word2}. Use the following code to get the length of a word: ""len(word)"". Return the length of the longest word and the length of the shortest word separated by a comma. 
+word1: {word1}
+word2: {word2}
+Output:",0,SEP_VARS,79,100
+193,False,meta_desc,,"
+Compare the length of two words. The words to be compared are represented by the placeholders {word1} and {word2}. Your task is to output which word is longer or if they have the same length.
+word1 = {word1}, word2 = {word2}
+Output:",1,other,60,100
+194,False,meta_desc,,"
+Compare the length of two words and determine which one has more letters. The two words to be compared are represented by the placeholders {word1} and {word2}. Please write a program that takes {word1} and {word2} as input and outputs which word has more letters.
+word1: {word1}
+word2: {word2}
+Output:",1,SEP_VARS,76,100
+195,False,meta_desc,,"
+Compare the length of two words. Given two words represented by the placeholders {word1} and {word2}, determine which word is longer. The output should be ""word1"" if {word1} is longer, ""word2"" if {word2} is longer, and ""equal"" if they have the same length.
+word1: {word1}
+word2: {word2}
+Output:",0,SEP_VARS,85,100
+196,False,meta_desc,,"
+Compare the length of two words. Given two words represented by the placeholders {word1} and {word2}, determine which one is longer.
+word1: {word1}
+word2: {word2}
+Output:",1,SEP_VARS,46,100
+197,False,meta_desc,,"
+Please compare the length of two words. The words to be compared are represented by placeholders {word1} and {word2}.
+word1: {word1}
+word2: {word2}
+Output: The length of {word1} is  and the length of {word2} is .",0,SEP_VARS,62,100
+198,False,meta_desc,,"
+Compare the length of two words represented by placeholders {word1} and {word2}. Use the len() function to find the length of each word and compare them using a conditional statement. Return a string that states which word is longer or if they are the same length.
+word1: {word1}
+word2: {word2}
+Output:",1,SEP_VARS,72,100
+199,False,meta_desc,,"
+Compare the length of two words and determine which one has more letters. The two words are represented by the placeholders {word1} and {word2}. Please write a program that takes in {word1} and {word2} as input and outputs the word with more letters.
+word1: {word1}
+word2: {word2}
+Output word:",1,SEP_VARS,75,100
+200,False,meta_desc,,"
+Compare the length of two words and determine which one has more letters.
+Word 1: {word1}
+Word 2: {word2}
+Length of longer word:",0,SEP_VARS,36,100
+201,False,meta_desc,,"
+Compare the length of two words. Provide the length of the longer word and the length of the shorter word.
+Word 1: {word1}
+Word 2: {word2}
+Output:
+The longer word is  with a length of  characters. The shorter word is  with a length of  characters.",0,SEP_VARS,65,100
+202,False,meta_desc,,"
+Please compare the length of two words.
+Word 1: {word1}
+Word 2: {word2}
+Output:",0,SEP_VARS,27,100
+203,False,meta_desc,,"
+Compare the length of two words. Enter two words and the AI will tell you which one is longer.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,40,100
+204,False,meta_desc,,"
+Compare the length of two words. Provide two words and the model will return which one is longer.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,39,100
+205,False,meta_desc,,"
+Compare the length of two words. The words to be compared are represented by the keywords {word1} and {word2}. Please provide the length of {word1} and {word2} and return the result of the comparison. 
+word1: {word1}
+word2: {word2}
+Output:",0,SEP_VARS,66,100
+206,False,meta_desc,,"
+Compare the length of two words. The words to be compared are represented by the keywords {word1} and {word2}. Provide the length of the longer word.
+word1: {word1}
+word2: {word2}
+Length of the longer word:",0,SEP_VARS,55,100
+207,False,meta_desc,,"
+Compare the length of two words. The words to be compared are represented by the placeholders {word1} and {word2} in the input instructions. The output should indicate which word has more letters or which word is longer.
+word1: {word1}
+word2: {word2}
+Output:",1,SEP_VARS,63,100
+208,False,meta_desc,,"
+Please compare the length of {word1} and {word2} and determine which one has more letters.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,41,100
+209,False,meta_desc,,"
+Compare the length of two words and determine which one has more letters. The words to be compared are represented by the placeholders {word1} and {word2}. Please provide the length of the longer word.
+Word 1: {word1}
+Word 2: {word2}
+Length of the longer word:",0,SEP_VARS,65,100
+210,False,meta_desc,,"
+Write a program that compares the length of two given words and determines which one has more letters. Your program should output the longer word.
+Word 1: {word1}
+Word 2: {word2}
+Output word:",1,SEP_VARS,47,100
+211,False,meta_desc,,"
+Write a program that compares the length of two words and determines which one has more letters. The words to be compared are provided as input variables (word1 and word2) in the prompt template. Your program should output the longer word.
+word1: {word1}
+word2: {word2}
+Output:",1,SEP_VARS,65,100
+212,False,meta_desc,,"
+Write a program that compares the length of two words and determines which one has more letters. Your program should take two words as input and output the word with more letters.
+Word1: {word1}
+Word2: {word2}
+Output:",1,SEP_VARS,51,100
+213,False,meta_desc,,"
+Write a program that compares the length of two words and determines which one has more letters. Your program should take two words as input and output the word with more letters.
+word1: {word1}
+word2: {word2}
+Output:",1,SEP_VARS,51,100
+214,False,meta_desc,,"
+Compare the length of two words and determine which one has more letters. Write a program that counts the number of letters in each word and compares them.
+word1: {word1}
+word2: {word2}
+Output:",0,SEP_VARS,47,100
+215,False,meta_desc,,"
+Compare the length of two words and determine which one has more letters. Write a program that counts the number of letters in each word and outputs the word with more letters.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,53,100
+216,False,meta_desc,,"
+Compare the length of two words and determine which one has more letters. Provide your answer as either the first or second word being longer.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,46,100
+217,False,meta_desc,,"
+Compare the length of two words and determine which one has more letters. Provide the longer word.
+Word 1: {word1}
+Word 2: {word2}
+The longer word is:",1,SEP_VARS,41,100
+218,False,meta_desc,,"
+Write a program that compares the length of two words and determines which one has more letters. Your program should take two words as input and output the word with more letters. 
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,54,100
+219,False,meta_desc,,"
+Compare the length of two words and determine which one has more letters. Provide the longer word.
+Word1: {word1}
+Word2: {word2}
+The longer word is:",1,SEP_VARS,39,100
+220,False,meta_desc,,"
+Write a program that compares the length of two words and returns the word with more letters. The words are specified as ""{word1}"" and ""{word2}"".
+word1: {word1}
+word2: {word2}
+Output:",1,SEP_VARS,50,100
+221,False,meta_desc,,"
+Compare the length of two words and determine which one has more letters. The words to be compared are specified as ""{word1}"" and ""{word2}"" in the prompt.
+Output:",1,other,38,100
+222,False,meta_desc,,"
+Write a program that compares the length of two words and returns the word with more letters.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,37,100
+223,False,meta_desc,,"
+Write a program that compares the length of two words and outputs the word with more letters.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,37,100
+224,False,meta_desc,,"
+Compare the length of two words and determine which one has more letters. You can count the letters in each word or compare their lengths directly.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,47,100
+225,False,meta_desc,,"
+Compare the length of two words. Please provide the words to be compared using the placeholders {word1} and {word2}.
+word1: {word1}
+word2: {word2}
+Output:",0,SEP_VARS,43,100
+226,False,meta_desc,,"
+Compare the length of two words.
+Word 1: {word1}
+Word 2: {word2}
+Output:
+The length of {word1} is , and the length of {word2} is . Therefore, is longer than .",0,SEP_VARS,51,100
+227,False,meta_desc,,"
+Compare the length of two words.
+Word 1: {word1}
+Word 2: {word2}
+Output: The length of word1 is  and the length of word2 is .",0,SEP_VARS,41,100
+228,False,meta_desc,,"
+Compare the length of two words.
+Word1: {word1}
+Word2: {word2}
+Output:",0,SEP_VARS,24,100
+229,False,meta_desc,,"
+Compare the length of two words.
+Word 1: {word1}
+Word 2: {word2}
+Output:",0,SEP_VARS,26,100
+230,False,meta_desc,,"
+Compare the length of two words.
+Word 1: {word1}
+Word 2: {word2}
+Output: The length of {word1} is  and the length of {word2} is .",0,SEP_VARS,45,100
+231,False,meta_desc,,"
+Write a sentence that compares the length of two words. Your sentence should use the words ""shorter"" or ""longer"" to indicate which word is shorter or longer. 
+Compare the length of {word1} and {word2}.
+Sentence:",0,other,52,100
+232,False,meta_desc,,"
+Write a program that compares the length of two words and returns which one is longer. Your program should take two words as input and output the longer one.
+Word 1: {word1}
+Word 2: {word2}
+Longer word:",1,SEP_VARS,52,100
+233,False,meta_desc,,"
+Compare the length of two words. Write a program that takes two words as input and outputs which word is longer.
+word1: {word1}
+word2: {word2}
+Output: The longer word is ",1,SEP_VARS,45,100
+234,False,meta_desc,,"
+Write a sentence that compares the length of two words. Your sentence should include the words ""longer"" or ""shorter"" and the two words being compared.
+Compare the length of {word1} and {word2}.
+Sentence:",0,other,49,100
+235,False,meta_desc,,"
+Compare the length of two words. Use {word1} and {word2} as the keywords for the words to be compared. Provide the length of the longer word.
+word1: {word1}
+word2: {word2}
+Output: The longer word is  with a length of .",0,SEP_VARS,62,100
+236,False,meta_desc,,"
+Compare the length of two words. Use the keywords {word1} and {word2} to represent the words.
+Compare the length of {word1} and {word2}.
+Output:",0,other,40,100
+237,False,meta_desc,,"
+Compare two words and determine which one has more letters.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,30,100

@@ -1,0 +1,711 @@
+prompt idx,default prompt,method,language style,prompt template,correct,prompt format,prompt length,samples
+1,True,default,,"Q: Which sentence has the correct adjective order:
+Options:
+{options}
+A:",1,Q&A,17,100
+2,False,rephrase,,"Q: Choose the sentence that correctly orders the adjectives:
+Options:
+{options}
+A:",1,Q&A,19,100
+3,False,rephrase,,"Q: Choose the option that correctly orders the adjectives in the following sentence:
+Options:
+{options}
+A:",1,Q&A,23,100
+4,False,rephrase,,"Which of the following options has the correct order of adjectives in English sentences?
+Options:
+{options}
+Answer:",1,other,23,100
+5,False,rephrase,,"Q: Choose the option that has the correct order of adjectives in an English sentence:
+Options:
+{options}
+A:",1,Q&A,25,100
+6,False,rephrase,,"Q: Arrange the following adjectives in the correct order:
+Options:
+{options}
+A:",1,Q&A,19,100
+7,False,rephrase,,"Q: Choose the sentence that has the correct order of adjectives:
+Options:
+{options}
+A:",1,Q&A,21,100
+8,False,rephrase,,"Q: Arrange the adjectives in the correct order for the following sentence:
+Options:
+{options}
+A:",0,Q&A,22,100
+9,False,rephrase,,"Q: Choose the option that correctly orders the adjectives in an English sentence:
+Options:
+{options}
+A:",1,Q&A,23,100
+10,False,rephrase,,"Q: Choose the sentence that arranges adjectives in the correct order:
+Options:
+{options}
+A:",1,Q&A,22,100
+11,False,rephrase,,"Q: Arrange the given adjectives in the correct order:
+Options:
+{options}
+A:",1,Q&A,19,100
+12,False,rephrase,,"Q: Choose the option that correctly orders the adjectives in the sentence:
+Options:
+{options}
+A:",1,Q&A,22,100
+13,False,rephrase,,"Q: Choose the sentence with the correct adjective order:
+Options:
+{options}
+A:",1,Q&A,18,100
+14,False,rephrase,,"Which of the following sentences has the correct adjective order:
+Options:
+{options}
+Answer:",1,other,18,100
+15,False,rephrase,,"Q: Choose the sentence in which the adjectives are ordered correctly:
+Options:
+{options}
+A:",1,Q&A,21,100
+16,False,rephrase,,"Which of the following sentences has the correct order of adjectives: 
+Options:
+{options}
+Answer:",1,other,21,100
+17,False,rephrase,,"Q: Choose the option that arranges the adjectives in the correct order in the following sentence:
+Options:
+{options}
+A:",1,Q&A,27,100
+18,False,rephrase,,"Q: Choose the sentence that has the correct order of {options}:
+Options:
+{options}
+A:",0,Q&A,22,100
+19,False,rephrase,,"Which of the following options has the correct order of adjectives in an English sentence? 
+Options:
+{options}",1,other,23,100
+20,False,rephrase,,"Q: Choose the sentence with the proper order of adjectives:
+Options:
+{options}
+A:",1,Q&A,20,100
+21,False,rephrase,,"Q: Choose the sentence that has the proper order of {options} adjectives:
+Options:
+{options}
+A:",0,Q&A,24,100
+22,False,rephrase,,"Q: Reorder the adjectives in the following sentences in the correct order:
+Options:
+{options}
+A:",0,Q&A,23,100
+23,False,rephrase,,"Q: Choose the sentence with the correct order of adjectives:
+Options:
+{options}
+A:",1,Q&A,20,100
+24,False,rephrase,,"Q: Choose the sentence that arranges the adjectives in the correct order:
+Options:
+{options}
+A:",1,Q&A,23,100
+25,False,rephrase,,"Q: Choose the option with the adjectives ordered correctly:
+Options:
+{options}
+A:",1,Q&A,19,100
+26,False,rephrase,,"Q: Which of the following {options} sentences correctly orders the adjectives in English? 
+Options:",0,other,21,100
+27,False,rephrase,,"Q: Arrange the adjectives in the following sentences in the correct order:
+Options:
+{options}
+A:",0,Q&A,22,100
+28,False,rephrase,,"Q: Choose the sentence that has the correct adjective order:
+Options:
+{options}
+A:",1,Q&A,19,100
+29,False,rephrase,,"Q: Arrange the adjectives correctly in the following sentence:
+Options:
+{options}
+A:",0,Q&A,19,100
+30,False,rephrase,,"Q: Which of the following options lists the adjectives in the correct order?
+Options:
+{options}
+A:",1,Q&A,23,100
+31,False,rephrase,,"Q: Choose the sentence below that has correctly ordered adjectives:
+Options:
+{options}
+A:",1,Q&A,20,100
+32,False,rephrase,,"Q: Choose the sentence with the correct order of adjectives from the options provided:
+Options:
+{options}
+A:",1,Q&A,24,100
+33,False,rephrase,,"Q: Determine the correct order of adjectives in the following sentences:
+Options:
+{options}
+A:",0,Q&A,21,100
+34,False,rephrase,,"Q: Rearrange the adjectives in the following sentences to achieve the correct adjective order:
+Options:
+{options}
+A:",0,Q&A,25,100
+35,False,rephrase,,"Q: Choose the sentence with the correct adjective order from the following options:
+Options:
+{options}
+A:",1,Q&A,22,100
+36,False,rephrase,,"Q: Arrange the adjectives in the correct order:
+Options: {options}
+A:",1,Q&A,18,100
+37,False,rephrase,,"Q: Determine the correct ordering of adjectives in the following English sentence:
+Options:
+{options}
+A:",0,Q&A,22,100
+38,False,rephrase,,"Q: Arrange the following adjectives in the correct order in an English sentence:
+Options:
+{options}
+A:",0,Q&A,23,100
+39,False,rephrase,,"Q: Choose the option that shows the correct order of adjectives in the sentence:
+Options:
+{options}
+A:",1,Q&A,24,100
+40,False,rephrase,,"Q: Arrange the following adjectives in a correct order:
+Options:
+{options}
+A:",1,Q&A,19,100
+41,False,rephrase,,"Q: Choose the sentence with the correct adjective order from the options below:
+Options:
+{options}
+A:",1,Q&A,22,100
+42,False,rephrase,,"Q: Select the sentence that has the proper adjective order:
+Options:
+{options}
+A:",1,Q&A,19,100
+43,False,rephrase,,"Q: What is the correct order of adjectives in the following sentence?
+Options:
+{options}
+A:",1,Q&A,22,100
+44,False,rephrase,,"Choose the sentence below that demonstrates the correct order of adjectives:
+Options:
+{options}",1,other,18,100
+45,False,meta_cot,,Which of the following sentences has the correct order of adjectives: {options},1,SEP_VARS,16,100
+46,False,meta_cot,,Choose the sentence that has the correct order of adjectives from the following options: {options},1,SEP_VARS,19,100
+47,False,meta_cot,,Select the option that contains the correct order of adjectives in the sentence: {options},1,SEP_VARS,18,100
+48,False,meta_cot,,Identify the sentence that has the correct adjective order from the following options: {options},1,SEP_VARS,18,100
+49,False,meta_cot,,Which of the following sentences has the correct order of adjectives in English: {options},1,SEP_VARS,18,100
+50,False,meta_cot,,Identify the sentence that has the correct order of adjectives in English from the following options: {options},1,SEP_VARS,22,100
+51,False,meta_cot,,Choose the sentence that correctly orders the adjectives in English from the following options: {options},1,SEP_VARS,19,100
+52,False,meta_cot,,Which of the following sentences has the correct order of adjectives: {options}?,1,SEP_VARS,16,100
+53,False,meta_cot,,Please select the sentence that has the correct order of adjectives from the following options: {options}.,1,SEP_VARS,20,100
+54,False,meta_cot,,"In the following options, which sentence has the correct order of adjectives: {options}?",1,SEP_VARS,18,100
+55,False,meta_cot,,Choose the sentence that correctly orders the adjectives from the following options: {options}.,1,SEP_VARS,17,100
+56,False,meta_cot,,Identify the sentence that has the correct adjective order from the following options: {options}.,1,SEP_VARS,18,100
+57,False,meta_cot,,Which sentence has the correct order of adjectives among the following options: {options}?,1,SEP_VARS,17,100
+58,False,meta_cot,,Identify the sentence with the correct adjective order from the following options: {options}.,1,SEP_VARS,17,100
+59,False,meta_cot,,"Among the following options, which sentence has the correct order of adjectives: {options}?",1,SEP_VARS,18,100
+60,False,meta_cot,,Your task is to choose the sentence with the correct adjective order from the following options: {options}.,1,SEP_VARS,20,100
+61,False,meta_cot,,You will be presented with a question asking you to identify the correct adjective order in a sentence. Choose the sentence with the correct order of adjectives from the following options: {options}.,1,SEP_VARS,37,100
+62,False,meta_cot,,Choose the sentence with the correct adjective order from the following options: {options},1,SEP_VARS,16,100
+63,False,meta_cot,,Select the option that has the correct order of adjectives in the sentence: {options},1,SEP_VARS,18,100
+64,False,meta_cot,,Identify the sentence with the correct adjective order from the following choices: {options},1,SEP_VARS,17,100
+65,False,meta_cot,,Choose the sentence that has the correct order of adjectives from the following options: {options}.,1,SEP_VARS,19,100
+66,False,meta_cot,,"Among the following sentences, which one has the correct order of adjectives: {options}?",1,SEP_VARS,18,100
+67,False,meta_cot,,Identify the sentence with the correct order of adjectives from the following options: {options}.,1,SEP_VARS,19,100
+68,False,meta_cot,,Select the option that has the correct adjective order in the following sentences: {options}.,0,SEP_VARS,17,100
+69,False,meta_cot,,Identify the sentence with the correct adjective order from the given options: {options},1,SEP_VARS,17,100
+70,False,meta_cot,,"From the given options, select the sentence that has the correct adjective order: {options}",1,SEP_VARS,18,100
+71,False,meta_cot,,"Among the following options, identify the sentence with the correct adjective order of adjectives: {options}",1,SEP_VARS,20,100
+72,False,meta_cot,,Find the sentence with the correct order of adjectives from the following options: {options},1,SEP_VARS,18,100
+73,False,meta_cot,,"Which of the following options has the correct adjective order:
+{options}
+Answer:",1,other,16,100
+74,False,meta_cot,,"Choose the sentence that has the correct order of adjectives from the following options:
+{options}
+Answer:",1,other,21,100
+75,False,meta_cot,,"From the following options, select the sentence that has the correct order of adjectives:
+{options}
+Answer:",1,other,22,100
+76,False,meta_cot,,"Identify the sentence that has the correct order of adjectives from the following options:
+{options}
+Answer:",1,other,22,100
+77,False,meta_cot,,"Among the following options, which sentence has the correct order of adjectives:
+{options}
+Answer:",1,other,20,100
+78,False,meta_cot,,Which of the following sentences has the correct adjective order: {options}?,1,SEP_VARS,14,100
+79,False,meta_cot,,"Given the following options, choose the sentence with the correct adjective order: {options}.",1,SEP_VARS,17,100
+80,False,meta_cot,,In which of the following sentences are the adjectives ordered correctly? {options}.,1,other,16,100
+81,False,meta_desc,,"
+Order the adjectives in the following English sentence according to the correct adjective order: ""[1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose] noun"". You will be presented with a multiple-choice format and asked to select the correct order of adjectives. 
+Options:
+{options}
+Output:
+
+",1,other,87,100
+82,False,meta_desc,,"
+Order the adjectives in the following English sentence according to the correct order: ""[1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose] noun"". You will be presented with a multiple-choice format and must select the correct order of adjectives. 
+Options:
+{options}
+Output:
+
+",1,other,85,100
+83,False,meta_desc,,"
+Order the adjectives in the following sentence according to the rule: ""[1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose] noun"". Choose the correct order from the multiple-choice options provided.
+Options:
+{options}
+Output:
+
+",0,other,74,100
+84,False,meta_desc,,"
+Order the adjectives correctly in the following English sentence according to the rule: ""[1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose] noun"". Choose the correct order from the multiple-choice options provided.
+Choose the correct order of adjectives:
+{options}
+Output:
+
+",0,other,82,100
+85,False,meta_desc,,"
+Order the adjectives correctly in the following English sentences according to the rule: ""[1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose] noun"". Choose the sentence that has the correct adjective order.
+Options:
+{options}
+Output:
+
+",1,other,75,100
+86,False,meta_desc,,"
+Order the adjectives correctly in the following English sentences according to the rule: ""[1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose] noun"". Which sentence has the correct adjective order?
+Options:
+{options}
+Output:
+
+",1,other,73,100
+87,False,meta_desc,,"
+Order the adjectives correctly in the following sentence according to the standard English adjective order: ""[1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose] noun"". Choose the correct order from the multiple-choice options provided.
+Options:
+{options}
+Output:
+
+",1,other,78,100
+88,False,meta_desc,,"
+Order the adjectives in the given sentence according to the standard English adjective order: ""[1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose] noun"". Choose the correct order from the given options.
+Options:
+{options}
+Output:
+
+",1,other,75,100
+89,False,meta_desc,,"
+Order the adjectives in the following sentence according to the correct adjective order in English: ""[1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose] noun"". Choose the sentence that has the correct adjective order from the options provided.
+Options:
+{options}
+Output:
+
+",1,other,81,100
+90,False,meta_desc,,"
+Order the adjectives correctly in the following sentence: ""[1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose] noun"". Which of the following options has the correct adjective order?
+Options:
+{options}
+Output:",0,other,71,100
+91,False,meta_desc,,"
+Order the adjectives in the following sentence according to the correct order: ""[1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose] noun"". Choose the option with the correct order from the multiple-choice options provided.
+Options:
+{options}
+Output:
+
+",1,other,78,100
+92,False,meta_desc,,"
+Order the adjectives in the following sentence according to the correct adjective order in English: ""[1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose] noun"". Choose the option with the correct order from the multiple-choice options provided.
+Options:
+{options}
+Output:
+
+",1,other,81,100
+93,False,meta_desc,,"
+Order the adjectives in the following English sentence according to the rule: ""[1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose] noun"". Choose the correct order from the options provided.
+Options:
+{options}
+Output:
+
+",1,other,73,100
+94,False,meta_desc,,"
+Order the adjectives in the following sentence according to the rule: ""[1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose] noun"". Choose the correct order from the options provided.
+Options:
+{options}
+Output:
+
+",0,other,72,100
+95,False,meta_desc,,"
+Order the adjectives in the following English sentence according to the rule: ""[1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose] noun"". Choose the correct order from the options provided.
+Choose the correct order of adjectives:
+{options}
+Output:
+
+",1,other,79,100
+96,False,meta_desc,,"
+Order the adjectives according to the rule: ""[1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose] noun"". Choose the correct order from the options provided.
+Options:
+{options}
+Output:
+
+",1,other,68,100
+97,False,meta_desc,,"
+Order the adjectives correctly before a noun in English sentences, following the pattern of ""[1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose] noun"". You will be presented with a multi-choice format question asking which sentence has the correct adjective order, with options provided.
+Which of the following sentences has the correct adjective order?
+{options}
+",1,other,96,100
+98,False,meta_desc,,"
+Order the adjectives correctly before a noun in English sentences, following the pattern of ""[1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose] noun"". Choose the sentence that has the correct adjective order from the options provided.
+Options:
+{options}
+Output:
+
+",1,other,80,100
+99,False,meta_desc,,"
+Order the adjectives in the given sentence according to the pattern: ""[1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose] noun"". Select the correct order from the multiple-choice options provided.
+Options:
+{options}
+Output:
+
+",1,other,74,100
+100,False,meta_desc,,"
+Order the adjectives correctly in the following English sentence according to the pattern: ""[1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose] noun"". Choose the correct option from the multiple-choice list provided.
+Options:
+{options}
+Output:
+
+",1,other,76,100
+101,False,meta_desc,,"
+Given a sentence with adjectives that are not in the correct order, use hyperbaton to reorder the adjectives correctly.
+Options:
+{options}
+Output:
+
+",1,other,33,100
+102,False,meta_desc,,"
+Order the adjectives correctly in the following English sentence. Choose the correct option from the available answer choices.
+Options:
+{options}
+Output:",1,other,29,100
+103,False,meta_desc,,"
+Please identify the sentence that has the correct order of adjectives in English. You will be given a list of options to choose from. Adjectives in English generally follow a specific order, which is: opinion, size, age, shape, color, origin, material, purpose. Keep this order in mind when selecting the correct sentence.
+Options:
+{options}
+Output:
+
+",1,other,75,100
+104,False,meta_desc,,"
+Identify the sentence that has the correct order of adjectives in English. Choose the sentence that has the correct order of adjectives. 
+Options:
+{options}
+Output:
+
+",1,other,36,100
+105,False,meta_desc,,"
+In this task, you will be presented with a sentence containing a list of adjectives that are not in the correct order. Your task is to rearrange the adjectives in the correct order. You will be presented with a question asking which sentence has the correct adjective order, followed by a list of options. Select the correct option and write it as the answer.
+Options:
+{options}
+Output:
+
+",0,other,81,100
+106,False,meta_desc,,"
+Order the adjectives correctly in the following English sentence. Which option has the correct adjective order?
+Options: {options}
+Output:",1,SEP_VARS,27,100
+107,False,meta_desc,,"
+In the task {hyperbaton}, you will be presented with a sentence containing multiple adjectives. Your task is to identify the correct order of the adjectives in the sentence. You will be given {options} sentence options to choose from in a {multi_choice} format. 
+Options:
+{options}
+Output:",0,other,65,100
+108,False,meta_desc,,"
+In the hyperbaton task, you will be presented with a sentence containing a series of adjectives. Your task is to identify the correct order of the adjectives. The sentence options will be provided in the {options} placeholder. Select the sentence with the correct adjective order. The task format is {multi_choice}.
+Options:
+{options}
+Output:",1,other,72,100
+109,False,meta_desc,,"
+Order the adjectives correctly in the following English sentence. Choose the option that has the correct adjective order.
+Options:
+{options}
+Output:
+
+",1,other,29,100
+110,False,meta_desc,,"
+Order the adjectives correctly in English sentences. You will be given a question with a list of options, and you need to select the option with the correct adjective order.
+Question: {question}
+Options:
+{options}
+Output:",0,SEP_VARS,47,100
+111,False,meta_desc,,"
+Order the adjectives correctly in the following sentence. Choose the option with the correct adjective order from the list of options.
+Options:
+{options}
+Output:
+
+",1,other,32,100
+112,False,meta_desc,,"
+Order the adjectives correctly in the following English sentence. Choose the option with the correct adjective order from the list of options provided.
+Options:
+{options}
+Output:
+
+",1,other,34,100
+113,False,meta_desc,,"
+Identify the sentence with the correct adjective order from a given list of options.
+Q: {question}
+Options:
+{options}
+Output:
+
+",0,SEP_VARS,29,100
+114,False,meta_desc,,"
+Identify the sentence with the correct adjective order from a given list of options.
+Q: Which sentence has the correct adjective order:
+Options:
+{options}
+Output:",1,other,34,100
+115,False,meta_desc,,"
+Identify the sentence with the correct adjective order from a given set of options.
+Q: {question}
+Options:
+{options}
+Output:",0,SEP_VARS,29,100
+116,False,meta_desc,,"
+Identify the sentence with the correct adjective order from a given set of options.
+Options:
+{options}
+Output:
+
+",1,other,24,100
+117,False,meta_desc,,"
+Given a set of options, identify the correct order of adjectives that should be used to describe a noun.
+Options: {options}
+Noun: 
+Output:",0,SEP_VARS,34,100
+118,False,meta_desc,,"
+Given a set of options, identify the correct adjective order. Adjective order refers to the order in which multiple adjectives should be used to describe a noun. The correct order is determined by a set of rules that take into account the type, opinion, size, age, shape, color, origin, and material of the adjectives. 
+Options: {options}
+Output:",1,SEP_VARS,77,100
+119,False,meta_desc,,"
+Rearrange the following adjectives in the correct order: [1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose]. Remember that the correct order is ""opinion, size, age, shape, color, origin, material, purpose"" before the noun.
+Options:
+{options}
+Output:
+
+",0,other,88,100
+120,False,meta_desc,,"
+Rearrange the adjectives in the following order: ""[1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose] noun"". Keep in mind that this is the most common order in English.
+Options:
+{options}
+Output:",0,other,74,100
+121,False,meta_desc,,"
+Order the adjectives in the following sentence according to the rule: ""[1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose] noun"". Choose the correct option from the multiple-choice question.
+Options:
+{options}
+Output:
+
+",1,other,73,100
+122,False,meta_desc,,"
+Order the adjectives in the following sentence according to the rule: ""[1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose] noun"". Choose the correct option from the multiple-choice list.
+Options:
+{options}
+Output:
+
+",1,other,73,100
+123,False,meta_desc,,"
+Rearrange the adjectives in the sentence to follow the correct order: ""[1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose] noun"". Which of the following sentences has the correct adjective order?
+Options:
+{options}
+Output:
+
+",0,other,76,100
+124,False,meta_desc,,"
+Rearrange the given adjectives in the correct order according to the rule: ""[1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose] noun"". Choose the sentence that has the correct adjective order.
+Options:
+{options}
+Output:
+The correct order of adjectives is: [1. opinion] [2. size] [3",0,other,96,100
+125,False,meta_desc,,"
+Rearrange the given adjectives in the correct order according to the standard English adjective order. The order is as follows: ""[1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose] noun"". Choose the correct order from the given options.
+Options:
+{options}
+Output:
+
+",1,other,84,100
+126,False,meta_desc,,"
+Order the adjectives in the following sentence according to the standard English adjective order: ""[1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose] noun"". Choose the correct order from the options provided.
+Options:
+{options}
+Output:
+
+",1,other,75,100
+127,False,meta_desc,,"
+Rearrange the adjectives in the following sentence according to the correct order: ""[1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose] noun"". Choose the option that has the correct order of adjectives.
+Options:
+{options}
+Output:
+
+",1,other,78,100
+128,False,meta_desc,,"
+Order the adjectives in the following sentence according to the standard English adjective order: ""[1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose] noun"". Choose the option with the correct order of adjectives.
+Options:
+{options}
+Output:
+
+",1,other,77,100
+129,False,meta_desc,,"
+Order the adjectives in the following sentence according to the correct English adjective order: ""[1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose] noun"". Choose the option with the correct order from the multiple-choice options provided.
+Options:
+{options}
+Output:
+
+",1,other,80,100
+130,False,meta_desc,,"
+Rearrange the adjectives in the following order: [1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose] noun.
+Options:
+{options}
+Output:",0,other,61,100
+131,False,meta_desc,,"
+Rearrange the adjectives in the following order: [1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose] noun. Try to use as many adjectives as possible, and remember the order!
+Options:
+{options}
+Output:",0,other,76,100
+132,False,meta_desc,,"
+Rearrange the adjectives in the given sentence according to the rule: ""[1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose] noun"". Keep in mind that the order of adjectives can change the meaning of the sentence.
+Options:
+{options}
+Output:
+
+",0,other,82,100
+133,False,meta_desc,,"
+Rearrange the given adjectives in the correct order according to the rule: ""[1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose] noun"". Keep in mind that the order of adjectives can affect the meaning of the sentence. 
+Default prompt: ""Which of the following is the correct order for the given adjectives?""
+Options:
+",0,other,97,100
+134,False,meta_desc,,"
+Order the adjectives correctly before the noun in the following sentence according to the pattern of ""[1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose] noun"". 
+Which of the following sentences has the correct adjective order?
+{options}
+Output:
+
+",1,other,77,100
+135,False,meta_desc,,"
+Rearrange the given adjectives in the correct order before the noun, following the pattern of ""[1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose] noun"". 
+Which of the following sentences has the correct adjective order before the noun?
+{options}
+Output:
+
+",1,other,82,100
+136,False,meta_desc,,"
+Order the adjectives in the sentence according to the pattern: ""[1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose] noun"". Choose the correct order from the options provided.
+Options:
+{options}
+Output:
+
+",1,other,71,100
+137,False,meta_desc,,"
+Order the adjectives in the given sentence according to the pattern: ""[1. opinion] [2. size] [3. age] [4. shape] [5. color] [6. origin] [7. material] [8. purpose] noun"". Choose the correct option from the given multiple-choice options.
+Options:
+{options}
+Output:",1,other,74,100
+138,False,meta_desc,,"
+Rearrange adjectives in English sentences with hyperbaton! Your task is to correctly order the adjectives in a given sentence. Use the keyword ""options"" to select the correct order from the available answer choices.
+Sentence: 
+Options: 
+{options}
+Output:
+
+",0,other,56,100
+139,False,meta_desc,,"
+Rearrange the adjectives in the sentence to form a grammatically correct sentence. Choose the correct order from the available options.
+Options:
+{options}
+Output:
+
+",1,other,34,100
+140,False,meta_desc,,"
+Given a set of sentences with multiple adjectives, identify the sentence with the correct order of adjectives in English.
+Options:
+{options}
+Output:
+
+",1,other,31,100
+141,False,meta_desc,,"
+Given a list of sentences with adjectives, identify the sentence that has the correct order of adjectives in English.
+Options:
+{options}
+Output:
+
+",1,other,31,100
+142,False,meta_desc,,"
+Ordering adjectives can be tricky! Help me choose the correct order for the adjectives in the following sentences. Which sentence has the correct adjective order?
+Options:
+{options}
+Output:
+
+",1,other,39,100
+143,False,meta_desc,,"
+Ordering adjectives can be tricky, but with practice, you can master it! Read the sentence carefully and determine the correct order of the adjectives. Then select the option that matches the correct order. 
+Options:
+{options}
+Output:
+
+",1,other,50,100
+144,False,meta_desc,,"
+In this task, you will be presented with a sentence containing multiple adjectives. Your task is to identify the correct order of the adjectives in the sentence. To do this, you will need to consider the following order: opinion, size, age, shape, color, origin, material, purpose.
+Options:
+{options}
+Output:
+
+",1,other,69,100
+145,False,meta_desc,,"
+In this task, you will be presented with a sentence containing multiple adjectives. Your task is to identify the correct order of the adjectives. Remember that the order of adjectives in English follows a specific pattern. The task format is multiple choice, and the task name is Hyperbaton.
+Options:
+{options}
+Output:
+
+",1,other,67,100
+146,False,meta_desc,,"
+Ordering adjectives correctly in English sentences can be tricky. In this task, you will be presented with a question and a list of options. Your goal is to choose the option with the correct adjective order. Keep in mind that the order of adjectives in English is determined by their function and meaning.
+Question: {question}
+Options:
+{options}
+Output:
+
+",0,SEP_VARS,74,100
+147,False,meta_desc,,"
+Ordering adjectives correctly in English sentences can be tricky. This task will provide you with a question and a list of options. Your goal is to choose the option with the correct adjective order.
+Question: {question}
+Options:
+{options}
+Output:",0,SEP_VARS,52,100
+148,False,meta_desc,,"
+Choose the correct adjective order in English sentences. You will be presented with a question and a list of options. Your goal is to select the option with the correct adjective order.
+Question: {question}
+Options:
+{options}
+Output:",0,SEP_VARS,48,100
+149,False,meta_desc,,"
+Given a sentence with multiple adjectives, choose the correct order of the adjectives from a list of options. Remember that the order of adjectives in English is determined by their semantic category.
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",0,SEP_VARS,51,100
+150,False,meta_desc,,"
+Order the adjectives correctly in the given options to form a grammatically correct sentence.
+Options:
+{options}
+Output:
+
+",0,other,25,100
+151,False,meta_desc,,"
+Order the adjectives correctly in the given sentences.
+Options:
+{options}
+Output:
+
+",0,other,18,100
+152,False,meta_desc,,"
+Identify the sentence with the correct adjective order from the given options. Remember that in English, adjectives usually follow a specific order. This task is called hyperbaton and it is a multiple choice format.
+Options:
+{options}
+Output:",1,other,50,100
+153,False,meta_desc,,"
+Order the adjectives in the following sentences to form a grammatically correct sentence.
+Options:
+{options}
+Output:
+
+",0,other,24,100
+154,False,meta_desc,,"
+Please identify the correct adjective order in the given set of options. Use the order of adjectives as per the standard rules of English grammar.
+Options:
+{options}
+Output:
+
+",1,other,36,100
+155,False,meta_desc,,"
+Given a set of adjectives, identify the correct order in which they should appear.
+Options:
+{options}
+Output:
+
+",1,other,25,100

@@ -1,0 +1,468 @@
+prompt idx,default prompt,method,language style,prompt template,correct,prompt format,prompt length,samples
+1,True,default,,"Q: If you follow these instructions, do you return to the starting point?
+{instructions}
+Options:
+- Yes
+- No
+A:",1,Q&A,29,100
+2,False,rephrase,,"If {instructions} are followed, will the starting point be reached?",1,other,14,100
+3,False,rephrase,,"If {instructions} are followed, will the starting point be reached again?",1,other,15,100
+4,False,rephrase,,"If {instructions} are followed, does it lead back to the starting point?",1,other,16,100
+5,False,rephrase,,"If {instructions} are followed, would the starting point be reached again?",1,other,15,100
+6,False,rephrase,,"If you follow the {instructions}, would you end up back at the starting point? (Answer with Yes or No for classification)",1,other,26,100
+7,False,rephrase,,"If {instructions} are followed, does one end up back at the starting point?",1,other,17,100
+8,False,rephrase,,"If {instructions} are followed, does the path lead back to the starting point?",1,other,17,100
+9,False,rephrase,,"If {instructions} are followed, would the starting point be reached again? (Yes/No)",1,other,20,100
+10,False,rephrase,,"If {instructions} are followed, will the starting point be reached again? (Yes/No)",1,other,20,100
+11,False,rephrase,,"If {instructions} are followed, will the starting point be reached? (yes/no)",1,other,18,100
+12,False,rephrase,,"If {instructions} are followed, would the starting point be reached?",1,other,14,100
+13,False,rephrase,,"If you follow the {instructions}, would you return to the starting point? (Answer with Yes or No)",1,other,22,100
+14,False,rephrase,,Would {instructions} lead someone back to the starting point?,1,other,12,100
+15,False,rephrase,,"If {instructions} are followed, does the individual return to the starting point?",1,other,16,100
+16,False,rephrase,,"If {instructions} are followed, will the starting point be reached? (Answer with Yes or No)",1,other,21,100
+17,False,rephrase,,"If {instructions} are followed, does the individual end up back at the starting point?",1,other,18,100
+18,False,rephrase,,"If {instructions} were followed, would the starting point be reached again? (Answer with Yes or No)",1,other,22,100
+19,False,rephrase,,"If {instructions} are followed, would the starting point be reached? (yes/no)",1,other,18,100
+20,False,rephrase,,"If {instructions} are followed, will the ending point be the same as the starting point? (Yes/No)",1,other,24,100
+21,False,rephrase,,"If {instructions} are followed, would the individual end up back at the starting point?",1,other,18,100
+22,False,rephrase,,"Based on the {instructions}, can it be determined whether the navigation instructions lead back to the starting point? (Answer with Yes or No)",1,other,28,100
+23,False,rephrase,,"If you follow the {instructions} provided, would you end up back at the starting point? (Answer with yes or no for classification.)",1,other,28,100
+24,False,rephrase,,"If {instructions} are followed, will the starting point be returned to?",1,other,15,100
+25,False,rephrase,,"If {instructions} are followed, does the user end up back at the starting point?",1,other,18,100
+26,False,rephrase,,Would {instructions} lead the person back to the starting point?,1,other,13,100
+27,False,rephrase,,"Q: Would following {instructions} lead you back to the starting point?
+Options:
+- Yes
+- No",1,other,22,100
+28,False,rephrase,,"Q: Would following {instructions} lead you back to the starting point?
+Options:
+- Yes
+- No
+A:",1,Q&A,25,100
+29,False,rephrase,,"Q: Would following {instructions} result in returning to the starting point?
+Options:
+- Yes
+- No
+A:",1,Q&A,25,100
+30,False,rephrase,,"Q: Would following {instructions} result in returning to the starting point?
+Options:
+- Yes
+- No",1,other,22,100
+31,False,rephrase,,"Given {instructions}, would you end up back at the starting point? Answer with Yes or No.",1,other,20,100
+32,False,rephrase,,"Q: Would one end up back at the starting point if they follow these {instructions}?
+Options:
+- Yes
+- No",1,other,26,100
+33,False,rephrase,,"Q: Would following these {instructions} lead you to return to the starting point?
+Options:
+- Yes
+- No
+A:",1,Q&A,27,100
+34,False,rephrase,,"Q: Would following the {instructions} lead you back to the starting point? 
+Options:
+- Yes
+- No",1,other,24,100
+35,False,rephrase,,"Q: Would the {instructions} lead you back to the starting point?
+Options:
+- Yes
+- No
+A:",1,Q&A,25,100
+36,False,rephrase,,"Q: Would following {instructions} lead back to the starting point?
+Options:
+- Yes
+- No
+A:",1,Q&A,24,100
+37,False,rephrase,,"Q: Would {instructions} lead one back to the starting point?
+Options:
+- Yes
+- No
+A:",1,Q&A,24,100
+38,False,rephrase,,"Q: Would one end up back at the starting point if they followed {instructions}?
+Options:
+- Yes
+- No
+A:",1,Q&A,28,100
+39,False,rephrase,,"Q: Will following {instructions} lead you back to the starting point?
+Options:
+- Yes
+- No
+A:",1,Q&A,25,100
+40,False,rephrase,,"Q: Would someone following {instructions} end up back at the starting point?
+Options:
+- Yes
+- No
+A:",1,Q&A,26,100
+41,False,rephrase,,"Q: Would one end up back at the starting point by following {instructions}?
+Options:
+- Yes
+- No
+A:",1,Q&A,27,100
+42,False,rephrase,,"Q: Would {instructions} lead you back to the starting point?
+Options:
+- Yes
+- No
+A:",1,Q&A,24,100
+43,False,rephrase,,"Q: Based on the {instructions}, can it be determined if you will end up back at the starting point?
+Options:
+- Yes
+- No
+A:",1,Q&A,33,100
+44,False,rephrase,,"Q: Would one end up back at the starting point if they follow the {instructions} given?
+Options:
+- Yes
+- No
+A:",1,Q&A,30,100
+45,False,rephrase,,"Q: Would following {instructions} lead one back to the starting point?
+Options:
+- Yes
+- No",1,other,22,100
+46,False,rephrase,,"Given {instructions}, can you end up back at the starting point? 
+Options:
+- Yes
+- No",1,other,22,100
+47,False,rephrase,,"Q: Will {instructions} lead someone back to the starting point?
+Options:
+- Yes
+- No
+A:",1,Q&A,24,100
+48,False,rephrase,,"Q: Would following {instructions} bring you back to the starting point?
+Options:
+- Yes
+- No",1,other,22,100
+49,False,rephrase,,"Q: Would following these {instructions} bring you back to the starting point?
+Options:
+- Yes
+- No
+A:",1,Q&A,26,100
+50,False,rephrase,,"Q: Would someone following the given {instructions} end up back at the starting point?
+Options:
+- Yes
+- No
+A:",1,Q&A,28,100
+51,False,rephrase,,"Q: Will following these {instructions} lead you back to your starting point?
+Options:
+- Yes
+- No
+A:",1,Q&A,26,100
+52,False,meta_cot,,Would one end up back at the starting point if they {instructions}?,1,other,14,100
+53,False,meta_cot,,"If someone {instructions}, will they end up back at the starting point?",1,other,15,100
+54,False,meta_cot,,Do these {instructions} lead back to the starting point?,1,other,12,100
+55,False,meta_cot,,"If someone follows these {instructions}, will they return to the starting point?",1,other,15,100
+56,False,meta_cot,,Are these {instructions} a loop that leads back to the starting point?,1,other,15,100
+57,False,meta_cot,,Can one end up back at the starting point by following these {instructions}?,1,other,15,100
+58,False,meta_cot,,"If someone follows {instructions}, will they end up back at the starting point?",1,other,16,100
+59,False,meta_cot,,Are these {instructions} going to lead you back to the starting point?,1,other,15,100
+60,False,meta_cot,,Do these {instructions} take you back to the starting point?,1,other,13,100
+61,False,meta_cot,,"If you follow these {instructions}, will you end up back at the starting point?",1,other,17,100
+62,False,meta_cot,,Suppose you have a set of navigation {instructions}. Can you tell if you will end up back at the starting point? Respond with Yes or No.,1,other,31,100
+63,False,meta_cot,,"If you were given a set of {instructions} for navigation, would you be able to determine if you would return to the starting point? Choose Yes or No.",1,other,33,100
+64,False,meta_cot,,Imagine you have a list of {instructions} for navigation. Can you determine if you will return to the starting point? Select Yes or No.,1,other,29,100
+65,False,meta_cot,,Are you able to determine if you will return to the starting point with a given set of {instructions} for navigation? Respond with Yes or No.,1,other,30,100
+66,False,meta_cot,,Would one return to the starting point after following the {instructions} provided? Please select Yes or No.,1,other,21,100
+67,False,meta_cot,,"If one were to follow the {instructions} given, would they end up back at the starting point? Choose Yes or No.",1,other,26,100
+68,False,meta_cot,,Are the {instructions} provided going to lead one back to the starting point? Respond with Yes or No.,1,other,22,100
+69,False,meta_cot,,Do the {instructions} provided lead one back to the starting point? Indicate Yes or No.,1,other,20,100
+70,False,meta_cot,,Will following the {instructions} provided lead one back to the starting point? Select Yes or No.,1,other,20,100
+71,False,meta_cot,,Can you determine if the given set of instructions would lead you back to the starting point? The instructions are: {instructions}. Please choose from the following options: Yes or No.,1,SEP_VARS,36,100
+72,False,meta_cot,,Do the instructions provided lead you back to the starting point? The instructions are: {instructions}. Please select either Yes or No.,1,SEP_VARS,26,100
+73,False,meta_cot,,Are you able to return to the starting point by following these instructions? The instructions are: {instructions}. Please choose either Yes or No.,1,SEP_VARS,28,100
+74,False,meta_cot,,"Given the instructions {instructions}, can you determine if you will return to the starting point? Please select either Yes or No.",1,other,25,100
+75,False,meta_cot,,"Would the starting point be reached if one followed the given set of instructions in {instructions}? Choose between ""Yes"" or ""No"".",1,other,27,100
+76,False,meta_cot,,"Do the instructions provided in {instructions} lead back to the starting point? Please select ""Yes"" or ""No"".",1,other,24,100
+77,False,meta_cot,,"Given the navigation instructions in {instructions}, would the starting point be reached? Please choose ""Yes"" or ""No"".",1,other,24,100
+78,False,meta_cot,,"Would one end up back at the starting point if they followed the instructions provided in {instructions}? Please select either ""Yes"" or ""No"".",1,other,29,100
+79,False,meta_cot,,"Given the instructions {instructions}, would the person following them return to the starting point? Please select ""Yes"" or ""No"".",1,other,26,100
+80,False,meta_cot,,"If someone were to follow the instructions {instructions}, would they end up back at the starting point? Please choose either ""Yes"" or ""No"".",1,other,30,100
+81,False,meta_cot,,"Are the instructions provided in {instructions} sufficient to lead someone back to the starting point? Please select either ""Yes"" or ""No"".",1,other,28,100
+82,False,meta_cot,,Would you return to the starting point if you followed these {instructions}?,1,other,14,100
+83,False,meta_cot,,Do these {instructions} lead you back to the starting point?,1,other,13,100
+84,False,meta_cot,,Are you brought back to the starting point by following these {instructions}?,1,other,14,100
+85,False,meta_cot,,"If you follow these {instructions}, will you end up at the starting point again?",1,other,17,100
+86,False,meta_cot,,Can you return to the starting point by following these {instructions}?,1,other,13,100
+87,False,meta_cot,,Would following the instructions lead you back to the starting point? The instructions are: {instructions}. Choose yes or no.,1,SEP_VARS,24,100
+88,False,meta_cot,,"Given the instructions {instructions}, would you end up back at the starting point? Please select either yes or no.",1,other,23,100
+89,False,meta_cot,,"If you were to follow the instructions {instructions}, would you return to the starting point? Please choose yes or no.",1,other,24,100
+90,False,meta_cot,,Imagine you are following the instructions {instructions}. Would you end up back at the starting point? Please select either yes or no.,1,other,26,100
+91,False,meta_cot,,The task is to determine whether a set of instructions will lead you back to the starting point. The instructions are: {instructions}. Please choose either yes or no.,1,SEP_VARS,33,100
+92,False,meta_cot,,Would one return to the starting point if they {instructions}? Choose Yes or No.,1,other,17,100
+93,False,meta_cot,,"If someone {instructions}, would they end up back at the starting point? Select Yes or No.",1,other,20,100
+94,False,meta_cot,,Suppose you {instructions}. Would you end up back at the starting point? Pick Yes or No.,1,other,21,100
+95,False,meta_cot,,Imagine you {instructions}. Do you return to the starting point? Indicate Yes or No.,1,other,19,100
+96,False,meta_cot,,"If you were to {instructions}, would you end up back at the starting point? Answer Yes or No.",1,other,22,100
+97,False,meta_cot,,"Would one end up back at the starting point if they {instructions}? Choose between ""Yes"" or ""No"".",1,other,23,100
+98,False,meta_cot,,"If someone {instructions}, would they return to the starting point? Please select either ""Yes"" or ""No"".",1,other,23,100
+99,False,meta_cot,,"Suppose someone {instructions}, would they end up back at the starting point? Please choose between ""Yes"" or ""No"".",1,other,26,100
+100,False,meta_cot,,"Do the {instructions} lead back to the starting point? Please choose between ""Yes"" or ""No"".",1,other,22,100
+101,False,meta_cot,,Do these navigation {instructions} lead back to the starting point?,1,other,13,100
+102,False,meta_cot,,Can you determine whether you will end up back at the starting point by following these {instructions}?,1,other,19,100
+103,False,meta_cot,,Can you end up back at the starting point by following these {instructions}?,1,other,15,100
+104,False,meta_cot,,Are these {instructions} going to take you back to the starting point?,1,other,15,100
+105,False,meta_cot,,Would one end up back at the starting point if they followed these {instructions}?,1,other,16,100
+106,False,meta_desc,,"
+Given a set of navigation instructions, classify whether they will lead the user back to the starting point or not. The instructions will be in the form of a string, where each character represents a direction: 'N' for north, 'S' for south, 'E' for east, and 'W' for west. The starting point is assumed to be at the origin (0,0) on a 2D plane. Your task is to output a binary classification label: 1 if the",0,other,102,100
+107,False,meta_desc,,"
+Classify whether a set of navigation instructions will lead the user back to the starting point or not. Provide a sequence of instructions as input and output ""Yes"" if the user will return to the starting point, and ""No"" otherwise.
+Instructions: {instructions}
+Output:",1,SEP_VARS,56,100
+108,False,meta_desc,,"
+Classify whether a series of navigation instructions will lead to the starting point or not. Provide either ""Yes"" or ""No"" as the output. 
+Instructions: {instructions}
+Output: 
+
+",1,SEP_VARS,40,100
+109,False,meta_desc,,"
+Classify whether a series of navigation instructions will lead to the starting point or not. The input consists of the instructions and the output is either ""Yes"" or ""No"". 
+Instructions: {instructions}
+Output:",1,SEP_VARS,44,100
+110,False,meta_desc,,"
+Classify whether a series of navigation instructions will lead back to the starting point. Provide ""Yes"" if the instructions will lead back to the starting point, and ""No"" otherwise.
+Instructions: {instructions}
+Output:",1,SEP_VARS,45,100
+111,False,meta_desc,,"
+Given a series of navigation instructions, classify whether they will lead back to the starting point. The input is a string of instructions separated by spaces, and the output is either ""Yes"" if the instructions lead back to the starting point, or ""No"" if they do not.
+Instructions: {instructions}
+Output:",1,SEP_VARS,64,100
+112,False,meta_desc,,"
+Please generate a classification model that can determine whether a series of navigation instructions will lead to the starting point or not. Your model should take a list of instructions as input and output a binary classification label indicating whether the instructions will lead back to the starting point or not.
+Instructions: {instructions}
+Output:",0,SEP_VARS,61,100
+113,False,meta_desc,,"
+Classify whether a series of navigation instructions will lead to the starting point or not. The input will be a list of instructions, where each instruction is a string consisting of a direction (north, south, east, or west) and a distance (a positive integer). The output should be a binary classification, where 1 indicates that the instructions will lead back to the starting point and 0 indicates that they will not.
+Instructions: {instructions}
+Output:",0,SEP_VARS,93,100
+114,False,meta_desc,,"
+Given a series of navigation instructions, classify whether the final destination will lead back to the starting point or not. The navigation instructions will be in the form of a string, where each character represents a direction (N, S, E, W for North, South, East, West respectively). The starting point is assumed to be (0,0) on a 2D plane, and each direction corresponds to a unit movement in that direction.
+Instructions: {instructions}
+Output",0,SEP_VARS,96,100
+115,False,meta_desc,,"
+Given a series of navigation instructions, predict whether the final location will be the same as the starting point. You can assume that the starting point is (0,0) and the navigation instructions consist of a sequence of steps in the form of (direction, distance) pairs. The possible directions are ""north"", ""south"", ""east"", and ""west"", and the distance is a positive integer representing the number of units to move in that direction. You should output a binary classification (0 or",0,other,100,100
+116,False,meta_desc,,"
+Given a series of navigation instructions, classify whether they will lead back to the starting point. You can assume that the starting point is (0,0) and the navigation instructions are given as a string of characters, where 'U' represents moving up, 'D' represents moving down, 'L' represents moving left, and 'R' represents moving right. The output should be a binary classification, where 1 indicates that the instructions will lead back to the starting point and 0 indicates that they",0,other,102,100
+117,False,meta_desc,,"
+Please generate a classification for a series of navigation instructions to determine if they will lead back to the starting point. The input will consist of a list of directions, where each direction is represented by a string of characters. The output should be a binary classification, where 1 indicates that the directions will lead back to the starting point, and 0 indicates that they will not.
+Instructions: {instructions}
+Output:",0,SEP_VARS,83,100
+118,False,meta_desc,,"
+Classify whether a series of navigation instructions will lead to the starting point. The input is a set of instructions in natural language and the output is either ""Yes"" or ""No"".
+Instructions: {instructions}
+Output:
+
+",1,SEP_VARS,45,100
+119,False,meta_desc,,"
+Classify whether a series of navigation instructions will lead to the starting point. The instructions are given as a string of directions, where each direction is represented by a single letter: 'N' for north, 'S' for south, 'E' for east, and 'W' for west. The starting point is the origin (0,0) on a 2D plane. The output should be ""Yes"" if the series of instructions will lead back to the starting point, and """,0,other,101,100
+120,False,meta_desc,,"
+Please generate a classification model that can determine whether a given set of navigation instructions will lead the user back to the starting point or not. The model should take in a sequence of instructions and output a binary classification label indicating whether the user will end up at the starting point or not. 
+Instructions: {instructions}
+Output:",0,SEP_VARS,65,100
+121,False,meta_desc,,"
+Given a set of navigation instructions, classify whether the user will end up back at the starting point or not. The instructions can include directions such as ""turn left"", ""turn right"", ""go straight"", and ""make a U-turn"". Your task is to predict whether the user will end up at the same location they started from.
+Instructions: {instructions}
+Output:",1,SEP_VARS,75,100
+122,False,meta_desc,,"
+Given a series of navigation instructions, classify whether they will lead the person back to the starting point or not. The instructions will be in the form of a string, where each character represents a direction (N for North, S for South, E for East, W for West). Your task is to output a binary classification (1 for returning to the starting point, 0 for not returning).
+Instructions: {instructions}
+Output:",0,SEP_VARS,87,100
+123,False,meta_desc,,"
+Given a series of navigation instructions, classify whether the person will end up back at the starting point or not. The instructions will be in the form of a string, where each character represents a direction: 'N' for north, 'S' for south, 'E' for east, and 'W' for west. The starting point is assumed to be (0,0) on a 2D plane, and each direction corresponds to a unit movement in that direction. Your task is to",0,other,101,100
+124,False,meta_desc,,"
+Classify whether a series of navigation instructions will bring the user back to the starting point. Provide a list of instructions as input and output a binary classification indicating whether the user will end up at the starting point or not.
+Instructions: {instructions}
+Output:",1,SEP_VARS,52,100
+125,False,meta_desc,,"
+Given a series of navigation instructions, classify whether they will bring the user back to the starting point. The navigation instructions will be provided as a string of directions, where each direction is represented by a single letter (N for north, S for south, E for east, W for west). The starting point is assumed to be (0,0) on a two-dimensional plane. Your task is to output a binary classification label indicating whether the user will end up back at the starting point after",0,other,99,100
+126,False,meta_desc,,"
+Given a series of navigation instructions, determine whether one would end up back at the starting point. The instructions consist of a sequence of characters representing movements in the four cardinal directions: N (north), S (south), E (east), and W (west). A movement of one unit in a direction is represented by a single character. Your task is to write a program that takes a string of navigation instructions as input and outputs whether the final position is the same as the starting position.
+Instruct",0,other,100,100
+127,False,meta_desc,,"
+Given a series of navigation instructions, determine whether one would end up back at the starting point. The instructions consist of a sequence of characters representing movements in the cardinal directions: N (north), S (south), E (east), and W (west). The starting point is at the origin (0,0) on a two-dimensional plane. Your task is to write a program that takes in a string of instructions and outputs whether or not the final position is the same as the starting position",0,other,99,100
+128,False,meta_desc,,"
+Given a series of navigation instructions, determine whether one would end up back at the starting point. Answer with Yes or No.
+Instructions: {instructions}
+Output:",1,SEP_VARS,33,100
+129,False,meta_desc,,"
+Given a set of instructions, determine if following them would lead one back to the starting point. The instructions will contain the keyword ""instructions"". Provide a yes or no answer.
+Instructions: {instructions}
+Output:
+
+",1,SEP_VARS,43,100
+130,False,meta_desc,,"
+Given a series of navigation instructions, determine whether one would end up back at the starting point. The instructions will be provided as a string containing the keyword ""instructions"". The output should be a yes/no answer.
+Instructions: {instructions}
+Output:
+
+",1,SEP_VARS,50,100
+131,False,meta_desc,,"
+Given a set of navigation instructions, determine whether they would lead one back to the starting point. Please output either ""Yes"" or ""No"". 
+Instructions: {instructions}
+Output:",1,SEP_VARS,38,100
+132,False,meta_desc,,"
+Given a set of navigation instructions {instructions}, determine whether following these instructions would lead one back to the starting point. Output ""Yes"" if the instructions lead back to the starting point, and ""No"" otherwise.
+Output:",1,other,46,100
+133,False,meta_desc,,"
+Given a set of navigation {instructions}, determine whether they would lead one back to the starting point. Provide a binary classification output, with the options being ""Yes"" or ""No"".
+Instructions: {instructions}
+Output:",1,SEP_VARS,45,100
+134,False,meta_desc,,"
+Given a set of navigation {instructions}, determine whether following them would lead one back to the starting point. Provide a binary classification output with the options ""Yes"" or ""No"".
+Instructions: {instructions}
+Output:",1,SEP_VARS,44,100
+135,False,meta_desc,,"
+Determine whether a series of navigation instructions would lead one back to the starting point. The navigation instructions are represented by the placeholder {instructions}. Respond with a yes or no classification.
+Instructions: {instructions}
+Output:",1,SEP_VARS,44,100
+136,False,meta_desc,,"
+Given a series of navigation instructions represented by {instructions}, determine whether following these instructions would lead one back to the starting point. Output a yes or no classification.
+Instructions: {instructions}
+Output:",1,SEP_VARS,40,100
+137,False,meta_desc,,"
+Given a series of navigation instructions, determine whether one would end up back at the starting point. Provide a ""yes"" or ""no"" answer.
+Instructions: {instructions}
+Output:",1,SEP_VARS,38,100
+138,False,meta_desc,,"
+Given a series of navigation instructions, determine whether the final position is the same as the starting position. Provide a ""yes"" or ""no"" answer.
+Instructions: {instructions}
+Output:",1,SEP_VARS,39,100
+139,False,meta_desc,,"
+Given a set of navigation instructions, classify whether the user will end up back at the starting point or not. Provide a binary classification of ""yes"" or ""no"" for each set of instructions.
+Instructions: {instructions}
+Output:",1,SEP_VARS,48,100
+140,False,meta_desc,,"
+Write a model that can classify whether a set of navigation instructions will lead the user back to the starting point or not. Your model should take in a set of instructions and output a binary classification.
+Instructions: {instructions}
+Output:",0,SEP_VARS,47,100
+141,False,meta_desc,,"
+Given a series of navigation instructions, classify whether they will lead back to the starting point or not. Please output ""Yes"" if the instructions lead back to the starting point, and ""No"" otherwise.
+Instructions: {instructions}
+Output:",1,SEP_VARS,49,100
+142,False,meta_desc,,"
+Given a series of navigation instructions, determine whether they will lead back to the starting point or not. Write ""Yes"" if they do and ""No"" if they don't.
+Instructions: {instructions}
+Output:",1,SEP_VARS,44,100
+143,False,meta_desc,,"
+Given a series of navigation instructions, determine whether they will lead back to the starting point. Please respond with either ""Yes"" or ""No"".
+Instructions: {instructions}
+Output:",1,SEP_VARS,37,100
+144,False,meta_desc,,"
+Given a series of navigation instructions, determine if the final destination is the same as the starting point. Please provide a ""Yes"" or ""No"" answer.
+Instructions: {instructions}
+Output:
+
+",1,SEP_VARS,40,100
+145,False,meta_desc,,"
+Given a series of navigation instructions, predict whether the final destination will be the starting point or not. Answer ""yes"" or ""no"".
+Instructions: {instructions}
+Output:",1,SEP_VARS,36,100
+146,False,meta_desc,,"
+Given a set of navigation instructions, determine whether they will lead back to the starting point or not. Please provide a binary classification of ""Yes"" or ""No"".
+Instructions: {instructions}
+Output:
+
+",1,SEP_VARS,41,100
+147,False,meta_desc,,"
+Given a series of navigation instructions, determine whether they will lead back to the starting point or not. Provide a binary classification of ""Yes"" or ""No"".
+Instructions: {instructions}
+Output:
+
+",1,SEP_VARS,40,100
+148,False,meta_desc,,"
+Given a series of navigation instructions, classify whether they will lead back to the starting point or not. Provide a binary classification of ""yes"" or ""no"" for each set of instructions. 
+Instructions: {instructions}
+Output:",1,SEP_VARS,47,100
+149,False,meta_desc,,"
+Given a set of navigation instructions, determine whether the final destination is the same as the starting point. Your task is to classify whether a series of navigation instructions will lead back to the starting point. 
+Instructions: {instructions}
+Output:",1,SEP_VARS,48,100
+150,False,meta_desc,,"
+Given a series of navigation instructions, predict whether the final location will be the same as the starting point.
+Instructions: {instructions}
+Output:",1,SEP_VARS,29,100
+151,False,meta_desc,,"
+Given a set of navigation instructions, classify whether they will lead back to the starting point. Please provide a ""Yes"" or ""No"" answer.
+Instructions: {instructions}
+Output:
+
+",1,SEP_VARS,38,100
+152,False,meta_desc,,"
+Given a set of navigation instructions, determine whether they will lead the user back to the starting point or not. Provide a binary classification of ""Yes"" or ""No"".
+Instructions: {instructions}
+Output:
+
+",1,SEP_VARS,42,100
+153,False,meta_desc,,"
+Given a set of navigation instructions, classify whether they will lead the user back to the starting point or not. Please provide a binary classification (yes or no) for each set of instructions.
+Instructions: {instructions}
+Output:",1,SEP_VARS,46,100
+154,False,meta_desc,,"
+Given a series of navigation instructions, determine if the person will end up back at the starting point or not. Write a model that can classify these instructions as leading to a return to the starting point or not. 
+Instructions: {instructions}
+Output:",0,SEP_VARS,51,100
+155,False,meta_desc,,"
+Given a series of navigation instructions, predict whether the person will end up back at the starting point or not. Your answer should be either ""Yes"" or ""No"".
+Instructions: {instructions}
+Output:",1,SEP_VARS,42,100
+156,False,meta_desc,,"
+Given a series of navigation instructions, classify whether the user will end up back at the starting point. Answer ""back to starting point"" or ""not back to starting point"".
+Instructions: {instructions}
+Output:",0,SEP_VARS,43,100
+157,False,meta_desc,,"
+Given a series of navigation instructions, determine whether the user will end up back at the starting point. Answer ""yes"" or ""no"".
+Instructions: {instructions}
+Output:",1,SEP_VARS,36,100
+158,False,meta_desc,,"
+Given a set of navigation instructions, predict whether the final destination is the same as the starting point.
+Instructions: {instructions}
+Output:",1,SEP_VARS,28,100
+159,False,meta_desc,,"
+Given a set of navigation instructions, predict whether the final destination is the starting point.
+Instructions: {instructions}
+Output:",1,SEP_VARS,25,100
+160,False,meta_desc,,"
+Given a set of navigation instructions, determine if the final destination is the same as the starting point. Answer with ""Yes"" or ""No"".
+Instructions: {instructions}
+Output:",1,SEP_VARS,37,100
+161,False,meta_desc,,"
+Given a set of navigation instructions, determine if the final destination is the same as the starting point. Answer with Yes or No. 
+Instructions: {instructions}
+Output:",1,SEP_VARS,35,100
+162,False,meta_desc,,"
+Given a set of navigation instructions, determine if the final destination is the same as the starting point. Use the keyword ""instructions"" in your response.
+Instructions: {instructions}
+Output:",0,SEP_VARS,38,100
+163,False,meta_desc,,"
+Given a set of navigation instructions, determine whether the final destination is the same as the starting point. Please provide a yes or no answer.
+Instructions: {instructions}
+Output:",1,SEP_VARS,36,100
+164,False,meta_desc,,"
+Given a set of navigation instructions, determine if they lead back to the starting point. Please provide a binary classification of ""Yes"" or ""No"".
+Instructions: {instructions}
+Output:",1,SEP_VARS,38,100
+165,False,meta_desc,,"
+Given a set of navigation instructions, determine if they lead back to the starting point. Write a binary classifier that outputs ""Yes"" or ""No"".
+Instructions: {instructions}
+Output:
+
+",1,SEP_VARS,38,100
+166,False,meta_desc,,"
+Given a set of navigation instructions, determine whether they would lead you back to the starting point. Please provide a binary classification of ""Yes"" or ""No"".
+Instructions: {instructions}
+Output:",1,SEP_VARS,40,100
+167,False,meta_desc,,"
+Given a set of navigation instructions, determine whether they lead back to the starting point. Please provide a binary classification output of ""Yes"" or ""No"".
+Instructions: {instructions}
+Output:",1,SEP_VARS,39,100
+168,False,meta_desc,,"
+Given a series of navigation instructions, determine if they lead back to the starting point. Please provide a yes or no answer.
+Instructions: {instructions}
+Output:",1,SEP_VARS,33,100
+169,False,meta_desc,,"
+Given a set of navigation instructions, determine if the final location is the same as the starting point. Provide a yes or no answer.
+Instructions: {instructions}
+Output:
+
+",1,SEP_VARS,35,100
+170,False,meta_desc,,"
+Given a set of navigation instructions, determine if the final destination is the same as the starting point. Provide a yes or no answer.
+Instructions: {instructions}
+Output:
+
+",1,SEP_VARS,35,100

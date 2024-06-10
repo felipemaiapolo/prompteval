@@ -1,0 +1,487 @@
+prompt idx,default prompt,method,language style,prompt template,correct,prompt format,prompt length,samples
+1,True,default,,"Q: Is the following sentence plausible?
+""{sentence}""
+A:",1,Q&A,13,100
+2,False,rephrase,,Q: Can {sentence} be considered a valid statement related to sports?,1,other,15,100
+3,False,rephrase,,"Q: Can {sentence} be considered a plausible sentence related to sports? 
+A:",1,Q&A,18,100
+4,False,rephrase,,"Q: Can you determine whether the following sentence related to sports is plausible or not?
+""{sentence}""
+A:",1,Q&A,22,100
+5,False,rephrase,,"Q: Can {sentence} be considered a valid statement related to sports? 
+A:",1,Q&A,18,100
+6,False,rephrase,,"Q: Can you determine if the following sentence related to sports is plausible?
+""{sentence}""
+A:",1,Q&A,20,100
+7,False,rephrase,,"Q: Can you determine whether the sentence ""{sentence}"" is related to sports or not?",0,other,18,100
+8,False,rephrase,,"Q: Can you determine if the sentence related to sports is plausible?
+""{sentence}""
+A:",1,Q&A,19,100
+9,False,rephrase,,"Q: Can it be determined whether the following sentence related to sports is plausible or not?
+""{sentence}""
+A:",1,Q&A,23,100
+10,False,rephrase,,Q: Can {sentence} be considered a valid statement about sports?,1,other,14,100
+11,False,rephrase,,"Q: Can it be determined whether the following sentence relating to sports is plausible or not?
+""{sentence}""
+A:",1,Q&A,23,100
+12,False,rephrase,,"Q: Can we classify the following sentence related to sports as plausible or not?
+""{sentence}""",1,other,19,100
+13,False,rephrase,,"Determine the plausibility of the following sentence related to sports:
+""{sentence}""",0,other,17,100
+14,False,rephrase,,"Can you determine the plausibility of the following sentence related to sports?
+""{sentence}""",1,other,18,100
+15,False,rephrase,,"Q: Can it be determined whether the following sentence related to sports is plausible?
+""{sentence}""
+A:",1,Q&A,21,100
+16,False,rephrase,,"Q: Given the sentence ""{sentence}"", can you classify it as plausible or not in terms of sports understanding?",1,other,22,100
+17,False,rephrase,,"Given a sentence related to sports, determine if it is plausible or not.
+Sentence:
+""{sentence}""
+Do you think the sentence is plausible? (Answer with yes or no)",1,other,35,100
+18,False,rephrase,,"Q: Determine whether the following sentence, related to sports, is plausible or not.
+""{sentence}""
+A:",1,Q&A,22,100
+19,False,rephrase,,"Can you determine whether the sentence ""{sentence}"" is related to sports or not?",1,other,16,100
+20,False,rephrase,,"Q: Can the following sentence be related to sports?
+""{sentence}""
+A:",1,Q&A,16,100
+21,False,rephrase,,"Q: Can you determine whether the sentence regarding sports is plausible or not?
+""{sentence}""
+A:",1,Q&A,20,100
+22,False,rephrase,,"Q: Can it be inferred if the following sentence, which is related to sports, is possible or not?
+""{sentence}""
+A:",0,Q&A,27,100
+23,False,rephrase,,Q: Can {sentence} be considered a sentence related to sports?,1,other,14,100
+24,False,rephrase,,"Q: Can {sentence} be considered a valid statement related to sports?
+A:",1,Q&A,17,100
+25,False,rephrase,,"Q: Can the sentence ""{sentence}"" pertaining to sports be considered plausible?
+A:",1,Q&A,17,100
+26,False,rephrase,,"Determine if the following artificially constructed sentence related to sports is plausible or not:
+""{sentence}""",1,other,19,100
+27,False,rephrase,,"Q: Can GPT-3 determine the plausibility of the following sports-related sentence?
+""{sentence}""
+A:",0,Q&A,24,100
+28,False,rephrase,,"Q: Can GPT-3 determine the plausibility of the following sentence related to sports?
+""{sentence}""
+A:",0,Q&A,25,100
+29,False,rephrase,,"Q: Can GPT-3 determine the plausibility of a sentence related to sports?
+Sentence:
+""{sentence}""",0,other,24,100
+30,False,rephrase,,"Q: Can GPT-3 determine the plausibility of a sentence related to sports?
+""{sentence}""
+A:",0,Q&A,24,100
+31,False,rephrase,,"Q: Determine the plausibility of a sentence about sports.
+""{sentence}""",0,other,16,100
+32,False,rephrase,,"Q: Can you determine whether the following sentence relating to sports is plausible or not?
+""{sentence}""
+A:",1,Q&A,22,100
+33,False,rephrase,,"Q: Determine the plausibility of the following sentence related to sports:
+""{sentence}""
+A:",0,Q&A,20,100
+34,False,rephrase,,"Q: Given the following sentence, determine if it is sports-related or not.
+""{sentence}""
+A:",1,Q&A,21,100
+35,False,rephrase,,"Q: Determine the plausibility of the following sentence relating to sports.
+""{sentence}""
+A: Is it a plausible sentence in the context of sports? (Yes/No)",1,Q&A,36,100
+36,False,rephrase,,"Q: Determine the plausibility of an artificially constructed sentence about sports.
+Sentence:
+""{sentence}""",0,other,20,100
+37,False,rephrase,,"Q: Can GPT-3 classify whether a sentence related to sports is plausible or not based on the given sentence?
+""{sentence}""
+A:",0,Q&A,29,100
+38,False,rephrase,,"Q: Determine the plausibility of an artificially constructed sentence relating to sports.
+""{sentence}""
+A: Is the sentence about sports true or false?",0,Q&A,30,100
+39,False,rephrase,,"Q: Determine if the following sentence is related to sports or not.
+""{sentence}""
+A: Is the given sentence related to sports? (Yes/No)",0,Q&A,32,100
+40,False,rephrase,,"Q: Can GPT-3 determine the plausibility of a sports-related sentence that is artificially constructed?
+""{sentence}""
+A:",0,Q&A,27,100
+41,False,rephrase,,"Determine the plausibility of a sentence related to sports.
+""{sentence}"" Is this sentence plausible? Answer with a yes or no.",1,other,28,100
+42,False,rephrase,,"Q: Determine whether the following sentence related to sports is plausible or not.
+""{sentence}""
+A: Answer with either ""Yes"" or ""No"".",1,Q&A,30,100
+43,False,rephrase,,"Q: Can GPT-3 determine the plausibility of an artificially constructed sentence related to sports?
+""{sentence}""
+A:",0,Q&A,26,100
+44,False,rephrase,,"Q: Can GPT-3 determine whether the following sentence about sports is plausible?
+""{sentence}""
+A:",0,Q&A,22,100
+45,False,rephrase,,"Q: Can GPT-3 determine the plausibility of a sentence related to sports?
+Sentence: ""{sentence}""",0,other,24,100
+46,False,rephrase,,"Q: Can you determine if the following statement about sports is true?
+""{sentence}""
+A:",1,Q&A,19,100
+47,False,rephrase,,"Q: Can you determine the plausibility of the following sentence related to sports?
+""{sentence}""
+A:",1,Q&A,22,100
+48,False,rephrase,,"Can you determine the plausibility of the sentence related to sports?
+""{sentence}""",1,other,17,100
+49,False,rephrase,,"Q: Can you determine the plausibility of the following sentence about sports?
+""{sentence}""
+A:",1,Q&A,21,100
+50,False,meta_cot,,"Evaluate whether the sentence ""{sentence}"" makes sense in the context of sports.",1,other,15,100
+51,False,meta_cot,,"Determine if the sentence ""{sentence}"" is believable in a sports-related context.",1,other,16,100
+52,False,meta_cot,,"Can we consider the sentence ""{sentence}"" to be plausible in a sports context?",1,other,16,100
+53,False,meta_cot,,"Is the sentence ""{sentence}"" a valid statement in the context of sports?",1,other,15,100
+54,False,meta_cot,,"Evaluate the plausibility of the sentence ""{sentence}"" in relation to sports.",0,other,16,100
+55,False,meta_cot,,"Can you tell me if the sentence ""{sentence}"" makes sense in the context of sports?",1,other,18,100
+56,False,meta_cot,,"I need to know if ""{sentence}"" is a plausible sentence in the context of sports.",1,other,18,100
+57,False,meta_cot,,"Is ""{sentence}"" a sentence that could be used in a sports context?",1,other,15,100
+58,False,meta_cot,,"Please determine whether the sentence ""{sentence}"" is plausible in the context of sports.",1,other,16,100
+59,False,meta_cot,,"Can you classify the sentence ""{sentence}"" as plausible or not in the context of sports?",1,other,18,100
+60,False,meta_cot,,"Is it possible that ""{sentence}"" is a sentence that could be used in a sports context?",1,other,19,100
+61,False,meta_cot,,"I need to know if the sentence ""{sentence}"" is a valid sentence in the context of sports.",1,other,20,100
+62,False,meta_cot,,"Please determine whether ""{sentence}"" is a sentence that could be used in a sports context or not.",1,other,20,100
+63,False,meta_cot,,"Can you tell me whether the sentence ""{sentence}"" is plausible or not in the context of sports?",1,other,20,100
+64,False,meta_cot,,"Is it plausible that ""{sentence}"" is a sentence that could be used in a sports context?",1,other,19,100
+65,False,meta_cot,,"Please determine whether the following sentence related to sports is plausible: ""{sentence}""",1,other,15,100
+66,False,meta_cot,,"Can you classify the following sentence related to sports as plausible or not? ""{sentence}""",1,other,17,100
+67,False,meta_cot,,"I need you to determine whether the following sentence related to sports is true or false: ""{sentence}""",0,other,20,100
+68,False,meta_cot,,"Your task is to decide whether the following sentence related to sports is believable or not: ""{sentence}""",1,other,20,100
+69,False,meta_cot,,"Please indicate whether the following sentence related to sports is valid or not: ""{sentence}""",1,other,17,100
+70,False,meta_cot,,"Evaluate the following sentence: ""{sentence}"". Is it plausible or not?",1,other,14,100
+71,False,meta_cot,,"Can you determine if ""{sentence}"" is a plausible sentence about sports?",1,other,14,100
+72,False,meta_cot,,"I need you to classify the following sentence: ""{sentence}"" as either plausible or not plausible in the context of sports.",1,other,24,100
+73,False,meta_cot,,"Is ""{sentence}"" a sentence that makes sense in the context of sports? Please classify it as plausible or not.",1,other,23,100
+74,False,meta_cot,,"Let's test your sports understanding. Is the sentence ""{sentence}"" plausible or not? Classify it accordingly.",1,other,22,100
+75,False,meta_cot,,"Can you determine whether the sentence ""{sentence}"" is plausible or not?",1,other,14,100
+76,False,meta_cot,,"Evaluate the plausibility of the sentence ""{sentence}"" in the context of sports.",0,other,17,100
+77,False,meta_cot,,"Is it possible that the sentence ""{sentence}"" is true in the world of sports?",0,other,17,100
+78,False,meta_cot,,"Given the sentence ""{sentence}"", can you decide whether it makes sense in the context of sports?",1,other,19,100
+79,False,meta_cot,,"Please classify the sentence ""{sentence}"" as either plausible or not plausible in the context of sports.",1,other,19,100
+80,False,meta_cot,,"Can you determine if the sentence ""{sentence}"" is plausible or not?",1,other,14,100
+81,False,meta_cot,,"Evaluate the sentence ""{sentence}"" and determine if it is plausible or not.",1,other,15,100
+82,False,meta_cot,,"Is it possible that the sentence ""{sentence}"" is true?",0,other,12,100
+83,False,meta_cot,,"Can you confirm if the sentence ""{sentence}"" is believable?",1,other,12,100
+84,False,meta_cot,,"Determine whether the sentence ""{sentence}"" is plausible or not.",1,other,13,100
+85,False,meta_cot,,"Can we say that the sentence ""{sentence}"" makes sense?",1,other,12,100
+86,False,meta_cot,,"Let us check whether the sentence ""{sentence}"" is believable or not.",0,other,14,100
+87,False,meta_cot,,"We need to determine whether the sentence ""{sentence}"" is plausible or not.",1,other,15,100
+88,False,meta_cot,,"Can you determine whether the following sentence is plausible? ""{sentence}""",1,other,13,100
+89,False,meta_cot,,"Please classify the following sentence as either plausible or not: ""{sentence}""",1,other,14,100
+90,False,meta_cot,,"Is ""{sentence}"" a plausible sentence?",1,other,8,100
+91,False,meta_cot,,"Do you consider ""{sentence}"" to be a plausible sentence?",1,other,12,100
+92,False,meta_cot,,"Is it plausible to say ""{sentence}""?",1,other,9,100
+93,False,meta_cot,,"Can you tell me if the sentence ""{sentence}"" makes sense in the context of sports? Answer with a yes or no.",1,other,25,100
+94,False,meta_cot,,"I need you to determine whether the sentence ""{sentence}"" is plausible in the context of sports. Respond with either yes or no.",1,other,26,100
+95,False,meta_cot,,"Do you think that the sentence ""{sentence}"" is a valid statement in the world of sports? Please answer with either yes or no.",1,other,27,100
+96,False,meta_cot,,"Please evaluate the plausibility of the sentence ""{sentence}"" in the context of sports. Your answer should be either yes or no.",1,other,27,100
+97,False,meta_cot,,"Decide if the sentence ""{sentence}"" is a valid statement in the world of sports.",1,other,18,100
+98,False,meta_cot,,"Assess the plausibility of the sentence ""{sentence}"" in the context of sports.",0,other,18,100
+99,False,meta_cot,,"Determine if the sentence ""{sentence}"" is a believable statement in the realm of sports.",1,other,18,100
+100,False,meta_cot,,"Determine whether the following sentence is plausible: ""{sentence}"".",1,other,12,100
+101,False,meta_cot,,"Can you tell me if this sentence is plausible? ""{sentence}"".",1,other,13,100
+102,False,meta_cot,,"Is it plausible to say that ""{sentence}""?",1,other,10,100
+103,False,meta_cot,,"I need to know if ""{sentence}"" is a plausible sentence.",1,other,13,100
+104,False,meta_cot,,"Let me know if this sentence makes sense: ""{sentence}"".",1,other,12,100
+105,False,meta_cot,,"Determine whether ""{sentence}"" is a plausible sentence.",1,other,11,100
+106,False,meta_cot,,"Evaluate if ""{sentence}"" makes sense in the context of sports.",0,other,13,100
+107,False,meta_desc,,"
+Is the following sentence plausible? {sentence}
+Answer with either ""yes"" or ""no"".
+Output:
+
+",1,other,22,100
+108,False,meta_desc,,"
+Please classify whether the following sentence related to sports is plausible or not. Respond with ""yes"" if the sentence is plausible and ""no"" if it is not plausible.
+Sentence: {sentence}
+Output:",1,SEP_VARS,42,100
+109,False,meta_desc,,"
+Please classify whether the following sentence relating to sports is plausible or not. Respond with a simple ""yes"" or ""no"".
+Sentence: {sentence}
+Output:
+
+",1,SEP_VARS,33,100
+110,False,meta_desc,,"
+Classify whether the following sentence related to sports is plausible or not.
+Sentence: {sentence}
+Answer:",1,SEP_VARS,22,100
+111,False,meta_desc,,"
+Please classify whether the following sentence related to sports is plausible or not based on whether it contains accurate information about the sport and its players. You can assume that the sentence is artificially constructed. Your response should be either ""plausible"" or ""not plausible"".
+Sentence: {sentence}
+Output:",0,SEP_VARS,59,100
+112,False,meta_desc,,"
+Classify whether the following sentence related to sports is plausible or not based on whether it contains accurate information about the sport and its players. The default prompt is to ask if the sentence is plausible.
+Sentence: {sentence}
+Output:",0,SEP_VARS,47,100
+113,False,meta_desc,,"
+Please classify whether the following sentence related to sports is plausible or not. Your answer should be ""yes"" if the sentence is plausible and ""no"" if it is not plausible.
+Sentence: {sentence}
+Output:
+
+",1,SEP_VARS,44,100
+114,False,meta_desc,,"
+Determine the plausibility of a sentence related to sports based on the given prompt and knowledge of sports.
+Prompt: {sentence}
+Output:",0,SEP_VARS,30,100
+115,False,meta_desc,,"
+Classify whether the following sentence related to sports is plausible or not, based on your knowledge of sports:
+{sentence}
+Answer with either ""yes"" or ""no"".
+Output:",1,other,37,100
+116,False,meta_desc,,"
+Given a sentence related to sports and a prompt that asks ""Is the following sentence plausible?"", classify whether the sentence is plausible or not. The output should be either ""yes"" or ""no"".
+Prompt: Is the following sentence plausible?
+Sentence: {sentence}
+Output:
+
+",1,SEP_VARS,55,100
+117,False,meta_desc,,"
+Given a sentence related to sports and a prompt that asks ""Is the following sentence plausible?"", classify whether the sentence is plausible or not. The output should be either ""yes"" or ""no"".
+Sentence: {sentence}
+Output:
+
+",1,SEP_VARS,47,100
+118,False,meta_desc,,"
+Please generate a ""yes"" or ""no"" response to the following prompt: ""Is the following sentence plausible?"" Your input will be a sentence relating to sports. Determine whether the sentence is plausible or not, based on your understanding of sports-related language and concepts.
+Sentence: {sentence}
+Output:
+
+",1,SEP_VARS,61,100
+119,False,meta_desc,,"
+Classify whether the following sentence relating to sports is plausible or not.
+Sentence: {sentence}
+Output:
+
+",1,SEP_VARS,22,100
+120,False,meta_desc,,"
+Please classify whether the following artificially constructed sentence related to sports is plausible or not. Your task is to determine if the sentence makes sense in the context of sports. Answer with either ""yes"" or ""no"".
+Sentence: {sentence}
+Output:",1,SEP_VARS,50,100
+121,False,meta_desc,,"
+Determine if an artificially constructed sentence related to sports is plausible or not, based on the given input-output samples. The sentence should make sense in the context of sports. Respond with either ""yes"" or ""no"".
+Sentence: {sentence}
+Output:",1,SEP_VARS,52,100
+122,False,meta_desc,,"
+Please classify whether the following sentence relating to sports is plausible or not. Respond with ""yes"" if it is plausible, and ""no"" if it is not plausible.
+Sentence: {sentence}
+Output:",1,SEP_VARS,42,100
+123,False,meta_desc,,"
+Please classify whether the following sentence relating to sports is plausible or not. Your task is to provide a ""yes"" or ""no"" response.
+Sentence: {sentence}
+Output:",1,SEP_VARS,37,100
+124,False,meta_desc,,"
+Determine whether the following sentence related to sports is plausible or not: {sentence}.
+Answer with either ""yes"" or ""no"".
+Output:",1,SEP_VARS,30,100
+125,False,meta_desc,,"
+Determine whether the following sentence related to sports is plausible or not: {sentence}. Provide a ""yes"" or ""no"" answer.
+Output:",1,SEP_VARS,31,100
+126,False,meta_desc,,"
+Determine the plausibility of a sentence related to sports. Given a keyword {sentence}, generate a response indicating whether the sentence is plausible or not.
+Sentence: {sentence}
+Output:",0,SEP_VARS,39,100
+127,False,meta_desc,,"
+Classify the plausibility of a given sentence related to sports. The sentence is represented by the keyword ""sentence"". Use GPT-3 to generate a binary classification label indicating whether the sentence is plausible or not.
+Sentence: {sentence}
+Output:",1,SEP_VARS,52,100
+128,False,meta_desc,,"
+Classify whether a given sentence related to sports is plausible or not. The sentence is represented by the keyword ""sentence"". Use GPT-3 to generate a binary output of either ""plausible"" or ""not plausible"" based on the input sentence.
+Sentence: {sentence}
+Output:",0,SEP_VARS,59,100
+129,False,meta_desc,,"
+Determine whether the following sentence related to sports is plausible or not.
+{sentence}
+Answer with either ""yes"" or ""no"".
+Output:",1,other,30,100
+130,False,meta_desc,,"
+Determine whether the following sentence related to sports is plausible or not. Respond with a ""yes"" or ""no"". 
+Sentence: {sentence}
+Output:",1,SEP_VARS,33,100
+131,False,meta_desc,,"
+Please evaluate the plausibility of the following sentence related to sports and output either ""yes"" or ""no"":
+{sentence}
+Output:",1,other,29,100
+132,False,meta_desc,,"
+Please evaluate whether the given sentence related to sports is plausible or not by outputting either ""yes"" or ""no"".
+Sentence: {sentence}
+Output:",1,SEP_VARS,32,100
+133,False,meta_desc,,"
+Determine whether the following sentence related to sports is plausible or not. Respond with a yes or no. 
+{sentence}
+Output:",1,other,28,100
+134,False,meta_desc,,"
+Please determine whether the following sentence related to sports is plausible or not: {sentence}. Respond with either ""yes"" if the sentence is plausible or ""no"" if it is not plausible.
+Output:",1,SEP_VARS,41,100
+135,False,meta_desc,,"
+Given a sentence related to sports provided as a keyword in the input instruction template, determine whether it is plausible or not. Use your knowledge of sports to make this determination.
+Input instruction template: ""Is the following sentence plausible in the context of sports? {sentence}""
+Input sentence:
+Output:",0,other,59,100
+136,False,meta_desc,,"
+Please determine whether the following sentence related to sports is plausible or not: {sentence}
+Answer with either ""1"" for plausible or ""0"" for implausible.
+Output:",0,SEP_VARS,36,100
+137,False,meta_desc,,"
+Classify the plausibility of a sentence related to sports. The task involves a single keyword, which is ""sentence"". The input format is a yes/no question.
+Q: Is the following sentence plausible? {sentence}
+A: 
+
+",1,Q&A,49,100
+138,False,meta_desc,,"
+Determine whether a given sentence related to sports is plausible or not in a yes/no format. The task involves a single keyword, which is ""sentence"". Use your understanding of sports to determine the plausibility of the sentence.
+Sentence: {sentence}
+Output:
+
+",1,SEP_VARS,54,100
+139,False,meta_desc,,"
+Determine whether the given sentence related to sports is plausible or not. Your response should be a ""Yes"" or ""No"" answer.
+Sentence: {sentence}
+Output:",1,SEP_VARS,36,100
+140,False,meta_desc,,"
+Determine whether the given sentence related to sports is plausible or not.
+{sentence}
+Output:",1,other,20,100
+141,False,meta_desc,,"
+Please determine whether the following sentence related to sports is plausible or not.
+Sentence: {sentence}
+Output:",1,SEP_VARS,22,100
+142,False,meta_desc,,"
+Please determine whether the following sentence is plausible or not in relation to sports.
+Sentence: {sentence}
+Output:
+
+",1,SEP_VARS,23,100
+143,False,meta_desc,,"
+Please classify whether the following sentence is plausible or not in the context of sports.
+Sentence: {sentence}
+Output:
+
+",1,SEP_VARS,24,100
+144,False,meta_desc,,"
+Please classify whether the following sentence related to sports is plausible or not.
+Sentence: {sentence}
+Output:
+
+",1,SEP_VARS,22,100
+145,False,meta_desc,,"
+Please determine if the following sentence related to sports is plausible or not.
+Sentence: {sentence}
+Output:
+
+",1,SEP_VARS,22,100
+146,False,meta_desc,,"
+Is the following sentence plausible? {sentence}
+Output:
+
+",1,other,12,100
+147,False,meta_desc,,"
+Please determine if the following sentence related to sports is plausible or not based on its accuracy.
+Sentence: {sentence}
+Output:",1,SEP_VARS,26,100
+148,False,meta_desc,,"
+Determine if a sentence related to sports is plausible or not based on its accuracy.
+Sentence: {sentence}
+Output:",1,SEP_VARS,25,100
+149,False,meta_desc,,"
+Classify whether a sentence related to sports is plausible or not. Answer ""yes"" or ""no"".
+Sentence: {sentence}
+Output:
+
+",1,SEP_VARS,29,100
+150,False,meta_desc,,"
+Given a prompt related to sports, classify whether an artificially constructed sentence is plausible or not based on your knowledge of sports.
+Prompt: {sentence}
+Output:",1,SEP_VARS,32,100
+151,False,meta_desc,,"
+Given a prompt related to sports, determine if an artificially constructed sentence is plausible or not. Use your knowledge of sports to make your decision.
+Prompt: {sentence}
+Output:",1,SEP_VARS,36,100
+152,False,meta_desc,,"
+Please determine if the following sentence related to sports is plausible or not.
+Sentence: {sentence}
+Output:",1,SEP_VARS,22,100
+153,False,meta_desc,,"
+Given a sentence related to sports, determine whether it is plausible or not.
+Sentence: {sentence}
+Output:",1,SEP_VARS,23,100
+154,False,meta_desc,,"
+Given a sentence related to sports, determine if it is plausible or not.
+Sentence: {sentence}
+Output:",1,SEP_VARS,23,100
+155,False,meta_desc,,"
+Given an artificially constructed sentence related to sports, determine whether it is plausible or not. Respond with either ""yes"" or ""no"" based on whether the sentence makes sense in the context of sports.
+Sentence: {sentence}
+Output:",1,SEP_VARS,48,100
+156,False,meta_desc,,"
+Determine if the following sentence related to sports is plausible or not. Respond with ""yes"" if the sentence makes sense in the context of sports and ""no"" if it does not.
+Sentence: {sentence}
+Output:",1,SEP_VARS,46,100
+157,False,meta_desc,,"
+Please determine whether the following sentence is plausible or not in the context of sports. Answer ""yes"" or ""no"".
+Sentence: {sentence}
+Output:
+
+",1,SEP_VARS,32,100
+158,False,meta_desc,,"
+Given a sentence related to sports, determine whether it is plausible or not. Answer ""yes"" or ""no"".
+Sentence: {sentence}
+Output:",1,SEP_VARS,31,100
+159,False,meta_desc,,"
+Determine the plausibility of a sentence related to sports. Use the provided keyword {sentence} to generate a response.
+Is the following sentence plausible? {sentence}
+Output:",0,other,37,100
+160,False,meta_desc,,"
+Determine the plausibility of a sentence related to sports. Use the provided keyword {sentence} to guide your evaluation.
+Is the following sentence plausible? {sentence}
+Output:",0,other,37,100
+161,False,meta_desc,,"
+Is the following sentence plausible? {sentence}
+Output:",1,other,12,100
+162,False,meta_desc,,"
+Determine the plausibility of a given sports-related sentence. Your task is to classify whether the sentence is plausible or not.
+Sentence: {sentence}
+Output:",1,SEP_VARS,34,100
+163,False,meta_desc,,"
+Determine whether a given sentence related to sports is plausible or not. Your task is to classify the sentence as either yes or no.
+Sentence: {sentence}
+Output:",1,SEP_VARS,35,100
+164,False,meta_desc,,"
+Determine the plausibility of a sentence related to sports. Your task is to classify whether a given sentence is plausible or not.
+Sentence: {sentence}
+Output:",1,SEP_VARS,35,100
+165,False,meta_desc,,"
+Please determine whether the following sentence related to sports is plausible or not by answering ""yes"" or ""no"".
+Sentence: {sentence}
+Output:
+
+",1,SEP_VARS,30,100
+166,False,meta_desc,,"
+Please evaluate whether the following sentence is plausible or not in the context of sports.
+Sentence: {sentence}
+Output:
+
+",1,SEP_VARS,24,100
+167,False,meta_desc,,"
+Evaluate the plausibility of a sentence related to sports. Your task is to classify whether the given sentence is plausible or not.
+Sentence: {sentence}
+Output:",1,SEP_VARS,34,100
+168,False,meta_desc,,"
+Determine whether a sports-related sentence is plausible or not. Your task is to classify the sentence as either yes or no.
+Sentence: {sentence}
+Output:",1,SEP_VARS,33,100
+169,False,meta_desc,,"
+Evaluate the plausibility of a sentence related to sports. Answer ""yes"" or ""no"".
+Sentence: {sentence}
+Output:",1,SEP_VARS,28,100
+170,False,meta_desc,,"
+Determine the plausibility of a sentence related to sports. Use the provided keyword {sentence} to evaluate the sentence.
+Sentence: {sentence}
+Output:",0,SEP_VARS,33,100
+171,False,meta_desc,,"
+Determine the plausibility of the following sentence: {sentence}.
+Answer:",0,SEP_VARS,17,100
+172,False,meta_desc,,"
+Determine whether a sentence related to sports is plausible or not. Answer with a yes or no.
+Sentence: {sentence}
+Output:
+
+",1,SEP_VARS,28,100
+173,False,meta_desc,,"
+Determine whether a given sentence related to sports is plausible or not. Answer with a simple ""yes"" or ""no"".
+Sentence: {sentence}
+Output:",1,SEP_VARS,33,100

@@ -1,0 +1,385 @@
+prompt idx,default prompt,method,language style,prompt template,correct,prompt format,prompt length,samples
+1,True,default,,"Write a word that doesn't contain the letter ""{letter}"":
+",1,other,13,100
+2,True,default,,"Write a word without using the letter ""{letter}"":
+",1,other,11,100
+3,True,default,,"Write a word not containing the letter ""{letter}"":
+",1,other,11,100
+4,False,rephrase,,"Can you come up with a term that excludes the letter ""{letter}""?",1,other,15,100
+5,False,rephrase,,"Provide a term that does not include the character ""{letter}"":",1,other,13,100
+6,False,rephrase,,"Provide a term that excludes the character ""{letter}"".",1,other,10,100
+7,False,rephrase,,"Provide a term that excludes the letter ""{letter}"":",1,other,11,100
+8,False,rephrase,,"Provide a term that excludes the character ""{letter}"":",1,other,11,100
+9,False,rephrase,,"Can you provide a word that excludes the letter ""{letter}""?",1,other,13,100
+10,False,rephrase,,"Can you come up with a term that does not have the ""{letter}"" character in it?",1,other,19,100
+11,False,rephrase,,"Come up with a word that does not include the letter ""{letter}"".",1,other,14,100
+12,False,rephrase,,"Create a word that does not contain the letter ""{letter}"".",1,other,12,100
+13,False,rephrase,,"Create a term that does not contain the character ""{letter}"".",1,other,12,100
+14,False,rephrase,,"Create a term that does not contain the character ""{letter}"":",1,other,13,100
+15,False,rephrase,,"Create a term that excludes the usage of the letter ""{letter}"".",1,other,13,100
+16,False,rephrase,,"Create a term that does not contain the letter ""{letter}"":",1,other,13,100
+17,False,rephrase,,"Create a term that excludes the letter ""{letter}"".",1,other,10,100
+18,False,rephrase,,"Create a term that does not include the character ""{letter}"".",1,other,12,100
+19,False,rephrase,,"Compose a term that does not include the character ""{letter}"".",1,other,12,100
+20,False,rephrase,,"Create a word that does not include the letter ""{letter}"".",1,other,12,100
+21,False,rephrase,,"Compose a term that does not include the character ""{letter}"":",1,other,13,100
+22,False,rephrase,,"Create a term that does not have the inclusion of the letter ""{letter}"".",1,other,15,100
+23,False,rephrase,,"Create a term that does not include the character ""{letter}"":",1,other,13,100
+24,False,rephrase,,"Create a word that does not include the letter ""{letter}"":",1,other,13,100
+25,False,rephrase,,"Provide a word that does not include the character ""{letter}"":",1,other,13,100
+26,False,rephrase,,"Please compose a word that does not include the character ""{letter}"".",1,other,13,100
+27,False,rephrase,,"Create a word that does not have the letter ""{letter}"" in it.",1,other,15,100
+28,False,rephrase,,"Generate a word that excludes the letter ""{letter}"".",1,other,10,100
+29,False,rephrase,,"Please generate a single word that does not include the character ""{letter}"".",1,other,14,100
+30,False,rephrase,,"Please generate a single word that does not include the letter ""{letter}"".",1,other,14,100
+31,False,rephrase,,"Please generate a word that omits the letter ""{letter}"" from its composition.",1,other,16,100
+32,False,rephrase,,"Generate a single word that does not include the character ""{letter}"".",1,other,13,100
+33,False,rephrase,,"Generate a single term that excludes the character ""{letter}"" from its composition.",1,other,15,100
+34,False,rephrase,,"Generate a single term that excludes the character ""{letter}"" from its spelling.",1,other,15,100
+35,False,rephrase,,"Please generate a single term that does not include the character ""{letter}"".",1,other,14,100
+36,False,rephrase,,"Create a word that does not include the character ""{letter}"".",1,other,12,100
+37,False,rephrase,,"Generate a word that does not contain the character ""{letter}"".",1,other,12,100
+38,False,rephrase,,"Create a word that omits the letter ""{letter}"".",1,other,11,100
+39,False,rephrase,,"Create a sentence that excludes the letter ""{letter}"" from it.",0,other,13,100
+40,False,rephrase,,"Please generate a word that does not contain the letter ""{letter}"".",1,other,13,100
+41,False,rephrase,,"Produce a term that does not contain the character ""{letter}"":",1,other,14,100
+42,False,rephrase,,"Please provide a word that does not contain the letter ""{letter}"".",1,other,13,100
+43,False,rephrase,,"Generate a single term that excludes the appearance of the character ""{letter}"".",1,other,14,100
+44,False,rephrase,,"Generate a word that does not include the character ""{letter}"".",1,other,12,100
+45,False,rephrase,,"Generate a term that does not include the character ""{letter}"".",1,other,12,100
+46,False,rephrase,,"Generate a word that does not have the letter ""{letter}"" in it.",1,other,15,100
+47,False,rephrase,,"Provide a single word that doesn't include the letter ""{letter}"".",1,other,13,100
+48,False,rephrase,,"Provide a word that does not include the character ""{letter}"".",1,other,12,100
+49,False,rephrase,,"Produce a term that does not include the character ""{letter}"".",1,other,13,100
+50,False,rephrase,,"Create a word that excludes the letter ""{letter}"".",1,other,10,100
+51,False,rephrase,,"Create a single word that does not include the specified letter ""{letter}"".",1,other,14,100
+52,False,meta_cot,,"Write a word that excludes the letter ""{letter}"".",1,other,10,100
+53,False,meta_cot,,"Write a word that omits the letter ""{letter}"".",1,other,11,100
+54,False,meta_cot,,"Write a word that lacks the letter ""{letter}"".",1,other,10,100
+55,False,meta_cot,,"Write a word without the letter ""{letter}""",1,other,9,100
+56,False,meta_cot,,"Write a word that excludes the letter ""{letter}""",1,other,10,100
+57,False,meta_cot,,"Write a word that omits the letter ""{letter}""",1,other,11,100
+58,False,meta_cot,,"Write a word that lacks the letter ""{letter}""",1,other,10,100
+59,False,meta_cot,,"Write a word that is free of the letter ""{letter}""",1,other,12,100
+60,False,meta_cot,,"Provide a word that does not have the letter ""{letter}""",1,other,12,100
+61,False,meta_cot,,"Write a word without using the letter ""{letter}"".",1,other,10,100
+62,False,meta_cot,,"Please write a word that does not have the letter ""{letter}"".",1,other,13,100
+63,False,meta_cot,,"Can you write a word that excludes the letter ""{letter}""?",1,other,13,100
+64,False,meta_cot,,"Your task is to write a word that doesn't have the letter ""{letter}"" in it.",1,other,19,100
+65,False,meta_cot,,"Come up with a word that excludes the letter ""{letter}"".",1,other,12,100
+66,False,meta_cot,,"Write a word that does not have the letter ""{letter}"" in it.",1,other,15,100
+67,False,meta_cot,,"Find a term that does not contain the letter ""{letter}"".",1,other,12,100
+68,False,meta_cot,,"Your task is to produce a word that does not contain the letter ""{letter}"".",1,other,16,100
+69,False,meta_cot,,"Compose a word that lacks the letter ""{letter}"".",1,other,10,100
+70,False,meta_cot,,"Generate a word that omits the letter ""{letter}"".",1,other,11,100
+71,False,meta_cot,,"Produce a word that omits the letter ""{letter}"".",1,other,12,100
+72,False,meta_cot,,"Create a word without the letter ""{letter}"".",1,other,9,100
+73,False,meta_cot,,"Produce a word that excludes the letter ""{letter}"".",1,other,11,100
+74,False,meta_cot,,"Write a term that omits the letter ""{letter}"".",1,other,11,100
+75,False,meta_cot,,"Formulate a word that doesn't have ""{letter}"" in it.",1,other,14,100
+76,False,meta_cot,,"Create a word that does not use the letter ""{letter}"".",1,other,12,100
+77,False,meta_cot,,"Compose a word without using the letter ""{letter}"".",1,other,10,100
+78,False,meta_cot,,"Form a word that does not contain the letter ""{letter}"".",1,other,12,100
+79,False,meta_cot,,"Please provide a word that omits the letter ""{letter}""",1,other,12,100
+80,False,meta_cot,,"Kindly write a word that doesn't have the letter ""{letter}"" in it",1,other,16,100
+81,False,meta_cot,,{letter.capitalize()} should not be present in the word you write,0,other,13,100
+82,False,meta_cot,,"Your task is to present a word that avoids using the letter ""{letter}""",1,other,15,100
+83,False,meta_cot,,"Please provide a word that excludes the letter ""{letter}"".",1,other,11,100
+84,False,meta_cot,,"Your task is to produce a word that lacks the letter ""{letter}"".",1,other,14,100
+85,False,meta_cot,,"Write down a word that doesn't have the letter ""{letter}"" in it.",1,other,16,100
+86,False,meta_cot,,"Please provide a word without using the letter ""{letter}"".",1,other,11,100
+87,False,meta_cot,,"Write down a single word that does not contain the letter ""{letter}"".",1,other,14,100
+88,False,meta_cot,,"Formulate a five-letter word that does not include ""{letter}"".",1,other,13,100
+89,False,meta_cot,,"Please create a word containing 4 letters which avoids mentioning the letter ""{letter}"".",1,other,16,100
+90,False,meta_cot,,"Construct a word that omits the letter ""{letter}"" in it.",1,other,14,100
+91,False,meta_cot,,"Select a word that avoids using the letter ""{letter}"".",1,other,11,100
+92,False,meta_cot,,"Your task is to write a word that does not feature the letter ""{letter}"".",1,other,16,100
+93,False,meta_cot,,"Come up with a term without the letter ""{letter}"" in it?",1,other,14,100
+94,False,meta_cot,,Think of a term that lacks the letter '{letter}',1,other,11,100
+95,False,meta_cot,,"Formulate a word Omitting subtext containing the following letter: ""{letter}""",0,other,17,100
+96,False,meta_cot,,Compose a word that excludes the letter {letter}.,1,other,10,100
+97,False,meta_cot,,Demonstrate your vocabulary by forming a word that does not have any instance of the symbol {letter}.,1,other,20,100
+98,False,meta_cot,,"Write a word that does not include the letter ""{letter}"".",1,other,12,100
+99,False,meta_cot,,"Using any letter of the alphabet, write a word that does not contain ""{letter}"".",1,other,17,100
+100,False,meta_cot,,"Form a word with all our attention but leave out one character - ""{letter}"".",0,other,16,100
+101,False,meta_cot,,"Formulate a word that excludes the letter ""{letter}""",1,other,11,100
+102,False,meta_cot,rich_vocab,"Please provide a word that does not contain the letter ""{letter}"".",1,other,13,100
+103,False,meta_cot,rich_vocab,"Your task is to write a word without using the letter ""{letter}"".",1,other,14,100
+104,False,meta_cot,rich_vocab,"Can you come up with a word that is not containing the letter ""{letter}""?",1,other,17,100
+105,False,meta_cot,rich_vocab,Compose a word that excludes the letter '{letter}'.,1,other,10,100
+106,False,meta_cot,rich_vocab,Formulate a word that omits the letter '{letter}'.,1,other,12,100
+107,False,meta_cot,rich_vocab,Write down a word that lacks the letter '{letter}'.,1,other,11,100
+108,False,meta_cot,rich_vocab,Create a word that does not have the letter '{letter}'.,1,other,12,100
+109,False,meta_cot,rich_vocab,Craft a word that is devoid of the letter '{letter}'.,1,other,12,100
+110,False,meta_cot,rich_vocab,"Please provide a word that does not have the letter ""{letter}"" in it.",1,other,16,100
+111,False,meta_cot,rich_vocab,"Your task is to come up with a word that does not contain the letter ""{letter}"".",1,other,18,100
+112,False,meta_cot,rich_vocab,"Can you write a word that excludes the letter ""{letter}""?",1,other,13,100
+113,False,meta_cot,rich_vocab,"I need you to provide a word that does not have the letter ""{letter}"" in it.",1,other,19,100
+114,False,meta_cot,rich_vocab,"Please write a word that does not contain the letter ""{letter}"".",1,other,13,100
+115,False,meta_cot,rich_vocab,"Please provide a word that excludes the letter ""{letter}"".",1,other,11,100
+116,False,meta_cot,rich_vocab,"Formulate a word that omits the letter ""{letter}"".",1,other,12,100
+117,False,meta_cot,rich_vocab,"Write a word that lacks the letter ""{letter}"".",1,other,10,100
+118,False,meta_cot,rich_vocab,"Please write a word that does not have the letter ""{letter}"".",1,other,13,100
+119,False,meta_cot,rich_vocab,"Create a word that is devoid of the letter ""{letter}"".",1,other,12,100
+120,False,meta_cot,rich_vocab,"Your task is to come up with a word that excludes the letter ""{letter}"".",1,other,16,100
+121,False,meta_cot,common_vocab,"Write a word without using the letter ""{letter}"".",1,other,10,100
+122,False,meta_cot,common_vocab,"Please write a word that does not have the letter ""{letter}"".",1,other,13,100
+123,False,meta_cot,common_vocab,"Your task is to come up with a word that does not contain the letter ""{letter}"".",1,other,18,100
+124,False,meta_cot,common_vocab,"Can you write a word that excludes the letter ""{letter}""?",1,other,13,100
+125,False,meta_cot,common_vocab,"Write a word that lacks the letter ""{letter}"".",1,other,10,100
+126,False,meta_cot,common_vocab,"Please write a word that does not have the letter ""{letter}"" in it.",1,other,16,100
+127,False,meta_cot,common_vocab,"Your task is to write a word that excludes the letter ""{letter}"".",1,other,14,100
+128,False,meta_cot,common_vocab,"Write a word that does not contain the letter ""{letter}"".",1,other,12,100
+129,False,meta_cot,common_vocab,"Please write a word that lacks the letter ""{letter}"".",1,other,11,100
+130,False,meta_cot,common_vocab,"Your task is to write a word without the letter ""{letter}"".",1,other,13,100
+131,False,meta_cot,common_vocab,"Write a word that does not have the letter ""{letter}"".",1,other,12,100
+132,False,meta_cot,common_vocab,"Your task is to write a word without using the letter ""{letter}"".",1,other,14,100
+133,False,meta_cot,common_vocab,"Write a word that doesn't contain the letter ""{letter}"".",1,other,12,100
+134,False,meta_cot,common_vocab,"Please provide a word that does not contain the letter ""{letter}"".",1,other,13,100
+135,False,meta_cot,common_vocab,Please write a word that does not contain the letter {letter}.,1,other,13,100
+136,False,meta_cot,common_vocab,Your task is to come up with a word that excludes the letter {letter}.,1,other,16,100
+137,False,meta_cot,common_vocab,Write down a word that does not have the letter {letter} in it.,1,other,16,100
+138,False,meta_cot,common_vocab,Can you provide a word that omits the letter {letter}?,1,other,13,100
+139,False,meta_cot,common_vocab,Your objective is to write a word that lacks the letter {letter}.,1,other,14,100
+140,False,meta_cot,formal,"Please write a word that excludes the letter ""{letter}"".",1,other,11,100
+141,False,meta_cot,formal,"Your task is to write a word that does not have the letter ""{letter}"".",1,other,16,100
+142,False,meta_cot,formal,"Write a word that lacks the letter ""{letter}"".",1,other,10,100
+143,False,meta_cot,formal,"Please write a word that does not include the letter ""{letter}"".",1,other,13,100
+144,False,meta_cot,formal,"Your task is to come up with a word that does not have the letter ""{letter}"".",1,other,18,100
+145,False,meta_cot,formal,"Write a word that excludes the letter ""{letter}"".",1,other,10,100
+146,False,meta_cot,formal,"Write a word that does not have the letter ""{letter}"".",1,other,12,100
+147,False,meta_cot,formal,"Your task is to produce a word that does not contain the letter ""{letter}"".",1,other,16,100
+148,False,meta_cot,formal,"Please write a word that does not have the letter ""{letter}"" in it.",1,other,16,100
+149,False,meta_cot,formal,"Your task is to write a word that excludes the letter ""{letter}"".",1,other,14,100
+150,False,meta_cot,formal,"Write a word that does not contain the letter ""{letter}"".",1,other,12,100
+151,False,meta_cot,formal,"Compose a word that lacks the letter ""{letter}"".",1,other,10,100
+152,False,meta_cot,formal,"Please provide a word that is devoid of the letter ""{letter}"".",1,other,13,100
+153,False,meta_cot,formal,Please write a word that does not have the letter '{letter}' in it.,1,other,16,100
+154,False,meta_cot,formal,Your task is to come up with a word that does not contain the letter '{letter}'.,1,other,18,100
+155,False,meta_cot,formal,Can you write a word that excludes the letter '{letter}'?,1,other,13,100
+156,False,meta_cot,formal,Write down a word that does not have the letter '{letter}' in it.,1,other,16,100
+157,False,meta_cot,formal,Your goal is to produce a word that does not contain the letter '{letter}'.,1,other,16,100
+158,False,meta_cot,formal,Please provide a word that lacks the letter '{letter}'.,1,other,11,100
+159,False,meta_cot,informal,Write a word that doesn't have the letter {letter} in it.,1,other,15,100
+160,False,meta_cot,informal,Can you come up with a word that doesn't use the letter {letter}?,1,other,16,100
+161,False,meta_cot,informal,Your task is to write a word that does not contain the letter {letter}.,1,other,16,100
+162,False,meta_cot,informal,Write a word that excludes the letter {letter}.,1,other,10,100
+163,False,meta_cot,informal,Please write a word that doesn't have {letter} in it.,1,other,14,100
+164,False,meta_cot,informal,Your goal is to write a word that does not contain the letter {letter}.,1,other,16,100
+165,False,meta_cot,informal,Come up with a word that doesn't have the letter {letter} in it.,1,other,17,100
+166,False,meta_cot,informal,Your task is to write a word that omits the letter {letter}.,1,other,15,100
+167,False,meta_cot,informal,Write a word that is devoid of the letter {letter}.,1,other,12,100
+168,False,meta_cot,informal,Write a word without using the letter {letter}.,1,other,10,100
+169,False,meta_cot,informal,Please write a word that doesn't contain the letter {letter}.,1,other,13,100
+170,False,meta_cot,informal,Your task is to come up with a word that does not have the letter {letter}.,1,other,18,100
+171,False,meta_cot,informal,Can you write a word that avoids using the letter {letter}?,1,other,13,100
+172,False,meta_cot,informal,Write a word that lacks the letter {letter}.,1,other,10,100
+173,False,meta_cot,informal,Your objective is to write a word that is devoid of the letter {letter}.,1,other,16,100
+174,False,meta_cot,informal,Write a word that is free from the letter {letter}.,1,other,12,100
+175,False,meta_cot,informal,Please write a word that doesn't have the letter {letter} in it.,1,other,16,100
+176,False,meta_cot,informal,Try writing a word that doesn't have the letter {letter} in it.,1,other,16,100
+177,False,meta_desc,,"
+Write a word without using the letter {letter}.
+Output word:",1,other,14,100
+178,False,meta_desc,,"
+Write a word without using the letter {letter}.
+Word:",1,other,13,100
+179,False,meta_desc,,"
+Please write a word without using the letter {letter}.
+Output word:",1,other,15,100
+180,False,meta_desc,,"
+Write a word that does not contain the specified letter {letter}.
+Exclude the letter {letter} from your word.",1,other,24,100
+181,False,meta_desc,,"
+Write a word that does not include the letter {letter}.
+Output word:",1,other,16,100
+182,False,meta_desc,,"
+Write a word that does not contain the letter {letter}.
+Output word:",1,other,16,100
+183,False,meta_desc,,"
+Write a word without using the letter ""{letter}"".
+Input: letter = {letter}
+Output:",1,other,21,100
+184,False,meta_desc,,"
+Write a word without using the letter ""{letter}"".
+Letter: {letter}
+Output word:",1,SEP_VARS,20,100
+185,False,meta_desc,,"
+Write a word that does not include the letter {letter}.
+Input: letter = {letter}
+Output:",1,other,22,100
+186,False,meta_desc,,"
+Write a word without the letter {letter} in it.
+Output word:",1,other,16,100
+187,False,meta_desc,,"
+Write a word without the letter {letter}.
+Output word:",1,other,13,100
+188,False,meta_desc,,"
+Write a word without using the letter {letter}.
+
+Word:",1,other,14,100
+189,False,meta_desc,,"
+Write a word without the letter {letter}. Your response should be a single word.
+Exclude the letter {letter}.
+Output word:",1,other,27,100
+190,False,meta_desc,,"
+Write a word without the letter {letter}. Your word can be of any length and can contain any other letters.
+Input:
+Output:",1,other,28,100
+191,False,meta_desc,,"
+Write a word that does not contain the letter {letter}.
+Input word:",1,other,16,100
+192,False,meta_desc,,"
+Write a word that does not contain the letter {letter}.
+Letter: {letter}
+Word:",1,SEP_VARS,20,100
+193,False,meta_desc,,"
+Please generate a word that does not contain the letter {letter}.
+Output word:",1,other,17,100
+194,False,meta_desc,,"
+Please generate a word that does not contain the specified letter.
+Exclude the letter {letter}:
+Output word:",1,other,23,100
+195,False,meta_desc,,"
+Please generate a word that does not contain the specified letter.
+Letter: {letter}
+Output word:",1,SEP_VARS,21,100
+196,False,meta_desc,,"
+To complete this task, write a word that does not contain the letter ""{letter}"".
+Letter: {letter}
+Word:",1,SEP_VARS,26,100
+197,False,meta_desc,,"
+Please generate a word that does not contain the letter ""{letter}"".
+Letter: {letter}
+Output word:",1,SEP_VARS,23,100
+198,False,meta_desc,,"
+Please generate a word that does not contain the letter {letter}.
+Letter: {letter}
+Output word:",1,SEP_VARS,22,100
+199,False,meta_desc,,"
+Write a word that does not contain the letter {letter}.
+Avoid the letter {letter}.
+Output word:",1,other,22,100
+200,False,meta_desc,,"
+Write a word that doesn't contain the letter ""{letter}"". The goal is to write a word that does not have the specified letter in it.
+Exclude the letter: {letter}
+Output word:",1,SEP_VARS,40,100
+201,False,meta_desc,,"
+Write a word that doesn't contain the letter ""{letter}"". The goal is to write a word that does not have the specified letter in it.
+Letter: {letter}
+Output word:",1,SEP_VARS,38,100
+202,False,meta_desc,,"
+Write a word that does not contain the letter specified by the keyword.
+Letter: {letter}
+Output word:",1,SEP_VARS,23,100
+203,False,meta_desc,,"
+Write a word that does not contain the letter specified by the keyword.
+Keyword: {letter}
+Output word:",1,SEP_VARS,23,100
+204,False,meta_desc,,"
+Please provide a word that does not contain the letter {letter}.
+Output word:",1,other,17,100
+205,False,meta_desc,,"
+Write down a word that does not contain a specific letter {letter}. This letter will be informed at runtime, where the model will fill the {letter} placeholder with a specific letter.
+Word: 
+Valid/Invalid input:",0,other,46,100
+206,False,meta_desc,,"
+Write down a word that does not contain the letter {letter}.
+Letter: {letter}
+Word:",1,SEP_VARS,21,100
+207,False,meta_desc,,"
+Write a word without using the letter {letter}. You can use any other letter of the alphabet, but not the one specified.
+Word: 
+New word without the letter {letter}:",0,other,38,100
+208,False,meta_desc,,"
+Write a word without using the letter {letter}.
+Word without {letter}:",1,other,16,100
+209,False,meta_desc,,"
+Write a word without using the letter {letter}. Can you come up with a word that doesn't contain this letter?",1,other,25,100
+210,False,meta_desc,,"
+Write a word without using the letter {letter}. Try to be creative and think of words that are not commonly used.
+Output word:",1,other,28,100
+211,False,meta_desc,,"
+Write a word without using the letter {letter}. Be creative and think outside the box!
+Output word:",1,other,22,100
+212,False,meta_desc,,"
+Write a word that does not contain the letter {letter}. You can use any letters of the alphabet except for the one specified. Be creative and try to come up with words that are not commonly used.
+Output word:",1,other,45,100
+213,False,meta_desc,,"
+Write a word that does not include the letter {letter}.
+Word:",1,other,15,100
+214,False,meta_desc,,"
+Write a word that does not contain the letter {letter}.
+Word:",1,other,15,100
+215,False,meta_desc,,"
+Write a word without using the letter ""{letter}"". Think outside the box and get creative with your vocabulary.
+Output word:",1,other,25,100
+216,False,meta_desc,,"
+Write a word that does not contain the letter {letter} in it.
+Word:",1,other,18,100
+217,False,meta_desc,,"
+Write a word without using a specific letter. Use creative spelling or synonyms to avoid the letter. For example, write a word without the letter ""s"" by using ""z"" instead.
+Letter: {letter}
+Output word:",0,SEP_VARS,47,100
+218,False,meta_desc,,"
+Write a word without using the letter {letter}. Be creative and try to come up with a word that still makes sense without that letter!
+Output word:",1,other,32,100
+219,False,meta_desc,,"
+Can you come up with a creative analogy for the concept of {letter}? Use your imagination and compare the concept to something else in a unique way.
+Analogy:",0,other,34,100
+220,False,meta_desc,,"
+Write a word that doesn't contain the letter {letter}.
+Word:",1,other,15,100
+221,False,meta_desc,,"
+Given a list of numbers, find the largest number in the list.
+List of numbers: {list}
+Largest number:",0,SEP_VARS,26,100
+222,False,meta_desc,,"
+Write a word that does not contain the letter {letter}.
+Word without {letter}:",1,other,18,100
+223,False,meta_desc,,"
+Generate a word without using a specific letter. 
+Letter: {letter}
+Generated word:",1,SEP_VARS,19,100
+224,False,meta_desc,,"
+Write a word that does not contain the letter ""{letter}"".
+Word:",1,other,16,100
+225,False,meta_desc,,"
+Write a word that does not contain a specific letter. The letter to be avoided is represented by the placeholder {letter}.
+Avoid the letter {letter}.
+Word:",1,other,33,100
+226,False,meta_desc,,"
+Write a word that does not contain the letter {letter}.
+Avoid the letter: {letter}
+Word:",1,SEP_VARS,22,100
+227,False,meta_desc,,"
+Write a word that doesn't contain the letter {letter}.
+Exclude the letter: {letter}
+Word: 
+Invalid:",0,SEP_VARS,25,100
+228,False,meta_desc,,"
+Write a word that doesn't contain the letter {letter}.
+Exclude the letter: {letter}
+Word:",1,SEP_VARS,22,100
+229,False,meta_desc,,"
+Write a word that does not contain the letter ""{letter}"".
+Letter: {letter}
+Output word:",1,SEP_VARS,22,100
+230,False,meta_desc,,"
+Write a word that does not contain the letter specified by the keyword.
+Keyword: {letter}
+Word:",1,SEP_VARS,22,100
+231,False,meta_desc,,"
+Write a word that does not contain the letter {letter}. Be creative and try to come up with words that are not too common.
+Output word:",1,other,31,100
+232,False,meta_desc,,"
+Write a word that does not contain the letter {letter}. You can use any letters of the alphabet except for the one specified. Think of words that have a lot of letters to increase the difficulty of the task.
+Output word:",1,other,47,100
+233,False,meta_desc,,"
+Write down a word that does not contain the letter {letter}.
+Output word:",1,other,17,100
+234,False,meta_desc,,"
+Write down a word that does not contain a specific letter. The letter will be provided at runtime.
+Letter: {letter}
+Word: 
+Valid/Invalid word:",0,SEP_VARS,34,100

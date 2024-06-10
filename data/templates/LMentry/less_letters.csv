@@ -1,0 +1,506 @@
+prompt idx,default prompt,method,language style,prompt template,correct,prompt format,prompt length,samples
+1,True,default,,"Q: Which word has fewer letters, ""{word1}"" or ""{word2}""?
+A:",1,Q&A,20,100
+2,True,default,,"Q: Which word is shorter, ""{word1}"" or ""{word2}""?
+A:",1,Q&A,19,100
+3,True,default,,"Q: Of the words ""{word1}"" and ""{word2}"" which one has fewer letters?
+A:",1,Q&A,22,100
+4,False,rephrase,,"Which of the two words, ""{word1}"" or ""{word2}"", has a smaller number of letters?",1,other,22,100
+5,False,rephrase,,"Which of the two words, ""{word1}"" or ""{word2}"", has a lesser number of letters?",1,other,22,100
+6,False,rephrase,,Compare the length of the words '{word1}' and '{word2}'. Which one has fewer letters?,1,other,21,100
+7,False,rephrase,,"Compare the number of letters in ""{word1}"" and ""{word2}"" and determine which one has fewer letters.",1,other,23,100
+8,False,rephrase,,"Can you determine which of the two words, ""{word1}"" or ""{word2}"", has a smaller number of letters?",1,other,25,100
+9,False,rephrase,,"Which of these two words, ""{word1}"" or ""{word2}"", has a smaller number of letters?",1,other,22,100
+10,False,rephrase,,"Is the number of letters in ""{word1}"" less than the number of letters in ""{word2}""?",0,other,22,100
+11,False,rephrase,,"Determine which of the two words, ""{word1}"" or ""{word2}"", has a smaller number of letters.",1,other,24,100
+12,False,rephrase,,"Can you tell me which of the two words, ""{word1}"" or ""{word2}"", is shorter?",1,other,22,100
+13,False,rephrase,,"Which of the two words, ""{word1}"" or ""{word2}"", is shorter in length?",1,other,20,100
+14,False,rephrase,,"Can you determine which of the two words, ""{word1}"" or ""{word2}"", is shorter?",1,other,21,100
+15,False,rephrase,,"Compare the length of the words ""{word1}"" and ""{word2}"" and determine which one is shorter.",1,other,22,100
+16,False,rephrase,,"Can you determine whether ""{word1}"" or ""{word2}"" is shorter?",1,other,16,100
+17,False,rephrase,,"Can you determine which of the two words, ""{word1}"" or ""{word2}"", has a shorter length?",1,other,23,100
+18,False,rephrase,,"Which of the two words is shorter, ""{word1}"" or ""{word2}""?",1,other,18,100
+19,False,rephrase,,"Can you determine if ""{word1}"" or ""{word2}"" is the shorter word?",0,other,18,100
+20,False,rephrase,,"Which word between ""{word1}"" and ""{word2}"" has a shorter length?",1,other,17,100
+21,False,rephrase,,"Which of the two words, ""{word1}"" or ""{word2}"", has a shorter length?",1,other,20,100
+22,False,rephrase,,"Which word has a smaller number of letters between ""{word1}"" and ""{word2}""?",1,other,19,100
+23,False,rephrase,,"Which word between ""{word1}"" and ""{word2}"" has a smaller number of letters?",1,other,19,100
+24,False,rephrase,,"Which word has a shorter length between ""{word1}"" and ""{word2}""?",1,other,17,100
+25,False,rephrase,,"Which of the two words, ""{word1}"" and ""{word2}"", has a smaller number of letters?",1,other,22,100
+26,False,rephrase,,"Which of the two words, ""{word1}"" or ""{word2}"", has a shorter length in terms of the number of letters?",1,other,27,100
+27,False,rephrase,,"Which of the two words, ""{word1}"" and ""{word2}"", has a shorter length?",1,other,20,100
+28,False,rephrase,,Compare the length of the words '{word1}' and '{word2}' and determine which one has fewer letters.,1,other,23,100
+29,False,rephrase,,"Compare the length of the words ""{word1}"" and ""{word2}"" and determine which one has fewer letters.",1,other,23,100
+30,False,rephrase,,Compare the length of the words '{word1}' and '{word2}'. Which word has fewer letters?,1,other,21,100
+31,False,rephrase,,"Please determine which of the following words, ""{word1}"" or ""{word2}"", has a shorter length.",1,other,22,100
+32,False,rephrase,,"Compare the letter count of '{word1}' and '{word2}', which word has fewer letters?",1,other,20,100
+33,False,rephrase,,"Please determine which of the two words, ""{word1}"" or ""{word2}"", has a smaller number of letters.",1,other,24,100
+34,False,rephrase,,"What is the shorter word, ""{word1}"" or ""{word2}""?",1,other,16,100
+35,False,rephrase,,"Compare the length of ""{word1}"" and ""{word2}"" and provide the name of the shorter word.",1,other,22,100
+36,False,rephrase,,Compare the length of the words '{word1}' and '{word2}' and determine which one is shorter.,1,other,22,100
+37,False,rephrase,,Compare the length of the words '{word1}' and '{word2}' and state which one is shorter.,1,other,22,100
+38,False,rephrase,,"Please compare the length of the words ""{word1}"" and ""{word2}"" and indicate which one is shorter.",1,other,23,100
+39,False,rephrase,,"Compare the length of ""{word1}"" and ""{word2}"" and identify which one is shorter.",1,other,20,100
+40,False,rephrase,,"Compare the length of ""{word1}"" and ""{word2}"" and state which one is shorter.",1,other,20,100
+41,False,rephrase,,Please determine which of the following words is shorter: {word1} or {word2}.,1,SEP_VARS,19,100
+42,False,rephrase,,"Compare the length of the words ""{word1}"" and ""{word2}"" and state which one is shorter.",1,other,22,100
+43,False,rephrase,,"Which word between ""{word1}"" and ""{word2}"" has a smaller number of characters?",1,other,19,100
+44,False,rephrase,,"Which word has a shorter length: ""{word1}"" or ""{word2}""?",1,other,17,100
+45,False,rephrase,,"Which of the following two words, ""{word1}"" or ""{word2}"", has a shorter length?",1,other,21,100
+46,False,meta_cot,,"Which of the two words, {word1} and {word2}, has fewer letters?",1,other,19,100
+47,False,meta_cot,,"Determine which word, {word1} or {word2}, has a shorter length.",1,other,19,100
+48,False,meta_cot,,Compare the length of the words {word1} and {word2} and identify the one with fewer letters.,1,other,23,100
+49,False,meta_cot,,"Which word has a smaller number of letters, {word1} or {word2}?",1,other,18,100
+50,False,meta_cot,,"Out of {word1} and {word2}, which one has a shorter length?",1,other,18,100
+51,False,meta_cot,,"Which of the two words, {word1} or {word2}, has fewer letters?",1,other,19,100
+52,False,meta_cot,,Compare the length of {word1} and {word2} and tell me which one has fewer letters.,1,other,22,100
+53,False,meta_cot,,Are there more letters in {word1} or {word2}?,0,other,14,100
+54,False,meta_cot,,"Which word is shorter, {word1} or {word2}?",1,other,14,100
+55,False,meta_cot,,"Tell me which of the two words, {word1} or {word2}, has a smaller number of letters.",1,other,24,100
+56,False,meta_cot,,"Which word has less letters, {word1} or {word2}?",1,other,15,100
+57,False,meta_cot,,"Out of {word1} and {word2}, which one has fewer letters?",1,other,17,100
+58,False,meta_cot,,"Which of the two words, {word1} or {word2}, has a smaller number of letters?",1,other,22,100
+59,False,meta_cot,,Determine which word has a lesser number of letters between {word1} and {word2}.,1,other,20,100
+60,False,meta_cot,,Compare {word1} and {word2} and tell me which one has fewer letters.,1,other,19,100
+61,False,meta_cot,,"Of the words {word1} and {word2}, which one has fewer letters?",1,other,18,100
+62,False,meta_cot,,"Which of the two words, {word1} or {word2}, has a smaller length?",1,other,20,100
+63,False,meta_cot,,Determine which word is shorter between {word1} and {word2}.,1,other,16,100
+64,False,meta_cot,,Are the number of letters in {word1} less than {word2}?,0,other,16,100
+65,False,meta_cot,,"Which word has a lower character count, {word1} or {word2}?",1,other,17,100
+66,False,meta_cot,,Choose the word with fewer letters between {word1} and {word2}.,1,other,16,100
+67,False,meta_cot,,"Which of the two words, ""{word1}"" and ""{word2}"", has fewer letters?",1,other,19,100
+68,False,meta_cot,,"Compare the length of ""{word1}"" and ""{word2}"". Which one has fewer letters?",1,other,19,100
+69,False,meta_cot,,"Determine which word has fewer letters: ""{word1}"" or ""{word2}""?",1,other,18,100
+70,False,meta_cot,,"Are the number of letters in ""{word1}"" less than the number of letters in ""{word2}""?",0,other,22,100
+71,False,meta_cot,,"Which word is shorter, ""{word1}"" or ""{word2}""?",1,other,15,100
+72,False,meta_cot,,"Which of the words ""{word1}"" and ""{word2}"" has the smaller number of letters?",1,other,20,100
+73,False,meta_cot,,Determine which word has a smaller number of letters between {word1} and {word2}.,1,other,20,100
+74,False,meta_cot,,"Between {word1} and {word2}, which word has less letters?",1,other,16,100
+75,False,meta_cot,,Which of {word1} and {word2} has fewer letters?,1,other,15,100
+76,False,meta_cot,,Compare {word1} and {word2}. Which is shorter in length?,1,other,16,100
+77,False,meta_cot,,Determine which word has less number of letters between {word1} and {word2}.,1,other,19,100
+78,False,meta_cot,,"Are there fewer letters in ""{word1}"" or ""{word2}""?",1,other,15,100
+79,False,meta_cot,,"Compare the number of letters in ""{word1}"" and ""{word2}"", and determine which one has less.",1,other,22,100
+80,False,meta_cot,,"Determine which word has fewer letters, ""{word1}"" or ""{word2}"".",1,other,17,100
+81,False,meta_cot,,"Find the word with the shorter length between ""{word1}"" and ""{word2}"".",1,other,17,100
+82,False,meta_cot,,"Which of the two words, ""{word1}"" or ""{word2}"", has a smaller number of letters?",1,other,22,100
+83,False,meta_cot,,"Determine which word has fewer letters between ""{word1}"" and ""{word2}"".",1,other,17,100
+84,False,meta_cot,,"Compare the length of ""{word1}"" and ""{word2}"" and tell me which one is shorter.",1,other,21,100
+85,False,meta_cot,,"Which of the two words, ""{word1}"" or ""{word2}"", has a lesser number of characters?",1,other,22,100
+86,False,meta_cot,,Please compare the length of {word1} and {word2} and tell me which one has fewer letters?,1,other,23,100
+87,False,meta_cot,,Which word among {word1} and {word2} has fewer letters?,1,other,16,100
+88,False,meta_cot,,Can you tell me which word has fewer letters between {word1} and {word2}?,1,other,19,100
+89,False,meta_cot,,"I want to know which word is shorter, {word1} or {word2}.",1,other,18,100
+90,False,meta_cot,,Do you know which word between {word1} and {word2} is shorter?,1,other,18,100
+91,False,meta_cot,,"Which of ""{word1}"" and ""{word2}"" is shorter in length?",1,other,16,100
+92,False,meta_cot,,"Between ""{word1}"" and ""{word2}"", which one is less lengthy?",1,other,16,100
+93,False,meta_cot,,"Compare the length of ""{word1}"" and ""{word2}"" and tell which one is shorter.",1,other,20,100
+94,False,meta_cot,,"Which word among ""{word1}"" and ""{word2}"" has fewer characters?",1,other,16,100
+95,False,meta_cot,,"Tell me which one is shorter between ""{word1}"" and ""{word2}"".",1,other,16,100
+96,False,meta_cot,,"Among ""{word1}"" and ""{word2}"", which one has a smaller length?",1,other,17,100
+97,False,meta_cot,,"Compare the length of ""{word1}"" to ""{word2}"" and identify which one is shorter.",1,other,20,100
+98,False,meta_cot,,"Identify the word with fewer letters between ""{word1}"" and ""{word2}"".",1,other,17,100
+99,False,meta_cot,,"Out of ""{word1}"" and ""{word2}"", which word has less letters?",1,other,17,100
+100,False,meta_cot,,Compare the length of {word1} and {word2}. Which one has fewer letters?,1,other,19,100
+101,False,meta_cot,rich_vocab,Please compare the length of the words {word1} and {word2} and tell me which one is shorter.,1,other,24,100
+102,False,meta_cot,rich_vocab,Which of the words {word1} and {word2} has a smaller number of letters?,1,other,20,100
+103,False,meta_cot,rich_vocab,"Tell me, is {word1} or {word2} the shorter word?",1,other,17,100
+104,False,meta_cot,rich_vocab,I would like to know which of the words {word1} and {word2} has fewer letters.,1,other,22,100
+105,False,meta_cot,rich_vocab,Which word between {word1} and {word2} has a smaller length?,1,other,17,100
+106,False,meta_cot,rich_vocab,"Please determine which of the two words, {word1} or {word2}, has fewer letters.",1,other,21,100
+107,False,meta_cot,rich_vocab,"Which of the words, {word1} or {word2}, has a shorter length?",1,other,19,100
+108,False,meta_cot,rich_vocab,"Can you tell me which word, {word1} or {word2}, has the least number of letters?",1,other,23,100
+109,False,meta_cot,rich_vocab,"Out of the two words, {word1} and {word2}, which one has a smaller number of letters?",1,other,24,100
+110,False,meta_cot,rich_vocab,Please compare the length of {word1} and {word2} and tell me which word is shorter.,1,other,22,100
+111,False,meta_cot,rich_vocab,"Which of the two words, {word1} or {word2}, has fewer letters?",1,other,19,100
+112,False,meta_cot,rich_vocab,"Out of the words {word1} and {word2}, which one has a smaller number of letters?",1,other,22,100
+113,False,meta_cot,rich_vocab,"Please tell me which word, {word1} or {word2}, has a lesser number of letters.",1,other,22,100
+114,False,meta_cot,rich_vocab,"Which of the two words, {word1} or {word2}, has a smaller amount of letters?",1,other,22,100
+115,False,meta_cot,rich_vocab,"Please compare the length of the words ""{word1}"" and ""{word2}"" and tell me which one is shorter.",1,other,24,100
+116,False,meta_cot,rich_vocab,"Which of the two words, ""{word1}"" or ""{word2}"", has the lesser number of letters?",1,other,22,100
+117,False,meta_cot,rich_vocab,"Determine which word, ""{word1}"" or ""{word2}"", has a smaller number of letters.",1,other,21,100
+118,False,meta_cot,rich_vocab,"Can you tell me which of the words ""{word1}"" and ""{word2}"" has fewer letters?",1,other,21,100
+119,False,meta_cot,rich_vocab,"Compare the length of the words ""{word1}"" and ""{word2}"" and let me know which one is shorter.",1,other,24,100
+120,False,meta_cot,common_vocab,"Which of the two words, ""{word1}"" or ""{word2}"", has a smaller number of letters?",1,other,22,100
+121,False,meta_cot,common_vocab,"Compare ""{word1}"" and ""{word2}"" and tell me which one has fewer letters.",1,other,19,100
+122,False,meta_cot,common_vocab,"Out of ""{word1}"" and ""{word2}"", which one has a smaller number of letters?",1,other,20,100
+123,False,meta_cot,common_vocab,"Which word is shorter, ""{word1}"" or ""{word2}""?",1,other,15,100
+124,False,meta_cot,common_vocab,"Which word has fewer letters, ""{word1}"" or ""{word2}""?",1,other,16,100
+125,False,meta_cot,common_vocab,"Which of the two words, {word1} or {word2}, has fewer letters?",1,other,19,100
+126,False,meta_cot,common_vocab,Compare the length of {word1} and {word2} and tell me which one is shorter.,1,other,21,100
+127,False,meta_cot,common_vocab,"Tell me which word is shorter, {word1} or {word2}.",1,other,16,100
+128,False,meta_cot,common_vocab,"Which word has less letters, {word1} or {word2}?",1,other,15,100
+129,False,meta_cot,common_vocab,"Out of {word1} and {word2}, which one has fewer letters?",1,other,17,100
+130,False,meta_cot,common_vocab,"Which of the two words, {word1} or {word2}, has a smaller number of letters?",1,other,22,100
+131,False,meta_cot,common_vocab,"Which word is less lengthy, {word1} or {word2}?",1,other,15,100
+132,False,meta_cot,common_vocab,"Which of the words, {word1} and {word2}, has a shorter length?",1,other,19,100
+133,False,meta_cot,common_vocab,Are there more letters in {word1} or {word2}?,0,other,14,100
+134,False,meta_cot,common_vocab,"Which word is shorter, {word1} or {word2}?",1,other,14,100
+135,False,meta_cot,common_vocab,"Determine which word has fewer letters, {word1} or {word2}.",1,other,17,100
+136,False,meta_cot,common_vocab,Which word between {word1} and {word2} has the least number of letters?,1,other,19,100
+137,False,meta_cot,formal,Please compare the length of {word1} and {word2} and tell me which one has fewer letters.,1,other,23,100
+138,False,meta_cot,formal,"Which of the two words, {word1} or {word2}, has a shorter length?",1,other,20,100
+139,False,meta_cot,formal,"Determine which of the words, {word1} or {word2}, has fewer letters.",1,other,20,100
+140,False,meta_cot,formal,"I need to know which word, {word1} or {word2}, has a smaller number of letters.",1,other,23,100
+141,False,meta_cot,formal,Please compare the length of the words {word1} and {word2} and tell me which one has a smaller number of letters.,1,other,28,100
+142,False,meta_cot,formal,"Which word, {word1} or {word2}, has a smaller number of letters?",1,other,19,100
+143,False,meta_cot,formal,"Determine which of the words, {word1} or {word2}, has a smaller number of letters.",1,other,23,100
+144,False,meta_cot,formal,"Please tell me which of the two words, {word1} or {word2}, has a smaller number of letters.",1,other,25,100
+145,False,meta_cot,formal,"Which of the two words, {word1} or {word2}, has a lesser number of letters?",1,other,22,100
+146,False,meta_cot,formal,"Of the two words, {word1} and {word2}, which one has a smaller number of letters?",1,other,23,100
+147,False,meta_cot,formal,"Please determine which of the two given words, {word1} or {word2}, has fewer letters.",1,other,22,100
+148,False,meta_cot,formal,"Which of the words, {word1} or {word2}, has a shorter length?",1,other,19,100
+149,False,meta_cot,formal,Compare the length of {word1} and {word2} and tell me which one has fewer letters.,1,other,22,100
+150,False,meta_cot,formal,Identify the word with fewer letters between {word1} and {word2}.,1,other,17,100
+151,False,meta_cot,formal,"Which of the two words, {word1} or {word2}, has a smaller length?",1,other,20,100
+152,False,meta_cot,formal,Select the word with fewer letters between {word1} and {word2}.,1,other,16,100
+153,False,meta_cot,formal,"Determine which of the two words, {word1} or {word2}, has fewer letters.",1,other,21,100
+154,False,meta_cot,informal,"Which word is shorter, {word1} or {word2}?",1,other,14,100
+155,False,meta_cot,informal,Do {word1} or {word2} have more letters?,0,other,14,100
+156,False,meta_cot,informal,Are {word1} and {word2} the same length?,0,other,14,100
+157,False,meta_cot,informal,Which of {word1} and {word2} is shorter?,1,other,14,100
+158,False,meta_cot,informal,"Tell me which word has fewer letters, {word1} or {word2}.",1,other,17,100
+159,False,meta_cot,informal,"Compare the length of {word1} and {word2}, and tell me which one has fewer letters.",1,other,22,100
+160,False,meta_cot,informal,Which of {word1} and {word2} has fewer letters?,1,other,15,100
+161,False,meta_cot,informal,"I want to know which word has fewer letters, {word1} or {word2}.",1,other,19,100
+162,False,meta_cot,informal,"Which word is less lengthy, {word1} or {word2}?",1,other,15,100
+163,False,meta_cot,informal,"Which word is more concise, {word1} or {word2}?",0,other,15,100
+164,False,meta_cot,informal,"Which of these words has less letters, ""{word1}"" or ""{word2}""?",1,other,18,100
+165,False,meta_cot,informal,"Which word is shorter between ""{word1}"" and ""{word2}""?",1,other,15,100
+166,False,meta_cot,informal,"Compare ""{word1}"" and ""{word2}"" and tell me which one has fewer letters.",1,other,19,100
+167,False,meta_cot,informal,"Which of the two words, {word1} or {word2}, has fewer letters?",1,other,19,100
+168,False,meta_cot,informal,Compare the length of {word1} and {word2} and tell me which one has fewer letters.,1,other,22,100
+169,False,meta_cot,informal,Tell me which word has fewer letters: {word1} or {word2}.,1,SEP_VARS,17,100
+170,False,meta_cot,informal,Which word is shorter: {word1} or {word2}?,1,SEP_VARS,14,100
+171,False,meta_cot,informal,"Out of {word1} and {word2}, which one has fewer letters?",1,other,17,100
+172,False,meta_desc,,"
+Compare the length of two given words and output the one with fewer letters.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,34,100
+173,False,meta_desc,,"
+Compare the length of two given words and output the word with fewer letters.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,34,100
+174,False,meta_desc,,"
+The first word is ""{{word1}}"" and the second word is ""{{word2}}"".
+Output sentence:",0,other,22,100
+175,False,meta_desc,,"
+Which word, {word1} or {word2}, has fewer letters?",1,other,17,100
+176,False,meta_desc,,"
+Compare the length of two given words and determine which one has fewer letters. Provide the two words as input and output the word with fewer letters.
+Word 1: {word1}
+Word 2: {word2}
+Output word:",1,SEP_VARS,49,100
+177,False,meta_desc,,"
+Compare the length of two given words and determine which one has fewer letters. Please provide two words separated by a comma.
+Words: {word1}, {word2}
+Output:",0,SEP_VARS,37,100
+178,False,meta_desc,,"
+Compare the length of two given words and determine which one has fewer letters.
+Word 1: {word1}
+Word 2: {word2}
+The word with fewer letters is:",1,SEP_VARS,39,100
+179,False,meta_desc,,"
+Compare the length of two given words and determine which one has fewer letters.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,34,100
+180,False,meta_desc,,"
+Which word has fewer letters: {word1} or {word2}?
+Output:",1,SEP_VARS,19,100
+181,False,meta_desc,,"
+Which of the following words has fewer letters: {word1} or {word2}?
+
+Output word:",1,SEP_VARS,23,100
+182,False,meta_desc,,"
+Compare the length of two words and determine which one has fewer letters. The words are specified in the input prompt template as {word1} and {word2}.
+Output:",1,other,36,100
+183,False,meta_desc,,"
+Compare the length of two given words and determine which one has fewer letters.
+word1: {word1}
+word2: {word2}
+Output:",1,SEP_VARS,32,100
+184,False,meta_desc,,"
+Compare the length of two given words and output the word with fewer letters.
+Word1: {word1}
+Word2: {word2}
+Output:",1,SEP_VARS,32,100
+185,False,meta_desc,,"
+Compare the lengths of two given words and output the word with fewer letters.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,34,100
+186,False,meta_desc,,"
+Compare the length of two given words and determine which one has fewer letters. The words will be provided as inputs. Your response should be the shorter of the two words. 
+Word 1: {word1}
+Word 2: {word2}
+Output word:",1,SEP_VARS,55,100
+187,False,meta_desc,,"
+Compare the length of two given words and determine which one has fewer letters. The words will be provided in the input. You should output the word with fewer letters. 
+Word1: {word1}
+Word2: {word2}
+Output word:",1,SEP_VARS,52,100
+188,False,meta_desc,,"
+Compare the length of two given words and determine which one has fewer letters or is shorter. Provide the shorter word as the output.
+Word 1: {word1}
+Word 2: {word2}
+Output word:",1,SEP_VARS,46,100
+189,False,meta_desc,,"
+Which word is shorter: {word1} or {word2}?
+Output word:",1,SEP_VARS,19,100
+190,False,meta_desc,,"
+Compare the number of letters in two given words and determine which word has fewer letters.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,36,100
+191,False,meta_desc,,"
+Compare the number of letters in two given words and output the word with fewer letters. Assume that the two words are distinct and contain only alphabetical characters.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,49,100
+192,False,meta_desc,,"
+Compare the length of two words and determine which one has fewer letters.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,33,100
+193,False,meta_desc,,"
+Compare the length of two words. Given two words represented by the placeholders {word1} and {word2}, determine which one has more letters.
+word1: {word1}
+word2: {word2}
+Output:",0,SEP_VARS,47,100
+194,False,meta_desc,,"
+Compare the length of two words. Given two words represented by the placeholders {word1} and {word2}, determine which word has more letters. Return the word with the greater number of letters.
+word1: {word1}
+word2: {word2}
+Output word:",0,SEP_VARS,58,100
+195,False,meta_desc,,"
+Compare the length of two words. The words are represented by placeholders {word1} and {word2}. Provide the length of {word1} and {word2} and indicate which one is longer or if they are of equal length.
+word1: {word1}
+word2: {word2}
+Output:",0,SEP_VARS,66,100
+196,False,meta_desc,,"
+Compare the length of two words represented by placeholders {word1} and {word2}. Use the len() function to determine the length of each word and compare them using a conditional statement.
+Output: 
+{word1} is longer than {word2} OR {word2} is longer than {word1}",0,other,65,100
+197,False,meta_desc,,"
+Compare the length of two words. The words to be compared are represented by the placeholders {word1} and {word2}. Provide the length of {word1} and {word2} and indicate which one is longer or if they are of equal length.
+word1: {word1}
+word2: {word2}
+Output:",0,SEP_VARS,70,100
+198,False,meta_desc,,"
+Please compare the length of two words. The words to be compared are represented by the placeholders {word1} and {word2}.
+word1: {word1}
+word2: {word2}
+Output:",0,SEP_VARS,44,100
+199,False,meta_desc,,"
+Compare the length of two words and determine which one has fewer letters. The words to be compared are represented by the placeholders {word1} and {word2}. Please provide the length of the word with fewer letters.
+word1: {word1}
+word2: {word2}
+Length of the word with fewer letters:",0,SEP_VARS,67,100
+200,False,meta_desc,,"
+Compare the length of two words and determine which one has fewer letters. The words to be compared are represented by the placeholders {word1} and {word2}. Please provide the length of the word with fewer letters.
+word1: {word1}
+word2: {word2}
+Output: The word with fewer letters is ____ with a length of ____.",1,SEP_VARS,74,100
+201,False,meta_desc,,"
+Compare the length of two words. The words to be compared are represented by the keywords {word1} and {word2}. Your task is to determine which word is longer. To do this, you should output the word that has more characters. If the two words have the same length, output ""equal"".
+word1: {word1}
+word2: {word2}
+Output:",0,SEP_VARS,80,100
+202,False,meta_desc,,"
+Compare the length of two words. Use the keywords {word1} and {word2} to represent the words. Your task is to determine which word is longer.
+word1: {word1}
+word2: {word2}
+Output:",0,SEP_VARS,51,100
+203,False,meta_desc,,"
+Compare the length of two words and determine which one has fewer letters. The two words are represented by the keywords {word1} and {word2}. Please provide the shorter word.
+word1: {word1}
+word2: {word2}
+Output:",1,SEP_VARS,54,100
+204,False,meta_desc,,"
+Compare {word1} and {word2} and output the word with fewer letters.
+word1: {word1}
+word2: {word2}
+Output word:",1,SEP_VARS,36,100
+205,False,meta_desc,,"
+Please write a program that compares the length of two words and determines which word has fewer letters or which word is shorter.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,43,100
+206,False,meta_desc,,"
+Please write a program that compares the length of two words and determines which word is shorter.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,37,100
+207,False,meta_desc,,"
+Compare the length of two words and determine which one has fewer letters.
+Word 1: {word1}
+Word 2: {word2}
+Output: The word with fewer letters is ",1,SEP_VARS,40,100
+208,False,meta_desc,,"
+Compare the number of letters in two given words.
+Word 1: {word1}
+Word 2: {word2}
+Output:",0,SEP_VARS,29,100
+209,False,meta_desc,,"
+Compare the number of letters in two given words. The words are represented by the placeholders {word1} and {word2}.
+word1: {word1}
+word2: {word2}
+Output: The number of letters in {word1} is  and the number of letters in {word2} is .",0,SEP_VARS,66,100
+210,False,meta_desc,,"
+Compare the length of two words and determine which one is shorter.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,32,100
+211,False,meta_desc,,"
+Compare the length of two words and determine which one has fewer letters. Provide the shorter word.
+Word 1: {word1}
+Word 2: {word2}
+The shorter word is:",1,SEP_VARS,41,100
+212,False,meta_desc,,"
+Compare the length of two words and determine which one has fewer letters. Provide the shorter word as output.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,40,100
+213,False,meta_desc,,"
+Compare the length of two words and determine which is shorter.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,31,100
+214,False,meta_desc,,"
+Of the two words, {word1} and {word2}, which one has fewer letters?
+
+",1,other,21,100
+215,False,meta_desc,,"
+Compare the length of two words and determine which one has fewer letters. The words are specified in the input prompt template as {word1} and {word2}. Write a sentence that compares the length of the two words.
+word1: {word1}
+word2: {word2}
+Output sentence:",0,SEP_VARS,63,100
+216,False,meta_desc,,"
+Compare the length of two words and determine which one has fewer letters.
+word1: {word1}
+word2: {word2}
+Output:",1,SEP_VARS,31,100
+217,False,meta_desc,,"
+Compare the lengths of two words and determine which word has fewer letters.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,33,100
+218,False,meta_desc,,"
+Compare the lengths of two words and determine which one has fewer letters.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,33,100
+219,False,meta_desc,,"
+Write a program that compares the length of two words and returns the word with fewer letters.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,37,100
+220,False,meta_desc,,"
+Compare the length of two words and determine which one has fewer letters. Provide the shorter word.
+word1: {word1}
+word2: {word2}
+Shorter word:",1,SEP_VARS,38,100
+221,False,meta_desc,,"
+Write a program that compares the length of two words and returns the shorter one.
+word1: {word1}
+word2: {word2}
+Output word:",1,SEP_VARS,34,100
+222,False,meta_desc,,"
+Write a program that compares the length of two words and determines which one has fewer letters or is shorter. Your program should take two words as input and output the shorter one.
+Word 1: {word1}
+Word 2: {word2}
+Output: The shorter word is",1,SEP_VARS,58,100
+223,False,meta_desc,,"
+Compare the length of two words and determine which one is shorter.
+Word 1: {word1}
+Word 2: {word2}
+The shorter word is:",1,SEP_VARS,35,100
+224,False,meta_desc,,"
+Compare two words and determine which one has fewer letters.
+Word 1: {word1}
+Word 2: {word2}
+Output:",1,SEP_VARS,30,100
+225,False,meta_desc,,"
+Compare two words and determine which one has fewer letters.
+word1: {word1}
+word2: {word2}
+Output:",1,SEP_VARS,28,100
+226,False,meta_desc,,"
+Compare the length of {word1} and {word2}. Provide the number of letters in each word and indicate which one is longer.
+Output:",0,other,31,100
+227,False,meta_desc,,"
+Compare the length of two words. Provide the number of letters in each word and determine which one is longer.
+Word 1: {word1}
+Word 2: {word2}
+Output:",0,SEP_VARS,41,100
+228,False,meta_desc,,"
+Compare the length of two words.
+Word 1: {word1}
+Word 2: {word2}
+Output: The longer word has a length of ____.",0,SEP_VARS,35,100
+229,False,meta_desc,,"
+Write a sentence that compares the length of two words. Use the placeholders {word1} and {word2} to represent the words.
+word1: {word1}
+word2: {word2}
+Sentence:",0,SEP_VARS,45,100
+230,False,meta_desc,,"
+Compare the length of two words.
+Word 1: {word1}
+Word 2: {word2}
+Output:",0,SEP_VARS,26,100
+231,False,meta_desc,,"
+Write a sentence comparing the length of two words. Use the placeholders {word1} and {word2} to represent the words.
+word1: {word1}
+word2: {word2}
+Sentence:",0,SEP_VARS,44,100
+232,False,meta_desc,,"
+Compare the length of two words. Use the keywords {word1} and {word2} to represent the words.
+
+Output: The length of {word1} is ________ than the length of {word2}.",0,other,45,100
+233,False,meta_desc,,"
+Compare the length of two words. Use {word1} and {word2} as the keywords for the words to be compared.
+word1: {word1}
+word2: {word2}
+Output: 
+
+",0,SEP_VARS,45,100
+234,False,meta_desc,,"
+Compare two words and determine which one has fewer letters. The words are represented by the keywords {word1} and {word2}. Provide the keyword of the word with fewer letters.
+word1: {word1}
+word2: {word2}
+Output keyword:",1,SEP_VARS,55,100
+235,False,meta_desc,,"
+Compare two words and determine which one has fewer letters. The words are represented by the keywords {word1} and {word2}. Please provide the keyword of the word with fewer letters.
+word1: {word1}
+word2: {word2}
+Output word:",1,SEP_VARS,56,100
+236,False,meta_desc,,"
+Write a program that compares the length of two words and returns the shorter one.
+Word 1: {word1}
+Word 2: {word2}
+Output: The shorter word is ",1,SEP_VARS,40,100
+237,False,meta_desc,,"
+Write a program that compares the length of two words and returns the shorter one.
+Word 1: {word1}
+Word 2: {word2}
+Output word:",1,SEP_VARS,36,100
+238,False,meta_desc,,"
+Compare the length of two words and determine which one has fewer letters.
+Word 1: {word1}
+Word 2: {word2}
+Which word has fewer letters, {word1} or {word2}?",1,SEP_VARS,46,100
+239,False,meta_desc,,"
+Compare the number of letters in two words.
+Word 1: {word1}
+Word 2: {word2}
+Output:
+The word {word1} has # letters, and the word {word2} has # letters.",0,SEP_VARS,49,100
+240,False,meta_desc,,"
+Compare the number of letters in two words.
+Word 1: {word1}
+Word 2: {word2}
+Output:
+The word {word1} has # letters, while the word {word2} has # letters.",0,SEP_VARS,49,100

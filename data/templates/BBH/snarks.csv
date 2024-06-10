@@ -1,0 +1,737 @@
+prompt idx,default prompt,method,language style,prompt template,correct,prompt format,prompt length,samples
+1,True,default,,"Q: Which statement is sarcastic?
+Options:
+{options}
+A:",1,Q&A,15,100
+2,False,rephrase,,"Which of the following statements is sarcastic?
+Options:
+{options}",1,other,14,100
+3,False,rephrase,,"Determine which of the following statements is sarcastic:
+{options}",1,other,14,100
+4,False,rephrase,,"Which of the following sentences is sarcastic?
+Options:
+{options}",1,other,14,100
+5,False,rephrase,,"Determine which statement is sarcastic from the following options:
+{options}",1,other,15,100
+6,False,rephrase,,"Determine the sarcastic statement among the following two:
+Options:
+{options}",1,other,16,100
+7,False,rephrase,,"Determine the sarcastic sentence from the following options:
+{options}",1,other,14,100
+8,False,rephrase,,"Determine which sentence is sarcastic:
+{options}",1,other,11,100
+9,False,rephrase,,"Determine which sentence is sarcastic from the following options:
+{options}",1,other,15,100
+10,False,rephrase,,"Determine the sarcastic statement from the given options:
+Options:
+{options}",1,other,16,100
+11,False,rephrase,,"Which statement is sarcastic? Choose one from the following options:
+{options}",1,other,16,100
+12,False,rephrase,,"Determine which sentence is sarcastic:
+Options:
+{options}",1,other,13,100
+13,False,rephrase,,Which of the following {options} is a sarcastic statement?,1,other,13,100
+14,False,rephrase,,"Determine the sarcastic sentence between the following options:
+{options}",1,other,14,100
+15,False,rephrase,,"Determine which of two given sentences is sarcastic.
+Q: Which statement is sarcastic?
+Options:
+{options}
+A:",1,Q&A,26,100
+16,False,rephrase,,Determine which of the following statements is meant sarcastically: {options},1,SEP_VARS,15,100
+17,False,rephrase,,"Determine which of the following statements is meant sarcastically:
+{options}",1,other,15,100
+18,False,rephrase,,"Determine the sarcastic statement among the following options:
+{options}",1,other,14,100
+19,False,rephrase,,"Determine the sentence that expresses sarcasm.
+Options:
+{options}",1,other,14,100
+20,False,rephrase,,Which one of the following {options} is a sarcastic statement?,1,other,14,100
+21,False,rephrase,,"Which of the following sentences is sarcastic?
+Options:
+{options}
+Answer:",1,other,16,100
+22,False,rephrase,,"Determine sarcasm in two statements:
+Options:
+{options}
+Which statement is sarcastic?",1,other,19,100
+23,False,rephrase,,"Which statement is sarcastic? Choose the correct one from the options provided.
+Options:
+{options}",1,other,20,100
+24,False,rephrase,,"Q: Choose the sarcastic statement from the following options.
+Options:
+{options}
+A:",1,Q&A,19,100
+25,False,rephrase,,"Q: Identify the sarcastic sentence:
+Options:
+{options}",1,other,13,100
+26,False,rephrase,,"Q: Determine the sarcastic statement from the following options:
+Options:
+{options}
+A:",1,Q&A,19,100
+27,False,rephrase,,"Q: Which of the following statements is sarcastic?
+Choose one:
+{options}
+A:",1,Q&A,19,100
+28,False,rephrase,,"Q: Which of the following sentences is sarcastic?
+Options:
+{options}
+A:",1,Q&A,18,100
+29,False,rephrase,,"Q: Which sentence is sarcastic?
+Options:
+{options}
+A:",1,Q&A,15,100
+30,False,rephrase,,"Q: Which of the following statements is sarcastic?
+Options:
+{options}
+A:",1,Q&A,18,100
+31,False,rephrase,,"Q: Which of the following statements is sarcastic?
+Choose the correct option from the following:
+{options}
+A:",1,Q&A,24,100
+32,False,rephrase,,Q: Which of the following {options} is a sarcastic statement?,1,other,15,100
+33,False,rephrase,,"Q: Choose the sarcastic sentence from the following options:
+Options:
+{options}
+A:",1,Q&A,19,100
+34,False,rephrase,,"Q: Select the sarcastic statement from the following options:
+Options:
+{options}
+A:",1,Q&A,19,100
+35,False,rephrase,,"Q: Choose the sarcastic statement from the following options:
+Options:
+{options}
+A:",1,Q&A,19,100
+36,False,rephrase,,Q: Which of the following {options} is sarcastic?,1,other,13,100
+37,False,rephrase,,"Q: Determine which sentence is sarcastic.
+Options:
+{options}
+A:",1,Q&A,16,100
+38,False,rephrase,,"Q: Identify the sarcastic statement.
+Options:
+{options}
+Which one is it?",1,other,18,100
+39,False,rephrase,,"Q: Choose the sarcastic sentence from the following options.
+Options:
+{options}
+Which sentence is sarcastic?",1,other,23,100
+40,False,rephrase,,"Q: Identify the sarcastic sentence from the following options:
+Options:
+{options}
+A:",1,Q&A,19,100
+41,False,rephrase,,"Q: Choose the sarcastic sentence from the options below.
+Options:
+{options}
+A:",1,Q&A,19,100
+42,False,rephrase,,"Q: Select the sarcastic statement from the following options.
+Options:
+{options}
+A:",1,Q&A,19,100
+43,False,rephrase,,"Q: Choose the sentence that contains sarcasm.
+Options:
+{options}
+A:",1,Q&A,17,100
+44,False,rephrase,,"Q: Choose the sarcastic statement from the options below:
+Options:
+{options}
+A:",1,Q&A,19,100
+45,False,rephrase,,"Q: Choose the sarcastic statement from the following options:
+Options:
+{options}
+Sarcastic statement:",1,other,23,100
+46,False,rephrase,,"Q: Choose the sarcastic sentence from the given options.
+Options:
+{options}
+A:",1,Q&A,19,100
+47,False,rephrase,,"Q: Identify the sentence that uses sarcasm?
+Options:
+{options}
+A:",1,Q&A,17,100
+48,False,rephrase,,"Q: Which statement uses sarcasm?
+Options:
+{options}
+A:",1,Q&A,15,100
+49,False,rephrase,,"Q: Which sentence uses sarcasm?
+Options:
+{options}
+A:",1,Q&A,15,100
+50,False,rephrase,,"Q: Choose the sarcastic statement from the options below.
+Options:
+{options}
+A:",1,Q&A,19,100
+51,False,rephrase,,"Q: Choose the sarcastic statement among the two.
+Options:
+{options}
+A:",1,Q&A,18,100
+52,False,meta_cot,,"Identify the sarcastic statement from the following options:
+{options}
+Please fill in the correct option in the answer section.",1,other,25,100
+53,False,meta_cot,,"Among the given options, pick the one that is sarcastic:
+{options}
+Write the correct option in the answer section.",1,other,25,100
+54,False,meta_cot,,"Choose the statement that is sarcastic from the following options:
+{options}
+Indicate the correct option in the answer section.",1,other,25,100
+55,False,meta_cot,,"From the options below, select the statement that is sarcastic:
+{options}
+Provide the correct option in the answer section.",1,other,25,100
+56,False,meta_cot,,Which of these statements is sarcastic? Choose one of the following options: {options},1,SEP_VARS,18,100
+57,False,meta_cot,,Select the option that contains a sarcastic statement: {options},1,SEP_VARS,13,100
+58,False,meta_cot,,Identify the sentence that is meant to be sarcastic. Which of the following options is it? {options},1,other,23,100
+59,False,meta_cot,,Which of these statements is meant to be sarcastic? Choose from the following options: {options}.,1,SEP_VARS,20,100
+60,False,meta_cot,,Identify the sarcastic statement from the following options: {options}.,1,SEP_VARS,14,100
+61,False,meta_cot,,"Among the following options, which statement is intended to be sarcastic? {options}.",1,other,17,100
+62,False,meta_cot,,You are given a list of statements to choose from. Determine which one is sarcastic. The options are: {options}.,1,SEP_VARS,25,100
+63,False,meta_cot,,Which of the following statements is sarcastic? Choose from the following options: {options}.,1,SEP_VARS,18,100
+64,False,meta_cot,,"Out of the following statements, which one is sarcastic? The options are: {options}.",1,SEP_VARS,19,100
+65,False,meta_cot,,Which of the following statements is sarcastic? Choose one of the options below: {options},1,SEP_VARS,19,100
+66,False,meta_cot,,Choose the option that represents a sarcastic statement: {options},1,SEP_VARS,13,100
+67,False,meta_cot,,Identify the sarcastic statement from the following options: {options},1,SEP_VARS,14,100
+68,False,meta_cot,,Select the option that represents a sarcastic statement: {options},1,SEP_VARS,13,100
+69,False,meta_cot,,"Given the following options, select the statement that is sarcastic: {options}.",1,SEP_VARS,16,100
+70,False,meta_cot,,Choose the statement that is sarcastic from the following options: {options}.,1,SEP_VARS,15,100
+71,False,meta_cot,,"Which of these statements is sarcastic? Choose one:
+{options}
+Answer:",1,other,16,100
+72,False,meta_cot,,"Which of the following options is a sarcastic statement?
+{options}
+Please choose one:",1,other,18,100
+73,False,meta_cot,,"Select the option that represents a sarcastic statement:
+{options}
+Your answer:",1,other,16,100
+74,False,meta_cot,,"Identify the sarcastic statement from the following options:
+{options}
+Choose one:",1,other,17,100
+75,False,meta_cot,,"Among the following options, which statement is sarcastic?
+{options}
+Answer:",1,other,16,100
+76,False,meta_cot,,"Identify the sarcastic statement from the following options:
+{options}",1,other,14,100
+77,False,meta_cot,,"Pick the statement that is meant to be sarcastic from the list:
+{options}",1,other,17,100
+78,False,meta_cot,,"Which of the following statements is sarcastic?
+{options}",1,other,12,100
+79,False,meta_cot,,"Choose the sarcastic statement from the following options:
+{options}",1,other,13,100
+80,False,meta_cot,,"Select the statement that is meant to be sarcastic from the list below:
+{options}",1,other,18,100
+81,False,meta_cot,,Which of the following statements is sarcastic: {options}?,1,SEP_VARS,12,100
+82,False,meta_cot,,Identify the sarcastic statement among the following options: {options}.,1,SEP_VARS,14,100
+83,False,meta_cot,,"Among the following options, which one is sarcastic: {options}?",1,SEP_VARS,14,100
+84,False,meta_cot,,Which of these options is a sarcastic statement: {options}?,1,SEP_VARS,13,100
+85,False,meta_cot,,Can you tell which of the following statements is sarcastic? {options}.,1,other,15,100
+86,False,meta_cot,,Which of the following statements is sarcastic? Choose the option that corresponds to the sarcastic statement: {options},1,SEP_VARS,23,100
+87,False,meta_cot,,Choose the statement that is sarcastic from the following options: {options},1,SEP_VARS,15,100
+88,False,meta_cot,,"Given the following options, select the statement that is sarcastic: {options}",1,SEP_VARS,16,100
+89,False,meta_desc,,"
+Given two sentences, determine which one is sarcastic. The correct answer is the option that contains irony and sarcasm.
+Options:
+{options}
+Output:
+
+",1,other,32,100
+90,False,meta_desc,,"
+Given two sentences, determine which one is sarcastic. The correct answer should contain a taste of irony and sarcasm.
+Options:
+{options}
+Output:
+
+",1,other,32,100
+91,False,meta_desc,,"
+Given two sentences, determine which one is sarcastic. Choose the option that contains irony or satire.
+Options:
+{options}
+Output:
+
+",1,other,28,100
+92,False,meta_desc,,"
+Determine which of two sentences is sarcastic. The prompt will provide two options and ask ""Which statement is sarcastic?"" Your task is to identify the sentence that contains irony or satire.
+Options:
+{options}
+Output:
+",1,other,46,100
+93,False,meta_desc,,"
+Given two sentences, determine which one is sarcastic. Choose the sentence that contains irony or satire. 
+Options:
+{options}
+Output:
+
+",1,other,29,100
+94,False,meta_desc,,"
+Given two sentences, determine which one is sarcastic. Choose the option that contains irony or satire. 
+Options:
+{options}
+Output:
+
+",1,other,29,100
+95,False,meta_desc,,"
+Determine which of two sentences is sarcastic. The correct answer is the option that contains sarcasm.
+Options:
+{options}
+Output:
+
+",1,other,29,100
+96,False,meta_desc,,"
+Determine which of two sentences is sarcastic. The correct answer is the option that contains sarcasm.
+Options:
+{options}
+Output:
+",1,other,29,100
+97,False,meta_desc,,"
+Determine which of two sentences is sarcastic. The correct answer is determined by identifying the option that contains irony or satire.
+Options:
+{options}
+Output:
+
+",1,other,33,100
+98,False,meta_desc,,"
+Determine which of two sentences is sarcastic. The correct answer is the option that contains irony or satire.
+Options:
+{options}
+Output:
+
+",1,other,30,100
+99,False,meta_desc,,"
+Given two sentences, identify which one is sarcastic. Choose the option that best represents the sarcastic sentence. Your task is to detect irony or satire present in the sentences.
+Options:
+{options}
+Output:
+
+",1,other,43,100
+100,False,meta_desc,,"
+Given two sentences, identify which one is sarcastic. Choose the option that best represents the sarcastic sentence. 
+Options:
+{options}
+Output:
+
+",1,other,31,100
+101,False,meta_desc,,"
+Determine which of two sentences is sarcastic. The correct option contains a taste of irony and satire.
+Options:
+{options}
+Output:
+
+",1,other,29,100
+102,False,meta_desc,,"
+Determine which of two sentences is sarcastic. The format is multi-choice and the prompt asks ""Which statement is sarcastic?"" with two options provided. The correct option contains a taste of irony and satire. 
+Options:
+{options}
+Output:
+
+",1,other,51,100
+103,False,meta_desc,,"
+Determine which of two sentences is sarcastic. You will be given a multiple-choice question with two options. Your task is to identify the sentence that contains irony or satire.
+Options:
+{options}
+Output:
+
+",1,other,43,100
+104,False,meta_desc,,"
+Determine which of two sentences is sarcastic. You will be given a multiple-choice question with two options. Your task is to identify the sentence that contains irony or satire. You will need to understand the meaning of the sentences to make your choice.
+Options:
+{options}
+Output:
+
+",1,other,58,100
+105,False,meta_desc,,"
+Given a question and two sentences, determine which sentence is sarcastic. Choose the option that contains a taste of irony and sarcasm.
+Options:
+{options}
+Output:
+
+",1,other,35,100
+106,False,meta_desc,,"
+Given a question and two sentences as options, determine which sentence is sarcastic. Choose the option that contains irony and sarcasm.
+Question: {question}
+Options:
+{options}
+Output:
+
+",0,SEP_VARS,39,100
+107,False,meta_desc,,"
+Determine which of two sentences is sarcastic. The prompt will ask ""Which statement is sarcastic?"" with two options provided. The correct answer is determined by identifying the option that contains a taste of irony and sarcasm.
+Options:
+{options}
+Output:
+
+",1,other,53,100
+108,False,meta_desc,,"
+Determine which of two sentences is sarcastic. The prompt will provide two options and ask ""Which statement is sarcastic?"" The correct answer is the option that contains irony and sarcasm.
+Options:
+{options}
+Output:
+
+",1,other,46,100
+109,False,meta_desc,,"
+Determine which of two sentences is sarcastic. The correct answer should be filled in the ""A:"" section.
+Q: Which statement is sarcastic?
+Options:
+{options}
+A:
+Output:",1,Q&A,41,100
+110,False,meta_desc,,"
+Determine which of the two sentences is sarcastic.
+Q: Which statement is sarcastic?
+Options:
+{options}
+A: 
+
+",1,Q&A,28,100
+111,False,meta_desc,,"
+Determine which of two sentences is sarcastic in the task called ""snarks"". The task is presented in a multi-choice format with a placeholder for the options. Your goal is to select the correct option that contains the sarcastic sentence. 
+Options:
+{options}
+Output:
+
+",1,other,57,100
+112,False,meta_desc,,"
+Given two sentences, determine which one is sarcastic. Choose the correct answer from the options provided.
+Options:
+{options}
+Output:
+
+",1,other,28,100
+113,False,meta_desc,,"
+Given a question asking which statement is sarcastic and a list of options to choose from, determine which of the options is the sarcastic one.
+Question: Which statement is sarcastic?
+Options:
+{options}
+Output:",1,other,45,100
+114,False,meta_desc,,"
+Given a question asking which statement is sarcastic and a list of options to choose from, determine which of the options is the sarcastic one.
+Question: ""Which statement is sarcastic?""
+Options: 
+{options}
+Output:",1,other,47,100
+115,False,meta_desc,,"
+Identify the sarcastic statement from the given options.
+{options}
+Output:
+
+",1,other,17,100
+116,False,meta_desc,,"
+Identify the sarcastic statement from the given options.
+Options:
+{options}
+Output:
+
+",1,other,19,100
+117,False,meta_desc,,"
+Determine which of the two given sentences is sarcastic. Write a question asking for the sarcastic statement, followed by a list of options.
+Question: {question}
+Options:
+{options}
+Output:
+
+",0,SEP_VARS,42,100
+118,False,meta_desc,,"
+Determine which of the two given sentences is sarcastic. Write a question asking for the sarcastic statement, followed by a list of options represented by the keyword ""options"". The task format is multiple choice.
+Question: {question}
+Options:
+{options}
+Output:
+
+",0,SEP_VARS,55,100
+119,False,meta_desc,,"
+Determine which of two statements is sarcastic from a given list of options.
+Statements:
+{options}
+Output:
+
+",1,other,24,100
+120,False,meta_desc,,"
+Determine which of two statements is sarcastic from a list of options.
+Statements:
+{options}
+Output:
+
+",1,other,23,100
+121,False,meta_desc,,"
+Given a list of options, determine which statement is sarcastic. Provide the index of the sarcastic statement.
+Options:
+{options}
+Output:
+
+",1,other,30,100
+122,False,meta_desc,,"
+Given a list of statements, identify the one that is sarcastic.
+Statements:
+{options}
+Output: 
+
+",1,other,23,100
+123,False,meta_desc,,"
+Given the following prompt with two statements, determine which one is sarcastic. Choose the letter corresponding to the sarcastic statement from the list of options provided.
+Prompt: 
+{options}
+Output:
+
+",1,other,40,100
+124,False,meta_desc,,"
+Given the following prompt with two statements, determine which one is sarcastic. Choose the letter corresponding to the sarcastic statement from the list of options provided.
+Prompt: {prompt}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,44,100
+125,False,meta_desc,,"
+Determine which of two sentences is sarcastic. Choose the sarcastic statement from the given options.
+Options:
+{options}
+Output:",1,other,28,100
+126,False,meta_desc,,"
+Determine which of two sentences is sarcastic. Answer the multiple-choice question by selecting the option that you think is sarcastic.
+Options:
+{options}
+Output:",1,other,34,100
+127,False,meta_desc,,"
+Determine which of two statements is sarcastic. Given a list of options, select the letter corresponding to the sarcastic statement.
+Options:
+{options}
+Output:
+
+",1,other,34,100
+128,False,meta_desc,,"
+Given two statements, determine which one is sarcastic. Choose the letter corresponding to the sarcastic statement.
+Options:
+{options}
+Output:
+
+",1,other,29,100
+129,False,meta_desc,,"
+Determine which sentence is sarcastic from a given set of options.
+Options:
+{options}
+Output:
+
+",1,other,22,100
+130,False,meta_desc,,"
+Determine which of two sentences is sarcastic. Identify the sentence that contains irony or satire.
+Options:
+{options}
+Output:
+
+",1,other,27,100
+131,False,meta_desc,,"
+Determine which of two given sentences is sarcastic by identifying the sentence that contains irony or satire.
+Sentences:
+{options}
+Output:
+
+",1,other,29,100
+132,False,meta_desc,,"
+Determine which of two sentences is sarcastic. Identify the statement that contains irony or satire.
+Options:
+{options}
+Output:
+
+",1,other,27,100
+133,False,meta_desc,,"
+Determine which of two sentences is sarcastic.
+Options:
+{options}
+Output:
+
+",1,other,18,100
+134,False,meta_desc,,"
+Determine which of two given sentences is sarcastic. The prompt will provide two options and ask ""Which statement is sarcastic?""
+Options:
+{options}
+Output:
+
+",1,other,34,100
+135,False,meta_desc,,"
+Determine which of two given sentences is sarcastic by choosing the correct option.
+Sentences:
+{options}
+Output:
+Which statement is sarcastic?",1,other,31,100
+136,False,meta_desc,,"
+Determine which of two sentences is sarcastic. Identify the option that contains irony or satire.
+Options:
+{options}
+Output:
+
+",1,other,27,100
+137,False,meta_desc,,"
+Determine which of two given sentences is sarcastic.
+Options:
+{options}
+Output:
+
+",1,other,19,100
+138,False,meta_desc,,"
+Identify the sarcastic sentence from a given pair of options. The task requires understanding the meaning of the sentences and detecting any irony or satire present.
+Options:
+{options}
+Output:
+
+",1,other,38,100
+139,False,meta_desc,,"
+Identify which of the two given sentences is sarcastic. You will be presented with two options and must choose the one that contains irony or satire.
+Options:
+{options}
+Output:
+
+",1,other,38,100
+140,False,meta_desc,,"
+Determine which of two given sentences is sarcastic.
+Options:
+{options}
+Correct option: 
+
+",1,other,21,100
+141,False,meta_desc,,"
+Determine which sentence is sarcastic in a multiple-choice question. Read both sentences carefully and identify the one that contains irony or satire.
+Options:
+{options}
+Output:
+
+",1,other,35,100
+142,False,meta_desc,,"
+Given a question and multiple-choice options, determine which option contains a hint of sarcasm and irony.
+Question: {question}
+Options:
+{options}
+Output:
+
+",0,SEP_VARS,33,100
+143,False,meta_desc,,"
+Given a question and multiple-choice options, determine which option contains a sarcastic tone. Look for language that conveys irony or a mocking tone.
+Question: {question}
+Options:
+{options}
+Output:
+
+",0,SEP_VARS,42,100
+144,False,meta_desc,,"
+Determine which of two sentences is sarcastic.
+Options:
+{options}
+Output:
+",1,other,18,100
+145,False,meta_desc,,"
+Create a multiple-choice question to determine which of two sentences is sarcastic. Provide two options and ask the user to select the sarcastic one.
+Q: {question}
+Options:
+{options}
+A: 
+
+",0,Q&A,43,100
+146,False,meta_desc,,"
+Create a multiple-choice question to determine which of two sentences is sarcastic. Provide the options in the ""Options"" keyword and indicate the correct answer in the ""A:"" section.
+Options:
+{options}
+Output:
+Q: Which statement is sarcastic?
+Options:
+A: 
+",0,Q&A,57,100
+147,False,meta_desc,,"
+Determine which of two sentences is sarcastic. You will be given two options (A and B), and you must choose the sarcastic one. Keep in mind that sarcasm is often conveyed through tone and context, so pay close attention to the words used and the overall meaning of the sentence.
+Options:
+{options}
+Output:
+
+",1,other,68,100
+148,False,meta_desc,,"
+Determine which of the two given sentences is sarcastic. Choose the option that you think is the sarcastic one.
+Sentences:
+{options}
+Output:
+
+",1,other,33,100
+149,False,meta_desc,,"
+Given a question and a list of options, determine which option is the sarcastic one.
+Question: {question}
+Options:
+{options}
+Output: 
+
+",0,SEP_VARS,32,100
+150,False,meta_desc,,"
+Given a question that asks you to identify a sarcastic statement and a list of options to choose from, generate the sarcastic statement.
+Question: {question}
+Options: {options}
+Output:
+Sarcastic statement:",0,SEP_VARS,46,100
+151,False,meta_desc,,"
+Given a question and a list of options, identify the sarcastic statement.
+Question: {question}
+Options:
+{options}
+Output:
+
+",0,SEP_VARS,28,100
+152,False,meta_desc,,"
+Determine which of two given sentences is sarcastic by selecting the correct option from a list of choices.
+Options: {options}
+Output:",1,SEP_VARS,29,100
+153,False,meta_desc,,"
+Determine which of two given sentences is sarcastic. You will be presented with a question asking for the sarcastic statement, followed by a list of options. Your task is to select the option that represents the sarcastic statement.
+Question: Which of the following statements is sarcastic?
+Options:
+{options}
+Answer:",1,other,65,100
+154,False,meta_desc,,"
+Given a question that asks you to determine which of two statements is sarcastic, provide the correct answer from a list of options.
+Question: {question}
+Options:
+{options}
+Output:",1,SEP_VARS,39,100
+155,False,meta_desc,,"
+Given two statements and a list of options, determine which statement is sarcastic. Provide your answer by selecting from the given options.
+Statements:
+{options}
+Output:
+
+",1,other,34,100
+156,False,meta_desc,,"
+Given a list of statements, determine which one is sarcastic.
+Statements:
+{options}
+Output:",1,other,21,100
+157,False,meta_desc,,"
+Given a list of statements, identify the one that is sarcastic. Provide the statement that is sarcastic.
+Statements:
+{options}
+Output:
+
+",1,other,30,100
+158,False,meta_desc,,"
+Given a prompt with two statements, determine which one is sarcastic. Choose the letter corresponding to the sarcastic statement from the list of options provided.
+Options:
+{options}
+Output:
+
+",1,other,38,100
+159,False,meta_desc,,"
+Given a prompt with two statements, determine which one is sarcastic. Choose the letter corresponding to the sarcastic statement from a list of options.
+Options:
+{options}
+Output:
+The sarcastic statement is represented by the letter ____.
+
+",1,other,48,100
+160,False,meta_desc,,"
+Determine which of the two statements is sarcastic.
+Options:
+{options}
+Output:
+
+",1,other,19,100
+161,False,meta_desc,,"
+Determine which of two statements is sarcastic. Choose the letter corresponding to the sarcastic statement.
+Statements:
+{options}
+Output:
+
+",1,other,28,100
+162,False,meta_desc,,"
+Determine which statement is sarcastic from a given list of options. Provide the letter corresponding to the sarcastic statement as your answer.
+Options:
+{options}
+Output:
+
+",1,other,35,100

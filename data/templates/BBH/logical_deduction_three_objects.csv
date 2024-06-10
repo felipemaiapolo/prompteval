@@ -1,0 +1,824 @@
+prompt idx,default prompt,method,language style,prompt template,correct,prompt format,prompt length,samples
+1,True,default,,"Q: The following paragraphs each describe a set of three objects arranged in a fixed order. The statements are logically consistent within each paragraph.
+{paragraph}
+Options:
+{options}
+A:",1,Q&A,37,100
+2,False,rephrase,,Deduce the order of a sequence of three objects based on the logically consistent statements in the given {paragraph}. Choose the correct arrangement from the following {options}.,1,other,33,100
+3,False,rephrase,,Deduce the order of a sequence of three objects based on the logically consistent statements provided in {paragraph}. Choose the correct arrangement from the following options: {options}.,1,SEP_VARS,34,100
+4,False,rephrase,,Deduce the order of a sequence of three objects based on the logically consistent statements provided in the following {paragraph}. Choose the correct order from the {options}.,1,other,33,100
+5,False,rephrase,,"Deduce the order of a sequence of three objects based on the following logically consistent paragraph:
+{paragraph}
+Choose the correct arrangement from the following options:
+{options}",1,other,34,100
+6,False,rephrase,,"Deduce the order of a sequence of three objects described in the following paragraph. The statements in the paragraph are logically consistent.
+{paragraph}
+
+Choose the correct order of the objects from the following options:
+{options}",1,other,44,100
+7,False,rephrase,,"Deduce the order of three objects from the given logical statements.
+Q: The following paragraphs each describe a set of three objects arranged in a fixed order. The statements are logically consistent within each paragraph.
+{paragraph}
+Choose the correct order from the following options:
+{options}
+A:",1,Q&A,58,100
+8,False,rephrase,,"Q: Using logical deduction, determine the order of the following three objects based on the information provided in the paragraph below.
+{paragraph}
+Choose the correct sequence from the following options:
+{options}
+A:",1,Q&A,41,100
+9,False,rephrase,,Deduce the order of a sequence of three objects based on the logically consistent statements provided in the following {paragraph}. Choose the correct order from the given {options}.,1,other,34,100
+10,False,rephrase,,Deduce the order of a sequence of three objects based on the logically consistent statements provided in {paragraph}. Choose the correct order from the following options: {options}.,1,SEP_VARS,34,100
+11,False,rephrase,,Deduce the order of a sequence of three objects based on the logically consistent statements provided in the following {paragraph}. Choose the correct order from the following {options}.,1,other,34,100
+12,False,rephrase,,"Deduce the order of three objects from the given paragraphs. Each paragraph describes a set of three objects arranged in a fixed order. The statements are logically consistent within each paragraph. 
+
+Q: {paragraph}
+Options:
+{options}
+A:",1,Q&A,49,100
+13,False,rephrase,,Can you deduce the order of the three objects described in the following {paragraph}? Choose the correct arrangement from the following {options}.,1,other,27,100
+14,False,rephrase,,"Deduce the order of a sequence of three objects based on the following logically consistent paragraph:
+{paragraph}
+
+Choose the correct arrangement from the following options:
+{options}",1,other,34,100
+15,False,rephrase,,"Deduce the order of a sequence of three objects described in the following paragraph. The statements are logically consistent within the paragraph.
+Paragraph:
+{paragraph}
+Choose the correct order from the following options:
+Options:
+{options}",1,other,45,100
+16,False,rephrase,,"Deduce the fixed order of three objects from the following logically consistent paragraph:
+{paragraph}
+
+Choose the correct option from the following:
+{options}",1,other,30,100
+17,False,rephrase,,"Using logical deduction, determine the order of the following three objects:
+{paragraph}
+Choose the correct sequence from the following options:
+{options}",1,other,28,100
+18,False,rephrase,,"Deduce the order of a sequence of three objects described in each paragraph. The statements in each paragraph are logically consistent.
+Q: {paragraph}
+Choose the correct sequence from the following options:
+{options}
+A:",1,Q&A,44,100
+19,False,rephrase,,"Q: Using logical deduction, determine the order of the following set of three objects:
+{paragraph}
+Choose the correct arrangement from the following options:
+{options}
+A:",1,Q&A,34,100
+20,False,rephrase,,"Deduce the order of a sequence of three objects based on the following logically consistent paragraphs:
+{paragraph}
+Choose the correct sequence from the following options:
+{options}",1,other,34,100
+21,False,rephrase,,Deduce the order of a sequence of three objects described in the following {paragraph}. Each statement in the paragraph is logically consistent. Choose the correct order from the given {options}.,1,other,37,100
+22,False,rephrase,,"The order of which three objects are arranged in a fixed order is described in the following paragraphs. Each paragraph is logically consistent within itself. 
+{paragraph}
+Please select the correct sequence from the following options:
+{options}",1,other,44,100
+23,False,rephrase,,"Using logical deduction, determine the order of the following three objects:
+{paragraph}
+
+Choose the correct order from the following options:
+{options}",1,other,28,100
+24,False,rephrase,,"Using logical deduction, determine the order of the following three objects:
+{paragraph}
+Choose the correct arrangement:
+{options}",1,other,24,100
+25,False,rephrase,,"Q: Using logical deduction, what is the fixed order of the following set of three objects?
+{paragraph}
+Choose from the following options:
+{options}
+A:",1,Q&A,33,100
+26,False,rephrase,,"Q: Using logical deduction, determine the order of the following three objects based on the information given in the paragraph below:
+{paragraph}
+Choose the correct order from the following options:
+{options}
+A:",1,Q&A,41,100
+27,False,rephrase,,"Q: Using logical deduction, determine the correct order of the following three objects based on the provided statements. 
+{paragraph}
+Which of the following options correctly orders the objects?
+{options}
+A:",1,Q&A,40,100
+28,False,rephrase,,"Q: Using logical deduction, determine the order of the following three objects described in the {paragraph}. Which of the following options correctly represents the order of the objects?
+{options}
+A:",1,Q&A,38,100
+29,False,rephrase,,"Q: Using logical deduction, determine the correct order of the following three objects based on the information provided in the {paragraph}:
+{options}
+A:",0,Q&A,31,100
+30,False,rephrase,,"Q: Use logical deduction to determine the correct order of the three objects described in the following {paragraph}. Which of the following options {options} correctly arranges the objects in the order deduced from the paragraph?
+A:",1,Q&A,45,100
+31,False,rephrase,,"Q: Given a set of three objects arranged in a fixed order, use logical deduction to determine the correct sequence. Each paragraph contains statements that are logically consistent within that paragraph. 
+{paragraph}
+Choose the correct sequence from the following options:
+{options}
+A:",1,Q&A,53,100
+32,False,rephrase,,"Q: Using logical deduction, determine the order of the three objects described in the following paragraph.
+{paragraph}
+Which of the following options correctly orders the objects?
+{options}
+A:",1,Q&A,37,100
+33,False,rephrase,,"Q: Using logical deduction, determine the correct order of the following three objects based on the information provided in the {paragraph}. Choose the correct order from the following options:
+{options}",1,other,37,100
+34,False,rephrase,,"Q: Using logical deduction, determine the order of the three objects described in the following paragraph.
+{paragraph}
+Choose the correct order from the following options:
+{options}",1,other,34,100
+35,False,rephrase,,"Q: Using logical deduction, determine the correct order of the following three objects based on the information provided in the {paragraph}. Which of the following options correctly represents the order of the objects?
+{options}
+A:",1,Q&A,43,100
+36,False,rephrase,,"Q: Using logical deduction, determine the correct order of the following three objects based on the information provided in the {paragraph}. Choose the correct order from the following options: {options}.",1,SEP_VARS,37,100
+37,False,rephrase,,"Q: Using logical deduction, determine the order of the three objects described in the following paragraph.
+{paragraph}
+Which of the following options represents the correct order?
+{options}
+A:",1,Q&A,37,100
+38,False,rephrase,,"Q: Use logical deduction to determine the correct order of the three objects described in the following {paragraph}. Which of the following options correctly represents the order of the objects?
+{options}
+A:",1,Q&A,39,100
+39,False,rephrase,,"Q: Use logical deduction to determine the correct order of the three objects described in the following {paragraph}. Which of the following {options} represents the correct order?
+A:",1,Q&A,35,100
+40,False,rephrase,,"Q: Given a set of three objects arranged in a fixed order, use logical deduction to determine the correct sequence. Each paragraph describes a different set of objects and the statements within each paragraph are logically consistent. 
+{paragraph}
+Choose the correct order from the following options:
+{options}
+A:",1,Q&A,59,100
+41,False,rephrase,,"Q: Using logical deduction, determine the order of the following three objects based on the information provided in the {paragraph}. Which of the following options correctly represents the order of the objects?
+{options}
+A:",1,Q&A,42,100
+42,False,rephrase,,"Q: Use logical deduction to determine the fixed order of the three objects described in the following {paragraph}. The statements are logically consistent within each paragraph.
+{paragraph}
+Choose the correct order from the following {options}.
+A:",0,Q&A,45,100
+43,False,rephrase,,"Q: Given a set of three objects arranged in a fixed order, deduce the correct sequence based on the logically consistent statements provided in the {paragraph}. Which of the following options represents the correct order?
+{options}
+A:",1,Q&A,46,100
+44,False,rephrase,,"Q: Use logical deduction to determine the correct order of the three objects in the following set. The statements are logically consistent within the paragraph.
+{paragraph}
+Choose the correct order from the following options:
+{options}
+A:",1,Q&A,45,100
+45,False,rephrase,,"Q: Use logical deduction to determine the correct order of the three objects described in the following {paragraph}. Choose the correct sequence from the {options} provided.
+A:",1,Q&A,34,100
+46,False,rephrase,,"Q: Using logical deduction, determine the correct order of the three objects in the following sequence:
+{paragraph}
+Which of the following options correctly orders the objects?
+{options}
+A:",1,Q&A,37,100
+47,False,rephrase,,"Q: Use logical deduction to determine the correct order of the three objects described in the following paragraph:
+{paragraph}
+Choose the correct order from the following options:
+{options}",1,other,35,100
+48,False,rephrase,,"Q: Use logical deduction to determine the correct order of the three objects described in the following paragraph.
+{paragraph}
+Choose the correct order from the following options:
+{options}",1,other,35,100
+49,False,rephrase,,"Q: Using logical deduction, determine the order of the three objects described in the following paragraph.
+{paragraph}
+Choose the correct sequence from the following options:
+{options}",1,other,34,100
+50,False,rephrase,,"Q: Using logical deduction, determine the order of the three objects described in the following paragraph.
+{paragraph}
+Choose the correct order from the following options:
+{options}
+A:",1,Q&A,36,100
+51,False,rephrase,,"Q: Given a set of three objects arranged in a fixed order, use logical deduction to determine the correct sequence of the objects. Each paragraph contains statements that are logically consistent within it. Please select the correct sequence from the following options:
+{options}
+{paragraph}",0,other,53,100
+52,False,meta_cot,,"In this task, you will be presented with a paragraph that describes a set of three objects arranged in a fixed order. The paragraph is logically consistent within itself. You will also be presented with a list of options to choose from. The options are presented as a list of choices. The correct answer is one of the options. The answer is represented by a letter in brackets. The letter corresponds to the correct option. Please choose the correct option based on the given paragraph. The paragraph is provided in the following: {paragraph}. The options are provided in the following: {options}.",1,SEP_VARS,116,100
+53,False,meta_cot,,You will be given a paragraph that describes a set of three objects arranged in a fixed order. The paragraph is logically consistent within itself. Your task is to deduce the order of the sequence of objects. You will also be given a list of options to choose from. The options are presented as a list of choices. The correct answer is one of the options. The answer is represented by a letter in brackets. The letter corresponds to the correct option. Please choose the correct option based on the given paragraph. The paragraph is provided in the following: {paragraph}. The options are provided in the following: {options}.,1,SEP_VARS,124,100
+54,False,meta_cot,,Your task is to deduce the order of a sequence of three objects. You will be provided with a paragraph that describes the objects arranged in a fixed order. The paragraph is logically consistent within itself. You will also be provided with a list of options to choose from. The options are presented as a list of choices. The correct answer is one of the options. The answer is represented by a letter in brackets. The letter corresponds to the correct option. Please choose the correct option based on the given paragraph. The paragraph is provided in the following: {paragraph}. The options are provided in the following: {options}.,1,SEP_VARS,124,100
+55,False,meta_cot,,Deduce the order of a sequence of three objects described in a fixed order in the following paragraph. The statements in the paragraph are logically consistent. {paragraph} Choose the correct option from the following choices: {options}.,1,SEP_VARS,45,100
+56,False,meta_cot,,You will be presented with a paragraph describing a set of three objects arranged in a fixed order. Your task is to deduce the order of the sequence of objects. {paragraph} Choose the correct option from the following choices: {options}.,1,SEP_VARS,48,100
+57,False,meta_cot,,Your task is to deduce the order of a sequence of three objects described in a fixed order in the following paragraph. The statements in the paragraph are logically consistent. {paragraph} Select the option that correctly answers the question: {options}.,1,SEP_VARS,48,100
+58,False,meta_cot,,"In this task, you will be presented with a paragraph describing a set of three objects arranged in a fixed order. Your goal is to deduce the order of the sequence of objects. {paragraph} Select the option that correctly answers the question: {options}.",1,SEP_VARS,52,100
+59,False,meta_cot,,"In this task, you will be presented with a paragraph that describes a set of three objects arranged in a fixed order. Your task is to deduce the order of the sequence of objects. The paragraph is logically consistent within itself. Once you have read the paragraph, you will be presented with a set of options, and you must select the correct one. The task has two keywords: paragraph and options. Remember to use the placeholders {paragraph} and {options} when answering the question.",0,other,98,100
+60,False,meta_cot,,"Your goal in this task is to deduce the order of a sequence of three objects. You will be presented with a paragraph that describes the objects and their order. The paragraph is logically consistent within itself. After reading the paragraph, you will be presented with a set of options, and you must select the correct one. The task has two keywords: paragraph and options. Make sure to use the placeholders {paragraph} and {options} when answering the question.",0,other,92,100
+61,False,meta_cot,,"This task is a logical deduction task called logical deduction three objects. The task requires you to deduce the order of a sequence of three objects. You will be presented with a paragraph that describes the objects and their order. The paragraph is logically consistent within itself. After reading the paragraph, you will be presented with a set of options, and you must select the correct one. The task has two keywords: paragraph and options. Remember to use the placeholders {paragraph} and {options} when answering the question.",0,other,102,100
+62,False,meta_cot,,"You will be given a paragraph describing a set of three objects arranged in a fixed order, and a list of options to choose from. Your task is to deduce the order of the sequence of objects. Use the information provided in the paragraph to select the correct option. {paragraph} Choose from the following options: {options}.",1,SEP_VARS,66,100
+63,False,meta_cot,,"Your task is to determine the order of a sequence of three objects. You will be given a paragraph describing the objects in a fixed order, and a list of options to choose from. Use the information provided in the paragraph to select the correct option. {paragraph} Choose from the following options: {options}.",1,SEP_VARS,62,100
+64,False,meta_cot,,"You will be presented with a paragraph describing a set of three objects arranged in a fixed order, and a list of options to choose from. Your task is to deduce the order of the sequence of objects. Use the information provided in the paragraph to select the correct option. {paragraph} Choose from the following options: {options}.",1,SEP_VARS,67,100
+65,False,meta_cot,,"In this task, you will be presented with a paragraph that describes a set of three objects arranged in a fixed order. Your goal is to deduce the order of the objects. You will be given a set of options to choose from, and you must select the option that is logically consistent with the paragraph. The paragraph and options are provided in the following format: {paragraph} and {options}, respectively.",1,SEP_VARS,82,100
+66,False,meta_cot,,"Your task is to deduce the order of a sequence of three objects based on a given paragraph. The paragraph describes the objects arranged in a fixed order, and you will be given a set of options to choose from. Your goal is to select the option that is logically consistent with the paragraph. The paragraph and options are provided in the following format: {paragraph} and {options}, respectively.",1,SEP_VARS,79,100
+67,False,meta_cot,,"In this task, you will be presented with a paragraph that describes a set of three objects arranged in a fixed order. Your goal is to determine the order of the objects. You will be given a set of options to choose from, and you must select the option that is logically consistent with the paragraph. The paragraph and options are provided in the following format: {paragraph} and {options}, respectively.",1,SEP_VARS,81,100
+68,False,meta_cot,,"Your objective is to deduce the order of a sequence of three objects based on a given paragraph. The paragraph describes the objects arranged in a fixed order, and you will be given a set of options to choose from. Your task is to select the option that is logically consistent with the paragraph. The paragraph and options are provided in the following format: {paragraph} and {options}, respectively.",1,SEP_VARS,79,100
+69,False,meta_cot,,"In this task, you will be presented with a paragraph that describes a set of three objects arranged in a fixed order. Your goal is to deduce the order of the sequence of objects. The paragraph contains logically consistent statements. You will also be given a set of options to choose from. Make sure to choose the correct one. The paragraph is represented by the keyword {paragraph}, and the options are represented by the keyword {options}.",0,other,87,100
+70,False,meta_cot,,"Your task is to deduce the order of a sequence of three objects. You will be given a paragraph that describes the objects in a fixed order. The paragraph contains logically consistent statements. You will also be given a set of options to choose from. Choose the correct one. The paragraph is represented by the keyword {paragraph}, and the options are represented by the keyword {options}.",0,other,76,100
+71,False,meta_cot,,"The task at hand is a logical deduction task called logical deduction three objects. Your goal is to deduce the order of a sequence of three objects. You will be presented with a paragraph that describes the objects in a fixed order. The paragraph contains logically consistent statements. You will also be given a set of options to choose from. Make sure to choose the correct one. The paragraph is represented by the keyword {paragraph}, and the options are represented by the keyword {options}.",0,other,95,100
+72,False,meta_cot,,"You will be given a paragraph that describes a set of three objects arranged in a fixed order. Your task is to choose the option that is logically consistent with the paragraph. The paragraph is represented by the keyword {paragraph}, and the options are represented by the keyword {options}.",0,other,55,100
+73,False,meta_cot,,"Your goal is to deduce the order of a sequence of three objects based on a paragraph that describes their arrangement. Once you have deduced the order, you must choose the option that is logically consistent with the paragraph. The paragraph is represented by the keyword {paragraph}, and the options are represented by the keyword {options}.",0,other,65,100
+74,False,meta_cot,,"In this task, you will be presented with a paragraph that describes a set of three objects arranged in a fixed order. Your task is to deduce the order of the objects and choose the option that is logically consistent with the paragraph. The paragraph is represented by the keyword {paragraph}, and the options are represented by the keyword {options}.",0,other,68,100
+75,False,meta_cot,,"In this task, you will be presented with a paragraph that describes a set of three objects arranged in a fixed order. Your goal is to deduce the order of the objects. The paragraph is provided in the {paragraph} placeholder, and you will have a set of options to choose from, provided in the {options} placeholder. Choose the option that is logically consistent with the paragraph.",0,other,78,100
+76,False,meta_cot,,"Your task is to solve a logical deduction task called logical deduction three objects. You will be presented with a paragraph that describes a set of three objects arranged in a fixed order, and a set of options to choose from. The goal is to choose the option that is logically consistent with the paragraph. The paragraph is provided in the {paragraph} placeholder, and the options are provided in the {options} placeholder. Use your logical deduction skills to solve the task.",0,other,92,100
+77,False,meta_cot,,"The task at hand is a logical deduction task called logical deduction three objects. Your goal is to deduce the order of a sequence of objects based on a paragraph that describes them. The paragraph is provided in the {paragraph} placeholder, and a set of options is provided in the {options} placeholder. Choose the option that is logically consistent with the paragraph. Use your logical reasoning skills to solve the task.",0,other,82,100
+78,False,meta_cot,,"This is a task that requires logical deduction skills called logical deduction three objects. You will be presented with a paragraph that describes a set of three objects arranged in a fixed order, and a set of options to choose from. Your goal is to choose the option that is logically consistent with the paragraph. The paragraph is provided in the {paragraph} placeholder, and the options are provided in the {options} placeholder. Use your logical deduction skills to solve the task.",0,other,92,100
+79,False,meta_cot,,You are given a paragraph that describes a set of three objects arranged in a fixed order. You need to deduce the order of the objects. Choose the correct answer from the given options. {paragraph} Options: {options} Answer:,1,SEP_VARS,48,100
+80,False,meta_cot,,Your task is to deduce the order of three objects based on the information given in a paragraph. Choose the correct answer from the options provided. {paragraph} Choose from the following options: {options} Answer:,1,SEP_VARS,43,100
+81,False,meta_cot,,"In this task, you will be presented with a paragraph that describes the order of three objects. Your task is to deduce the order of the objects. Choose the correct answer from the options provided. {paragraph} Choose from the following options: {options} Answer:",1,SEP_VARS,54,100
+82,False,meta_cot,,"Your task is to solve a logical deduction task called logical deduction three objects. You will be presented with a paragraph that describes a set of three objects arranged in a fixed order. Based on the information given, you need to deduce the order of the objects. Choose the correct answer from the options provided. {paragraph} Options: {options} Answer:",1,SEP_VARS,71,100
+83,False,meta_cot,,"For this task, you will be presented with a paragraph that describes a set of three objects arranged in a fixed order. You will also be given a set of options to choose from. Your goal is to select the option that logically follows from the paragraph. Remember to carefully read the paragraph and consider all the information provided. The placeholders for the specific task instance are {paragraph} and {options}.",0,other,79,100
+84,False,meta_cot,,"In this task, you will need to use logical deduction to determine the order of a sequence of three objects. The task provides a paragraph that describes the objects in a fixed order, and a set of options to choose from. Your goal is to select the option that logically follows from the paragraph. Make sure to read the paragraph carefully and consider all the information provided. The placeholders for the specific task instance are {paragraph} and {options}.",0,other,88,100
+85,False,meta_cot,,"Your task is to use logical deduction to determine the order of a sequence of three objects. The task provides a paragraph that describes the objects in a fixed order, and a set of options to choose from. Your goal is to select the option that logically follows from the paragraph. Remember to read the paragraph carefully and consider all the information provided. The placeholders for the specific task instance are {paragraph} and {options}.",0,other,83,100
+86,False,meta_cot,,You will be presented with a paragraph that describes a set of three objects arranged in a fixed order. Your task is to deduce the order of the objects. Choose the option that is logically consistent with the paragraph. The placeholders in the input instructions are {paragraph} and {options}.,0,other,57,100
+87,False,meta_cot,,"Your goal is to determine the order of a sequence of three objects based on a given paragraph. The paragraph describes the objects in a fixed order, and there are multiple options to choose from. Your task is to select the option that is logically consistent with the paragraph. The placeholders in the input instructions are {paragraph} and {options}.",0,other,67,100
+88,False,meta_cot,,"Given a paragraph that describes a set of three objects arranged in a fixed order, your task is to deduce the order of the objects. There are multiple options to choose from, and the correct option must be logically consistent with the paragraph. The placeholders in the input instructions are {paragraph} and {options}.",0,other,62,100
+89,False,meta_cot,,"You will be presented with a paragraph that describes a set of three objects arranged in a fixed order. Your task is to deduce the order of the objects. After reading the paragraph, you will be given a set of options to choose from. Your goal is to select the option that logically follows from the paragraph. The placeholders in the input template are: {paragraph} and {options}.",0,SEP_VARS,78,100
+90,False,meta_cot,,"Your task is to analyze a paragraph that describes a set of three objects arranged in a fixed order. You need to deduce the order of the objects. Once you have analyzed the paragraph, you will be presented with a set of options to choose from. Your goal is to select the option that logically follows from the paragraph. The placeholders in the input template are: {paragraph} and {options}.",0,SEP_VARS,80,100
+91,False,meta_cot,,"In this task, you will be given a paragraph that describes a set of three objects arranged in a fixed order. Your task is to deduce the order of the objects. After reading the paragraph, you will be presented with a set of options to choose from. Your goal is to select the option that logically follows from the paragraph. The placeholders in the input template are: {paragraph} and {options}.",0,SEP_VARS,82,100
+92,False,meta_cot,,"Your goal is to deduce the order of a sequence of three objects. You will be presented with a paragraph that describes the objects in a fixed order. After analyzing the paragraph, you will be given a set of options to choose from. Your task is to select the option that logically follows from the paragraph. The placeholders in the input template are: {paragraph} and {options}.",0,SEP_VARS,77,100
+93,False,meta_cot,,"In this task, you will be presented with a paragraph that describes a set of three objects arranged in a fixed order. Your task is to deduce the order of the objects. You will also be provided with options to choose from. Make sure to select the correct option. The paragraph is represented by the keyword {paragraph} and the options are represented by the keyword {options}.",0,other,76,100
+94,False,meta_cot,,Your task is to solve a logical deduction task called logical deduction three objects. You will be presented with a paragraph that describes a set of three objects arranged in a fixed order. Your task is to deduce the order of the objects. The task also provides options to choose from. The paragraph is represented by the keyword {paragraph} and the options are represented by the keyword {options}.,0,other,77,100
+95,False,meta_cot,,"In this task, you will be given a paragraph that describes a set of three objects arranged in a fixed order. Your task is to deduce the order of the objects. The task also provides options to choose from. The paragraph is represented by the keyword {paragraph} and the options are represented by the keyword {options}. Make sure to select the correct option.",0,other,73,100
+96,False,meta_cot,,Your task is to solve a logical deduction task called logical deduction three objects. You will be given a paragraph that describes a set of three objects arranged in a fixed order. Your task is to deduce the order of the objects. The task also provides options to choose from. The paragraph is represented by the keyword {paragraph} and the options are represented by the keyword {options}. Make sure to select the correct option.,0,other,84,100
+97,False,meta_cot,,Deduce the order of a sequence of objects by analyzing a set of three objects arranged in a fixed order. Each paragraph provides logical consistency within itself. Use the options provided to answer the multi-choice question. {paragraph} Choose from the following options: {options},1,SEP_VARS,54,100
+98,False,meta_cot,,"Analyze a set of three objects arranged in a fixed order and deduce their order using logical deduction. Each paragraph provides a consistent description of the objects. Choose the correct answer from the provided options: {options}, based on the information provided in the {paragraph}.",1,SEP_VARS,53,100
+99,False,meta_cot,,"Given a set of three objects arranged in a fixed order, use logical deduction to determine their order. Each paragraph provides a consistent description of the objects. Choose the correct answer from the provided options: {options}, based on the information provided in the {paragraph}.",1,SEP_VARS,52,100
+100,False,meta_cot,,"Use logical deduction to determine the order of a set of three objects arranged in a fixed order. Each paragraph provides a consistent description of the objects. Choose the correct answer from the provided options: {options}, based on the information provided in the {paragraph}.",1,SEP_VARS,51,100
+101,False,meta_cot,,"Deduce the order of a sequence of three objects by reading the paragraphs provided. The paragraphs describe the objects in a fixed order, and the statements are logically consistent within each paragraph. Use the options provided to determine the correct order. The placeholders in the input instruction template are {paragraph} and {options}.",0,other,62,100
+102,False,meta_cot,,"Your task is to determine the order of three objects by analyzing the paragraphs provided. Each paragraph describes the objects in a fixed order, and the statements are logically consistent within each paragraph. Use the options provided to deduce the correct order. The placeholders in the input instruction template are {paragraph} and {options}.",0,other,62,100
+103,False,meta_cot,,"Read the paragraphs provided and deduce the order of three objects. Each paragraph describes the objects in a fixed order, and the statements are logically consistent within each paragraph. Use the options provided to determine the correct order. The placeholders in the input instruction template are {paragraph} and {options}.",0,other,58,100
+104,False,meta_cot,,"In this task, you will be presented with a paragraph that describes a set of three objects arranged in a fixed order. Your goal is to determine which of the provided options is logically consistent with the paragraph. The paragraph is represented by the keyword {paragraph}, and the options are represented by the keyword {options}.",0,other,62,100
+105,False,meta_cot,,"Your task is to analyze a paragraph that describes a set of three objects arranged in a fixed order and to determine which of the provided options is logically consistent with it. The paragraph is represented by the keyword {paragraph}, and the options are represented by the keyword {options}.",0,other,54,100
+106,False,meta_cot,,"You will be given a paragraph that describes a set of three objects arranged in a fixed order. Your goal is to deduce the order of the objects and determine which of the provided options is logically consistent with the paragraph. The paragraph is represented by the keyword {paragraph}, and the options are represented by the keyword {options}.",0,other,65,100
+107,False,meta_cot,,"In this task, you will be presented with a paragraph that describes a set of three objects arranged in a fixed order. You will also be provided with a set of options. Your task is to select the correct option based on the paragraph. The options are multiple choices. Make sure to read the paragraph carefully before selecting the correct option. {paragraph} {options}",1,other,73,100
+108,False,meta_cot,,Your task is to solve a logical deduction task called logical deduction three objects. The task requires deducing the order of a sequence of objects. You will be presented with a paragraph that describes a set of three objects arranged in a fixed order. You will also be provided with a set of options. The paragraph and the options are logically consistent. Your task is to select the correct option based on the paragraph. The options are multiple choices. {paragraph} {options},1,other,93,100
+109,False,meta_cot,,This task is called logical deduction three objects. The task requires deducing the order of a sequence of objects. You will be presented with a paragraph that describes a set of three objects arranged in a fixed order. The paragraph and the options are logically consistent. Your task is to select the correct option based on the paragraph. The options are multiple choices. {paragraph} {options},1,other,76,100
+110,False,meta_cot,,"In this task, you will be presented with a paragraph that describes a set of three objects arranged in a fixed order. The paragraph and the options are logically consistent. Your task is to select the correct option based on the paragraph. The options are multiple choices. Make sure to read the paragraph carefully before selecting the correct option. {paragraph} {options}",1,other,71,100
+111,False,meta_cot,,Your task is to solve a logical deduction task called logical deduction three objects. The task requires deducing the order of a sequence of objects. You will be presented with a paragraph that describes a set of three objects arranged in a fixed order. The paragraph and the options are logically consistent. Your task is to select the correct option based on the paragraph. The options are multiple choices. Make sure to read the paragraph carefully before selecting the correct option. {paragraph} {options},1,other,95,100
+112,False,meta_desc,,"
+Deduce the order of a sequence of three objects based on given logical statements and choose the correct option from a multiple-choice list. You will be given three objects and a set of logical statements that describe their order. Your task is to determine the correct order of the objects and choose the corresponding option from a list of choices. 
+Logical statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,81,100
+113,False,meta_desc,,"
+Deduce the order of a sequence of three objects based on given logical statements and choose the correct option from a multiple-choice list.
+Logical statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,41,100
+114,False,meta_desc,,"
+Given three objects A, B, and C, deduce their order based on the following statements and choose the correct option from the multiple choices.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,42,100
+115,False,meta_desc,,"
+Deduce the order of a sequence of three objects based on given statements and choose the correct option from multiple choices.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,37,100
+116,False,meta_desc,,"
+Deduce the order of a sequence of three objects based on given logical statements and choose the correct option from multiple choices. You will be given three objects and a set of logical statements that describe the relationships between them. Your task is to determine the correct order of the objects and select the corresponding option from a list of possible orders.
+Objects: {paragraph}
+Possible orders:
+{options}
+Output:",1,SEP_VARS,81,100
+117,False,meta_desc,,"
+Deduce the order of a sequence of three objects based on given logical statements and select the correct option from multiple choices. You will be provided with three objects and a set of logical statements that describe the order of the objects.
+Objects: {paragraph}
+Logical statements: 
+Multiple choice options:
+{options}
+Output:
+
+",1,SEP_VARS,65,100
+118,False,meta_desc,,"
+Deduce the order of a sequence of three objects based on given statements and choose the correct option among the given choices.
+Objects: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,38,100
+119,False,meta_desc,,"
+Deduce the order of a sequence of three objects based on given statements and choose the correct option among the given choices.
+Objects: {paragraph}
+Choices:
+{options}
+Output:",1,SEP_VARS,38,100
+120,False,meta_desc,,"
+Deduce the order of a sequence of three objects based on given statements and choose the correct option from a set of multiple choices.
+Objects: {paragraph}
+Statements:
+{options}
+Output:
+
+",1,SEP_VARS,40,100
+121,False,meta_desc,,"
+Deduce the order of a sequence of three objects based on given statements and choose the correct option among multiple choices.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,37,100
+122,False,meta_desc,,"
+Deduce the order of a sequence of three objects based on given statements and choose the correct option among multiple choices.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+",1,SEP_VARS,37,100
+123,False,meta_desc,,"
+Deduce the correct order of a sequence of three objects based on logical statements and select the correct option from a multiple-choice list.
+Objects: {paragraph}
+Logical statements: 
+{options}
+Output:
+
+",1,SEP_VARS,42,100
+124,False,meta_desc,,"
+Deduce the correct order of a sequence of three objects based on logical statements and select the correct option from a multiple-choice list.
+Statements: {paragraph}
+Multiple choice options:
+{options}
+Answer:
+
+",1,SEP_VARS,42,100
+125,False,meta_desc,,"
+Deduce the order of a sequence of three objects based on given statements and choose the correct option from the multiple choices provided.
+Objects: {paragraph}
+Possible options:
+{options}
+Output:
+
+",1,SEP_VARS,40,100
+126,False,meta_desc,,"
+Given three objects A, B, and C, deduce their order based on the following statements and choose the correct option from the multiple choices provided.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,43,100
+127,False,meta_desc,,"
+Given three objects, deduce their order based on a set of logical statements. Choose the correct option from the multiple choice answers provided.
+Objects: {paragraph}
+Logical statements:
+{options}
+Output:
+
+",1,SEP_VARS,41,100
+128,False,meta_desc,,"
+Deduce the order of a sequence of three objects based on given logical statements. Choose the correct option based on the given logical deductions.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,41,100
+129,False,meta_desc,,"
+Deduce the order of a sequence of three objects based on given logical statements and select the correct option from multiple choices. The logical statements will be in the form of ""Object A is before/after Object B"" or ""Object B is before/after Object C"". The options will be in the form of ABC, ACB, BAC, BCA, CAB, or CBA. 
+Logical statements: {paragraph}
+Options:
+{options}
+Output",0,SEP_VARS,94,100
+130,False,meta_desc,,"
+Deduce the order of a sequence of three objects based on given logical statements, and select the correct option from multiple choices.
+Objects: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,39,100
+131,False,meta_desc,,"
+Given a set of three objects arranged in a fixed order, your task is to deduce the correct order of the objects. You will be presented with a paragraph describing the arrangement of the objects, which will be logically consistent within itself. Following the paragraph, you will be given a list of choices, one of which is the correct answer. The correct answer is represented by a letter in brackets. Your task is to select the correct option and provide the corresponding letter as your answer.
+Paragraph",0,other,98,100
+132,False,meta_desc,,"
+Deduce the order of a sequence of three objects. You will be presented with a paragraph describing the fixed order of the objects. The paragraph will be logically consistent within itself. After the paragraph, you will be presented with a list of choices. The correct answer is one of the options and is represented by a letter in brackets. Provide the letter corresponding to the correct option as your answer.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+#",0,SEP_VARS,93,100
+133,False,meta_desc,,"
+Given a paragraph describing a set of three objects arranged in a fixed order and a set of options, use logical deduction to determine the correct answer to the question posed in the paragraph. The answer is one of the options provided.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:",1,SEP_VARS,58,100
+134,False,meta_desc,,"
+Please generate a logical deduction task called logical deduction three objects. The task should consist of a paragraph and a set of options. The paragraph should describe a set of three objects arranged in a fixed order, and the statements should be logically consistent within each paragraph. The options should be multiple-choice answers to the question posed in the paragraph. The answer to the question should be one of the options.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+#",0,SEP_VARS,92,100
+135,False,meta_desc,,"
+Deduce the order of a sequence of three objects based on a logically consistent paragraph. Select the correct option from the set of options.
+Paragraph: 
+{paragraph}
+Options: 
+{options}
+Output: 
+
+",1,other,44,100
+136,False,meta_desc,,"
+Deduce the order of a sequence of three objects based on a logically consistent paragraph. Given a paragraph that describes a set of three objects arranged in a fixed order, select the correct option from a set of options.
+Paragraph: 
+{paragraph}
+Options: 
+{options}
+Output:
+
+",1,other,59,100
+137,False,meta_desc,,"
+Given a paragraph describing a set of three objects arranged in a fixed order, and a set of options, use logical deduction to determine the correct order of the objects.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,46,100
+138,False,meta_desc,,"
+Deduce the order of a sequence of three objects. You will be provided with a paragraph describing the objects and their order, and a set of options to choose from. Select the option that correctly represents the order of the objects in the sequence.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,63,100
+139,False,meta_desc,,"
+Deduce the order of a sequence of three objects. You will be provided with a paragraph describing the objects arranged in a fixed order and a set of multiple choice options. Your task is to select the correct option based on the logical consistency of the statements in the paragraph.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,68,100
+140,False,meta_desc,,"
+Deduce the order of a sequence of three objects based on a given paragraph and set of options. The paragraph describes a set of three objects arranged in a fixed order, and the options are multiple choice. Your task is to select the correct option based on the information provided in the paragraph. 
+Paragraph: 
+{paragraph}
+Options: 
+{options}
+Output:
+
+",1,other,75,100
+141,False,meta_desc,,"
+Deduce the order of a sequence of three objects described in a paragraph and choose the correct option from a set of choices.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,39,100
+142,False,meta_desc,,"
+Deduce the order of a sequence of three objects described in a fixed order within a paragraph. The task is presented in a multi-choice format, with options to choose from.
+{paragraph}
+Options:
+{options}
+Output:
+
+",1,other,47,100
+143,False,meta_desc,,"
+Given a paragraph describing a set of three objects arranged in a fixed order and a set of options to choose from, select the option that logically follows the paragraph.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,45,100
+144,False,meta_desc,,"
+Please deduce the order of a sequence of three objects based on the given paragraph and options. The paragraph describes a set of three objects arranged in a fixed order, and the options provide possible objects that could follow the sequence. Select the option that logically follows the paragraph.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,67,100
+145,False,meta_desc,,"
+Deduce the order of a sequence of objects. You will be given a paragraph describing a set of three objects arranged in a fixed order and a set of options to choose from. Your task is to select the option that is logically consistent with the paragraph.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,65,100
+146,False,meta_desc,,"
+Deduce the order of a sequence of objects. You will be given a paragraph describing a set of three objects arranged in a fixed order and a set of options to choose from. Select the option that is logically consistent with the paragraph.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,61,100
+147,False,meta_desc,,"
+Deduce the order of a sequence of three objects. You will be given a paragraph describing a set of three objects arranged in a fixed order. The statements within the paragraph are logically consistent. You will also be given a set of options to choose from as your answer.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,68,100
+148,False,meta_desc,,"
+Given a paragraph describing a set of three objects arranged in a fixed order, your task is to deduce the correct order of the objects. You will be presented with multiple options to choose from. Your goal is to select the option that correctly represents the order of the objects as described in the paragraph. 
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,74,100
+149,False,meta_desc,,"
+Deduce the order of a sequence of three objects. You will be provided with a paragraph describing the objects arranged in a fixed order and a set of options to choose from. Choose the option that is logically consistent with the paragraph. Use the information provided in the paragraph to eliminate any options that are not consistent with the order of the objects. You may use common sense and general knowledge to help you make your decision. 
+Paragraph: {paragraph}
+Options:
+{options}",1,SEP_VARS,96,100
+150,False,meta_desc,,"
+Given a set of three objects arranged in a fixed order, and a set of options to choose from, use logical deduction to determine which option is logically consistent with the paragraph describing the arrangement of objects.
+{paragraph}
+Options:
+{options}
+Output:",1,other,51,100
+151,False,meta_desc,,"
+Deduce the order of a sequence of three objects based on given logical statements and select the correct option from a multiple-choice list. Use the logical statements to infer the position of each object in the sequence.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,55,100
+152,False,meta_desc,,"
+Given logical statements about a sequence of three objects, choose the correct order of the objects from a multiple-choice list.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,36,100
+153,False,meta_desc,,"
+Given a set of statements about the relative order of three objects, determine the correct order of the objects and choose the corresponding option from a list of choices.
+Statements: {paragraph}
+Choices:
+{options}
+Output:",1,SEP_VARS,44,100
+154,False,meta_desc,,"
+Given a set of statements about the relative order of three objects, determine the correct order and select the corresponding option.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,36,100
+155,False,meta_desc,,"
+Given logical statements about the order of three objects, choose the correct option from multiple choices that deduces the correct order of the objects. 
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,41,100
+156,False,meta_desc,,"
+Deduce the order of a sequence of three objects based on given logical statements and choose the correct option from multiple choices.
+Statements: {paragraph}
+Options:
+{options}
+Answer:
+
+",1,SEP_VARS,38,100
+157,False,meta_desc,,"
+Given a set of statements about a sequence of three objects, determine the correct order of the objects and select the corresponding option from the choices provided.
+Statements: {paragraph}
+Choices:
+{options}
+Output:",1,SEP_VARS,42,100
+158,False,meta_desc,,"
+Given a set of statements about the order of three objects, choose the correct option that represents the correct order of the objects.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,38,100
+159,False,meta_desc,,"
+Deduce the order of a sequence of three objects based on given statements and choose the correct option from a set of multiple choices. Use the information provided to determine the correct order of the objects.
+Statements: {paragraph}
+Multiple choice options:
+{options}
+Answer:
+
+",1,SEP_VARS,55,100
+160,False,meta_desc,,"
+Given a set of statements about the relative positions of three objects, determine the correct order of the objects and choose the corresponding option from a list of choices. 
+Statements: {paragraph}
+Option choices: 
+{options}
+Correct option: 
+
+",1,SEP_VARS,49,100
+161,False,meta_desc,,"
+Given a set of statements about the relative positions of three objects, determine the correct order of the objects and select the corresponding option from a list of choices.
+Statements: {paragraph}
+Options:
+{options}
+Output:",1,SEP_VARS,44,100
+162,False,meta_desc,,"
+Given a set of logical statements, determine the correct order of a sequence of three objects and select the correct option from a multiple-choice list. 
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,42,100
+163,False,meta_desc,,"
+Given a sequence of three objects and a set of logical statements, determine the correct order of the objects and select the corresponding option from a multiple-choice list. 
+Objects: {paragraph}
+Multiple-choice options: 
+{options}
+Output:",1,SEP_VARS,48,100
+164,False,meta_desc,,"
+Given a set of clues, determine the correct order of a sequence of events or items and select the corresponding option from the multiple choice answers.
+Clues:
+{paragraph}
+Multiple choice answers:
+{options}
+Output:
+
+",1,other,44,100
+165,False,meta_desc,,"
+Given a set of statements about the relative order of three objects, choose the correct order from the multiple choices provided.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,36,100
+166,False,meta_desc,,"
+Given a sequence of three objects and a set of logical statements, what is the correct order of the objects? Provide your answer by selecting the option that best fits the given logical deductions.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,50,100
+167,False,meta_desc,,"
+Given a sequence of three objects and a set of logical statements, what is the correct order of the objects? Choose the correct option from the given choices based on the logical deductions.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,49,100
+168,False,meta_desc,,"
+Given logical statements about a sequence of three objects, determine the correct order of the objects and select the corresponding option from multiple choices.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,39,100
+169,False,meta_desc,,"
+Deduce the order of a sequence of three objects based on given logical statements and select the correct option from multiple choices.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,38,100
+170,False,meta_desc,,"
+Given a set of three objects arranged in a fixed order, your task is to deduce the correct sequence. Read the paragraph and choose the correct answer from the list and provide it as a single letter in brackets.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,56,100
+171,False,meta_desc,,"
+Given a logical deduction task, your goal is to deduce the correct order of a sequence of three objects. You will be presented with a paragraph that describes the objects in a fixed order. You will also be given a list of options to choose from, with one correct answer represented by a letter in brackets. Your task is to select the correct answer from the list of options.
+Paragraph: {paragraph}
+Options:
+{options}
+Answer:",1,SEP_VARS,89,100
+172,False,meta_desc,,"
+Given a paragraph describing a set of three objects arranged in a fixed order and a set of options, deduce the correct order of the objects by logically analyzing the statements in the paragraph.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:",1,SEP_VARS,50,100
+173,False,meta_desc,,"
+Given a paragraph describing a set of three objects arranged in a fixed order, and a set of options, deduce the correct answer to the question posed in the paragraph. The answer is one of the options provided. 
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,57,100
+174,False,meta_desc,,"
+Given a paragraph describing a sequence of three objects and a set of options, deduce the correct order of the objects. The paragraph is logically consistent within itself.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,45,100
+175,False,meta_desc,,"
+Read the following paragraph and select the correct option: 
+{paragraph}
+Options:
+{options}
+Output:
+
+",1,other,22,100
+176,False,meta_desc,,"
+Given a paragraph describing a set of three objects arranged in a fixed order and a set of options, deduce the correct order of the objects.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,42,100
+177,False,meta_desc,,"
+Given a paragraph describing a set of three objects arranged in a fixed order and a set of options, deduce the correct order of the objects.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:",1,SEP_VARS,42,100
+178,False,meta_desc,,"
+Given a paragraph describing a fixed order of three objects and a set of multiple choice options, select the option that logically follows from the information provided in the paragraph.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,45,100
+179,False,meta_desc,,"
+Given a paragraph describing a set of three objects arranged in a fixed order and a set of multiple choice options, select the correct option based on logical deduction.
+Paragraph: 
+{paragraph}
+Options:
+{options}
+Output:
+
+",1,other,45,100
+180,False,meta_desc,,"
+Given a paragraph describing a sequence of three objects and a set of options to choose from, deduce the correct order of the objects.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,40,100
+181,False,meta_desc,,"
+Given a paragraph describing a set of three objects arranged in a fixed order and a set of options, select the option that logically follows the paragraph.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,42,100
+182,False,meta_desc,,"
+Given a paragraph describing a set of three objects arranged in a fixed order and a set of options to choose from, select the option that is logically consistent with the paragraph.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,47,100
+183,False,meta_desc,,"
+Given a paragraph describing a sequence of three objects and a set of options, select the option that is logically consistent with the paragraph.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,39,100
+184,False,meta_desc,,"
+Given a set of three objects arranged in a fixed order, deduce the correct order of the objects. You will be presented with a paragraph describing the objects and a set of options to choose from. Use logical deduction to determine the correct answer.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,62,100
+185,False,meta_desc,,"
+Given a paragraph describing a set of three objects arranged in a fixed order, deduce the correct order of the objects by selecting the correct option from the given choices. Use logical reasoning to eliminate the incorrect options.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:",1,SEP_VARS,55,100
+186,False,meta_desc,,"
+Given a paragraph describing a set of three objects arranged in a fixed order and a set of options to choose from, deduce the order of the sequence of objects. Choose the option that is logically consistent with the paragraph. 
+Paragraph: {paragraph}
+Options:
+{options}
+Output:",1,SEP_VARS,58,100
+187,False,meta_desc,,"
+Given a set of three objects arranged in a fixed order, choose the option that is logically consistent with the provided paragraph. Use the information provided in the paragraph to deduce the correct order of the objects. 
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,55,100

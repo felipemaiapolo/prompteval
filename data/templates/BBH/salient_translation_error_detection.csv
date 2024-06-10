@@ -1,0 +1,823 @@
+prompt idx,default prompt,method,language style,prompt template,correct,prompt format,prompt length,samples
+1,True,default,,"Q: The following translations from German to English contain a particular error. That error will be one of the following types: Named Entities: An entity (names, places, locations, etc.) is changed to a different entity. Numerical Values: Numerical values (ordinals or cardinals), dates, and/or units are changed. Modifiers or Adjectives: The modifiers and adjectives pertaining to a noun are changed. Negation or Antonyms: Introduce or remove a negation or change comparatives to their antonyms. Facts: Trivial factual errors not pertaining to the above classes are introduced in the translations. Dropped Content: A significant clause in the translation is removed. Please identify that error.
+Source: {source}
+Translation: {translation}
+The translation contains an error pertaining to
+Options:
+{options}
+A:",1,Q&A,168,100
+2,False,rephrase,,"Q: Identify the type of error in the following German to English translation. The error will be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content.
+Source: {source}
+Translation: {translation}
+What type of error does the translation contain?
+Options:
+{options}
+A:",1,Q&A,77,100
+3,False,rephrase,,"Q: Identify the type of error in the following English translation of a German source sentence. The error will be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content.
+Source: {source}
+Translation: {translation}
+The error in the translation is related to:
+Options:
+{options}
+A:",1,Q&A,80,100
+4,False,rephrase,,"Q: Identify the type of error in the given English translation of a German source sentence. The error will fall under one of the following categories: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content.
+Source sentence: {source}
+Translation: {translation}
+What type of error is present in the translation?
+Choose from the following options:
+{options}",1,SEP_VARS,85,100
+5,False,rephrase,,"Q: Identify the type of error in the following English translation of a German source sentence. The error will be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content.
+Source: {source}
+Translation: {translation}
+The error in the translation is related to:
+Options:
+{options}
+Please choose the correct option.",1,SEP_VARS,84,100
+6,False,rephrase,,"Q: Identify the type of error in the given English translation of a German source sentence. The error will be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content.
+Source sentence: {source}
+Translation: {translation}
+What type of error is present in the translation?
+Options:
+{options}
+A:",1,Q&A,82,100
+7,False,rephrase,,"Q: Identify the type of error in the given English translation of a German source sentence. The error will be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content.
+German Source Sentence: {source}
+English Translation: {translation}
+The error in the translation is related to:
+Options:
+{options}
+A:",1,Q&A,83,100
+8,False,rephrase,,"Q: Identify the type of error in the following English translation of a German source sentence. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content.
+Source: {source}
+Translation: {translation}
+What type of error is present in the translation?
+Options:
+{options}
+A:",1,Q&A,81,100
+9,False,rephrase,,"Q: Identify the type of error in the following English translation of a German source sentence. The error will be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content.
+Source: {source}
+Translation: {translation}
+What type of error is present in the translation?
+Options:
+{options}
+A:",1,Q&A,81,100
+10,False,rephrase,,"Q: Identify the type of error in the given translation from German to English. The error will be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content.
+Source: {source}
+Translation: {translation}
+What type of error does the translation contain?
+Options:
+{options}
+A:",1,Q&A,78,100
+11,False,rephrase,,"Q: Identify the type of error in the English translation of the given German source sentence. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content.
+Source sentence: {source}
+English translation: {translation}
+What type of error does the English translation contain?
+Options:
+{options}
+Answer:",1,SEP_VARS,83,100
+12,False,rephrase,,"Q: Identify the type of error in the following English translation of a German source sentence. The error will be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content.
+Source: {source}
+Translation: {translation}
+What type of error does the translation contain?
+Options:
+{options}
+A:",1,Q&A,80,100
+13,False,rephrase,,"Q: Identify the type of error in the following English translation of a German source sentence. The error will be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, Dropped Content.
+Source: {source}
+Translation: {translation}
+What type of error is present in the translation?
+Options:
+{options}
+A:",1,Q&A,80,100
+14,False,rephrase,,"Q: Identify the type of error in the given English translation of a German source sentence. The error will be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content.
+Source: {source}
+Translation: {translation}
+The error in the translation is related to:
+Options:
+{options}
+A:",1,Q&A,80,100
+15,False,rephrase,,"Q: Identify the type of error in the following translation from German to English:
+Source: {source}
+Translation: {translation}
+The error falls under which of the following categories?
+Options:
+{options}
+A:",1,Q&A,43,100
+16,False,rephrase,,"Q: Identify the type of error in the given English translation of a German source sentence. The error will be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content.
+Source sentence: {source}
+Translation: {translation}
+What type of error does the translation contain?
+Options:
+{options}
+A:",1,Q&A,81,100
+17,False,rephrase,,"Q: Identify the type of error in the given English translation of a German source sentence. The error will be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content.
+Source: {source}
+Translation: {translation}
+What type of error does the translation contain?
+Options:
+{options}
+A:",1,Q&A,80,100
+18,False,rephrase,,"Q: Identify the type of error in the following translation from German to English. The error will be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. 
+Source: {source}
+Translation: {translation}
+What type of error is present in the translation?
+Options:
+{options}
+A:",1,Q&A,80,100
+19,False,rephrase,,"Q: Identify the type of error in the given English translation of a German sentence. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content.
+Source: {source}
+Translation: {translation}
+What type of error does the translation contain?
+Options:
+{options}
+A:",1,Q&A,79,100
+20,False,rephrase,,"Q: Identify the type of error in the following English translation of a German source sentence. The error will fall under one of the following categories: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content.
+Source: {source}
+Translation: {translation}
+What type of error does the translation contain?
+Options:
+{options}
+A:",1,Q&A,81,100
+21,False,rephrase,,"Q: Identify the type of error in the following translation from German to English.
+Source: {source}
+Translation: {translation}
+The error is related to:
+Options:
+{options}
+A:",1,Q&A,39,100
+22,False,rephrase,,"Q: Identify the type of error in the English translation of the German source sentence given below. The error will be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content.
+Source: {source}
+Translation: {translation}
+What type of error does the translation contain?
+Choose from the following options:
+{options}
+A:",1,Q&A,85,100
+23,False,rephrase,,"Q: Identify the type of error in the following English translation of a German source sentence which can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content.
+Source: {source}
+Translation: {translation}
+The error in the translation is related to:
+Options:
+{options}
+Please select the correct option.",1,SEP_VARS,82,100
+24,False,rephrase,,"Q: Identify the type of error in the following translation from German to English:
+Source: {source}
+Translation: {translation}
+The error in the translation falls under which of the following categories?
+Options:
+{options}
+A:",1,Q&A,46,100
+25,False,rephrase,,"Q: Identify the type of error in the given English translation of a German source sentence. The error could belong to one of the following categories: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content.
+Source sentence: {source}
+Translation: {translation}
+Choose the correct category of error from the options below.
+Options:
+{options}
+A:",1,Q&A,84,100
+26,False,rephrase,,"Q: Identify the type of error in the given English translation of a German source sentence. The error will be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content.
+Source: {source}
+Translation: {translation}
+What type of error is present in the translation?
+Options:
+{options}
+A:",1,Q&A,81,100
+27,False,rephrase,,"Q: Identify the type of error present in the given English translation of a German source sentence. The error will be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. Please select the option that best describes the error.
+Source sentence: {source}
+English translation: {translation}
+The error in the translation is related to:
+Options:
+{options}
+A:",1,Q&A,93,100
+28,False,rephrase,,"Q: Identify the type of error in the following English translation of a German source sentence. The error will be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. 
+Source: {source}
+Translation: {translation}
+What type of error is present in the translation?
+Options:
+{options}
+A:",1,Q&A,82,100
+29,False,rephrase,,"Q: Identify the type of error in the given English translation of a German source sentence. The error will be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. Please choose the correct option.
+Source: {source}
+Translation: {translation}
+The translation contains an error pertaining to
+Options:
+{options}
+A:",1,Q&A,85,100
+30,False,rephrase,,"Q: Identify the type of error in the following German to English translation. The error will be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. The source sentence is {source} and the translation is {translation}.
+What type of error does the translation contain?
+Options:
+{options}
+A:",1,Q&A,81,100
+31,False,rephrase,,"Q: Identify the type of error in the following English translation of a German source sentence. The error will be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content.
+Source sentence: {source}
+Translation: {translation}
+What type of error does the translation contain?
+Options:
+{options}
+Choose the correct option.",1,SEP_VARS,84,100
+32,False,rephrase,,"Q: Identify the type of error in the given English translation of a German source sentence. The error will be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. The source sentence is: {source}. The translation is: {translation}. What type of error is present in the translation? Choose from the following options: {options}.",1,SEP_VARS,88,100
+33,False,rephrase,,"Q: Identify the type of error present in the given English translation of a German source sentence. The error will be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. Please choose the correct option.
+Source: {source}
+Translation: {translation}
+What type of error is present in the translation?
+Options:
+{options}
+A:",1,Q&A,88,100
+34,False,rephrase,,"Q: Identify the type of error in the following German to English translation. The error will be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. 
+Source: {source}
+Translation: {translation}
+What type of error does the translation contain?
+Options:
+{options}
+A:",1,Q&A,78,100
+35,False,rephrase,,"Q: Identify the type of error in the following German to English translation. Is it a Named Entity error, Numerical Value error, Modifiers/Adjectives error, Negation/Antonyms error, Facts error or Dropped Content error?
+Source: {source}
+Translation: {translation}
+The translation contains an error of which type?
+Options:
+{options}
+A:",1,Q&A,75,100
+36,False,rephrase,,"Q: Identify the type of error in the following English translation of a German sentence. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content.
+Source: {source}
+Translation: {translation}
+What type of error is present?
+Options:
+{options}
+A:",1,Q&A,77,100
+37,False,rephrase,,"Q: Identify the type of error that is present in the given English translation of the German source sentence. The error could be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. Please select the appropriate option.
+Source: {source}
+Translation: {translation}
+The translation contains an error of which type?
+Options:
+{options}
+A:",1,Q&A,89,100
+38,False,rephrase,,"Q: Identify the type of error in the following English translation of a German source sentence. The error will be one of the following: Named Entities, Numerical Values, Modifiers/Adjectives, Negation or Antonyms, Facts, or Dropped Content.
+Source: {source}
+Translation: {translation}
+What type of error does the translation contain?
+Options:
+{options}
+A:",1,Q&A,79,100
+39,False,rephrase,,"Q: Identify the type of error in the following English translation of a German source sentence. The error will be one of the following types: Named Entities, Numerical Values, Modifiers/Adjectives, Negation/Antonyms, Facts, or Dropped Content.
+Source: {source}
+Translation: {translation}
+What type of error is present in the translation?
+Options:
+{options}
+A:",1,Q&A,81,100
+40,False,rephrase,,"Q: Identify the type of error in the following German to English translation. The error will be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. 
+Source: {source}
+Translation: {translation}
+What is the type of error in the translation?
+Options:
+{options}
+A:",1,Q&A,79,100
+41,False,rephrase,,"Q: Identify the type of error in the following German to English translation. The error will be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, Dropped Content.
+Source: {source}
+Translation: {translation}
+What type of error does the translation contain? Choose one of the following options:
+{options}",1,SEP_VARS,79,100
+42,False,rephrase,,"Q: Identify the type of error in the given English translation of a German source sentence. The error will belong to one of the following categories: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. The source sentence is {source}, and its translation is {translation}. From the options below, select the category that best describes the error.
+Options:
+{options}",1,other,88,100
+43,False,rephrase,,"Q: Identify the type of error in the following English translation of a German source sentence.
+Source: {source}
+Translation: {translation}
+What type of error is present in the translation?
+Options:
+{options}",1,SEP_VARS,43,100
+44,False,rephrase,,"Q: Identify the type of error in the given English translation of a German source sentence. The error will be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. Your task is to choose the correct type of error from the provided options.
+Source sentence: {source}
+English translation: {translation}
+What type of error is present in the English translation?
+Options:
+{options}
+A:",1,Q&A,99,100
+45,False,rephrase,,"Q: Identify the type of error in the following English translation of a German source sentence. The error will be one of the following types: Named Entities (an entity is changed to a different entity), Numerical Values (numerical values, dates, and/or units are changed), Modifiers or Adjectives (modifiers and adjectives pertaining to a noun are changed), Negation or Antonyms (introduce or remove a negation or change comparatives to their antonyms), Facts (trivial factual errors not pertaining to the above classes are introduced), or Dropped Content (a significant clause in the translation is removed).
+Source: {source}
+Translation: {translation}
+The error in the translation is related to:
+Options:
+{options}
+A:",1,Q&A,150,100
+46,False,rephrase,,"Q: Identify the type of error in the following translation from German to English.
+Source: {source}
+Translation: {translation}
+The error falls into one of the following categories: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content.
+Please choose the correct category from the following options:
+{options}",1,SEP_VARS,75,100
+47,False,rephrase,,"Q: Identify the type of error in the following English translation of a German sentence. The error will be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content.
+Source: {source}
+Translation: {translation}
+What type of error is present in the translation?
+Options:
+{options}
+A:",1,Q&A,80,100
+48,False,rephrase,,"Q: Identify the error type in the following German to English translation. The error will be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content.
+Source: {source}
+Translation: {translation}
+What type of error is contained in the translation?
+Options:
+{options}
+A:",1,Q&A,77,100
+49,False,meta_cot,,"Please identify the type of error in the given English translation of a German source sentence. The error will be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. The German source sentence is: {source}. The English translation is: {translation}. The options to choose from are: {options}.",1,SEP_VARS,80,100
+50,False,meta_cot,,"Identify the type of error in the English translation of the German source sentence. The error will be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. The source sentence in German is: {source}. The English translation is: {translation}. Choose the correct option from the following list: {options}.",1,SEP_VARS,82,100
+51,False,meta_cot,,"Your task is to identify the type of error in the given English translation of a German source sentence. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. The German source sentence is: {source}. The English translation is: {translation}. You need to choose the correct option from the following list: {options}.",1,SEP_VARS,88,100
+52,False,meta_cot,,"In the following task, you will be presented with a German source sentence and its English translation. Your task is to identify the type of error in the English translation. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. The source sentence in German is: {source}. The English translation is: {translation}. Please choose the correct option from the following list: {options}.",1,SEP_VARS,100,100
+53,False,meta_cot,,"Identify the type of error in the English translation of the German sentence provided. The error will be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. The source sentence is given as {source} and the translated sentence is given as {translation}. Choose the option that corresponds to the type of error present from the following options: {options}.",1,SEP_VARS,90,100
+54,False,meta_cot,,"Your task is to determine the type of error present in the English translation of the German sentence given. The error will be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. The source sentence is provided as {source} and the translated sentence is given as {translation}. You must select the correct option from the following list of options: {options}.",1,SEP_VARS,91,100
+55,False,meta_cot,,"You are presented with a German sentence and its English translation. Your task is to identify the type of error present in the translation. The error will be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. The source sentence is given as {source} and the translated sentence is given as {translation}. Choose the option that corresponds to the type of error present from the following options: {options}.",1,SEP_VARS,100,100
+56,False,meta_cot,,"Identify the type of error in the following English translation of a German source sentence. The error will be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. Source: {source}. Translation: {translation}. Choose the correct option from the following: {options}.",1,SEP_VARS,74,100
+57,False,meta_cot,,"You will be presented with an English translation of a German source sentence. Your task is to identify the type of error in the translation. The error will be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. You will be provided with a list of options to choose from. Source: {source}. Translation: {translation}. Choose the correct option from the following: {options}.",1,SEP_VARS,97,100
+58,False,meta_cot,,"Your task is to identify the type of error in the following English translation of a German source sentence. The error will be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. You will be presented with a multiple-choice question, with the source sentence and translation provided, and a list of options to choose from. Source: {source}. Translation: {translation}. Choose the correct option from the following: {options}.",1,SEP_VARS,104,100
+59,False,meta_cot,,"Identify the type of error in the English translation of the given German source sentence. The translation will contain one of the following types of errors: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. You are given the source sentence as {source} and the translation as {translation}. Please select the error type from the following options: {options}.",1,SEP_VARS,85,100
+60,False,meta_cot,,"Your task is to detect the type of error in the English translation of a German source sentence. The translation will contain one of the following types of errors: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. The source sentence is provided as {source} and the translation as {translation}. Choose the correct error type from the following options: {options}.",1,SEP_VARS,86,100
+61,False,meta_cot,,"You are given a German source sentence and its English translation. The translation contains one of the following types of errors: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. Your task is to identify the type of error. The source sentence is given as {source} and the translation as {translation}. Please select the error type from the following options: {options}.",1,SEP_VARS,88,100
+62,False,meta_cot,,"Detect the type of error in the English translation of the given German source sentence. The translation can contain one of the following types of errors: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. You are provided with the source sentence as {source} and the translation as {translation}. Choose the correct error type from the following options: {options}.",1,SEP_VARS,85,100
+63,False,meta_cot,,"Please identify the type of error in the given English translation of the German source sentence. The error will be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. The source sentence is {source} and its English translation is {translation}. Choose the correct option from the following list: {options}.",1,SEP_VARS,80,100
+64,False,meta_cot,,"Your task is to detect the type of error in the English translation of the provided German source sentence. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. You will be given a list of options to choose from. The source sentence is {source} and its English translation is {translation}. Please select the correct option from the list: {options}.",1,SEP_VARS,95,100
+65,False,meta_cot,,"Identify the type of error in the given English translation of the German source sentence. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. You will be provided with a list of options to choose from. The source sentence is {source} and its English translation is {translation}. Please choose the correct option from the following list: {options}.",1,SEP_VARS,94,100
+66,False,meta_cot,,"Your task is to detect the type of error in the English translation of the provided German source sentence. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. You will be given a list of options to choose from. The German source sentence is {source} and its English translation is {translation}. Please select the correct option from the list: {options}.",1,SEP_VARS,96,100
+67,False,meta_cot,,"Please identify the type of error in the given English translation of a German source sentence. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. The source sentence is given as {source} and the translated sentence is given as {translation}. Please choose the correct option from the following: {options}.",1,SEP_VARS,84,100
+68,False,meta_cot,,"You are required to detect the error in the given English translation of a German source sentence. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. The source sentence is provided as {source} and the translated sentence is given as {translation}. Please select the correct option from the following: {options}.",1,SEP_VARS,85,100
+69,False,meta_cot,,"Identify the type of error in the given English translation of a German source sentence. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. The source sentence is given as {source} and the translated sentence is provided as {translation}. Please choose the correct option from the following: {options}.",1,SEP_VARS,84,100
+70,False,meta_cot,,"Your task is to detect the error in the given English translation of a German source sentence. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. The source sentence is provided as {source} and the translated sentence is given as {translation}. Please select the correct option from the following: {options}.",1,SEP_VARS,85,100
+71,False,meta_cot,,"Identify the type of error in the following English translation of a German source sentence. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. Please select the option that best describes the error. Source: {source}. Translation: {translation}. Options: {options}.",1,SEP_VARS,78,100
+72,False,meta_cot,,"You are given a German source sentence and its English translation. Your task is to identify the type of error in the translation. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. Choose the option that best describes the error. Source: {source}. Translation: {translation}. Options: {options}.",1,SEP_VARS,85,100
+73,False,meta_cot,,"Your task is to identify the type of error in the following English translation of a German source sentence. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. Please select the option that best describes the error. The German source sentence is: {source}. The English translation is: {translation}. The options are: {options}.",1,SEP_VARS,90,100
+74,False,meta_desc,,"
+Given an English translation of a German source sentence, identify the type of error present in the translation. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. You will be presented with multiple options, and you must select the correct one.
+German source sentence: {source}
+English translation: {translation}
+Options:
+{options}
+Output",1,SEP_VARS,92,100
+75,False,meta_desc,,"
+Given an English translation of a German source sentence, your task is to detect the type of error present in the translation. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. You will be presented with a multi-choice format and must select the correct option from the given options.
+German source sentence: {source}
+English translation: {translation}",0,SEP_VARS,94,100
+76,False,meta_desc,,"
+Given an English translation of a German source sentence, identify the type of error present in the translation. The possible error types are Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. The task is in a multi-choice format, and the answer must be selected from the given options.
+German source sentence: {source}
+English translation: {translation}
+Options:
+{options}
+Output",1,SEP_VARS,91,100
+77,False,meta_desc,,"
+Given an English translation of a German source sentence, identify the type of error present in the translation. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. You must select the correct answer from the given options in a multi-choice format.
+German source sentence: {source}
+English translation: {translation}
+Options:
+{options}
+",1,SEP_VARS,91,100
+78,False,meta_desc,,"
+Please detect the type of error in the following English translation of a German source sentence. The error will be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. Choose the correct option from the given choices.
+German source sentence: {source}
+English translation: {translation}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,83,100
+79,False,meta_desc,,"
+Given an English translation of a German source sentence, identify the type of error present in the translation. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. You will be presented with a multi-choice format where you need to select the correct option.
+German source sentence: {source}
+English translation: {translation}
+Options:
+{options",0,SEP_VARS,92,100
+80,False,meta_desc,,"
+Given an English translation of a German source sentence, identify the type of error present in the translation. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. You will be presented with a list of options, and you must select the correct answer.
+German source sentence: {source}
+English translation: {translation}
+Options:
+{options}",1,SEP_VARS,93,100
+81,False,meta_desc,,"
+Please detect the type of error in the following English translation of a German source sentence. The error will be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. Select the correct option from the provided choices.
+German source sentence: {source}
+English translation: {translation}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,83,100
+82,False,meta_desc,,"
+Given an English translation of a German source sentence, identify the type of error present. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. You will be provided with multiple-choice options for each input. 
+German source sentence: {source}
+English translation: {translation}
+Options:
+{options}
+Output:
+
+#end",1,SEP_VARS,89,100
+83,False,meta_desc,,"
+Given an English translation of a German source sentence, identify the type of error present in the translation. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. You will be presented with multiple choices for the error type.
+German source sentence: {source}
+English translation: {translation}
+Options:
+{options}
+Output:
+
+#",1,SEP_VARS,90,100
+84,False,meta_desc,,"
+Given a German source sentence and its English translation, identify the type of error in the translation. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. You will be presented with multiple choices to select from.
+German source sentence: {source}
+English translation: {translation}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,87,100
+85,False,meta_desc,,"
+Given a German source sentence and its English translation, identify the type of error in the translation. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. Choose the correct option from the provided multi-choice options.
+German source sentence: {source}
+English translation: {translation}
+Options:
+{options}
+Output:",1,SEP_VARS,87,100
+86,False,meta_desc,,"
+Given a German source sentence and its English translation, identify the type of error in the translation. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. Choose the correct option from the multi-choice format provided.
+German source sentence: {source}
+English translation: {translation}
+Options:
+{options}
+Output:
+
+#end",1,SEP_VARS,89,100
+87,False,meta_desc,,"
+Given a German source sentence and its English translation, identify the type of error in the translation from the following options: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. The task is in a multi-choice format, and the prompt provides the source sentence, translation, and options.
+German source sentence: {source}
+English translation: {translation}
+Options:
+{options}
+Output",1,SEP_VARS,91,100
+88,False,meta_desc,,"
+Please select the type of error in the following English translation of a German source sentence. The error will be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. 
+Source Sentence: {source}
+Translation: {translation}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,73,100
+89,False,meta_desc,,"
+Given a German source sentence and its English translation, detect the type of error in the translation. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. The task is in a multi-choice format, and you will be provided with options to choose from.
+German source sentence: {source}
+English translation: {translation}
+Options:
+{",0,SEP_VARS,92,100
+90,False,meta_desc,,"
+Given a German source sentence and its English translation, identify the type of error in the translation. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. You will be presented with a multi-choice format and input-output samples for practice.
+German source sentence: {source}
+English translation: {translation}
+Options:
+{options}
+",1,SEP_VARS,90,100
+91,False,meta_desc,,"
+Given an English translation of a German source sentence, identify the type of error present in the translation. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. You will be presented with a multi-choice format and provided with input-output samples for practice.
+German source sentence: {source}
+English translation: {translation}
+Options:
+{",0,SEP_VARS,91,100
+92,False,meta_desc,,"
+Given a German source sentence and its English translation, identify the type of error present in the English translation. The error can be related to Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. You will be presented with multiple choice options to select the correct error type.
+German source sentence: {source}
+English translation: {translation}
+Options:
+{options}
+Output:
+
+#",1,SEP_VARS,90,100
+93,False,meta_desc,,"
+Given an English translation of a German source sentence, identify the type of error present in the translation. The error can be related to Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. The task is in a multi-choice format, and the answer needs to be selected from the given options.
+German source sentence: {source}
+English translation: {translation}
+Options:
+{options}",1,SEP_VARS,92,100
+94,False,meta_desc,,"
+Given a German source sentence and its English translation, identify the type of error in the translation. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. You will be provided with a list of options to choose from.
+German source sentence: {source}
+English translation: {translation}
+Options:
+{options}
+Output:",1,SEP_VARS,89,100
+95,False,meta_desc,,"
+Given a German source sentence and its English translation, identify the type of error in the translation. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. Choose the correct type of error from a list of options provided.
+German source sentence: {source}
+English translation: {translation}
+Options:
+{options}
+Output:
+
+#",1,SEP_VARS,90,100
+96,False,meta_desc,,"
+Given a German source sentence {source} and its English translation {translation}, identify the type of error in the translation. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. Choose the correct error type from the options: {options}.
+Output:",1,SEP_VARS,75,100
+97,False,meta_desc,,"
+Given a German source sentence {source} and its English translation {translation}, identify the type of error present in the translation. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. Choose the correct error type from the options {options}.
+Output:
+
+",1,other,75,100
+98,False,meta_desc,,"
+Given a German source sentence and its English translation, detect the type of error in the translation. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. The task will be presented as a multiple-choice question with the source sentence, translation, and a list of options to choose from.
+German source sentence: {source}
+English translation: {translation",0,SEP_VARS,94,100
+99,False,meta_desc,,"
+Given a German source sentence and its English translation, detect the type of error in the translation. The possible types of errors are Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. The task will be presented as a multiple-choice question, with the source sentence and translation provided, and a list of options to choose from.
+German source sentence: {source}
+English translation: {translation}
+",0,SEP_VARS,93,100
+100,False,meta_desc,,"
+Identify the type of error in an English translation of a German source sentence.
+Source: {source}
+Translation: {translation}
+Options: {options}
+Output:",1,SEP_VARS,34,100
+101,False,meta_desc,,"
+Identify the type of error in an English translation of a German source sentence. The translation may contain one of the following types of errors: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. Given the source sentence {source} and the translation {translation}, select the option that best describes the type of error from the following options: {options}.
+Output:",1,SEP_VARS,88,100
+102,False,meta_desc,,"
+Given a German source sentence and its English translation, identify the type of error in the translation. The error could be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. Choose the correct option from the list provided.
+German source sentence: {source}
+English translation: {translation}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,85,100
+103,False,meta_desc,,"
+Given a German source sentence and its English translation, identify the type of error in the translation. The error will be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. Choose the correct type of error from a list of options.
+German source sentence: {source}
+English translation: {translation}
+Options:
+{options}
+Output:
+
+#end",1,SEP_VARS,90,100
+104,False,meta_desc,,"
+Identify the error in an English translation of a German source sentence. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. You will be given a source sentence and a translated sentence. Choose the option that best describes the error in the translation.
+Source: {source}
+Translation: {translation}
+Options:
+{options}
+Output:",1,SEP_VARS,92,100
+105,False,meta_desc,,"
+Given a German source sentence and its English translation, identify the type of error in the translation. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. Please select the type of error from the options below:
+{options}
+German source sentence: {source}
+English translation: {translation}
+Output:
+
+",1,SEP_VARS,85,100
+106,False,meta_desc,,"
+Given a German source sentence and its English translation, identify the type of error in the translation. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. Please select the correct error type from the options below.
+German: {source}
+English: {translation}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,84,100
+107,False,meta_desc,,"
+Given an English translation of a German source sentence, identify the type of error present. The error can fall into one of the following categories: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. Your task is to select the correct category from the given options.
+English: {source}
+German: {translation}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,85,100
+108,False,meta_desc,,"
+Given an English translation of a German source sentence, identify the type of error present. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. Choose the correct option from the given options.
+English: {source}
+German: {translation}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,80,100
+109,False,meta_desc,,"
+Given an English translation of a German source sentence, identify the type of error present. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. Choose the correct option from the given choices.
+English: {source}
+German: {translation}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,80,100
+110,False,meta_desc,,"
+You are given an English translation of a German source sentence and your task is to identify the type of error present in the translation. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. You must select the correct answer from the given options.
+German source sentence: {source}
+English translation: {translation}
+Options:
+{options}
+",1,SEP_VARS,92,100
+111,False,meta_desc,,"
+You are given an English translation of a German source sentence and your task is to identify the type of error in the translation. The error could be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. Your task is to select the correct option from a list of choices.
+German source sentence: {source}
+English translation: {translation}
+Options:
+{options",1,SEP_VARS,93,100
+112,False,meta_desc,,"
+Given an English translation of a German source sentence, identify the type of error present. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. Select the correct option from the multiple-choice format.
+German source sentence: {source}
+English translation: {translation}
+Options:
+{options}
+Output:",1,SEP_VARS,84,100
+113,False,meta_desc,,"
+Given an English translation of a German source sentence, identify the type of error present. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. Select the correct option from the provided choices.
+German source sentence: {source}
+English translation: {translation}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,83,100
+114,False,meta_desc,,"
+Given a German source sentence and its English translation, identify the type of error present in the translation. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. Choose the correct option from the provided choices.
+German source sentence: {source}
+English translation: {translation}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,86,100
+115,False,meta_desc,,"
+Given an English translation of a German source sentence, identify the type of error present. The error could be related to Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. Please choose the correct option from the given choices. 
+German source sentence: {source}
+English translation: {translation}
+Choices: 
+{options}
+Output:
+
+",1,SEP_VARS,82,100
+116,False,meta_desc,,"
+Given an English translation of a German source sentence, determine the type of error present. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. Please select the correct error type from the provided options.
+German source sentence: {source}
+English translation: {translation}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,85,100
+117,False,meta_desc,,"
+You are given a German source sentence and its English translation. Your task is to identify the type of error present in the translation. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. Choose the option that best describes the error.
+German source sentence: {source}
+English translation: {translation}
+Options:
+{options}
+Output:",1,SEP_VARS,92,100
+118,False,meta_desc,,"
+Given a German source sentence and its English translation, identify the type of error in the translation. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. Choose the correct option from the provided multi-choice options.
+German source sentence: {source}
+English translation: {translation}
+Options:
+{options}
+Output:
+
+#end",1,SEP_VARS,89,100
+119,False,meta_desc,,"
+Given a German source sentence and its English translation, identify the type of error in the translation. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. Choose the option that best describes the error.
+German: {source}
+English: {translation}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,82,100
+120,False,meta_desc,,"
+Given a German source sentence and its English translation, identify the type of error in the translation. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. Choose the correct option from the provided multi-choice format.
+German source sentence: {source}
+English translation: {translation}
+Options:
+{options}
+Output:",1,SEP_VARS,87,100
+121,False,meta_desc,,"
+Given a German source sentence and its English translation, identify the type of error present in the translation. The error could be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. Choose the option that best describes the error.
+German source sentence: {source}
+English translation: {translation}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,86,100
+122,False,meta_desc,,"
+Given an English translation of a German source sentence, identify the type of error present. The error can be one of the following: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content.
+German source sentence: {source}
+English translation: {translation}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,73,100
+123,False,meta_desc,,"
+Given an English translation of a German source sentence, identify the type of error present. The error can be one of the following: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. Practice with the following multi-choice format examples.
+German source sentence: {source}
+English translation: {translation}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,82,100
+124,False,meta_desc,,"
+Given an English translation of a German source sentence, identify the type of error present. The error can be related to Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. Select the correct answer from the given options.
+English: {source}
+German: {translation}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,76,100
+125,False,meta_desc,,"
+Given an English translation of a German source sentence, identify the type of error present. The error could be related to Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. Choose the correct option from the given choices.
+English: {source}
+German: {translation}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,76,100
+126,False,meta_desc,,"
+Given a German source sentence and its English translation, identify the type of error in the translation. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content.
+Source: {source}
+Translation: {translation}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,73,100
+127,False,meta_desc,,"
+Given a German source sentence and its English translation, identify the type of error present in the translation. The error could be related to Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content.
+Source sentence: {source}
+Translation: {translation}
+Options:
+{options}
+Output:",1,SEP_VARS,71,100
+128,False,meta_desc,,"
+Given a German source sentence and its English translation, determine the type of error in the translation. The error could be related to Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. Choose the correct option from the list provided.
+German source sentence: {source}
+English translation: {translation}
+Options:
+{options}
+Output:",1,SEP_VARS,81,100
+129,False,meta_desc,,"
+Given a German source sentence and its English translation, identify the type of error in the translation. The error could be related to Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. You will be presented with a multiple-choice question, with the source sentence and translation provided, and a list of options to choose from. 
+German source sentence: {source}
+English translation: {translation}
+",0,SEP_VARS,93,100
+130,False,meta_desc,,"
+Given a German source sentence and its English translation, identify the type of error in the translation. The possible error types are Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content.
+Source: {source}
+Translation: {translation}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,68,100
+131,False,meta_desc,,"
+Given a German source sentence and its English translation, identify the type of error in the translation. The possible error types are Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content.
+Source sentence: {source}
+Translation: {translation}
+Options:
+{options}
+Output:",1,SEP_VARS,69,100
+132,False,meta_desc,,"
+Given a German source sentence and its English translation, identify the type of error in the translation. The error could be related to Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. Choose the correct option from the list provided.
+German source sentence: {source}
+English translation: {translation}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,81,100
+133,False,meta_desc,,"
+Given a German source sentence and its English translation, identify the type of error present in the translation. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content.
+Source: {source}
+Translation: {translation}
+Options:
+{options}
+Output:",1,SEP_VARS,74,100
+134,False,meta_desc,,"
+Identify the error type in an English translation of a German source sentence. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. Use the source sentence and the translated sentence provided, and choose from the options provided.
+Source: {source}
+Translation: {translation}
+Options:
+{options}
+Output:
+Error Type:",1,SEP_VARS,89,100
+135,False,meta_desc,,"
+Given a German sentence and its English translation, identify the type of error in the translation. The error can be one of the following types: Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. Provide the correct label for each error type.
+German: {source}
+English: {translation}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,81,100
+136,False,meta_desc,,"
+Given a German sentence and its English translation, identify the type of error in the translation. The possible error types are Named Entities, Numerical Values, Modifiers or Adjectives, Negation or Antonyms, Facts, or Dropped Content. Please select the correct error type from the options provided.
+German: {source}
+English: {translation}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,78,100

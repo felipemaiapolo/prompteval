@@ -1,0 +1,710 @@
+prompt idx,default prompt,method,language style,prompt template,correct,prompt format,prompt length,samples
+1,True,default,,"Q: This SVG path element {svg_path_element} draws a
+Options:
+{options}
+A:",1,Q&A,21,100
+2,False,rephrase,,"Name the geometric shape that is drawn by the {svg_path_element} SVG path element.
+Options:
+{options}",1,other,23,100
+3,False,rephrase,,"Name the geometric shape that is drawn by the {svg_path_element} SVG path element:
+Options:
+{options}",1,other,23,100
+4,False,rephrase,,"Name the geometric shape that is drawn by the SVG path element {svg_path_element}.
+Options:
+{options}",1,other,22,100
+5,False,rephrase,,"Name the geometric shape represented by this SVG path element {svg_path_element}.
+Options:
+{options}",1,other,20,100
+6,False,rephrase,,"Name the geometric shape represented by this SVG path element {svg_path_element}:
+Options:
+{options}",1,other,21,100
+7,False,rephrase,,"Name the geometric shape that is drawn by this SVG path element {svg_path_element}.
+Options:
+{options}",1,other,22,100
+8,False,rephrase,,"Name the geometric shape that is drawn by this SVG path element {svg_path_element}:
+Options:
+{options}",1,other,23,100
+9,False,rephrase,,"Name the geometric shape that is drawn by this SVG path element {svg_path_element}.
+Choose from the following options:
+{options}",1,other,26,100
+10,False,rephrase,,"Name the geometric shape represented by the SVG path element {svg_path_element}. Choose from the following options:
+{options}",1,other,24,100
+11,False,rephrase,,"Name the geometric shape represented by the following SVG path element: {svg_path_element}
+Options:
+{options}",1,SEP_VARS,22,100
+12,False,rephrase,,"Name the geometric shape that is represented by the SVG path element {svg_path_element}:
+Options:
+{options}",1,other,23,100
+13,False,rephrase,,"Name the geometric shape drawn by this SVG path element {svg_path_element}.
+Options:
+{options}",1,other,20,100
+14,False,rephrase,,"Name the geometric shape that is drawn by {svg_path_element}.
+Options:
+{options}",1,other,18,100
+15,False,rephrase,,"Name the geometric shape corresponding to this SVG path element {svg_path_element}.
+Options:
+{options}",1,other,20,100
+16,False,rephrase,,"Name the geometric shape that is drawn by the given SVG path element {svg_path_element}.
+Options:
+{options}",1,other,23,100
+17,False,rephrase,,"Name the geometric shape corresponding to the given SVG path: {svg_path_element}
+Options:
+{options}",1,SEP_VARS,21,100
+18,False,rephrase,,"Name the geometric shape that is drawn using {svg_path_element}.
+Options:
+{options}",1,other,18,100
+19,False,rephrase,,"Name the geometric shape that can be drawn using this SVG path element {svg_path_element}.
+Choose from the following options:
+{options}",1,other,27,100
+20,False,rephrase,,"Name the geometric shape that can be drawn using {svg_path_element} SVG path. Choose from the following options:
+{options}",1,other,26,100
+21,False,rephrase,,"Name the geometric shape drawn by this SVG path element {svg_path_element}:
+Options:
+{options}",1,other,21,100
+22,False,rephrase,,"Name the geometric shape represented by the {svg_path_element} SVG path.
+Options:
+{options}",1,other,20,100
+23,False,rephrase,,"Name the geometric shape represented by this SVG path element: {svg_path_element}.
+Options:
+{options}
+A:",1,SEP_VARS,23,100
+24,False,rephrase,,"Name the geometric shape represented by the following SVG path element: {svg_path_element}.
+Options: 
+{options}",1,SEP_VARS,23,100
+25,False,rephrase,,"Name the geometric shape that is drawn by the SVG path element {svg_path_element}:
+Options:
+{options}",1,other,23,100
+26,False,rephrase,,"Name the geometric shape that this SVG path element {svg_path_element} draws:
+Options: {options}",1,SEP_VARS,21,100
+27,False,rephrase,,"Q: Identify the name of the geometric shape represented by this SVG path element: {svg_path_element}.
+Options:
+{options}
+A:",1,Q&A,28,100
+28,False,rephrase,,"Q: Identify the geometric shape represented by this SVG path element: {svg_path_element}
+Options:
+{options}
+A:",1,Q&A,25,100
+29,False,rephrase,,"Q: Identify the name of the geometric shape represented by the given SVG path element: {svg_path_element}
+Options:
+{options}
+A:",1,Q&A,29,100
+30,False,rephrase,,"Q: Identify the name of the geometric shape represented by the following SVG path element: {svg_path_element}
+Options:
+{options}
+A:",1,Q&A,29,100
+31,False,rephrase,,"Q: Identify the name of the geometric shape represented by this SVG path element {svg_path_element}.
+Options:
+{options}
+A:",1,Q&A,27,100
+32,False,rephrase,,"Q: Identify the name of the geometric shape represented by this {svg_path_element}.
+Options:
+{options}
+A:",1,Q&A,24,100
+33,False,rephrase,,"Q: Identify the name of the geometric shape represented by the following SVG path element: {svg_path_element}.
+Options:
+{options}
+A:",1,Q&A,29,100
+34,False,rephrase,,"Q: Identify the geometric shape described by this SVG path element: {svg_path_element}.
+Options:
+{options}
+A:",1,Q&A,25,100
+35,False,rephrase,,"Q: Identify the geometric shape represented by this SVG path: {svg_path_element}.
+Options:
+{options}
+A:",1,Q&A,24,100
+36,False,rephrase,,"Q: Identify the geometric shape {svg_path_element} shown in this SVG path element:
+Options:
+{options}
+A:",1,Q&A,25,100
+37,False,rephrase,,"Q: Name the geometric shape represented by this SVG path element: {svg_path_element}
+Options:
+{options}
+A:",1,Q&A,25,100
+38,False,rephrase,,"Q: Name the geometric shape corresponding to this SVG path element: {svg_path_element}.
+Options:
+{options}
+A:",1,Q&A,25,100
+39,False,rephrase,,"Q: Identify the geometric shape corresponding to the following SVG path element: {svg_path_element}
+Options:
+{options}
+A:",1,Q&A,26,100
+40,False,rephrase,,"Q: Identify the name of the geometric shape that is represented by the following SVG path element {svg_path_element}.
+Options:
+{options}
+A:",1,Q&A,30,100
+41,False,rephrase,,"Q: Identify the geometric shape represented by the following {svg_path_element}:
+Options:
+{options}
+A:",1,Q&A,23,100
+42,False,rephrase,,"Q: Identify the geometric shape drawn by the given SVG path element: {svg_path_element}
+Options:
+{options}
+A:",1,Q&A,26,100
+43,False,rephrase,,"Q: Identify the name of the geometric shape that this SVG path element {svg_path_element} represents:
+Options:
+{options}
+A:",1,Q&A,28,100
+44,False,rephrase,,"Q: Identify the name of {svg_path_element} from its SVG path.
+Options:
+{options}
+A:",1,Q&A,23,100
+45,False,rephrase,,"Q: Can you identify the name of this geometric shape based on its SVG path element, {svg_path_element}?
+Options:
+{options}
+A:",1,Q&A,31,100
+46,False,rephrase,,"Q: Identify the name of the geometric shape represented by this SVG path element {svg_path_element}
+Options:
+{options}
+A:",1,Q&A,27,100
+47,False,rephrase,,"Q: Please identify the geometric shape that corresponds to {svg_path_element} SVG path element.
+Options:
+{options}
+A:",1,Q&A,26,100
+48,False,rephrase,,"Q: Identify the name of the geometric shape that is drawn by the given {svg_path_element} SVG path element:
+Options: {options}
+A:",1,Q&A,31,100
+49,False,rephrase,,"Q: Identify the geometric shape represented by this SVG path element: {svg_path_element}.
+Options:
+{options}
+A:",1,Q&A,25,100
+50,False,rephrase,,"Q: Identify the name of the geometric shape represented by the following {svg_path_element}.
+Options:
+{options}
+A:",1,Q&A,25,100
+51,False,rephrase,,"Q: Identify this geometric shape drawn using the SVG path element: {svg_path_element}
+Options:
+{options}
+Answer:",1,SEP_VARS,25,100
+52,False,meta_cot,,What is the name of the geometric shape represented by the SVG path element {svg_path_element}? Choose from the following options: {options}.,1,SEP_VARS,28,100
+53,False,meta_cot,,Identify the geometric shape corresponding to the SVG path element {svg_path_element}. Which of the following options is the correct answer: {options}?,1,SEP_VARS,29,100
+54,False,meta_cot,,"Given the SVG path element {svg_path_element}, select the name of the geometric shape it represents. Your options are: {options}.",1,SEP_VARS,27,100
+55,False,meta_cot,,Which of the following geometric shapes is represented by the SVG path element {svg_path_element}? Choose the correct answer from the following options: {options}.,1,SEP_VARS,30,100
+56,False,meta_cot,,What is the name of the geometric shape represented by this SVG path element {svg_path_element}? Choose from the following options: {options}.,1,SEP_VARS,28,100
+57,False,meta_cot,,Identify the geometric shape that corresponds to the SVG path element {svg_path_element}. You can choose from the following options: {options}.,1,SEP_VARS,28,100
+58,False,meta_cot,,Which geometric shape is represented by the SVG path element {svg_path_element}? Select one of the following options: {options}.,1,SEP_VARS,25,100
+59,False,meta_cot,,The SVG path element {svg_path_element} corresponds to which geometric shape? Please select from the following options: {options}.,1,SEP_VARS,25,100
+60,False,meta_cot,,Which of the following geometric shapes is represented by the SVG path element {svg_path_element}? The available options are: {options}.,1,SEP_VARS,26,100
+61,False,meta_cot,,"From the following options, which one corresponds to the geometric shape represented by the SVG path element {svg_path_element}? Choose wisely: {options}.",1,SEP_VARS,29,100
+62,False,meta_cot,,What is the name of the geometric shape represented by the SVG path element {svg_path_element}? Choose one of the following options: {options}.,1,SEP_VARS,29,100
+63,False,meta_cot,,Identify the geometric shape that is drawn by the SVG path element {svg_path_element}. You can choose from the following options: {options}.,1,SEP_VARS,29,100
+64,False,meta_cot,,Please select the correct name of the geometric shape that is represented by the SVG path element {svg_path_element}. The available options are: {options}.,1,SEP_VARS,30,100
+65,False,meta_cot,,What is the name of the shape that is drawn by the SVG path element {svg_path_element}? Please choose one of the following options: {options}.,1,SEP_VARS,31,100
+66,False,meta_cot,,"From the given options {options}, select the name of the geometric shape that is represented by the SVG path element {svg_path_element}.",1,other,27,100
+67,False,meta_cot,,Which of the following geometric shapes is represented by the SVG path element {svg_path_element}? Please choose one of the options: {options}.,1,SEP_VARS,28,100
+68,False,meta_cot,,Identify the shape represented by the SVG path element {svg_path_element}. You can choose from the following options: {options}.,1,SEP_VARS,26,100
+69,False,meta_cot,,Which geometric shape is represented by the SVG path element {svg_path_element}? Select the correct option from the following: {options}.,1,SEP_VARS,26,100
+70,False,meta_cot,,"Given the SVG path element {svg_path_element}, which of the following shapes is being drawn? Choose from the following options: {options}.",1,SEP_VARS,28,100
+71,False,meta_cot,,Can you identify the geometric shape that is being drawn by the SVG path element {svg_path_element}? The options are: {options}.,1,SEP_VARS,27,100
+72,False,meta_cot,,Identify the geometric shape represented by the SVG path element {svg_path_element}. You can choose from the following options: {options}.,1,SEP_VARS,27,100
+73,False,meta_cot,,Your task is to determine the name of the geometric shape that corresponds to the SVG path element {svg_path_element}. You will be given a list of possible options: {options}.,1,SEP_VARS,36,100
+74,False,meta_cot,,Name the geometric shape that is represented by the SVG path element {svg_path_element}. You will be provided with a set of {options} to choose from.,0,other,32,100
+75,False,meta_cot,,Your goal is to identify the name of the geometric shape that corresponds to the SVG path element {svg_path_element}. You will have to choose from the following options: {options}.,1,SEP_VARS,36,100
+76,False,meta_cot,,What is the name of the shape that is drawn by the SVG path element {svg_path_element}? Choose from the following options: {options}.,1,SEP_VARS,29,100
+77,False,meta_cot,,Identify the geometric shape represented by the SVG path element {svg_path_element}. Choose one of the following options: {options}.,1,SEP_VARS,26,100
+78,False,meta_cot,,Which geometric shape is described by the SVG path element {svg_path_element}? Please select one of the following options: {options}.,1,SEP_VARS,26,100
+79,False,meta_cot,,"Given the SVG path element {svg_path_element}, which of the following geometric shapes does it represent? Choose one of the options below: {options}.",1,SEP_VARS,30,100
+80,False,meta_cot,,What is the name of the shape represented by the SVG path element {svg_path_element}? Choose from the following options: {options}.,1,SEP_VARS,27,100
+81,False,meta_cot,,Which of the following shapes is represented by the SVG path element {svg_path_element}? Options: {options}.,1,SEP_VARS,22,100
+82,False,meta_cot,,Identify the shape represented by the SVG path element {svg_path_element}. Choose one of the following options: {options}.,1,SEP_VARS,25,100
+83,False,meta_cot,,What is the name of the geometric shape represented by the SVG path element {svg_path_element}? Choose from the following {options}.,1,other,26,100
+84,False,meta_cot,,Which shape corresponds to the SVG path element {svg_path_element}? Select one of the following {options}.,1,other,21,100
+85,False,meta_cot,,Identify the geometric shape that is drawn by the SVG path element {svg_path_element}. Pick the correct shape from the list of {options}.,1,other,29,100
+86,False,meta_cot,,What is the name of the geometric shape represented by the SVG path element {svg_path_element}? The available options are: {options}.,1,SEP_VARS,27,100
+87,False,meta_cot,,Identify the geometric shape that corresponds to the SVG path element {svg_path_element}. Choose from the following options: {options}.,1,SEP_VARS,26,100
+88,False,meta_cot,,Which geometric shape is represented by the SVG path element {svg_path_element}? Please select from the following options: {options}.,1,SEP_VARS,25,100
+89,False,meta_cot,,Identify the name of the geometric shape represented by {svg_path_element} from the following options: {options}.,1,SEP_VARS,23,100
+90,False,meta_cot,,What is the name of the shape that is drawn by {svg_path_element}? Choose from the following options: {options}.,1,SEP_VARS,25,100
+91,False,meta_cot,,"From the given options {options}, select the name of the geometric shape that is represented by {svg_path_element}.",1,other,23,100
+92,False,meta_cot,,The SVG path element {svg_path_element} corresponds to what geometric shape? Pick one from the options: {options}.,1,SEP_VARS,24,100
+93,False,meta_cot,,Can you name the geometric shape that is represented by {svg_path_element}? You can choose from the following options: {options}.,1,SEP_VARS,26,100
+94,False,meta_cot,,What is the name of the geometric shape represented by the SVG path element {svg_path_element}? Choose from the following options: {options},1,SEP_VARS,28,100
+95,False,meta_cot,,Identify the geometric shape that corresponds to the SVG path element {svg_path_element}. Which of the following options is the correct answer? {options},1,other,30,100
+96,False,meta_cot,,You are given an SVG path element {svg_path_element}. What is the name of the corresponding geometric shape? Please select the correct answer from the following options: {options},1,SEP_VARS,35,100
+97,False,meta_cot,,"Given the SVG path element {svg_path_element}, identify the geometric shape that it represents. Choose the correct answer from the following options: {options}",1,SEP_VARS,30,100
+98,False,meta_cot,,What is the name of the geometric shape that is drawn by the SVG path element {svg_path_element}? Please select the correct answer from the following options: {options},1,SEP_VARS,34,100
+99,False,meta_cot,,Identify the geometric shape corresponding to the SVG path element {svg_path_element}. You can choose from the following: {options}.,1,SEP_VARS,26,100
+100,False,meta_cot,,"Given the SVG path element {svg_path_element}, what is the name of the corresponding geometric shape? Select one of the following options: {options}.",1,SEP_VARS,30,100
+101,False,meta_cot,,What is the name of the geometric shape represented by the given SVG path element {svg_path_element}? Choose the correct option from the following options: {options}.,1,SEP_VARS,32,100
+102,False,meta_cot,,Identify the geometric shape that corresponds to the given SVG path element {svg_path_element} and select the appropriate option from the given choices: {options}.,1,SEP_VARS,31,100
+103,False,meta_cot,,Which of the following geometric shapes is represented by the SVG path element {svg_path_element}? Choose the correct option from the following: {options}.,1,SEP_VARS,29,100
+104,False,meta_cot,,"Given the SVG path element {svg_path_element}, what is the name of the corresponding geometric shape? Choose the appropriate option from the following choices: {options}.",1,SEP_VARS,32,100
+105,False,meta_cot,,Name the geometric shape that is represented by the SVG path element {svg_path_element} and select the correct option from the given choices: {options}.,0,SEP_VARS,30,100
+106,False,meta_cot,,What is the name of the geometric shape represented by the SVG path element {svg_path_element}? The options are: {options}.,1,SEP_VARS,26,100
+107,False,meta_desc,,"
+Given an SVG path, identify the name of the corresponding geometric shape from a list of multiple choice options.
+SVG path: {svg_path_element}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,37,100
+108,False,meta_desc,,"
+Given an SVG path element, identify the geometric shape it draws. Choose the correct answer from the following options: {options}.
+SVG path: {svg_path_element}
+Output:
+
+",1,SEP_VARS,36,100
+109,False,meta_desc,,"
+Given an SVG path element, select the shape it draws from the following options: {options}.
+SVG path: {svg_path_element}
+Output:
+
+",1,SEP_VARS,30,100
+110,False,meta_desc,,"
+Given an SVG path, identify the name of the corresponding geometric shape from the following options in a multiple-choice format.
+SVG path: {svg_path_element}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,39,100
+111,False,meta_desc,,"
+Given an SVG path, identify the name of the corresponding geometric shape. Choose the correct answer from the list of options provided in a multiple-choice format.
+SVG path: {svg_path_element}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,46,100
+112,False,meta_desc,,"
+Given an SVG path element, identify the geometric shape it draws. Choose from the following options: {options}.
+SVG path: {svg_path_element}
+Output:
+
+",1,SEP_VARS,33,100
+113,False,meta_desc,,"
+Please identify the geometric shape represented by the following SVG path element. Choose the correct shape from the options below.
+SVG path: {svg_path_element}
+Options: {options}
+Output:
+
+",1,SEP_VARS,38,100
+114,False,meta_desc,,"
+Given an SVG path, select the corresponding geometric shape from a list of options.
+SVG path: {svg_path_element}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,32,100
+115,False,meta_desc,,"
+Given an SVG path, identify the name of the corresponding geometric shape. Choose the correct option from the multiple choice answers provided.
+SVG path: {svg_path_element}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,41,100
+116,False,meta_desc,,"
+Given an SVG path, identify the name of the corresponding geometric shape. You will be presented with multiple choice options to select from.
+SVG path: {svg_path_element}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,42,100
+117,False,meta_desc,,"
+Given an SVG path, identify the name of the corresponding geometric shape from the options provided in a multiple-choice format.
+SVG path: {svg_path_element}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,39,100
+118,False,meta_desc,,"
+Identify the name of the geometric shape based on its SVG path. Choose the correct option from the multiple-choice format.
+SVG path: {svg_path_element}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,40,100
+119,False,meta_desc,,"
+Given an SVG path, identify the name of the corresponding geometric shape from a list of options.
+SVG path: {svg_path_element}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,35,100
+120,False,meta_desc,,"
+Given an SVG path, identify the name of the corresponding geometric shape from the following multiple-choice options: {options}.
+SVG path: {svg_path_element}
+Output:
+Geometric shape:",1,SEP_VARS,38,100
+121,False,meta_desc,,"
+Given an SVG path element, identify the corresponding geometric shape from the following options: triangle, square, rectangle, pentagon, hexagon, octagon, line.
+SVG path: {svg_path_element}
+Options:
+{options}
+Output:
+
+",0,SEP_VARS,49,100
+122,False,meta_desc,,"
+Given an SVG path element, identify the corresponding geometric shape from the following options: triangle, square, rectangle, pentagon, hexagon, octagon, line. Choose the best option that matches the given path. 
+SVG path: {svg_path_element}
+Options:
+{options}
+Output:
+
+",0,SEP_VARS,60,100
+123,False,meta_desc,,"
+Given an SVG path, identify the geometric shape that it represents from a list of multiple-choice options. The options may include shapes such as circles, rectangles, triangles, and polygons. The SVG path may contain attributes such as fill, stroke, and stroke-width, which should be ignored for the purposes of identifying the shape.
+SVG path: {svg_path_element}
+Options:
+{options}
+Output:",1,SEP_VARS,80,100
+124,False,meta_desc,,"
+Given an SVG path, identify the corresponding geometric shape from a list of multiple-choice options.
+SVG path: {svg_path_element}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,34,100
+125,False,meta_desc,,"
+Name the geometric shape represented by the SVG path element {svg_path_element}. Choose the correct answer from the following options: {options}.
+Output:",1,SEP_VARS,30,100
+126,False,meta_desc,,"
+Name geometric shapes from their SVG paths. This SVG path element {svg_path_element} draws a. The available options are {options}.
+Output:",1,other,30,100
+127,False,meta_desc,,"
+Name the geometric shape represented by the following SVG path element: {svg_path_element}. The options to choose from are: {options}.
+Output:",1,SEP_VARS,30,100
+128,False,meta_desc,,"
+Name the geometric shape represented by the SVG path element {svg_path_element}. Choose from {options}.
+Output:",1,other,23,100
+129,False,meta_desc,,"
+Name the geometric shape represented by the following SVG path element: {svg_path_element}
+Possible options: {options}
+Output:",1,SEP_VARS,26,100
+130,False,meta_desc,,"
+Name geometric shapes from their SVG paths.
+SVG path element: {svg_path_element}
+Options: {options}
+Output:",1,SEP_VARS,25,100
+131,False,meta_desc,,"
+Name geometric shapes from their SVG paths. The SVG path element {svg_path_element} is given, and you must choose the correct shape from the following options: {options}.
+Output:
+
+",1,SEP_VARS,38,100
+132,False,meta_desc,,"
+Name geometric shapes from their SVG paths. The SVG path element {svg_path_element} is given, and you must choose the correct shape from the following options: {options}.
+Output:",1,SEP_VARS,38,100
+133,False,meta_desc,,"
+Name the geometric shape represented by the following SVG path element: {svg_path_element}. Choose the correct option from the following set of {options}.
+Output:
+
+",1,SEP_VARS,32,100
+134,False,meta_desc,,"
+Name the geometric shape represented by the following SVG path element: {svg_path_element}. Choose from the following options: {options}.
+Output:
+
+",1,SEP_VARS,29,100
+135,False,meta_desc,,"
+Name geometric shapes from their SVG paths.
+SVG path element: {svg_path_element}
+Options:
+{options}
+Output:",1,SEP_VARS,25,100
+136,False,meta_desc,,"
+Name the geometric shape represented by the given SVG path element {svg_path_element}. The possible options are {options}.
+Output:",1,other,26,100
+137,False,meta_desc,,"
+Name the geometric shape represented by the SVG path element {svg_path_element}. Choose the correct shape from the following options: {options}.
+Output:",1,SEP_VARS,30,100
+138,False,meta_desc,,"
+Name the geometric shape represented by the following SVG path element: {svg_path_element}. Choose the correct shape from the following options: {options}.
+Output:",1,SEP_VARS,32,100
+139,False,meta_desc,,"
+Name the geometric shape represented by the following SVG path element: {svg_path_element}. The options for the geometric shape are {options}.
+Output:",1,SEP_VARS,30,100
+140,False,meta_desc,,"
+Name the geometric shape represented by an SVG path element. The SVG path element is represented by {svg_path_element}. The possible geometric shapes are {options}.
+Output:
+
+",1,other,34,100
+141,False,meta_desc,,"
+Given an SVG path, identify the corresponding geometric shape from a list of options.
+SVG path: {svg_path_element}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,32,100
+142,False,meta_desc,,"
+Given an SVG path element, identify the geometric shape it represents. Choose the correct answer from the multiple-choice options provided.
+SVG path element: {svg_path_element}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,41,100
+143,False,meta_desc,,"
+Given an SVG path element, select the geometric shape it draws from the following options. Choose the correct answer from the multiple-choice format provided.
+SVG path element: {svg_path_element}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,45,100
+144,False,meta_desc,,"
+Identify the name of a geometric shape from its SVG path. Choose the correct option from the list of multiple-choice options.
+SVG path: {svg_path_element}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,41,100
+145,False,meta_desc,,"
+Please select the name of the geometric shape that matches the provided SVG path:
+Options:
+{options}
+SVG path: {svg_path_element}
+Output:
+
+",1,SEP_VARS,31,100
+146,False,meta_desc,,"
+Given an SVG path element, identify the geometric shape it represents. Choose from the following options:
+{options}
+SVG path: {svg_path_element}
+Output:
+
+",1,SEP_VARS,33,100
+147,False,meta_desc,,"
+Given an SVG path element, identify the geometric shape it represents. Choose from the following options: {options}.
+SVG path element: {svg_path_element}
+Output:
+
+",1,SEP_VARS,34,100
+148,False,meta_desc,,"
+Given an SVG path, select the correct geometric shape from a list of options.
+SVG path: {svg_path_element}
+Options:
+{options}
+Output: 
+
+",1,SEP_VARS,33,100
+149,False,meta_desc,,"
+Given an SVG path, select the corresponding geometric shape from a list of options.
+Path: {svg_path_element}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,31,100
+150,False,meta_desc,,"
+Given an SVG path, identify the name of the corresponding geometric shape. You will be provided with a prompt and a list of multiple choice options.
+Prompt: {prompt}
+SVG path: {svg_path_element}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,50,100
+151,False,meta_desc,,"
+Given an SVG path, identify the name of the corresponding geometric shape. Choose from the following options:
+- Circle
+- Square
+- Triangle
+- Rectangle
+- Pentagon
+- Hexagon
+- Octagon
+
+SVG path: {svg_path_element}
+Options:
+{options}
+Output:",0,SEP_VARS,59,100
+152,False,meta_desc,,"
+Please select the name of the geometric shape that matches the provided SVG path:
+{options}
+SVG path: {svg_path_element}
+Output:
+
+",1,SEP_VARS,29,100
+153,False,meta_desc,,"
+Please select the name of the geometric shape that matches the given SVG path:
+{options}
+SVG path: {svg_path_element}
+Output:
+
+",1,SEP_VARS,29,100
+154,False,meta_desc,,"
+Given an SVG path, identify the name of the corresponding geometric shape from a multiple-choice prompt with options.
+SVG path: {svg_path_element}
+Options:
+{options}
+Output:",1,SEP_VARS,37,100
+155,False,meta_desc,,"
+Given an SVG path element, identify the corresponding geometric shape from the options provided.
+SVG path element: {svg_path_element}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,33,100
+156,False,meta_desc,,"
+Given an SVG path element, select the corresponding geometric shape from the following options: triangle, square, rectangle, pentagon, hexagon, line.
+SVG path: {svg_path_element}
+Options:
+{options}
+Output:
+
+",0,SEP_VARS,46,100
+157,False,meta_desc,,"
+Given an SVG path, identify the corresponding geometric shape from the multiple-choice options provided.
+Path: {svg_path_element}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,32,100
+158,False,meta_desc,,"
+Given an SVG path, select the corresponding geometric shape from the multiple-choice options.
+SVG path: {svg_path_element}
+Options:
+{options}
+Output:
+Answer:",1,SEP_VARS,34,100
+159,False,meta_desc,,"
+Name the geometric shape represented by the following SVG path element:
+{svg_path_element}
+Options:
+{options}
+Output:
+
+",1,other,25,100
+160,False,meta_desc,,"
+Name the geometric shape represented by the following SVG path element: {svg_path_element}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,25,100
+161,False,meta_desc,,"
+Name the geometric shape represented by the given SVG path. Provide the name of the shape that best matches the path.
+SVG path element: {svg_path_element}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,40,100
+162,False,meta_desc,,"
+Name the geometric shape represented by the given SVG path. Provide the name of the shape.
+SVG path element: {svg_path_element}
+Options:
+{options}
+Output:
+Shape name:",1,SEP_VARS,38,100
+163,False,meta_desc,,"
+Name the geometric shape represented by the following SVG path: {svg_path_element}. Choose from the following options: {options}.
+Output:
+
+",1,SEP_VARS,28,100
+164,False,meta_desc,,"
+Name the geometric shape represented by the given SVG path element. Choose from the following options: {options}.
+SVG path element: {svg_path_element}
+Options:
+{options}
+Output:
+Geometric shape:",1,SEP_VARS,42,100
+165,False,meta_desc,,"
+Name the geometric shape represented by an SVG path element. The possible options are {options}.
+SVG path element: {svg_path_element}
+Output:
+Shape name: 
+
+",1,SEP_VARS,34,100
+166,False,meta_desc,,"
+Name the geometric shape represented by an SVG path element. You will be given an SVG path element and a list of possible options. Provide the name of the geometric shape that matches the path element.
+SVG path element: {svg_path_element}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,56,100
+167,False,meta_desc,,"
+Name the geometric shape from its SVG path. You will be given an SVG path element and a list of possible shapes to choose from.
+SVG path element: {svg_path_element}
+Possible shapes: {options}
+Output:
+
+",1,SEP_VARS,45,100
+168,False,meta_desc,,"
+Name the geometric shape represented by the given SVG path. You will be presented with an SVG path element and a list of potential shapes to choose from.
+SVG path element: {svg_path_element}
+Shape options: {options}
+Output:
+
+",1,SEP_VARS,48,100
+169,False,meta_desc,,"
+Name the geometric shape based on its SVG path. Choose from the given options.
+SVG path element: {svg_path_element}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,33,100
+170,False,meta_desc,,"
+Name the geometric shape represented by the given SVG path element.
+SVG path element: {svg_path_element}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,29,100
+171,False,meta_desc,,"
+Name the geometric shape represented by an SVG path element. Provide the name of the shape based on the given SVG path element and the options provided.
+SVG path element: {svg_path_element}
+Options: {options}
+Output:",1,SEP_VARS,46,100
+172,False,meta_desc,,"
+Name the geometric shape represented by an SVG path element. Provide the name of the shape based on the given SVG path element and the available options.
+SVG path element: {svg_path_element}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,46,100
+173,False,meta_desc,,"
+Name the geometric shape represented by the given SVG path element.
+SVG path element: {svg_path_element}
+Options:
+{options}
+Output:
+Shape:",1,SEP_VARS,31,100
+174,False,meta_desc,,"
+Name the geometric shape represented by the given SVG path element. Use the options {options} to identify the shape.
+SVG path element: {svg_path_element}
+Options:
+{options}
+Output:
+Geometric shape:",0,SEP_VARS,44,100
+175,False,meta_desc,,"
+Name the geometric shape represented by the given SVG path element. Choose the correct shape from the following options.
+SVG path element: {svg_path_element}
+Options: {options}
+Output:
+
+",1,SEP_VARS,38,100
+176,False,meta_desc,,"
+Name the geometric shape represented by the given SVG path element. Choose the correct shape from the following options.
+SVG path element: {svg_path_element}
+Options: {options}
+Output:",1,SEP_VARS,38,100
+177,False,meta_desc,,"
+Name the geometric shape represented by an SVG path element. Provide the name of the shape based on the given SVG path element. Some possible options for the geometric shape are {options}.
+SVG path element: {svg_path_element}
+Output:
+
+",1,SEP_VARS,48,100
+178,False,meta_desc,,"
+Name the geometric shape represented by the given SVG path element. The possible options are {options}. Please provide the name of the shape.
+SVG path element: {svg_path_element}
+Options:
+{options}
+Output:
+Shape name: 
+
+",1,SEP_VARS,48,100

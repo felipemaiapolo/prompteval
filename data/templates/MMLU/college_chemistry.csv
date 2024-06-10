@@ -1,0 +1,552 @@
+,prompt template
+0,"The
+ following
+ are
+ multiple
+ choice
+ questions
+ (WITH
+ answers)
+ about
+ {topic}/
+ {question}/
+ Answers:
+ {choices}/
+ Answer:"
+1,"The
+ following
+ are
+ multiple
+ choice
+ questions
+ (With
+ answers)
+ about
+ {topic}|
+ {question}|
+ Answers:
+ {choices}|
+ Answer:"
+2,"The
+ following
+ are
+ multiple
+ choice
+ questions
+ (with
+ answers)
+ about
+ {topic}'
+ {question}'
+ Answers:
+ {choices}'
+ Answer:"
+3,"The
+following
+are
+multiple
+choice
+questions
+(WITH
+answers)
+about
+{topic}""
+{question}""
+Answers:
+{choices}""
+Answer:"
+4,"The
+following
+are
+multiple
+choice
+questions
+(WITH
+answers)
+about
+{topic}<sep>
+{question}<sep>
+Answers:
+{choices}<sep>
+Answer:"
+5,"The
+following
+are
+multiple
+choice
+questions
+(WITH
+answers)
+about
+{topic}\
+{question}\
+Answers:
+{choices}\
+Answer:"
+6,"The
+following
+are
+multiple
+choice
+questions
+(with
+answers)
+about
+{topic}-
+{question}-
+Answers:
+{choices}-
+Answer:"
+7,"The
+following
+are
+multiple
+choice
+questions
+(with
+answers)
+about
+{topic}/
+{question}/
+Answers/
+{choices}/
+Answer/"
+8,"The
+following
+are
+multiple
+choice
+questions
+(with
+answers)
+about
+{topic}<sep>
+{question}<sep>
+Answers:
+{choices}<sep>
+Answer:"
+9,"The
+following
+are
+multiple
+choice
+questions
+(with
+answers)
+about
+{topic}]
+{question}]
+Answers:
+{choices}]
+Answer:"
+10,"The 
+following 
+are 
+multiple 
+choice 
+questions 
+(WITH 
+answers) 
+about 
+{topic}/ 
+{question}/ 
+Answers: 
+{choices}/ 
+Answer:"
+11,"The 
+following 
+are 
+multiple 
+choice 
+questions 
+(WITH 
+answers) 
+about 
+{topic}<sep> 
+{question}<sep> 
+Answers: 
+{choices}<sep> 
+Answer:"
+12,"The 
+following 
+are 
+multiple 
+choice 
+questions 
+(With 
+answers) 
+about 
+{topic}"" 
+{question}"" 
+Answers: 
+{choices}"" 
+Answer:"
+13,"The 
+following 
+are 
+multiple 
+choice 
+questions 
+(With 
+answers) 
+about 
+{topic}- 
+{question}- 
+Answers: 
+{choices}- 
+Answer:"
+14,"The 
+following 
+are 
+multiple 
+choice 
+questions 
+(With 
+answers) 
+about 
+{topic}. 
+{question}. 
+Answers: 
+{choices}. 
+Answer:"
+15,"The 
+following 
+are 
+multiple 
+choice 
+questions 
+(With 
+answers) 
+about 
+{topic}/ 
+{question}/ 
+Answers/ 
+{choices}/ 
+Answer/"
+16,"The 
+following 
+are 
+multiple 
+choice 
+questions 
+(With 
+answers) 
+about 
+{topic}: 
+{question}: 
+Answers: 
+{choices}: 
+Answer:"
+17,"The 
+following 
+are 
+multiple 
+choice 
+questions 
+(With 
+answers) 
+about 
+{topic}<sep> 
+{question}<sep> 
+Answers: 
+{choices}<sep> 
+Answer:"
+18,"The 
+following 
+are 
+multiple 
+choice 
+questions 
+(with 
+answers) 
+about 
+{topic}! 
+{question}! 
+Answers: 
+{choices}! 
+Answer:"
+19,"The 
+following 
+are 
+multiple 
+choice 
+questions 
+(with 
+answers) 
+about 
+{topic}' 
+{question}' 
+Answers: 
+{choices}' 
+Answer:"
+20,"The 
+following 
+are 
+multiple 
+choice 
+questions 
+(with 
+answers) 
+about 
+{topic}\ 
+{question}\ 
+Answers\ 
+{choices}\ 
+Answer\"
+21,The  following  are  multiple  choice  questions  (WITH  answers)  about  {topic}'  {question}'  Answers:  {choices}'  Answer:
+22,The  following  are  multiple  choice  questions  (With  answers)  about  {topic}.  {question}.  Answers:  {choices}.  Answer:
+23,The  following  are  multiple  choice  questions  (With  answers)  about  {topic}/  {question}/  Answers:  {choices}/  Answer:
+24,The  following  are  multiple  choice  questions  (With  answers)  about  {topic}\  {question}\  Answers:  {choices}\  Answer:
+25,The  following  are  multiple  choice  questions  (With  answers)  about  {topic}\  {question}\  Answers:  {choices}\  Answer:
+26,"The , following , are , multiple , choice , questions , (WITH , answers) , about , {topic}/ , {question}/ , Answers: , {choices}/ , Answer:"
+27,"The , following , are , multiple , choice , questions , (With , answers) , about , {topic}. , {question}. , Answers: , {choices}. , Answer:"
+28,"The , following , are , multiple , choice , questions , (With , answers) , about , {topic}: , {question}: , Answers: , {choices}: , Answer:"
+29,"The , following , are , multiple , choice , questions , (with , answers) , about , {topic}"" , {question}"" , Answers: , {choices}"" , Answer:"
+30,"The , following , are , multiple , choice , questions , (with , answers) , about , {topic}' , {question}' , Answers: , {choices}' , Answer:"
+31,"The , following , are , multiple , choice , questions , (with , answers) , about , {topic}<sep> , {question}<sep> , Answers: , {choices}<sep> , Answer:"
+32,The following are multiple choice questions (WITH answers) about {topic}' {question}' Answers: {choices}' Answer:
+33,The following are multiple choice questions (WITH answers) about {topic}. {question}. Answers: {choices}. Answer:
+34,The following are multiple choice questions (WITH answers) about {topic}/ {question}/ Answers: {choices}/ Answer:
+35,The following are multiple choice questions (WITH answers) about {topic}<sep> {question}<sep> Answers: {choices}<sep> Answer:
+36,The following are multiple choice questions (With answers) about {topic}<sep> {question}<sep> Answers: {choices}<sep> Answer:
+37,"The following are multiple choice questions (with answers) about {topic}!
+{question}!
+Answers: 
+{choices}!
+Answer:"
+38,The following are multiple choice questions (with answers) about {topic}!  {question}!  Answers:   {choices}!  Answer:
+39,The following are multiple choice questions (with answers) about {topic}!  {question}!  Answers:   {choices}!  Answer:
+40,"The following are multiple choice questions (with answers) about {topic}!; 
+{question}!; 
+Answers: ; 
+{choices}!; 
+Answer:"
+41,"The following are multiple choice questions (with answers) about {topic}""  {question}""  Answers:   {choices}""  Answer:"
+42,"The following are multiple choice questions (with answers) about {topic}"" , {question}"" , Answers:  , {choices}"" , Answer:"
+43,"The following are multiple choice questions (with answers) about {topic}"" {question}"" Answers: {choices}"" Answer:"
+44,"The following are multiple choice questions (with answers) about {topic}'
+ {question}'
+ Answers: 
+ {choices}'
+ Answer:"
+45,"The following are multiple choice questions (with answers) about {topic}' 
+{question}' 
+Answers: 
+ {choices}' 
+Answer:"
+46,"The following are multiple choice questions (with answers) about {topic}' , {question}' , Answers: ,  {choices}' , Answer:"
+47,The following are multiple choice questions (with answers) about {topic}' {question}' Answers: {choices}' Answer:
+48,"The following are multiple choice questions (with answers) about {topic}', {question}', Answers: , {choices}', Answer:"
+49,"The following are multiple choice questions (with answers) about {topic}'; 
+{question}'; 
+Answers:; 
+ {choices}'; 
+Answer:"
+50,The following are multiple choice questions (with answers) about {topic}-  {question}-  Answers:   {choices}-  Answer:
+51,The following are multiple choice questions (with answers) about {topic}-  {question}-  Answers:   {choices}-  Answer:
+52,"The following are multiple choice questions (with answers) about {topic}- , {question}- , Answers:  , {choices}- , Answer:"
+53,"The following are multiple choice questions (with answers) about {topic}-; 
+{question}-; 
+Answers:; 
+ {choices}-; 
+Answer:"
+54,"The following are multiple choice questions (with answers) about {topic}.
+{question}.
+Answers: 
+{choices}.
+Answer:"
+55,"The following are multiple choice questions (with answers) about {topic}. 
+{question}. 
+Answers:  
+{choices}. 
+Answer:"
+56,"The following are multiple choice questions (with answers) about {topic}. , {question}. , Answers:  , {choices}. , Answer:"
+57,The following are multiple choice questions (with answers) about {topic}. {question}. Answers:  {choices}. Answer:
+58,The following are multiple choice questions (with answers) about {topic}. {question}. Answers:  {choices}. Answer:
+59,"The following are multiple choice questions (with answers) about {topic}., {question}., Answers: , {choices}., Answer:"
+60,"The following are multiple choice questions (with answers) about {topic}:
+{question}:
+Answers: 
+{choices}:
+Answer:"
+61,The following are multiple choice questions (with answers) about {topic}: {question}: Answers:  {choices}: Answer:
+62,The following are multiple choice questions (with answers) about {topic}: {question}: Answers:  {choices}: Answer:
+63,"The following are multiple choice questions (with answers) about {topic}<sep>
+ {question}<sep>
+ Answers:
+  {choices}<sep>
+ Answer:"
+64,"The following are multiple choice questions (with answers) about {topic}\
+ {question}\
+ Answers: 
+ {choices}\
+ Answer:"
+65,The following are multiple choice questions (with answers) about {topic}\  {question}\  Answers:   {choices}\  Answer:
+66,"The following are multiple choice questions (with answers) about {topic}\, {question}\, Answers: , {choices}\, Answer:"
+67,"The following are multiple choice questions (with answers) about {topic}]
+ {question}]
+ Answers:
+  {choices}]
+ Answer:"
+68,The following are multiple choice questions (with answers) about {topic}] {question}] Answers:  {choices}] Answer:
+69,The following are multiple choice questions (with answers) about {topic}] {question}] Answers: {choices}] Answer:
+70,The following are multiple choice questions (with answers) about {topic}| {question}| Answers:  {choices}| Answer:
+71,The following are multiple choice questions (with answers) about {topic}|{question}|Answers: {choices}|Answer:
+72,"The, following, are, multiple, choice, questions, (WITH, answers), about, {topic}!, {question}!, Answers:, {choices}!, Answer:"
+73,"The, following, are, multiple, choice, questions, (WITH, answers), about, {topic}., {question}., Answers:, {choices}., Answer:"
+74,"The, following, are, multiple, choice, questions, (WITH, answers), about, {topic}:, {question}:, Answers:, {choices}:, Answer:"
+75,"The, following, are, multiple, choice, questions, (with, answers), about, {topic}., {question}., Answers., {choices}., Answer."
+76,"The, following, are, multiple, choice, questions, (with, answers), about, {topic}/, {question}/, Answers:, {choices}/, Answer:"
+77,"The, following, are, multiple, choice, questions, (with, answers), about, {topic}/, {question}/, Answers:, {choices}/, Answer:"
+78,"The, following, are, multiple, choice, questions, (with, answers), about, {topic}], {question}], Answers], {choices}], Answer]"
+79,"The, following, are, multiple, choice, questions, (with, answers), about, {topic}|, {question}|, Answers:, {choices}|, Answer:"
+80,"The; 
+following; 
+are; 
+multiple; 
+choice; 
+questions; 
+(WITH; 
+answers); 
+about; 
+{topic}""; 
+{question}""; 
+Answers:; 
+{choices}""; 
+Answer:"
+81,"The; 
+following; 
+are; 
+multiple; 
+choice; 
+questions; 
+(WITH; 
+answers); 
+about; 
+{topic}-; 
+{question}-; 
+Answers:; 
+{choices}-; 
+Answer:"
+82,"The; 
+following; 
+are; 
+multiple; 
+choice; 
+questions; 
+(With; 
+answers); 
+about; 
+{topic}'; 
+{question}'; 
+Answers:; 
+{choices}'; 
+Answer:"
+83,"The; 
+following; 
+are; 
+multiple; 
+choice; 
+questions; 
+(With; 
+answers); 
+about; 
+{topic}/; 
+{question}/; 
+Answers:; 
+{choices}/; 
+Answer:"
+84,"The; 
+following; 
+are; 
+multiple; 
+choice; 
+questions; 
+(With; 
+answers); 
+about; 
+{topic}\; 
+{question}\; 
+Answers:; 
+{choices}\; 
+Answer:"
+85,"The; 
+following; 
+are; 
+multiple; 
+choice; 
+questions; 
+(with; 
+answers); 
+about; 
+{topic}!; 
+{question}!; 
+Answers:; 
+{choices}!; 
+Answer:"
+86,"The; 
+following; 
+are; 
+multiple; 
+choice; 
+questions; 
+(with; 
+answers); 
+about; 
+{topic}""; 
+{question}""; 
+Answers:; 
+{choices}""; 
+Answer:"
+87,"The; 
+following; 
+are; 
+multiple; 
+choice; 
+questions; 
+(with; 
+answers); 
+about; 
+{topic}'; 
+{question}'; 
+Answers:; 
+{choices}'; 
+Answer:"
+88,"The; 
+following; 
+are; 
+multiple; 
+choice; 
+questions; 
+(with; 
+answers); 
+about; 
+{topic}:; 
+{question}:; 
+Answers:; 
+{choices}:; 
+Answer:"
+89,"The; 
+following; 
+are; 
+multiple; 
+choice; 
+questions; 
+(with; 
+answers); 
+about; 
+{topic}|; 
+{question}|; 
+Answers|; 
+{choices}|; 
+Answer|"
+90,Thefollowingaremultiplechoicequestions(WITHanswers)about{topic}-{question}-Answers:{choices}-Answer:
+91,Thefollowingaremultiplechoicequestions(WITHanswers)about{topic}/{question}/Answers:{choices}/Answer:
+92,Thefollowingaremultiplechoicequestions(WITHanswers)about{topic}|{question}|Answers:{choices}|Answer:
+93,Thefollowingaremultiplechoicequestions(Withanswers)about{topic}<sep>{question}<sep>Answers:{choices}<sep>Answer:
+94,"Thefollowingaremultiplechoicequestions(withanswers)about{topic}""{question}""Answers""{choices}""Answer"""
+95,Thefollowingaremultiplechoicequestions(withanswers)about{topic}-{question}-Answers:{choices}-Answer:
+96,Thefollowingaremultiplechoicequestions(withanswers)about{topic}/{question}/Answers:{choices}/Answer:
+97,Thefollowingaremultiplechoicequestions(withanswers)about{topic}\{question}\Answers:{choices}\Answer:
+98,Thefollowingaremultiplechoicequestions(withanswers)about{topic}|{question}|Answers:{choices}|Answer:
+99,Thefollowingaremultiplechoicequestions(withanswers)about{topic}|{question}|Answers:{choices}|Answer:

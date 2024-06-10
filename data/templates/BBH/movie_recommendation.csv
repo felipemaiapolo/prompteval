@@ -1,0 +1,807 @@
+prompt idx,default prompt,method,language style,prompt template,correct,prompt format,prompt length,samples
+1,True,default,,"Q: Find a movie similar to {movie_list}:
+Options:
+{options}
+A:",1,Q&A,19,100
+2,False,rephrase,,"Q: Can you suggest a movie that is similar to any of the following movies: {movie_list}?
+Options:
+{options}
+A:",1,Q&A,29,100
+3,False,rephrase,,"Q: Can you suggest a movie that is similar to {movie_list}?
+Options:
+{options}
+A:",1,Q&A,23,100
+4,False,rephrase,,"Q: Can you suggest a movie similar to the ones in {movie_list}?
+Here are some options:
+{options}
+A:",1,Q&A,27,100
+5,False,rephrase,,"Q: Can you suggest a movie similar to {movie_list}?
+Choose from the following options:
+{options}
+A:",1,Q&A,25,100
+6,False,rephrase,,"Q: Can you suggest a movie that is similar to any of the following {movie_list}:
+Options:
+{options}
+A:",1,Q&A,27,100
+7,False,rephrase,,"Q: Can you suggest a movie that is similar to any of the following: {movie_list}?
+Options:
+{options}
+A:",1,Q&A,28,100
+8,False,rephrase,,"Q: Can you suggest a movie that is similar to the movies in {movie_list}?
+Options:
+{options}
+A:",1,Q&A,26,100
+9,False,rephrase,,"Q: Can you suggest a movie that is similar to the following {movie_list}:
+Here are some options:
+{options}
+A:",1,Q&A,28,100
+10,False,rephrase,,"Q: Can you suggest a movie that is similar to {movie_list}?
+Choose from the following options:
+{options}
+A:",1,Q&A,27,100
+11,False,rephrase,,"Q: Can you suggest a movie similar to {movie_list}?
+Pick from the following options:
+{options}
+A:",1,Q&A,25,100
+12,False,rephrase,,"Q: Can you suggest a movie similar to {movie_list}?
+Here are some options:
+{options}
+A:",1,Q&A,24,100
+13,False,rephrase,,"Q: Can you recommend a movie similar to {movie_list}?
+Here are some options:
+{options}
+A:",1,Q&A,24,100
+14,False,rephrase,,"Q: Can you suggest a movie that is similar to any of these {movie_list}?
+Options:
+{options}
+A:",1,Q&A,26,100
+15,False,rephrase,,"Q: Can you recommend a movie similar to {movie_list} from the following options?
+Options:
+{options}
+A:",1,Q&A,25,100
+16,False,rephrase,,"Find a movie similar to the movies in {movie_list}. Which of the following options do you prefer?
+Options:
+{options}",1,other,26,100
+17,False,rephrase,,"Q: Can you suggest a movie similar to the ones in {movie_list}?
+Choose from the following options:
+{options}
+A:",1,Q&A,28,100
+18,False,rephrase,,"Q: Could you suggest a movie that is similar to {movie_list}?
+Here are some options:
+{options}
+A:",1,Q&A,26,100
+19,False,rephrase,,"Q: Can you recommend a movie similar to the ones in {movie_list}?
+Choose from the following options:
+{options}
+A:",1,Q&A,28,100
+20,False,rephrase,,"Q: Can you recommend a movie similar to {movie_list}?
+Choose from the following options:
+{options}
+A:",1,Q&A,25,100
+21,False,rephrase,,"Q: Can you suggest a movie that is similar to the following list of movies: {movie_list}?
+Choose one from the following options:
+{options} 
+A:",1,Q&A,35,100
+22,False,rephrase,,"Q: Can you suggest a movie that is similar to the following: {movie_list}?
+Listed below are your options:
+{options}
+A:",1,Q&A,31,100
+23,False,rephrase,,"Q: Can you suggest a movie similar to {movie_list}? Choose from the following options:
+Options:
+{options}
+A:",1,Q&A,26,100
+24,False,rephrase,,"Q: Can you recommend a movie that is similar to the ones in {movie_list}?
+Options:
+{options}
+A:",1,Q&A,26,100
+25,False,rephrase,,"Q: Can you suggest a movie similar to the list of {movie_list}?
+Choose from the following options:
+{options}
+A:",1,Q&A,28,100
+26,False,rephrase,,"Q: Can you suggest a movie similar to {movie_list}?
+Please choose from the following options:
+{options}
+A:",1,Q&A,26,100
+27,False,rephrase,,"Q: Can you recommend a movie similar to {movie_list}? Choose from the following options:
+Options:
+{options}
+A:",1,Q&A,26,100
+28,False,rephrase,,"Q: Can you recommend a movie similar to the following {movie_list}?
+Options:
+{options}
+A:",1,Q&A,23,100
+29,False,rephrase,,"Q: Can you recommend a movie similar to the following list: {movie_list}? Choose from the following options:
+Options:
+{options}
+A:",1,Q&A,30,100
+30,False,rephrase,,"Q: Can you recommend a movie similar to the following list: {movie_list}? Here are some options to choose from:
+{options}
+A:",1,Q&A,30,100
+31,False,rephrase,,"Q: Can you recommend a movie similar to the following list: {movie_list}? Please choose from the following options:
+Options:
+{options}
+A:",1,Q&A,31,100
+32,False,rephrase,,"Q: Can you suggest a movie that is similar to {movie_list}? Choose the best option from the following:
+Options:
+{options}
+A:",1,Q&A,30,100
+33,False,rephrase,,"Q: Can you recommend a movie that is similar to the following {movie_list}:
+Options:
+{options}
+A:",1,Q&A,25,100
+34,False,rephrase,,"Q: Can you suggest a movie that is similar to the following movies: {movie_list}?
+Options:
+{options}
+A:",1,Q&A,27,100
+35,False,rephrase,,"Q: Please suggest a movie that is similar to any of the following movies: {movie_list}.
+Options:
+{options}
+A:",1,Q&A,27,100
+36,False,rephrase,,"Q: Can you recommend a movie similar to {movie_list}? Here are some options to choose from:
+{options}
+A:",1,Q&A,26,100
+37,False,rephrase,,"Q: Can you recommend a movie that is similar to any of the movies in {movie_list}?
+Options:
+{options}
+A:",1,Q&A,28,100
+38,False,rephrase,,"Q: Can you recommend a movie that is similar to the following list of movies: {movie_list}? Please choose from the following options:
+Options:
+{options}
+A:",1,Q&A,35,100
+39,False,rephrase,,"Q: Can you recommend a movie similar to one of these {movie_list}:
+Options:
+{options}
+A:",1,Q&A,24,100
+40,False,rephrase,,"Q: Can you recommend a movie that is similar to the following {movie_list}?
+Options:
+{options}
+A:",1,Q&A,25,100
+41,False,rephrase,,"Q: Can you suggest a movie that is similar to the following list: {movie_list}?
+Options:
+{options}
+A:",1,Q&A,27,100
+42,False,rephrase,,"Q: Can you recommend a movie similar to {movie_list}? Choose one from the following options:
+Options:
+{options}
+A:",1,Q&A,27,100
+43,False,rephrase,,"Q: Can you recommend a movie similar to the following titles: {movie_list}? Here are some options:
+{options}
+A:",1,Q&A,27,100
+44,False,rephrase,,"Q: Can you recommend a movie that is similar to {movie_list}?
+Please choose from the following options:
+{options}",1,other,26,100
+45,False,rephrase,,"Q: Can you recommend a movie similar to the following {movie_list}?
+Choose from the following options:
+{options}",1,other,25,100
+46,False,rephrase,,"Q: Can you recommend a movie similar to the following {movie_list}?
+Choose from the following options:
+{options}
+A:",1,Q&A,27,100
+47,False,rephrase,,"Q: Can you recommend a movie similar to the following movies: {movie_list}? 
+Choose the best option from the list below:
+{options}
+A:",1,Q&A,32,100
+48,False,rephrase,,"Q: Can you recommend a movie similar to any of these {movie_list}?
+Options:
+{options}
+A:",1,Q&A,24,100
+49,False,meta_cot,,Please suggest a movie that is similar to {movie_list}. Here are some options you can choose from: {options}.,1,SEP_VARS,24,100
+50,False,meta_cot,,I need a recommendation for a movie that is similar to {movie_list}. You can choose from the following options: {options}.,1,SEP_VARS,26,100
+51,False,meta_cot,,Can you find a movie that is similar to {movie_list}? I have some options for you to choose from: {options}.,1,SEP_VARS,26,100
+52,False,meta_cot,,Your task is to suggest a movie that is similar to {movie_list}. Please choose from the following options: {options}.,1,SEP_VARS,25,100
+53,False,meta_cot,,You have been asked to recommend a movie similar to {movie_list}. You can choose from the following options: {options}.,1,SEP_VARS,25,100
+54,False,meta_cot,,Your task is to find a movie that is similar to {movie_list}. You will be given a list of options to choose from: {options}.,1,SEP_VARS,30,100
+55,False,meta_cot,,The task is to recommend a movie that is similar to {movie_list}. You will be presented with a list of options to choose from: {options}.,1,SEP_VARS,31,100
+56,False,meta_cot,,"You need to find a movie that is similar to {movie_list}. You will be given a list of recommended movies to choose from, which are: {options}.",1,SEP_VARS,33,100
+57,False,meta_cot,,"Your goal is to recommend a movie that is similar to {movie_list}. You will be presented with a list of options, and you need to choose the one that fits the best. The options are: {options}.",1,SEP_VARS,44,100
+58,False,meta_cot,,Please recommend a movie that is similar to {movie_list} from the following options: {options}.,1,SEP_VARS,20,100
+59,False,meta_cot,,"Given a list of movies {movie_list}, please suggest a movie that is similar to them from the following options: {options}.",1,SEP_VARS,26,100
+60,False,meta_cot,,The task is to find a movie that is similar to {movie_list}. The options available are: {options}. Please suggest a movie from these options.,1,SEP_VARS,31,100
+61,False,meta_cot,,Recommend a movie that is similar to {movie_list} from the following options: {options}.,1,SEP_VARS,19,100
+62,False,meta_cot,,You are given a list of movies {movie_list}. Please suggest a movie that is similar to them from the following options: {options}.,1,SEP_VARS,28,100
+63,False,meta_cot,,The goal is to find a movie that is similar to {movie_list}. You can choose from the following options: {options}. Please suggest a movie from these options.,1,SEP_VARS,34,100
+64,False,meta_cot,,Please find a movie that is similar to {movie_list} from the following options: {options}.,1,SEP_VARS,20,100
+65,False,meta_cot,,The task is to recommend a movie that is similar to {movie_list} from the following options: {options}.,1,SEP_VARS,23,100
+66,False,meta_cot,,"Given a list of movies {movie_list}, please recommend a movie that is similar to them from the following options: {options}.",1,SEP_VARS,26,100
+67,False,meta_cot,,Recommend a movie that is similar to the list of movies {movie_list} from the following options: {options}.,1,SEP_VARS,23,100
+68,False,meta_cot,,"Find a movie that is similar to the movies in {movie_list}.
+Choose an option from the following: {options}",1,SEP_VARS,24,100
+69,False,meta_cot,,"Recommend a movie that is similar to the movies in {movie_list}.
+Select one of the following options: {options}",1,SEP_VARS,24,100
+70,False,meta_cot,,"Based on the list of movies {movie_list}, suggest a movie that is similar.
+Choose from the following options: {options}",1,SEP_VARS,26,100
+71,False,meta_cot,,"Provide a recommendation for a movie that is similar to the movies in {movie_list}.
+Select one of the following options: {options}",1,SEP_VARS,27,100
+72,False,meta_cot,,"Find a movie that shares similarities with the movies in {movie_list}.
+Choose an option from the list below: {options}",1,SEP_VARS,25,100
+73,False,meta_cot,,Please recommend a movie that is similar to {movie_list}. You can choose from the following options: {options}.,1,SEP_VARS,23,100
+74,False,meta_cot,,"Given a list of movies {movie_list}, please suggest a movie that is similar to them. You can choose from the following options: {options}.",1,SEP_VARS,30,100
+75,False,meta_cot,,Your task is to find a movie similar to {movie_list}. You have the following options to choose from: {options}.,1,SEP_VARS,25,100
+76,False,meta_cot,,Please select a movie that is similar to {movie_list} from the following options: {options}.,1,SEP_VARS,20,100
+77,False,meta_cot,,"From the list of movies {movie_list}, please recommend a movie that is similar to them. You can choose from the following options: {options}.",1,SEP_VARS,30,100
+78,False,meta_cot,,Please recommend movies that are similar to the following list of movies: {movie_list}. You can choose from the following options: {options}.,1,SEP_VARS,28,100
+79,False,meta_cot,,I need your help to find movies that are similar to {movie_list}. Please choose from the following options: {options}.,1,SEP_VARS,25,100
+80,False,meta_cot,,Can you suggest movies that are similar to the ones in {movie_list}? Here are your options: {options}.,1,SEP_VARS,23,100
+81,False,meta_cot,,I am looking for movies that are similar to {movie_list}. Please select from the following options: {options}.,1,SEP_VARS,23,100
+82,False,meta_cot,,Your task is to recommend a movie similar to the list of movies provided in {movie_list}. You will be given a set of {options} to choose from.,0,other,33,100
+83,False,meta_cot,,"Given a list of movies in {movie_list}, recommend a movie that is similar to them. You will be provided with a set of {options} to choose from.",0,other,34,100
+84,False,meta_cot,,The task is to find a movie that is similar to the list of movies provided in {movie_list}. You will be given a set of {options} to choose from.,0,other,35,100
+85,False,meta_cot,,Your goal is to recommend a movie that is similar to the list of movies provided in {movie_list}. You will have to choose from a set of {options}.,0,other,33,100
+86,False,meta_cot,,"In this task, you need to find a movie that is similar to the list of movies provided in {movie_list}. You will be given a set of {options} to choose from.",0,other,38,100
+87,False,meta_cot,,The objective of this task is to recommend a movie that is similar to the list of movies provided in {movie_list}. You will be presented with a set of {options} to choose from.,0,other,39,100
+88,False,meta_cot,,You are tasked with finding a movie that is similar to the list of movies provided in {movie_list}. You will have to choose from a set of {options}.,0,other,33,100
+89,False,meta_cot,,Please suggest a movie that is similar to {movie_list}. You can choose from the following options: {options}.,1,SEP_VARS,23,100
+90,False,meta_cot,,"Given the list of movies {movie_list}, please recommend a movie that is similar to them. You can choose from the following options: {options}.",1,SEP_VARS,30,100
+91,False,meta_cot,,I need a recommendation for a movie that is similar to {movie_list}. Please select one of the following options: {options}.,1,SEP_VARS,26,100
+92,False,meta_cot,,Can you suggest a movie that is similar to {movie_list}? You can choose from the following options: {options}.,1,SEP_VARS,24,100
+93,False,meta_cot,,Your task is to find a movie that is similar to {movie_list}. Please select one of the following options: {options}.,1,SEP_VARS,26,100
+94,False,meta_cot,,We need a recommendation for a movie that is similar to {movie_list}. Please choose from the following options: {options}.,1,SEP_VARS,25,100
+95,False,meta_cot,,Can you recommend a movie that is similar to {movie_list}? Here are your options: {options}.,1,SEP_VARS,21,100
+96,False,meta_cot,,I am looking for a movie that is similar to {movie_list}. Please select an option from the following list: {options}.,1,SEP_VARS,26,100
+97,False,meta_cot,,Could you suggest a movie that is similar to {movie_list}? You can choose from the following options: {options}.,1,SEP_VARS,24,100
+98,False,meta_cot,,Your task is to find a movie that is similar to {movie_list}. Please choose an option from the following list: {options}.,1,SEP_VARS,27,100
+99,False,meta_cot,,Provide a recommendation for a movie similar to the list of movies provided in {movie_list}. You can choose from the following options: {options}.,1,SEP_VARS,29,100
+100,False,meta_cot,,"Given a list of movies in {movie_list}, please recommend a movie that is similar to them. You can select from the following options: {options}.",1,SEP_VARS,31,100
+101,False,meta_cot,,I need a recommendation for a movie that is similar to the movies in {movie_list}. Please choose an option from the following: {options}.,1,SEP_VARS,29,100
+102,False,meta_cot,,Please recommend a movie that is similar to the list of movies in {movie_list}. The options are as follows: {options}.,1,SEP_VARS,26,100
+103,False,meta_cot,,Your task is to find a movie that is similar to {movie_list}. You will be given the following options to choose from: {options}.,1,SEP_VARS,29,100
+104,False,meta_cot,,"To complete this task, you need to recommend a movie that is similar to {movie_list}. You will be provided with the following options to choose from: {options}.",1,SEP_VARS,34,100
+105,False,meta_cot,,Your goal is to find a movie that is similar to {movie_list}. You can choose from the following options: {options}.,1,SEP_VARS,26,100
+106,False,meta_desc,,"
+Recommend movies similar to a given list of movies. You will be presented with a list of options, and you must select the option that is most similar to the given list of movies.
+Given list of movies: {movie_list}
+Options:
+{options}
+Output:",1,SEP_VARS,54,100
+107,False,meta_desc,,"
+Recommend movies similar to a given list of movies. You will be presented with a list of movies and a multi-choice format with a default prompt and options. Your task is to select the option that is most similar to the given list of movies.
+Given list of movies: {movie_list}
+Multi-choice options:
+{options}
+Output:",1,SEP_VARS,68,100
+108,False,meta_desc,,"
+Given a list of movies, recommend a movie that is most similar to the given list. You will be presented with a list of options to choose from. Select the movie that you think is the best match to the given list of movies.
+List of movies: {movie_list}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,64,100
+109,False,meta_desc,,"
+Given a list of movies, recommend a similar movie using a multi-choice format. You will be presented with a list of options, and you must select the movie that is most similar to the given list of movies.
+List of movies: {movie_list}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,59,100
+110,False,meta_desc,,"
+Given a list of movies, recommend similar movies using a multi-choice format. You will be presented with a list of movie options and asked to select the most similar movie to the given list.
+List of movies: {movie_list}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,54,100
+111,False,meta_desc,,"
+Given a list of movies, recommend similar movies using a multi-choice format. You will be presented with a list of options and asked to select the most similar movie.
+List of movies: {movie_list}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,49,100
+112,False,meta_desc,,"
+Given a list of movies, recommend a movie that is most similar to the given list. You will be provided with a list of movies as options, and you must choose the movie that is most similar to the given list.
+List of movies: {movie_list}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,61,100
+113,False,meta_desc,,"
+Given a list of movies, recommend a movie that is most similar to the given list. You will be presented with a multi-choice format where you need to choose an option from a list of movies provided as options.
+List of movies: {movie_list}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,59,100
+114,False,meta_desc,,"
+Given a list of movies, recommend a movie that is most similar to the given list. You will be presented with a multi-choice format where you must select the movie that is most similar to the given list.
+List of movies: {movie_list}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,58,100
+115,False,meta_desc,,"
+Given a list of movies, recommend a movie that is most similar to the given list. You will be presented with a list of movies to choose from, and you must select the movie that is most similar to the given list.
+List of movies: {movie_list}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,62,100
+116,False,meta_desc,,"
+Given a list of movies, recommend a movie that is most similar to the given list. You will be provided with a list of movies as options, and you need to choose the correct answer.
+List of movies: {movie_list}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,55,100
+117,False,meta_desc,,"
+Recommend a movie similar to a given list of movies. You must select the movie that is most similar to the given list of movies.
+Given the list of movies {movie_list}, recommend a movie that is similar to this list.
+Options:
+{options}
+Output:
+
+",1,other,54,100
+118,False,meta_desc,,"
+Given a list of movies, recommend a movie that is most similar to the given list using a multi-choice format. You will be provided with a list of movies as options, and you need to select the movie that is most similar to the given list of movies.
+List of movies: {movie_list}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,69,100
+119,False,meta_desc,,"
+Given a list of movies, recommend a movie that is most similar to the given list. You will be presented with a multi-choice format where you need to select the movie that is most similar to the given list of movies.
+List of movies: {movie_list}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,61,100
+120,False,meta_desc,,"
+Recommend movies similar to a given list of movies. You will be presented with a list of options and asked to select the movie that is most similar to the given list.
+List of movies: {movie_list}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,50,100
+121,False,meta_desc,,"
+Given a list of movies, recommend a movie that is most similar to the given list. You will be presented with a multi-choice format where you need to choose the correct answer from a list of movies.
+List of movies: {movie_list}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,57,100
+122,False,meta_desc,,"
+Given a list of movies, recommend similar movies using a multi-choice format. You will be presented with a list of movies and asked to select the option that is most similar to the given list.
+List of movies: {movie_list}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,55,100
+123,False,meta_desc,,"
+Please recommend movies similar to the given list of movies. Choose the best option from the list of movies provided. 
+Movie list: {movie_list}
+Options:
+{options}
+Output:",1,SEP_VARS,38,100
+124,False,meta_desc,,"
+Please recommend movies similar to the given list of movies. Choose a movie from the list of options that is most similar to the movies in the given movie list.
+Movie list: {movie_list}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,47,100
+125,False,meta_desc,,"
+Given a list of movies and a set of movie options, recommend movies similar to the given list of movies. The task format is multi_choice.
+List of movies: {movie_list}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,45,100
+126,False,meta_desc,,"
+Recommend a movie similar to the given list of movies. Choose from the list of movie options provided.
+Movie list: {movie_list}
+Options:
+{options}
+Output:",1,SEP_VARS,35,100
+127,False,meta_desc,,"
+Please recommend movies similar to the given list of movies. You will be provided with a list of movies and you should suggest options for the user to choose from.
+Movie list: {movie_list}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,47,100
+128,False,meta_desc,,"
+Please recommend movies similar to the given list of movies. You will be provided with a list of movies and you should find a movie similar to them. Then, provide options for the user to choose from. 
+Movie list: {movie_list}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,57,100
+129,False,meta_desc,,"
+Given a 'movie_list' and a list of 'options', recommend movies similar to the movies in the 'movie_list'. The task format is multi-choice.
+movie_list: {movie_list}
+options: {options}
+Output:
+Which of the following movies is similar to {movie_list}?
+{options}
+Answer:",1,SEP_VARS,65,100
+130,False,meta_desc,,"
+Given a 'movie_list' and a set of 'options', recommend movies similar to the 'movie_list' in a multi-choice format.
+movie_list: {movie_list}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,43,100
+131,False,meta_desc,,"
+Given a list of movies and a set of options, recommend a movie similar to one of the movies in the list. Use the options to guide your recommendation.
+Movie list: {movie_list}
+Options:
+{options}
+Output:
+Recommended movie:",1,SEP_VARS,50,100
+132,False,meta_desc,,"
+Given a list of movies and a set of options to choose from, recommend a movie similar to the ones in the list.
+Movie list: {movie_list}
+Options: {options}
+Output:",1,SEP_VARS,40,100
+133,False,meta_desc,,"
+Recommend a movie similar to the given list of movies from a set of options.
+movie_list: {movie_list}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,31,100
+134,False,meta_desc,,"
+Recommend a movie similar to the given list of movies.
+movie_list: {movie_list}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,26,100
+135,False,meta_desc,,"
+Find a movie similar to a given list of movies. Choose the option that best matches the given list of movies.
+Movie list: {movie_list}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,38,100
+136,False,meta_desc,,"
+Find a movie similar to a given list of movies. Choose the option that best matches the given list of movies.
+movie_list: {movie_list}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,38,100
+137,False,meta_desc,,"
+Given a list of movies, recommend a movie that is similar to any of the movies in the list. Choose the best option from the following set of movies: {options}.
+List of movies: {movie_list}
+Options:
+{options}
+Output:",1,SEP_VARS,51,100
+138,False,meta_desc,,"
+Given a list of movies, recommend a movie that is similar to any of the movies in the list. Choose the most appropriate option from the set of movies provided. 
+List of movies: {movie_list}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,50,100
+139,False,meta_desc,,"
+Given a list of movies {movie_list}, recommend a movie similar to the given list by selecting one of the options provided in {options}.
+Output:
+Recommended movie: 
+",1,other,35,100
+140,False,meta_desc,,"
+Given a list of movies {movie_list}, recommend a movie similar to them by selecting one of the options provided in {options}.
+Output:",1,other,29,100
+141,False,meta_desc,,"
+Q: Find a movie similar to {movie_list}:
+Options:
+{options}
+A:",1,Q&A,20,100
+142,False,meta_desc,,"
+Looking for movie recommendations? We've got you covered! Simply provide us with a list of movies you love, and we'll suggest similar movies for you to enjoy. Choose the option that best matches your preferences and get ready for a great movie night!
+List of movies: {movie_list}
+Options:
+{options}
+Output:
+
+",0,SEP_VARS,66,100
+143,False,meta_desc,,"
+Based on your movie preferences, we can recommend similar movies for you. Please select the option that you think is most similar to your list of movies.
+List of movies: {movie_list}
+Options:
+{options}
+Output:
+
+",0,SEP_VARS,46,100
+144,False,meta_desc,,"
+Based on a list of movies, recommend a movie that is most similar to the given list. Choose the best option from the list of choices provided.
+List of movies: {movie_list}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,46,100
+145,False,meta_desc,,"
+You have a list of movies that you enjoyed and you want to find similar movies to watch. Choose the movie that you think is most similar to the given list of movies from the options provided.
+List of movies: {movie_list}
+Options:
+{options}
+Output:",1,SEP_VARS,55,100
+146,False,meta_desc,,"
+Based on your movie preferences, we can recommend similar movies for you to watch. We'll provide you with a list of options, and you can select the one that you think is the most similar to your original choice. 
+Original movie: {movie_list}
+Options:
+{options}
+Output:
+
+",0,SEP_VARS,60,100
+147,False,meta_desc,,"
+Based on your preferences, we can recommend movies that are similar to the ones you like. We will provide you with a list of options, and you can select the one that you think is the most similar to the movies you provided. 
+Movies: {movie_list}
+Options:
+{options}
+Output:
+
+",0,SEP_VARS,62,100
+148,False,meta_desc,,"
+Given a list of movies, recommend a movie that is most similar to the given list. Choose the correct answer from the list of movies provided.
+List of movies: {movie_list}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,45,100
+149,False,meta_desc,,"
+Given a list of movies, recommend the movie that is most similar to them. Choose the option that you think is the best match from the provided list of movies.
+List of movies: {movie_list}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,49,100
+150,False,meta_desc,,"
+Given a list of movies, recommend a movie that is most similar to the given list. Choose the correct option from a list of movies provided.
+List of movies: {movie_list}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,45,100
+151,False,meta_desc,,"
+Given a list of movies, recommend a similar movie from the following options. Choose the movie that you think is most similar to the given list.
+List of movies: {movie_list}
+Movie options:
+{options}
+Output:
+
+",1,SEP_VARS,46,100
+152,False,meta_desc,,"
+Based on your movie preferences, we can recommend similar movies for you to watch. Choose the movie that you think is most similar to the given list of movies.
+Given list of movies: {movie_list}
+Options:
+{options}
+Output:
+
+",0,SEP_VARS,49,100
+153,False,meta_desc,,"
+Given a list of movies, recommend a movie that is most similar to the given list. Choose the correct option from a list of movies provided as choices.
+List of movies: {movie_list}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,47,100
+154,False,meta_desc,,"
+Given a list of movies, recommend a movie that is most similar to the given list. Select the option that you think is the best match.
+List of movies: {movie_list}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,45,100
+155,False,meta_desc,,"
+Given a list of movies, recommend a similar movie from the following options. Select the option that you think is most similar to the given list of movies.
+List of movies: {movie_list}
+Options:
+{options}
+Output:
+Recommended movie:",1,SEP_VARS,50,100
+156,False,meta_desc,,"
+Based on a list of movies, recommend a similar movie from a set of options. Choose the option that best matches the given list.
+List of movies: {movie_list}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,43,100
+157,False,meta_desc,,"
+Given a list of movies, recommend a similar movie from a list of options. Choose the movie that you think is most similar to the given list.
+List of movies: {movie_list}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,46,100
+158,False,meta_desc,,"
+Recommend a movie similar to a given list of movies. Choose the option that is most similar to the given list of movies.
+Given list of movies: {movie_list}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,42,100
+159,False,meta_desc,,"
+Given a list of movies, recommend a movie that is most similar to the given list. Choose the correct option from the list of movies provided.
+List of movies: {movie_list}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,45,100
+160,False,meta_desc,,"
+Based on your movie preferences, we can recommend similar movies for you to watch. Please select the movie from the list below that is most similar to the movies you have enjoyed watching.
+Given list of movies: {movie_list}
+Options:
+{options}
+Output:
+
+",0,SEP_VARS,53,100
+161,False,meta_desc,,"
+Based on a list of movies, recommend a similar movie from the following options. Choose the movie that is most similar to the given list.
+List of movies: {movie_list}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,44,100
+162,False,meta_desc,,"
+Based on your movie preferences, we can recommend similar movies for you. Choose the movie that you think is most similar to the given list of movies.
+Movie list: {movie_list}
+Options:
+{options}
+Output:
+
+",0,SEP_VARS,45,100
+163,False,meta_desc,,"
+Based on a list of movies, recommend a similar movie from the given options.
+Movie list: {movie_list}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,31,100
+164,False,meta_desc,,"
+Given a list of movies, recommend similar movies from a list of options.
+Movie list: {movie_list}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,30,100
+165,False,meta_desc,,"
+Given a list of movies, recommend similar movies to watch. Choose the best option from the given list of movie options.
+Movie list: {movie_list}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,39,100
+166,False,meta_desc,,"
+Based on the movies you provided, we have some recommendations for you! Which of the following options do you think you would enjoy watching next?
+Movie list: {movie_list}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,43,100
+167,False,meta_desc,,"
+Based on the movies you provided, we can recommend some similar movies for you. Please select the movie you would like to watch from the following options:
+Movie List: {movie_list}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,45,100
+168,False,meta_desc,,"
+Given a list of movies, recommend similar movies to the user. You will be provided with a list of movies and a set of options to choose from. Your goal is to select the most similar movies to the ones provided in the list.
+Movie list: {movie_list}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,63,100
+169,False,meta_desc,,"
+Given a list of movies, recommend similar movies to the user. You will be presented with a list of options to choose from.
+movie_list: {movie_list}
+Options:
+{options}
+Output:",1,SEP_VARS,41,100
+170,False,meta_desc,,"
+Based on your movie preferences, I can recommend a similar movie for you to watch. Please provide me with a list of movies you enjoyed and a set of options to choose from.
+Movie list: {movie_list}
+Options:
+{options}
+Output:
+
+",0,SEP_VARS,51,100
+171,False,meta_desc,,"
+Based on your movie preferences, I can recommend a similar movie for you. Please provide me with a list of movies you enjoyed and a set of options to choose from.
+Movies: {movie_list}
+Options:
+{options}
+Output:
+Recommended movie:",1,SEP_VARS,51,100
+172,False,meta_desc,,"
+Given a list of movies, recommend a similar movie from a set of options.
+Movie list: {movie_list}
+Options:
+{options}
+Output:
+Recommended movie:",1,SEP_VARS,34,100
+173,False,meta_desc,,"
+Recommend a movie similar to a given list of movies.
+Movie list: {movie_list}
+Options:
+{options}
+Output:
+Recommended movie:",1,SEP_VARS,29,100
+174,False,meta_desc,,"
+Given a list of movies, recommend a movie that is similar to them.
+Movie list: {movie_list}
+Options:
+{options}
+Output:",1,SEP_VARS,30,100
+175,False,meta_desc,,"
+Based on the list of movies provided, recommend a movie that is similar to any of the movies in the list. Choose the best option from the set of movies provided.
+Movie list: {movie_list}
+Options:
+{options}
+Output:",1,SEP_VARS,49,100
+176,False,meta_desc,,"
+Given a list of movies, recommend a movie that is similar to any of the movies in the list. Choose the best option from the given set of movies.
+Movie list: {movie_list}
+Options:
+{options}
+Output:",1,SEP_VARS,47,100
+177,False,meta_desc,,"
+Based on the list of movies you provided, which of the following options would you prefer to watch next?
+Movie list: {movie_list}
+Options:
+{options}
+Output:
+Option selected:",0,SEP_VARS,39,100
+178,False,meta_desc,,"
+Choose a movie similar to the given list of movies from the options provided.
+Movie list: {movie_list}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,30,100
+179,False,meta_desc,,"
+Recommend a movie similar to a given list of movies.
+movie_list: {movie_list}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,26,100
+180,False,meta_desc,,"
+Recommend a movie similar to a given list of movies.
+Q: Find a movie similar to {movie_list}:
+Options:
+{options}
+Output:",1,other,31,100

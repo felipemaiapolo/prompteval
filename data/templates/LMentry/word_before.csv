@@ -1,0 +1,490 @@
+prompt idx,default prompt,method,language style,prompt template,correct,prompt format,prompt length,samples
+1,True,default,,"Q: In the sentence ""{sentence}"", which word comes right before the word ""{word}""?
+A:",1,Q&A,21,100
+2,True,default,,"Q: In the sentence ""{sentence}"", which word immediately precedes the word ""{word}""?
+A:",1,Q&A,21,100
+3,True,default,,"Q: Which word comes right before ""{word}"" in the sentence ""{sentence}""?
+A:",1,Q&A,19,100
+4,False,rephrase,,"What is the word that immediately precedes the word ""{word}"" in the sentence ""{sentence}""?",1,other,20,100
+5,False,rephrase,,"What is the word immediately preceding ""{word}"" in the sentence ""{sentence}""?",1,other,16,100
+6,False,rephrase,,"What is the word that immediately precedes ""{word}"" in the sentence ""{sentence}""?",1,other,18,100
+7,False,rephrase,,"What is the word immediately preceding ""{word}"" in ""{sentence}""?",1,other,14,100
+8,False,rephrase,,"What is the word that precedes the word ""{word}"" in the sentence ""{sentence}""?",1,other,19,100
+9,False,rephrase,,"What is the word that precedes the term ""{word}"" in the sentence ""{sentence}""?",1,other,19,100
+10,False,rephrase,,"What is the word immediately preceding the word ""{word}"" in the sentence ""{sentence}""?",1,other,18,100
+11,False,rephrase,,"What is the word immediately preceding ""{word}"" in the sentence: ""{sentence}""?",1,other,17,100
+12,False,rephrase,,"What is the word that comes directly before ""{word}"" in the sentence ""{sentence}""?",1,other,18,100
+13,False,rephrase,,"What is the word that directly comes before ""{word}"" in the sentence ""{sentence}""?",1,other,18,100
+14,False,rephrase,,"What is the word that comes right before ""{word}"" in the sentence ""{sentence}""?",1,other,18,100
+15,False,rephrase,,"What is the word that comes before ""{word}"" in the sentence ""{sentence}""?",1,other,17,100
+16,False,rephrase,,"Which word comes just before the word ""{word}"" in the sentence ""{sentence}""?",1,other,17,100
+17,False,rephrase,,"Which word comes before the word ""{word}"" in ""{sentence}""?",1,other,14,100
+18,False,rephrase,,"What is the word that comes right before ""{word}"" in the sentence, ""{sentence}""?",1,other,19,100
+19,False,rephrase,,"What is the word that directly comes before ""{word}"" in the sentence, ""{sentence}""?",1,other,19,100
+20,False,rephrase,,"What is the word that precedes ""{word}"" in the sentence ""{sentence}""?",1,other,17,100
+21,False,rephrase,,"What is the word that immediately precedes ""{word}"" in ""{sentence}""?",1,other,16,100
+22,False,rephrase,,"What word immediately precedes ""{word}"" in the given sentence ""{sentence}""?",1,other,16,100
+23,False,rephrase,,"What is the word immediately preceding ""{word}"" in the statement ""{sentence}""?",1,other,16,100
+24,False,rephrase,,"What is the word that appears immediately before ""{word}"" in ""{sentence}""?",1,other,16,100
+25,False,rephrase,,"What is the word preceding ""{word}"" in the sentence ""{sentence}""?",1,other,15,100
+26,False,rephrase,,"'Q: In the sentence ""{sentence}"", what is the preceding word of ""{word}""?'",1,other,19,100
+27,False,rephrase,,"What is the word that precedes ""{word}"" in ""{sentence}""?",1,other,15,100
+28,False,rephrase,,What is the word that immediately precedes the term '{word}' in the following sentence: '{sentence}'?,1,other,22,100
+29,False,rephrase,,What is the word immediately preceding '{word}' in the sentence '{sentence}'?,1,other,16,100
+30,False,rephrase,,Provide the word that immediately precedes the term '{word}' in the following sentence: '{sentence}'.,1,other,20,100
+31,False,rephrase,,Identify the word that immediately precedes '{word}' in the following sentence: '{sentence}'.,1,other,19,100
+32,False,rephrase,,"Can you provide the word that immediately precedes the term '{word}' in the following sentence: ""{sentence}""?",1,other,23,100
+33,False,rephrase,,What is the word that comes before '{word}' in the sentence '{sentence}'?,1,other,17,100
+34,False,rephrase,,"What is the word right before ""{word}"" in the following sentence: ""{sentence}""?",1,other,18,100
+35,False,rephrase,,"Given a sentence ""{sentence}"" please provide the word that comes before the word ""{word}"".",1,other,18,100
+36,False,rephrase,,"What is the preceding word of ""{word}"" in ""{sentence}""?",1,other,14,100
+37,False,rephrase,,"What is the word that comes right before the word ""{word}"" in the given sentence ""{sentence}""?",1,other,21,100
+38,False,rephrase,,"Can you provide the word that immediately precedes ""{word}"" in the sentence ""{sentence}""?",1,other,19,100
+39,False,rephrase,,"Can you provide the word that precedes ""{word}"" in the sentence ""{sentence}""?",1,other,18,100
+40,False,rephrase,,Provide the word that immediately precedes '{word}' in the given sentence: '{sentence}'.,1,other,18,100
+41,False,rephrase,,Can you provide a sentence and the word you want to locate?,0,other,13,100
+42,False,rephrase,,What is the preceding word in the sentence '{sentence}' before the word '{word}'?,1,other,18,100
+43,False,rephrase,,"Given a sentence and a word, provide the word that precedes the specified word in the sentence.",0,other,20,100
+44,False,rephrase,,"Can you provide the word that precedes ""{word}"" in ""{sentence}""?",1,other,16,100
+45,False,meta_cot,,"What is the word that precedes ""{word}"" in the sentence ""{sentence}""?",1,other,17,100
+46,False,meta_cot,,"Identify the word that comes directly before ""{word}"" in the sentence ""{sentence}"".",1,other,17,100
+47,False,meta_cot,,"What is the word that appears just before ""{word}"" in the sentence ""{sentence}""?",1,other,18,100
+48,False,meta_cot,,"What comes before ""{word}"" in the sentence ""{sentence}""?",0,other,13,100
+49,False,meta_cot,,"Identify the word that immediately precedes ""{word}"" in the sentence ""{sentence}""",1,other,17,100
+50,False,meta_cot,,"What is the word that comes before ""{word}"" in the sentence ""{sentence}""?",1,other,17,100
+51,False,meta_cot,,"What is the word that immediately precedes the word ""{word}"" in the sentence ""{sentence}""?",1,other,20,100
+52,False,meta_cot,,"What is the preceding word of ""{word}"" in the sentence ""{sentence}""?",1,other,16,100
+53,False,meta_cot,,"Which word comes right before ""{word}"" in the sentence ""{sentence}""?",1,other,15,100
+54,False,meta_cot,,"Identify the word that appears immediately before ""{word}"" in the sentence ""{sentence}"".",1,other,17,100
+55,False,meta_cot,,"What is the word right before ""{word}"" in the sentence ""{sentence}""?",1,other,16,100
+56,False,meta_cot,,"Locate the word that comes just before ""{word}"" in the sentence ""{sentence}"".",0,other,17,100
+57,False,meta_cot,,"Which word precedes ""{word}"" in the sentence ""{sentence}""?",1,other,14,100
+58,False,meta_cot,,Identify the word that precedes the word {word} in the sentence: {sentence}.,1,SEP_VARS,19,100
+59,False,meta_cot,,What is the word that comes immediately before the word {word} in the sentence: {sentence}?,1,SEP_VARS,20,100
+60,False,meta_cot,,Determine the word preceding {word} in the sentence: {sentence}.,1,SEP_VARS,15,100
+61,False,meta_cot,,What is the word that appears right before the word {word} in the sentence: {sentence}?,1,SEP_VARS,20,100
+62,False,meta_cot,,Tell me which word comes directly before the word {word} in the sentence: {sentence}.,1,SEP_VARS,19,100
+63,False,meta_cot,,What is the word that comes right before the word '{word}' in the sentence '{sentence}'?,1,other,20,100
+64,False,meta_cot,,Identify the word that immediately precedes '{word}' in the sentence '{sentence}'.,1,other,17,100
+65,False,meta_cot,,What is the word that precedes '{word}' in the sentence '{sentence}'?,1,other,17,100
+66,False,meta_cot,,"In the sentence '{sentence}', what is the word that comes directly before '{word}'?",1,other,18,100
+67,False,meta_cot,,Find the word in the sentence '{sentence}' that appears right before the target word '{word}'.,1,other,19,100
+68,False,meta_cot,,"What is the word before {word} in the sentence ""{sentence}""?",1,other,15,100
+69,False,meta_cot,,"What comes before the word ""{word}"" in the sentence ""{sentence}""?",0,other,15,100
+70,False,meta_cot,,"Identify the word that precedes ""{word}"" in the sentence ""{sentence}""",1,other,16,100
+71,False,meta_cot,,"What is the word immediately preceding the word ""{word}"" in the sentence ""{sentence}""?",1,other,18,100
+72,False,meta_cot,,"Find the word that comes directly before ""{word}"" in the sentence ""{sentence}""",1,other,16,100
+73,False,meta_cot,,"What is the word that comes right before ""{word}"" in the sentence ""{sentence}""?",1,other,18,100
+74,False,meta_cot,,"Which word immediately precedes ""{word}"" in the sentence ""{sentence}""?",1,other,15,100
+75,False,meta_cot,,"What is the word that immediately precedes {word} in the sentence ""{sentence}""?",1,other,18,100
+76,False,meta_cot,,"Identify the word that comes just before {word} in the sentence ""{sentence}"".",1,other,17,100
+77,False,meta_cot,,"What word comes right before the term ""{word}"" in the sentence: ""{sentence}""?",1,other,18,100
+78,False,meta_cot,,"What is the word preceding ""{word}"" in the sentence ""{sentence}""?",1,other,15,100
+79,False,meta_cot,,"Could you tell me which word appears before ""{word}"" in the sentence ""{sentence}""?",1,other,18,100
+80,False,meta_cot,,"Identify the word that directly precedes ""{word}"" in the given sentence: ""{sentence}""",1,other,19,100
+81,False,meta_cot,,"What's the word that comes just before the word ""{word}"" in the sentence: ""{sentence}""?",1,other,21,100
+82,False,meta_cot,,"Please tell me the word that appears right before ""{word}"" in the following sentence: ""{sentence}""",1,other,20,100
+83,False,meta_cot,,"Identify the word that precedes ""{word}"" in the sentence ""{sentence}"".",1,other,16,100
+84,False,meta_cot,,"Tell me the previous word to the word ""{word}"" in the sentence ""{sentence}"".",1,other,17,100
+85,False,meta_cot,,What is the word that immediately precedes '{word}' in the sentence '{sentence}'?,1,other,18,100
+86,False,meta_cot,,Identify the word that comes right before '{word}' in the sentence '{sentence}',1,other,17,100
+87,False,meta_cot,,Which word appears directly before '{word}' in the sentence '{sentence}'?,1,other,15,100
+88,False,meta_cot,,What is the word preceding '{word}' in the sentence '{sentence}'?,1,other,15,100
+89,False,meta_cot,,Locate the word that comes immediately before '{word}' in the given sentence '{sentence}',1,other,18,100
+90,False,meta_cot,,What word comes just before '{word}' in the sentence '{sentence}'?,1,other,15,100
+91,False,meta_cot,,"What is the word that precedes {word} in the sentence ""{sentence}""?",1,other,17,100
+92,False,meta_cot,,"Identify the word that comes directly before the word ""{word}"" in ""{sentence}"".",1,other,17,100
+93,False,meta_cot,,"Which word appears right before ""{word}"" in the sentence ""{sentence}""?",1,other,15,100
+94,False,meta_cot,,"Tell me the word that comes immediately prior to ""{word}"" in ""{sentence}"".",1,other,16,100
+95,False,meta_cot,,What is the word that appears directly before '{word}' in the sentence: '{sentence}'?,1,other,19,100
+96,False,meta_cot,,Locate the word that immediately precedes '{word}' in the following sentence: '{sentence}'.,1,other,19,100
+97,False,meta_cot,rich_vocab,"Please tell me the word that comes right before the word ""{word}"" in the sentence ""{sentence}"".",1,other,20,100
+98,False,meta_cot,rich_vocab,"I need to know the word that immediately precedes the word ""{word}"" in the sentence ""{sentence}"".",1,other,21,100
+99,False,meta_cot,rich_vocab,"Can you identify the word that comes right before ""{word}"" in the sentence ""{sentence}""?",1,other,19,100
+100,False,meta_cot,rich_vocab,"Please indicate the word that precedes the word ""{word}"" in the sentence ""{sentence}"".",1,other,18,100
+101,False,meta_cot,rich_vocab,"Identify the word that comes directly before the word ""{word}"" in the sentence ""{sentence}"".",1,other,19,100
+102,False,meta_cot,rich_vocab,"In the sentence ""{sentence}"", what is the word that appears just before the word ""{word}""?",1,other,20,100
+103,False,meta_cot,rich_vocab,"Which word immediately precedes the word ""{word}"" in the sentence ""{sentence}""?",1,other,17,100
+104,False,meta_cot,rich_vocab,"Please tell me the word that comes right before ""{word}"" in the sentence ""{sentence}"".",1,other,18,100
+105,False,meta_cot,rich_vocab,"Please identify the word that precedes the word ""{word}"" in the sentence ""{sentence}"".",1,other,18,100
+106,False,meta_cot,rich_vocab,"In the sentence ""{sentence}"", what is the word that comes immediately before the word ""{word}""?",1,other,20,100
+107,False,meta_cot,rich_vocab,"Which word precedes ""{word}"" in the sentence ""{sentence}""?",1,other,14,100
+108,False,meta_cot,rich_vocab,"Identify the word that comes before the word ""{word}"" in the sentence ""{sentence}"".",1,other,18,100
+109,False,meta_cot,rich_vocab,"Please identify the word that immediately precedes the word ""{word}"" in the sentence ""{sentence}"".",1,other,19,100
+110,False,meta_cot,rich_vocab,"Which word appears right before the word ""{word}"" in the sentence ""{sentence}""?",1,other,17,100
+111,False,meta_cot,rich_vocab,"Can you tell me the word that comes immediately before ""{word}"" in the sentence ""{sentence}""?",1,other,20,100
+112,False,meta_cot,rich_vocab,"In the given sentence, what is the word that precedes the word {word}?",0,other,17,100
+113,False,meta_cot,rich_vocab,Identify the word that comes directly before {word} in the sentence {sentence}.,1,other,17,100
+114,False,meta_cot,rich_vocab,What is the word that appears immediately before the word {word} in the sentence {sentence}?,1,other,19,100
+115,False,meta_cot,rich_vocab,Which word precedes {word} in the sentence {sentence}?,1,other,13,100
+116,False,meta_cot,common_vocab,"What is the word that comes right before ""{word}"" in the sentence ""{sentence}""?",1,other,18,100
+117,False,meta_cot,common_vocab,"What is the word that immediately precedes ""{word}"" in the sentence ""{sentence}""?",1,other,18,100
+118,False,meta_cot,common_vocab,"Identify the word that comes before ""{word}"" in the sentence ""{sentence}""?",1,other,17,100
+119,False,meta_cot,common_vocab,"Identify the word that precedes ""{word}"" in the sentence ""{sentence}"".",1,other,16,100
+120,False,meta_cot,common_vocab,"What is the word that precedes the word ""{word}"" in the sentence ""{sentence}""?",1,other,19,100
+121,False,meta_cot,common_vocab,"What comes before the word ""{word}"" in the sentence ""{sentence}""?",0,other,15,100
+122,False,meta_cot,common_vocab,"Identify the word that immediately precedes the word ""{word}"" in the sentence ""{sentence}"".",1,other,19,100
+123,False,meta_cot,common_vocab,"What is the word that appears right before ""{word}"" in the sentence ""{sentence}""?",1,other,18,100
+124,False,meta_cot,common_vocab,"What is the word that precedes ""{word}"" in ""{sentence}""?",1,other,15,100
+125,False,meta_cot,common_vocab,"Identify the word that comes immediately before ""{word}"" in the sentence ""{sentence}"".",1,other,17,100
+126,False,meta_cot,common_vocab,"What word appears before ""{word}"" in the sentence ""{sentence}""?",1,other,14,100
+127,False,meta_cot,common_vocab,"In ""{sentence}"", what word comes right before ""{word}""?",1,other,13,100
+128,False,meta_cot,common_vocab,"Which word immediately precedes ""{word}"" in the sentence ""{sentence}""?",1,other,15,100
+129,False,meta_cot,common_vocab,"What is the word that comes directly before ""{word}"" in the sentence ""{sentence}""?",1,other,18,100
+130,False,meta_cot,common_vocab,"Please find the word that precedes ""{word}"" in the sentence ""{sentence}"".",1,other,16,100
+131,False,meta_cot,common_vocab,"Which word comes right before the word ""{word}"" in the sentence ""{sentence}""?",1,other,17,100
+132,False,meta_cot,common_vocab,"What is the word that precedes ""{word}"" in the sentence ""{sentence}""?",1,other,17,100
+133,False,meta_cot,formal,Identify the word that immediately precedes the word '{word}' in the sentence '{sentence}'.,1,other,19,100
+134,False,meta_cot,formal,What is the word that comes directly before '{word}' in the sentence '{sentence}'?,1,other,18,100
+135,False,meta_cot,formal,"In the sentence '{sentence}', what word precedes '{word}'?",1,other,14,100
+136,False,meta_cot,formal,Which word appears immediately before '{word}' in the sentence '{sentence}'?,1,other,15,100
+137,False,meta_cot,formal,Locate the word that comes right before '{word}' in the sentence '{sentence}'.,1,other,17,100
+138,False,meta_cot,formal,"Identify the word that comes directly before the word ""{word}"" in the sentence ""{sentence}"".",1,other,19,100
+139,False,meta_cot,formal,"What is the word that immediately precedes ""{word}"" in the sentence ""{sentence}""?",1,other,18,100
+140,False,meta_cot,formal,"Which word appears directly before ""{word}"" in the sentence ""{sentence}""?",1,other,15,100
+141,False,meta_cot,formal,"Identify the word that precedes the word ""{word}"" in the sentence ""{sentence}"".",1,other,18,100
+142,False,meta_cot,formal,"Determine the word that comes directly before ""{word}"" in the sentence ""{sentence}"".",1,other,17,100
+143,False,meta_cot,formal,"Identify the word that precedes the target word in the sentence: ""{sentence}"", before the word ""{word}"".",1,other,23,100
+144,False,meta_cot,formal,"What is the word that comes directly before ""{word}"" in the sentence ""{sentence}""?",1,other,18,100
+145,False,meta_cot,formal,"Which word immediately precedes ""{word}"" in the sentence: ""{sentence}""?",1,other,16,100
+146,False,meta_cot,formal,"Identify the word that immediately precedes the target word in the given sentence: ""{sentence}"".",1,other,19,100
+147,False,meta_cot,formal,"What is the word that comes before ""{word}"" in the sentence: ""{sentence}""?",1,other,18,100
+148,False,meta_cot,formal,"In the sentence ""{sentence}"", what word precedes ""{word}""?",1,other,14,100
+149,False,meta_cot,formal,"Find the word that comes right before ""{word}"" in the sentence: ""{sentence}"".",1,other,17,100
+150,False,meta_cot,formal,"Please identify the word that precedes the word ""{word}"" in the sentence ""{sentence}"".",1,other,18,100
+151,False,meta_cot,informal,"What is the word that precedes ""{word}"" in the sentence ""{sentence}""?",1,other,17,100
+152,False,meta_cot,informal,"Tell me the word that comes right before ""{word}"" in the sentence ""{sentence}"".",1,other,17,100
+153,False,meta_cot,informal,"Which word appears immediately before ""{word}"" in the sentence ""{sentence}""?",1,other,15,100
+154,False,meta_cot,informal,"What is the word that comes right before ""{word}"" in the sentence ""{sentence}""?",1,other,18,100
+155,False,meta_cot,informal,"What word precedes ""{word}"" in the sentence ""{sentence}""?",1,other,14,100
+156,False,meta_cot,informal,"Tell me the word that immediately precedes ""{word}"" in the sentence ""{sentence}"".",1,other,17,100
+157,False,meta_cot,informal,"What is the word that comes before {word} in the sentence ""{sentence}""?",1,other,17,100
+158,False,meta_cot,informal,"What comes right before {word} in ""{sentence}""?",1,other,12,100
+159,False,meta_cot,informal,"Can you tell me which word precedes {word} in the sentence ""{sentence}""?",1,other,18,100
+160,False,meta_cot,informal,"Please identify the word that appears just before {word} in the sentence ""{sentence}"".",1,other,17,100
+161,False,meta_cot,informal,"What is the word that appears right before ""{word}"" in the sentence ""{sentence}""?",1,other,18,100
+162,False,meta_cot,informal,"Identify the word that comes immediately before ""{word}"" in the sentence ""{sentence}"".",1,other,17,100
+163,False,meta_cot,informal,"Tell me the word that immediately precedes {word} in the sentence ""{sentence}""",1,other,17,100
+164,False,meta_cot,informal,"What is the word that comes right before {word} in ""{sentence}""?",1,other,16,100
+165,False,meta_cot,informal,"Identify the word that precedes {word} in the sentence ""{sentence}""",1,other,16,100
+166,False,meta_cot,informal,"What comes before {word} in the sentence ""{sentence}""?",0,other,13,100
+167,False,meta_cot,informal,"Which word precedes {word} in the sentence ""{sentence}""?",1,other,14,100
+168,False,meta_cot,informal,"In the sentence ""{sentence}"", what is the word that appears before {word}?",1,other,16,100
+169,False,meta_cot,informal,"What is the word that comes directly before {word} in the sentence ""{sentence}""?",1,other,18,100
+170,False,meta_desc,,"
+Given a sentence and a specified word, identify the word that comes immediately before the specified word in the sentence.
+Sentence: {sentence}
+Specified word: {word}
+Output word:",1,SEP_VARS,38,100
+171,False,meta_desc,,"
+Please identify the word that comes immediately before the given word in the following sentence:
+Sentence: {sentence}
+Given word: {word}
+The word that comes immediately before {word} in the given sentence is:",1,SEP_VARS,43,100
+172,False,meta_desc,,"
+Given a sentence and a target word, identify the word that immediately precedes the target word in the sentence.
+Sentence: {sentence}
+Target word: {word}
+The word that comes right before {word} is:",1,SEP_VARS,45,100
+173,False,meta_desc,,"
+Please identify the word immediately preceding the word ""{word}"" in the following sentence:
+Sentence: {sentence}
+Output word:",1,SEP_VARS,25,100
+174,False,meta_desc,,"
+Please identify the word immediately preceding the word ""{{word}}"" in the following sentence: ""{{sentence}}"".
+Sentence: {{sentence}}
+Target word: {{word}}
+Output word:",1,SEP_VARS,35,100
+175,False,meta_desc,,"
+Please identify the word that comes directly before the specified word in the given sentence.
+Sentence: {sentence}
+Specified word: {word}
+Output word:",1,SEP_VARS,32,100
+176,False,meta_desc,,"
+Please identify the word immediately before the specified word in the given sentence.
+Sentence: {sentence}
+Specified word: {word}
+The word immediately before {word} is:",1,SEP_VARS,36,100
+177,False,meta_desc,,"
+Given a sentence and a specified word, identify the word immediately before the specified word.
+Sentence: {sentence}
+Specified word: {word}
+The word immediately before {word} is:",1,SEP_VARS,39,100
+178,False,meta_desc,,"
+What is the word that comes immediately before/preceding the specified word in the given sentence?
+Sentence: {sentence}
+Specified word: {word}
+Word immediately preceding {word}:",1,SEP_VARS,38,100
+179,False,meta_desc,,"
+Please identify the word that comes before the specified word in the given sentence.
+Sentence: {sentence}
+Specified word: {word}
+Output word:",1,SEP_VARS,31,100
+180,False,meta_desc,,"
+Given a sentence and a target word, identify the word immediately preceding the target word in the sentence.
+Sentence: {sentence}
+Target word: {word}
+The word immediately preceding {word} is:",1,SEP_VARS,41,100
+181,False,meta_desc,,"
+Please identify the word immediately preceding the word ""{given_word}"" in the following sentence: ""{sentence}"".
+Given word: {given_word}
+Sentence: {sentence}
+Output word:",1,SEP_VARS,37,100
+182,False,meta_desc,,"
+Given a sentence and a target word, identify the word directly preceding the target word in the sentence.
+Sentence: {sentence}
+Target word: {word}
+The word directly preceding {word} is:",1,SEP_VARS,41,100
+183,False,meta_desc,,"
+Please identify the word directly preceding the word {word} in the following sentence: {sentence}.
+Output word:",1,SEP_VARS,23,100
+184,False,meta_desc,,"
+Given a sentence and a specified word, identify the word that precedes the specified word in the sentence.
+Sentence: {sentence}
+Specified word: {word}
+Output:",1,SEP_VARS,36,100
+185,False,meta_desc,,"
+Please identify the word that precedes the specified word in the given sentence.
+Sentence: {sentence}
+Specified word: {word}
+The word that precedes {word} in the sentence is:",1,SEP_VARS,41,100
+186,False,meta_desc,,"
+Please identify the word immediately preceding the word ""{given_word}"" in the following sentence: ""{given_sentence}""
+Given word: {word}
+Given sentence: {sentence}
+Output word:",1,SEP_VARS,37,100
+187,False,meta_desc,,"
+Given a sentence and a target word, please provide the word that comes immediately before the target word in the sentence.
+Sentence: {sentence}
+Target word: {word}
+Output word:",1,SEP_VARS,38,100
+188,False,meta_desc,,"
+Given a sentence and a target word, identify the word that comes immediately before the target word in the sentence.
+Sentence: {sentence}
+Target word: {word}
+The word that comes immediately before {word} is:",1,SEP_VARS,45,100
+189,False,meta_desc,,"
+Given the following sentence and a target word, identify the word that comes immediately before the target word in the sentence.
+Sentence: {sentence}
+Target word: {word}
+The word that comes immediately before {word} is:",1,SEP_VARS,46,100
+190,False,meta_desc,,"
+Given a sentence and a target word, identify the word that comes immediately before the target word in the sentence. Please provide the word that comes before the target word.
+Sentence: {sentence}
+Target word: {word}
+Word before target word:",1,SEP_VARS,50,100
+191,False,meta_desc,,"
+Please identify the word that comes immediately before the word {word} in the following sentence: ""{sentence}""
+
+Output: The word that comes immediately before {word} is :",1,other,35,100
+192,False,meta_desc,,"
+Given a sentence {sentence} and a specific word {word}, identify the word that comes right before {word} in the sentence.
+Word: {word}
+Output word:",1,SEP_VARS,36,100
+193,False,meta_desc,,"
+Given a sentence and a target word, find the word that comes right before the target word in the sentence.
+Sentence: {sentence}
+Target word: {word}
+The word that comes right before {word} is:",1,SEP_VARS,45,100
+194,False,meta_desc,,"
+Given a sentence and a target word, identify the word that comes before the target word in the sentence.
+Sentence: {sentence}
+Target word: {word}
+The word that comes before {word} is:",1,SEP_VARS,43,100
+195,False,meta_desc,,"
+Please generate the word that immediately precedes the target word in the given sentence.
+Sentence: {sentence}
+Target word: {word}
+Output word:",1,SEP_VARS,31,100
+196,False,meta_desc,,"
+Given a sentence and a target word, provide the word that immediately precedes the target word in the sentence.
+Sentence: {sentence}
+Target word: {word}
+Output word:",1,SEP_VARS,37,100
+197,False,meta_desc,,"
+Given a sentence and a target word, identify the word immediately before the target word in the sentence.
+Sentence: {sentence}
+Target word: {word}
+The word immediately before {word} is:",1,SEP_VARS,41,100
+198,False,meta_desc,,"
+Given a sentence and a word, identify the word immediately preceding the given word in the sentence.
+Sentence: {sentence}
+Word: {word}
+Output word:",1,SEP_VARS,33,100
+199,False,meta_desc,,"
+Given a sentence and a target word, identify the word that comes immediately before the target word.
+Sentence: {sentence}
+Target word: {word}
+The word that comes immediately before {word} is:",1,SEP_VARS,42,100
+200,False,meta_desc,,"
+Given a sentence and a target word, identify the word that immediately precedes the target word in the sentence.
+Sentence: {sentence}
+Target word: {word}
+The word immediately preceding {word} in the sentence is:",1,SEP_VARS,46,100
+201,False,meta_desc,,"
+Given a sentence and a target word, identify the word that comes immediately before the target word.
+Sentence: {sentence}
+Target word: {word}
+The word that comes immediately before {word} in the sentence is:",1,SEP_VARS,45,100
+202,False,meta_desc,,"
+Given a sentence and a specific word, identify the word immediately preceding the specific word in the sentence. Try to use context clues to make your prediction. 
+Sentence: {sentence}
+Specific word: {word}
+The word immediately preceding {word} is:",1,SEP_VARS,52,100
+203,False,meta_desc,,"
+Given a sentence and a specific word, identify the word immediately preceding the specific word in the sentence.
+Sentence: {sentence}
+Specific word: {word}
+The word immediately preceding {word} is:",1,SEP_VARS,41,100
+204,False,meta_desc,,"
+Given a sentence and a target word, identify the word that immediately precedes the target word.
+Sentence: {sentence}
+Target word: {word}
+The word that comes directly before {word} is:",1,SEP_VARS,42,100
+205,False,meta_desc,,"
+Given a sentence and a target word, identify the word that comes directly before the target word.
+Sentence: {sentence}
+Target word: {word}
+The word that comes directly before {word} is:",1,SEP_VARS,42,100
+206,False,meta_desc,,"
+Given a sentence and a specified word, identify the word immediately preceding the specified word.
+Sentence: {sentence}
+Specified word: {word}
+The word immediately preceding {word} is:",1,SEP_VARS,39,100
+207,False,meta_desc,,"
+Given a sentence and a target word, identify the word immediately preceding the target word.
+Sentence: {sentence}
+Target word: {word}
+The word immediately preceding {word} is:",1,SEP_VARS,38,100
+208,False,meta_desc,,"
+What is the word that comes before/preceding the specified word in the given sentence?
+Sentence: {sentence}
+Specified word: {word}
+Word before/preceding {word}:",1,SEP_VARS,39,100
+209,False,meta_desc,,"
+What is the word that comes before/preceding the specified word in the given sentence?
+Sentence: {sentence}
+Specified word: {word}
+The word that comes before {word} is:",1,SEP_VARS,41,100
+210,False,meta_desc,,"
+Given a sentence and a target word, generate the word that immediately precedes the target word in the sentence.
+Sentence: {sentence}
+Target word: {word}
+The word immediately preceding {word} in the sentence is:",1,SEP_VARS,46,100
+211,False,meta_desc,,"
+Given a sentence and a target word, generate the word that appears immediately before the target word in the sentence.
+Sentence: {sentence}
+Target word: {word}
+The word immediately preceding {word} in the sentence is:",1,SEP_VARS,46,100
+212,False,meta_desc,,"
+Given a sentence and a target word, identify the word that directly precedes the target word in the sentence. 
+Sentence: {sentence}
+Target word: {word}
+The word that directly precedes {word} is:",1,SEP_VARS,46,100
+213,False,meta_desc,,"
+Given a sentence and a target word, identify the word directly preceding the target word. Try to use context clues to determine the correct answer.
+Sentence: {sentence}
+Target word: {word}
+Output word:",1,SEP_VARS,43,100
+214,False,meta_desc,,"
+Given a sentence and a specified word, identify the word that precedes the specified word in the sentence.
+Sentence: {sentence}
+Specified word: {word}
+The word that precedes {word} in the sentence is: 
+
+",1,SEP_VARS,48,100
+215,False,meta_desc,,"
+Given a sentence and a target word, identify the word that appears immediately before the target word in the sentence.
+Sentence: {sentence}
+Target word: {word}
+The word that appears before {word} in the sentence is:",1,SEP_VARS,47,100
+216,False,meta_desc,,"
+Given a sentence and a target word, identify the word that immediately precedes the target word in the sentence. 
+Sentence: {sentence}
+Target word: {word}
+The word that comes right before {word} is:",1,SEP_VARS,46,100
+217,False,meta_desc,,"
+Given a sentence and a target word, generate the word that immediately precedes the target word in the sentence. 
+Sentence: {sentence}
+Target word: {word}
+The word immediately preceding {word} is:",1,SEP_VARS,44,100
+218,False,meta_desc,,"
+Given a sentence and a target word, what is the word that immediately precedes the target word in the sentence? Use GPT-3 to generate the answer.
+Sentence: {sentence}
+Target word: {word}
+The word that immediately precedes {word} in the sentence is:",1,SEP_VARS,59,100
+219,False,meta_desc,,"
+Given a sentence and a target word, what is the word that immediately precedes the target word in the sentence?
+Sentence: {sentence}
+Target word: {word}
+The word that immediately precedes {word} in the sentence is:",1,SEP_VARS,49,100
+220,False,meta_desc,,"
+Given a sentence and a target word, what is the word that comes immediately before the target word in the sentence? Try to provide the most accurate answer possible.
+Sentence: {sentence}
+Target word: {word}
+The word that comes immediately before {word} in the sentence is:",1,SEP_VARS,58,100
+221,False,meta_desc,,"
+Given a sentence and a target word, what is the word immediately preceding the target word in the sentence?
+Sentence: {sentence}
+Target word: {word}
+The word immediately preceding {word} is:",1,SEP_VARS,42,100
+222,False,meta_desc,,"
+Given a sentence and a target word, what is the word that comes immediately before the target word in the sentence?
+Sentence: {sentence}
+Target word: {word}
+The word that comes immediately before {word} in the sentence is:",1,SEP_VARS,49,100
+223,False,meta_desc,,"
+Given a sentence and a target word, can you identify the word that comes immediately before the target word in the sentence? Please provide the word that comes before the target word.
+Sentence: {sentence}
+Target word: {word}
+The word that comes before {word} is:",1,SEP_VARS,57,100
+224,False,meta_desc,,"
+Given a sentence and a target word, identify the word that immediately precedes the target word in the sentence.
+Sentence: {sentence}
+Target word: {word}
+The word that comes right before {word} in the sentence is:",1,SEP_VARS,48,100
+225,False,meta_desc,,"
+Given a sentence and a target word, generate the word that immediately precedes the target word in the sentence.
+Sentence: {sentence}
+Target word: {word}
+The word that comes before {word} in the sentence is:",1,SEP_VARS,47,100
+226,False,meta_desc,,"
+Given a sentence and a target word, generate the word that precedes the target word in the sentence. 
+Sentence: {sentence}
+Target word: {word}
+Output word:",1,SEP_VARS,37,100
+227,False,meta_desc,,"
+Given a sentence and a target word, what is the word that comes before the target word in the sentence? Please provide the word that comes before the target word.
+Sentence: {sentence}
+Target word: {word}
+The word that comes before {word} is:",1,SEP_VARS,55,100
+228,False,meta_desc,,"
+Given a sentence and a target word, what is the word that immediately precedes the target word in the sentence? Try to provide the most likely word based on the context of the sentence.
+Sentence: {sentence}
+Target word: {word}
+The word immediately preceding {word} in this sentence is:",1,SEP_VARS,62,100
+229,False,meta_desc,,"
+Given a sentence and a target word, generate the word that immediately precedes the target word in the sentence.
+Sentence: {sentence}
+Target word: {word}
+Preceding word:",1,SEP_VARS,39,100
+230,False,meta_desc,,"
+Given a sentence and a target word, what is the word immediately preceding the target word in the sentence? Please provide the word.
+Sentence: {sentence}
+Target word: {word}
+Output word:",1,SEP_VARS,41,100
+231,False,meta_desc,,"
+Given a sentence and a target word, what is the word immediately preceding the target word in the sentence? Please provide the word as your answer.
+Sentence: {sentence}
+Target word: {word}
+Output word:",1,SEP_VARS,44,100
+232,False,meta_desc,,"
+Given a sentence and a target word, generate the word that immediately precedes the target word in the sentence. 
+Sentence: {sentence}
+Target word: {word}
+Output word:",1,SEP_VARS,38,100
+233,False,meta_desc,,"
+Given a sentence and a target word, generate the word immediately preceding the target word in the sentence.
+Sentence: {sentence}
+Target word: {word}
+Output word:",1,SEP_VARS,35,100

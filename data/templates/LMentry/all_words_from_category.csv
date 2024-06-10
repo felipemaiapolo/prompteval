@@ -1,0 +1,588 @@
+prompt idx,default prompt,method,language style,prompt template,correct,prompt format,prompt length,samples
+1,True,default,,"Q: Are all the words {words} types of {category}? Answer either ""yes"" or ""no"".
+A:",1,Q&A,25,100
+2,True,default,,"Q: Do the words {words} all represent {category}? Answer either ""yes"" or ""no"".
+A:",1,Q&A,24,100
+3,True,default,,"Q: Does the list [{words}] contain only {category}? Answer either ""yes"" or ""no"".
+A:",1,Q&A,24,100
+4,False,rephrase,,"Is {category} the category for all {words}? Respond with either ""yes"" or ""no"".",1,other,21,100
+5,False,rephrase,,"Determine whether all the {words} belong to the {category}. Respond with either ""yes"" or ""no"".",1,other,24,100
+6,False,rephrase,,"Can {category} be used to describe all {words}? Please respond with either ""yes"" or ""no"".",1,other,23,100
+7,False,rephrase,,"Can {category} be used to classify all the {words} provided? Respond with either ""yes"" or ""no"".",1,other,25,100
+8,False,rephrase,,"Is the category of all {words} the same? Respond with a ""yes"" or ""no"".",0,other,21,100
+9,False,rephrase,,"Can {category} be used to describe all the {words}? Respond with a simple ""yes"" or ""no"".",1,other,24,100
+10,False,rephrase,,"Can {category} be used to describe all the {words} provided? Please respond with a simple ""yes"" or ""no"".",1,other,27,100
+11,False,rephrase,,"Can {category} be used to classify all the {words} provided? Respond with a simple ""yes"" or ""no"".",1,other,26,100
+12,False,rephrase,,"Can all the {words} be categorized as {category}? Please respond with a ""yes"" or ""no"".",1,other,23,100
+13,False,rephrase,,"Can all the {words} be categorized as {category}? Respond with a simple ""yes"" or ""no"".",1,other,23,100
+14,False,rephrase,,"Here's a rephrased prompt: 
+
+""Indicate whether all the {words} belong to the {category} by answering with a 'yes' or 'no'.""",0,other,37,100
+15,False,rephrase,,Can all the {words} be categorized as {category}? Please respond with a simple 'yes' or 'no'.,1,other,24,100
+16,False,rephrase,,"Please determine if all the {words} belong to the same {category} and respond with a ""yes"" or ""no"".",0,other,26,100
+17,False,rephrase,,"Can all of the {words} be categorized as {category}? Please respond with a ""yes"" or ""no"".",1,other,24,100
+18,False,rephrase,,"Is {category} represented by all of the words {words}? Please respond with a ""yes"" or ""no"".",0,other,24,100
+19,False,rephrase,,"Can all of the {words} be categorized as {category}? Respond with a simple ""yes"" or ""no"".",1,other,24,100
+20,False,rephrase,,"Can you confirm if the list [{words}] exclusively consists of {category}? Please respond with a ""yes"" or ""no"".",1,other,26,100
+21,False,rephrase,,"Can you confirm if the list [{words}] exclusively consists of {category}? Please respond with either ""yes"" or ""no"".",1,other,26,100
+22,False,rephrase,,"Can you confirm if the list [{words}] consists solely of {category}? Please respond with either ""yes"" or ""no"".",1,other,26,100
+23,False,rephrase,,"Determine whether the list [{words}] exclusively comprises {category}. Respond with a ""yes"" or ""no"".",1,other,23,100
+24,False,rephrase,,"Is {category} the only type of word present in the list [{words}]? Please respond with a ""yes"" or ""no"".",1,other,28,100
+25,False,rephrase,,"Is {category} the only type of word present in the list [{words}]? Please respond with either ""yes"" or ""no"".",1,other,28,100
+26,False,rephrase,,"Is {category} the only category present in the list [{words}]? Please respond with a ""yes"" or ""no"".",1,other,26,100
+27,False,rephrase,,"Is {category} the only type of word present in the list [{words}]? Please respond with a simple ""yes"" or ""no"".",1,other,29,100
+28,False,rephrase,,Please indicate whether all the {words} belong to the {category} by responding with either 'yes' or 'no'.,1,other,25,100
+29,False,rephrase,,Please determine whether the given words belong to the specified category. Respond with a simple 'yes' or 'no'.,0,other,23,100
+30,False,rephrase,,Please confirm if all the words provided belong to the specified category by responding with either 'yes' or 'no'.,0,other,23,100
+31,False,rephrase,,Please indicate whether all the words provided belong to the specified category by answering with a simple 'yes' or 'no'.,0,other,24,100
+32,False,rephrase,,Please confirm whether all the words provided belong to the specified category by answering with a simple 'yes' or 'no'.,0,other,24,100
+33,False,rephrase,,"Please indicate whether all of the {words} belong to the {category} by responding with a ""yes"" or ""no"".",1,other,26,100
+34,False,rephrase,,Please indicate whether all the {words} belong to the {category} by answering with a simple 'yes' or 'no'.,1,other,26,100
+35,False,rephrase,,"Please determine if the given {words} belong to the {category} category. Respond with a simple ""yes"" or ""no"".",1,other,27,100
+36,False,rephrase,,"Please determine whether all the {words} belong to the {category} category and respond with a simple ""yes"" or ""no"".",1,other,27,100
+37,False,rephrase,,Please indicate whether all of the following {words} belong to the category of {category} by responding with a 'yes' or 'no'.,1,other,29,100
+38,False,rephrase,,"Please determine whether all the {words} belong to the same {category} and respond with a ""yes"" or ""no"".",0,other,26,100
+39,False,rephrase,,"Can you confirm if all the {words} fall under the category of {category}? Please respond with a ""yes"" or ""no"".",1,other,28,100
+40,False,rephrase,,Classify the following words as belonging to the category {category} or not by answering with 'yes' or 'no': {words}.,1,SEP_VARS,28,100
+41,False,rephrase,,"Please determine if all the {words} belong to the {category} category and respond with a simple ""yes"" or ""no"".",1,other,27,100
+42,False,rephrase,,Identify whether all the {words} belong to the category of {category}. Respond with either 'yes' or 'no'.,1,other,26,100
+43,False,rephrase,,"Please determine whether all the {words} belong to the category of {category} and respond with a simple ""yes"" or ""no"".",1,other,28,100
+44,False,rephrase,,Please determine if the list [{words}] exclusively consists of {category}. Respond with either 'yes' or 'no'.,1,other,24,100
+45,False,rephrase,,Please determine if the list [{words}] exclusively consists of {category}. Respond with a simple 'yes' or 'no'.,1,other,25,100
+46,False,rephrase,,Please determine whether the list [{words}] exclusively consists of {category}. Respond with a simple 'yes' or 'no'.,1,other,25,100
+47,False,rephrase,,"Please determine if the list [{words}] exclusively consists of {category}. Respond with a simple ""yes"" or ""no"".",1,other,25,100
+48,False,rephrase,,"Please determine if the list [{words}] exclusively consists of {category}. Respond with either ""yes"" or ""no"".",1,other,24,100
+49,False,rephrase,,"Can you determine if the list [{words}] exclusively consists of {category}? Please respond with a simple ""yes"" or ""no"".",1,other,27,100
+50,False,rephrase,,Please determine whether the list [{words}] exclusively consists of {category}. Respond with either 'yes' or 'no'.,1,other,24,100
+51,False,rephrase,,Please determine if the list [{words}] exclusively consists of {category}. Respond with a 'yes' or 'no'.,1,other,24,100
+52,False,meta_cot,,Do all the words in the list [{words}] belong to the category of {category}? Please answer with either 'yes' or 'no'.,1,other,29,100
+53,False,meta_cot,,Are all the words {words} part of the {category} category? Please answer with either 'yes' or 'no'.,1,other,26,100
+54,False,meta_cot,,Are {words} all classified as {category}? Please answer with either 'yes' or 'no'.,1,other,21,100
+55,False,meta_cot,,Is it true that all the words in the list [{words}] are classified as {category}? Please respond with either 'yes' or 'no'.,1,other,30,100
+56,False,meta_cot,,Can we say that {words} are all part of the {category} category? Please answer with either 'yes' or 'no'.,1,other,28,100
+57,False,meta_cot,,Are all the words in the list {words} considered {category}? Please answer with either 'yes' or 'no'.,1,other,25,100
+58,False,meta_cot,,Are all of the words in the list {words} classified as {category}? Respond with either 'yes' or 'no'.,1,other,26,100
+59,False,meta_cot,,Do all of the words in the list {words} fall under the category of {category}? Please answer 'yes' or 'no'.,1,other,28,100
+60,False,meta_cot,,Are all the words in the list {words} part of the {category} category? Please respond with either 'yes' or 'no'.,1,other,29,100
+61,False,meta_cot,,Are all of the words in the list {words} related to {category}? Please answer with either 'yes' or 'no'.,1,other,27,100
+62,False,meta_cot,,Is every word in the list {words} a type of {category}? Please answer with either 'yes' or 'no'.,1,other,26,100
+63,False,meta_cot,,Do all the words in the list {words} belong to the {category} category? Please answer with either 'yes' or 'no'.,1,other,29,100
+64,False,meta_cot,,Are all the words in the list {words} examples of {category}? Please respond with either 'yes' or 'no'.,1,other,26,100
+65,False,meta_cot,,Is every word in the list {words} classified as {category}? Please answer with either 'yes' or 'no'.,1,other,25,100
+66,False,meta_cot,,Q: Are all of the words in {words} classified as {category}? Please answer with either 'yes' or 'no'.,1,other,27,100
+67,False,meta_cot,,Q: Are all the words in the set {words} part of the {category} category? Please answer with either 'yes' or 'no'.,1,other,31,100
+68,False,meta_cot,,Q: Do all the words in {words} fall under the category of {category}? Please answer with a 'yes' or 'no'.,1,other,29,100
+69,False,meta_cot,,Q: Are all the words in {words} considered to be {category}? Please answer with either 'yes' or 'no'.,1,other,27,100
+70,False,meta_cot,,Q: Are all the words in the list {words} types of {category}? Please answer with either 'yes' or 'no'.,1,other,28,100
+71,False,meta_cot,,Q: Are all the words in {words} classified under the category of {category}? Please answer with either 'yes' or 'no'.,1,other,29,100
+72,False,meta_cot,,Q: Are all the words in {words} categorized as {category}? Please answer with either 'yes' or 'no'.,1,other,26,100
+73,False,meta_cot,,Q: Are all the words in {words} part of the {category} category? Please answer with either 'yes' or 'no'.,1,other,29,100
+74,False,meta_cot,,Q: Are all the words in {words} representative of the {category} category? Please answer with either 'yes' or 'no'.,1,other,29,100
+75,False,meta_cot,,Q: Does the set of words {words} belong to the category {category}? Please answer with either 'yes' or 'no'.,1,other,28,100
+76,False,meta_cot,,Q: Does the list of words {words} only contain words that are classified as {category}? Please answer with either 'yes' or 'no'.,1,other,31,100
+77,False,meta_cot,,Q: Does the list of words {words} consist solely of words that belong to the {category} category? Please answer with either 'yes' or 'no'.,1,other,34,100
+78,False,meta_cot,,Q: Does the list [{words}] contain only words that represent {category}? Please answer with either 'yes' or 'no'.,1,other,27,100
+79,False,meta_cot,,Do all of the words in the group {words} belong to the category {category}? Please answer with either 'yes' or 'no'.,1,other,29,100
+80,False,meta_cot,,Are all of the words in the group {words} classified as {category}? Please answer with either 'yes' or 'no'.,1,other,27,100
+81,False,meta_cot,,Are the words {words} all part of the {category} category? Please answer with either 'yes' or 'no'.,1,other,26,100
+82,False,meta_cot,,Is it accurate to say that all the words in the group {words} are of the {category} type? Please respond with either 'yes' or 'no'.,1,other,34,100
+83,False,meta_cot,,Can all the words in the group {words} be classified as {category}? Please answer with either 'yes' or 'no'.,1,other,27,100
+84,False,meta_cot,,Are all of the words in the set {words} classified as {category}? Please answer with either 'yes' or 'no'.,1,other,27,100
+85,False,meta_cot,,Are {words} all considered to be part of the {category} category? Please answer with either 'yes' or 'no'.,1,other,27,100
+86,False,meta_cot,,Is every word in the set {words} a member of the {category} category? Please answer with either 'yes' or 'no'.,1,other,29,100
+87,False,meta_cot,,Do all the words in the set {words} fall under the category of {category}? Please answer with either 'yes' or 'no'.,1,other,29,100
+88,False,meta_cot,,Are all the words in the set {words} classified under {category}? Please answer with either 'yes' or 'no'.,1,other,26,100
+89,False,meta_cot,,Do all the words in the set {words} belong to the category of {category}? Please answer with either 'yes' or 'no'.,1,other,29,100
+90,False,meta_cot,,Are all the words in the set {words} types of {category}? Please answer with either 'yes' or 'no'.,1,other,26,100
+91,False,meta_cot,,Do the words {words} all represent {category}? Please answer with either 'yes' or 'no'.,1,other,22,100
+92,False,meta_cot,,Does the list [{words}] contain only {category}? Please answer either 'yes' or 'no'.,1,other,21,100
+93,False,meta_cot,,Q: Are all the words in the list [{words}] part of the {category} category? Please answer with a 'yes' or 'no'.,1,other,31,100
+94,False,meta_cot,,Q: Are all the words in the list [{words}] categorized as {category}? Please answer with either 'yes' or 'no'.,1,other,28,100
+95,False,meta_cot,,Q: Do all the words in the list [{words}] fall under the category of {category}? Please answer with either 'yes' or 'no'.,1,other,31,100
+96,False,meta_cot,,Q: Does the category {category} include all the words in the list [{words}]? Please answer with either 'yes' or 'no'.,1,other,30,100
+97,False,meta_cot,,Q: Are all the words in the list [{words}] classified as {category}? Please answer with either 'yes' or 'no'.,1,other,28,100
+98,False,meta_cot,,Q: Are all the words in the list [{words}] considered to be {category}? Please answer with either 'yes' or 'no'.,1,other,29,100
+99,False,meta_cot,,Q: Do all the words in the list [{words}] belong to the {category} category? Please answer with either 'yes' or 'no'.,1,other,31,100
+100,False,meta_cot,,Q: Are all the words in the list [{words}] types of {category}? Please answer with either 'yes' or 'no'.,1,other,28,100
+101,False,meta_cot,,Q: Does the list [{words}] exclusively contain words of the {category} category? Please answer with either 'yes' or 'no'.,1,other,29,100
+102,False,meta_cot,,Q: Are all the words in the list [{words}] part of the {category} category? Please answer with either 'yes' or 'no'.,1,other,31,100
+103,False,meta_cot,,Q: Does the list [{words}] exclusively contain words that belong to the {category} category? Please answer with either 'yes' or 'no'.,1,other,31,100
+104,False,meta_cot,,Q: Are all of the words in the list [{words}] categorized as {category}? Please answer with either 'yes' or 'no'.,1,other,29,100
+105,False,meta_cot,,Q: Are all of the words listed [{words}] part of the {category} category? Respond with either 'yes' or 'no'.,1,other,29,100
+106,False,meta_cot,,Q: Do all of the words in the list [{words}] belong to the {category} category? Please respond with 'yes' or 'no'.,1,other,31,100
+107,False,meta_cot,,Q: Are all words in the category {category} included in [{words}]? Please answer with either 'yes' or 'no'.,0,other,28,100
+108,False,meta_cot,,Q: Are all of the words in the list [{words}] considered {category}? Please respond with either 'yes' or 'no'.,1,other,28,100
+109,False,meta_cot,rich_vocab,Please indicate whether all the words in the set {words} are classified as {category}. Your answer should be either 'yes' or 'no'.,1,other,30,100
+110,False,meta_cot,rich_vocab,Are all of the words in the set {words} categorized as {category}? Please respond with either 'yes' or 'no'.,1,other,27,100
+111,False,meta_cot,rich_vocab,"In this task, you will need to determine whether all of the words in the set {words} belong to the category of {category}. Please respond with either 'yes' or 'no'.",1,other,39,100
+112,False,meta_cot,rich_vocab,The question at hand is whether all of the words in the set {words} are classified as {category}. Please select either 'yes' or 'no' as your answer.,1,other,36,100
+113,False,meta_cot,rich_vocab,You will need to determine whether all of the words in the set {words} represent the category of {category}. Please respond with either 'yes' or 'no'.,1,other,34,100
+114,False,meta_cot,rich_vocab,The task requires determining whether all the words in the set {words} are categorized as {category}. Your answer should be either 'yes' or 'no'.,1,other,32,100
+115,False,meta_cot,rich_vocab,Please indicate whether the set of words {words} exclusively represents the category of {category}. Your answer should be either 'yes' or 'no'.,1,other,30,100
+116,False,meta_cot,rich_vocab,"In this task, you will need to determine whether the set of words {words} contains only words that belong to the category of {category}. Please respond with either 'yes' or 'no'.",1,other,40,100
+117,False,meta_cot,rich_vocab,The question at hand is whether the set of words {words} exclusively represents the category of {category}. Please select either 'yes' or 'no' as your answer.,1,other,35,100
+118,False,meta_cot,rich_vocab,You will need to determine whether all of the words in the set {words} are classified as {category}. Please respond with either 'yes' or 'no'.,1,other,33,100
+119,False,meta_cot,rich_vocab,Please indicate if all the words in the list [{words}] belong to the category of {category}. Respond with either 'yes' or 'no'.,1,other,30,100
+120,False,meta_cot,rich_vocab,Can you confirm if all the words listed [{words}] are part of the {category} category? Please answer with either 'yes' or 'no'.,1,other,31,100
+121,False,meta_cot,rich_vocab,I need to know if all the words in the list [{words}] are classified under the {category} category. Please respond with either 'yes' or 'no'.,1,other,34,100
+122,False,meta_cot,rich_vocab,Are all the words in the list [{words}] considered to be part of the {category} category? Please answer with either 'yes' or 'no'.,1,other,32,100
+123,False,meta_cot,rich_vocab,It is important to determine if all the words listed [{words}] are categorized under {category}. Please respond with either 'yes' or 'no'.,1,other,30,100
+124,False,meta_cot,rich_vocab,Do all the words in the set {words} fall under the category of {category}? Please respond with a 'yes' or 'no'.,1,other,29,100
+125,False,meta_cot,rich_vocab,Are all the words in the set {words} classified as {category}? Please answer 'yes' or 'no'.,1,other,24,100
+126,False,meta_cot,rich_vocab,Is it true that all the words in the set {words} pertain to the category of {category}? Please respond with either 'yes' or 'no'.,1,other,33,100
+127,False,meta_cot,rich_vocab,Do all the words in the list [{words}] belong to the category of {category}? Please answer with either 'yes' or 'no'.,1,other,29,100
+128,False,meta_cot,rich_vocab,Are all the words in the list [{words}] representative of the {category} category? Please respond with either 'yes' or 'no'.,1,other,29,100
+129,False,meta_cot,common_vocab,Are all of the words in the list [{words}] considered {category}? Please answer with either 'yes' or 'no'.,1,other,26,100
+130,False,meta_cot,common_vocab,Do all of the words in the list [{words}] fall under the category of {category}? Please respond with either 'yes' or 'no'.,1,other,30,100
+131,False,meta_cot,common_vocab,Is every word in the list [{words}] classified as {category}? Please answer with either 'yes' or 'no'.,1,other,25,100
+132,False,meta_cot,common_vocab,Are all of the words in the list [{words}] part of the {category} category? Please respond with either 'yes' or 'no'.,1,other,30,100
+133,False,meta_cot,common_vocab,Do all of the words in the list [{words}] belong to the {category} category? Please answer with either 'yes' or 'no'.,1,other,30,100
+134,False,meta_cot,common_vocab,Does the list [{words}] exclusively contain words that are classified as {category}? Please respond with either 'yes' or 'no'.,1,other,27,100
+135,False,meta_cot,common_vocab,Q: Are all the words in the list {words} types of {category}? Please answer with either 'yes' or 'no'.,1,other,28,100
+136,False,meta_cot,common_vocab,Q: Do all the words in the list {words} belong to the category {category}? Please answer with either 'yes' or 'no'.,1,other,30,100
+137,False,meta_cot,common_vocab,Q: Is every word in the list {words} classified as {category}? Please answer with either 'yes' or 'no'.,1,other,27,100
+138,False,meta_cot,common_vocab,Q: Are all the words in the list {words} categorized as {category}? Please respond with either 'yes' or 'no'.,1,other,28,100
+139,False,meta_cot,common_vocab,Q: Does the list [{words}] exclusively contain words that are {category}? Please answer with either 'yes' or 'no'.,1,other,27,100
+140,False,meta_cot,common_vocab,Are all of the following words considered {category}: {words}? Please answer with either 'yes' or 'no'.,1,SEP_VARS,24,100
+141,False,meta_cot,common_vocab,Do all the words in the list [{words}] belong to the category {category}? Please answer with either 'yes' or 'no'.,1,other,28,100
+142,False,meta_cot,common_vocab,Are {words} all part of the {category} category? Please answer with either 'yes' or 'no'.,1,other,24,100
+143,False,meta_cot,common_vocab,Are the words {words} all classified as {category}? Please answer with either 'yes' or 'no'.,1,other,23,100
+144,False,meta_cot,common_vocab,Are all the words in the group {words} part of the {category} category? Please answer with either 'yes' or 'no'.,1,other,29,100
+145,False,meta_cot,common_vocab,Are all the words in the list [{words}] a type of {category}? Please respond with either 'yes' or 'no'.,1,other,27,100
+146,False,meta_cot,formal,Please confirm if all the words in the set {words} are categorized as {category}. Respond with either 'yes' or 'no'.,1,other,28,100
+147,False,meta_cot,formal,Are all the words in the set {words} classified as {category}? Please answer with either 'yes' or 'no'.,1,other,26,100
+148,False,meta_cot,formal,Confirm whether all the words in the set {words} fall under the category of {category}. Respond with either 'yes' or 'no'.,1,other,29,100
+149,False,meta_cot,formal,Is it true that all the words in the set {words} belong to the category {category}? Please answer with either 'yes' or 'no'.,1,other,31,100
+150,False,meta_cot,formal,Can it be said that all the words in the set {words} are types of {category}? Please answer with either 'yes' or 'no'.,1,other,31,100
+151,False,meta_cot,formal,Do all the words in the set {words} represent the category {category}? Please answer with either 'yes' or 'no'.,1,other,27,100
+152,False,meta_cot,formal,Is the list [{words}] exclusively composed of words that belong to the category {category}? Please answer with either 'yes' or 'no'.,1,other,29,100
+153,False,meta_cot,formal,Please confirm if the list [{words}] contains only words that are categorized as {category}. Respond with either 'yes' or 'no'.,1,other,28,100
+154,False,meta_cot,formal,Are all the words in the list [{words}] classified as {category}? Please answer with either 'yes' or 'no'.,1,other,26,100
+155,False,meta_cot,formal,Confirm whether all the words in the list [{words}] fall under the category of {category}. Respond with either 'yes' or 'no'.,1,other,29,100
+156,False,meta_cot,formal,Please indicate whether all of the words in the set {words} are of the category {category}. You may answer with either 'yes' or 'no'.,1,other,32,100
+157,False,meta_cot,formal,Is it true that all of the words in the set {words} fall under the category of {category}? Please respond with either 'yes' or 'no'.,1,other,33,100
+158,False,meta_cot,formal,"Given the set of words {words}, are they all representative of the category {category}? Please answer with either 'yes' or 'no'.",1,other,29,100
+159,False,meta_cot,formal,Are all of the words in the set {words} classified as {category}? Please respond with either 'yes' or 'no'.,1,other,27,100
+160,False,meta_cot,formal,Please indicate whether the list [{words}] contains only words that belong to the category {category}. You may answer with either 'yes' or 'no'.,1,other,31,100
+161,False,meta_cot,formal,Please indicate if all the words in the list [{words}] belong to the category of {category}. You may answer with either 'yes' or 'no'.,1,other,32,100
+162,False,meta_cot,formal,Is it true that all the words in the list [{words}] fall under the category of {category}? Please respond with either 'yes' or 'no'.,1,other,32,100
+163,False,meta_cot,formal,Can you confirm if all the words in the list [{words}] are considered {category}? Please answer with either 'yes' or 'no'.,1,other,29,100
+164,False,meta_cot,formal,Q: Are all of the words in the set {words} classified as {category}? Please respond with either 'yes' or 'no'.,1,other,29,100
+165,False,meta_cot,formal,Q: Are all the words {words} categorized as {category}? Please answer with either 'yes' or 'no'.,1,other,25,100
+166,False,meta_cot,informal,Are the words {words} all part of the {category} category? Respond with either 'yes' or 'no'.,1,other,25,100
+167,False,meta_cot,informal,Do all the words in {words} belong to the {category} category? Please answer with either 'yes' or 'no'.,1,other,27,100
+168,False,meta_cot,informal,Is {category} the category for all the words in {words}? Please answer with either 'yes' or 'no'.,1,other,25,100
+169,False,meta_cot,informal,Are all the words in {words} classified as {category}? Please respond with either 'yes' or 'no'.,1,other,24,100
+170,False,meta_cot,informal,Do the words {words} exclusively belong to the {category} category? Please answer with either 'yes' or 'no'.,1,other,26,100
+171,False,meta_cot,informal,Are all the words in {words} considered to be {category}? Please respond with either 'yes' or 'no'.,1,other,25,100
+172,False,meta_cot,informal,Are all the words in {words} categorized as {category}? Please answer with either 'yes' or 'no'.,1,other,24,100
+173,False,meta_cot,informal,Is every word in {words} a member of the {category} category? Please answer with either 'yes' or 'no'.,1,other,27,100
+174,False,meta_cot,informal,Are all the words in {words} part of the {category} group? Please answer with either 'yes' or 'no'.,1,other,27,100
+175,False,meta_cot,informal,Do all of the words in the list [{words}] fall under the category of {category}? Please respond with either 'yes' or 'no'.,1,other,30,100
+176,False,meta_cot,informal,Are all of the words in the category of {category} included in the list [{words}]? Please answer with either 'yes' or 'no'.,0,other,31,100
+177,False,meta_cot,informal,Is it true that every word in the list [{words}] is a {category}? Please answer with either 'yes' or 'no'.,1,other,28,100
+178,False,meta_cot,informal,Do all of the words in {words} belong to the category of {category}? Please answer 'yes' or 'no'.,1,other,26,100
+179,False,meta_cot,informal,Are the words {words} all part of the {category} category? Please respond with either 'yes' or 'no'.,1,other,26,100
+180,False,meta_cot,informal,Is every word in the list [{words}] a {category}? Please respond with either 'yes' or 'no'.,1,other,24,100
+181,False,meta_cot,informal,Are all the words in {words} considered {category}? Please answer 'yes' or 'no'.,1,other,21,100
+182,False,meta_cot,informal,Do all the words in {words} fall under the category of {category}? Please answer with either 'yes' or 'no'.,1,other,27,100
+183,False,meta_cot,informal,Q: Are all the words {words} types of {category}? Please answer with a 'yes' or 'no'.,1,other,25,100
+184,False,meta_cot,informal,Q: Do all the words {words} fall under the category of {category}? Please answer with a 'yes' or 'no'.,1,other,28,100
+185,False,meta_desc,,"
+Are all the words in the list related to {category}?
+
+Words: {words}
+
+Output:",1,SEP_VARS,21,100
+186,False,meta_desc,,"
+Are all of the words in the list related to {category}?
+Words: {words}
+Answer:",1,SEP_VARS,22,100
+187,False,meta_desc,,"
+Are all of the words in the list {category}?
+Words: {words}
+Answer:",1,SEP_VARS,20,100
+188,False,meta_desc,,"
+Are {words} considered {category}?
+Answer:",1,other,12,100
+189,False,meta_desc,,"
+Determine whether a list of words belongs to a certain category or not based on the following prompt questions. Answer ""yes"" or ""no"" accordingly. 
+
+1. Are the words typically associated with the category?
+2. Do the words share common characteristics or attributes with other words in the category?
+3. Are the words commonly used in the context of the category?
+
+List of words: {words}
+Category: {category}
+Output:",1,SEP_VARS,89,100
+190,False,meta_desc,,"
+Determine whether a given list of words belongs to a certain category or not. Answer with ""yes"" or ""no"" based on the following prompt questions:
+1. Do the words refer to a specific object or concept?
+2. Are the words commonly associated with the category in question?
+3. Do the words have any distinguishing characteristics that make them stand out from other categories?
+4. Are the words commonly used in the context of the category in question?
+
+",0,other,93,100
+191,False,meta_desc,,"
+Determine if a given set of words belong to a specific category by answering ""yes"" or ""no"" to a series of questions.
+Words: {words}
+Category: {category}
+Output: The given set of words belong to the category ________.",1,SEP_VARS,52,100
+192,False,meta_desc,,"
+Determine if a given set of words belong to a specific category by answering ""yes"" or ""no"" to a series of questions. Ask questions that help identify the category.
+Words: {words}
+Category: {category}
+Q: 
+A:",0,Q&A,52,100
+193,False,meta_desc,,"
+Determine if the given list of words belongs to a certain category or represents a certain concept. Answer ""yes"" or ""no"".
+List of words: {words}
+Category: {category}
+Output:",1,SEP_VARS,42,100
+194,False,meta_desc,,"
+Do the following words belong to the specified category? Please answer ""yes"" or ""no"".
+Words: {words}
+Category: {category}
+Output:",1,SEP_VARS,32,100
+195,False,meta_desc,,"
+Do the following words belong to a certain category? Please answer ""yes"" or ""no"".
+Words: {words}
+Category: {category}
+Output:",1,SEP_VARS,32,100
+196,False,meta_desc,,"
+Given a list of words, determine if they belong to a certain category. Respond with a yes or no answer based on the following phrasings of the question: ""Do all of the words belong to the category?"", ""Are any of the words not in the category?"", ""Is the category applicable to all of the words?"", ""Are all of the words part of the category?""
+List of words: {words}
+Category: {category}
+Output:",1,SEP_VARS,92,100
+197,False,meta_desc,,"
+Do the following words belong to the specified category?
+Words: {words}
+Category: {category}
+Output:",0,SEP_VARS,23,100
+198,False,meta_desc,,"
+Determine if the given list of words belongs to a certain category. Respond with ""yes"" if all words belong to the category and ""no"" otherwise.
+words: {words}
+category: {category}
+Answer:",1,SEP_VARS,45,100
+199,False,meta_desc,,"
+Determine if the list of words {words} belong to the category {category}.
+Answer:",1,other,20,100
+200,False,meta_desc,,"
+Given a list of words, determine if they belong to a certain category. Please provide a ""yes"" or ""no"" answer to the following questions:
+- Do all of the words in the list belong to the category?
+- Are any of the words in the list not part of the category?
+- Is the majority of the words in the list part of the category?
+List of words: {words}
+Category: {category}
+Output:",0,SEP_VARS,90,100
+201,False,meta_desc,,"
+Given a list of words, determine if they belong to a certain category. Respond with ""yes"" or ""no"" based on the following phrasings of the question:
+- Do all of the words belong to the category?
+- Are any of the words not in the category?
+- Is the entire list in the category?
+- Is there at least one word in the category?
+List of words: {words}
+Category: {category}
+Output:",0,SEP_VARS,92,100
+202,False,meta_desc,,"
+Determine if a list of words belongs to a specific category by answering ""yes"" or ""no"" to the following prompt: ""Do all the words in the list belong to the category X?""
+List of words: {words}
+Category: {category}
+Output:",1,SEP_VARS,55,100
+203,False,meta_desc,,"
+Determine if a list of words belongs to a specific category. Respond ""yes"" if all words belong to the category and ""no"" otherwise. 
+Category: {category}
+Word list: {words}
+Output:",1,SEP_VARS,45,100
+204,False,meta_desc,,"
+Determine whether all the given words belong to a specific category. The category is specified by the keyword {category}, and the words are specified by the keyword {words}. Answer 'yes' if all words belong to the category, and 'no' otherwise.
+Category: {category}
+Words: {words}
+Output:",1,SEP_VARS,65,100
+205,False,meta_desc,,"
+Determine whether all the given words belong to a specific category. The category is specified by the keyword {category}, and the words are specified by the keyword {words}. Answer with either 'yes' or 'no'.
+Category: {category}
+Words: {words}
+Output:",1,SEP_VARS,57,100
+206,False,meta_desc,,"
+Determine if all the words in the given list belong to a certain category. The category is specified by the keyword {category}, and the list of words is specified by the keyword {words}. Answer 'yes' if all words belong to the category, and 'no' otherwise.
+Category: {category}
+Words: {words}
+Output:",1,SEP_VARS,70,100
+207,False,meta_desc,,"
+Determine whether a set of words belongs to a specific category. The category is specified by the keyword {category}, while the words are specified by the keyword {words}. Provide a yes or no answer.
+Category: {category}
+Words: {words}
+Output:",1,SEP_VARS,54,100
+208,False,meta_desc,,"
+Determine whether the given set of words belong to a specific category. The category is specified by the keyword {category}, while the words are specified by the keyword {words}. Provide a yes or no answer.
+Category: {category}
+Words: {words}
+Output:",1,SEP_VARS,55,100
+209,False,meta_desc,,"
+Determine if a group of words, represented by the placeholder {words}, belong to a certain category, represented by the placeholder {category}. Answer with either 'yes' or 'no'.
+{words}:
+{category}:
+Output:",1,other,49,100
+210,False,meta_desc,,"
+Determine if a set of words belong to a certain category. The category is specified by the keyword {category} and the words are specified by the keyword {words}. Answer either 'yes' or 'no'.
+Category: {category}
+Words: {words}
+Output:",1,SEP_VARS,56,100
+211,False,meta_desc,,"
+Determine if a set of words belong to a certain category. The category is specified by the keyword {category} and the words are specified by the keyword {words}. Answer 'yes' or 'no'.
+Category: {category}
+Words: {words}
+Output:",1,SEP_VARS,55,100
+212,False,meta_desc,,"
+Given a list of words {words}, determine whether all the words belong to the category {category}. Respond with 'yes' if all the words belong to the category, and 'no' otherwise.
+words: {words}
+category: {category}
+Output:",1,SEP_VARS,53,100
+213,False,meta_desc,,"
+Determine whether all the words in a given list belong to a specific category. The category is represented by the keyword {category}, and the list of words is represented by the keyword {words}. Answer the question with either 'yes' or 'no'.
+Category: {category}
+Words: {words}
+Output:",1,SEP_VARS,64,100
+214,False,meta_desc,,"
+Given a list of words specified by the keyword {words}, determine if all the words belong to a specific category specified by the keyword {category}. Provide a yes or no answer.
+category: {category}
+words: {words}
+Output:",1,SEP_VARS,49,100
+215,False,meta_desc,,"
+Determine if the following list of words belongs to a certain category. The category is specified by the keyword {category}, and the list of words is specified by the keyword {words}. Answer either 'yes' or 'no'.
+Category: {category}
+Words: {words}
+Output:",1,SEP_VARS,59,100
+216,False,meta_desc,,"
+Determine if all the words in a given list belong to a certain category. The category is specified by the keyword {category}, and the list of words is specified by the keyword {words}. Answer 'yes' if all the words belong to the category, and 'no' otherwise.
+category: {category}
+words: {words}
+Output:",1,SEP_VARS,71,100
+217,False,meta_desc,,"
+Determine whether a set of words belong to a specific category. The category is specified by the keyword {category}, and the set of words is specified by the keyword {words}. Respond with either 'yes' or 'no'.
+Category: {category}
+Words: {words}
+Output:",1,SEP_VARS,59,100
+218,False,meta_desc,,"
+Please determine if all the words in the list {words} belong to the category {category}. Your answer should be either 'yes' or 'no'. Please provide a detailed explanation for your answer using rich and sophisticated language.
+Category: {category}
+Words: {words}
+Answer: 
+Explanation:",0,SEP_VARS,61,100
+219,False,meta_desc,,"
+Given a list of words {words}, determine if they all belong to the category {category}. Your answer should be either 'yes' or 'no'. Please use a rich and sophisticated language style.
+Words: 
+Category: 
+Output:",1,other,49,100
+220,False,meta_desc,,"
+Given a list of words, determine if they belong to a certain category based on provided prompt templates. Respond with ""yes"" or ""no"".
+Words: {words}
+Category: {category}
+Output:",1,SEP_VARS,42,100
+221,False,meta_desc,,"
+Given a list of words and a set of prompt templates, determine if the words belong to the category described by the prompts. Respond with ""yes"" or ""no"".
+Words: {words}
+Prompt templates: {category}
+Output:",0,SEP_VARS,48,100
+222,False,meta_desc,,"
+Given a list of words and a set of prompt templates, determine if the words belong to the category described by the prompt templates. Respond with ""yes"" or ""no"".
+List of words: {words}
+Prompt templates: {category}
+Output:",0,SEP_VARS,51,100
+223,False,meta_desc,,"
+Given a list of words and a set of prompt templates, determine if the words belong to the category described by the prompt templates. Answer ""yes"" or ""no"".
+Words: {words}
+Prompt templates: {category}
+Output:",0,SEP_VARS,48,100
+224,False,meta_desc,,"
+Determine whether a list of words belongs to a certain category by answering ""yes"" or ""no"" to the following prompt questions. 
+Category: {category}
+List of words: {words}
+Output:",1,SEP_VARS,43,100
+225,False,meta_desc,,"
+Determine if a list of words belongs to a certain category by answering ""yes"" or ""no"" to the following prompt questions.
+Category: {category}
+Word list: {words}
+Output:",1,SEP_VARS,41,100
+226,False,meta_desc,,"
+Determine if a set of words belong to a specific category by answering ""yes"" or ""no"" to a series of questions.
+Words: {words}
+Category: {category}
+Questions:
+Answer:
+Conclusion:",0,SEP_VARS,44,100
+227,False,meta_desc,,"
+Determine if a set of words belong to a specific category by answering ""yes"" or ""no"" to a series of questions.
+Set of words: {words}
+Category: {category}
+Question: Is ____ a {category}?
+Answer:",0,SEP_VARS,51,100
+228,False,meta_desc,,"
+Given a list of words, determine if they belong to a certain category or represent a certain concept. Answer with ""yes"" or ""no"".
+Words: {words}
+Category: {category}
+Output:",1,SEP_VARS,42,100
+229,False,meta_desc,,"
+Determine if the given list of words belongs to a certain category or represents a certain concept. Answer with ""yes"" or ""no"".
+List of words: {words}
+Category: {category}
+Output:",1,SEP_VARS,43,100
+230,False,meta_desc,,"
+Determine if a list of words belong to a certain category. Ask for a ""yes"" or ""no"" answer to different variations of the same question.
+List of words: {words}
+Category: {category}
+Do all the words in the list belong to the category ""{category}""? (Yes/No)
+
+",0,SEP_VARS,65,100
+231,False,meta_desc,,"
+Determine if a list of words belong to a certain category.
+Words: {words}
+Category: {category}
+Output:",0,SEP_VARS,26,100
+232,False,meta_desc,,"
+Given a list of words, determine if they belong to a certain category. Answer with a simple ""yes"" or ""no"" based on the following prompts:
+- Do all of the words belong to the category?
+- Are any of the words not part of the category?
+- Is the category applicable to all of the words?
+- Are all of the words members of the category?
+List of words: {words}
+Category: {category}
+Output:",1,SEP_VARS,92,100
+233,False,meta_desc,,"
+Given a list of words, determine if they belong to a certain category. Please answer with a yes or no.
+List of words: {words}
+Category: {category}
+Output:",1,SEP_VARS,38,100
+234,False,meta_desc,,"
+Determine if a list of words belong to a certain category. Answer ""yes"" or ""no"" to the following prompts:
+1. Do all the words belong to the category?
+2. Is every word in the list a member of the category?
+3. Are all the words in the list classified as belonging to the category?
+List of words: {words}
+Category: {category}
+Prompt 1: 
+Prompt 2: 
+Prom",0,SEP_VARS,91,100
+235,False,meta_desc,,"
+Please determine if the following list of words belong to a certain category. Respond with ""yes"" if they do and ""no"" if they do not.
+words: {words}
+category: {category}
+Output:",1,SEP_VARS,44,100
+236,False,meta_desc,,"
+Determine if a list of words belongs to a certain category.
+Words: {words}
+Category: {category}
+Output:",0,SEP_VARS,26,100
+237,False,meta_desc,,"
+Determine if a list of words belong to a certain category by answering ""yes"" or ""no"" to the following prompts:
+- Do all the words belong to the same category?
+- Are all the words related to the same topic?
+- Would you group all the words together in the same category?
+Words: {words}
+Category: {category}
+Output:",1,SEP_VARS,74,100
+238,False,meta_desc,,"
+Determine if a list of words belongs to a specific category.
+Words: {words}
+Category: {category}
+Output:",0,SEP_VARS,26,100
+239,False,meta_desc,,"
+Determine if a list of words belongs to a specific category.
+List of words: {words}
+Category: {category}
+Output:",0,SEP_VARS,28,100
+240,False,meta_desc,,"
+Determine whether a list of words belongs to a specific category. You will be given a category keyword and a list of words. Respond with either 'yes' or 'no' depending on whether all the words belong to the specified category.
+Category: {category}
+Words: {words}
+Output:",1,SEP_VARS,61,100
+241,False,meta_desc,,"
+Given a category {category} and a list of words {words}, determine if all the words belong to the category. Answer with either 'yes' or 'no'.
+Category: 
+Words: 
+Output:",1,other,43,100
+242,False,meta_desc,,"
+Determine if a list of words belongs to a certain category. Provide a 'yes' or 'no' answer.
+Category: {category}
+Words: {words}
+Output:",1,SEP_VARS,37,100
+243,False,meta_desc,,"
+Determine if a list of words belong to a certain category. Use the keyword {category} to specify the category and the keyword {words} to specify the list of words. Answer with 'yes' or 'no'.
+Category: {category}
+Words: {words}
+Output:",1,SEP_VARS,58,100
+244,False,meta_desc,,"
+Determine whether a set of words belong to a specific category. Provide a yes or no answer.
+Category: {category}
+Words: {words}
+Output:",1,SEP_VARS,33,100
+245,False,meta_desc,,"
+Determine whether a set of words belong to a specific category. Specify the category using the keyword {category} and the words using the keyword {words}. Provide a yes or no answer.
+Category: {category}
+Words: {words}
+Output:",1,SEP_VARS,51,100
+246,False,meta_desc,,"
+Determine if a group of words belongs to a certain category.
+Category: {category}
+Words: {words}
+Output:",0,SEP_VARS,26,100
+247,False,meta_desc,,"
+Given a group of words represented by {words}, can you determine if they belong to the category represented by {category}? Please answer with either 'yes' or 'no'.
+Words: {words}
+Category: {category}
+Output:",1,SEP_VARS,48,100
+248,False,meta_desc,,"
+Determine if a set of words belong to a certain category. Please answer 'yes' or 'no'. The category is specified by the keyword {category} and the words are specified by the keyword {words}. 
+Category: {category}
+Words: {words}
+Output:",1,SEP_VARS,57,100
+249,False,meta_desc,,"
+Determine if a set of words belong to a specific category. Answer with 'yes' or 'no'. 
+Category: {category}, Words: {words}
+Output:",1,SEP_VARS,36,100
+250,False,meta_desc,,"
+Determine if a list of words belongs to a specific category. Use the keyword {category} to identify the category and the keyword {words} to represent the list of words. Answer with either 'yes' or 'no'.
+Category: {category}
+Words: {words}
+Output:",1,SEP_VARS,59,100
+251,False,meta_desc,,"
+Given a list of words represented by {words}, determine if all of them belong to the category represented by {category}. Respond with either 'yes' or 'no'.
+category: {category}
+words: {words}
+Output:",1,SEP_VARS,47,100
+252,False,meta_desc,,"
+Determine if a list of words belongs to a specific category. Use the keyword {category} to specify the category and the keyword {words} to specify the list of words. Answer with a yes or no.
+Category: {category}
+Words: {words}
+Output:",1,SEP_VARS,56,100
+253,False,meta_desc,,"
+Determine if a list of words belong to a specific category. Specify the category using the keyword {category} and the list of words using the keyword {words}. Answer with a yes or no.
+Category: {category}
+Words: {words}
+Output:",1,SEP_VARS,53,100
+254,False,meta_desc,,"
+Determine if a list of words belong to a certain category. The category is specified by the keyword {category}, and the list of words is specified by the keyword {words}. Answer 'yes' or 'no'.
+Category: {category}
+Words: {words}
+Output:",1,SEP_VARS,57,100
+255,False,meta_desc,,"
+Determine if a set of words belong to a specific category. The category is specified by the keyword {category}, and the set of words is specified by the keyword {words}. Respond with either 'yes' or 'no'.
+Category: {category}
+Words: {words}
+Output:",1,SEP_VARS,59,100
+256,False,meta_desc,,"
+Determine if a set of words belong to a specific category. Use the keyword {category} to specify the category and the keyword {words} to specify the set of words. Answer with either 'yes' or 'no'.
+Category: {category}
+Words: {words}
+Output:",1,SEP_VARS,59,100
+257,False,meta_desc,,"
+Determine whether a list of words belongs to a specific category. Use the keyword {category} to identify the category and the keyword {words} to specify the list of words. Provide a 'yes' or 'no' answer. Use rich and sophisticated language.
+Category: {category}
+Words: {words}
+Output:",0,SEP_VARS,66,100
+258,False,meta_desc,,"
+Determine if a list of words belongs to a specific category. Use rich and sophisticated language in your response.
+Category: {category}
+Words: {words}
+Output:",0,SEP_VARS,35,100

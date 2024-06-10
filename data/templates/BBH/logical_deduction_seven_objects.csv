@@ -1,0 +1,846 @@
+prompt idx,default prompt,method,language style,prompt template,correct,prompt format,prompt length,samples
+1,True,default,,"Q: The following paragraphs each describe a set of seven objects arranged in a fixed order. The statements are logically consistent within each paragraph.
+{paragraph}
+Options:
+{options}
+A:",1,Q&A,37,100
+2,False,rephrase,,"Q: Using logical deduction, determine the order of the following seven objects based on the information provided in the following paragraph:
+{paragraph}
+Choose the correct order from the following options:
+{options}
+A:",1,Q&A,41,100
+3,False,rephrase,,"Q: Using logical deduction, determine the order of the seven objects described in the following paragraph:
+{paragraph}
+Choose the option that correctly represents the order of the objects:
+{options}
+A:",1,Q&A,39,100
+4,False,rephrase,,"Q: Using logical deduction, determine the order of the seven objects described in the following paragraph:
+{paragraph}
+
+Choose the correct sequence from the following options:
+{options}
+
+A:",1,Q&A,36,100
+5,False,rephrase,,"Q: Using logical deduction, determine the order of the following seven objects based on the information provided in the given {paragraph}. Which of the following options {options} correctly represents the order of the objects?",1,other,41,100
+6,False,rephrase,,"Q: Using logical deduction, determine the correct order of the seven objects in the following sequence:
+{paragraph}
+Choose the correct order from the following options:
+{options}
+A:",1,Q&A,36,100
+7,False,rephrase,,"Q: Using logical deduction, what is the fixed order of the seven objects described in the following {paragraph}?
+Options:
+{options}
+A:",1,Q&A,30,100
+8,False,rephrase,,"Q: Using logical deduction, determine the order of the seven objects described in the following paragraph:
+{paragraph}
+Choose the option that correctly identifies the order of the objects:
+{options}
+A:",1,Q&A,39,100
+9,False,rephrase,,"Q: Using logical deduction, determine the order of the seven objects described in the following {paragraph}. The statements are logically consistent within each paragraph.
+Options:
+{options}
+A:",1,Q&A,36,100
+10,False,rephrase,,"Q: Using logical deduction, determine the order of the following seven objects based on the given paragraph:
+{paragraph}
+Choose the correct order from the following options:
+{options}
+A:",1,Q&A,37,100
+11,False,rephrase,,"Q: Using logical deduction, determine the order of the following seven objects based on the given statements:
+{paragraph}
+Select the correct order from the following options:
+{options}
+A:",1,Q&A,37,100
+12,False,rephrase,,"Q: Using logical deduction, determine the order of the following seven objects based on the information provided in the paragraph below:
+{paragraph}
+Choose the correct order from the following options:
+{options}
+A:",1,Q&A,41,100
+13,False,rephrase,,"Q: Use logical deduction to determine the order of the seven objects in the following {paragraph}. Which of the following {options} represents the correct order?
+A:",1,Q&A,33,100
+14,False,rephrase,,"Q: Using logical deduction, can you determine the order of the following seven objects based on the information provided in the {paragraph}? 
+Options:
+{options}
+A:",1,Q&A,34,100
+15,False,rephrase,,"Q: Using logical deduction, determine the order of the following seven objects based on the information provided in the following paragraph:
+{paragraph}
+Choose the correct sequence from the following options:
+{options}
+A:",1,Q&A,41,100
+16,False,rephrase,,"Q: Using logical deduction, determine the order of the following seven objects based on the information provided in the following paragraph.
+{paragraph}
+Which of the following options represents the correct order of the objects?
+{options}
+A:",1,Q&A,45,100
+17,False,rephrase,,"Q: Using logical deduction, what is the fixed order of the seven objects described in the following {paragraph}? The statements in the paragraph are logically consistent with each other.
+ 
+Options:
+{options}
+A:",1,Q&A,42,100
+18,False,rephrase,,"Q: Within {paragraph}, what is the correct order of the seven objects described below?
+Options:
+{options}
+A:",1,Q&A,25,100
+19,False,rephrase,,"Q: Using logical deduction, can you determine the order of the following set of seven objects?
+{paragraph}
+Please select the correct order from the following options:
+{options}
+A:",1,Q&A,37,100
+20,False,rephrase,,"Q: Using logical deduction, determine the correct order of the following seven objects:
+{paragraph}
+Choose the correct arrangement from the options below:
+{options}
+A:",1,Q&A,33,100
+21,False,rephrase,,"Q: Using logical deduction, determine the order of the seven objects in the following set.
+{paragraph}
+Options:
+{options}
+A:",1,Q&A,28,100
+22,False,rephrase,,"Q: Using logical deduction, determine the order of the seven objects described in the following paragraph:
+{paragraph}
+
+Choose the correct order from the following options:
+{options}
+
+A:",1,Q&A,36,100
+23,False,rephrase,,"Q: Using logical deduction, determine the order of the following seven objects based on the information provided in the following paragraph:
+{paragraph}
+
+Choose the correct order from the following options:
+{options}
+
+A:",1,Q&A,41,100
+24,False,rephrase,,"Q: Using logical deduction, determine the order of the seven objects described in the following paragraph:
+{paragraph}
+Choose the most logically consistent sequence from the following options:
+{options}
+A:",1,Q&A,38,100
+25,False,rephrase,,"Q: Using logical deduction, determine the order of seven objects described in the following {paragraph}. Which of the following sequences of objects is the correct order?
+{options}
+A:",1,Q&A,36,100
+26,False,rephrase,,"Q: Using logical deduction, determine the order of the following seven objects based on the information provided in the following {paragraph}. Which of the following {options} correctly represents the order of the objects?
+A:",1,Q&A,42,100
+27,False,rephrase,,"Q: Using logical deduction, determine the order of a sequence of seven objects based on the information provided in the following paragraph. The statements within the paragraph are logically consistent.
+{paragraph}
+Choose the correct order from the following options:
+{options}
+A:",1,Q&A,51,100
+28,False,rephrase,,"Q: Use logical deduction to determine the correct order of the seven objects described in the following {paragraph}. Each statement is logically consistent with the others.
+{paragraph}
+Choose the correct order from the following {options}.",0,other,43,100
+29,False,rephrase,,"Q: Use logical deduction to determine the order of seven objects in the following paragraph. The statements are logically consistent within the paragraph.
+{paragraph}
+Choose the correct order from the following options:
+{options}
+A:",1,Q&A,43,100
+30,False,rephrase,,"Q: Using logical deduction, determine the correct order of the seven objects described in the following {paragraph}. Each statement in the paragraph is logically consistent with the others.
+{paragraph}
+Choose the correct order from the following {options}.",0,other,46,100
+31,False,rephrase,,"Q: Use logical deduction to determine the correct order of the seven objects in the following set. The statements provided are logically consistent within the set.
+{paragraph}
+Which of the following options correctly orders the objects?
+{options}
+A:",1,Q&A,47,100
+32,False,rephrase,,"Q: Use logical deduction to determine the order of seven objects described in the following paragraph. The statements are logically consistent within the paragraph.
+{paragraph}
+Choose the correct sequence from the following options:
+{options}
+A:",1,Q&A,44,100
+33,False,rephrase,,"Q: Use logical deduction to determine the order of the following seven objects based on the information provided in the {paragraph}. Which of the following options correctly represents the order of the objects?
+{options}",1,other,40,100
+34,False,rephrase,,"Q: Use logical deduction to determine the correct order of the seven objects in the following sequence. Each statement is logically consistent within the paragraph.
+{paragraph}
+Choose the correct order from the following options:
+{options}
+A:",1,Q&A,45,100
+35,False,rephrase,,"Q: Use logical deduction to determine the order of seven objects described in the following paragraph. The statements are logically consistent within the paragraph.
+{paragraph}
+Choose the correct order from the following options:
+{options}
+A:",1,Q&A,44,100
+36,False,rephrase,,"Q: Using logical deduction, determine the correct order of the seven objects in the following set. The statements are logically consistent within each paragraph.
+{paragraph}
+Choose the correct order from the following options:
+{options}
+A:",1,Q&A,45,100
+37,False,rephrase,,"Q: Given a set of seven objects arranged in a fixed order, use logical deduction to determine the correct sequence. Each paragraph contains statements that are logically consistent within it.
+{paragraph}
+Choose the option that correctly orders the objects.
+{options}
+A:",1,Q&A,51,100
+38,False,rephrase,,"Q: Use logical deduction to determine the order of seven objects described in the following {paragraph}. The statements are logically consistent within the paragraph.
+{paragraph}
+Choose the correct order of the objects from the following {options}.
+{options}
+A:",0,Q&A,49,100
+39,False,rephrase,,"Q: Use logical deduction to determine the order of the seven objects in the following sequence. Each statement is logically consistent within the paragraph.
+{paragraph}
+Choose the correct order from the following options:
+{options}
+A:",1,Q&A,44,100
+40,False,rephrase,,Q: Use logical deduction to determine the order of seven objects in a sequence. Below is a {paragraph} describing the arrangement of the objects. Which of the following {options} is the correct order of the objects?,0,other,44,100
+41,False,rephrase,,"Q: Use your logical deduction skills to determine the order of the seven objects described in the following {paragraph}. Each statement is consistent with the others in the paragraph.
+{paragraph}
+Choose the correct order from the following {options}.",0,other,46,100
+42,False,rephrase,,"Q: Use logical deduction to determine the order of the following seven objects. Each paragraph contains statements that are logically consistent within that paragraph.
+{paragraph}
+Choose the correct order from the following options:
+{options}
+A:",1,Q&A,44,100
+43,False,rephrase,,"Q: Use logical deduction to determine the fixed order of seven objects described in the following {paragraph}. The statements are logically consistent within the paragraph.
+{paragraph}
+Choose the correct order of objects from the following {options}.
+{options}
+A:",1,Q&A,49,100
+44,False,rephrase,,"Q: Using logical deduction, determine the correct order of seven objects described in the following paragraph. The statements are logically consistent within the paragraph.
+{paragraph}
+Choose the correct order from the following options:
+{options}
+A:",1,Q&A,45,100
+45,False,rephrase,,"Q: Deduce the order of seven objects by choosing the logically consistent paragraph from the following options:
+{options}
+{paragraph}",0,other,26,100
+46,False,rephrase,,"Q: Use your logical deduction skills to determine the order of the seven objects in the following {paragraph}. The statements are logically consistent within the paragraph.
+{paragraph}
+Choose the correct order of the objects from the following {options}.
+A:",0,Q&A,48,100
+47,False,rephrase,,"Q: Using logical deduction, determine the order of seven objects based on the following paragraph. The statements are logically consistent within the paragraph.
+{paragraph}
+Choose the correct order from the following options:
+{options}
+A:",1,Q&A,44,100
+48,False,rephrase,,"Q: Using logical deduction, determine the order of the seven objects described in the following paragraph:
+{paragraph}
+Choose the correct order from the following options:
+{options}
+A:",1,Q&A,36,100
+49,False,rephrase,,"Q: Using logical deduction, determine the correct order of the seven objects described in the following {paragraph}. Which of the following {options} correctly represents the order of the objects?
+A:",1,Q&A,38,100
+50,False,rephrase,,"Q: Use logical deduction to determine the correct order of the seven objects described in the following {paragraph}. Each statement in the paragraph is logically consistent with the others.
+{paragraph}
+Choose the correct order from the following {options}.",0,other,46,100
+51,False,rephrase,,"Q: Given a set of seven objects arranged in a fixed order, use logical deduction to determine the correct sequence. The following {paragraph} describes the objects and their order. Choose the option that best fits the sequence from the {options}.
+A:",0,Q&A,50,100
+52,False,meta_cot,,You will be given a question that describes a set of seven objects arranged in a fixed order. You will also be provided with a set of options. Your goal is to select the correct option based on the information provided in the question. The placeholders in the question are {paragraph} and {options}.,0,other,60,100
+53,False,meta_cot,,"Your task is to solve a logical deduction task which requires deducing the order of a sequence of objects. You will be presented with a question that describes a set of seven objects arranged in a fixed order, and a set of options. Your objective is to select the correct option based on the information provided in the question. The placeholders in the question are {paragraph} and {options}.",0,other,77,100
+54,False,meta_cot,,"In this task, you will be presented with a question that describes a set of seven objects arranged in a fixed order, and a set of options. Your objective is to select the correct option based on the information provided in the question. The placeholders in the question are {paragraph} and {options}.",0,other,60,100
+55,False,meta_cot,,"Your goal is to solve a logical deduction task which requires deducing the order of a sequence of objects. You will be given a question that describes a set of seven objects arranged in a fixed order, and a set of options. Your task is to select the correct option based on the information provided in the question. The placeholders in the question are {paragraph} and {options}.",0,other,76,100
+56,False,meta_cot,,"You will be presented with a set of paragraphs, each of which describes a set of seven objects arranged in a fixed order. The statements in each paragraph are logically consistent. Your task is to deduce the order of the objects based on the information provided in the paragraph. You will also be given a set of options to choose from. The options are represented by {options}. Choose the correct option based on the information provided in the paragraph, which is represented by {paragraph}.",1,other,95,100
+57,False,meta_cot,,"Your task is to solve a logical deduction task. The task consists of a set of paragraphs, each of which describes a set of seven objects arranged in a fixed order. The statements in each paragraph are logically consistent. Your goal is to deduce the order of the objects based on the information provided in the paragraph. You will also be given a set of options to choose from. The options are represented by {options}. Choose the correct option based on the information provided in the paragraph, which is represented by {paragraph}.",1,other,104,100
+58,False,meta_cot,,"You will be presented with a set of paragraphs, each of which describes a set of seven objects arranged in a fixed order. Your task is to deduce the order of the objects based on the information provided in the paragraph. The statements in each paragraph are logically consistent. In addition, you will be given a set of options to choose from. The options are represented by {options}. Choose the correct option based on the information provided in the paragraph, which is represented by {paragraph}.",1,other,97,100
+59,False,meta_cot,,You will be given a paragraph that describes a set of seven objects arranged in a fixed order. Your task is to deduce the order of the objects. You will also be provided with a set of options to choose from. The paragraph and options are logically consistent within each other. {paragraph} Choose the correct option from the following: {options},1,SEP_VARS,70,100
+60,False,meta_cot,,Your task is to deduce the order of a sequence of seven objects based on a paragraph that describes their arrangement. You will also be given a set of options to choose from. The paragraph and options are logically consistent within each other. {paragraph} Choose the correct option from the following: {options},1,SEP_VARS,61,100
+61,False,meta_cot,,"In this task, you will be given a paragraph that describes a set of seven objects arranged in a fixed order. Your task is to deduce the order of the objects based on the information provided. You will also be given a set of options to choose from. The paragraph and options are logically consistent within each other. {paragraph} Choose the correct option from the following: {options}",1,SEP_VARS,78,100
+62,False,meta_cot,,"You will be given a set of paragraphs, each describing a set of seven objects arranged in a fixed order. Your task is to deduce the order of the sequence of objects. You will also be provided with multiple options to choose from. The options are represented by {options}. Based on the information provided in the paragraph, which is represented by {paragraph}, you should choose the correct option.",0,other,79,100
+63,False,meta_cot,,"Your task is to solve a logical deduction task which requires you to deduce the order of a sequence of objects. The task consists of a set of paragraphs, each describing a set of seven objects arranged in a fixed order. The statements are logically consistent within each paragraph. You will also be provided with multiple options to choose from. The options are represented by {options}. You should choose the correct option based on the information provided in the paragraph, which is represented by {paragraph}.",1,other,96,100
+64,False,meta_cot,,"You will be presented with a set of paragraphs, each describing a set of seven objects arranged in a fixed order. Your task is to deduce the order of the sequence of objects. The task also includes multiple options to choose from. The options are represented by {options}. Based on the information provided in the paragraph, which is represented by {paragraph}, you should choose the correct option.",1,other,78,100
+65,False,meta_cot,,"Your goal is to solve a logical deduction task which requires you to deduce the order of a sequence of objects. The task consists of a set of paragraphs, each describing a set of seven objects arranged in a fixed order. The statements are logically consistent within each paragraph. You will also be provided with multiple options to choose from. The options are represented by {options}. Based on the information provided in the paragraph, which is represented by {paragraph}, you should choose the correct option.",0?,other,97,100
+66,False,meta_cot,,"In this task, you will be given a paragraph that describes the order of seven objects. You will also be given a set of options to choose from. Your task is to deduce the correct order of the objects based on the information provided in the paragraph. The paragraph and options are to be filled in using the placeholders {paragraph} and {options}, respectively.",0,other,73,100
+67,False,meta_cot,,"Your task is to solve a logical deduction task that involves deducing the order of a sequence of seven objects. The task consists of a paragraph that describes the order of the objects and a set of options to choose from. The options are logically consistent with the paragraph. Use the information provided in the paragraph to determine the correct order of the objects. The paragraph and options are to be filled in using the placeholders {paragraph} and {options}, respectively.",0,other,90,100
+68,False,meta_cot,,"This task requires you to deduce the order of a sequence of seven objects. You will be given a paragraph that describes the order of the objects and a set of options to choose from. The options are logically consistent with the paragraph. Your task is to use the information provided in the paragraph to determine the correct order of the objects. The paragraph and options are to be filled in using the placeholders {paragraph} and {options}, respectively.",0,other,88,100
+69,False,meta_cot,,"In this logical deduction task, you will be presented with a paragraph that describes the order of a sequence of seven objects. Your task is to deduce the correct order of the objects. The paragraph is provided in the following format: {paragraph}. You will also be presented with a set of options to choose from, which are provided in the following format: {options}. Choose the option that logically follows from the paragraph.",1,SEP_VARS,84,100
+70,False,meta_cot,,"Your task is to solve a logical deduction task that requires you to deduce the order of a sequence of seven objects. The task consists of a paragraph that describes the order of the objects and a set of options to choose from. The correct option is the one that logically follows from the paragraph. The paragraph and options are provided in the following format: {paragraph} and {options}, respectively.",0,SEP_VARS,79,100
+71,False,meta_cot,,"In this task, you will be presented with a paragraph that describes the order of a sequence of seven objects. Your task is to deduce the correct order of the objects. The paragraph is provided in the following format: {paragraph}. You will also be presented with a set of options to choose from, which are provided in the following format: {options}. Choose the option that logically follows from the paragraph.",1,SEP_VARS,82,100
+72,False,meta_cot,,"Your goal is to solve a logical deduction task that requires you to deduce the order of a sequence of seven objects. The task consists of a paragraph that describes the order of the objects and a set of options to choose from. The correct option is the one that logically follows from the paragraph. The paragraph and options are provided in the following format: {paragraph} and {options}, respectively.",1,SEP_VARS,79,100
+73,False,meta_cot,,"You will be presented with a paragraph that describes a set of seven objects arranged in a fixed order. Your task is to deduce the order of the objects based on the information provided in the paragraph. Once you have done that, you will be presented with a set of options to choose from. Choose the option that logically follows from the paragraph. Remember to consider all the information provided in the paragraph before making your choice. The placeholders in the input instruction template are {paragraph} and {options}.",0,other,99,100
+74,False,meta_cot,,"Your task is to solve a logical deduction task that involves deducing the order of a sequence of seven objects. You will be presented with a paragraph that describes the objects and their order. Your goal is to use the information provided in the paragraph to deduce the order of the objects. Once you have done that, you will be presented with a set of options to choose from. Choose the option that logically follows from the paragraph. The placeholders in the input instruction template are {paragraph} and {options}.",0,other,101,100
+75,False,meta_cot,,"In this task, you will be presented with a paragraph that describes a set of seven objects arranged in a fixed order. Your task is to deduce the order of the objects based on the information provided in the paragraph. Once you have done that, you will be presented with a set of options to choose from. Choose the option that logically follows from the paragraph. Make sure to consider all the information provided in the paragraph before making your choice. The placeholders in the input instruction template are {paragraph} and {options}.",0,other,104,100
+76,False,meta_cot,,"In this task, you will be presented with a paragraph that describes a set of seven objects arranged in a fixed order. Your task is to deduce the order of the objects. You will also be given options to choose from. The options are the possible answers to the question. Make sure to read the paragraph carefully before choosing an option. {paragraph} {options}",1,other,74,100
+77,False,meta_cot,,Your task is to deduce the order of a sequence of seven objects. The objects are described in a paragraph that is logically consistent. You will also be given options to choose from. The options are the possible answers to the question. Make sure to read the paragraph carefully before choosing an option. {paragraph} {options},1,other,65,100
+78,False,meta_cot,,This task requires you to deduce the order of a set of seven objects. The objects are described in a paragraph that is logically consistent. You will be given options to choose from. The options are the possible answers to the question. Make sure to read the paragraph carefully before choosing an option. {paragraph} {options},1,other,65,100
+79,False,meta_cot,,"In this task, you will be presented with a number of paragraphs, each of which describes a set of seven objects arranged in a fixed order. Your task is to deduce the order of the objects based on the information presented in the paragraph. Once you have done this, you will be presented with a set of options, one of which must logically follow from the statements in the paragraph. Make sure to read the paragraph carefully and consider all the information presented before selecting an option. {paragraph} Now, you will be presented with a set of options. Each option represents a possible order of the seven objects described in the paragraph. Your task is to select the option that logically follows from the statements in the paragraph. {options}. Good luck!",0,other,149,100
+80,False,meta_cot,,"This task involves using logical deduction to determine the order of a sequence of seven objects. You will be presented with a number of paragraphs, each of which describes the order of the objects. Your task is to carefully read the paragraph and deduce the order of the objects based on the information presented. Once you have done this, you will be presented with a set of options, one of which must logically follow from the statements in the paragraph. {paragraph} Now, it is time to select the option that logically follows from the statements in the paragraph. Make sure to carefully consider all the information presented before making your selection. {options}.",1,other,127,100
+81,False,meta_cot,,"Your goal in this task is to use logical deduction to determine the order of a sequence of seven objects. To do this, you will be presented with a number of paragraphs, each of which describes the order of the objects. Your task is to read the paragraph carefully and deduce the order of the objects based on the information presented. Once you have done this, you will be presented with a set of options, one of which must logically follow from the statements in the paragraph. {paragraph} Your task is to select the option that logically follows from the statements in the paragraph. {options}. Good luck!",1,other,122,100
+82,False,meta_cot,,"In this task, you will be presented with a paragraph that describes a set of seven objects arranged in a fixed order. Your goal is to deduce the order of the objects. To do so, you will need to carefully read the paragraph and use logical deduction to determine the correct order. Once you have done so, you will be presented with a set of options to choose from. Make sure to select the option that is logically consistent with the paragraph. Remember to use the placeholders {paragraph} and {options} in your answer.",0,other,107,100
+83,False,meta_cot,,"Your task is to use logical deduction to determine the order of a set of seven objects described in a paragraph. The paragraph provides clues that will help you deduce the correct order. Once you have done so, you will be presented with a set of options to choose from. Make sure to select the option that is logically consistent with the paragraph. Remember to use the placeholders {paragraph} and {options} in your answer.",0,other,85,100
+84,False,meta_cot,,"In this task, you will need to use your logical deduction skills to determine the order of a set of seven objects. The objects are described in a paragraph, which provides clues that will help you deduce the correct order. Once you have done so, you will be presented with a set of options to choose from. Make sure to select the option that is logically consistent with the paragraph. Remember to use the placeholders {paragraph} and {options} in your answer.",0,other,94,100
+85,False,meta_cot,,"In this task, you will be provided with a paragraph that describes a set of seven objects arranged in a fixed order. Your task is to deduce the order of the sequence of objects. The paragraph and the set of options are logically consistent within each other. The options are the possible answers to the task. {paragraph} Choose from the following options: {options}",1,SEP_VARS,74,100
+86,False,meta_cot,,You will be presented with a paragraph that describes a set of seven objects arranged in a fixed order. Your goal is to deduce the order of the sequence of objects. The paragraph and the set of options are logically consistent within each other. The options are the possible answers to the task. {paragraph} Select one of the following options: {options},1,SEP_VARS,71,100
+87,False,meta_cot,,This task requires you to deduce the order of a sequence of seven objects. You will be provided with a paragraph that describes the arrangement of the objects. The paragraph and the set of options are logically consistent within each other. The options are the possible answers to the task. {paragraph} Choose the correct answer from the following options: {options},1,SEP_VARS,70,100
+88,False,meta_cot,,Your task is to deduce the order of a sequence of seven objects. You will be given a paragraph that describes the arrangement of the objects. The paragraph and the set of options are logically consistent within each other. The options are the possible answers to the task. {paragraph} Select the correct option from the following: {options},1,SEP_VARS,67,100
+89,False,meta_cot,,"In this task, you will be presented with a paragraph that describes a set of seven objects arranged in a fixed order. You will also be presented with a set of options. Your task is to select the correct option based on the information provided in the paragraph. The paragraph and options are logically consistent within each other. {paragraph} {options}",1,other,69,100
+90,False,meta_cot,,Your task is to deduce the order of a sequence of seven objects based on the information provided in the paragraph. The paragraph consists of statements that are logically consistent within each other. You will also be presented with a set of options. {paragraph} {options},1,other,53,100
+91,False,meta_cot,,You will be given a paragraph that describes a set of seven objects arranged in a fixed order. The paragraph consists of statements that are logically consistent within each other. Your task is to select the correct option based on the information provided in the paragraph. You will also be presented with a set of options. {paragraph} {options},1,other,66,100
+92,False,meta_cot,,"In this task, you will be presented with a paragraph that describes a set of seven objects arranged in a fixed order. Your goal is to deduce the correct order of the objects. You will also be given a set of options to choose from. Make sure to carefully read the paragraph and select the correct option. {paragraph} Choose one of the following options: {options}.",1,SEP_VARS,76,100
+93,False,meta_cot,,Your task is to solve a logical deduction problem involving seven objects. You will be presented with a paragraph that describes the objects and their order. Your goal is to deduce the correct order of the objects based on the information provided. You will also be given a set of options to choose from. Choose the correct option based on your deduction. {paragraph} Select one of the following options: {options}.,1,SEP_VARS,81,100
+94,False,meta_cot,,"In this task, you will be given a paragraph that describes a set of seven objects arranged in a fixed order. Your task is to deduce the correct order of the objects. You will also be given a set of options to choose from. Make sure to read the paragraph carefully and select the correct option. {paragraph} Choose the most appropriate option from the following: {options}.",1,SEP_VARS,77,100
+95,False,meta_cot,,"You will be presented with a set of seven objects arranged in a fixed order. Your task is to deduce the order of the objects based on the information provided in the paragraph. Once you have done that, you will be given a set of options to choose from. Choose the option that logically follows from the paragraph. The placeholders in the question are {paragraph} and {options}.",0,other,77,100
+96,False,meta_cot,,"Your goal is to deduce the order of a sequence of seven objects based on the information provided in the paragraph. Once you have done that, you will be presented with a set of options to choose from. Choose the option that logically follows from the paragraph. The placeholders in the question are {paragraph} and {options}.",0,other,65,100
+97,False,meta_cot,,"In this task, you will be given a paragraph describing a set of seven objects arranged in a fixed order. Your goal is to deduce the order of the objects based on the information provided in the paragraph. Once you have done that, you will be presented with a set of options to choose from. Choose the option that logically follows from the paragraph. The placeholders in the question are {paragraph} and {options}.",0,other,84,100
+98,False,meta_cot,,Deduce the order of a sequence of seven objects by selecting the option that matches the order described in the paragraph. The paragraph and options are logically consistent within each paragraph. {paragraph} Choose from the following options: {options},1,SEP_VARS,47,100
+99,False,meta_cot,,"Your task is to determine the order of a sequence of seven objects. You will be given a paragraph that describes the objects in a fixed order, and a set of options that represent the possible orders of the objects. Your goal is to select the option that matches the order described in the paragraph. {paragraph} Choose the correct option from the following: {options}",1,SEP_VARS,73,100
+100,False,meta_cot,,"In this task, you will be required to deduce the order of a sequence of seven objects. You will be presented with a paragraph that describes the objects in a fixed order, and a set of options that represent the possible orders of the objects. Your goal is to select the option that matches the order described in the paragraph. {paragraph} Choose the correct option from the following: {options}",1,SEP_VARS,80,100
+101,False,meta_cot,,"In this task, you will be presented with a paragraph that describes a set of seven objects arranged in a fixed order. Your goal is to deduce the order of the objects. You will also be presented with a set of options to choose from, and you must select the option that logically follows the paragraph. The paragraph and options are provided in the input template using the keywords {paragraph} and {options}.",0,other,82,100
+102,False,meta_cot,,"Your task is to determine the order of a sequence of seven objects based on a paragraph that describes their arrangement. You will also be provided with a set of options to choose from, and you must select the one that logically follows the paragraph. The paragraph and options are provided in the input template using the keywords {paragraph} and {options}.",0,other,68,100
+103,False,meta_cot,,"In this task, you will be given a paragraph that describes the order of a sequence of seven objects. Your goal is to deduce the order of the objects. You will also be given a set of options to choose from, and you must select the option that logically follows the paragraph. The paragraph and options are provided in the input template using the keywords {paragraph} and {options}.",0,other,78,100
+104,False,meta_cot,,"In this task, you are given a paragraph that describes a set of seven objects arranged in a fixed order. Your goal is to deduce the order of the objects. The paragraph statements are logically consistent within each paragraph. You will also be given a set of options to choose from. The correct answer should be selected from the options. The keyword for the paragraph is {paragraph} and the keyword for the options is {options}.",0,other,86,100
+105,False,meta_cot,,Your task is to deduce the order of a sequence of seven objects. You will be given a paragraph that describes the objects in a fixed order. The paragraph statements are logically consistent within each paragraph. You will also be given a set of options to choose from. The correct answer should be selected from the options. The keyword for the paragraph is {paragraph} and the keyword for the options is {options}.,0,other,82,100
+106,False,meta_cot,,"In this task, you will be presented with a paragraph that describes a set of seven objects arranged in a fixed order. Your goal is to deduce the order of the objects. The paragraph statements are logically consistent within each paragraph. You will also be given a set of options to choose from. The correct answer should be selected from the options. The keyword for the paragraph is {paragraph} and the keyword for the options is {options}.",0,other,88,100
+107,False,meta_cot,,"In this task, you will be presented with a question that describes a set of seven objects arranged in a fixed order. The statements in the question are logically consistent within each paragraph. You will also be presented with a set of answer options, which are presented as {options}. Your task is to select the correct option based on the information provided in the question. The keywords used in this task are {paragraph} and {options}.",0,other,86,100
+108,False,meta_cot,,"You will be given a question that describes a set of seven objects arranged in a fixed order. The statements in the question are logically consistent within each paragraph. Additionally, you will be presented with a set of answer options, which are presented as {options}. Your task is to select the correct option based on the information provided in the question. The keywords used in this task are {paragraph} and {options}.",0,other,82,100
+109,False,meta_cot,,"Your task is to solve a logical deduction task called logical deduction seven objects. In this task, you will be given a question that describes a set of seven objects arranged in a fixed order. The statements in the question are logically consistent within each paragraph. You will also be presented with a set of answer options, which are presented as {options}. Your goal is to select the correct option based on the information provided in the question. The keywords used in this task are {paragraph} and {options}.",0,other,100,100
+110,False,meta_cot,,"You need to solve a logical deduction task called logical deduction seven objects. The task requires you to deduce the order of a sequence of seven objects. The task consists of a paragraph and a set of options. The paragraph describes the objects in a fixed order, and the options contain possible deductions about the order of the objects. Remember to choose the correct option based on the paragraph. Here is the paragraph: {paragraph}. And here are the options: {options}.",1,SEP_VARS,93,100
+111,False,meta_cot,,"Your task is to solve a logical deduction task called logical deduction seven objects. The task requires you to deduce the order of a sequence of seven objects. The paragraph describes the objects in a fixed order, and the options contain possible deductions about the order of the objects. Make sure to read the paragraph carefully and choose the correct option based on it. Here is the paragraph: {paragraph}. And here are the options: {options}.",1,SEP_VARS,87,100
+112,False,meta_desc,,"
+Deduce the order of a sequence of seven objects based on given statements. You will be presented with a multi-choice format with options provided for each question. Use the information provided in the statements to determine the correct order of the objects. 
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,62,100
+113,False,meta_desc,,"
+Deduce the order of a sequence of seven objects based on given statements. Choose the correct order from the provided options.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,38,100
+114,False,meta_desc,,"
+Deduce the order of a sequence of seven objects based on logical statements. You will be presented with a multi-choice format with a default prompt and options provided. Your task is to select the correct order of the sequence based on the given logical statements. 
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,65,100
+115,False,meta_desc,,"
+Deduce the order of a sequence of seven objects based on logical statements. You will be presented with a multi-choice format with a default prompt and options provided. Your task is to select the correct answer based on the logical statements provided.
+Logical statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,62,100
+116,False,meta_desc,,"
+Deduce the order of a sequence of seven objects based on logical statements. You will be presented with a paragraph containing logical statements and answer options. Your task is to select the correct order of the objects based on the given statements.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,60,100
+117,False,meta_desc,,"
+Deduce the order of a sequence of seven objects based on logical statements. You will be presented with a paragraph of logical statements and answer options in a multiple-choice format. Use the logical statements to determine the correct order of the objects. 
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,62,100
+118,False,meta_desc,,"
+Deduce the order of a sequence of seven objects based on given logical statements and choose the correct option from a multiple-choice list. The logical statements will provide clues about the relative positions of the objects in the sequence. You will need to use deductive reasoning to determine the correct order of the objects. 
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,75,100
+119,False,meta_desc,,"
+Deduce the order of a sequence of seven objects based on given logical statements and select the correct option from a multiple-choice list. The logical statements will provide clues about the relative positions of the objects in the sequence.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,57,100
+120,False,meta_desc,,"
+Deduce the order of a sequence of seven objects based on the given statements and choose the correct option among the given choices.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,39,100
+121,False,meta_desc,,"
+Deduce the order of a sequence of seven objects based on logical statements. Select the correct option from the given choices. 
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,39,100
+122,False,meta_desc,,"
+Deduce the order of a sequence of seven objects based on logical statements. You will be given a set of logical statements that provide clues about the order of the objects. Each statement will be in the form of ""Object A comes before/after Object B"". You will then be presented with a set of options for the order of the objects and must select the correct option based on the given statements.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+",1,SEP_VARS,94,100
+123,False,meta_desc,,"
+Deduce the order of a sequence of seven objects based on logically consistent statements. You will be given a set of statements and will be required to select the correct option from a set of multiple choices. The correct option will be the one that is logically consistent with the given statements and represents the correct order of the objects in the sequence.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,81,100
+124,False,meta_desc,,"
+Deduce the order of a sequence of seven objects based on logically consistent statements. Select the correct option from the multi-choice format based on the given statements. 
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,46,100
+125,False,meta_desc,,"
+Deduce the order of a sequence of seven objects based on logically consistent statements. You will be provided with a paragraph and options in a multiple choice format. Use logical deduction to derive the correct answer. 
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,55,100
+126,False,meta_desc,,"
+Deduce the order of a sequence of seven objects based on logically consistent statements. You will be presented with a paragraph and options in a multiple choice format. Use logical deduction to select the correct answer.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,54,100
+127,False,meta_desc,,"
+Deduce the order of a sequence of seven objects based on logically consistent statements. You will be given a multi-choice format with a default prompt and options provided.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,46,100
+128,False,meta_desc,,"
+Deduce the order of a sequence of seven objects based on logically consistent statements. You will be presented with a multi-choice format prompt and options. Select the option that best matches the logical order of the sequence.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,56,100
+129,False,meta_desc,,"
+Deduce the order of a sequence of objects based on a given question and select the correct option from a set of options.
+Question: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,39,100
+130,False,meta_desc,,"
+Deduce the order of a sequence of objects. Select the correct option based on the information provided in the question.
+Question: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,37,100
+131,False,meta_desc,,"
+Deduce the order of a sequence of objects based on a set of logically consistent statements. Choose the correct option based on the information provided in the paragraph.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,45,100
+132,False,meta_desc,,"
+Deduce the order of a sequence of seven objects. You will be given a paragraph describing the order of the objects. The paragraph will be logically consistent. You will also be given a set of options to choose from. Choose the correct option based on the information provided in the paragraph.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,71,100
+133,False,meta_desc,,"
+Deduce the order of a sequence of seven objects based on a given paragraph and a set of options. The paragraph and options are logically consistent within each other. Provide the correct order of the objects as the output.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,57,100
+134,False,meta_desc,,"
+Deduce the order of a sequence of seven objects based on a paragraph and a set of options. The paragraph and options are logically consistent within each other. Provide the correct order of the objects as your output.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:",1,SEP_VARS,56,100
+135,False,meta_desc,,"
+Deduce the order of a sequence of seven objects based on the information provided in a paragraph. Choose the correct option from the given options based on the information provided in the paragraph.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:",1,SEP_VARS,50,100
+136,False,meta_desc,,"
+Deduce the order of a sequence of seven objects based on the information provided in a paragraph. You will be given a set of paragraphs, each describing a set of seven objects arranged in a fixed order. The statements are logically consistent within each paragraph. Choose the correct option from the given options based on the information provided in the paragraph.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:",1,SEP_VARS,81,100
+137,False,meta_desc,,"
+Deduce the order of a sequence of seven objects described in {paragraph}. Choose the option from {options} that is logically consistent with the paragraph.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:",0,SEP_VARS,44,100
+138,False,meta_desc,,"
+Deduce the order of a sequence of seven objects based on a paragraph that describes the order and a set of logically consistent options.
+{paragraph}
+Options:
+{options}
+Output:",1,other,38,100
+139,False,meta_desc,,"
+Deduce the order of a sequence of seven objects based on a given paragraph and set of options. The paragraph will describe the order of the objects and the options will include one correct option that logically follows from the paragraph. Your task is to select the correct option.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,67,100
+140,False,meta_desc,,"
+Deduce the order of a sequence of seven objects based on a given paragraph and set of options. The paragraph will describe the order of the objects and the options will provide possible next objects in the sequence. Choose the option that logically follows from the paragraph.
+Paragraph: {paragraph}
+Options: {options}
+Output:",1,SEP_VARS,65,100
+141,False,meta_desc,,"
+Deduce the order of a sequence of objects based on a given paragraph. You will be presented with a paragraph describing a set of seven objects arranged in a fixed order, followed by a set of options. Your task is to select the option that logically follows from the paragraph. Use the information provided in the paragraph to make your selection. 
+Paragraph: {paragraph}
+Options:
+{options}
+Output:",1,SEP_VARS,82,100
+142,False,meta_desc,,"
+Deduce the order of a sequence of objects by selecting the option that logically follows from a given paragraph.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,35,100
+143,False,meta_desc,,"
+Deduce the order of a sequence of seven objects based on a given paragraph and options. The task is in multi-choice format. You will be given a paragraph that describes the objects in a logical order and a set of options that are the possible answers to the question.
+Paragraph:
+{paragraph}
+Options:
+{options}
+Output:
+
+",1,other,68,100
+144,False,meta_desc,,"
+Deduce the order of a sequence of seven objects based on a given paragraph and options. The task is in multi-choice format, and the options are the possible answers to the question. Your task is to select the correct answer based on the logical order of the objects described in the paragraph.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,72,100
+145,False,meta_desc,,"
+Deduce the order of a sequence of seven objects based on a paragraph describing their arrangement. The task is multiple-choice, with the correct option logically following from the statements in the paragraph. 
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,52,100
+146,False,meta_desc,,"
+Deduce the order of a sequence of seven objects based on a paragraph describing their arrangement. The task is presented in multiple-choice format, with the correct option logically following from the statements in the paragraph.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:",1,SEP_VARS,54,100
+147,False,meta_desc,,"
+Deduce the order of a sequence of objects. You will be given a paragraph describing a set of seven objects arranged in a fixed order, and a set of options to choose from. Your goal is to select the option that is logically consistent with the paragraph. Use the information provided in the paragraph to determine the correct order of the objects.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,82,100
+148,False,meta_desc,,"
+{paragraph}
+Options:
+{options}
+Output:
+
+",1,other,11,100
+149,False,meta_desc,,"
+Deduce the order of a sequence of seven objects based on given statements. Use the provided options to answer each question.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,38,100
+150,False,meta_desc,,"
+Deduce the order of a sequence of seven objects based on logical statements. Use the given statements to eliminate incorrect options and choose the correct order. Try to use the process of elimination and logical reasoning to arrive at the correct answer. 
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,61,100
+151,False,meta_desc,,"
+Deduce the order of a sequence of seven objects based on logical statements. Use the given statements to derive the correct answer. Try to eliminate options that are logically impossible.
+Statements: {paragraph}
+Options:
+{options}
+Output:",1,SEP_VARS,48,100
+152,False,meta_desc,,"
+Deduce the order of a sequence of seven objects based on logical statements. Use the given logical statements to eliminate answer choices and determine the correct order. Remember to consider all the statements before making a decision.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,55,100
+153,False,meta_desc,,"
+Deduce the correct order of a sequence of seven objects based on given logical statements. Use the information provided in the statements to eliminate options and arrive at the correct answer.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,48,100
+154,False,meta_desc,,"
+Given a set of logical statements about the order of a sequence of seven objects, choose the correct option from a multiple-choice list that deduces the order of the objects.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,47,100
+155,False,meta_desc,,"
+Given a sequence of seven objects and a set of logical statements, determine the correct order of the objects and select the corresponding option from a multiple-choice list. 
+Statements: {paragraph}
+Multiple-choice options:
+{options}
+Answer:
+
+",1,SEP_VARS,47,100
+156,False,meta_desc,,"
+Deduce the order of a sequence of seven objects based on given statements. Use the provided multi-choice options to select the correct order.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,41,100
+157,False,meta_desc,,"
+Deduce the order of a sequence of objects based on given statements and choose the correct option among the given choices. Use the information given in the statements to infer the correct order of the objects.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,53,100
+158,False,meta_desc,,"
+Deduce the order of a sequence of objects based on given statements. Choose the correct option among the given choices.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,37,100
+159,False,meta_desc,,"
+Deduce the order of a sequence of seven objects based on logical statements. Choose the correct option from the given choices. 
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,39,100
+160,False,meta_desc,,"
+Deduce the order of a sequence of seven objects based on logical statements. Choose the correct option from the given choices. Try to reason through the statements and eliminate options that don't fit the criteria.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,54,100
+161,False,meta_desc,,"
+Deduce the order of a sequence of seven objects based on logically consistent statements. Choose the correct option that fits the given statements.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,40,100
+162,False,meta_desc,,"
+Deduce the order of a sequence of seven objects based on logically consistent statements. Select the correct option from the given statements. 
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,40,100
+163,False,meta_desc,,"
+Given a sequence of seven objects, deduce their order based on logically consistent statements. Use the following options to select the correct order.
+Sequence: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,40,100
+164,False,meta_desc,,"
+Deduce the order of a sequence of seven objects based on logically consistent statements. Use the given options to select the correct order. Read the statements carefully and use logical deduction to eliminate incorrect options. 
+Statements: {paragraph}
+Options:
+{options}
+Output:",1,SEP_VARS,54,100
+165,False,meta_desc,,"
+Deduce the order of a sequence of seven objects based on logically consistent statements. Use the following multi-choice format: ""Which of the following is true?"" followed by four options.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,50,100
+166,False,meta_desc,,"
+Deduce the order of a sequence of seven objects based on logically consistent statements. Use the following options to answer: A is before B, A is after B, A and B are adjacent, A and B are not adjacent, or cannot be determined.
+Statements: {paragraph}
+Options:
+{options}
+Output:",0,SEP_VARS,65,100
+167,False,meta_desc,,"
+Given a sequence of seven objects arranged in a fixed order, select the correct option from a set of choices. Use the information provided in the question to deduce the correct order of the objects.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,52,100
+168,False,meta_desc,,"
+Deduce the correct order of a sequence of objects by reading a question that describes a set of seven objects arranged in a fixed order, and selecting the correct option from a set of options. Use the information provided in the question to make your selection. 
+Question: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,65,100
+169,False,meta_desc,,"
+Given a set of paragraphs describing a sequence of seven objects arranged in a fixed order, choose the correct option from a set of options based on logical deduction.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:",1,SEP_VARS,44,100
+170,False,meta_desc,,"
+Given a set of paragraphs describing a sequence of seven objects arranged in a fixed order, choose the correct option from a set of choices. Use logical deduction to determine the correct option based on the information provided in the paragraph.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:",1,SEP_VARS,57,100
+171,False,meta_desc,,"
+Deduce the order of a sequence of seven objects based on a given paragraph and set of options. Use your logical reasoning skills to determine the correct order.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,45,100
+172,False,meta_desc,,"
+Deduce the order of a sequence of seven objects based on a given paragraph and set of options. Use logical reasoning to determine the correct order.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:",1,SEP_VARS,43,100
+173,False,meta_desc,,"
+Given a set of paragraphs describing a fixed order of seven objects and multiple options to choose from, deduce the correct option based on the logical consistency within each paragraph.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,46,100
+174,False,meta_desc,,"
+Deduce the correct order of a sequence of objects based on a given paragraph. Choose the correct option from a set of {options} based on the information provided in the {paragraph}.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",0,SEP_VARS,51,100
+175,False,meta_desc,,"
+Given a sequence of seven objects, your task is to deduce their order based on the provided paragraph. You will also be given a set of options that are logically consistent with the paragraph. Use your logical deduction skills to choose the correct option.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,62,100
+176,False,meta_desc,,"
+Given a sequence of seven objects, your task is to deduce the correct order of the objects. You will be presented with a paragraph that describes the order of the objects and a set of options to choose from. Your goal is to select the option that is logically consistent with the paragraph. 
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,72,100
+177,False,meta_desc,,"
+Given a sequence of seven objects, choose the option that logically follows from the provided paragraph. Keep in mind the order of the objects and use deductive reasoning to make your choice.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,49,100
+178,False,meta_desc,,"
+Given a sequence of seven objects, deduce the correct order of the objects based on a provided paragraph and set of options. Choose the option that logically follows from the paragraph. 
+Paragraph: {paragraph}
+Options: 
+{options}
+Output:",1,SEP_VARS,50,100
+179,False,meta_desc,,"
+Given a set of seven objects arranged in a fixed order described in a paragraph, select the option that logically follows from the paragraph.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,39,100
+180,False,meta_desc,,"
+Given a sequence of seven objects arranged in a fixed order, select the option that logically follows from the paragraph describing the sequence.
+{paragraph}
+Options:
+{options}
+Output:",1,other,36,100
+181,False,meta_desc,,"
+Given a logical sequence of seven objects, deduce the correct order and choose the corresponding option from the given choices.
+Question: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,36,100
+182,False,meta_desc,,"
+Given a paragraph describing the logical order of seven objects and a set of options, deduce the correct order of the objects. Use the information provided in the paragraph to eliminate incorrect options and select the correct one.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:",1,SEP_VARS,55,100
+183,False,meta_desc,,"
+Deduce the correct order of a sequence of seven objects based on the given paragraph. Choose the option that logically follows from the statements in the paragraph.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,44,100
+184,False,meta_desc,,"
+Given a set of seven objects arranged in a fixed order, deduce the correct option that logically follows from the statements in the paragraph. Use your logical deduction skills to determine the correct answer from the multiple-choice options presented below the paragraph.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,60,100
+185,False,meta_desc,,"
+Given a set of seven objects arranged in a fixed order, your task is to select the option that is logically consistent with the paragraph describing the objects and their order. Think carefully about the relationships between the objects and use your deductive skills to make the best choice.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,66,100
+186,False,meta_desc,,"
+Given a paragraph describing a set of seven objects arranged in a fixed order and a set of options to choose from, select the option that is logically consistent with the paragraph. Keep in mind the order of the objects and use deductive reasoning to make your selection.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,65,100

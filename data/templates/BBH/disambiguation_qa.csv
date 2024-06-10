@@ -1,0 +1,865 @@
+prompt idx,default prompt,method,language style,prompt template,correct,prompt format,prompt length,samples
+1,True,default,,"Q: In the following sentences, explain the antecedent of the pronoun (which thing the pronoun refers to), or state that it is ambiguous.
+Sentence: {sentence}
+Options:
+{options}
+A:",1,Q&A,44,100
+2,False,rephrase,,"Clarify the antecedent of the pronoun in the given sentence or state that it is ambiguous.
+Sentence: {sentence}
+Choose the correct option from the following:
+{options}
+A:",1,SEP_VARS,39,100
+3,False,rephrase,,"In the given sentence, identify the antecedent of the pronoun or state that it is ambiguous.
+Sentence: {sentence}
+Choose the correct option from the following:
+{options}
+Answer:",1,SEP_VARS,39,100
+4,False,rephrase,,"Clarify the antecedent of the pronoun or state that it is ambiguous in the following sentence:
+Sentence: {sentence}
+Choose the correct option from the following:
+{options}
+A:",1,SEP_VARS,39,100
+5,False,rephrase,,"Clarify the antecedent of the pronoun in the following sentence or state that it is ambiguous:
+Sentence: {sentence}
+Choose the correct option from the following:
+{options}",1,SEP_VARS,37,100
+6,False,rephrase,,"Clarify the meaning of the sentence with the ambiguous pronoun. Identify the antecedent of the pronoun in the sentence ""{sentence}"" or state that it is ambiguous. Choose the correct option from the following choices: {options}.",1,SEP_VARS,47,100
+7,False,rephrase,,"Clarify the antecedent of the pronoun in the following sentence, or state that it is ambiguous:
+Sentence: {sentence}
+Choose the correct option:
+{options}
+A:",1,SEP_VARS,37,100
+8,False,rephrase,,"Clarify the antecedent of the pronoun in the following sentence or state that it is ambiguous.
+Sentence: {sentence}
+Choose the correct antecedent from the following options:
+{options}
+A:",1,SEP_VARS,42,100
+9,False,rephrase,,"Q: Identify the antecedent of the pronoun in the given sentence or indicate if it is ambiguous.
+Sentence: {sentence}
+Choose from the following options:
+{options}
+A:",1,Q&A,38,100
+10,False,rephrase,,"Q: Identify the antecedent of the pronoun used in the given sentence or indicate if it is ambiguous.
+Sentence: {sentence}
+Choose from the following options:
+{options}
+A:",1,Q&A,39,100
+11,False,rephrase,,"Clarify the antecedent of the pronoun in the following sentence or state that it is ambiguous:
+Sentence: {sentence}
+Choose the correct option:
+{options}
+A:",1,SEP_VARS,36,100
+12,False,rephrase,,"Clarify the meaning of the sentence by identifying the antecedent of the pronoun (which thing the pronoun refers to) or state that it is ambiguous.
+Sentence: {sentence}
+Choose the correct option from the following:
+{options}
+A:",1,SEP_VARS,51,100
+13,False,rephrase,,"Clarify the meaning of the sentence provided by identifying the antecedent of the pronoun or stating if it is ambiguous.
+Sentence: {sentence}
+Select the option that correctly identifies the antecedent of the pronoun.
+Options:
+{options}
+Provide your answer below.",1,SEP_VARS,55,100
+14,False,rephrase,,"Clarify the meaning of the sentence with the ambiguous pronoun in the following sentence by identifying the antecedent of the pronoun or stating that it is ambiguous.
+Sentence: {sentence}
+Choose the correct option from the following:
+{options}
+Answer:",1,SEP_VARS,51,100
+15,False,rephrase,,"Clarify the meaning of the sentence by identifying the antecedent of the pronoun in the given sentence: {sentence}. If the antecedent is ambiguous, state it. Choose the correct option from the following choices: {options}.",1,SEP_VARS,48,100
+16,False,rephrase,,"Clarify the meaning of the sentence by explaining the antecedent of the pronoun or state that it is ambiguous.
+Sentence: {sentence}
+Choose the correct option from the following:
+{options}
+A:",1,SEP_VARS,42,100
+17,False,rephrase,,"Clarify the meaning of the sentence by identifying the antecedent of the pronoun in the following sentence: ""{sentence}"". If the antecedent is ambiguous, state that it is unclear. Choose from the following options: {options}.",1,SEP_VARS,48,100
+18,False,rephrase,,"Clarify the antecedent of the pronoun in the given sentence or state that it is ambiguous.
+Sentence: {sentence}
+Select the correct option from the following:
+{options}
+A:",1,SEP_VARS,39,100
+19,False,rephrase,,"Q: Identify the antecedent of the pronoun in the given sentence or state that it is ambiguous.
+Sentence: {sentence}
+Choose from the following options:
+{options}
+A:",1,Q&A,38,100
+20,False,rephrase,,"Clarify the antecedent of the pronoun in the given sentence or state that it is ambiguous.
+Sentence: {sentence}
+Choose the most appropriate option from the following:
+{options}
+A:",1,SEP_VARS,40,100
+21,False,rephrase,,"Clarify the antecedent of the pronoun in the given sentence or state that it is ambiguous.
+Sentence: {sentence}
+Choose the correct option from the following:
+{options}
+Answer:",1,SEP_VARS,39,100
+22,False,rephrase,,"Clarify the meaning of the following sentence by explaining the antecedent of the pronoun (which thing the pronoun refers to), or state that it is ambiguous:
+Sentence: {sentence}
+Select the option that best describes the antecedent of the pronoun:
+{options}
+A:",1,SEP_VARS,59,100
+23,False,rephrase,,"Q: Identify the antecedent of the pronoun in the given sentence or indicate if it is ambiguous.
+Sentence: {sentence}
+Select the option that correctly identifies the antecedent of the pronoun from the following:
+{options}
+A:",1,Q&A,50,100
+24,False,rephrase,,"Clarify the antecedent of the pronoun in the given sentence or state if it is ambiguous.
+Sentence: {sentence}
+Choose the correct option from the following:
+{options}",1,SEP_VARS,37,100
+25,False,rephrase,,"Clarify the antecedent of the pronoun in the following sentence or state if it is ambiguous:
+Sentence: {sentence}
+Choose the correct option:
+{options}",1,SEP_VARS,34,100
+26,False,rephrase,,"Clarify the antecedent of the pronoun in the following sentence or state that it is ambiguous.
+Sentence: {sentence}
+Choose the correct option from the following:
+{options}
+Answer:",1,SEP_VARS,39,100
+27,False,rephrase,,"Q: For the given sentence, identify the antecedent of the ambiguous pronoun or state that it is ambiguous.
+Sentence: {sentence}
+Choose the option that correctly identifies the antecedent of the pronoun:
+{options}
+A:",1,Q&A,49,100
+28,False,rephrase,,"Q: For the given sentence, identify the antecedent of the ambiguous pronoun or state that it is unclear.
+Sentence: {sentence}
+Choose the correct option:
+{options}
+A:",1,Q&A,39,100
+29,False,rephrase,,"Q: For the given sentence, identify the antecedent of the ambiguous pronoun or state that it is unclear.
+Sentence: {sentence}
+Choose the option that best clarifies the meaning of the sentence:
+{options}
+A:",1,Q&A,47,100
+30,False,rephrase,,"Q: Disambiguate the meaning of the following sentence by identifying the antecedent of the pronoun or stating that it is ambiguous.
+Sentence: {sentence}
+Choose the option that correctly identifies the antecedent of the pronoun:
+{options}
+A:",1,Q&A,54,100
+31,False,rephrase,,"Q: Disambiguate the meaning of the following sentence by identifying the antecedent of the pronoun or state if it is ambiguous.
+Sentence: {sentence}
+Choose the correct antecedent from the following options:
+{options}
+A:",1,Q&A,50,100
+32,False,rephrase,,"Q: Determine the antecedent of the pronoun in the given sentence or state if it is ambiguous.
+Sentence: {sentence}
+Choose the option that best describes the antecedent:
+{options}
+A:",1,Q&A,43,100
+33,False,rephrase,,"Q: For the given sentence, identify the antecedent of the ambiguous pronoun or state that it is unclear.
+Sentence: {sentence}
+Choose the option that best describes the antecedent of the pronoun:
+{options}
+A:",1,Q&A,49,100
+34,False,rephrase,,"Q: For the given sentence, identify the antecedent of the ambiguous pronoun or state that it is unclear.
+Sentence: {sentence}
+Choose the option that best clarifies the meaning of the sentence.
+Options:
+{options}
+A:",1,Q&A,49,100
+35,False,rephrase,,"Q: Disambiguate the meaning of the pronoun in the following sentence:
+Sentence: {sentence}
+Which of the following options best represents the antecedent of the pronoun?
+{options}
+A:",1,Q&A,43,100
+36,False,rephrase,,"Q: For the given sentence, identify the antecedent of the ambiguous pronoun or state that it is ambiguous.
+Sentence: {sentence}
+Choose the option that best describes the antecedent:
+{options}
+A:",1,Q&A,45,100
+37,False,rephrase,,"Q: For the given sentence, identify the antecedent of the ambiguous pronoun or state that it is unclear.
+Sentence: {sentence}
+Choose the option that best describes the antecedent:
+{options}
+A:",1,Q&A,45,100
+38,False,rephrase,,"Q: Clarify the antecedent of the pronoun in the following sentence or state that it is ambiguous.
+Sentence: {sentence}
+Which of the following options best describes the antecedent of the pronoun?
+{options}
+A:",1,Q&A,49,100
+39,False,rephrase,,"Q: For the given sentence, identify the antecedent of the ambiguous pronoun or indicate if it is unclear.
+Sentence: {sentence}
+Choose the option that correctly identifies the antecedent:
+{options}
+A:",1,Q&A,45,100
+40,False,rephrase,,"Q: For the given sentence, determine the antecedent of the ambiguous pronoun or state that it is unclear.
+Sentence: {sentence}
+Choose the most appropriate option:
+{options}
+A:",1,Q&A,40,100
+41,False,rephrase,,"Q: For the given sentence, determine the antecedent of the ambiguous pronoun or state that it is unclear.
+Sentence: {sentence}
+Options:
+{options}
+A:",1,Q&A,36,100
+42,False,rephrase,,"Q: For the given sentence, identify the antecedent of the ambiguous pronoun or state that it is ambiguous.
+Sentence: {sentence}
+Choose the correct antecedent from the following options:
+{options}
+A:",1,Q&A,45,100
+43,False,rephrase,,"Q: Disambiguate the antecedent of the pronoun in the following sentence, or state that it is ambiguous.
+Sentence: {sentence}
+Choose the option that best describes the antecedent:
+{options}
+A:",1,Q&A,47,100
+44,False,rephrase,,"Q: For the given sentence, determine the antecedent of the ambiguous pronoun or state that it is ambiguous.
+Sentence: {sentence}
+Options:
+{options}
+A:",1,Q&A,36,100
+45,False,rephrase,,"Q: Disambiguate the antecedent of the pronoun in the following sentence or state that it is ambiguous.
+Sentence: {sentence}
+Choose the correct antecedent from the following options:
+{options}
+A:",1,Q&A,46,100
+46,False,rephrase,,"Q: For the given sentence, identify the antecedent of the ambiguous pronoun or state that it is unclear.
+Sentence: {sentence}
+Choose the option that best identifies the antecedent:
+{options}
+A:",1,Q&A,45,100
+47,False,rephrase,,"Q: Clarify the antecedent of the pronoun in the following sentence or state that it is ambiguous.
+Sentence: {sentence}
+Choose the option that best describes the antecedent of the pronoun:
+{options}
+A:",1,Q&A,48,100
+48,False,rephrase,,"Q: Determine the antecedent of the pronoun in the given sentence or state if it is ambiguous.
+Sentence: {sentence}
+Choose the correct option from the following:
+{options}
+A:",1,Q&A,40,100
+49,False,rephrase,,"Q: For the given sentence, identify the antecedent of the ambiguous pronoun or state if it is unclear.
+Sentence: {sentence}
+Choose the option that best represents the antecedent of the pronoun:
+{options}
+A:",1,Q&A,49,100
+50,False,rephrase,,"Q: Clarify the antecedent of the pronoun in the following sentence or state that it is ambiguous.
+Sentence: {sentence}
+Options:
+{options}",1,SEP_VARS,33,100
+51,False,rephrase,,"Q: For the given sentence, determine the antecedent of the ambiguous pronoun or state that it is unclear.
+Sentence: {sentence}
+Choose the option that best clarifies the meaning of the sentence.
+Options:
+{options}
+A:",1,Q&A,49,100
+52,False,meta_cot,,"Please clarify the meaning of the sentence by identifying the antecedent of the pronoun or stating that it is ambiguous. The given sentence is ""{sentence}"" and the options are: {options}.",1,SEP_VARS,39,100
+53,False,meta_cot,,"Your task is to explain which option correctly identifies the antecedent of the pronoun in the given sentence or state that it is ambiguous. The sentence is ""{sentence}"" and the available options are: {options}.",1,SEP_VARS,43,100
+54,False,meta_cot,,"The model needs to clarify the meaning of the sentence by identifying the antecedent of the pronoun or stating that it is ambiguous. The sentence is ""{sentence}"" and the options are: {options}.",1,SEP_VARS,41,100
+55,False,meta_cot,,"Identify the antecedent of the pronoun or state that it is ambiguous in the given sentence. The sentence is ""{sentence}"" and the options are: {options}.",1,SEP_VARS,35,100
+56,False,meta_cot,,"The task requires the model to determine the antecedent of the pronoun in the given sentence or state that it is ambiguous. The sentence is ""{sentence}"" and the options are: {options}.",1,SEP_VARS,40,100
+57,False,meta_cot,,Please explain what the pronoun in the sentence refers to. The sentence is: {sentence}. The possible options are: {options}.,1,SEP_VARS,27,100
+58,False,meta_cot,,Your task is to clarify the meaning of the sentence by explaining the antecedent of the pronoun. The sentence is: {sentence}. The options are: {options}.,1,SEP_VARS,35,100
+59,False,meta_cot,,"In the following sentence, please explain the antecedent of the pronoun or state that it is ambiguous: {sentence}. The possible options are: {options}.",1,SEP_VARS,33,100
+60,False,meta_cot,,Your task is to determine the antecedent of the pronoun in the following sentence or state that it is ambiguous: {sentence}. The options are: {options}.,1,SEP_VARS,34,100
+61,False,meta_cot,,"Please clarify the meaning of the sentence by explaining the antecedent of the pronoun or stating that it is ambiguous. The sentence is ""{sentence}"" and the available options are: {options}.",1,SEP_VARS,39,100
+62,False,meta_cot,,"Your task is to disambiguate the meaning of the sentence by identifying the antecedent of the pronoun or stating that it is unclear. The sentence you need to analyze is ""{sentence}"" and the options are: {options}.",1,SEP_VARS,48,100
+63,False,meta_cot,,"In order to complete this task, you need to identify the antecedent of the pronoun in the given sentence or indicate that it is ambiguous. The sentence is ""{sentence}"" and the available options are: {options}.",1,SEP_VARS,45,100
+64,False,meta_cot,,"Your goal is to clarify the meaning of the sentence by explaining which thing the pronoun refers to or stating that it is ambiguous. The sentence you need to analyze is ""{sentence}"" and the options are: {options}.",1,SEP_VARS,44,100
+65,False,meta_cot,,"Please clarify the meaning of the sentence by explaining which thing the pronoun refers to or state that it is ambiguous. The sentence is ""{sentence}"" and the available options are ""{options}"".",1,other,37,100
+66,False,meta_cot,,"Your task is to disambiguate the meaning of a sentence that contains a pronoun with an ambiguous antecedent. You will be given a sentence, ""{sentence}"", and a set of options, ""{options}"". Your goal is to explain which option correctly identifies the antecedent of the pronoun or state that it is ambiguous.",1,other,68,100
+67,False,meta_cot,,"The task is to identify the antecedent of a pronoun in a sentence or state that it is ambiguous. You will be given a sentence, ""{sentence}"", and a set of options, ""{options}"". Please provide an explanation for which option correctly identifies the antecedent of the pronoun or state that it is ambiguous.",0,other,66,100
+68,False,meta_cot,,"Given a sentence with an ambiguous pronoun, your task is to explain which thing the pronoun refers to, or state that it is ambiguous. The sentence you will be working with is ""{sentence}"", and you will have a set of options to choose from, ""{options}"". Please provide your explanation accordingly.",1,other,61,100
+69,False,meta_cot,,"Please explain the meaning of the sentence by identifying the antecedent of the pronoun or state that it is ambiguous. The sentence is ""{sentence}"" and the options are ""{options}"".",1,other,37,100
+70,False,meta_cot,,"Your task is to clarify the meaning of the sentence by identifying the antecedent of the pronoun or state that it is ambiguous. The sentence you need to analyze is ""{sentence}"" and the options are ""{options}"".",1,other,44,100
+71,False,meta_cot,,"In order to complete this task, you need to explain the antecedent of the pronoun in the sentence ""{sentence}"" or state that it is ambiguous. The options you have are ""{options}"".",1,other,40,100
+72,False,meta_cot,,"Your goal is to clarify the meaning of the sentence by identifying the antecedent of the pronoun or state that it is ambiguous. The sentence you need to analyze is ""{sentence}"" and the options are ""{options}"".",1,other,44,100
+73,False,meta_cot,,"Analyze the sentence ""{sentence}"" and identify the antecedent of the pronoun or state that it is ambiguous. You have the following options: ""{options}"".",1,other,33,100
+74,False,meta_cot,,Please clarify the meaning of the sentence by explaining which thing the pronoun refers to or state that it is ambiguous. The sentence is: {sentence}. The options are: {options}.,1,SEP_VARS,37,100
+75,False,meta_cot,,Your task is to disambiguate the meaning of the sentence by explaining which thing the pronoun refers to or state that it is ambiguous. The sentence given is: {sentence}. The options are: {options}.,1,SEP_VARS,44,100
+76,False,meta_cot,,"In the following question, you are required to explain the antecedent of the pronoun or state that it is ambiguous. The sentence is: {sentence}. The options are: {options}.",1,SEP_VARS,39,100
+77,False,meta_cot,,Your goal is to clarify the meaning of the sentence by explaining which thing the pronoun refers to or state that it is ambiguous. The sentence provided is: {sentence}. The options are: {options}.,1,SEP_VARS,41,100
+78,False,meta_cot,,Please provide an explanation of the sentence and identify the antecedent of the pronoun or state that it is ambiguous. Sentence: {sentence}. Available options: {options}.,1,SEP_VARS,35,100
+79,False,meta_cot,,Your task is to disambiguate sentences with ambiguous pronouns. Please explain which thing the pronoun refers to or state that it is unclear. The sentence to be disambiguated is: {sentence}. The available options are: {options}.,1,SEP_VARS,51,100
+80,False,meta_cot,,"In order to solve this task, you need to clarify the meaning of sentences with ambiguous pronouns. You will be given a sentence and multiple options to choose from. Please explain the antecedent of the pronoun or state that it is ambiguous. The sentence is: {sentence}. The available options are: {options}.",1,SEP_VARS,65,100
+81,False,meta_cot,,"Please provide an explanation of the sentence with ambiguous pronouns provided in the input. Specifically, explain which thing the pronoun refers to, or state that it is ambiguous. The sentence is ""{sentence}"" and the options are ""{options}"".",1,other,47,100
+82,False,meta_cot,,"Your task is to disambiguate sentences with pronouns that have unclear antecedents. You will be given a sentence and a set of options, and you must explain which option refers to the antecedent of the pronoun, or state that it is ambiguous. The sentence you will be working with is ""{sentence}"", and the options are ""{options}"".",0,other,73,100
+83,False,meta_cot,,"Given a sentence with an ambiguous pronoun, your task is to clarify which thing the pronoun refers to. You will be provided with a sentence and a set of options, and you must explain which option is the antecedent of the pronoun, or state that it is ambiguous. The sentence is ""{sentence}"", and the options are ""{options}"".",0,other,71,100
+84,False,meta_cot,,"Provide an explanation for the sentence given in the input instruction template by identifying the antecedent of the pronoun in the sentence. If the antecedent is ambiguous, state so. The sentence is ""{sentence}"" and the options are ""{options}"".",0,other,50,100
+85,False,meta_cot,,"Given the sentence ""{sentence}"" and the options ""{options}"", determine the antecedent of the pronoun in the sentence. If the antecedent is unclear, indicate that it is ambiguous.",0,other,39,100
+86,False,meta_cot,,"Interpret the sentence provided in the input instruction template by identifying the antecedent of the pronoun. If the antecedent is not clear, state that it is ambiguous. The sentence is ""{sentence}"" and the options are ""{options}"".",0,other,49,100
+87,False,meta_cot,,"Explain the meaning of the sentence by identifying the antecedent of the pronoun. If the antecedent is ambiguous, indicate so. The sentence is ""{sentence}"" and the options are ""{options}"".",1,other,42,100
+88,False,meta_cot,,"In the input instruction template, there is a sentence and a list of options. Determine the antecedent of the pronoun in the sentence. If the antecedent is unclear, indicate that it is ambiguous. The sentence is ""{sentence}"" and the options are ""{options}"".",1,other,56,100
+89,False,meta_cot,,Please explain which thing the pronoun refers to in the following sentence: {sentence}. You can choose from the following options: {options}.,1,SEP_VARS,28,100
+90,False,meta_cot,,Your task is to clarify the meaning of the sentence by explaining which thing the pronoun refers to. The sentence is: {sentence}. You can choose from the following options: {options}.,1,SEP_VARS,38,100
+91,False,meta_cot,,"In the following sentence, please explain what the pronoun refers to: {sentence}. You can choose from the following options: {options}.",1,SEP_VARS,28,100
+92,False,meta_cot,,The goal of this task is to disambiguate the meaning of the sentence by explaining which thing the pronoun refers to. The sentence is: {sentence}. You can choose from the following options: {options}.,1,SEP_VARS,44,100
+93,False,meta_cot,,Your task is to determine the antecedent of the pronoun in the following sentence: {sentence}. You can choose from the following options: {options}.,1,SEP_VARS,32,100
+94,False,meta_cot,,"Provide an explanation for the meaning of the sentence and identify the antecedent of the pronoun or state that it is ambiguous. The sentence to be analyzed is ""{sentence}"" and the options are ""{options}"".",1,other,42,100
+95,False,meta_cot,,"Analyze the sentence provided and determine the antecedent of the pronoun or state that it is ambiguous. The sentence is ""{sentence}"" and the options are ""{options}"".",1,other,35,100
+96,False,meta_cot,,"Your task is to clarify the meaning of a sentence that contains an ambiguous pronoun. Specifically, you need to identify which thing the pronoun refers to or state that it is ambiguous. The sentence you need to analyze is ""{sentence}"" and the options are ""{options}"".",1,other,54,100
+97,False,meta_cot,,"Explain the meaning of the sentence and identify the antecedent of the pronoun or state that it is ambiguous. The sentence to be analyzed is ""{sentence}"" and the available options are ""{options}"".",1,other,41,100
+98,False,meta_cot,,"Explain the meaning of the sentence by identifying the antecedent of the pronoun in the sentence provided. If it is ambiguous, state so. The sentence is given as ""{sentence}"" and the options are ""{options}"".",1,other,45,100
+99,False,meta_cot,,"Your task is to disambiguate the meaning of sentences that contain ambiguous pronouns. Specifically, you need to identify which thing the pronoun in the given sentence refers to, or state that it is ambiguous. The sentence and options are provided as ""{sentence}"" and ""{options}"", respectively.",1,other,59,100
+100,False,meta_cot,,"Given a sentence with an ambiguous pronoun, your task is to clarify the meaning of the sentence by identifying which thing the pronoun refers to. If it is not possible to identify the antecedent, state that it is ambiguous. The sentence is provided as ""{sentence}"" and the options are ""{options}"".",1,other,62,100
+101,False,meta_cot,,"You are given a sentence and a set of options. Your task is to explain which thing the pronoun in the sentence refers to, or state that it is ambiguous. The sentence is provided as ""{sentence}"" and the options are ""{options}"".",1,other,49,100
+102,False,meta_cot,,Explain the meaning of the sentence {sentence} by identifying the antecedent of the pronoun or stating that it is ambiguous. The options are {options}.,0,other,33,100
+103,False,meta_cot,,"For the sentence {sentence}, determine the antecedent of the pronoun or state that it is ambiguous. Choose from the following options: {options}.",1,SEP_VARS,31,100
+104,False,meta_cot,,Identify the antecedent of the pronoun in the sentence {sentence} or indicate that it is ambiguous. The available options are {options}.,0,other,30,100
+105,False,meta_cot,,"Given the sentence {sentence} and the following options {options}, clarify the meaning of the sentence by identifying the antecedent of the pronoun or stating that it is ambiguous.",0,other,36,100
+106,False,meta_cot,,Your task is to explain the meaning of the sentence {sentence} by identifying the antecedent of the pronoun or stating that it is ambiguous. Choose the correct option from {options}.,1,other,38,100
+107,False,meta_cot,,"In the sentence {sentence}, determine the antecedent of the pronoun or state that it is ambiguous. The options are {options}.",1,other,28,100
+108,False,meta_cot,,"For the sentence {sentence}, identify the antecedent of the pronoun or indicate that it is ambiguous. Choose from the following options: {options}.",1,SEP_VARS,31,100
+109,False,meta_cot,,Explain the meaning of the sentence {sentence} by identifying the antecedent of the pronoun or stating that it is ambiguous. Choose the correct option from {options}.,1,other,35,100
+110,False,meta_cot,,Your task is to determine the antecedent of the pronoun in the sentence {sentence} or indicate that it is ambiguous. The available options are {options}.,0,other,33,100
+111,False,meta_cot,,"Given the sentence {sentence} and the options {options}, your goal is to identify the antecedent of the pronoun or state that it is ambiguous.",1,other,32,100
+112,False,meta_desc,,"
+Please clarify the meaning of the sentence by identifying the antecedent of the ambiguous pronoun or stating that it is ambiguous. Choose the correct option from the given choices.
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,47,100
+113,False,meta_desc,,"
+Please clarify the meaning of the sentence by identifying the antecedent of the ambiguous pronoun or stating that it is ambiguous. Choose the correct option from the following choices.
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,47,100
+114,False,meta_desc,,"
+Please clarify the meaning of the sentence by identifying the antecedent of the ambiguous pronoun or stating that it is ambiguous. Choose the correct option from the multiple-choice format provided. 
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,50,100
+115,False,meta_desc,,"
+Please clarify the meaning of the sentence by identifying the antecedent of the ambiguous pronoun or stating that it is ambiguous. Choose the best option from the provided multi-choice format. 
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,50,100
+116,False,meta_desc,,"
+Please clarify the meaning of the sentence by selecting the most likely antecedent for the ambiguous pronoun. If the sentence is ambiguous, select ""ambiguous"".
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,44,100
+117,False,meta_desc,,"
+Please clarify the meaning of the sentence by selecting the correct antecedent for the ambiguous pronoun or stating that it is ambiguous. Consider the sentence structure and verb usage to determine the most likely referent for the pronoun.
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,58,100
+118,False,meta_desc,,"
+Given a sentence with a pronoun, select the most likely antecedent from the provided options. Use the context and verb analysis to make your decision.
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,44,100
+119,False,meta_desc,,"
+Given a sentence with a pronoun, select the most likely antecedent from a list of options. Analyze the verbs and context to determine the referent for the pronoun.
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,50,100
+120,False,meta_desc,,"
+Please disambiguate the antecedent of the pronoun in the following sentence and select the correct option or mark it as ambiguous:
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,41,100
+121,False,meta_desc,,"
+Disambiguate the antecedent of the pronoun in the given sentence and select the correct option from the multiple choices or mark it as ambiguous.
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,44,100
+122,False,meta_desc,,"
+Disambiguate the pronoun in the following sentence and select the correct antecedent or state that it is ambiguous. You will be provided with multiple choice options for possible antecedents. 
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,53,100
+123,False,meta_desc,,"
+Disambiguate the pronoun in the sentence and select the correct antecedent or state that it is ambiguous. You will be provided with a sentence containing a pronoun and multiple options for possible antecedents. Choose the option that best fits the context of the sentence. If the antecedent is ambiguous, select ""ambiguous"".
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,81,100
+124,False,meta_desc,,"
+Please clarify the meaning of the sentence by identifying the antecedent of the pronoun or stating that it is ambiguous. Choose the correct option from the multiple choices provided. Use your understanding of sentence structure and verb usage to derive the correct answer.
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,62,100
+125,False,meta_desc,,"
+Given a sentence with an ambiguous pronoun, clarify the meaning of the pronoun by identifying its antecedent or stating that it is ambiguous. You will be presented with a sentence and multiple choice options for the answer. Use your understanding of sentence structure and verb usage to derive the correct answer.
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,72,100
+126,False,meta_desc,,"
+Given a sentence with an ambiguous pronoun, clarify the meaning of the sentence by identifying the antecedent of the pronoun or stating that it is ambiguous. You will be presented with a multiple-choice format, where you must select the correct answer. 
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,64,100
+127,False,meta_desc,,"
+Given a sentence with an ambiguous pronoun, clarify the meaning by identifying the antecedent or stating that it is ambiguous. Choose the correct option from a list of choices provided.
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,49,100
+128,False,meta_desc,,"
+Given a sentence with an ambiguous pronoun, select the correct antecedent or indicate that the pronoun is ambiguous. Choose from the multiple-choice options provided.
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,45,100
+129,False,meta_desc,,"
+Please clarify the meaning of sentences with ambiguous pronouns by explaining the antecedent of the pronoun or stating that it is ambiguous, given a sentence and options. The options should include potential antecedents and the option ""ambiguous"". 
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,61,100
+130,False,meta_desc,,"
+Please clarify the meaning of the sentence by identifying the antecedent of the ambiguous pronoun or stating if it is ambiguous. Choose the correct option from the multiple-choice answers provided.
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,49,100
+131,False,meta_desc,,"
+Please clarify the meaning of the sentence by identifying the antecedent of the ambiguous pronoun or stating if it is ambiguous. Choose the correct option from the multiple choices provided. 
+Sentence: {sentence}
+Options:
+{options}
+Output:",1,SEP_VARS,49,100
+132,False,meta_desc,,"
+Please clarify the meaning of the sentence by identifying the antecedent of the ambiguous pronoun or stating that it is ambiguous. Use the provided options to select the most likely referent for the pronoun.
+Sentence: {sentence}
+Options:
+{options}
+Output:",1,SEP_VARS,54,100
+133,False,meta_desc,,"
+Please clarify the meaning of the following sentence by selecting the correct antecedent for the ambiguous pronoun or stating that it is ambiguous.
+Sentence: {sentence}
+Options:
+{options}
+Output:",1,SEP_VARS,40,100
+134,False,meta_desc,,"
+Given a sentence and a set of options, clarify the meaning of sentences with ambiguous pronouns. Explain which thing the pronoun refers to, or state that it is ambiguous. Use natural language to provide the explanation.
+Sentence: {sentence}
+Options:
+{options}
+Output:",1,SEP_VARS,56,100
+135,False,meta_desc,,"
+Given a sentence and a set of options, clarify the meaning of sentences with ambiguous pronouns. Explain which thing the pronoun refers to or state that it is ambiguous. Use natural language to provide a clear and concise explanation.
+Sentence: {sentence}
+Options:
+{options}
+Output:",1,SEP_VARS,58,100
+136,False,meta_desc,,"
+Given a sentence with an ambiguous pronoun and a set of options, clarify which thing the pronoun refers to or state that it is ambiguous.
+Sentence: {sentence}
+Options:
+{options}
+Output:",1,SEP_VARS,42,100
+137,False,meta_desc,,"
+Clarify the meaning of sentences with ambiguous pronouns. Given a sentence and a set of options, explain which thing the pronoun refers to in the sentence or state that it is ambiguous. Use natural language and provide a clear and concise explanation.
+Sentence: {sentence}
+Options:
+{options}
+Output:",1,SEP_VARS,62,100
+138,False,meta_desc,,"
+Please clarify the meaning of the sentence by identifying the antecedent of the ambiguous pronoun. You will be given a sentence and a set of options. Please select the option that correctly identifies the antecedent of the pronoun or state that it is ambiguous.
+Sentence: {sentence}
+Options:
+{options}
+Output:",1,SEP_VARS,66,100
+139,False,meta_desc,,"
+Please clarify the meaning of the following sentence by explaining the antecedent of the ambiguous pronoun or stating that it is ambiguous. The sentence is: ""{sentence}"". Which of the following options best clarifies the meaning of the sentence? {options}
+Output:",1,other,53,100
+140,False,meta_desc,,"
+Please clarify the meaning of the sentence with the ambiguous pronoun by explaining the antecedent or stating that it is ambiguous.
+Sentence: {sentence}
+Options:
+{options}
+Output:",1,SEP_VARS,38,100
+141,False,meta_desc,,"
+Given a sentence with an ambiguous pronoun, clarify the meaning by explaining the antecedent of the pronoun or stating that it is ambiguous.
+Sentence: {sentence}
+Options:
+{options}
+Output:",1,SEP_VARS,42,100
+142,False,meta_desc,,"
+Please clarify the meaning of the following sentence by explaining the antecedent of the pronoun or stating that it is ambiguous.
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,38,100
+143,False,meta_desc,,"
+Disambiguation QA is a task that requires the model to clarify the meaning of sentences with ambiguous pronouns. The task format is multi-choice, and it contains two keywords: sentence and options. The sentence keyword refers to the sentence that contains the ambiguous pronoun, and the options keyword refers to the possible antecedents of the pronoun. Your task is to explain the antecedent of the pronoun or state that it is ambiguous.
+Sentence: {sentence}
+Options:",0,SEP_VARS,98,100
+144,False,meta_desc,,"
+Disambiguation QA is a task format that requires a model to clarify the meaning of sentences with ambiguous pronouns. Given a sentence containing an ambiguous pronoun and a set of possible antecedents, the model must identify the correct antecedent or state that it is ambiguous.
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,70,100
+145,False,meta_desc,,"
+Given a sentence with ambiguous pronouns and a set of options, clarify the meaning of the sentence by explaining the antecedent of the pronoun or stating that it is ambiguous. Use natural language to provide a clear and concise explanation.
+Sentence: {sentence}
+Options:
+{options}
+Output:",1,SEP_VARS,60,100
+146,False,meta_desc,,"
+Clarify the meaning of a sentence with ambiguous pronouns. Explain the antecedent of the pronoun or state that it is ambiguous.
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,41,100
+147,False,meta_desc,,"
+Given a sentence containing a pronoun whose antecedent is ambiguous, explain which thing the pronoun refers to or state that it is ambiguous. You will be provided with the sentence and options to choose from.
+Sentence: {sentence}
+Options:
+{options}
+Output:",1,SEP_VARS,55,100
+148,False,meta_desc,,"
+Given a sentence containing a pronoun with an ambiguous antecedent and a set of options, explain which thing the pronoun refers to, or state that it is ambiguous.
+Sentence: {sentence}
+Options:
+{options}
+Output:",1,SEP_VARS,48,100
+149,False,meta_desc,,"
+Given a sentence and a list of options, clarify the meaning of sentences with ambiguous pronouns. Explain which thing the pronoun in the sentence refers to, or state that it is ambiguous. Use natural language to provide a clear and concise explanation.
+Sentence: {sentence}
+Options:
+{options}
+Output:",1,SEP_VARS,62,100
+150,False,meta_desc,,"
+Given a sentence and a list of options, clarify the meaning of sentences with ambiguous pronouns. Explain which thing the pronoun in the sentence refers to, or state that it is ambiguous.
+Sentence: {sentence}
+Options:
+{options}
+Output:",1,SEP_VARS,51,100
+151,False,meta_desc,,"
+Please clarify the meaning of the sentence by identifying the antecedent of the ambiguous pronoun or stating that it is ambiguous. Choose the correct option from the provided multi-choice format.
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,49,100
+152,False,meta_desc,,"
+Please clarify the meaning of the following sentence by identifying the antecedent of the ambiguous pronoun or stating that it is ambiguous. Choose the correct option from the provided multi-choice format.
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,50,100
+153,False,meta_desc,,"
+Given a sentence with an ambiguous pronoun, determine the antecedent of the pronoun or state that it is ambiguous. Choose the correct option from the multiple choices provided.
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,48,100
+154,False,meta_desc,,"
+Given a sentence with an ambiguous pronoun, please clarify the meaning by identifying the antecedent or stating that it is ambiguous. Choose the correct option from the multiple choices provided.
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,49,100
+155,False,meta_desc,,"
+Given a sentence with an ambiguous pronoun and a set of options for its antecedent, select the correct option or state that it is ambiguous. To solve this task, analyze the sentence structure and verb usage to determine the most likely referent for the pronoun.
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,67,100
+156,False,meta_desc,,"
+Given a sentence with an ambiguous pronoun, select the most likely antecedent from the multiple-choice options provided or state that it is ambiguous. To determine the correct answer, analyze the sentence structure and verb usage to identify the referent of the pronoun.
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,65,100
+157,False,meta_desc,,"
+Given a sentence with a pronoun, select the most likely referent from the options provided. Consider the context and the verbs used in the sentence to disambiguate the antecedent of the pronoun.
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,56,100
+158,False,meta_desc,,"
+Given a sentence with a pronoun, select the most likely referent from the multiple choices provided. Use context and verb analysis to determine the correct option.
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,44,100
+159,False,meta_desc,,"
+Given a sentence with a pronoun, disambiguate the antecedent of the pronoun and select the correct option from the multiple choices or mark it as ambiguous.
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,48,100
+160,False,meta_desc,,"
+Given a sentence with a pronoun, disambiguate the antecedent of the pronoun and select the correct option from multiple choices or mark it as ambiguous.
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,47,100
+161,False,meta_desc,,"
+Given a sentence with a pronoun, select the correct antecedent or state that it is ambiguous.
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,34,100
+162,False,meta_desc,,"
+Given a sentence with a pronoun, select the correct antecedent or choose ""ambiguous"" if the sentence is unclear.
+Sentence: {sentence}
+Options:
+{options}
+Output:
+",1,SEP_VARS,38,100
+163,False,meta_desc,,"
+Please select the correct antecedent or indicate if the pronoun is ambiguous in the following sentence:
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,33,100
+164,False,meta_desc,,"
+Clarify the meaning of sentences with ambiguous pronouns by identifying their antecedent or stating that it is ambiguous. Choose the correct option from the given choices. Analyze the sentence structure and verb usage to derive the correct answer.
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,59,100
+165,False,meta_desc,,"
+Please clarify the meaning of the sentence by identifying the antecedent of the ambiguous pronoun or stating that it is ambiguous. Choose the correct option from the provided multi-choice answers.
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,49,100
+166,False,meta_desc,,"
+Given a sentence with an ambiguous pronoun, determine the correct antecedent or state that it is ambiguous. Choose the best option from the multiple choices provided.
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,45,100
+167,False,meta_desc,,"
+Given a sentence with an ambiguous pronoun, select the correct antecedent or state that it is ambiguous.
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,35,100
+168,False,meta_desc,,"
+Please clarify the meaning of the following sentence by explaining the antecedent of the pronoun or stating if it is ambiguous:
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,38,100
+169,False,meta_desc,,"
+Read the sentence carefully and determine the antecedent of the pronoun. If the antecedent is not clear, choose ""ambiguous"" as the answer. 
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,46,100
+170,False,meta_desc,,"
+Given a sentence with an ambiguous pronoun and a set of options, clarify the meaning by selecting the correct antecedent or stating that it is ambiguous.
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,44,100
+171,False,meta_desc,,"
+Given a sentence with an ambiguous pronoun and a set of options, clarify the meaning of the sentence by selecting the correct antecedent or stating that it is ambiguous.
+Sentence: {sentence}
+Options:
+{options}
+Output:",1,SEP_VARS,47,100
+172,False,meta_desc,,"
+Please clarify the meaning of the sentence by selecting the correct option for the ambiguous pronoun. If the pronoun is ambiguous, please state so.
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,42,100
+173,False,meta_desc,,"
+Please clarify which thing the pronoun refers to in the given sentence or state that it is ambiguous. Choose from the provided options.
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,39,100
+174,False,meta_desc,,"
+Please clarify which thing the pronoun in the given sentence refers to. If it is ambiguous, please state so.
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,36,100
+175,False,meta_desc,,"
+Please clarify which thing the pronoun refers to in the given sentence or state that it is ambiguous.
+Sentence: {sentence}
+Options:
+{options}
+Output:",1,SEP_VARS,33,100
+176,False,meta_desc,,"
+Please clarify the meaning of the following sentence by selecting the option that correctly identifies the antecedent of the pronoun or state if it is ambiguous.
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,43,100
+177,False,meta_desc,,"
+Please clarify the meaning of the sentence by identifying the antecedent of the ambiguous pronoun. Choose the option that correctly identifies the antecedent or state that it is ambiguous.
+Sentence: {sentence}
+Options:
+{options}
+Output:",1,SEP_VARS,49,100
+178,False,meta_desc,,"
+Please clarify the meaning of the sentence by explaining the antecedent of the ambiguous pronoun or stating that it is ambiguous.
+Sentence: {sentence}
+Options:
+{options}
+Output:",1,SEP_VARS,38,100
+179,False,meta_desc,,"
+Given a sentence with an ambiguous pronoun, please clarify the meaning by identifying the antecedent of the pronoun or stating that it is ambiguous. Choose the correct option from the multiple choice provided.
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,53,100
+180,False,meta_desc,,"
+Please clarify the meaning of the sentence by identifying the antecedent of the pronoun or stating that it is ambiguous. Choose the correct option from the provided multiple choice answers.
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,48,100
+181,False,meta_desc,,"
+Given a sentence with an ambiguous pronoun, select the correct antecedent or indicate if the pronoun is ambiguous. You will be presented with multiple options to choose from.
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,48,100
+182,False,meta_desc,,"
+Given a sentence with an ambiguous pronoun, identify the correct antecedent or state that it is ambiguous. You will be presented with multiple options to choose from.
+Sentence: {sentence}
+Options:
+{options}
+Output:",1,SEP_VARS,46,100
+183,False,meta_desc,,"
+Please clarify the meaning of the sentence by identifying the antecedent of the ambiguous pronoun or state that it is ambiguous. Choose the correct option from the provided set.
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,47,100
+184,False,meta_desc,,"
+Please clarify the antecedent of the pronoun in the given sentence or state that it is ambiguous. You will be provided with a set of options to choose from.
+Sentence: {sentence}
+Options:
+{options}
+Output:",1,SEP_VARS,47,100
+185,False,meta_desc,,"
+Given a sentence containing a pronoun with an ambiguous antecedent, please explain which thing the pronoun refers to or state that it is ambiguous. Use the provided options to help you make your decision.
+Sentence: {sentence}
+Options:
+{options}
+Output:",1,SEP_VARS,54,100
+186,False,meta_desc,,"
+Given a sentence containing a pronoun whose antecedent is ambiguous, please explain which thing the pronoun refers to, or state that it is ambiguous. Remember to carefully read the sentence and consider all the options provided.
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,57,100
+187,False,meta_desc,,"
+Please clarify the meaning of the sentence by selecting the correct option that the pronoun refers to. If the pronoun is ambiguous, please state that it is unclear.
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,46,100
+188,False,meta_desc,,"
+Please clarify which thing the pronoun in the sentence refers to, or state that it is ambiguous.
+Sentence: {sentence}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,33,100

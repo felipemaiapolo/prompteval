@@ -1,0 +1,871 @@
+prompt idx,default prompt,method,language style,prompt template,correct,prompt format,prompt length,samples
+1,True,default,,"Q: The following paragraphs each describe a set of five objects arranged in a fixed order. The statements are logically consistent within each paragraph.
+{paragraph}
+Options:
+{options}
+A:",1,Q&A,37,100
+2,False,rephrase,,"Q: Using logical deduction, determine the correct order of the following five objects based on the information provided in the following paragraph:
+{paragraph}
+Choose the correct order from the following options:
+{options}
+A:",1,Q&A,42,100
+3,False,rephrase,,"Q: Use logical deduction to determine the order of the following five objects based on the information provided in the {paragraph}. Which of the following options correctly represents the order of the objects?
+{options}
+A:",1,Q&A,42,100
+4,False,rephrase,,"Q: Using logical deduction, determine the order of the following five objects based on the information provided in the paragraph below.
+{paragraph}
+Choose the correct sequence from the following options:
+{options}
+A:",1,Q&A,41,100
+5,False,rephrase,,"Q: Using logical deduction, determine the order of the following five objects based on the information provided in the paragraph below.
+{paragraph}
+Choose the correct order from the following options:
+{options}
+A:",1,Q&A,41,100
+6,False,rephrase,,"Q: You are given a set of five objects arranged in a fixed order. Your task is to deduce the correct order of the objects based on the following logically consistent statements:
+{paragraph}
+Which of the following options represents the correct order of the objects?
+{options}
+A:",1,Q&A,57,100
+7,False,rephrase,,"Q: Using logical deduction, determine the order of the following five objects based on the information provided in the paragraph below:
+{paragraph}
+Choose the correct order from the following options:
+{options}
+A:",1,Q&A,41,100
+8,False,rephrase,,"Q: Using logical deduction, determine the order of the following five objects based on the information provided in the {paragraph}. Which of the following options correctly orders the objects?
+{options}
+A:",1,Q&A,39,100
+9,False,rephrase,,"Q: Can you determine the order of five objects based on the following logically consistent paragraph?
+{paragraph}
+Choose the correct order from the following options:
+{options}
+A:",1,Q&A,35,100
+10,False,rephrase,,"Q: Using logical deduction, determine the order of the five objects described in the following paragraph:
+{paragraph}
+Choose the option that correctly lists the order of the objects.
+{options}
+A:",1,Q&A,39,100
+11,False,rephrase,,"Q: Using logical deduction, determine the correct order of the following five objects based on the information provided in the paragraph below.
+{paragraph}
+Choose the correct order from the following options:
+{options}
+A:",1,Q&A,42,100
+12,False,rephrase,,"Q: You are given a set of five objects arranged in a fixed order. Your task is to deduce the correct order of the objects based on the logical consistency of the statements provided in the following paragraph:
+{paragraph}
+Choose the option that represents the correct order of the objects:
+{options}
+A:",1,Q&A,62,100
+13,False,rephrase,,"Q: Using logical deduction, determine the order of the five objects described in the following paragraph.
+{paragraph}
+Choose the option that correctly lists the order of the objects.
+{options}
+A:",1,Q&A,39,100
+14,False,rephrase,,"Q: Using logical deduction, determine the order of five objects based on the following paragraph:
+{paragraph}
+Choose the correct sequence from the following options:
+{options}
+A:",1,Q&A,35,100
+15,False,rephrase,,"Q: Using logical deduction, what is the fixed order of the five objects described in the following {paragraph}? The statements are logically consistent within the paragraph.
+{paragraph}
+Options:
+{options}
+A:",1,Q&A,41,100
+16,False,rephrase,,"Q: Using logical deduction, determine the order of the following five objects based on the information provided in the paragraph below.
+{paragraph}
+Choose the most appropriate sequence from the following options:
+{options}
+A:",1,Q&A,42,100
+17,False,rephrase,,"Q: Using logical deduction, determine the correct order of the following five objects described in the following paragraph:
+{paragraph}
+Choose the correct order from the following options:
+{options}
+A:",1,Q&A,38,100
+18,False,rephrase,,"Q: Using logical deduction, determine the order of the five objects described in the following paragraph:
+{paragraph}
+Choose the correct sequence from the following options:
+{options}
+A:",1,Q&A,36,100
+19,False,rephrase,,"Q: Using deductive reasoning, determine the order of the five objects described in the following {paragraph}. Which of the following {options} correctly represents the order of the objects?
+A:",1,Q&A,38,100
+20,False,rephrase,,"Q: Using logical deduction, determine the correct order of the following five objects based on the information provided in the following paragraph:
+{paragraph}
+
+Choose the correct sequence from the following options:
+{options}
+
+A:",1,Q&A,42,100
+21,False,rephrase,,"Q: Within {paragraph}, what is the correct order of the five objects?
+Choose from the following options:
+{options}",1,other,25,100
+22,False,rephrase,,"Q: Using logical deduction, determine the order of the following five objects:
+{paragraph}
+Choose the correct order from the following options:
+{options}
+A:",1,Q&A,32,100
+23,False,rephrase,,"Q: You are given a set of five objects arranged in a fixed order. Use logical deduction to determine the correct order of the objects based on the information provided in the following paragraph:
+{paragraph}
+Select the correct order from the following options:
+{options}
+A:",1,Q&A,54,100
+24,False,rephrase,,"Q: Within {paragraph}, what is the correct order of the five objects described? Choose from the following options:
+{options}
+A:",1,Q&A,28,100
+25,False,rephrase,,"Q: Using logical deduction, determine the correct order of a sequence of five objects based on the information provided in the following paragraph:
+{paragraph}
+Choose the correct arrangement from the following options:
+{options}
+A:",1,Q&A,43,100
+26,False,rephrase,,"Q: Using logical deduction, determine the order of the following five objects based on the information provided in the paragraph below.
+{paragraph}
+
+Choose the correct order from the following options:
+{options}
+
+A:",1,Q&A,41,100
+27,False,rephrase,,"Q: Use logical deduction to determine the correct order of the five objects described in the following paragraph. The statements are logically consistent within the paragraph.
+{paragraph}
+Choose the correct order from the following options:
+{options}
+A:",1,Q&A,46,100
+28,False,rephrase,,"Q: Using logical deduction, determine the correct order of the following five objects based on the information provided in the {paragraph}. Choose the correct order from the following options:
+{options}",1,other,37,100
+29,False,rephrase,,"Q: Given a set of five objects arranged in a fixed order, use logical deduction to determine the correct sequence of the objects based on the following paragraph:
+{paragraph}
+Choose the option that correctly represents the order of the objects:
+{options}
+A:",1,Q&A,51,100
+30,False,rephrase,,"Q: Use the given statements to deduce the order of five objects. Each paragraph describes a set of five objects arranged in a fixed order. The statements are logically consistent within each paragraph.
+{paragraph}
+Choose the correct order of the objects from the following options:
+{options}
+A:",1,Q&A,58,100
+31,False,rephrase,,"Q: Use logical deduction to determine the order of the following five objects. Each paragraph contains statements that are logically consistent within that paragraph.
+{paragraph}
+Choose the correct order from the following options:
+{options}
+A:",1,Q&A,44,100
+32,False,rephrase,,"Q: Using logical deduction, determine the order of the following five objects based on the information provided in the {paragraph}. Choose the correct order from the following options:
+{options}",1,other,36,100
+33,False,rephrase,,"Q: Use logical deduction to determine the correct order of the following five objects, as described in the following paragraph. Each statement is logically consistent within the paragraph.
+{paragraph}
+Choose the correct order from the following options:
+{options}
+A:",1,Q&A,49,100
+34,False,rephrase,,"Q: Using logical deduction, determine the correct order of the following five objects based on the information provided in the {paragraph}. Which of the following options correctly represents the order of the objects?
+{options}",0,other,41,100
+35,False,rephrase,,"Q: Using logical deduction, determine the order of the following five objects based on the information provided in the {paragraph}. Which of the following options correctly represents the order of the objects?
+{options}
+A:",1,Q&A,42,100
+36,False,rephrase,,"Q: Using logical deduction, determine the order of the following five objects:
+{paragraph}
+Choose the correct sequence from the following options:
+{options}
+A:",1,Q&A,32,100
+37,False,rephrase,,"Q: Use logical deduction to determine the correct order of the following five objects based on the information provided in the {paragraph}. Which of the following options correctly represents the order of the objects?
+{options}",1,other,41,100
+38,False,rephrase,,"Q: Use logical deduction to determine the correct order of five objects described in the following paragraph. The statements are logically consistent within the paragraph.
+{paragraph}
+Choose the correct order from the following options:
+{options}
+A:",1,Q&A,45,100
+39,False,rephrase,,"Q: Using logical deduction, determine the correct order of the following five objects based on the information provided in the {paragraph}. Which of the following options correctly orders the objects?
+{options}
+A:",0,Q&A,40,100
+40,False,rephrase,,"Q: Use logical deduction to determine the order of five objects described in the following paragraph. The statements are logically consistent within the paragraph.
+{paragraph}
+Choose the correct order from the following options:
+{options}
+A:",1,Q&A,44,100
+41,False,rephrase,,"Q: Use logical deduction to determine the order of the following five objects. The statements provided are consistent within each paragraph.
+{paragraph}
+Select the correct order from the following options:
+{options}
+A:",1,Q&A,41,100
+42,False,rephrase,,"Q: Given a set of five objects arranged in a fixed order, use logical deduction to determine the correct sequence of objects. Each paragraph contains statements that are logically consistent within the paragraph. 
+{paragraph}
+Choose the correct sequence from the following options:
+{options}
+A:",1,Q&A,55,100
+43,False,rephrase,,"Q: Given a set of five objects arranged in a fixed order, use logical deduction to determine the correct sequence. Below are several statements that are logically consistent within each paragraph.
+{paragraph}
+Choose the statement that correctly deduces the order of the objects.
+{options}
+A:",1,Q&A,56,100
+44,False,rephrase,,"Q: Using logical deduction, determine the correct order of the five objects described in the following {paragraph}. Which of the following {options} accurately represents the correct order?
+A:",1,Q&A,36,100
+45,False,rephrase,,"Q: Using logical deduction, determine the correct order of the five objects described in the following {paragraph}. Which of the following {options} correctly represents the order of the objects?
+A:",1,Q&A,38,100
+46,False,rephrase,,"Q: Use logical deduction to determine the correct order of the following five objects based on the information provided in the {paragraph}. Which of the following options correctly represents the order of the objects?
+{options}
+A:",1,Q&A,43,100
+47,False,rephrase,,"Q: Use logical deduction to determine the fixed order of the following five objects based on the information provided in the {paragraph}. Which of the following options correctly represents the order of the objects?
+{options}
+A:",1,Q&A,43,100
+48,False,rephrase,,"Q: Using logical deduction, determine the correct order of the following five objects based on the information provided in the {paragraph}. Which of the following options correctly represents the order of the objects?
+{options}
+A:",0,Q&A,43,100
+49,False,rephrase,,"Q: Use logical deduction to determine the correct order of the five objects described in the following paragraph. The statements within the paragraph are logically consistent.
+{paragraph}
+Choose the correct order from the following options:
+{options}
+A:",1,Q&A,46,100
+50,False,rephrase,,"Q: Use logical deduction to determine the correct order of the following five objects, as described in the following paragraph. The statements within the paragraph are logically consistent with each other.
+{paragraph}
+Choose the correct order from the following options:
+{options}
+A:",1,Q&A,52,100
+51,False,rephrase,,"Q: Use logical deduction to determine the correct order of the following five objects based on the given paragraph.
+{paragraph}
+
+Select the correct order from the following options:
+{options}
+
+What is the correct order of the objects?",1,other,45,100
+52,False,meta_cot,,Deduce the order of five objects by choosing the correct option that logically follows the given paragraph. The paragraph describes a set of five objects arranged in a fixed order and is represented by the keyword {paragraph}. Choose the correct option from the given {options}.,0,other,52,100
+53,False,meta_cot,,"Your task is to determine the order of a sequence of five objects by logically deducing the correct option from the given paragraph and options. The paragraph describes the objects and their order, and is represented by the keyword {paragraph}. The options are represented by the keyword {options}.",0,other,55,100
+54,False,meta_cot,,"In this task, you will be presented with a paragraph describing a set of five objects arranged in a fixed order, represented by the keyword {paragraph}. Your goal is to deduce the correct order of the objects by choosing the option that logically follows the paragraph from the given {options}.",0,other,57,100
+55,False,meta_cot,,"Given a paragraph describing a set of five objects arranged in a fixed order, represented by the keyword {paragraph}, your task is to deduce the correct order of the objects by choosing the option that logically follows the paragraph from the provided {options}.",0,other,49,100
+56,False,meta_cot,,"You will be presented with a paragraph describing a set of five objects arranged in a fixed order, represented by the keyword {paragraph}. Your task is to deduce the order of the objects by choosing the option that logically follows the paragraph from the given {options}. The correct option is the one that logically follows the paragraph.",0,other,64,100
+57,False,meta_cot,,"In this task, you will be presented with a paragraph that describes a set of five objects arranged in a fixed order. Your goal is to deduce the order of the sequence of objects. The paragraph is logically consistent within itself. You will also be presented with options to choose from. Make sure to choose the correct option. The paragraph is represented by the keyword {paragraph} and the options are represented by the keyword {options}.",0,other,86,100
+58,False,meta_cot,,Your task is to deduce the order of a sequence of five objects. You will be presented with a paragraph that describes the objects in a fixed order. The paragraph is logically consistent within itself. You will also be presented with options to choose from. Make sure to choose the correct option. The paragraph is represented by the keyword {paragraph} and the options are represented by the keyword {options}.,0,other,79,100
+59,False,meta_cot,,"Deduce the order of a sequence of five objects by selecting the correct option from a list of options. The paragraphs describe the objects in a fixed order and are logically consistent. Use the placeholder {paragraph} to refer to the set of five objects arranged in a fixed order described in the paragraph, and the placeholder {options} to refer to the list of options to choose from.",0,other,77,100
+60,False,meta_cot,,"You will be presented with a set of five objects arranged in a fixed order, described in logically consistent paragraphs. Your task is to deduce the order of the objects by selecting the correct option from a list of options. Use the placeholder {paragraph} to refer to the set of five objects arranged in a fixed order described in the paragraph, and the placeholder {options} to refer to the list of options to choose from.",0,other,85,100
+61,False,meta_cot,,"Given a set of five objects arranged in a fixed order, your task is to deduce the order of the objects by selecting the correct option from a list of options. The paragraphs describing the objects are logically consistent. Use the placeholder {paragraph} to refer to the set of five objects arranged in a fixed order described in the paragraph, and the placeholder {options} to refer to the list of options to choose from.",0,other,84,100
+62,False,meta_cot,,You will be given a set of five objects arranged in a fixed order. Your task is to deduce the order of the objects based on the given paragraph. You will also be provided with some options to choose from. Please select the correct option that matches the given paragraph. {paragraph} Options: {options},1,SEP_VARS,63,100
+63,False,meta_cot,,Your goal is to determine the order of a sequence of five objects. You will be given a paragraph that describes the objects in a fixed order. The paragraph contains logically consistent statements. You will also be provided with some options to choose from. Please choose the correct option that matches the given paragraph. {paragraph} Options: {options},1,SEP_VARS,67,100
+64,False,meta_cot,,"In this task, you will be given a paragraph that describes a set of five objects arranged in a fixed order. Your task is to deduce the order of the objects based on the given paragraph. You will also be provided with some options to choose from. Please select the correct option that matches the given paragraph. {paragraph} Options: {options}",1,SEP_VARS,71,100
+65,False,meta_cot,,"You will be given a paragraph describing the order of five objects. Your task is to deduce the correct order of the objects. You will also be given a set of options to choose from. The correct option is the one that logically follows the paragraph. The paragraph and options are provided in the placeholders {paragraph} and {options}, respectively.",0,other,69,100
+66,False,meta_cot,,"Your task is to solve a logical deduction task involving a sequence of five objects. You will be given a paragraph describing the order of the objects and a set of options to choose from. Your goal is to choose the option that logically follows the paragraph. The placeholders {paragraph} and {options} contain the paragraph and options, respectively.",0,other,67,100
+67,False,meta_cot,,"In this task, you will be presented with a paragraph describing the order of five objects. Your task is to deduce the correct order of the objects. You will also be given a set of options to choose from. The correct option is the one that logically follows the paragraph. The paragraph and options are provided in the placeholders {paragraph} and {options}, respectively.",0,other,74,100
+68,False,meta_cot,,"In this logical deduction task named logical deduction five objects, you will be given a set of paragraphs describing a set of five objects arranged in a fixed order. The statements are logically consistent within each paragraph. Your task is to choose the correct option from the given options. The options are {options}. The paragraph is {paragraph}.",1,other,65,100
+69,False,meta_cot,,"You will be presented with a set of paragraphs describing a set of five objects arranged in a fixed order. The statements are logically consistent within each paragraph. Your task is to deduce the correct order of the objects from the given paragraphs. Once you have deduced the order, you must choose the correct option from the given options. The options are {options}. The paragraph is {paragraph}.",1,other,78,100
+70,False,meta_cot,,"This task is called logical deduction five objects. You will be given a set of paragraphs, each of which describes a set of five objects arranged in a fixed order. The statements are logically consistent within each paragraph. Your task is to choose the correct option from the given options. The options are {options}. The paragraph is {paragraph}.",1,other,67,100
+71,False,meta_cot,,"In this task, you will be presented with a set of paragraphs, each of which describes a set of five objects arranged in a fixed order. The statements are logically consistent within each paragraph. Your task is to deduce the correct order of the objects from the given paragraphs. Once you have deduced the order, you must choose the correct option from the given options. The options are {options}. The paragraph is {paragraph}.",1,other,86,100
+72,False,meta_cot,,"You need to solve a logical deduction task called logical deduction five objects. In this task, you will be given a paragraph describing a set of five objects arranged in a fixed order. The statements in the paragraph are logically consistent. You will also be presented with multiple options to choose from, which are presented as {options}. Your goal is to choose the correct option based on the information provided in the paragraph. The {paragraph} is a placeholder for the paragraph description.",0,other,93,100
+73,False,meta_cot,,"You will be presented with a logical deduction task named logical deduction five objects. The task requires you to deduce the order of a sequence of objects. You will be given a paragraph describing a set of five objects arranged in a fixed order. The statements in the paragraph are logically consistent. You will also be presented with multiple options to choose from, which are presented as {options}. Your goal is to choose the correct option based on the information provided in the paragraph. The {paragraph} is a placeholder for the paragraph description.",0,other,105,100
+74,False,meta_cot,,"In this task, you need to solve a logical deduction task called logical deduction five objects. The task requires you to deduce the order of a sequence of objects. You will be given a paragraph describing a set of five objects arranged in a fixed order. The statements in the paragraph are logically consistent. You will also be presented with multiple options to choose from, which are presented as {options}. Your goal is to choose the correct option based on the information provided in the paragraph. The {paragraph} is a placeholder for the paragraph description.",0,other,108,100
+75,False,meta_cot,,"For each of the following paragraphs, you need to deduce the order of a sequence of five objects. The statements in each paragraph are logically consistent. Choose the option that best fits the description. {paragraph} Options: {options}",1,SEP_VARS,47,100
+76,False,meta_cot,,"You will be presented with a set of paragraphs, each of which describes a set of five objects arranged in a fixed order. Your task is to deduce the order of the objects in each paragraph. Choose the option that best fits the description. {paragraph} Options: {options}",1,SEP_VARS,57,100
+77,False,meta_cot,,The task requires you to deduce the order of a sequence of five objects based on a set of paragraphs. Each paragraph describes the objects arranged in a fixed order and the statements are logically consistent. Choose the option that best fits the description. {paragraph} Options: {options},1,SEP_VARS,56,100
+78,False,meta_cot,,"In this task, you will be presented with a paragraph that describes a set of five objects arranged in a fixed order. Your goal is to deduce the order of the sequence of objects. The paragraph will be logically consistent within itself. You will also be given a set of options to choose from. Make sure to select the correct option that corresponds to the order of the sequence of objects. The placeholders for the paragraph and options are {paragraph} and {options}, respectively.",0,other,95,100
+79,False,meta_cot,,Your task is to solve a logical deduction problem called logical deduction five objects. You will be presented with a paragraph that describes a set of five objects arranged in a fixed order. Your goal is to deduce the order of the sequence of objects. The paragraph will be logically consistent within itself. You will also be given a set of options to choose from. Make sure to select the option that corresponds to the order of the sequence of objects. Remember to use the placeholders {paragraph} and {options} to fill in the specific task instance.,0,other,108,100
+80,False,meta_cot,,"You will be given a paragraph that describes a set of five objects arranged in a fixed order. Your task is to deduce the order of the sequence of objects. The paragraph will be logically consistent within itself. You will also be presented with a set of options to choose from. Your goal is to select the option that corresponds to the order of the sequence of objects. The placeholders for the paragraph and options are {paragraph} and {options}, respectively, so make sure to use them to fill in the specific task instance.",0,other,105,100
+81,False,meta_cot,,"You will be presented with a paragraph describing a set of five objects arranged in a fixed order, and a set of options. Your task is to deduce the order of the sequence of objects. The options are {options}. What is the correct order of the objects described in the paragraph? Answer in the format A: <option>. Use the following paragraph to answer the question: {paragraph}.",1,SEP_VARS,79,100
+82,False,meta_cot,,Your task is to deduce the order of a sequence of five objects described in a paragraph. The paragraph will be logically consistent within itself. The options are {options}. Answer the question in the format A: <option>. Use the following paragraph to answer the question: {paragraph}.,1,SEP_VARS,57,100
+83,False,meta_cot,,"In this task, you will be presented with a paragraph describing a set of five objects arranged in a fixed order. Your task is to deduce the order of the sequence of objects. The paragraph will be logically consistent within itself. You will also be given a set of options: {options}. Respond to the question in the format A: <option>. Use the following paragraph to answer the question: {paragraph}.",1,SEP_VARS,83,100
+84,False,meta_cot,,"You will be given a paragraph describing a set of five objects arranged in a fixed order, and a set of options. Your task is to deduce the order of the sequence of objects. The paragraph will be logically consistent within itself. The options are {options}. Answer the question in the format A: <option>. Use the following paragraph to answer the question: {paragraph}.",1,SEP_VARS,76,100
+85,False,meta_cot,,"In this task, you will be presented with a paragraph that describes a set of five objects arranged in a fixed order. You will need to use logical deduction to determine the correct order of the objects. The paragraph is followed by a set of multiple-choice options, one of which is the correct answer. Make sure to carefully read the paragraph and consider all the information provided before selecting an answer. {paragraph} {options}",1,other,84,100
+86,False,meta_cot,,"Your task is to determine the correct order of a sequence of five objects. You will be presented with a paragraph that describes the objects in a fixed order. Then, you will need to choose the correct answer from a set of multiple-choice options. Make sure to carefully read the paragraph and consider all the information provided before selecting an answer. {paragraph} {options}",1,other,73,100
+87,False,meta_cot,,"This task requires you to use logical deduction to determine the correct order of a sequence of five objects. You will be presented with a paragraph that describes the objects in a fixed order. Then, you will need to choose the correct answer from a set of multiple-choice options. Make sure to carefully read the paragraph and consider all the information provided before selecting an answer. {paragraph} {options}",1,other,78,100
+88,False,meta_cot,,"In this task, you will be presented with a paragraph that describes a set of five objects arranged in a fixed order. Your goal is to deduce the order of the sequence of objects based on the information provided in the paragraph. You will also be given a set of options to choose from. Make sure to carefully read the paragraph and select the correct option. {paragraph} Choose one of the following options: {options}",1,SEP_VARS,85,100
+89,False,meta_cot,,"Your task is to deduce the order of a sequence of five objects based on a given paragraph. The paragraph describes the objects in a fixed order, and the statements are logically consistent within each paragraph. You will also be given a set of options to choose from. Choose the correct option based on the information provided in the paragraph. {paragraph} Select one of the following options: {options}",1,SEP_VARS,79,100
+90,False,meta_cot,,"In this task, you will be presented with a paragraph that describes a set of five objects arranged in a fixed order. Your goal is to deduce the order of the sequence of objects based on the information provided in the paragraph. You will also be given a set of options to choose from. Make sure to carefully read the paragraph and select the correct option. {paragraph} Choose the option that best fits the information provided: {options}",1,SEP_VARS,88,100
+91,False,meta_cot,,You will be presented with a question that describes a set of five objects arranged in a fixed order. Your task is to deduce the order of the sequence of objects. The question has two placeholders: {paragraph} and {options}.,0,SEP_VARS,47,100
+92,False,meta_cot,,Your goal is to solve a logical deduction task that requires you to deduce the order of a sequence of five objects. The question consists of a paragraph that describes the objects arranged in a fixed order. There are also several options to choose from. The question has two placeholders: {paragraph} and {options}.,1,SEP_VARS,62,100
+93,False,meta_cot,,You will be given a logical deduction task that requires you to deduce the order of a sequence of five objects. The question consists of a paragraph that describes the objects arranged in a fixed order. There are also several options to choose from. The question has two placeholders: {paragraph} and {options}.,0,SEP_VARS,61,100
+94,False,meta_cot,,"In this task, you will be presented with a paragraph that describes a set of five objects arranged in a fixed order. Your goal is to deduce the correct order of the objects using the options provided. Remember to carefully analyze the statements in the paragraph. Use the placeholders {paragraph} and {options} to fill in the specific input data.",0,other,69,100
+95,False,meta_cot,,Your task is to deduce the order of a sequence of five objects based on a paragraph that describes their arrangement. The paragraph is logically consistent and the options provided must be used to deduce the correct order. Remember to use the placeholders {paragraph} and {options} to fill in the specific input data.,0,other,62,100
+96,False,meta_cot,,The goal of this task is to deduce the order of a sequence of five objects based on a paragraph that describes their arrangement. The paragraph is logically consistent and the options provided must be used to deduce the correct order. Make sure to use the placeholders {paragraph} and {options} to fill in the specific input data.,0,other,66,100
+97,False,meta_cot,,"In this task, you will be presented with a paragraph that describes a set of five objects arranged in a fixed order. Your objective is to deduce the correct order of the objects using the options provided. Remember to analyze the statements in the paragraph carefully. Use the placeholders {paragraph} and {options} to fill in the specific input data.",0,other,69,100
+98,False,meta_cot,,You will be given a paragraph that describes a set of five objects arranged in a fixed order. Your task is to logically deduce the order of the objects. You will also be provided with options to choose from. Make sure to carefully read the paragraph and choose the option that best fits the description. {paragraph} Choose from the following options: {options},1,SEP_VARS,72,100
+99,False,meta_cot,,Your task is to solve a logical deduction task called logical deduction five objects. You will be given a paragraph that describes a set of five objects arranged in a fixed order. The statements in the paragraph are logically consistent. You will also be provided with options to choose from. Choose the option that best describes the order of the objects. {paragraph} Choose from the following options: {options},1,SEP_VARS,78,100
+100,False,meta_cot,,This task is called logical deduction five objects. Your task is to deduce the order of a sequence of five objects. You will be provided with a paragraph that describes the objects arranged in a fixed order. The statements in the paragraph are logically consistent. You will also be provided with options to choose from. Choose the option that best describes the order of the objects. {paragraph} Choose from the following options: {options},1,SEP_VARS,85,100
+101,False,meta_cot,,"Using the given information, deduce the order of a sequence of five objects. The task is presented as a question with a paragraph that describes the objects in a fixed order. Choose the option that is logically consistent with the paragraph. The placeholders in the question are {paragraph} and {options}.",0,other,59,100
+102,False,meta_cot,,You will be presented with a paragraph that describes a set of five objects arranged in a fixed order. Your task is to deduce the order of the objects using the given information. Choose the option that is logically consistent with the paragraph. The placeholders in the question are {paragraph} and {options}.,0,other,60,100
+103,False,meta_cot,,Your task is to deduce the order of a sequence of five objects based on the given information. The task is presented as a question with a paragraph that describes the objects in a fixed order. Choose the option that is logically consistent with the paragraph. The placeholders in the question are {paragraph} and {options}.,0,other,63,100
+104,False,meta_cot,,"You will be presented with a paragraph describing a set of five objects arranged in a fixed order. Your task is to deduce the order of the objects based on the information provided in the paragraph. Once you have done so, you will be presented with a set of options to choose from. Choose the correct option based on your deduction. The placeholders in the question are {paragraph} and {options}.",0,other,80,100
+105,False,meta_cot,,"Your task is to solve a logical deduction task which requires deducing the order of a sequence of five objects. You will be presented with a paragraph describing the objects in a fixed order, and a set of options to choose from. Your goal is to select the correct option based on the information presented in the paragraph. The placeholders in the question are {paragraph} and {options}.",0,other,76,100
+106,False,meta_cot,,"In this task, you will be presented with a paragraph describing a set of five objects arranged in a fixed order. Your goal is to deduce the order of the objects based on the information provided in the paragraph. Once you have done so, you will be presented with a set of options to choose from. Choose the correct option based on your deduction. The placeholders in the question are {paragraph} and {options}.",0,other,84,100
+107,False,meta_cot,,"In this task, you will be presented with a set of five objects arranged in a fixed order. Your task is to deduce the order of the sequence of objects. The question consists of a paragraph that describes the set of objects. The paragraph is presented as {paragraph}. You will also be provided with a set of options to choose from. The options are presented as {options}. The task is in the format of multi_choice.",0,other,87,100
+108,False,meta_cot,,Your task is to deduce the order of a sequence of five objects. The question consists of a paragraph that describes the set of objects. The paragraph is presented as {paragraph}. You will also be provided with a set of options to choose from. The options are presented as {options}. The task is in the format of multi_choice.,1,other,68,100
+109,False,meta_cot,,You will be presented with a paragraph that describes a set of five objects arranged in a fixed order. Your task is to deduce the order of the sequence of objects. The paragraph is presented as {paragraph}. You will also be provided with a set of options to choose from. The options are presented as {options}. The task is in the format of multi_choice.,1,other,74,100
+110,False,meta_cot,,"You need to solve a logical deduction task named logical deduction five objects. The task requires you to deduce the order of a sequence of objects. You will be given a paragraph describing a set of five objects arranged in a fixed order. You will also be provided with options, which are the possible answers to the task. Please choose the correct option. The paragraph is as follows: {paragraph}. The options are: {options}.",1,SEP_VARS,86,100
+111,False,meta_desc,,"
+Deduce the order of a sequence of five objects based on given logical statements. Select the option that correctly orders the objects.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,39,100
+112,False,meta_desc,,"
+Deduce the order of a sequence of five objects based on given logical statements. You will be given a set of logical statements and multiple choices for the order of the objects. Choose the correct order based on the given statements.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,59,100
+113,False,meta_desc,,"
+Deduce the order of a sequence of objects based on given logical statements and choose the correct option from a set of multiple choices. You will be given a sequence of objects and a set of logical statements that describe the relationships between them. Your task is to determine the correct order of the objects and select the option that matches the order. 
+Sequence of objects: {paragraph}
+Logical statements: 
+Multiple choice options:
+{options}
+Answer:
+
+#",0,SEP_VARS,91,100
+114,False,meta_desc,,"
+Deduce the order of a sequence of objects based on given logical statements and choose the correct option from a set of multiple choices. You will be given a sequence of objects and a set of logical statements that describe the order of the objects.
+Sequence of objects: {paragraph}
+Multiple choice options:
+{options}
+Output:
+
+",1,SEP_VARS,66,100
+115,False,meta_desc,,"
+Deduce the order of a sequence of five objects based on logically consistent statements. You will be given a set of statements and multiple choices for the order of the objects. Select the option that best fits the logical sequence of the objects.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,61,100
+116,False,meta_desc,,"
+Deduce the order of a sequence of five objects based on logically consistent statements. You will be presented with a multiple-choice question with a default prompt and options provided. Choose the option that correctly orders the objects.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,56,100
+117,False,meta_desc,,"
+Deduce the order of a sequence of five objects based on given logical statements. You will be presented with a multi-choice format with a default prompt and options. Choose the correct order based on the given statements.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,56,100
+118,False,meta_desc,,"
+Deduce the order of a sequence of five objects based on given logical statements. You will be presented with a multi-choice format with a default prompt and options. Choose the option that correctly orders the objects. 
+Logical statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,57,100
+119,False,meta_desc,,"
+Deduce the order of a sequence of five objects based on logical statements. The prompt will provide a paragraph describing the objects and their order, and the options will provide possible orders to choose from. Choose the correct order based on the given statements. 
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,64,100
+120,False,meta_desc,,"
+Deduce the order of a sequence of five objects based on logical statements. The prompt will provide a paragraph describing the objects and their order, and the options will provide possible orders to choose from. You will need to carefully read the statements and use logic to determine the correct order.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,70,100
+121,False,meta_desc,,"
+Deduce the order of a sequence of five objects based on logically consistent statements. You will be presented with a set of statements and a list of options representing the possible orders of the objects. Select the correct option based on the given statements.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,62,100
+122,False,meta_desc,,"
+Deduce the order of a sequence of five objects based on logically consistent statements. You will be presented with a set of statements and multiple choices for the correct order of the objects. Choose the option that is logically consistent with the given statements.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,62,100
+123,False,meta_desc,,"
+Deduce the order of a sequence of objects based on given statements and choose the correct option from a set of multiple choices.
+Statements: {paragraph}
+Multiple choice options:
+{options}
+Answer:
+
+",1,SEP_VARS,41,100
+124,False,meta_desc,,"
+Deduce the order of a sequence of objects based on given statements and choose the correct option from a set of multiple choices.
+Sequence of objects: {paragraph}
+Statements:
+{options}
+Output:
+
+",1,SEP_VARS,41,100
+125,False,meta_desc,,"
+Deduce the order of a sequence of objects based on given statements.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,28,100
+126,False,meta_desc,,"
+Given a sequence of objects and a set of statements about their order, select the correct object that belongs to a certain position in the sequence. The correct answer is derived by logically combining the given statements to deduce the order of the objects.
+Sequence: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,61,100
+127,False,meta_desc,,"
+Deduce the order of a sequence of five objects based on given logical statements. Use logical deduction to select the correct order of the objects.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,42,100
+128,False,meta_desc,,"
+Deduce the order of a sequence of five objects based on given logical statements. You will be presented with a paragraph and multiple choice options. Use logical deduction to select the correct order of the objects. 
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,55,100
+129,False,meta_desc,,"
+Given a sequence of objects and a set of statements, determine the correct order of the objects and select the appropriate option from the given choices.
+Sequence: {paragraph}
+Choices:
+{options}
+Output:",1,SEP_VARS,41,100
+130,False,meta_desc,,"
+Given a sequence of objects and a set of statements about their order, choose the correct option among the given choices that represents the correct order of the objects.
+Sequence: {paragraph}
+Choices:
+{options}
+Output:",1,SEP_VARS,44,100
+131,False,meta_desc,,"
+Deduce the order of a sequence of five objects based on a given paragraph. Choose the option that logically follows the paragraph. 
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,40,100
+132,False,meta_desc,,"
+Deduce the order of a sequence of five objects presented in a paragraph followed by multiple options to choose from. The correct option is the one that logically follows the paragraph.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:",1,SEP_VARS,48,100
+133,False,meta_desc,,"
+Deduce the order of a sequence of five objects. You will be presented with a paragraph describing the objects arranged in a fixed order. The paragraph will contain logically consistent statements. Choose the correct order of the objects from the multiple choice options provided.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,63,100
+134,False,meta_desc,,"
+Deduce the order of a sequence of five objects in a logical deduction task. You will be presented with a paragraph describing the arrangement of the objects in a fixed order. The statements in the paragraph will be logically consistent. Choose the correct order of the objects from the multiple-choice options provided.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,72,100
+135,False,meta_desc,,"
+Deduce the order of a sequence of five objects described in a logically consistent paragraph. You will be presented with a list of options to choose from.
+{paragraph}
+Options:
+{options}
+Output:",1,other,42,100
+136,False,meta_desc,,"
+Deduce the order of a sequence of five objects described in a logically consistent paragraph. Given a set of five objects arranged in a fixed order described in a paragraph, select the correct option from a list of options.
+{paragraph}
+Options:
+{options}
+Output:
+
+",1,other,55,100
+137,False,meta_desc,,"
+Deduce the order of a sequence of five objects given a paragraph and multiple options to choose from. The paragraph will contain logically consistent statements about the objects. Your task is to select the correct option that represents the correct order of the objects.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,62,100
+138,False,meta_desc,,"
+Deduce the order of a sequence of five objects. You will be given a paragraph describing the arrangement of the objects and multiple options to choose from. The statements in the paragraph are logically consistent within each paragraph. Your task is to select the option that correctly represents the order of the objects.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,72,100
+139,False,meta_desc,,"
+Deduce the correct order of a sequence of five objects based on a given paragraph. Choose the option that logically follows the paragraph from the set of options provided.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,46,100
+140,False,meta_desc,,"
+Deduce the order of a sequence of five objects based on a given paragraph. Choose the option that logically follows the paragraph from a set of options.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:",1,SEP_VARS,44,100
+141,False,meta_desc,,"
+Deduce the order of a sequence of five objects. You will be given a question that describes a set of five objects arranged in a fixed order. Use logical deduction to determine the correct order of the objects and fill in the placeholders with the appropriate information.
+Question: {paragraph}
+Options:
+{options}
+Output:",1,SEP_VARS,65,100
+142,False,meta_desc,,"
+Deduce the order of a sequence of five objects. Use logical deduction to determine the correct order of the objects.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:",1,SEP_VARS,37,100
+143,False,meta_desc,,"
+Deduce the order of a sequence of five objects based on a given paragraph. Choose the correct option from {options} that logically follows the given paragraph. 
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,46,100
+144,False,meta_desc,,"
+Given a logical deduction task named ""Logical Deduction Five Objects"", you are provided with a set of paragraphs describing a set of five objects arranged in a fixed order. The statements are logically consistent within each paragraph. You are also provided with a set of options to choose from. Your task is to deduce the correct order of the sequence of objects and choose the correct option based on the given paragraph.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+",1,SEP_VARS,93,100
+145,False,meta_desc,,"
+Deduce the order of a sequence of five objects based on the information provided in a paragraph.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,33,100
+146,False,meta_desc,,"
+Deduce the order of a sequence of five objects based on the information provided in a paragraph. The paragraph will describe the objects arranged in a fixed order and will include logically consistent statements. Choose the correct option from the multiple options provided.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,61,100
+147,False,meta_desc,,"
+Deduce the order of a sequence of five objects based on a given paragraph and set of options. The task format is multi_choice.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,41,100
+148,False,meta_desc,,"
+Deduce the order of a sequence of five objects described in a paragraph by selecting the correct answer from a set of options.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,39,100
+149,False,meta_desc,,"
+Given a set of paragraphs, each describing a set of five objects arranged in a fixed order, use logical deduction to determine the correct order of the objects. Choose the correct order from a set of options provided.
+Paragraphs: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,56,100
+150,False,meta_desc,,"
+Deduce the order of a sequence of objects described in a set of paragraphs. Each paragraph describes a set of five objects arranged in a fixed order. The statements are logically consistent within each paragraph. Choose the correct order from the given options.
+Paragraphs: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,63,100
+151,False,meta_desc,,"
+Given a set of logical statements, determine the order of a sequence of five objects. Choose the correct order from the options provided.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,39,100
+152,False,meta_desc,,"
+Deduce the order of a sequence of five objects based on given logical statements. Provide the correct order as a sequence of five letters.
+Statements: {paragraph}
+Output:
+{options}",0,SEP_VARS,39,100
+153,False,meta_desc,,"
+Given a set of logical statements about the order of a sequence of objects, choose the correct option from a set of multiple choices that best represents the order of the sequence.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,47,100
+154,False,meta_desc,,"
+Given a set of logical statements about the order of a sequence of objects, choose the correct option from a set of multiple choices to deduce the correct order of the objects.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,48,100
+155,False,meta_desc,,"
+Deduce the order of a sequence of five objects based on logically consistent statements. You will be presented with a set of multiple choice options to choose from.
+Statements: {paragraph}
+Multiple choice options:
+{options}
+Answer:
+
+",1,SEP_VARS,47,100
+156,False,meta_desc,,"
+Deduce the order of a sequence of five objects based on logically consistent statements. Select the option that correctly orders the objects.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,39,100
+157,False,meta_desc,,"
+Deduce the order of a sequence of five objects based on given logical statements. Use the following multi-choice format as a guide: Which of the following is a valid order for the sequence? A) Object 1, Object 2, Object 3, Object 4, Object 5. B) Object 2, Object 1, Object 3, Object 4, Object 5. C) Object 3, Object 2, Object 1, Object 4, Object 5. D) Object 4, Object 3,",0,other,116,100
+158,False,meta_desc,,"
+Deduce the order of a sequence of five objects based on given logical statements. You will be presented with a multi-choice format with a default prompt and options. Use your logical reasoning skills to choose the correct order.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,57,100
+159,False,meta_desc,,"
+Deduce the order of a sequence of five objects based on logical statements. Read the paragraph describing the objects and their order carefully, and choose the correct order from the multiple choice options provided.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,52,100
+160,False,meta_desc,,"
+Read the paragraph describing the five objects and their order, then choose the correct order from the multiple choice options. Use the logical statements provided to deduce the correct order. 
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,48,100
+161,False,meta_desc,,"
+Given a set of logically consistent statements about a sequence of five objects, determine the correct order of the objects. Provide the correct option from the given multi-choice format.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,46,100
+162,False,meta_desc,,"
+Given a set of logically consistent statements, determine the correct order of a sequence of five objects. Provide the correct option from a set of multiple choices.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,43,100
+163,False,meta_desc,,"
+Given a set of statements about the order of a sequence of objects, determine the correct order and select the corresponding option from a set of multiple choices.
+Statements: {paragraph}
+Multiple choice options:
+{options}
+Answer:
+
+",1,SEP_VARS,45,100
+164,False,meta_desc,,"
+Given a paragraph describing a sequence of objects and their order, and a set of multiple choice options, deduce the correct order of the objects by logically combining the given statements.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:",1,SEP_VARS,48,100
+165,False,meta_desc,,"
+Given a paragraph describing the order of a sequence of objects and a set of multiple choice options, deduce the correct order of the objects by logically combining the given statements.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,47,100
+166,False,meta_desc,,"
+Deduce the order of a sequence of five objects based on given logical statements. Use logical deduction to eliminate incorrect options and select the correct order.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,43,100
+167,False,meta_desc,,"
+Deduce the correct order of a sequence of five objects based on logical statements. Use the given information to eliminate incorrect options and select the correct one.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,44,100
+168,False,meta_desc,,"
+Given a set of statements about a sequence of objects, choose the correct order of the objects from the given options.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,36,100
+169,False,meta_desc,,"
+Deduce the order of a sequence of objects based on given statements and choose the correct option among the given choices.
+Statements: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,37,100
+170,False,meta_desc,,"
+Given a sequence of five objects, deduce the correct order of the objects based on a paragraph description. Choose the option that logically follows the paragraph from a set of multiple options.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:",1,SEP_VARS,49,100
+171,False,meta_desc,,"
+Given a sequence of five objects, determine the correct order of the objects by logically deducing the next object in the sequence. Read the paragraph describing the objects and their order, then choose the option that logically follows the paragraph. 
+{paragraph}
+Options:
+{options}
+Output:",1,other,57,100
+172,False,meta_desc,,"
+Given a set of five objects arranged in a fixed order, deduce the correct sequence of the objects. You will be presented with a paragraph and multiple options to choose from. Use logical deduction to select the correct order of the objects.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,60,100
+173,False,meta_desc,,"
+Deduce the order of a sequence of five objects. Read the paragraph carefully and choose the option that logically follows the given statements.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:",1,SEP_VARS,40,100
+174,False,meta_desc,,"
+Given a set of five objects arranged in a fixed order and described in a logically consistent paragraph, deduce the correct sequence by selecting an option from a list of choices.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,47,100
+175,False,meta_desc,,"
+Given a set of five objects arranged in a fixed order and described in a logically consistent paragraph, select the correct option from a list of choices. Use logical deduction to determine the correct answer.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:",1,SEP_VARS,51,100
+176,False,meta_desc,,"
+Given a set of five objects arranged in a fixed order, use logical deduction to determine the correct sequence. Read the paragraph carefully and choose the option that logically follows the given statements.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,49,100
+177,False,meta_desc,,"
+Given a fixed order of five objects and a paragraph with logically consistent statements, deduce the correct order of the objects. Choose the option that correctly represents the order of the objects.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,49,100
+178,False,meta_desc,,"
+Given a sequence of five objects, determine the correct order of the objects by logically deducing the next object in the sequence. Choose the option that follows the given paragraph logically. 
+{paragraph} 
+The sequence of objects is as follows: A, B, C, D, E. 
+Options:
+{options}
+Output:",0,other,67,100
+179,False,meta_desc,,"
+Given a sequence of five objects, determine the correct order of the objects by logically deducing which object comes next. Choose the option that logically follows the given paragraph. 
+Paragraph: {paragraph}
+Options:
+{options}
+Output:",1,SEP_VARS,47,100
+180,False,meta_desc,,"
+Given a fixed order of five objects, deduce the correct sequence of the objects based on the provided question. Use the information provided in the question to logically deduce the correct order of the objects.
+Question: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,53,100
+181,False,meta_desc,,"
+Given a set of five objects arranged in a fixed order, deduce the correct sequence of the objects. Use the information provided in the question to logically deduce the correct order.
+Question: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,49,100
+182,False,meta_desc,,"
+Given a paragraph describing a set of five objects arranged in a fixed order and a set of options to choose from, deduce the correct option based on the given paragraph.
+Paragraph: {paragraph}
+Options: {options}
+Output:
+
+",1,SEP_VARS,47,100
+183,False,meta_desc,,"
+Given a set of paragraphs describing a sequence of five objects arranged in a fixed order, choose the correct option from {options} that logically follows the given paragraph. 
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,46,100
+184,False,meta_desc,,"
+Given a set of five objects arranged in a fixed order, choose the correct option based on the information provided in the paragraph. Use logical deduction to determine the correct answer.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,47,100
+185,False,meta_desc,,"
+Given a set of five objects arranged in a fixed order, choose the correct option from a list of choices based on the logical consistency of the statements provided in a paragraph.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,47,100
+186,False,meta_desc,,"
+Given a paragraph describing a set of five objects arranged in a fixed order, deduce the correct order of the objects from the given options.
+Paragraph: {paragraph}
+Options:
+{options}
+Output:",1,SEP_VARS,41,100
+187,False,meta_desc,,"
+Given a paragraph describing a set of five objects arranged in a fixed order, and a set of options, deduce the correct order of the objects. Use logical reasoning to eliminate incorrect options and select the correct one. 
+Paragraph: {paragraph}
+Options:
+{options}
+Output:",1,SEP_VARS,57,100
+188,False,meta_desc,,"
+Given a set of paragraphs describing a fixed order of five objects, your task is to deduce the correct order of the objects. Choose the correct order from a set of options provided.
+Paragraphs: {paragraph}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,51,100
+189,False,meta_desc,,"
+Given a set of paragraphs describing a sequence of five objects, deduce the correct order of the objects. Choose the correct option from the provided set of options. 
+Paragraphs: {paragraph}
+Options:
+{options}
+Output:",1,SEP_VARS,47,100

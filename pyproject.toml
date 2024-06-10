@@ -3,10 +3,10 @@ requires = ["setuptools>=40.8.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "prompt-eval"
+name = "prompteval"
 version = "0.1.0"
 description = ""
-authors = [{name="Felipe Maia Polo", email="felipemaiapolo@gmail.com"}]
+authors = [{name="PromptEval Team", email="felipemaiapolo@gmail.com"}]
 readme = "README.md"
 requires-python = ">=3.9"
 

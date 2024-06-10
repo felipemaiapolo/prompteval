@@ -1,0 +1,702 @@
+prompt idx,default prompt,method,language style,prompt template,correct,prompt format,prompt length,samples
+1,True,default,,"Q: Which of the following is a humorous edit of this artist or movie name: '{artist_or_movie_name}'?
+Options:
+{options}
+A:",1,Q&A,31,100
+2,False,rephrase,,"Select the option that 'ruins' the name of {artist_or_movie_name} from the following: 
+{options}",1,other,25,100
+3,False,rephrase,,"Which of the following options is a funny way to 'ruin' the name of {artist_or_movie_name} from the list below?
+Options:
+{options}",1,other,33,100
+4,False,rephrase,,"Choose the option that humorously 'ruins' the name of {artist_or_movie_name} from the following: 
+{options}",1,other,27,100
+5,False,rephrase,,"Which of the following options is a funny way to 'ruin' {artist_or_movie_name}'s name?
+Options:
+{options}",1,other,28,100
+6,False,rephrase,,"Select the option that humorously 'ruins' the name of {artist_or_movie_name} from the following: 
+{options}",1,other,27,100
+7,False,rephrase,,"Select the option that 'ruins' the name of {artist_or_movie_name}. Which of the following is the correct humorous edit?
+Options:
+{options}",1,other,32,100
+8,False,rephrase,,Select the option that humorously 'ruins' the name of {artist_or_movie_name} from the following: {options},1,SEP_VARS,26,100
+9,False,rephrase,,Select the option that humorously 'ruins' the name of {artist_or_movie_name} from the following choices: {options}.,1,SEP_VARS,27,100
+10,False,rephrase,,"Which of the following options is a humorous edit of the {artist_or_movie_name}?
+Choose from the following:
+{options}",1,other,26,100
+11,False,rephrase,,"Select the option that 'ruins' the name of {artist_or_movie_name}. Which of the following is a humorous edit?
+Options:
+{options}",1,other,31,100
+12,False,rephrase,,"Which of the following options is a funny way to 'ruin' {artist_or_movie_name}? Choose from the following:
+{options}",1,other,28,100
+13,False,rephrase,,"Which of the following options is a comical alteration of the {artist_or_movie_name} name?
+Options:
+{options}
+Answer:",1,other,27,100
+14,False,rephrase,,"Which of the following options is a funny way to ""ruin"" the name of {artist_or_movie_name}?
+Choose from the following:
+{options}",1,other,32,100
+15,False,rephrase,,Select the option that 'ruins' the input movie or musical artist name: '{artist_or_movie_name}'. Which of the following {options} is the correct humorous edit?,1,other,35,100
+16,False,rephrase,,"Select the option that humorously 'ruins' the {artist_or_movie_name} name from the following: 
+{options}",1,other,26,100
+17,False,rephrase,,"Select the option that humorously 'ruins' the name of {artist_or_movie_name}:
+Options:
+{options}",1,other,25,100
+18,False,rephrase,,"Which of the following options would humorously 'ruin' {artist_or_movie_name} as a movie or musical artist name?
+Options:
+{options}",0,other,31,100
+19,False,rephrase,,"Which of the following options is a funny edit of the name of this artist or movie: '{artist_or_movie_name}'?
+Choose from the following:
+{options}",1,other,33,100
+20,False,rephrase,,"Which of the following options would humorously 'ruin' {artist_or_movie_name}?
+Options:
+{options}",1,other,24,100
+21,False,rephrase,,"Select the option that humorously 'ruins' the {artist_or_movie_name}:
+Options:
+{options}",1,other,23,100
+22,False,rephrase,,"Select the option that humorously 'ruins' the name of '{artist_or_movie_name}': 
+Options:
+{options}
+A:",1,other,28,100
+23,False,rephrase,,Select the option that 'ruins' the name of {artist_or_movie_name} from the following list of {options}.,1,other,25,100
+24,False,rephrase,,"Select the option that 'ruins' the name of {artist_or_movie_name}. Which of the following options is a humorous edit? 
+Options:
+{options}
+Choose your answer:",1,other,37,100
+25,False,rephrase,,"Which of the following options is a funny alteration of the given movie or musical artist name: '{artist_or_movie_name}'?
+Options:
+{options}
+Answer:",1,other,32,100
+26,False,rephrase,,"Which of the following options would be a humorous edit of the {artist_or_movie_name} name?
+Choose from the following:
+{options}",1,other,28,100
+27,False,rephrase,,"Q: Choose the option that humorously 'ruins' the name of the given artist or movie: '{artist_or_movie_name}'.
+Options:
+{options}
+A:",1,Q&A,35,100
+28,False,rephrase,,"Q: Choose the option that humorously 'ruins' the name of the artist or movie: '{artist_or_movie_name}'.
+Options:
+{options}
+A:",1,Q&A,34,100
+29,False,rephrase,,"Q: Choose the option that humorously 'ruins' the name of the {artist_or_movie_name}:
+Options:
+{options}
+A:",1,Q&A,30,100
+30,False,rephrase,,"Select the option that best 'ruins' the name of {artist_or_movie_name} in a humorous way:
+Options:
+{options}
+A:",1,other,30,100
+31,False,rephrase,,"Q: Choose the option that 'ruins' the input movie or musical artist name in a humorous way.
+Options:
+{options}
+Artist/Movie Name:
+'{artist_or_movie_name}'
+A:",1,Q&A,40,100
+32,False,rephrase,,"Q: Choose the option that would 'ruin' the {artist_or_movie_name} name in a humorous way.
+Options:
+{options}
+A:",1,Q&A,31,100
+33,False,rephrase,,Select the most humorous edit for the {artist_or_movie_name} from the following {options}.,1,other,19,100
+34,False,rephrase,,"Q: Choose the option that 'ruins' the input movie or musical artist name in a humorous way: '{artist_or_movie_name}'?
+Choices:
+{options}
+A:",1,Q&A,36,100
+35,False,rephrase,,"Q: Choose the option that humorously ""ruins"" the name of the given artist or movie: '{artist_or_movie_name}'.
+Options:
+{options}
+A:",1,Q&A,35,100
+36,False,rephrase,,"Q: Choose the comical modification that spoils the name of {artist_or_movie_name}:
+Options:
+{options}
+A:",1,Q&A,27,100
+37,False,rephrase,,"Q: Choose the option that humorously 'ruins' the name of the given movie or musical artist: '{artist_or_movie_name}'.
+Options:
+{options}
+A:",1,Q&A,36,100
+38,False,rephrase,,"Choose the option that humorously 'ruins' the name of the given artist or movie: '{artist_or_movie_name}'. Which of the following options would you select?
+Options:
+{options}
+Answer:",1,other,41,100
+39,False,rephrase,,"Select the option that humorously 'ruins' the {artist_or_movie_name} name:
+Options:
+{options}
+Answer:",1,other,26,100
+40,False,rephrase,,Select the option that humorously 'ruins' the {artist_or_movie_name} name from the following choices: {options}.,1,SEP_VARS,26,100
+41,False,rephrase,,"Q: Choose the option that 'ruins' the {artist_or_movie_name} name in a humorous way.
+Options:
+{options}
+A:",1,Q&A,30,100
+42,False,rephrase,,"Q: Choose the comical alteration that would ""ruin"" the given movie or music artist name: '{artist_or_movie_name}'?
+Choices:
+{options}
+A:",1,Q&A,35,100
+43,False,rephrase,,"Select the option that humorously 'ruins' the {artist_or_movie_name}:
+Options: {options}",1,SEP_VARS,23,100
+44,False,rephrase,,"Q: Choose the option that humorously 'ruins' the input artist or movie name: '{artist_or_movie_name}'.
+Choices:
+{options}
+A:",1,Q&A,33,100
+45,False,rephrase,,"Q: Choose the option that best applies to the following artist or movie name: '{artist_or_movie_name}', after it has been humorously edited.
+Options:
+{options}
+A:",1,Q&A,37,100
+46,False,rephrase,,"Q: Which of the following options would humorously 'ruin' '{artist_or_movie_name}'?
+Options:
+{options}
+A:",1,Q&A,28,100
+47,False,rephrase,,"Choose the option that best 'ruins' the {artist_or_movie_name}:
+Options:
+{options}
+Answer:",1,other,24,100
+48,False,rephrase,,"Q: Choose the option that best 'ruins' the given artist or movie name: '{artist_or_movie_name}'. Which of the following options do you think is the funniest?
+Options:
+{options}
+A:",1,Q&A,44,100
+49,False,rephrase,,"Q: Choose the option that humorously 'ruins' the given {artist_or_movie_name}.
+Options:
+{options}
+A:",1,Q&A,27,100
+50,False,rephrase,,"Q: Choose the option that humorously 'ruins' {artist_or_movie_name}:
+Options:
+{options}
+A:",1,Q&A,26,100
+51,False,rephrase,,"Select the option that humorously ruins the name of {artist_or_movie_name}:
+Options:
+{options}
+A:",1,other,24,100
+52,False,meta_cot,,Choose the option that provides a humorous edit of the movie or musical artist name '{artist_or_movie_name}'. The options are: {options}.,1,SEP_VARS,28,100
+53,False,meta_cot,,You will be given a movie or musical artist name in the placeholder '{artist_or_movie_name}'. Your task is to select the option that provides a humorous edit of the name. The available options are: {options}.,1,SEP_VARS,43,100
+54,False,meta_cot,,"In this task, you will be presented with a movie or musical artist name in the placeholder '{artist_or_movie_name}'. Your goal is to choose the option that provides a humorous edit of the name. The options are: {options}.",1,SEP_VARS,47,100
+55,False,meta_cot,,Your task is to select the option that provides a humorous edit of the movie or musical artist name '{artist_or_movie_name}'. The available options are: {options}.,1,SEP_VARS,33,100
+56,False,meta_cot,,"Given a movie or musical artist name in the placeholder '{artist_or_movie_name}', your objective is to choose the option that provides a humorous edit of the name. The options are: {options}.",0,SEP_VARS,39,100
+57,False,meta_cot,,Choose the option that presents a humorous edit of the movie or musical artist name: '{artist_or_movie_name}'. The options are: {options}.,1,SEP_VARS,29,100
+58,False,meta_cot,,Your task is to select the option that provides a humorous edit of the movie or musical artist name: '{artist_or_movie_name}'. You will be given the following options: {options}.,1,SEP_VARS,37,100
+59,False,meta_cot,,"Given the movie or musical artist name: '{artist_or_movie_name}', choose the option that presents a humorous edit. The options you can choose from are: {options}.",1,SEP_VARS,34,100
+60,False,meta_cot,,Select the option that provides a humorous edit of the movie or musical artist name: '{artist_or_movie_name}'. You will be presented with the following options: {options}.,1,SEP_VARS,34,100
+61,False,meta_cot,,Your objective is to identify the option that contains a humorous edit of the movie or musical artist name: '{artist_or_movie_name}'. The available options are: {options}.,1,SEP_VARS,34,100
+62,False,meta_cot,,Choose the option that presents a funny variation of the name '{artist_or_movie_name}'. The options are: {options}.,1,SEP_VARS,24,100
+63,False,meta_cot,,Which of the following options presents a comical alteration of the name '{artist_or_movie_name}'? You can choose from the following: {options}.,1,SEP_VARS,30,100
+64,False,meta_cot,,Your task is to identify the option that presents a humorous modification of the name '{artist_or_movie_name}'. The available options are: {options}.,1,SEP_VARS,29,100
+65,False,meta_cot,,"Among the following options, which one presents a funny version of the name '{artist_or_movie_name}'? You can choose from: {options}.",1,SEP_VARS,29,100
+66,False,meta_cot,,Find the option that presents a comical version of the name '{artist_or_movie_name}'. The possible options are: {options}.,1,SEP_VARS,26,100
+67,False,meta_cot,,Choose the option that presents a humorous edit of the artist or movie name '{artist_or_movie_name}'. The options are: {options}.,1,SEP_VARS,27,100
+68,False,meta_cot,,You need to select a funny variation of the artist or movie name '{artist_or_movie_name}'. The choices are: {options}.,1,SEP_VARS,26,100
+69,False,meta_cot,,Pick the option that contains a humorous edit of the artist or movie name '{artist_or_movie_name}'. You can choose from: {options}.,1,SEP_VARS,28,100
+70,False,meta_cot,,Your task is to select the option that presents a humorous variation of the artist or movie name '{artist_or_movie_name}'. The available choices are: {options}.,1,SEP_VARS,32,100
+71,False,meta_cot,,Choose the option that provides a humorous edit of the artist or movie name '{artist_or_movie_name}'. The available options are: {options}.,1,SEP_VARS,28,100
+72,False,meta_cot,,You need to select the option that presents a funny edit of the artist or movie name '{artist_or_movie_name}'. The following options are available: {options}.,1,SEP_VARS,32,100
+73,False,meta_cot,,Pick the option that offers a humorous twist to the artist or movie name '{artist_or_movie_name}'. You can choose from the following options: {options}.,1,SEP_VARS,31,100
+74,False,meta_cot,,Select the option that gives a funny spin to the artist or movie name '{artist_or_movie_name}'. The available choices are: {options}.,1,SEP_VARS,28,100
+75,False,meta_cot,,Select the funny version of '{artist_or_movie_name}' from the following options: {options},1,SEP_VARS,19,100
+76,False,meta_cot,,Choose the option that presents a humorous version of '{artist_or_movie_name}' from the following alternatives: {options},1,SEP_VARS,23,100
+77,False,meta_cot,,Pick the amusing edit of '{artist_or_movie_name}' from the options below: {options},1,SEP_VARS,19,100
+78,False,meta_cot,,Identify the comical version of '{artist_or_movie_name}' from the following choices: {options},1,SEP_VARS,21,100
+79,False,meta_cot,,Choose the option that provides a humorous edit of the movie or musical artist name '{artist_or_movie_name}'. The available options are: {options}.,1,SEP_VARS,29,100
+80,False,meta_cot,,You are given a movie or musical artist name '{artist_or_movie_name}'. Your task is to select the option that provides a humorous edit of the name. The following options are available: {options}.,1,SEP_VARS,40,100
+81,False,meta_cot,,Your task is to select the option that provides a humorous edit of the movie or musical artist name '{artist_or_movie_name}'. Choose one of the following options: {options}.,1,SEP_VARS,35,100
+82,False,meta_cot,,Select the option that provides a humorous edit of the movie or musical artist name '{artist_or_movie_name}'. The available options are: {options}.,1,SEP_VARS,29,100
+83,False,meta_cot,,Choose the option that provides a funny alternative to the movie or musical artist name '{artist_or_movie_name}'. You can choose from the following options: {options}.,1,SEP_VARS,32,100
+84,False,meta_cot,,You are given a movie or musical artist name '{artist_or_movie_name}'. Your task is to select the option that provides a funny alternative to the name. The following options are available: {options}.,1,SEP_VARS,40,100
+85,False,meta_cot,,Your task is to select the option that provides a funny alternative to the movie or musical artist name '{artist_or_movie_name}'. Choose one of the following options: {options}.,1,SEP_VARS,35,100
+86,False,meta_cot,,Select the option that provides a funny alternative to the movie or musical artist name '{artist_or_movie_name}'. The available options are: {options}.,1,SEP_VARS,29,100
+87,False,meta_cot,,Choose the option that presents a funny version of the artist or movie name: {artist_or_movie_name}. The alternatives are: {options}.,1,SEP_VARS,28,100
+88,False,meta_cot,,You will be given a name of a movie or artist in the placeholder {artist_or_movie_name}. Your task is to select the option that presents a humorous edit of the name. The possible options are: {options}.,0,SEP_VARS,44,100
+89,False,meta_cot,,"In this task, you will be asked to choose the option that presents a funny version of the artist or movie name given in the placeholder {artist_or_movie_name}. You will have to select one of the following alternatives: {options}.",0,SEP_VARS,47,100
+90,False,meta_cot,,Your goal is to select the option that presents a humorous edit of the artist or movie name given in the placeholder {artist_or_movie_name}. You will be presented with a list of options in the placeholder {options}. Choose the one that you think is the funniest.,0,other,54,100
+91,False,meta_cot,,You will be given a name of a movie or artist in the placeholder {artist_or_movie_name}. Your task is to select the option that presents a humorous version of the name. The possible options are: {options}.,0,SEP_VARS,44,100
+92,False,meta_desc,,"
+Select the humorous edit that 'ruins' the input movie or musical artist name from a list of options in a multi-choice format. The correct answer is the one that is both humorous and meaningful.
+Original name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,57,100
+93,False,meta_desc,,"
+Select the humorous edit that 'ruins' the input movie or musical artist name from a list of options in a multi-choice format. The correct answer is the one that is both humorous and meaningful. 
+Original name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,58,100
+94,False,meta_desc,,"
+Select the humorous edit that 'ruins' the input movie or musical artist name from a list of options in a multi-choice format. The correct answer is the option that is the most meaningful and funny edit. 
+Original name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,60,100
+95,False,meta_desc,,"
+Select the humorous edit that 'ruins' the input movie or musical artist name from a list of options in a multi-choice format. The correct answer is the option that is both meaningful and funny.
+Original name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,57,100
+96,False,meta_desc,,"
+Select the humorous edit that 'ruins' the input movie or musical artist name from a list of options in a multi-choice format. Your task is to choose the option that is both humorous and meaningful in ruining the original name. 
+Original name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,64,100
+97,False,meta_desc,,"
+Select the humorous edit that 'ruins' the input movie or musical artist name from a list of options in a multi-choice format. The correct answer is the option that is both humorous and meaningful in ruining the original name. 
+Original name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,63,100
+98,False,meta_desc,,"
+Select the humorous edit that 'ruins' the input movie or musical artist name from a list of options in a multiple-choice format. You will be presented with the original name and a list of variations of the name, with one being the correct humorous edit. Choose the option that you think is the funniest.
+Original name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,80,100
+99,False,meta_desc,,"
+Select the humorous edit that 'ruins' the input movie or musical artist name from a list of options in a multiple-choice format. You will be given the original name and a list of variations of the name with one being the correct humorous edit. Choose the option that you think is the funniest. 
+Original name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,79,100
+100,False,meta_desc,,"
+Choose the most humorous edit that 'ruins' the input movie or musical artist name from a list of options. The correct answer is the option that is the most meaningful and funny edit.
+Original name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,55,100
+101,False,meta_desc,,"
+Select the most humorous edit that 'ruins' the input movie or musical artist name from a list of options in a multi-choice format.
+Original name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,45,100
+102,False,meta_desc,,"
+Select the most humorous edit that 'ruins' the input movie or musical artist name from a list of options in a multi-choice format. Your task is to choose the option that is the most meaningful and funny edit. 
+Original name: {artist_or_movie_name}
+Options:
+{options}
+Output:",1,SEP_VARS,62,100
+103,False,meta_desc,,"
+Select the humorous edit that 'ruins' the input movie or musical artist name from a list of options in a multi-choice format. The prompt provides the original name and the options, and the answer should be the option that is both meaningful and funny.
+Original name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,68,100
+104,False,meta_desc,,"
+You are given a list of options to select a humorous edit that 'ruins' the input movie or musical artist name. Your task is to choose the option that is both humorous and meaningful.
+Original name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,56,100
+105,False,meta_desc,,"
+Select the humorous edit that 'ruins' the input movie or musical artist name from a list of options in a multi-choice format. The correct answer is the option that is both humorous and meaningful.
+Original name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,57,100
+106,False,meta_desc,,"
+Select the humorous edit that 'ruins' the input movie or musical artist name from a list of options in a multi-choice format. The correct answer is the one that is both meaningful and funny.
+Original name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,57,100
+107,False,meta_desc,,"
+You are given a list of options to select the humorous edit that 'ruins' the input movie or musical artist name. The correct answer is the one that is both meaningful and funny. Your task is to select the correct option from the list. 
+Original name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,68,100
+108,False,meta_desc,,"
+""Ruin Names"" is a game where you need to select the humorous edit that 'ruins' a given movie or musical artist name. Select the option that makes the name funny or ridiculous.
+artist_or_movie_name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,59,100
+109,False,meta_desc,,"
+Ruin Names is a task where you will be given a movie or musical artist name in the placeholder 'artist_or_movie_name' and you need to select the humorous edit that 'ruins' the name. The options will be provided in the 'options' placeholder. Your task is to generate a response that selects the option that best 'ruins' the name. 
+artist_or_movie_name: {artist_or_movie_name}
+Options:",0,SEP_VARS,89,100
+110,False,meta_desc,,"
+You are given a movie or musical artist name and you need to select the humorous edit of that name. The task is in multi-choice format and the options will be provided. Your task is to generate the humorous edit of the given 'artist_or_movie_name' from the given 'options'. 
+Movie or musical artist name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+Humorous edit of {artist_or_",0,SEP_VARS,87,100
+111,False,meta_desc,,"
+You are given a movie or musical artist name and you need to select the humorous edit of that name. The task is in multi-choice format and the options will be provided. Your task is to generate the humorous edit of the given artist or movie name.
+Input: The {artist_or_movie_name}
+Options:
+{options}
+Output:",1,other,68,100
+112,False,meta_desc,,"
+Please provide a humorous edit that 'ruins' the input movie or musical artist name. Your edit should be witty and comical.
+Input: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",0,SEP_VARS,43,100
+113,False,meta_desc,,"
+Please provide a humorous edit that 'ruins' the input movie or musical artist name. Your edit should be witty and creative.
+Input: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",0,SEP_VARS,42,100
+114,False,meta_desc,,"
+Ruin the names of movie or musical artists by selecting a humorous edit from a list of options. Choose the option that 'ruins' the name in a humorous way.
+artist_or_movie_name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,54,100
+115,False,meta_desc,,"
+Ruining names is always fun! In this task, you will be given an artist or movie name and a list of options to choose from. Your goal is to select the option that best 'ruins' the given name in a humorous way.
+Artist/Movie Name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,69,100
+116,False,meta_desc,,"
+Ruin names! In this task, you will be given an artist or movie name that needs to be humorously edited. Your goal is to select the option that best 'ruins' the original name. You will be presented with a list of options to choose from. Your task is to select the funniest one.
+Artist or movie name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,84,100
+117,False,meta_desc,,"
+Edit the name of a {artist_or_movie_name} to make it humorous. Choose the best option from the given choices.
+Options:
+{options}
+Output:",1,other,33,100
+118,False,meta_desc,,"
+Ruin the names of movie or musical artists by selecting the humorous edit from the given options. Select the option that ruins the name in the most humorous way possible.
+Artist_or_movie_name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,52,100
+119,False,meta_desc,,"
+Ruin the names of movie or musical artists by selecting the humorous edit from the given options.
+Artist_or_movie_name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,38,100
+120,False,meta_desc,,"
+Please select a humorous edit that 'ruins' the input {artist_or_movie_name} from the following options:
+{options}
+Output:
+
+",1,other,29,100
+121,False,meta_desc,,"
+Ruining names can be a fun activity! In this task, you will be given an artist or movie name and a list of options to choose from. Your goal is to select the option that humorously 'ruins' the original name. Let your imagination run wild and have fun with it! Remember, you only need to select one option from the list provided.
+Artist_or_movie_name: {artist_or_movie_name}
+Options:
+{options}",0,SEP_VARS,91,100
+122,False,meta_desc,,"
+Ruin the names of movies or musical artists in a humorous way. Choose the option that best 'ruins' the name.
+{artist_or_movie_name}:
+Options:
+{options}
+Output:
+
+",1,other,41,100
+123,False,meta_desc,,"
+You are playing a game called 'ruin names'. In this game, you will be given a movie or musical artist name in the placeholder {artist_or_movie_name} and a list of options in the placeholder {options}. Your task is to select the humorous edit that 'ruins' the input name. Your answer should be in a multi-choice format.
+Artist or movie name: {artist_or_movie_name}
+Options:
+{options}
+",0,SEP_VARS,89,100
+124,False,meta_desc,,"
+Select the humorous edit that 'ruins' the movie or musical artist name from the list of options. The correct answer is the one that is both funny and meaningful. 
+Original name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,52,100
+125,False,meta_desc,,"
+Select the humorous edit that 'ruins' the input movie or musical artist name from a list of options. The correct answer is the one that is both humorous and meaningful. 
+Original name: {artist_or_movie_name}
+Options:
+{options}
+Output:",1,SEP_VARS,53,100
+126,False,meta_desc,,"
+You are given a movie or musical artist name and a list of options for humorous edits. Your task is to select the option that 'ruins' the original name in the most meaningful and funny way.
+Original name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,58,100
+127,False,meta_desc,,"
+You are given a movie or musical artist name and a list of options that contain humorous edits of the original name. Your task is to select the option that is the most meaningful and funny edit.
+Original name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,56,100
+128,False,meta_desc,,"
+You are given a movie or musical artist name and a list of options for humorous edits. Your task is to select the option that both makes sense and is funny. Keep in mind that the goal is to 'ruin' the original name in a humorous way.
+Original name: {artist_or_movie_name}
+Options:
+{options}
+Which option would you choose?
+
+Output:",1,SEP_VARS,76,100
+129,False,meta_desc,,"
+You are a movie or music critic and you have come across a list of edited movie or musical artist names. Your task is to select the option that is both meaningful and funny. Please choose the option that you think is the best humorous edit.
+Original name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,66,100
+130,False,meta_desc,,"
+Select the option that humorously 'ruins' the following movie or musical artist name:
+{artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",1,other,32,100
+131,False,meta_desc,,"
+You will be presented with a movie or musical artist name and a list of options for humorous edits that 'ruin' the original name. Your task is to select the option that is both humorous and meaningful in ruining the original name. 
+Original name: {artist_or_movie_name}
+Options:
+{options}
+Output:",1,SEP_VARS,65,100
+132,False,meta_desc,,"
+Select the humorous edit that 'ruins' the following movie or musical artist name from the list of options provided.
+Original name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,40,100
+133,False,meta_desc,,"
+Select the funniest edit that 'ruins' the movie or musical artist name from the given options. The correct answer is the option that is the most meaningful and humorous edit. 
+Original name: {artist_or_movie_name}
+Options:
+{options}
+Output:",1,SEP_VARS,54,100
+134,False,meta_desc,,"
+You are given a movie or musical artist name and a list of options for humorous edits. Your task is to select the option that provides the most meaningful and funny edit to the original name.
+Original name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,55,100
+135,False,meta_desc,,"
+You are tasked with selecting the most humorous edit that 'ruins' a movie or musical artist name from a list of options. Your goal is to select the option that is both the most meaningful and the funniest.
+Original Name: {artist_or_movie_name}
+Options:
+{options}
+Output:",1,SEP_VARS,61,100
+136,False,meta_desc,,"
+You will be presented with a movie or musical artist name, along with a list of options for humorous edits that 'ruin' the original name. Your task is to select the option that is both meaningful and funny.
+Original name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,61,100
+137,False,meta_desc,,"
+You will be presented with a movie or musical artist name along with a list of humorous edits. Your task is to select the edit that is both meaningful and funny.
+Original name: {artist_or_movie_name}
+Edits:
+{options}
+Output:
+
+",1,SEP_VARS,51,100
+138,False,meta_desc,,"
+You are given a movie or musical artist name and a list of options for a humorous edit that 'ruins' the original name. Your task is to select the option that is both humorous and meaningful.
+Original name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,58,100
+139,False,meta_desc,,"
+Choose the option that best 'ruins' the input movie or musical artist name in a humorous and meaningful way.
+Original name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,40,100
+140,False,meta_desc,,"
+You are presented with a list of edits to a movie or musical artist name. Your task is to select the edit that is both humorous and ""ruins"" the original name.
+Original name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,53,100
+141,False,meta_desc,,"
+You will be given a movie or musical artist name, along with a list of options for humorous edits that 'ruin' the original name. Your task is to select the edit that is both funny and still recognizable as the original name.
+Original name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+Which option would you choose? 
+
+",1,SEP_VARS,72,100
+142,False,meta_desc,,"
+Edit the given movie or musical artist name in a humorous way. Choose the option that 'ruins' the name the most.
+Artist or movie name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,45,100
+143,False,meta_desc,,"
+Select the option that 'ruins' the name of the given movie or musical artist.
+Artist_or_movie_name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,37,100
+144,False,meta_desc,,"
+Select the humorous edit of a given movie or musical artist name from the provided options.
+Movie or musical artist name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,37,100
+145,False,meta_desc,,"
+Select the humorous edit of the given movie or musical artist name from the options provided.
+Movie or musical artist name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+Humorous edit of {artist_or_movie_name}:",1,SEP_VARS,47,100
+146,False,meta_desc,,"
+Generate a humorous edit that 'ruins' the name of a movie or musical artist. Your edit should be funny and unexpected. Be creative and have fun with it!
+Name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",0,SEP_VARS,50,100
+147,False,meta_desc,,"
+Generate a humorous edit that 'ruins' a movie or musical artist name. Your edit should be funny and unexpected.
+Name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",0,SEP_VARS,40,100
+148,False,meta_desc,,"
+Select the funniest option that 'ruins' the input artist or movie name.
+Artist/Movie Name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,36,100
+149,False,meta_desc,,"
+You will be given a movie or musical artist name and a list of options to choose from. Your task is to select the option that will humorously 'ruin' the original name. Keep in mind that the goal is to be funny and creative!
+Artist or movie name: {artist_or_movie_name}
+Options:
+{options}
+Output:",1,SEP_VARS,70,100
+150,False,meta_desc,,"
+You will be presented with a movie or musical artist name that needs to be humorously edited. Your task is to select the option that 'ruins' the name in the funniest way possible.
+Artist/Movie Name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,59,100
+151,False,meta_desc,,"
+You will be presented with a name of a movie or musical artist and a list of options. Your task is to select the option that humorously 'ruins' the original name.
+Artist or movie name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,56,100
+152,False,meta_desc,,"
+You will be given a movie or musical artist name and a set of options. Your goal is to select the humorous edit that 'ruins' the input name. Use your creativity to come up with the funniest option!
+Artist or movie name: {artist_or_movie_name}
+Options:
+{options}
+Output:",1,SEP_VARS,64,100
+153,False,meta_desc,,"
+Come up with a humorous edit to 'ruin' the given artist or movie name. Choose the best option from the list below.
+Artist/Movie Name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,46,100
+154,False,meta_desc,,"
+You are given a movie or musical artist name and a list of options. Your goal is to select the most humorous edit that 'ruins' the original name.
+Artist or movie name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,52,100
+155,False,meta_desc,,"
+You are given an artist or movie name and a list of options. Your task is to select the option that humorously 'ruins' the original name.
+Artist or movie name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,51,100
+156,False,meta_desc,,"
+Ruin the name of a movie or musical artist! Select the funniest edit that 'ruins' the original name.
+Artist or movie name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,44,100
+157,False,meta_desc,,"
+Edit the given movie or musical artist name in a humorous way. Choose the funniest option from the list of choices.
+Movie or artist name: {artist_or_movie_name}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,43,100

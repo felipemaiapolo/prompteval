@@ -1,0 +1,899 @@
+prompt idx,default prompt,method,language style,prompt template,correct,prompt format,prompt length,samples
+1,True,default,,"Q: Here is a table where the first line is a header and each subsequent line is a penguin:  name, age, height (cm), weight (kg)
+{table_description}
+{question}
+Options:
+{options}
+A:",1,Q&A,49,100
+2,False,rephrase,,"Task name: penguins in a table
+Format: multi_choice
+Description: Answer questions about a table of penguins and their attributes.
+Rephrased prompt:
+Q: The table below shows the attributes of different penguins. The first line is the header and each subsequent line represents a penguin. Please answer the following question:
+{question}
+Table Description:
+{table_description}
+Options:
+{options}
+A:",1,Q&A,85,100
+3,False,rephrase,,"Q: In the following table, the first line is a header and each subsequent line represents a penguin with their name, age, height (in cm), and weight (in kg). {table_description} {question}
+Options:
+{options}
+A:",1,Q&A,52,100
+4,False,rephrase,,"Q: In this table, the first row is a header and each following row represents a penguin with their name, age, height (in cm), and weight (in kg). {table_description} {question}
+Options:
+{options}
+A:",1,Q&A,51,100
+5,False,rephrase,,"Task name: penguins in a table
+Format: multi_choice
+Description: Answer questions about a table of penguins and their attributes.
+Default prompt:
+Q: In the given table, the first line is a header and each subsequent line represents a penguin with their name, age, height (in cm), and weight (in kg). {table_description}. {question}
+Options:
+{options}
+A:",0,Q&A,83,100
+6,False,rephrase,,"Q: In this table, the first line is a header and each subsequent line represents a penguin with their name, age, height (in cm), and weight (in kg). {table_description} {question}
+Options:
+{options}
+A:",1,Q&A,51,100
+7,False,rephrase,,"Task name: penguins in a table
+Format: multi_choice
+Description: Answer questions about a table of penguins and their attributes.
+Default prompt:
+Q: In the given table, the first line represents the header and each subsequent line represents a penguin with their attributes: name, age, height (in cm), weight (in kg). {table_description} {question} Choose the correct option from the following:
+{options}
+A:",0,Q&A,90,100
+8,False,rephrase,,"Task name: penguins in a table
+Format: multi_choice
+Description: Answer questions about a table of penguins and their attributes.
+Default prompt:
+Q: In the given table, the first line is a header and each subsequent line represents a penguin with their name, age, height (cm), and weight (kg). {table_description} {question}
+Options:
+{options}
+A:",0,Q&A,81,100
+9,False,rephrase,,"Q: In the given table, the first line represents the header and the following lines represent the attributes of each penguin. The attributes include name, age, height in centimeters, and weight in kilograms. {table_description} {question} Choose the best option from the following: {options}
+A:",1,Q&A,62,100
+10,False,rephrase,,"Q: In the given table, the first line represents the header and the following lines represent the penguins with their respective attributes - name, age, height (cm), and weight (kg). {table_description} {question} Choose the correct option from the following: {options}
+A:",1,Q&A,59,100
+11,False,rephrase,,"Task name: penguins in a table
+Format: multi_choice
+Description: Answer questions about a table of penguins and their attributes.
+Default prompt:
+Q: In the given table, the first line is a header and each subsequent line represents a penguin with their name, age, height (in cm), and weight (in kg). {table_description} {question}
+Options:
+{options}
+A:",0,Q&A,83,100
+12,False,rephrase,,"Q: In the given table, the first row contains the headers and the following rows contain information about different penguins. The headers are: name, age, height in centimeters, and weight in kilograms. {table_description} Can you answer this question: {question}? Choose the correct option from the following choices: {options}.
+A:",1,Q&A,69,100
+13,False,rephrase,,"Task name: penguins in a table
+Format: multi_choice
+Description: Answer questions about a table of penguins and their attributes.
+Default prompt:
+Q: In the following table, the first row is the header and the rest of the rows contain information about different penguins: name, age, height (in cm), and weight (in kg).
+{table_description}
+{question}
+Choose the correct answer from the following options:
+{options}
+A:",0,Q&A,93,100
+14,False,rephrase,,"Task name: penguins in a table
+Format: multi_choice
+Description: Answer questions about a table of penguins and their attributes.
+Default prompt:
+Q: In the given table, the first line represents the header and the following lines represent the penguins with their respective attributes such as name, age, height (in cm), and weight (in kg). 
+{table_description}
+{question}
+Choose the correct option from the following:
+{options}
+A:",0,Q&A,94,100
+15,False,rephrase,,"Q: In the given table, the first line contains the header and each following line represents a penguin with their name, age, height (in cm), and weight (in kg). {table_description} {question} Choose the correct option from the following:
+{options}
+A:",1,Q&A,58,100
+16,False,rephrase,,"Task name: penguins in a table
+Format: multi_choice
+Description: Answer questions about a table of penguins and their attributes.
+Rephrased prompt:
+Q: The table below shows various attributes of different penguins. The first line of the table is the header and each subsequent line represents a penguin. Please use the information in the table to answer the following question:
+{question}
+Table description:
+{table_description}
+Options:
+{options}
+A:",0,Q&A,95,100
+17,False,rephrase,,"Q: In the table provided, the first line is a header and each subsequent line represents a penguin with their name, age, height in centimeters, and weight in kilograms. {table_description} {question}
+Options:
+{options}
+A:",1,Q&A,51,100
+18,False,rephrase,,"Task name: penguins in a table
+Format: multi_choice
+Description: Answer questions about a table of penguins and their attributes.
+Default prompt:
+Q: In the given table, the first line represents the header and each following line represents a penguin's attributes: name, age, height (in cm), and weight (in kg). 
+{table_description}
+{question}
+Select the correct option from the following:
+{options}
+A:",0,Q&A,91,100
+19,False,rephrase,,"Q: In the given table, the first line represents the header and the following lines represent individual penguins with their respective attributes such as name, age, height (cm), and weight (kg). 
+{table_description}
+Please select the correct option for the following question:
+{question}
+Options:
+{options}
+A:",1,Q&A,65,100
+20,False,rephrase,,"Task name: penguins in a table
+Format: multi_choice
+Description: Answer questions about a table of penguins and their attributes.
+Default prompt:
+Q: In the given table, the first line represents the header and the following lines represent the penguins with their respective attributes: name, age, height (cm), and weight (kg). 
+{table_description}
+{question}
+Please select the correct option from the following:
+{options}
+A:",0,Q&A,92,100
+21,False,rephrase,,"Q: In the given table, the first line represents the header and the following lines represent individual penguins. The table contains information about their name, age, height in centimeters, and weight in kilograms. {table_description} {question} Choose the best answer among the following options: {options}
+A:",1,Q&A,63,100
+22,False,rephrase,,"Q: In the given table, the first line is a header and each subsequent line represents a penguin with their name, age, height in centimeters, and weight in kilograms. {table_description} {question} Choose the correct option from the following: {options}
+A:",1,Q&A,57,100
+23,False,rephrase,,"Task name: penguins in a table
+Format: multi_choice
+Description: Answer questions about a table of penguins and their attributes.
+Default prompt:
+Q: In the table below, the first line is a header and each subsequent line is a penguin: name, age, height (cm), weight (kg)
+{table_description}
+{question}
+Choose the best option:
+{options}
+A:",0,Q&A,82,100
+24,False,rephrase,,"Task name: penguins in a table
+Format: multi_choice
+Description: Answer questions about a table of penguins and their attributes.
+Default prompt:
+Q: In the following table, the first line is a header and each subsequent line is a penguin: name, age, height (cm), weight (kg).
+{table_description}
+{question}
+Choose the correct option:
+{options}
+A:",0,Q&A,82,100
+25,False,rephrase,,"Q: In the table below, the first line is a header and each subsequent line represents a penguin. The table shows the penguin's name, age, height in centimeters, and weight in kilograms. 
+{table_description}
+{question}
+Options:
+{options}
+A:",1,Q&A,58,100
+26,False,rephrase,,"Q: The table below shows penguins and their attributes. The first line is a header and each subsequent line is a penguin: name, age, height (cm), weight (kg).
+{table_description}
+{question}
+Choose the correct option:
+{options}
+A:",1,Q&A,56,100
+27,False,rephrase,,"Q: In the following table, the first row is the header and each subsequent row represents a penguin: name, age, height in centimeters, weight in kilograms. {table_description} {question}
+Options:
+{options}
+A:",1,Q&A,49,100
+28,False,rephrase,,"Q: In the following table, the first row is the header and the subsequent rows represent different penguins. The table includes the following attributes: name, age, height (in cm), and weight (in kg). {table_description} {question}
+Options:
+{options}
+A:",1,Q&A,58,100
+29,False,rephrase,,"Q: In the following table, the first row is the header and each subsequent row represents a penguin: name, age, height (in cm), weight (in kg). {table_description} {question}
+Choose the best option:
+{options}
+A:",1,Q&A,53,100
+30,False,rephrase,,"Q: In the given table, the first line is a header and each subsequent line represents a penguin with their name, age, height (in cm), and weight (in kg). {table_description}. Please select the correct answer for the following question: {question}.
+Options:
+{options}
+A:",1,Q&A,62,100
+31,False,rephrase,,"Q: In the table below, the first line is a header and each subsequent line represents a penguin. The table contains the following attributes: name, age, height (in cm), and weight (in kg). {table_description} {question}
+Options:
+{options}
+A:",1,Q&A,58,100
+32,False,rephrase,,"Q: In the given table, the first line is a header and each subsequent line is a penguin. The header contains the following attributes: name, age, height (cm), and weight (kg). {table_description} {question} Choose the best answer from the following options: {options}
+A:",1,Q&A,63,100
+33,False,rephrase,,"Q: In the given table, the first line contains the header and the following lines contain information about each penguin's name, age, height (in cm), and weight (in kg). {table_description} {question} Choose the best option from the following: {options} A:",1,Q&A,59,100
+34,False,rephrase,,"Q: In the given table, the first line represents the header and the following lines represent the penguins with their respective attributes such as name, age, height (cm), and weight (kg). {table_description}. Please answer the following question: {question}. Choose the correct option from the following choices: {options}.
+A:",1,Q&A,67,100
+35,False,rephrase,,"Q: In the given table, the first line is a header and each subsequent line represents a penguin with their name, age, height (in cm), and weight (in kg). {table_description} {question} Choose the correct option from the following:
+{options}
+A:",1,Q&A,58,100
+36,False,rephrase,,"Q: In the table below, the first line is a header and each subsequent line represents a penguin with their name, age, height in centimeters, and weight in kilograms. {table_description} {question}
+Choose the best answer from the following options: {options}
+A:",1,Q&A,58,100
+37,False,rephrase,,"Q: In the table below, the first line is a header and each subsequent line represents a penguin: name, age, height (cm), weight (kg). {table_description} {question}
+Options:
+{options}
+A:",1,Q&A,48,100
+38,False,rephrase,,"Q: In the given table, the first line is the header and each subsequent line represents a penguin with their name, age, height (in cm), and weight (in kg). {table_description} {question} Choose the best option from the following: {options}
+A:",1,Q&A,58,100
+39,False,rephrase,,"Q: In the following table, the first row contains the headers and the subsequent rows contain information about different penguins: name, age, height (in cm), weight (in kg). {table_description} {question} Choose the best answer from the following options: {options}
+A:",1,Q&A,59,100
+40,False,rephrase,,"Q: In the given table, the first line is a header and each subsequent line represents a penguin with their name, age, height (cm), and weight (kg). {table_description}. Can you answer the following question? {question}. Choose the correct option from the following: {options}.
+A:",1,Q&A,63,100
+41,False,rephrase,,"Q: In the given table, the first line contains the header and the following lines contain information about different penguins. The attributes mentioned in the header are: name, age, height (in cm), and weight (in kg). {table_description} {question} Choose the correct option from the following: {options}
+A:",1,Q&A,67,100
+42,False,rephrase,,"Q: In the following table, the first row represents the headers and each subsequent row represents a penguin's attributes: name, age, height (in cm), weight (in kg). {table_description} {question} Choose the best answer from the following options: {options}
+Options:
+{options}
+A:",1,Q&A,64,100
+43,False,rephrase,,"Q: In the following table, the first row contains the headers and each subsequent row contains information about a penguin: name, age, height (in cm), weight (in kg). {table_description} {question} Choose the best answer from the following options: {options}
+A:",1,Q&A,59,100
+44,False,rephrase,,"Q: In the given table, the first line is a header and each subsequent line represents a penguin with their name, age, height in centimeters, and weight in kilograms. {table_description} {question} Choose the best answer from the following options: {options}
+A:",1,Q&A,58,100
+45,False,rephrase,,"Q: In the following table, the first row is the header and the subsequent rows contain information about different penguins: name, age, height (in cm), and weight (in kg). {table_description} {question}
+Options:
+{options}
+A:",1,Q&A,53,100
+46,False,rephrase,,"Q: In the given table, the first line is a header and each subsequent line represents a penguin, displaying their name, age, height (in cm), and weight (in kg). {table_description} {question} Choose the option that best answers the question. 
+Options:
+{options}
+A:",1,Q&A,63,100
+47,False,rephrase,,"Q: In the given table, the first line represents the header and the following lines represent the penguins. The table includes the following attributes: name, age, height (cm), and weight (kg). {table_description} {question} Choose the correct option from the following: {options}
+A:",1,Q&A,62,100
+48,False,rephrase,,"Q: In the following table, the first row is the header and the subsequent rows contain information about different penguins: name, age, height (in cm), weight (in kg). {table_description} {question} Choose the best option from the following: {options}
+Options:
+{options}
+A:",1,Q&A,63,100
+49,False,rephrase,,"Q: In the given table of penguins, where the first line is a header and each subsequent line is a penguin: name, age, height (cm), weight (kg), what is the {table_description}?
+{question}
+Choose the correct option from the following:
+{options}
+A:",0,Q&A,62,100
+50,False,rephrase,,"Q: In the given table, the first line is the header and each subsequent line represents a penguin. The table contains four attributes: name, age, height (in cm), and weight (in kg). {table_description} {question} Choose the best option from the following: {options}",1,SEP_VARS,61,100
+51,False,meta_cot,,"Given a table with penguin attributes such as name, age, height (cm), and weight (kg), answer questions about the penguins. {table_description} {question} Choose one of the following options: {options}",1,SEP_VARS,46,100
+52,False,meta_cot,,"Answer questions about penguins in a table. The table has a header and each subsequent line represents a penguin. The penguin attributes are name, age, height (cm), and weight (kg). {table_description} {question} Choose one of the following options: {options}",1,SEP_VARS,58,100
+53,False,meta_cot,,"You are given a table with penguin attributes such as name, age, height (cm), and weight (kg). Answer questions about the penguins in the table. {table_description} {question} Choose one of the following options: {options}",1,SEP_VARS,51,100
+54,False,meta_cot,,"Please answer the following question about the table of penguins: {question} The table has a header and each subsequent line represents a penguin with attributes: name, age, height (cm), weight (kg). {table_description} You can choose from the following options: {options}",1,SEP_VARS,58,100
+55,False,meta_cot,,"You will be answering questions about a table of penguins and their attributes. The table has a header and each subsequent line represents a penguin with attributes: name, age, height (cm), weight (kg). {table_description} Your task is to answer the following question: {question} Choose one of the following options: {options}",1,SEP_VARS,69,100
+56,False,meta_cot,,"In this task, you will be answering questions about a table of penguins and their attributes. The table has a header and each subsequent line represents a penguin with attributes: name, age, height (cm), weight (kg). {table_description} Your goal is to answer the following question: {question} Choose from the following options: {options}",1,SEP_VARS,72,100
+57,False,meta_cot,,"Please answer the following question about the penguin table: {question} The table has a header and each subsequent line represents a penguin. The penguin attributes are name, age, height (cm), and weight (kg). {table_description} The available answer options are: {options}",1,SEP_VARS,59,100
+58,False,meta_cot,,"You will be presented with a question about a table of penguins. The table has a header and each subsequent line represents a penguin. The penguin attributes are name, age, height (cm), and weight (kg). {table_description} {question} Choose the correct answer from the following options: {options}",1,SEP_VARS,65,100
+59,False,meta_cot,,"In this task, you will be answering questions about a table of penguins and their attributes. The table has a header and each subsequent line represents a penguin. The penguin attributes are name, age, height (cm), and weight (kg). {table_description} {question} You must choose the correct answer from the following options: {options}",1,SEP_VARS,72,100
+60,False,meta_cot,,"Your task is to answer a question about a table of penguins and their attributes. The table has a header and each subsequent line represents a penguin. The penguin attributes are name, age, height (cm), and weight (kg). {table_description} {question} Choose the correct answer from the following options: {options}",1,SEP_VARS,68,100
+61,False,meta_cot,,"Please answer the following questions based on the table of penguins and their attributes provided below. The table consists of penguins with their names, ages, heights in centimeters, and weights in kilograms. {table_description} {question} Options: {options}",1,SEP_VARS,52,100
+62,False,meta_cot,,"You will be given a table of penguins with their names, ages, heights in centimeters, and weights in kilograms. Please answer the following questions based on the table. {question} {table_description} Options: {options}",0,SEP_VARS,47,100
+63,False,meta_cot,,"You are given a table of penguins with their names, ages, heights in centimeters, and weights in kilograms. Please answer the following question based on the table. {question} {table_description} Options: {options}",0,SEP_VARS,46,100
+64,False,meta_cot,,"Please answer the following questions about the penguins in the table. The table has a header with the following columns: name, age, height (cm), weight (kg). {table_description} {question} Please choose one of the following options: {options}",1,SEP_VARS,53,100
+65,False,meta_cot,,"You will be asked questions about penguins in a table. The table has a header with the following columns: name, age, height (cm), weight (kg). {table_description} {question} Please select one of the following options: {options}",1,SEP_VARS,52,100
+66,False,meta_cot,,"You are required to answer questions about penguins in a table. The table has a header with the following columns: name, age, height (cm), weight (kg). {table_description} {question} Please choose an option from the following: {options}",1,SEP_VARS,53,100
+67,False,meta_cot,,"The task is to answer questions about penguins in a table. The table has a header with the following columns: name, age, height (cm), weight (kg). {table_description} {question} Please select one of the following options: {options}",1,SEP_VARS,53,100
+68,False,meta_cot,,"Your task is to answer questions about penguins in a table. The table has a header with the following columns: name, age, height (cm), weight (kg). {table_description} {question} Please choose one of the following options: {options}",1,SEP_VARS,53,100
+69,False,meta_cot,,"Please answer the following questions about the penguins in the table below. The table shows the name, age, height (cm), and weight (kg) of each penguin. {table_description} {question} Options: {options}",1,SEP_VARS,48,100
+70,False,meta_cot,,"You will be presented with a table containing information about penguins, including their name, age, height (cm), and weight (kg). {table_description} {question} Choose the correct answer from the following options: {options}",1,SEP_VARS,47,100
+71,False,meta_cot,,"The following table contains information about penguins, including their name, age, height (cm), and weight (kg). {table_description} {question} Please select the correct answer from the options below: {options}",1,SEP_VARS,44,100
+72,False,meta_cot,,"You will be given a table with penguins and their attributes, including their names, ages, heights in centimeters, and weights in kilograms. Use this information to answer the following question: {question} {table_description} Options: {options}",0,SEP_VARS,50,100
+73,False,meta_cot,,"The task at hand is to answer questions about a table of penguins and their attributes. The table is structured with the first line being a header and each subsequent line representing a penguin with their name, age, height in centimeters, and weight in kilograms. {table_description} {question} Options: {options}",1,SEP_VARS,65,100
+74,False,meta_cot,,"Please answer the following questions about a table of penguins and their attributes. The table consists of penguins with their names, ages, heights in centimeters, and weights in kilograms. {table_description} {question} Please select one of the following options: {options}",1,SEP_VARS,55,100
+75,False,meta_cot,,"You will be answering questions about a table of penguins and their attributes. The table is structured as follows: the first line is a header, and each subsequent line represents a penguin with its name, age, height in centimeters, and weight in kilograms. {table_description} {question} Please choose one of the following options: {options}",1,SEP_VARS,71,100
+76,False,meta_cot,,"We have a table of penguins and their attributes, and we need you to answer some questions about them. The table has a header and subsequent lines represent individual penguins with their name, age, height in centimeters, and weight in kilograms. {table_description} {question} Please indicate your answer by selecting one of the following options: {options}",1,SEP_VARS,72,100
+77,False,meta_cot,,"Answer the following question about a table of penguins with attributes such as name, age, height (cm), and weight (kg): {question}. {table_description} Choose from the following options: {options}",0,SEP_VARS,43,100
+78,False,meta_cot,,"There is a table with penguins and their attributes such as name, age, height (cm), and weight (kg). Answer the following question: {question}. {table_description} Select one of the following options: {options}",0,SEP_VARS,47,100
+79,False,meta_cot,,"You are given a table with penguins and their attributes such as name, age, height (cm), and weight (kg). Your task is to answer the following question: {question}. {table_description} Pick one of the options below: {options}",0,SEP_VARS,52,100
+80,False,meta_cot,,"In this task, you will be answering a question about a table of penguins with attributes such as name, age, height (cm), and weight (kg). The question is: {question}. {table_description} Please select one of the following options: {options}",0,SEP_VARS,55,100
+81,False,meta_cot,,"There is a table with penguins and their attributes. The first row is the header row with columns for name, age, height (cm), and weight (kg). {table_description} {question} Please select one of the following options: {options}",1,SEP_VARS,52,100
+82,False,meta_cot,,"In this task, you will be answering questions about a table of penguins and their attributes. The table has a header row with columns for name, age, height (cm), and weight (kg). {table_description} {question} Please choose one of the following options: {options}",1,SEP_VARS,59,100
+83,False,meta_cot,,"You will be presented with a table of penguins and their attributes. The first row is the header row with columns for name, age, height (cm), and weight (kg). {table_description} {question} Select from the following options: {options}",1,SEP_VARS,53,100
+84,False,meta_cot,,"Given a table with penguin attributes, answer a question about the penguins. The table has a header with the following columns: name, age, height (cm), and weight (kg). {table_description} {question} Select one of the following options: {options}",1,SEP_VARS,56,100
+85,False,meta_cot,,"You will be presented with a table containing information about penguins. The table has a header row with columns for name, age, height (cm), and weight (kg), followed by rows for each penguin. {table_description} {question} Please choose one of the following options: {options}",1,SEP_VARS,61,100
+86,False,meta_cot,,"You are given a table with attributes of different penguins. The table has a header row with columns for name, age, height (cm), and weight (kg), followed by rows for each penguin. {table_description} {question} Choose one of the following options: {options}",1,SEP_VARS,59,100
+87,False,meta_cot,,"The task is to answer a question about a table of penguins and their attributes. The table has a header row with columns for name, age, height (cm), and weight (kg), followed by rows for each penguin. {table_description} {question} Please select one of the following options: {options}",1,SEP_VARS,65,100
+88,False,meta_cot,,"In this task, you will need to answer questions about a table of penguins. The table has a header with four columns: name, age, height (cm), and weight (kg). {table_description} {question} You can choose from the following options: {options}",1,SEP_VARS,57,100
+89,False,meta_cot,,"You will be presented with a table of penguins and their attributes. The table has a header with the columns name, age, height (cm), and weight (kg). {table_description} {question} You must select one of the following options: {options}",1,SEP_VARS,54,100
+90,False,meta_cot,,"This task is about answering questions related to a table of penguins. The table has four columns: name, age, height (cm), and weight (kg), with the first line being the header. {table_description} {question} You have to choose one of the following options: {options}",1,SEP_VARS,61,100
+91,False,meta_cot,,"There is a table with penguins and their attributes. The first line is a header with the following attributes: name, age, height (cm), weight (kg). {table_description} {question} Please choose one of the following options: {options}",1,SEP_VARS,52,100
+92,False,meta_cot,,"In this task, you will be answering questions about a table of penguins. The table has a header with the following attributes: name, age, height (cm), weight (kg). {table_description} {question} You have the following options to choose from: {options}",1,SEP_VARS,57,100
+93,False,meta_cot,,"You will be presented with a table of penguins and their attributes. The first line of the table is a header with the following attributes: name, age, height (cm), weight (kg). {table_description} {question} Please select one of the following options: {options}",1,SEP_VARS,58,100
+94,False,meta_cot,,"This task involves answering questions about a table of penguins and their attributes. The table has a header with the following attributes: name, age, height (cm), weight (kg). {table_description} {question} Choose the correct option from the following: {options}",1,SEP_VARS,55,100
+95,False,meta_cot,,"There is a table with information about penguins. The first line is a header and each subsequent line represents a penguin and their attributes, which include name, age, height (cm), and weight (kg). {table_description} {question} Select one of the following options: {options}",1,SEP_VARS,60,100
+96,False,meta_cot,,"A table is given with information about penguins. The first row is a header and the following rows represent individual penguins and their attributes such as name, age, height (cm), and weight (kg). {table_description} {question} Choose from the following options: {options}",1,SEP_VARS,58,100
+97,False,meta_cot,,"You are given a table with data about penguins. The first row is the header, and the following rows contain information about individual penguins, including their name, age, height (cm), and weight (kg). {table_description} {question} Please choose one of the following options: {options}",1,SEP_VARS,62,100
+98,False,meta_cot,,"There is a table with information about penguins. The first row is a header and each subsequent row represents a penguin and their attributes, including name, age, height (cm), and weight (kg). {table_description} {question} Select an option from the following: {options}",1,SEP_VARS,59,100
+99,False,meta_cot,,"We have a table with penguins and their attributes. The header of the table has the following columns: name, age, height (cm), weight (kg). {table_description} {question} You can choose one of the following options: {options}",1,SEP_VARS,52,100
+100,False,meta_cot,,"There is a table with penguins and their attributes. The first row of the table is the header and the following rows are penguins. The columns in the header are: name, age, height (cm), weight (kg). {table_description} {question} Select one of the following options: {options}",1,SEP_VARS,64,100
+101,False,meta_cot,,"You will be given a table with penguins and their attributes. The header of the table contains the following columns: name, age, height (cm), weight (kg). {table_description} {question} Please choose one of the following options: {options}",1,SEP_VARS,53,100
+102,False,meta_cot,,"The task is to answer questions about a table of penguins and their attributes. The table has a header with the following columns: name, age, height (cm), weight (kg). {table_description} {question} You must select one of the following options: {options}",1,SEP_VARS,57,100
+103,False,meta_cot,,"Please answer the following question based on the given table: how many penguins are less than 8 years old? The table has a header with the following columns: name, age, height (cm), weight (kg). {table_description} {question} Choose the correct answer from the following options: {options}",0,SEP_VARS,64,100
+104,False,meta_cot,,"The task is to answer a question about a table of penguins and their attributes. The table has a header with the following columns: name, age, height (cm), weight (kg). {table_description} {question} Choose the correct answer from the following options: {options}",1,SEP_VARS,58,100
+105,False,meta_cot,,"You are given a table with penguins and their attributes. The table has a header with the following columns: name, age, height (cm), weight (kg). {table_description} {question} Please choose the correct answer from the following options: {options}",1,SEP_VARS,54,100
+106,False,meta_cot,,"The goal is to answer a question about a table of penguins and their attributes. The table has a header with the following columns: name, age, height (cm), weight (kg). {table_description} {question} Choose the correct answer from the following options: {options}",1,SEP_VARS,58,100
+107,False,meta_cot,,"Please answer the following question about a table of penguins and their attributes. The table has a header with the following columns: name, age, height (cm), weight (kg). {table_description} {question} Select the correct option from the following choices: {options}",1,SEP_VARS,56,100
+108,False,meta_cot,,"You will be presented with a table of penguins and their attributes. The table has a header with the following columns: name, age, height (cm), weight (kg). {table_description} {question} Please choose the correct option from the following choices: {options}",1,SEP_VARS,56,100
+109,False,meta_cot,,"You are given a table of penguins and their attributes. The table has a header with the following columns: name, age, height (cm), weight (kg). {table_description} {question} Choose the correct option from the following choices: {options}",1,SEP_VARS,53,100
+110,False,meta_desc,,"
+Given a table of penguins and their attributes, answer questions in a multi-choice format. The table description and question will be provided, along with answer options. Your task is to understand the table and its attributes to answer the questions correctly.
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,67,100
+111,False,meta_desc,,"
+Given a table of penguins and their attributes, answer questions in a multi-choice format.
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,37,100
+112,False,meta_desc,,"
+Given a table of penguins and their attributes, answer questions using multiple choice format.
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,36,100
+113,False,meta_desc,,"
+Please answer the following multi-choice questions based on the table of penguins and their attributes below.
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,38,100
+114,False,meta_desc,,"
+You are given a table of penguins and their attributes. Your task is to answer a series of multi-choice questions based on the information in the table. Each question will have four answer options, labeled A, B, C, and D. Choose the option that best answers the question. 
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,78,100
+115,False,meta_desc,,"
+Given a table of penguins and their attributes, answer questions using multiple choice format. The table includes columns for penguin species, island of origin, body mass in grams, and flipper length in millimeters. Each question will be followed by four answer choices. Choose the answer that best fits the question.
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+",0,SEP_VARS,81,100
+116,False,meta_desc,,"
+Using the table below, answer the following questions by selecting the correct option from the multiple choices provided. 
+{table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,38,100
+117,False,meta_desc,,"
+You are given a table of penguins and their attributes. Your task is to answer questions about the penguins in a multi-choice format.
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,47,100
+118,False,meta_desc,,"
+Given a table of penguins and their attributes, answer questions in a multiple-choice format. The questions can focus on different attributes such as age, height, weight, and name.
+Table of penguins: {table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,58,100
+119,False,meta_desc,,"
+Given a table of penguins and their attributes, answer questions in a multiple-choice format.
+Table of Penguins: {table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,39,100
+120,False,meta_desc,,"
+Given a table of penguins and their attributes, answer questions using multiple choice format. You are given a table description and a question with options.
+Table of penguins: {table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,51,100
+121,False,meta_desc,,"
+Given a table of penguins and their attributes, answer questions using multiple choice format. You are given a table description and a question with options.
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,48,100
+122,False,meta_desc,,"
+You are given a table containing information about penguins and their attributes. Your task is to answer questions in a multiple-choice format based on the information in the table.
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,52,100
+123,False,meta_desc,,"
+Given a table of penguins and their attributes, generate multiple-choice questions and options for each question based on different attributes such as age, name, etc. The questions should be relevant to the attributes and the options should be plausible but distinct from each other.
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,70,100
+124,False,meta_desc,,"
+Given a table of penguins and their attributes, generate multiple-choice questions and answer options based on different attributes such as age, name, etc.
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,48,100
+125,False,meta_desc,,"
+Given a table of penguins with their attributes such as age, height, weight, and name, your task is to answer questions using multiple choice format.
+Table of penguins: {table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,53,100
+126,False,meta_desc,,"
+Given a table of penguins and their attributes, answer multiple choice questions about them. The prompt will include the table description and the question, with options provided. The questions will require understanding of penguin attributes such as age, height, weight, and name.
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,71,100
+127,False,meta_desc,,"
+Answer questions about a table of penguins and their attributes. The table has a header with the following columns: name, age, height (cm), weight (kg). You can ask any question about the penguins in the table.
+Question: {question}
+Options:
+{options}
+Output:
+
+",0,SEP_VARS,60,100
+128,False,meta_desc,,"
+Answer questions about a table of penguins and their attributes. The table has a header with the following columns: name, age, height (cm), weight (kg). Given the table description and a question, generate an answer. Choose one of the following options: ""What is the {attribute} of {penguin_name}?"", ""Which penguin is the {attribute}?"", ""What is the average {attribute} of the penguins?"", ""What is the total {attribute",0,other,98,100
+129,False,meta_desc,,"
+Answer questions about a table of penguins and their attributes. The table contains the following columns: name, age, height (cm), weight (kg). Given the table description and a question, provide an answer. Choose one of the following options: ""What is the {attribute} of {penguin name}?"", ""Which penguin is the {oldest/youngest/tallest/heaviest}?"", ""What is the average {attribute} of all penguins?"".",0,other,97,100
+130,False,meta_desc,,"
+Answer questions about a table of penguins and their attributes. Here is a table where the first line is a header and each subsequent line is a penguin: name, age, height (cm), weight (kg). Given the table description and a question, provide the answer. 
+Table description: 
+{table_description}
+Question: {question}
+Options:
+{options}
+Answer: 
+
+",1,SEP_VARS,79,100
+131,False,meta_desc,,"
+Answer questions about a table of penguins and their attributes. Here is a table where the first line is a header and each subsequent line is a penguin: name, age, height (cm), weight (kg). You can ask questions about any of the attributes for any of the penguins.
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+",0,SEP_VARS,79,100
+132,False,meta_desc,,"
+Answer questions about a table of penguins and their attributes. The table has a header and each subsequent line represents a penguin with the following attributes: name, age, height (cm), weight (kg). Given the table description and a question about the penguins, provide the answer.
+Table description: {table_description}
+Question: {question}
+Options:
+{options}
+Output:",1,SEP_VARS,78,100
+133,False,meta_desc,,"
+Answer questions about a table of penguins and their attributes. The table has a header and each subsequent line represents a penguin with the following attributes: name, age, height (cm), weight (kg). You can ask questions about the penguins' attributes and their relationships.
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+",0,SEP_VARS,75,100
+134,False,meta_desc,,"
+Given a table of penguins and their attributes, answer questions about the penguins. The table has a header and subsequent lines represent a penguin. The penguin attributes are name, age, height (cm), and weight (kg).
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:",1,SEP_VARS,67,100
+135,False,meta_desc,,"
+Please answer questions about a table of penguins and their attributes. The table has a header and subsequent lines represent a penguin. The penguin attributes are name, age, height (cm), and weight (kg). You can assume that the table is already loaded into the system. 
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:",1,SEP_VARS,77,100
+136,False,meta_desc,,"
+Answer questions about a table of penguins and their attributes. The table has a header and subsequent lines represent penguins. The penguin attributes are name, age, height (cm), and weight (kg). You can ask any question about the penguins in the table. The options for answering the question are: ""name"", ""age"", ""height"", ""weight"", and ""I don't know"".
+Table: {table_description}
+Question: {question}
+Options:",0,SEP_VARS,96,100
+137,False,meta_desc,,"
+Answer questions about a table of penguins and their attributes. The table has a header and subsequent lines represent penguins. The penguin attributes are name, age, height (cm), and weight (kg). You can ask any question about the penguins' attributes. The options for answering the question are: ""Name"", ""Age"", ""Height"", ""Weight"", and ""I don't know"". 
+Table: {table_description}
+Question: {question}
+Options:",0,SEP_VARS,96,100
+138,False,meta_desc,,"
+Answer questions about a table of penguins and their attributes. The table has a header and subsequent lines represent a penguin with attributes: name, age, height (cm), weight (kg).
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,58,100
+139,False,meta_desc,,"
+Answer questions about a table of penguins and their attributes. The table has a header and subsequent lines represent a penguin with attributes: name, age, height (cm), weight (kg). You can ask any question about the penguins in the table. The table is formatted as follows: {table_description}. After asking your question, choose one of the following options: {options} 
+Question: {question}
+Options:
+{options}
+Table: 
+{",0,SEP_VARS,94,100
+140,False,meta_desc,,"
+Answer questions about a table of penguins and their attributes. The table has a header and subsequent lines represent a penguin. The penguin attributes are name, age, height (cm), and weight (kg). Given the table below, answer the following questions. The available options are: {options}
+Table: {table_description}
+Question: {question}
+Output:",1,SEP_VARS,75,100
+141,False,meta_desc,,"
+Answer questions about a table of penguins and their attributes. The table has a header and subsequent lines represent a penguin. The penguin attributes are name, age, height (cm), and weight (kg).
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,62,100
+142,False,meta_desc,,"
+Answer questions about a table of penguins and their attributes. The table has a header and each subsequent line is a penguin with the following attributes: name, age, height (cm), weight (kg). You can ask any question about the penguins and their attributes. The answer will be based on the information provided in the table. 
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+",0,SEP_VARS,88,100
+143,False,meta_desc,,"
+Answer questions about a table of penguins and their attributes. The table has a header and each subsequent line is a penguin with the following attributes: name, age, height (cm), weight (kg). Please provide your answer in a complete sentence. 
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:",1,SEP_VARS,71,100
+144,False,meta_desc,,"
+Answer questions about a table of penguins and their attributes. The table contains the following columns: name, age, height (cm), weight (kg). Provide your answer in a complete sentence.
+Question: {question}
+Table description: {table_description}
+Options:
+{options}
+Output:",1,SEP_VARS,59,100
+145,False,meta_desc,,"
+Answer questions about a table of penguins and their attributes. The table contains the following columns: name, age, height (cm), weight (kg). Please refer to the table description below and answer the question accordingly. 
+Table Description: {table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,65,100
+146,False,meta_desc,,"
+Please answer the following question about the penguin table below. Choose the option that best answers the question. 
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,41,100
+147,False,meta_desc,,"
+Please answer the following question about the penguin table below. You will be given four options to choose from.
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,41,100
+148,False,meta_desc,,"
+Given a table of penguins and their attributes, answer multiple choice questions about the penguins. The table includes information such as species, weight, and height. Use the provided options to answer the questions.
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,60,100
+149,False,meta_desc,,"
+Read the table below and answer the following questions by selecting the best option from the choices provided.
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,38,100
+150,False,meta_desc,,"
+Read the table below and answer the following questions by selecting the correct option.
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,34,100
+151,False,meta_desc,,"
+Given a table of penguins and their attributes, answer multiple choice questions about the penguins. The prompt will include a description of the table and several options to choose from.
+Table: {table_description}
+Question prompt: {question}
+Options: 
+{options}
+Output:
+
+",1,SEP_VARS,56,100
+152,False,meta_desc,,"
+Given a table of penguins and their attributes, answer questions using multiple choice format. The prompt will include a brief description of the table and the answer options.
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,51,100
+153,False,meta_desc,,"
+Please answer the following question about the penguin table:
+{table_description}
+Question: {question}
+Options:
+{options}
+Answer:",1,SEP_VARS,28,100
+154,False,meta_desc,,"
+Please answer the following question about the penguin table:
+{table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,28,100
+155,False,meta_desc,,"
+Answer multiple-choice questions about a table of penguins and their attributes. The questions can focus on different attributes such as age, height, weight, and name.
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,51,100
+156,False,meta_desc,,"
+Given a table of penguins and their attributes, answer multiple-choice questions about their age, height, weight, and name.
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,44,100
+157,False,meta_desc,,"
+Given a table of penguins and their attributes, answer multiple choice questions about the penguins. The table includes information about the penguins' species, sex, bill length, and body mass. Use the following format to answer the questions: ""The answer is (A/B/C/D) because (reasoning)."" 
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+",0,SEP_VARS,83,100
+158,False,meta_desc,,"
+Given a table of penguins and their attributes, answer multiple choice questions about the penguins. The table includes information such as species, body mass, and flipper length. Use the following format to answer the questions: ""The answer is (A/B/C/D) because (reasoning)."" 
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+",0,SEP_VARS,79,100
+159,False,meta_desc,,"
+Given a table of penguins and their attributes, answer multiple-choice questions about them. The table includes information such as the penguin's species, sex, and weight. Use the options provided to select the correct answer.
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,63,100
+160,False,meta_desc,,"
+Please answer the following questions about the penguins in the table below. Choose the best option from the provided choices for each question. 
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,46,100
+161,False,meta_desc,,"
+Answer questions about a table of penguins and their attributes in a multiple-choice format.
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,36,100
+162,False,meta_desc,,"
+Please answer the following multiple-choice question about penguin attributes based on the provided table:
+Table description: {table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,37,100
+163,False,meta_desc,,"
+Given a table of penguin attributes, answer multiple choice questions about their age, height, weight, and name.
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,42,100
+164,False,meta_desc,,"
+Generate questions about penguins based on a given table of their attributes. Use the header columns: name, age, height (cm), weight (kg) to create questions. Here are some examples to get you started:
+- What is the name of the heaviest penguin?
+- How old is the tallest penguin?
+- Which penguin is the lightest?
+- What is the height of the oldest penguin?
+Choose one of the following options to generate a",0,other,95,100
+165,False,meta_desc,,"
+Given a table of penguins with their attributes, answer questions about them. Use the header with the following columns: name, age, height (cm), weight (kg). Provide your answer after the question.
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:",1,SEP_VARS,61,100
+166,False,meta_desc,,"
+Given a table of penguins and their attributes, answer questions about their name, age, height, and weight. Use the following format: ""What is the [attribute] of [penguin name]?"" For example, ""What is the age of Larry?"" You can also ask for comparisons between penguins, such as ""Which penguin is taller, Larry or Moe?""
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+",0,SEP_VARS,94,100
+167,False,meta_desc,,"
+Given a table of penguins and their attributes, answer questions about them. The table contains columns for name, age, height (cm), and weight (kg). Provide your answer in a clear and concise manner.
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,62,100
+168,False,meta_desc,,"
+Write a question about penguins based on their attributes in the given table. You can also ask for specific information about a penguin. Remember to include the name of the penguin you are referring to in your question.
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:",0,SEP_VARS,63,100
+169,False,meta_desc,,"
+Ask questions about a table of penguins and their attributes. Provide a question and the table will be used to answer it.
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:",0,SEP_VARS,44,100
+170,False,meta_desc,,"
+Given a table of penguins with their attributes, answer questions about them. The table has a header and each subsequent line represents a penguin with the following attributes: name, age, height (cm), weight (kg). Provide your answer in natural language. 
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:",1,SEP_VARS,72,100
+171,False,meta_desc,,"
+Given a table of penguins and their attributes, answer questions about the penguins. The table has a header and each subsequent line represents a penguin with the following attributes: name, age, height (cm), weight (kg). Provide the answer in a complete sentence.
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:",1,SEP_VARS,74,100
+172,False,meta_desc,,"
+Given a table of penguins with their attributes, answer questions about them. The table has a header and subsequent lines represent a penguin. The penguin attributes are name, age, height (cm), and weight (kg). Use the provided table description to help you answer the questions. You can also use the options to help you answer the questions.
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+#end",0,SEP_VARS,92,100
+173,False,meta_desc,,"
+Given a table of penguins and their attributes, answer questions about them. The table has a header and subsequent lines represent a penguin. The penguin attributes are name, age, height (cm), and weight (kg). Use the information in the table to answer the questions.
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,76,100
+174,False,meta_desc,,"
+Given a table of penguins with their attributes, answer questions about them. The attributes include name, age, height (cm), and weight (kg).
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,50,100
+175,False,meta_desc,,"
+Given a table of penguins with their attributes, answer questions about them. The penguin attributes include name, age, height (cm), and weight (kg). Use the table below to answer the questions.
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:",1,SEP_VARS,61,100
+176,False,meta_desc,,"
+Given a table of penguins with their attributes, answer questions about them. The table has a header and subsequent lines represent a penguin with attributes: name, age, height (cm), weight (kg). Use the information in the table to answer the questions.
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:",1,SEP_VARS,72,100
+177,False,meta_desc,,"
+Given a table of penguins with their attributes, answer questions about them. The table has a header and subsequent lines represent a penguin with attributes: name, age, height (cm), weight (kg). Provide your answer in complete sentences.
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,68,100
+178,False,meta_desc,,"
+Given a table of penguins and their attributes, generate answers to questions about the penguins. The table has a header and subsequent lines represent a penguin. The penguin attributes are name, age, height (cm), and weight (kg). Use the following format to ask your question: ""What is the {attribute} of the penguin named {name}?""
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:",0,SEP_VARS,94,100
+179,False,meta_desc,,"
+Given a table of penguins with their attributes, answer questions about them. The table has a header and subsequent lines represent a penguin. The penguin attributes are name, age, height (cm), and weight (kg). Use the available options to ask your questions.
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:
+
+",1,SEP_VARS,74,100
+180,False,meta_desc,,"
+Given a table of penguins with their attributes, answer questions about them. The table has a header and each subsequent line is a penguin with the following attributes: name, age, height (cm), weight (kg). Provide the answer in a complete sentence.
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:",1,SEP_VARS,72,100
+181,False,meta_desc,,"
+Given a table of penguins and their attributes, answer questions about the penguins. The table has a header and each subsequent line is a penguin with the following attributes: name, age, height (cm), weight (kg). Provide the answer in a complete sentence.
+Table: {table_description}
+Question: {question}
+Options:
+{options}
+Output:",1,SEP_VARS,74,100
+182,False,meta_desc,,"
+Given a table of penguins with their attributes, answer questions about them. You can ask questions about their name, age, height, and weight.
+Table: {table_description}
+Question: {question}
+Options:
+You can ask questions about the penguins' name, age, height, and weight. For example, you can ask:
+- What is the name of the heaviest penguin?
+- What is the weight of the youngest penguin?
+-",0,SEP_VARS,93,100
+183,False,meta_desc,,"
+Write a paragraph asking questions about a table of penguins and their attributes. The table contains the following columns: {table_description}. Use the following format to ask questions: ""What is the {attribute} of {penguin name}?"" Provide a list of options for the question. 
+Question: {question}
+Options:
+{options}
+Output:
+
+",0,SEP_VARS,71,100

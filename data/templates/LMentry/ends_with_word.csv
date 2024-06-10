@@ -1,0 +1,375 @@
+prompt idx,default prompt,method,language style,prompt template,correct,prompt format,prompt length,samples
+1,True,default,,"Write a sentence that ends with the word ""{word}"":
+",1,other,12,100
+2,True,default,,"Write a sentence whose last word is ""{word}"":
+",1,other,11,100
+3,True,default,,"Write a sentence ending with ""{word}"":
+",1,other,9,100
+4,False,rephrase,,"Create a statement that concludes with the term ""{word}"":",1,other,12,100
+5,False,rephrase,,"Create a phrase that concludes with the term ""{word}"":",1,other,12,100
+6,False,rephrase,,"Formulate a statement that concludes with the term ""{word}"".",1,other,12,100
+7,False,rephrase,,"Create a sentence that concludes with the term ""{word}"":",1,other,12,100
+8,False,rephrase,,"Formulate a statement that concludes with the term ""{word}"":",1,other,13,100
+9,False,rephrase,,"Create a statement that concludes with the term ""{word}"".",1,other,11,100
+10,False,rephrase,,"Create a sentence that concludes with the term ""{word}"".",1,other,11,100
+11,False,rephrase,,"Formulate a statement culminating with the term ""{word}"":",1,other,13,100
+12,False,rephrase,,"Create a sentence that ends with the word ""{word}"".",1,other,11,100
+13,False,rephrase,,"Compose a sentence that ends with the word ""{word}"".",1,other,11,100
+14,False,rephrase,,"Create a sentence ending with the word ""{word}"".",1,other,10,100
+15,False,rephrase,,Form a sentence with {word} as the final word.,1,other,12,100
+16,False,rephrase,,"Create a phrase that terminates with the word ""{word}"":",1,other,12,100
+17,False,rephrase,,"Create a sentence that ends with the word ""{word}"":",1,other,12,100
+18,False,rephrase,,"Compose a statement that concludes with the word ""{word}"".",1,other,11,100
+19,False,rephrase,,"Create a sentence with the final word: ""{word}"".",1,other,11,100
+20,False,rephrase,,"Create a sentence that concludes with the word ""{word}"":",1,other,12,100
+21,False,rephrase,,"Create a sentence that concludes with the word ""{word}"".",1,other,11,100
+22,False,rephrase,,"Create a sentence that concludes with ""{word}"":",1,other,10,100
+23,False,rephrase,,"Create a statement that concludes with the word ""{word}"":",1,other,12,100
+24,False,rephrase,,"Can you construct a sentence that concludes with the word ""{word}""?",1,other,14,100
+25,False,rephrase,,"Construct a sentence that concludes with the word ""{word}"":",1,other,12,100
+26,False,rephrase,,"Construct a sentence that concludes with the word ""{word}"".",1,other,11,100
+27,False,rephrase,,"Create a phrase that concludes with ""{word}"":",1,other,10,100
+28,False,rephrase,,"Please generate a sentence that concludes with the term ""{word}"".",1,other,12,100
+29,False,rephrase,,"Generate a sentence that concludes with the term ""{word}"".",1,other,11,100
+30,False,rephrase,,"Generate a sentence that concludes with the specified ""{word}"".",1,other,11,100
+31,False,rephrase,,"Please provide a sentence that concludes with the term ""{word}"" for GPT-3 to complete.",0,other,20,100
+32,False,rephrase,,"Please generate a sentence that concludes with the term ""{word}"" using GPT-3.",0,other,18,100
+33,False,rephrase,,"Can you generate a sentence that concludes with the term ""{word}"" using GPT-3?",0,other,19,100
+34,False,rephrase,,"Complete the following sentence using the word ""{word}"":",0,other,11,100
+35,False,rephrase,,"Please compose a sentence that concludes with the specified term ""{word}"".",1,other,13,100
+36,False,rephrase,,"Generate a sentence that ends with the word ""{word}"".",1,other,11,100
+37,False,rephrase,,"Construct a sentence that concludes with the term ""{word}"".",1,other,11,100
+38,False,rephrase,,"Generate a sentence ending with the word ""{word}"".",1,other,10,100
+39,False,rephrase,,Please generate a sentence that ends with the word '{word}'.,1,other,12,100
+40,False,rephrase,,"Create a complete sentence using ""{word}"" as the final word.",1,other,13,100
+41,False,rephrase,,"Create a sentence with ""{word}"" as its final word.",1,other,12,100
+42,False,rephrase,,"Generate a complete sentence with the final word being ""{word}"".",1,other,12,100
+43,False,rephrase,,Complete the following sentence by adding a word of your choice at the end:,0,other,15,100
+44,False,rephrase,,"Complete the following sentence with a word of your choice: ""The {word} was the highlight of the event.""",0,other,23,100
+45,False,rephrase,,"Please compose a sentence that concludes with the word ""{word}"".",1,other,12,100
+46,False,rephrase,,"Complete the following sentence with a word of your choice: ""The sun was shining bright, and the birds were singing {word}.""",0,other,27,100
+47,False,rephrase,,"Please generate a sentence that concludes with the word ""{word}"".",1,other,12,100
+48,False,rephrase,,"Please complete the following sentence by adding a word of your choice at the end: ""The sky is so clear and blue today, it reminds me of {word}.""",0,other,34,100
+49,False,rephrase,,"Provide a sentence that concludes with the word ""{word}"".",1,other,11,100
+50,False,rephrase,,"Can you generate a sentence that concludes with the word ""{word}""?",1,other,14,100
+51,False,meta_cot,,"Create a sentence that concludes with the word ""{word}"".",1,other,11,100
+52,False,meta_cot,,"Formulate a sentence that finishes with ""{word}"".",1,other,10,100
+53,False,meta_cot,,"Write a sentence that ends with the term ""{word}"".",1,other,11,100
+54,False,meta_cot,,"Produce a sentence that terminates with the word ""{word}"".",1,other,12,100
+55,False,meta_cot,,"Craft a sentence that concludes with the word ""{word}"".",1,other,11,100
+56,False,meta_cot,,"Construct a sentence where the final word is ""{word}"".",1,other,11,100
+57,False,meta_cot,,"Create a sentence that concludes with the term ""{word}"".",1,other,11,100
+58,False,meta_cot,,"Write a sentence that has ""{word}"" as its last word.",1,other,13,100
+59,False,meta_cot,,"Compose a sentence that terminates with the word ""{word}"".",1,other,11,100
+60,False,meta_cot,,"Craft a sentence that ends with the term ""{word}"".",1,other,11,100
+61,False,meta_cot,,"Formulate a sentence that ends with the term ""{word}"".",1,other,12,100
+62,False,meta_cot,,"Write a sentence that finishes with ""{word}"".",1,other,9,100
+63,False,meta_cot,,"Provide a sentence that concludes with the word ""{word}"".",1,other,11,100
+64,False,meta_cot,,"Craft a sentence that ends with the word ""{word}"".",1,other,11,100
+65,False,meta_cot,,"Write a sentence that terminates with the word ""{word}"".",1,other,11,100
+66,False,meta_cot,,"Produce a sentence that ends with ""{word}"".",1,other,10,100
+67,False,meta_cot,,"Create a sentence that finishes with the word ""{word}"".",1,other,11,100
+68,False,meta_cot,,"Write a sentence that concludes with ""{word}"".",1,other,9,100
+69,False,meta_cot,,"Construct a sentence in which the last word is ""{word}"".",1,other,12,100
+70,False,meta_cot,,"Formulate a sentence that concludes with the word ""{word}"".",1,other,12,100
+71,False,meta_cot,,"Create a sentence that finishes with the term ""{word}"".",1,other,11,100
+72,False,meta_cot,,"Please write a sentence that finishes with ""{word}"".",1,other,10,100
+73,False,meta_cot,,"Construct a sentence that ends in the word ""{word}"".",1,other,11,100
+74,False,meta_cot,,"Craft a sentence that ends with ""{word}"".",1,other,9,100
+75,False,meta_cot,,"Write a sentence that has the word ""{word}"" as its final word.",1,other,15,100
+76,False,meta_cot,,"Formulate a sentence that ends on the word ""{word}"".",1,other,12,100
+77,False,meta_cot,,"Produce a sentence that concludes with the term ""{word}"".",1,other,12,100
+78,False,meta_cot,,"Can you write a sentence that finishes with the word ""{word}""?",1,other,14,100
+79,False,meta_cot,,"Create a statement that concludes with the word ""{word}"".",1,other,11,100
+80,False,meta_cot,,"Write down a sentence where the final word is the one specified in the placeholder ""{word}"".",1,other,18,100
+81,False,meta_cot,,"Craft a sentence and end it using the word ""{word}"".",0,other,12,100
+82,False,meta_cot,,Create a sentence in which the final word is '{word}'.,1,other,12,100
+83,False,meta_cot,,Write a sentence and make sure it concludes with '{word}'.,1,other,12,100
+84,False,meta_cot,,Produce a sentence that ends with the given word '{word}'.,1,other,13,100
+85,False,meta_cot,,Craft a sentence that finishes with the word '{word}'.,1,other,11,100
+86,False,meta_cot,,Form a sentence with '{word}' as the final word.,1,other,12,100
+87,False,meta_cot,,"Generate a sentence that concludes with the term ""{word}"".",1,other,11,100
+88,False,meta_cot,,"Create a sentence that finishes with the expression ""{word}"".",1,other,11,100
+89,False,meta_cot,,"Compose a sentence that ends with the word ""{word}"".",1,other,11,100
+90,False,meta_cot,,"Create a sentence that ends with the word ""{word}"".",1,other,11,100
+91,False,meta_cot,,"Provide a sentence with the word ""{word}"" at the end.",1,other,13,100
+92,False,meta_cot,,"Formulate a sentence that concludes with ""{word}"".",1,other,10,100
+93,False,meta_cot,,"Create a sentence that finishes with ""{word}"".",1,other,9,100
+94,False,meta_cot,,"Formulate a sentence that ultimately utilizes the word ""{word}"" in it.",0,other,15,100
+95,False,meta_cot,,Create a sentence with the final word being {word}.,1,other,11,100
+96,False,meta_cot,,Craft a sentence that concludes with the word {word}.,1,other,11,100
+97,False,meta_cot,,Compose a sentence that will end with the word {word}.,1,other,12,100
+98,False,meta_cot,,Formulate a sentence that terminates with the word {word}.,1,other,12,100
+99,False,meta_cot,,Write a sentence that has {word} as its closing word.,1,other,13,100
+100,False,meta_cot,,Provide a sentence that finishes with the term {word}.,1,other,11,100
+101,False,meta_cot,,Construct a sentence which comes to an end with {word}.,1,other,12,100
+102,False,meta_cot,,Devise a sentence that concludes with the word {word}.,1,other,12,100
+103,False,meta_cot,rich_vocab,"Compose a sentence that concludes with the word ""{word}"".",1,other,11,100
+104,False,meta_cot,rich_vocab,"Formulate a sentence that ends with the term ""{word}"".",1,other,12,100
+105,False,meta_cot,rich_vocab,"Craft a sentence that finishes with the word ""{word}"".",1,other,11,100
+106,False,meta_cot,rich_vocab,"Generate a sentence that terminates with the word ""{word}"".",1,other,11,100
+107,False,meta_cot,rich_vocab,"Write a sentence that culminates with the word ""{word}"".",1,other,13,100
+108,False,meta_cot,rich_vocab,Compose a sentence that concludes with the word {word}.,1,other,11,100
+109,False,meta_cot,rich_vocab,Formulate a sentence that terminates with the word {word}.,1,other,12,100
+110,False,meta_cot,rich_vocab,Write a sentence that culminates with the word {word}.,1,other,13,100
+111,False,meta_cot,rich_vocab,Craft a sentence that finishes with the word {word}.,1,other,11,100
+112,False,meta_cot,rich_vocab,Create a sentence that ends with the word {word}.,1,other,11,100
+113,False,meta_cot,rich_vocab,Produce a sentence that concludes with the word {word}.,1,other,12,100
+114,False,meta_cot,rich_vocab,Construct a sentence that terminates with the word {word}.,1,other,11,100
+115,False,meta_cot,rich_vocab,Develop a sentence that culminates with the word {word}.,1,other,13,100
+116,False,meta_cot,rich_vocab,Generate a sentence that finishes with the word {word}.,1,other,11,100
+117,False,meta_cot,rich_vocab,Design a sentence that ends with the word {word}.,1,other,11,100
+118,False,meta_cot,rich_vocab,"Compose a sentence that concludes with the term ""{word}"".",1,other,11,100
+119,False,meta_cot,rich_vocab,"Craft a sentence that terminates with the word ""{word}"".",1,other,11,100
+120,False,meta_cot,rich_vocab,"Write a sentence that finishes with ""{word}"".",1,other,9,100
+121,False,meta_cot,rich_vocab,"Formulate a sentence that comes to an end with the word ""{word}"".",1,other,15,100
+122,False,meta_cot,rich_vocab,"Create a sentence that culminates with ""{word}"".",1,other,11,100
+123,False,meta_cot,common_vocab,"Create a sentence that concludes with the word ""{word}"".",1,other,11,100
+124,False,meta_cot,common_vocab,"Craft a sentence that ends with the word ""{word}"".",1,other,11,100
+125,False,meta_cot,common_vocab,"Formulate a sentence that finishes with ""{word}"".",1,other,10,100
+126,False,meta_cot,common_vocab,"Write a sentence that terminates with the word ""{word}"".",1,other,11,100
+127,False,meta_cot,common_vocab,Write a sentence that concludes with the word {word}.,1,other,11,100
+128,False,meta_cot,common_vocab,Create a sentence that finishes with the term {word}.,1,other,11,100
+129,False,meta_cot,common_vocab,Formulate a sentence that ends with {word}.,1,other,10,100
+130,False,meta_cot,common_vocab,Write a sentence where the final word is {word}.,1,other,11,100
+131,False,meta_cot,common_vocab,Produce a sentence that terminates with the word {word}.,1,other,12,100
+132,False,meta_cot,common_vocab,Craft a sentence that comes to an end with the term {word}.,1,other,14,100
+133,False,meta_cot,common_vocab,Compose a sentence that finishes with {word}.,1,other,9,100
+134,False,meta_cot,common_vocab,Write a sentence that ends with the word {word}.,1,other,11,100
+135,False,meta_cot,common_vocab,Make a sentence that concludes with the word {word}.,1,other,11,100
+136,False,meta_cot,common_vocab,Come up with a sentence that terminates with {word}.,1,other,11,100
+137,False,meta_cot,common_vocab,Please construct a sentence that concludes with the word '{word}'.,1,other,12,100
+138,False,meta_cot,common_vocab,Formulate a sentence that ends with the term '{word}'.,1,other,12,100
+139,False,meta_cot,common_vocab,Create a sentence that finishes with '{word}'.,1,other,9,100
+140,False,meta_cot,common_vocab,Write a sentence that concludes with the word '{word}'.,1,other,11,100
+141,False,meta_cot,common_vocab,Produce a sentence that ends with the word '{word}'.,1,other,12,100
+142,False,meta_cot,formal,Please construct a sentence that concludes with the word '{word}'.,1,other,12,100
+143,False,meta_cot,formal,Compose a sentence that terminates with the term '{word}'.,1,other,11,100
+144,False,meta_cot,formal,Craft a sentence that finishes with the word '{word}'.,1,other,11,100
+145,False,meta_cot,formal,Write a sentence that ends with '{word}'.,1,other,9,100
+146,False,meta_cot,formal,Formulate a sentence that concludes with the word '{word}'.,1,other,12,100
+147,False,meta_cot,formal,"Please construct a sentence where the last word is ""{word}"".",1,other,12,100
+148,False,meta_cot,formal,"Compose a sentence that concludes with the term ""{word}"".",1,other,11,100
+149,False,meta_cot,formal,"Create a sentence that finishes with the word ""{word}"".",1,other,11,100
+150,False,meta_cot,formal,"Write a sentence that terminates with ""{word}"".",1,other,9,100
+151,False,meta_cot,formal,"Formulate a sentence that ends with the word ""{word}"".",1,other,12,100
+152,False,meta_cot,formal,"Please construct a sentence that concludes with the word ""{word}"".",1,other,12,100
+153,False,meta_cot,formal,"Create a sentence that finishes with the term ""{word}"".",1,other,11,100
+154,False,meta_cot,formal,"Please produce a sentence that concludes with the word ""{word}"".",1,other,12,100
+155,False,meta_cot,formal,"Create a sentence whose final word is ""{word}"".",1,other,10,100
+156,False,meta_cot,formal,"Compose a sentence that ends with the term ""{word}"".",1,other,11,100
+157,False,meta_cot,formal,Craft a sentence that has '{word}' as its final word.,1,other,13,100
+158,False,meta_cot,formal,Compose a sentence that terminates with the word '{word}'.,1,other,11,100
+159,False,meta_cot,formal,"Please write a sentence that concludes with the word ""{word}"".",1,other,12,100
+160,False,meta_cot,informal,Can you give me a sentence that finishes with the word '{word}'?,1,other,15,100
+161,False,meta_cot,informal,"I need a sentence that ends with '{word}', can you help me?",1,other,15,100
+162,False,meta_cot,informal,Could you write a sentence that concludes with the word '{word}'?,1,other,14,100
+163,False,meta_cot,informal,Please provide me with a sentence that ends with '{word}'.,1,other,12,100
+164,False,meta_cot,informal,"Hey, can you write a sentence that finishes with the word '{word}'?",1,other,16,100
+165,False,meta_cot,informal,"I'm looking for a sentence that ends with '{word}', can you write one for me?",1,other,19,100
+166,False,meta_cot,informal,Can you come up with a sentence that concludes with the word '{word}'?,1,other,16,100
+167,False,meta_cot,informal,"I'm trying to write a sentence that ends with '{word}', any ideas?",1,other,16,100
+168,False,meta_cot,informal,How about a sentence that finishes with the word '{word}'?,0,other,13,100
+169,False,meta_cot,informal,"I want to write a sentence that concludes with '{word}', can you give me an example?",1,other,19,100
+170,False,meta_cot,informal,Can you give me a sentence that concludes with the word '{word}'?,1,other,15,100
+171,False,meta_cot,informal,Create a sentence that finishes with '{word}'.,1,other,9,100
+172,False,meta_cot,informal,I need you to come up with a sentence that ends with '{word}'.,1,other,15,100
+173,False,meta_cot,informal,Make a sentence that concludes with the word '{word}'.,1,other,11,100
+174,False,meta_cot,informal,Can you write a sentence that ends with '{word}'?,1,other,12,100
+175,False,meta_cot,informal,Please provide a sentence that finishes with the word '{word}'.,1,other,12,100
+176,False,meta_cot,informal,Craft a sentence that concludes with '{word}'.,1,other,9,100
+177,False,meta_cot,informal,I want you to write a sentence that ends with the word '{word}'.,1,other,15,100
+178,False,meta_cot,informal,Can you come up with a sentence that has the word '{word}' at the end?,1,other,18,100
+179,False,meta_cot,informal,Create a sentence that finishes with the word '{word}'.,1,other,11,100
+180,False,meta_desc,,"
+End your sentence with the word {word}.
+
+",1,other,11,100
+181,False,meta_desc,,"
+Write a sentence that ends with the word {word}.
+
+Sentence:",1,other,15,100
+182,False,meta_desc,,"
+Write a sentence that ends with the word {word}.
+
+Output sentence:",1,other,16,100
+183,False,meta_desc,,"
+Write a sentence that ends with {word}.
+
+",1,other,11,100
+184,False,meta_desc,,"
+Write a sentence that ends with the word ""{word}"".
+Output sentence:",1,other,16,100
+185,False,meta_desc,,"
+Please write a sentence that ends with the word provided in the prompt template. The sentence should be grammatically correct and make sense in context.
+The word is ""{word}"".
+Sentence:",1,other,38,100
+186,False,meta_desc,,"
+Write a sentence that ends with the word ""{word}"".
+
+Sentence:",1,other,15,100
+187,False,meta_desc,,"
+Write a sentence that ends with the word ""{word}"". The sentence should make sense and be grammatically correct.
+Sentence:",1,other,25,100
+188,False,meta_desc,,"
+Write a sentence that ends with the given word ""{word}"".
+Given word: {word}
+Sentence:",1,SEP_VARS,22,100
+189,False,meta_desc,,"
+Write a sentence that ends with the word ""{word}"".
+Sentence:",1,other,15,100
+190,False,meta_desc,,"
+Write a sentence that ends with the word provided in the prompt template.
+Word: {word}
+Sentence:",1,SEP_VARS,22,100
+191,False,meta_desc,,"
+Write a sentence that ends with the given word.
+Given word: {word}
+Sentence 1: 
+Sentence 2: 
+Sentence 3:",0,SEP_VARS,31,100
+192,False,meta_desc,,"
+Write a sentence that ends with a given word in each of the three prompts.
+Given word: {word}
+1. 
+2. 
+3.",0,SEP_VARS,31,100
+193,False,meta_desc,,"
+Write a sentence using one of the following prompt templates and include the specified word ""{word}"" as the last word:
+- ""I can't believe...""
+- ""If only...""
+- ""It's not every day that...""
+- ""I remember when...""
+- ""I never thought...""
+- ""It's a shame that...""
+
+Sentence:",1,other,67,100
+194,False,meta_desc,,"
+Write a sentence using one of the following prompt templates, with the specified word as the last word:
+- ""The [noun] [verb] [adverb], but [conjunction] [noun] [verb] [adverb].""
+- ""As [adjective] as [noun] [verb], [noun] [verb] [adverb].""
+- ""When [noun] [verb], [noun] [verb] [",0,other,91,100
+195,False,meta_desc,,"
+Write a sentence that ends with the word ""{word}"". 
+Output sentence:",1,other,16,100
+196,False,meta_desc,,"
+Please generate a sentence that ends with the word ""{word}"".
+Output sentence:",1,other,17,100
+197,False,meta_desc,,"
+Write a sentence that ends with the word {word}.
+Sentence: 
+
+",1,other,15,100
+198,False,meta_desc,,"
+Write a sentence that ends with a specific word. The word will be provided as a placeholder denoted by {word}.
+Sentence: 
+{word}",1,other,31,100
+199,False,meta_desc,,"
+Please write a sentence that ends with the word {word}.
+
+",1,other,14,100
+200,False,meta_desc,,"
+Please generate a sentence that ends with the word {word}.
+
+",1,other,14,100
+201,False,meta_desc,,"
+Generate a sentence that ends with the word ""{word}"". The sentence should be coherent and make sense.
+Output sentence:",1,other,24,100
+202,False,meta_desc,,"
+Please generate a sentence that concludes with the word ""{word}"". The sentence should be coherent and make sense.
+Sentence:",1,other,24,100
+203,False,meta_desc,,"
+Write a sentence that ends with the word ""{word}"". Make sure the sentence is grammatically correct and makes sense.
+Sentence:",1,other,26,100
+204,False,meta_desc,,"
+Write a sentence that ends with the word provided in the prompt template.
+Prompt template: ""The cat chased the ____.""
+Word to be completed: {word}
+Sentence:",0,SEP_VARS,35,100
+205,False,meta_desc,,"
+Write a sentence that ends with the word {word}.
+
+Sentence: 
+
+",1,other,16,100
+206,False,meta_desc,,"
+Write a sentence that ends with the word ""{word}"". The sentence can be about anything you like, as long as it ends with the given word. Be creative and have fun!
+Sentence:",1,other,39,100
+207,False,meta_desc,,"
+Write a sentence that ends with the word ""{word}"". Be creative and try to make the sentence as interesting as possible.
+Prompt word: {word}
+Sentence:",1,SEP_VARS,33,100
+208,False,meta_desc,,"
+Write a sentence that ends with the word ""{word}"".
+Prompt word: {word}
+Sentence:",1,SEP_VARS,21,100
+209,False,meta_desc,,"
+Write a sentence that ends with the word ""{word}"". Your sentence should be grammatically correct and make sense.
+Sentence:",1,other,25,100
+210,False,meta_desc,,"
+Write a sentence that ends with the word provided in the prompt.
+Word: {word}
+Sentence:",1,SEP_VARS,21,100
+211,False,meta_desc,,"
+Write a sentence that ends with the word ""{word}"".",1,other,12,100
+212,False,meta_desc,,"
+Write a sentence that ends with the word {word}.
+
+",1,other,13,100
+213,False,meta_desc,,"
+Write a sentence that ends with the word ""{word}"". Try to make the sentence as creative and interesting as possible.
+Word: {word}
+Sentence:",1,SEP_VARS,31,100
+214,False,meta_desc,,"
+Write a sentence that ends with the word ""{word}"". Be creative and try to make the sentence interesting and engaging.
+Sentence:",1,other,26,100
+215,False,meta_desc,,"
+Write a sentence that ends with the provided word.
+Word: {word}
+Sentence:",1,SEP_VARS,18,100
+216,False,meta_desc,,"
+Write a sentence that ends with the word {word}.
+Output sentence:",1,other,15,100
+217,False,meta_desc,,"
+Write a sentence using the following prompt templates and include the specified word as the last word:
+- ""I can't believe that...""
+- ""It's amazing how...""
+- ""I never thought that...""
+- ""Who would have thought that...""
+- ""I'm surprised that...""
+- ""It's shocking that...""
+Word: {word}
+Sentence:",1,SEP_VARS,70,100
+218,False,meta_desc,,"
+The best way to [verb] is to [verb] until you {word}.
+I can't believe I [verb] so much that I {word}.
+If you want to [verb], you have to [verb] until you {word}.
+
+",0,other,52,100
+219,False,meta_desc,,"
+Write a sentence that ends with the word ""{word}"".
+Word: {word}
+Sentence:",1,SEP_VARS,20,100
+220,False,meta_desc,,"
+Generate a sentence that ends with the word {word}.
+Output sentence:",1,other,15,100
+221,False,meta_desc,,"
+Write a sentence that ends with the word {word}. Try to make the sentence as creative and engaging as possible.
+Sentence:",1,other,26,100
+222,False,meta_desc,,"
+Write a sentence that ends with the word ""{word}"". The provided word must be the last word in the sentence. Try to make the sentence as creative and interesting as possible.
+Sentence:",1,other,38,100
+223,False,meta_desc,,"
+Write a sentence that ends with the word ""{word}"". The word provided must be the last word in the sentence. Keep in mind that the sentence should make sense and be grammatically correct.
+Sentence:",1,other,41,100
+224,False,meta_desc,,"
+Generate a sentence that ends with the word ""{word}"".
+Output sentence:",1,other,16,100
+225,False,meta_desc,,"
+Generate a sentence that ends with a specific word. Try to create a coherent sentence that effectively uses the provided word.
+Word: {word}
+Sentence:",1,SEP_VARS,31,100
+226,False,meta_desc,,"
+Write a sentence that ends with the word ""{word}"". 
+
+Sentence:",1,other,15,100

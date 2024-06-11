@@ -38,7 +38,19 @@ To reproduce the results in our paper, please follow the steps after cloning the
 
 ## Fine-tuning embeddings
 
-To be added.
+To fine-tune BERT representations run the following:
+
+```bash
+python ft_representations.py --model_name "bert-base-uncased" \
+                             --lr 2e-05 \
+                             --weight_decay 1e-06 \
+                             --gamma .99995 \
+                             --bs 96 \
+                             --n_epochs 5 \
+                             --warmup_steps 200 \
+                             --bench "BBH" 
+```
+Note, that this requires the file `./data/Ys.pickle` to contain correctness data for the respective benchmark as it is create by the `create_data.py` scrip. Add the `--push_to_hub` flag, to automatically push your resulting model to your namespace on the huggingface hub.
 
 ## MMLU Data
 

@@ -41,7 +41,7 @@ To reproduce the results in our paper, please follow the steps after cloning the
 To fine-tune BERT representations run the following:
 
 ```bash
-python ft_representations.py --model_name "bert-base-uncased" \
+python ./prompteval/ft_representations.py --model_name "bert-base-uncased" \
                              --lr 2e-05 \
                              --weight_decay 1e-06 \
                              --gamma .99995 \
@@ -50,7 +50,7 @@ python ft_representations.py --model_name "bert-base-uncased" \
                              --warmup_steps 200 \
                              --bench "BBH" 
 ```
-Note, that this requires the file `./data/Ys.pickle` to contain correctness data for the respective benchmark as it is create by the `create_data.py` scrip. Add the `--push_to_hub` flag, to automatically push your resulting model to your namespace on the huggingface hub.
+Note, that this requires the file `./data/Ys.pickle` to contain correctness data for the respective benchmark as it is create by the `create_data.py` scrip. Add `--push_to_hub`, to automatically push the resulting model to your namespace on the huggingface hub (remember to `huggingface-cli login` before training).
 
 ## MMLU Data
 

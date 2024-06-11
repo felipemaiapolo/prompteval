@@ -7,7 +7,7 @@ import pandas as pd
 from datasets import load_dataset
 from tqdm import tqdm
 
-from prompteval.get_features import create_discrete_features, create_sentence_transformers
+from prompteval.get_features import create_discrete_features, create_sentence_transformers, create_finetuned_features
 from prompteval.utils.utils import check_multicolinearity, pca_filter
 
 
@@ -187,45 +187,26 @@ def create_Xs(data_path="data/", emb_dim=25):
             disc = pca_filter(disc)
             check_multicolinearity(disc)
 
-            # ft features
-            # emb_ft_odd = create_finetuned_features(formats,
-            #                                       checkpoint_name=f'state_dict_id_token_bert_odds_{bench}.pt',
-            #                                       n_llms=round(n_llms/2))
-            # emb_ft_odd = pca_filter(emb_ft_odd)
-            # emb_ft_even = create_finetuned_features(formats,
-            #                                        checkpoint_name=f'state_dict_id_token_bert_even_{bench}.pt',
-            #                                        n_llms=round(n_llms/2)-1)
-            # emb_ft_even = pca_filter(emb_ft_even)
+            # ft features 
+            emb_ft_odd = create_finetuned_features(formats, 
+                                                    bench,  
+                                                    split='odds',)
+            emb_ft_even = create_finetuned_features(formats, 
+                                                    bench,  
+                                                    split='even',)
 
             Xs[bench][task.replace(".json", "")] = []
 
             for llm in range(n_llms):
-                # emb_ft = emb_ft_odd if llm % 2 == 0 else emb_ft_even
+                emb_ft = emb_ft_odd if llm % 2 == 0 else emb_ft_even
 
                 # storing
-                Xs[bench][task.replace(".json", "")].append([disc, emb])  # , emb_ft
+                Xs[bench][task.replace(".json", "")].append([disc, emb, emb_ft]) 
 
         with open("data/Xs.pickle", "wb") as handle:
             pickle.dump(Xs, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
-    # Including FT features (need to be replace)
-    with open("data/Xs_ft1.pickle", "rb") as handle:
-        Xs_ft1 = pickle.load(handle)
-    with open("data/Xs_ft2.pickle", "rb") as handle:
-        Xs_ft2 = pickle.load(handle)
-    for bench in ["BBH", "LMentry"]:
-        tasks = [s.replace(".csv", "") for s in [x[2] for x in os.walk(f"data/templates/{bench}")][0]]
-        for task in tasks:
-            for llm in range(len(Ys[bench][task])):
-                Xs[bench][task][llm] += Xs_ft1[bench][task][llm]
-    bench = "MMLU"
-    for task in Ys[bench].keys():
-        for llm in range(len(Ys[bench][task])):
-            Xs[bench][task][llm] += Xs_ft2[bench][task][llm]
-    with open("data/Xs.pickle", "wb") as handle:
-        pickle.dump(Xs, handle, protocol=pickle.HIGHEST_PROTOCOL)
-
 
 if __name__ == "__main__":
-    create_Ys()
+    #create_Ys()
     create_Xs()

@@ -127,10 +127,7 @@ def create_finetuned_features(templates_task,
 
     for sentence in templates_task:
         inputs = model.tokenizer(sentence, return_tensors='pt', truncation=True, padding=True)
-        try:
-            sentence_representation = model.extract_representation(inputs.to(device)).cpu().squeeze().detach().numpy()
-        except:
-            breakpoint()
+        sentence_representation = model.extract_representation(inputs.to(device)).cpu().squeeze().detach().numpy()
         sentence_representations.append(sentence_representation)
     
     sentence_representations = np.vstack(sentence_representations)

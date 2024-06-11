@@ -16,12 +16,19 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 ## GENERAL
 BASE_PATH = "./"
 
+n_max_tasks = {'BBH': 15, 'LMentry': 9, 'MMLU': 57}
+
+n_examples_mmlu = [100, 100, 237, 1534, 151, 103, 238, 235, 163, 145, 100, 198, 265, 
+                   100, 783, 204, 324, 108, 390, 126, 203, 545, 110, 895, 135, 216, 
+                   100, 114, 201, 100, 346, 306, 173, 193, 166, 310, 100, 270, 144, 
+                   234, 311, 121, 131, 112, 102, 223, 612, 100, 245, 282, 152, 100, 
+                   171, 378, 100, 165, 272]
 
 def get_args():
     parser = argparse.ArgumentParser(description="Train representations")
 
     parser.add_argument("--model_name", type=str, default="bert-base-uncased", help="Name of the model to train")
-    parser.add_argument("--print_step", type=int, default=20, help="Number of steps between each print")
+    parser.add_argument("--val_interval", type=int, default=500, help="Number of steps between each evaluation")
     parser.add_argument("--lr", type=float, default=5e-2, help="Learning rate")
     parser.add_argument("--weight_decay", type=float, default=0.0001, help="Weight decay")
     parser.add_argument("--gamma", type=float, default=0.999, help="LR decay rate")
@@ -30,8 +37,9 @@ def get_args():
     parser.add_argument("--n_epochs", type=int, default=10, help="Number of epochs")
     parser.add_argument("--warmup_steps", type=int, default=100, help="Number of warmup steps")
     parser.add_argument("--exp", type=str, default="", help="additional description for experiment")
-    parser.add_argument("--n_tasks", type=int, default="", help="number of tasks to train on")
+    parser.add_argument("--n_tasks", type=int, default=None, help="Number of tasks within the benchmarks to train on (default: None for all)")
     parser.add_argument("--bench", type=str, default="BBH", help="which bench to train on")
+    parser.add_argument("--push_to_hub", action='store_true', help="if flagged, push model to huggingface hub at the end of training")
 
     return parser.parse_args()
 
@@ -46,7 +54,6 @@ def get_save_name(args, train_split_llms, type_training, epochs=None):
 
 ## TRAINING FUNCTIONS
 
-
 def train_model(
     model,
     optimizer,
@@ -54,15 +61,13 @@ def train_model(
     val_loader,
     formats_tokenized,
     args,
-    TRAIN_SPLIT_LLMS,
+    train_split_llms,
     scheduler=None,
-    n_epochs=10,
-    print_step=5,
 ):
     val_losses = []
     val_esterrors = []
 
-    for epoch in range(n_epochs):
+    for epoch in range(args.n_epochs):
         model.train()
         step = 1
 
@@ -77,7 +82,7 @@ def train_model(
             if scheduler is not None:
                 scheduler.step()
 
-            if step % print_step == 0:
+            if step % args.val_interval == 0:
                 model.eval()
                 with torch.no_grad():
                     val_loss = 0
@@ -94,7 +99,7 @@ def train_model(
                     val_esterror /= it
 
                 print(
-                    f"Epoch [{epoch+1}/{n_epochs}], Step [{step + 1}/{len(train_loader)}], Training Loss: {np.round(loss.item(),6)}, Validation Loss: {np.round(val_loss,6)}, Validation error: {np.round(val_esterror,6)}"
+                    f"Epoch [{epoch+1}/{args.n_epochs}], Step [{step + 1}/{len(train_loader)}], Training Loss: {np.round(loss.item(),6)}, Validation Loss: {np.round(val_loss,6)}, Validation error: {np.round(val_esterror,6)}"
                 )
 
                 model.train()
@@ -104,9 +109,10 @@ def train_model(
             step += 1
         results_path = os.path.join(BASE_PATH, "results", "results_ft")
         os.makedirs(results_path, exist_ok=True)
-        save_name = get_save_name(args, TRAIN_SPLIT_LLMS, "ID_token", epochs=epoch + 1)
+        save_name = get_save_name(args, train_split_llms, "ID_token", epochs=epoch + 1)
 
-        torch.save(model.state_dict(), os.path.join(results_path, f"{save_name}.pt"))
+        #torch.save(model.state_dict(), os.path.join(results_path, f"{save_name}.pt"))
+        model.save_pretrained(os.path.join(results_path, f"{save_name}"))
 
         val_losses_df = pd.DataFrame({"val_losses": val_losses, "val_esterrors": val_esterrors})
         val_losses_df.to_csv(os.path.join(results_path, f"{save_name}.csv"))
@@ -131,7 +137,6 @@ class ModelConfig(PretrainedConfig):
             base_model='bert-base-uncased', 
             n_examples=0, 
             n_llms=0, 
-            example_token_lookup={}, 
             d=25, 
             cls=False, 
             bias=False,
@@ -141,7 +146,6 @@ class ModelConfig(PretrainedConfig):
         self.base_model = base_model
         self.n_examples = n_examples
         self.n_llms = n_llms
-        self.example_token_lookup = example_token_lookup
         self.d = d
         self.cls = cls
         self.bias = bias
@@ -154,12 +158,16 @@ class MultiLabelRaschModel_ID_tokens(PreTrainedModel):
         super().__init__(config)
         self.config = config
         self.cls = config.cls
-        self.lookup = config.example_token_lookup
         self.tokenizer = AutoTokenizer.from_pretrained(config.base_model)
-        self.ID_token = self.lookup['[DATA_ID]'] if '[DATA_ID]' in self.lookup else None
-        
+
         example_tokens = [f'[Example_{i}]' for i in range(0, config.n_examples)]
         self.tokenizer.add_tokens(['[INPUT]', '[BR]', '[DATA_ID]'] + example_tokens)
+        self.lookup = {
+            n_example: token
+            for n_example, token in zip(range(0, config.n_examples), self.tokenizer.convert_tokens_to_ids(example_tokens))
+        }
+        self.lookup.update({"[DATA_ID]": self.tokenizer.convert_tokens_to_ids("[DATA_ID]")})
+        self.ID_token = self.lookup['[DATA_ID]']
 
         self.model = AutoModel.from_pretrained(config.base_model)
         self.model.resize_token_embeddings(len(self.tokenizer))
@@ -260,28 +268,3 @@ def load_data(dir, bench):
         raise NotImplementedError(f"Benchmark {bench} not implemented")
 
     return all_data
-
-
-def get_tasks_mmlu(data_dir):
-    tasks = []
-    model_folder = os.listdir(data_dir)[0]
-    template_folder = os.listdir(os.path.join(data_dir, model_folder))[0]
-    tasks = [
-        f.split(".")[1]
-        for f in os.listdir(os.path.join(data_dir, model_folder, template_folder))
-        if f != "results.json"
-    ]
-    return tasks
-
-
-def get_examples_per_task_mmlu(data_dir, tasks):
-    n_examples = []
-    files = os.listdir(data_dir)
-
-    for task in tasks:
-        file = [f for f in files if task in f][0]
-        if task in tasks:
-            data = json.load(open(os.path.join(data_dir, file), "r"))
-            n_examples.append(len(data))
-
-    return n_examples

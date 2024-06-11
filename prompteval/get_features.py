@@ -113,51 +113,25 @@ def create_sentence_transformers(
     return features_low_dim
 
 
-def create_finetuned_features(
-    templates_task,
-    checkpoint_name,
-    n_llms,
-):
-    """
-    TODO:
-    - change the saving of model state-dicts: we might want to upload those to HF and not store them in the repo
-        - consequently, change the way that the model is loaded
-    - refactor get_examples_per_task_mmlu + task_order_mmlu -> won't work in the package, so have to get it from somerwhere else
-    """
-
-    from prompteval.utils.utils_ft import (
-        MultiLabelRaschModel_ID_tokens,
-        get_examples_per_task_mmlu,
-        n_max_tasks,
-        task_order_mmlu,
-    )
-
-    ft_model_path = "./ft_models/used_models"
-
-    model_base = "bert-base-uncased"
-    bench = "BBH" if "BBH" in checkpoint_name else "LMentry" if "LMentry" in checkpoint_name else "MMLU"
-    n_tasks = n_max_tasks[bench]
-
-    mmlu_data_dir = "../data/mmlu/mmlu_output_codellama_codellama-34b-instruct/t_0"
-    n_examples_mmlu = get_examples_per_task_mmlu(mmlu_data_dir, task_order_mmlu[:n_tasks])
-    n_examples = 100 * n_tasks if bench != "MMLU" else sum(n_examples_mmlu)
-
-    tokenizer = AutoTokenizer.from_pretrained(model_base)
+def create_finetuned_features(templates_task, 
+                                bench, 
+                                split,
+                                ): 
+    
+    from prompteval.utils.utils_ft import MultiLabelRaschModel_ID_tokens
+                                           
     sentence_representations = []
-
-    state_dict = torch.load(os.path.join(ft_model_path, checkpoint_name), map_location=device)
-
-    example_tokens = [f"[Example_{i}]" for i in range(0, n_examples)]
-    tokenizer.add_tokens(["[INPUT]", "[BR]", "[DATA_ID]"] + example_tokens)
-    model = MultiLabelRaschModel_ID_tokens(model_base, n_examples, n_llms, {}, cls=False).to(device)
-    model.model.resize_token_embeddings(len(tokenizer))
-
-    model.load_state_dict(state_dict)
+        
+    name = f'id_token_bert_{split}_{bench}'
+    model = MultiLabelRaschModel_ID_tokens.from_pretrained(f'LucasWeber/{name}').to(device)
 
     for sentence in templates_task:
-        inputs = tokenizer(sentence, return_tensors="pt", truncation=True, padding=True)
-        sentence_representation = model.extract_representation(inputs.to(device)).cpu().squeeze().detach().numpy()
+        inputs = model.tokenizer(sentence, return_tensors='pt', truncation=True, padding=True)
+        try:
+            sentence_representation = model.extract_representation(inputs.to(device)).cpu().squeeze().detach().numpy()
+        except:
+            breakpoint()
         sentence_representations.append(sentence_representation)
-
+    
     sentence_representations = np.vstack(sentence_representations)
     return sentence_representations

@@ -9,7 +9,7 @@ import pandas as pd
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from transformers import AutoModel
+from transformers import AutoModel, AutoTokenizer, PreTrainedModel, PretrainedConfig
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
@@ -124,56 +124,82 @@ def train_model(
 
 ## MODELS
 
-
-class MultiLabelRaschModel_ID_tokens(nn.Module):
-    def __init__(self, model_name, n_examples, n_llms, example_token_lookup, d=25, cls=False, bias=False):
-        super(MultiLabelRaschModel_ID_tokens, self).__init__()
+class ModelConfig(PretrainedConfig):
+    model_type = 'id_token_bert'
+    def __init__(
+            self, 
+            base_model='bert-base-uncased', 
+            n_examples=0, 
+            n_llms=0, 
+            example_token_lookup={}, 
+            d=25, 
+            cls=False, 
+            bias=False,
+            **kwargs,
+            ):
+        
+        self.base_model = base_model
+        self.n_examples = n_examples
+        self.n_llms = n_llms
+        self.example_token_lookup = example_token_lookup
+        self.d = d
         self.cls = cls
-        self.lookup = example_token_lookup
-        self.ID_token = example_token_lookup["[DATA_ID]"] if "[DATA_ID]" in example_token_lookup else None
+        self.bias = bias
+        super().__init__(**kwargs)
+        
 
-        self.model = AutoModel.from_pretrained(model_name)
-        self.projection = nn.Linear(self.model.config.hidden_size, d, bias=bias)
-        self.classifier = nn.Linear(d, n_llms, bias=bias)
-        self.sigmoid = nn.Sigmoid()
+class MultiLabelRaschModel_ID_tokens(PreTrainedModel):
+    config_class = ModelConfig
+    def __init__(self, config):
+        super().__init__(config)
+        self.config = config
+        self.cls = config.cls
+        self.lookup = config.example_token_lookup
+        self.tokenizer = AutoTokenizer.from_pretrained(config.base_model)
+        self.ID_token = self.lookup['[DATA_ID]'] if '[DATA_ID]' in self.lookup else None
+        
+        example_tokens = [f'[Example_{i}]' for i in range(0, config.n_examples)]
+        self.tokenizer.add_tokens(['[INPUT]', '[BR]', '[DATA_ID]'] + example_tokens)
 
-    def forward(self, examples_one_hot, format_indices, formats_tokenized=None):
+        self.model = AutoModel.from_pretrained(config.base_model)
+        self.model.resize_token_embeddings(len(self.tokenizer))
+
+        self.projection = nn.Linear(self.model.config.hidden_size, config.d, bias=config.bias)
+        self.classifier = nn.Linear(config.d, config.n_llms, bias=config.bias)
+        self.sigmoid = nn.Sigmoid()       
+    
+    def forward(self, 
+                examples_one_hot, 
+                format_indices, 
+                formats_tokenized=None
+                ):
         # convert to list and unnest
         format_indices = sum(format_indices.tolist(), [])
-        input_ids, attention_mask = formats_tokenized["input_ids"][format_indices].to(device), formats_tokenized[
-            "attention_mask"
-        ][format_indices].to(device)
+        input_ids, attention_mask = formats_tokenized['input_ids'][format_indices].to(device), formats_tokenized['attention_mask'][format_indices].to(device)
 
         # Replace the ID token with the respective identity of the example
-        example_token_vector = torch.tensor(
-            [self.lookup[ind.item()] for ind in torch.argmax(examples_one_hot, dim=1)]
-        ).to(device)
-        id_token_positions = input_ids == self.ID_token
-
-        input_ids[id_token_positions] = example_token_vector
+        example_token_vector = torch.tensor([self.lookup[ind.item()] for ind in torch.argmax(examples_one_hot, dim=1)]).to(device)
+        id_token_positions = (input_ids == self.ID_token)
+        
+        input_ids[id_token_positions] = example_token_vector 
 
         outputs = self.model(input_ids=input_ids, attention_mask=attention_mask)
-        representation = (
-            outputs.last_hidden_state[:, 0, :] if self.cls else outputs.last_hidden_state.mean(dim=1).squeeze()
-        )
+        representation = outputs.last_hidden_state[:, 0, :] if self.cls else outputs.last_hidden_state.mean(dim=1).squeeze()
         projected_rep = self.projection(representation)
 
         logits = self.classifier(projected_rep)
         probs = self.sigmoid(logits)
 
-        return probs.squeeze()
-
+        return probs.squeeze() 
+    
     def extract_representation(self, x):
         outputs = self.model(**x)
-        representation = (
-            outputs.last_hidden_state[:, 0, :] if self.cls else outputs.last_hidden_state.mean(dim=1).squeeze()
-        )
+        representation = outputs.last_hidden_state[:, 0, :] if self.cls else outputs.last_hidden_state.mean(dim=1).squeeze()
         projected_rep = self.projection(representation)
         return projected_rep
 
 
 ## DATA PREPROCESSING
-
 
 def process_text(text, id_token=False):
     pattern = r"\{[^}]*\}"
@@ -236,34 +262,6 @@ def load_data(dir, bench):
     return all_data
 
 
-def get_full_prompts_and_scores(data, bench, tasks=["causal_judgement"]):
-    """Get full prompts (template + datapoint) and scores of all models"""
-    models = list(data[tasks[0]].keys())
-    prompts = []
-    correctnesses = []
-    if bench in ["BBH", "LMentry"]:
-        for k, model in enumerate(models):
-            prompts.append([])
-            correctnesses.append([])
-            for task in tasks:
-                for example in data[task][model]["samples"].keys():
-                    for type_template in data[task][model]["samples"][example].keys():
-                        for template_datapoint in data[task][model]["samples"][example][type_template].keys():
-                            prompt = data[task][model]["samples"][example][type_template][template_datapoint]["prompt"]
-                            if k == 0:
-                                prompts[-1].append(prompt)
-                            correctness = data[task][model]["samples"][example][type_template][template_datapoint][
-                                "auto_validation"
-                            ]
-                            correctnesses[-1].append(torch.tensor([correctness]))
-    elif bench == "MMLU":
-        raise NotImplementedError("Use dedicated function for mmlu (get_full_prompts_and_scores_mmlu)")
-    else:
-        raise NotImplementedError(f"Benchmark {bench} not implemented")
-
-    return prompts, torch.tensor(correctnesses), models
-
-
 def get_tasks_mmlu(data_dir):
     tasks = []
     model_folder = os.listdir(data_dir)[0]
@@ -287,84 +285,3 @@ def get_examples_per_task_mmlu(data_dir, tasks):
             n_examples.append(len(data))
 
     return n_examples
-
-
-n_max_tasks = {"BBH": 15, "LMentry": 9, "MMLU": 57}
-
-task_order_mmlu = [
-    "global_facts",
-    "abstract_algebra",
-    "high_school_world_history",
-    "professional_law",
-    "high_school_physics",
-    "management",
-    "high_school_microeconomics",
-    "conceptual_physics",
-    "logical_fallacies",
-    "electrical_engineering",
-    "us_foreign_policy",
-    "high_school_geography",
-    "clinical_knowledge",
-    "computer_security",
-    "miscellaneous",
-    "high_school_us_history",
-    "prehistory",
-    "jurisprudence",
-    "high_school_macroeconomics",
-    "formal_logic",
-    "high_school_chemistry",
-    "high_school_psychology",
-    "public_relations",
-    "moral_scenarios",
-    "anatomy",
-    "high_school_statistics",
-    "college_mathematics",
-    "econometrics",
-    "sociology",
-    "college_computer_science",
-    "moral_disputes",
-    "nutrition",
-    "college_medicine",
-    "high_school_government_and_politics",
-    "virology",
-    "high_school_biology",
-    "college_chemistry",
-    "high_school_mathematics",
-    "college_biology",
-    "marketing",
-    "philosophy",
-    "international_law",
-    "human_sexuality",
-    "machine_learning",
-    "college_physics",
-    "human_aging",
-    "professional_psychology",
-    "medical_genetics",
-    "security_studies",
-    "professional_accounting",
-    "astronomy",
-    "business_ethics",
-    "world_religions",
-    "elementary_mathematics",
-    "high_school_computer_science",
-    "high_school_european_history",
-    "professional_medicine",
-]
-
-llms = [
-    "mmlu_output_meta-llama_llama-3-8b",
-    "mmlu_output_meta-llama_llama-3-8b-instruct",
-    "mmlu_output_meta-llama_llama-3-70b-instruct",
-    "mmlu_output_codellama_codellama-34b-instruct",
-    "mmlu_output_google_flan-t5-xl",
-    "mmlu_output_google_flan-t5-xxl",
-    "mmlu_output_google_flan-ul2",
-    "mmlu_output_ibm-mistralai_merlinite-7b",
-    "mmlu_output_mistralai_mixtral-8x7b-instruct-v01",
-    "mmlu_output_mistralai_mistral-7b-instruct-v0-2",
-    "mmlu_output_google_gemma-7b",
-    "mmlu_output_google_gemma-7b-it",
-    "mmlu_output_tiiuae_falcon-40b",
-    "mmlu_output_mistralai_mistral-7b-v0-1",
-    "mmlu_output_tiiuae_falcon-180b",
-]

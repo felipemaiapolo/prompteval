@@ -50,7 +50,7 @@ python ./prompteval/ft_representations.py --model_name "bert-base-uncased" \
                              --warmup_steps 200 \
                              --bench "BBH" 
 ```
-Note, that this requires the file `./data/Ys.pickle` to contain correctness data for the respective benchmark as it is create by the `create_data.py` scrip. Add `--push_to_hub`, to automatically push the resulting model to your namespace on the huggingface hub (remember to `huggingface-cli login` before training).
+Note, that this requires the file `./data/Ys.pickle` to contain correctness data for the respective benchmark as the `create_data.py` script creates it. Add `--push_to_hub`, to automatically push the resulting model to your namespace on the huggingface hub (remember to `huggingface-cli login` before training).
 
 ## MMLU Data
 

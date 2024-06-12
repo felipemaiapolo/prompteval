@@ -78,7 +78,7 @@ n_llms = len(used_llms)
 
 # Initialize model, optimizer, scheduler
 n_example_tokens = sum(n_examples)
-config = config = ModelConfig(base_model=args.model_name, n_examples=n_example_tokens, n_llms=n_llms, d=D, cls=CLS, bias=False)
+config = ModelConfig(base_model=args.model_name, n_examples=int(n_example_tokens), n_llms=n_llms, d=D, cls=CLS, bias=False)
 model = MultiLabelRaschModel_ID_tokens(config).to(device)
 optimizer = torch.optim.AdamW(model.parameters(), lr=args.lr, weight_decay=args.weight_decay)
 scheduler = LambdaLR(optimizer, 
@@ -142,7 +142,7 @@ results_path = os.path.join(BASE_PATH, "results", "results_ft")
 os.makedirs(results_path, exist_ok=True)
 save_name = get_save_name(args, TRAIN_SPLIT_LLMS, "ID_token")
 
-model.save_pretrained(os.path.join(results_path, f"{save_name}.pt"))
+model.save_pretrained(results_path)
 
 if args.push_to_hub:  
     name = f"id_token_{args.model_name.split('-')[0]}_{TRAIN_SPLIT_LLMS}_{args.bench}"  

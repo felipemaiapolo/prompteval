@@ -157,8 +157,7 @@ def train_model(
         os.makedirs(results_path, exist_ok=True)
         save_name = get_save_name(args, train_split_llms, "ID_token", epochs=epoch + 1)
 
-        #torch.save(model.state_dict(), os.path.join(results_path, f"{save_name}.pt"))
-        model.save_pretrained(os.path.join(results_path, f"{save_name}"))
+        model.save_pretrained(results_path)
 
         val_losses_df = pd.DataFrame({"val_losses": val_losses, "val_esterrors": val_esterrors})
         val_losses_df.to_csv(os.path.join(results_path, f"{save_name}.csv"))
@@ -234,19 +233,19 @@ class MultiLabelRaschModel_ID_tokens(PreTrainedModel):
         # Replace the ID token with the respective identity of the example
         example_token_vector = torch.tensor([self.lookup[ind.item()] for ind in torch.argmax(examples_one_hot, dim=1)]).to(device)
         id_token_positions = (input_ids == self.ID_token)
-        
         input_ids[id_token_positions] = example_token_vector 
 
+        # Forward pass
         outputs = self.model(input_ids=input_ids, attention_mask=attention_mask)
         representation = outputs.last_hidden_state[:, 0, :] if self.cls else outputs.last_hidden_state.mean(dim=1).squeeze()
         projected_rep = self.projection(representation)
-
         logits = self.classifier(projected_rep)
         probs = self.sigmoid(logits)
 
         return probs.squeeze() 
     
     def extract_representation(self, x):
+        ''' Extracts and outputs the representation with dimensions self.config.d of the input x '''
         outputs = self.model(**x)
         representation = outputs.last_hidden_state[:, 0, :] if self.cls else outputs.last_hidden_state.mean(dim=1).squeeze()
         projected_rep = self.projection(representation)
@@ -287,30 +286,3 @@ def build_feature_tensor(indices_list, n_examples):
 
 def build_label_tensor(indices_list, Ys):
     return torch.tensor(np.hstack([Ys[:, i, indices] for i, indices in enumerate(indices_list)]).T)
-
-
-def load_data(dir, bench):
-    """Get data for full prompts"""
-
-    def load_file(file_name):
-        with open(file_name, "r") as f:
-            data = json.load(f)
-        return data
-
-    all_data = {}
-    if bench in ["BBH", "LMentry"]:
-        tasks = os.listdir(dir)
-
-        for task in tasks:
-            all_data[task] = {}
-            files = os.listdir(os.path.join(dir, task))
-            for file in files:
-                model_name = file.split("_")[-4]
-                all_data[task][model_name] = load_file(os.path.join(dir, task, file))
-
-    elif bench == "MMLU":
-        raise NotImplementedError("Use dedicated function for mmlu (get_full_prompts_and_scores_mmlu)")
-    else:
-        raise NotImplementedError(f"Benchmark {bench} not implemented")
-
-    return all_data

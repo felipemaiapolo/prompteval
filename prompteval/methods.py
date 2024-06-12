@@ -2,7 +2,8 @@ import copy
 import numpy as np
 from sklearn.linear_model import LogisticRegression as LR  # type: ignore
 from tqdm import tqdm  # type: ignore
-from utils import *
+try: from .utils import check_multicolinearity
+except ImportError: from utils import check_multicolinearity
 
 class LogisticRegression:
     """

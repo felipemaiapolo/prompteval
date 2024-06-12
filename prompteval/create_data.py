@@ -1,15 +1,14 @@
 import json
 import os
 import pickle
-
 import numpy as np
 import pandas as pd
 from datasets import load_dataset
 from tqdm import tqdm
+from get_features import create_discrete_features, create_sentence_transformers, create_finetuned_features
+from utils import check_multicolinearity, pca_filter
 
-from prompteval.get_features import create_discrete_features, create_sentence_transformers, create_finetuned_features
-from prompteval.utils.utils import check_multicolinearity, pca_filter
-
+data_path = "../data/"
 
 def extract_mmlu():
     # fmt: off
@@ -19,7 +18,7 @@ def extract_mmlu():
         'college_medicine', 'college_physics', 'computer_security', 'conceptual_physics', 'econometrics',
         'electrical_engineering', 'elementary_mathematics', 'formal_logic', 'global_facts', 'high_school_biology',
         'high_school_chemistry', 'high_school_computer_science', 'high_school_european_history', 'high_school_geography',
-        'high_school_government_and_politics', 'high_school_macroeconomics', 'high_school_mathematics'
+        'high_school_government_and_politics', 'high_school_macroeconomics', 'high_school_mathematics',
         'high_school_microeconomics', 'high_school_physics', 'high_school_psychology', 'high_school_statistics',
         'high_school_us_history', 'high_school_world_history', 'human_aging', 'human_sexuality', 'international_law',
         'jurisprudence', 'logical_fallacies', 'machine_learning', 'management', 'marketing', 'medical_genetics',
@@ -30,7 +29,7 @@ def extract_mmlu():
     # fmt: on
     data = {}
     for task in tqdm(mmlu_tasks):
-        mmlu_subset = load_dataset("felipemaiapolo/PromptEval_MMLU_correctness", task)
+        mmlu_subset = load_dataset("PromptEval/PromptEval_MMLU_correctness", task)
         data[task] = []
 
         for model in mmlu_subset.keys():
@@ -59,7 +58,7 @@ def get_directories_in_folder(folder_path):
     return directories
 
 
-def create_Ys(data_path="data/"):
+def create_Ys(data_path=data_path):
 
     ### Creating Ys
 
@@ -125,7 +124,7 @@ def create_Ys(data_path="data/"):
         pickle.dump(Ys, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
 
-def create_Xs(data_path="data/", emb_dim=25):
+def create_Xs(data_path=data_path, emb_dim=25):
 
     ## Creating "mmlu_values" which will be used to generate discrete features for mmlu
     # fmt: off
@@ -139,12 +138,12 @@ def create_Xs(data_path="data/", emb_dim=25):
     ]
     # fmt: on
 
-    mmlu_formats_path = "data/templates/mmlu_templates.json"
+    mmlu_formats_path = data_path+"templates/mmlu_templates.json"
     with open(mmlu_formats_path) as json_data:
         mmlu_templates = json.load(json_data)
         json_data.close()
     mmlu_templates = [mmlu_templates[i] for i in formats]
-    mmlu_formats_path = "data/templates/mmlu_templates_metadata.json"
+    mmlu_formats_path = data_path+"templates/mmlu_templates_metadata.json"
     with open(mmlu_formats_path) as json_data:
         mmlu_metadata = json.load(json_data)
         json_data.close()
@@ -154,7 +153,7 @@ def create_Xs(data_path="data/", emb_dim=25):
     ## Generating X
     Xs = {}
 
-    with open("data/Ys.pickle", "rb") as handle:
+    with open(data_path+"Ys.pickle", "rb") as handle:
         Ys = pickle.load(handle)
 
     for bench in ["BBH", "LMentry", "MMLU"]:
@@ -162,11 +161,11 @@ def create_Xs(data_path="data/", emb_dim=25):
         print(f"Creating X for {bench}")
 
         Xs[bench] = {}
-        tasks = [s.replace(".csv", "") for s in [x[2] for x in os.walk(f"data/templates/{bench}")][0]]
+        tasks = [s.replace(".csv", "") for s in [x[2] for x in os.walk(data_path+f"templates/{bench}")][0]]
 
         for task in tqdm(tasks):
             n_llms = len(Ys[bench][task])
-            formats = list(pd.read_csv(f"data/templates/{bench}/{task}.csv")["prompt template"])
+            formats = list(pd.read_csv(data_path+f"templates/{bench}/{task}.csv")["prompt template"])
 
             # sentence transformers embeddings
             emb = create_sentence_transformers(formats, emb_dim)
@@ -194,7 +193,11 @@ def create_Xs(data_path="data/", emb_dim=25):
             emb_ft_even = create_finetuned_features(formats, 
                                                     bench,  
                                                     split='even',)
-
+            emb_ft_odd = pca_filter(emb_ft_odd)
+            check_multicolinearity(emb_ft_odd)
+            emb_ft_even = pca_filter(emb_ft_even)
+            check_multicolinearity(emb_ft_even)
+            
             Xs[bench][task.replace(".json", "")] = []
 
             for llm in range(n_llms):
@@ -203,9 +206,8 @@ def create_Xs(data_path="data/", emb_dim=25):
                 # storing
                 Xs[bench][task.replace(".json", "")].append([disc, emb, emb_ft]) 
 
-        with open("data/Xs.pickle", "wb") as handle:
+        with open(data_path+"Xs.pickle", "wb") as handle:
             pickle.dump(Xs, handle, protocol=pickle.HIGHEST_PROTOCOL)
-
 
 if __name__ == "__main__":
     #create_Ys()

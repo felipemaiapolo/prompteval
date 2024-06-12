@@ -11,8 +11,8 @@ from sklearn.neural_network import MLPClassifier
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 
-from prompteval.methods import ExtendedRaschModel, GenXY, LogReg, StratSample
-from prompteval.utils.utils import flatten
+from methods import ExtendedRaschModel, GenXY, LogReg, StratSample
+from utils import flatten
 
 warnings.filterwarnings("ignore", category=ConvergenceWarning)
 # python bai_evaluation.py --bench 'BBH' --random_seeds 5
@@ -325,7 +325,8 @@ def evaluate_bai(Y, Xs, random_seed):
 if __name__ == "__main__":
 
     ### Definitions
-    data_path = "data/"
+    data_path = "../data/"
+    results_path = "../results/"
     budgets = [200, 400, 800, 1600]  # ordered budgets
 
     ### Inputs
@@ -359,7 +360,7 @@ if __name__ == "__main__":
     results = Parallel(n_jobs=-1, verbose=10)(
         delayed(evaluate_bai)(Ys[bench][job[1]][job[0]], Xs[bench][job[1]][job[0]], job[2]) for job in jobs
     )
-    np.save(f"results/bai_results_{bench}.npy", {"out": results})
+    np.save(results_path+f"bai_results_{bench}.npy", {"out": results})
 
     results_dic = {}
     for task in tasks:
@@ -372,4 +373,4 @@ if __name__ == "__main__":
         results_dic[task][llm].append(results[i])
 
     final_results = np.stack([np.stack(results_dic[task]).mean(0).mean(0) for task in tasks])
-    np.save(f"results/bai_processed_results_{bench}.npy", final_results)
+    np.save(results_path+f"bai_processed_results_{bench}.npy", final_results)

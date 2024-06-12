@@ -1,13 +1,10 @@
 import argparse
 import pickle
-
 import numpy as np
 from joblib import Parallel, delayed
-
-from prompteval.methods import Baseline, PromptEval
+from methods import Baseline, PromptEval
 
 # python dist_evaluation.py --bench 'BBH' --random_seeds 5
-
 
 # Functions
 def flatten(xss):
@@ -69,7 +66,8 @@ def evaluate(Y, Xs, random_seed):
 if __name__ == "__main__":
 
     ### Definitions
-    data_path = "data/"
+    data_path = "../data/"
+    results_path = "../results/"
     quantiles = [5, 25, 50, 75, 95]
     rounds_eval = [200, 400, 800, 1600]  # ordered budgets
 
@@ -104,7 +102,7 @@ if __name__ == "__main__":
     results = Parallel(n_jobs=-1, verbose=10)(
         delayed(evaluate)(Ys[bench][job[1]][job[0]], Xs[bench][job[1]][job[0]], job[2]) for job in jobs
     )
-    np.save(f"results/results_{bench}.npy", {"out": results})
+    np.save(results_path+f"results_{bench}.npy", {"out": results})
 
     ### saving processed results
     for res in range(3):  # three types of results
@@ -136,10 +134,10 @@ if __name__ == "__main__":
 
         if res == 0:
             final_results = np.stack([np.stack(results_dic[task]) for task in tasks])
-            np.save(f"results/processed_results_{bench}_quantiles_{quantiles}.npy", final_results)
+            np.save(results_path+f"processed_results_{bench}_quantiles_{quantiles}.npy", final_results)
         elif res == 1:
             final_results = np.stack([np.stack(results_dic[task]).mean(-1) for task in tasks])
-            np.save(f"results/processed_results_{bench}_individual.npy", final_results)
+            np.save(results_path+f"processed_results_{bench}_individual.npy", final_results)
         else:
             final_results = np.stack([np.stack(results_dic[task]).mean(-1) for task in tasks])
-            np.save(f"results/processed_results_{bench}_dist.npy", final_results)
+            np.save(results_path+f"processed_results_{bench}_dist.npy", final_results)

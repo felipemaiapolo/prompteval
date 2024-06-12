@@ -1,5 +1,4 @@
 import os
-
 import numpy as np
 import pandas as pd
 import torch  # type: ignore
@@ -7,11 +6,11 @@ from sentence_transformers import SentenceTransformer  # type: ignore
 from sklearn.decomposition import PCA  # type: ignore
 from transformers import AutoTokenizer
 
-device = "cuda" if torch.cuda.is_available() else "cpu"
-
+device = "cuda" if torch.cuda.is_available() else "CPU"
+data_path = "../data/"
 
 def load_templates(benchmark, dataset=None):
-    template_dir = f"data/templates/{benchmark}"
+    template_dir = data_path+f"templates/{benchmark}"
     all_files = os.listdir(template_dir) if dataset is None else [f"{dataset}.csv"]
     templates = {file: pd.read_csv(os.path.join(template_dir, file)) for file in all_files}
     return templates
@@ -118,7 +117,7 @@ def create_finetuned_features(templates_task,
                                 split,
                                 ): 
     
-    from prompteval.utils.utils_ft import MultiLabelRaschModel_ID_tokens
+    from utils import MultiLabelRaschModel_ID_tokens
                                            
     sentence_representations = []
         

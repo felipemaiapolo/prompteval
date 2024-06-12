@@ -8,7 +8,7 @@ import torch
 from torch.optim.lr_scheduler import LambdaLR
 from torch.utils.data import DataLoader, TensorDataset
 
-from prompteval.utils.utils_ft import (
+from utils import (
     MultiLabelRaschModel_ID_tokens,
     ModelConfig,
     n_examples_mmlu,

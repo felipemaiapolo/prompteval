@@ -1,11 +1,8 @@
 import copy
-
 import numpy as np
 from sklearn.linear_model import LogisticRegression as LR  # type: ignore
 from tqdm import tqdm  # type: ignore
-
-from prompteval.utils import utils
-
+from utils import *
 
 class LogisticRegression:
     """
@@ -91,7 +88,7 @@ class ExtendedRaschModel:
             self.X = np.eye(Y.shape[0])
         else:
             self.X = X
-            utils.check_multicolinearity(X)
+            check_multicolinearity(X)
         self.x_dim = self.X.shape[1]
 
         # Z (examples covariates)
@@ -99,7 +96,7 @@ class ExtendedRaschModel:
             self.Z = np.eye(Y.shape[1])
         else:
             self.Z = Z
-            utils.check_multicolinearity(Z)
+            check_multicolinearity(Z)
         self.z_dim = self.Z.shape[1]
 
         # Formatting the data

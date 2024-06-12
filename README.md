@@ -8,7 +8,7 @@ Welcome to the [*PromptEval* GitHub repository](https://github.com/felipemaiapol
 
 Most popular benchmarks for comparing LLMs rely on a limited set of prompt templates, which may not fully capture the LLMs’ abilities and can affect the reproducibility of results on leaderboards. This repository introduces our implementation of *PromptEval*, a method for estimating performance across a large set of prompts by borrowing strength across prompts and examples to produce accurate estimates under practical evaluation budgets.
 
-**Quick start:** please check our [demo](https://github.com/felipemaiapolo/prompteval/blob/package/notebooks/PromptEval_demo.ipynb) on how to use *PromptEval* in your own data.
+**Quick start:** please check our [demo](https://github.com/felipemaiapolo/prompteval/blob/main/notebooks/PromptEval_demo.ipynb) on how to use *PromptEval* in your own data.
 
 ## Repository Structure
 

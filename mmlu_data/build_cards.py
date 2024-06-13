@@ -71,7 +71,7 @@ subtasks = [
     "world_religions",
 ]
 
-unitxt_task_dir = '../lm-evaluation-harness/lm_eval/tasks/unitxt'
+unitxt_task_dir = '../lm-evaluation-harness-main/lm_eval/tasks/unitxt'
 
 if __name__ == "__main__":
 

@@ -18,6 +18,7 @@ Please check our [demo](https://github.com/felipemaiapolo/prompteval/blob/main/n
 - `prompteval/`: Source code for the PromptEval method and utilities.
 - `notebooks/`: Jupyter notebooks used to create plots for the PromptEval paper.
 - `results/`: Results from the experiments conducted in the paper.
+- `mmlu_data/`: Contains code for gathering evaluation data.
 
 ## Installation
 

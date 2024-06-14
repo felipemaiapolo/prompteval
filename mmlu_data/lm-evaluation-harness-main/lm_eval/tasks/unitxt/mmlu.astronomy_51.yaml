@@ -1,0 +1,3 @@
+include: unitxt_tasks.qa.multiple_choice.with_topic
+task: mmlu.astronomy_51
+dataset_name: card=cards.mmlu.astronomy_51,template=templates.qa.multiple_choice.with_topic.astronomy_51

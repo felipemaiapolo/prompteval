@@ -1,0 +1,3 @@
+include: unitxt_tasks.qa.multiple_choice.with_topic
+task: mmlu.philosophy_1
+dataset_name: card=cards.mmlu.philosophy_1,template=templates.qa.multiple_choice.with_topic.philosophy_1

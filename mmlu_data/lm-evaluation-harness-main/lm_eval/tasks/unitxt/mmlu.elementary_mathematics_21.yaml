@@ -1,0 +1,3 @@
+include: unitxt_tasks.qa.multiple_choice.with_topic
+task: mmlu.elementary_mathematics_21
+dataset_name: card=cards.mmlu.elementary_mathematics_21,template=templates.qa.multiple_choice.with_topic.elementary_mathematics_21

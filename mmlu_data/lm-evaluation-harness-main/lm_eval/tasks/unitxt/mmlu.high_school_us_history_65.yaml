@@ -1,0 +1,3 @@
+include: unitxt_tasks.qa.multiple_choice.with_topic
+task: mmlu.high_school_us_history_65
+dataset_name: card=cards.mmlu.high_school_us_history_65,template=templates.qa.multiple_choice.with_topic.high_school_us_history_65

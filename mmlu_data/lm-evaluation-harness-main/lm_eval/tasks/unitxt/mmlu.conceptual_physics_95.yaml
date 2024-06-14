@@ -1,0 +1,3 @@
+include: unitxt_tasks.qa.multiple_choice.with_topic
+task: mmlu.conceptual_physics_95
+dataset_name: card=cards.mmlu.conceptual_physics_95,template=templates.qa.multiple_choice.with_topic.conceptual_physics_95

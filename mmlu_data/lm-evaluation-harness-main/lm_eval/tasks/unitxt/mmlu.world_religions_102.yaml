@@ -1,0 +1,3 @@
+include: unitxt_tasks.qa.multiple_choice.with_topic
+task: mmlu.world_religions_102
+dataset_name: card=cards.mmlu.world_religions_102,template=templates.qa.multiple_choice.with_topic.world_religions_102

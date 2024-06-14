@@ -1,0 +1,3 @@
+include: unitxt_tasks.qa.multiple_choice.with_topic
+task: mmlu.medical_genetics_28
+dataset_name: card=cards.mmlu.medical_genetics_28,template=templates.qa.multiple_choice.with_topic.medical_genetics_28

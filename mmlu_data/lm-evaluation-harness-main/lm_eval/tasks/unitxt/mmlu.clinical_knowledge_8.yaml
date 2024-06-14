@@ -1,0 +1,3 @@
+include: unitxt_tasks.qa.multiple_choice.with_topic
+task: mmlu.clinical_knowledge_8
+dataset_name: card=cards.mmlu.clinical_knowledge_8,template=templates.qa.multiple_choice.with_topic.clinical_knowledge_8

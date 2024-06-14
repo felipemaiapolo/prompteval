@@ -1,0 +1,3 @@
+include: unitxt_tasks.qa.multiple_choice.with_topic
+task: mmlu.international_law_8
+dataset_name: card=cards.mmlu.international_law_8,template=templates.qa.multiple_choice.with_topic.international_law_8

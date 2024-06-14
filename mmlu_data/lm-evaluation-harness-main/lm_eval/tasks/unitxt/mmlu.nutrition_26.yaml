@@ -1,0 +1,3 @@
+include: unitxt_tasks.qa.multiple_choice.with_topic
+task: mmlu.nutrition_26
+dataset_name: card=cards.mmlu.nutrition_26,template=templates.qa.multiple_choice.with_topic.nutrition_26

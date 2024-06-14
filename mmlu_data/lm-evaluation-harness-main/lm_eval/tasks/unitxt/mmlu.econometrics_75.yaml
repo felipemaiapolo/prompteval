@@ -1,0 +1,3 @@
+include: unitxt_tasks.qa.multiple_choice.with_topic
+task: mmlu.econometrics_75
+dataset_name: card=cards.mmlu.econometrics_75,template=templates.qa.multiple_choice.with_topic.econometrics_75

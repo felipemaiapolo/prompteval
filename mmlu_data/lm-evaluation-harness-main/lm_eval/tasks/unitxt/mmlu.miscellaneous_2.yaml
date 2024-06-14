@@ -1,0 +1,3 @@
+include: unitxt_tasks.qa.multiple_choice.with_topic
+task: mmlu.miscellaneous_2
+dataset_name: card=cards.mmlu.miscellaneous_2,template=templates.qa.multiple_choice.with_topic.miscellaneous_2

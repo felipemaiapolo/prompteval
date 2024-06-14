@@ -1,0 +1,3 @@
+include: unitxt_tasks.qa.multiple_choice.with_topic
+task: mmlu.virology_42
+dataset_name: card=cards.mmlu.virology_42,template=templates.qa.multiple_choice.with_topic.virology_42

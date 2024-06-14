@@ -1,0 +1,3 @@
+include: unitxt_tasks.qa.multiple_choice.with_topic
+task: mmlu.college_computer_science_77
+dataset_name: card=cards.mmlu.college_computer_science_77,template=templates.qa.multiple_choice.with_topic.college_computer_science_77

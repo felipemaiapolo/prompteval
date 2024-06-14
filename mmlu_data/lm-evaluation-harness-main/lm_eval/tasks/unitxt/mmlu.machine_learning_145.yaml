@@ -1,0 +1,3 @@
+include: unitxt_tasks.qa.multiple_choice.with_topic
+task: mmlu.machine_learning_145
+dataset_name: card=cards.mmlu.machine_learning_145,template=templates.qa.multiple_choice.with_topic.machine_learning_145

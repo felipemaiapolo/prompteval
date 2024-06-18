@@ -1,3 +1,0 @@
-include: unitxt_tasks.qa.multiple_choice.with_topic
-task: mmlu.jurisprudence_59
-dataset_name: card=cards.mmlu.jurisprudence_59,template=templates.qa.multiple_choice.with_topic.jurisprudence_59

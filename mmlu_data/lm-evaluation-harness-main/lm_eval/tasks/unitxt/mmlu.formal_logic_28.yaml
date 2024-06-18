@@ -1,3 +1,0 @@
-include: unitxt_tasks.qa.multiple_choice.with_topic
-task: mmlu.formal_logic_28
-dataset_name: card=cards.mmlu.formal_logic_28,template=templates.qa.multiple_choice.with_topic.formal_logic_28

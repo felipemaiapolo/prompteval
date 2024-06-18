@@ -1,3 +1,0 @@
-include: unitxt_tasks.qa.multiple_choice.with_topic
-task: mmlu.management_16
-dataset_name: card=cards.mmlu.management_16,template=templates.qa.multiple_choice.with_topic.management_16

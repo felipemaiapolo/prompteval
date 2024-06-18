@@ -1,3 +1,0 @@
-include: unitxt_tasks.qa.multiple_choice.with_topic
-task: mmlu.electrical_engineering_125
-dataset_name: card=cards.mmlu.electrical_engineering_125,template=templates.qa.multiple_choice.with_topic.electrical_engineering_125

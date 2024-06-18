@@ -1,3 +1,0 @@
-include: unitxt_tasks.qa.multiple_choice.with_topic
-task: mmlu.public_relations_80
-dataset_name: card=cards.mmlu.public_relations_80,template=templates.qa.multiple_choice.with_topic.public_relations_80

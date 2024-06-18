@@ -1,3 +1,0 @@
-include: unitxt_tasks.qa.multiple_choice.with_topic
-task: mmlu.moral_scenarios_123
-dataset_name: card=cards.mmlu.moral_scenarios_123,template=templates.qa.multiple_choice.with_topic.moral_scenarios_123

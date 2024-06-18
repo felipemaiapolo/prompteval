@@ -71,7 +71,7 @@ subtasks = [
     "world_religions",
 ]
 
-unitxt_task_dir = '../lm-evaluation-harness-main/lm_eval/tasks/unitxt'
+unitxt_task_dir = './lm-evaluation-harness-main/lm_eval/tasks/unitxt'
 
 if __name__ == "__main__":
 
@@ -108,6 +108,10 @@ if __name__ == "__main__":
             add_to_catalog(template_list[j][0], template_name, overwrite=True)
             card_names.append(card_suffix)
             template_names.append(template_name)
+
+    if not os.path.exists(os.path.join(unitxt_task_dir, "mmlu_datasets")):
+        with open('mmlu_datasets', 'w') as f:
+            pass
 
     with open(os.path.join(unitxt_task_dir, "mmlu_datasets"), "w") as file:
         for i, card_name in enumerate(card_names):

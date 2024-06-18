@@ -1,3 +1,0 @@
-include: unitxt_tasks.qa.multiple_choice.with_topic
-task: mmlu.abstract_algebra_99
-dataset_name: card=cards.mmlu.abstract_algebra_99,template=templates.qa.multiple_choice.with_topic.abstract_algebra_99

@@ -1,3 +1,0 @@
-include: unitxt_tasks.qa.multiple_choice.with_topic
-task: mmlu.high_school_government_and_politics_82
-dataset_name: card=cards.mmlu.high_school_government_and_politics_82,template=templates.qa.multiple_choice.with_topic.high_school_government_and_politics_82

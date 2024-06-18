@@ -1,3 +1,0 @@
-include: unitxt_tasks.qa.multiple_choice.with_topic
-task: mmlu.marketing_98
-dataset_name: card=cards.mmlu.marketing_98,template=templates.qa.multiple_choice.with_topic.marketing_98

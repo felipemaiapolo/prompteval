@@ -1,3 +1,0 @@
-include: unitxt_tasks.qa.multiple_choice.with_topic
-task: mmlu.professional_accounting_127
-dataset_name: card=cards.mmlu.professional_accounting_127,template=templates.qa.multiple_choice.with_topic.professional_accounting_127

@@ -1,3 +1,0 @@
-include: unitxt_tasks.qa.multiple_choice.with_topic
-task: mmlu.sociology_100
-dataset_name: card=cards.mmlu.sociology_100,template=templates.qa.multiple_choice.with_topic.sociology_100

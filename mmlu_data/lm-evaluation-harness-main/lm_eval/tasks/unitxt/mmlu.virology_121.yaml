@@ -1,3 +1,0 @@
-include: unitxt_tasks.qa.multiple_choice.with_topic
-task: mmlu.virology_121
-dataset_name: card=cards.mmlu.virology_121,template=templates.qa.multiple_choice.with_topic.virology_121

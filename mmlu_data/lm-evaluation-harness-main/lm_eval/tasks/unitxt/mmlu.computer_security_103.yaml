@@ -1,3 +1,0 @@
-include: unitxt_tasks.qa.multiple_choice.with_topic
-task: mmlu.computer_security_103
-dataset_name: card=cards.mmlu.computer_security_103,template=templates.qa.multiple_choice.with_topic.computer_security_103

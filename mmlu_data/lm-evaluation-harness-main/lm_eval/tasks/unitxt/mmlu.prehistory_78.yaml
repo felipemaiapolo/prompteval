@@ -1,3 +1,0 @@
-include: unitxt_tasks.qa.multiple_choice.with_topic
-task: mmlu.prehistory_78
-dataset_name: card=cards.mmlu.prehistory_78,template=templates.qa.multiple_choice.with_topic.prehistory_78

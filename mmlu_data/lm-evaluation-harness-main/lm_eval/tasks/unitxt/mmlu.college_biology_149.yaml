@@ -1,3 +1,0 @@
-include: unitxt_tasks.qa.multiple_choice.with_topic
-task: mmlu.college_biology_149
-dataset_name: card=cards.mmlu.college_biology_149,template=templates.qa.multiple_choice.with_topic.college_biology_149

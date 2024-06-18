@@ -1,3 +1,0 @@
-include: unitxt_tasks.qa.multiple_choice.with_topic
-task: mmlu.us_foreign_policy_1
-dataset_name: card=cards.mmlu.us_foreign_policy_1,template=templates.qa.multiple_choice.with_topic.us_foreign_policy_1

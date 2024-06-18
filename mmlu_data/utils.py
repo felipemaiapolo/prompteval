@@ -67,6 +67,9 @@ def generateNTemplates(initial_template, initial_separator, n=100):
                 templates.add(new_template)
                 if space != "":
                     agenda.append((new_template, depth + 1, space))
+                
+                if n is not None and len(templates_metadata) >= n:
+                    break
 
         print(len(templates))
         sys.stdout.flush()

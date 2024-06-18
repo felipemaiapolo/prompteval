@@ -2,11 +2,13 @@
 
 ## Pre-requisites
 
-Navigate to `prompteval/lm-evaluation-harness` and run `pip install -e ".[unitxt]"`.
+1. run `conda create --name mmlu_data python=3.10`.
+2. run `pip install -r requirements.txt`.
+3. cd to `./lm-evaluation-harness-main` and run `pip install -e ".[unitxt]"`.
 
 ## Building Templates and Cards
 
-Run `build_templates.py` and `build_cards.py`. Navigate to `prompteval/lm-evaluation-harness/lm_eval/tasks/unitxt` and run `generate_yamls.py`.
+In `mmlu_data` directory, run `build_templates.py` and then `build_cards.py`. Then, cd to `./lm-evaluation-harness-main/lm_eval/tasks/unitxt` and run `generate_yamls.py`.
 
 ## Running lm_eval
 

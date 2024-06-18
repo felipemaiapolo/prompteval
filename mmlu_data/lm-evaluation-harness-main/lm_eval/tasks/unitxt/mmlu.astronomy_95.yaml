@@ -1,3 +1,0 @@
-include: unitxt_tasks.qa.multiple_choice.with_topic
-task: mmlu.astronomy_95
-dataset_name: card=cards.mmlu.astronomy_95,template=templates.qa.multiple_choice.with_topic.astronomy_95

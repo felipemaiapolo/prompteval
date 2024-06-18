@@ -1,3 +1,0 @@
-include: unitxt_tasks.qa.multiple_choice.with_topic
-task: mmlu.anatomy_139
-dataset_name: card=cards.mmlu.anatomy_139,template=templates.qa.multiple_choice.with_topic.anatomy_139

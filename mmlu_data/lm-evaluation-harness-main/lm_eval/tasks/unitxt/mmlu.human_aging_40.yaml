@@ -1,3 +1,0 @@
-include: unitxt_tasks.qa.multiple_choice.with_topic
-task: mmlu.human_aging_40
-dataset_name: card=cards.mmlu.human_aging_40,template=templates.qa.multiple_choice.with_topic.human_aging_40

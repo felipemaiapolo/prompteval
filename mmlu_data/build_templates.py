@@ -6,7 +6,7 @@ if __name__ == "__main__":
 
     initial_template = "The following are multiple choice questions (with answers) about {topic}.\n{question}.\nAnswers: \n{choices}.\nAnswer:"
 
-    temps = list(utils.generateNTemplates(initial_template, "\n", 150))
+    temps = list(utils.generateNTemplates(initial_template, "\n", 2))
 
     with open("mmlu_templates.json", "w") as json_file:
         json.dump([template for template, _, _, _ in temps], json_file, indent=2)

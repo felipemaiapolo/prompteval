@@ -1,3 +1,0 @@
-include: unitxt_tasks.qa.multiple_choice.with_topic
-task: mmlu.high_school_mathematics_127
-dataset_name: card=cards.mmlu.high_school_mathematics_127,template=templates.qa.multiple_choice.with_topic.high_school_mathematics_127

@@ -1,0 +1,5 @@
+[
+  "Classify\n the\n {type_of_class}\n of\n the\n following\n {text_type}\n to\n one\n of\n these\n options:\n {classes}-\n {text_type}:\n {text}",
+  "Classify the {type_of_class} of the following {text_type} to one of these options: {classes}. {text_type}: {text}",
+  "Classifythe{type_of_class}ofthefollowing{text_type}tooneoftheseoptions:{classes}:{text_type}:{text}"
+]

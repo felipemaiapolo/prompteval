@@ -34,10 +34,13 @@ if __name__ == "__main__":
                 loader=LoadHF(path="ai2_arc", name=subtask),
                 preprocess_steps=[
                     Set({"topic": "science"}),
+                    # Flattens the dataset so unitxt can use.
+                    # choices: {"text": [...], "label": [...]} -> choices: [...] and labels: [...]
                     RenameFields(field_to_field={"answerKey": "label", "choices": "_choices"}),
                     Copy(
                         field_to_field={"_choices/text": "choices", "_choices/label": "labels"}
                     ),
+                    # Gets the index of the label so unitxt can post-process for accuracy calculation.
                     IndexOf(search_in="labels", index_of="label", to_field="answer"),
                 ],
                 task="tasks.qa.multiple_choice.with_topic",

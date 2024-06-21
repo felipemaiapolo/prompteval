@@ -1,0 +1,104 @@
+{
+  "results": {
+    "arc_challenge": {
+      "acc,none": 0.5298634812286689,
+      "acc_stderr,none": 0.014585305840007102,
+      "acc_norm,none": 0.5674061433447098,
+      "acc_norm_stderr,none": 0.014478005694182533,
+      "alias": "arc_challenge"
+    }
+  },
+  "group_subtasks": {
+    "arc_challenge": []
+  },
+  "configs": {
+    "arc_challenge": {
+      "task": "arc_challenge",
+      "group": [
+        "ai2_arc"
+      ],
+      "dataset_path": "allenai/ai2_arc",
+      "dataset_name": "ARC-Challenge",
+      "training_split": "train",
+      "validation_split": "validation",
+      "test_split": "test",
+      "doc_to_text": "Question: {{question}}\nAnswer:",
+      "doc_to_target": "{{choices.label.index(answerKey)}}",
+      "doc_to_choice": "{{choices.text}}",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "Question: {{question}}\nAnswer:",
+      "metadata": {
+        "version": 1.0
+      }
+    }
+  },
+  "versions": {
+    "arc_challenge": 1.0
+  },
+  "n-shot": {
+    "arc_challenge": 0
+  },
+  "higher_is_better": {
+    "arc_challenge": {
+      "acc": true,
+      "acc_norm": true
+    }
+  },
+  "n-samples": {
+    "arc_challenge": {
+      "original": 1172,
+      "effective": 1172
+    }
+  },
+  "config": {
+    "model": "ibm_genai",
+    "model_args": "model_id=meta-llama/llama-3-8b-instruct",
+    "batch_size": "auto",
+    "batch_sizes": [],
+    "device": null,
+    "use_cache": null,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "gen_kwargs": null,
+    "random_seed": 0,
+    "numpy_seed": 1234,
+    "torch_seed": 1234,
+    "fewshot_seed": 1234
+  },
+  "git_hash": "647a1df",
+  "date": 1718998977.5443542,
+  "pretty_env_info": "PyTorch version: 2.3.1+cu121\nIs debug build: False\nCUDA used to build PyTorch: 12.1\nROCM used to build PyTorch: N/A\n\nOS: Red Hat Enterprise Linux release 8.9 (Ootpa) (x86_64)\nGCC version: (GCC) 8.5.0 20210514 (Red Hat 8.5.0-20)\nClang version: 16.0.6 (Red Hat 16.0.6-2.module+el8.9.0+19521+190d7aba)\nCMake version: version 3.26.5\nLibc version: glibc-2.28\n\nPython version: 3.10.14 (main, May  6 2024, 19:42:50) [GCC 11.2.0] (64-bit runtime)\nPython platform: Linux-4.18.0-513.24.1.el8_9.x86_64-x86_64-with-glibc2.28\nIs CUDA available: False\nCUDA runtime version: No CUDA\nCUDA_MODULE_LOADING set to: N/A\nGPU models and configuration: No CUDA\nNvidia driver version: No CUDA\ncuDNN version: No CUDA\nHIP runtime version: N/A\nMIOpen runtime version: N/A\nIs XNNPACK available: True\n\nCPU:\nArchitecture:        x86_64\nCPU op-mode(s):      32-bit, 64-bit\nByte Order:          Little Endian\nCPU(s):              16\nOn-line CPU(s) list: 0-15\nThread(s) per core:  1\nCore(s) per socket:  8\nSocket(s):           2\nNUMA node(s):        2\nVendor ID:           GenuineIntel\nCPU family:          6\nModel:               62\nModel name:          Intel(R) Xeon(R) CPU E5-2667 v2 @ 3.30GHz\nStepping:            4\nCPU MHz:             3300.000\nCPU max MHz:         4000.0000\nCPU min MHz:         1200.0000\nBogoMIPS:            6584.62\nVirtualization:      VT-x\nL1d cache:           32K\nL1i cache:           32K\nL2 cache:            256K\nL3 cache:            25600K\nNUMA node0 CPU(s):   0-7\nNUMA node1 CPU(s):   8-15\nFlags:               fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm cpuid_fault epb pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms xsaveopt dtherm ida arat pln pts md_clear flush_l1d\n\nVersions of relevant libraries:\n[pip3] numpy==2.0.0\n[pip3] torch==2.3.1\n[pip3] triton==2.3.1\n[conda] numpy                     2.0.0                    pypi_0    pypi\n[conda] torch                     2.3.1                    pypi_0    pypi\n[conda] triton                    2.3.1                    pypi_0    pypi",
+  "transformers_version": "4.41.2",
+  "upper_git_hash": null,
+  "task_hashes": {
+    "arc_challenge": "09f9ae87a0905d63512cffc4aa91a55e44258fc35160e40fa1eb66fb75473e34"
+  },
+  "model_source": "ibm_genai",
+  "model_name": "",
+  "model_name_sanitized": "",
+  "system_instruction": null,
+  "system_instruction_sha": null,
+  "chat_template": null,
+  "chat_template_sha": null,
+  "start_time": 5428146.427861301,
+  "end_time": 5428220.682218768,
+  "total_evaluation_time_seconds": "74.25435746647418"
+}

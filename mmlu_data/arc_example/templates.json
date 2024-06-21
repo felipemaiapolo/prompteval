@@ -1,4 +1,0 @@
-[
-  "The following are multiple choice questions (with answers) about {topic}.\n{question}.\nAnswers: \n{choices}.\nAnswer:",
-  "The following are multiple choice questions (with answers) about {topic}:{question}:Answers: {choices}:Answer:"
-]

@@ -1,3 +1,0 @@
-{
-  "Classify the {type_of_class} of the following {text_type} to one of these options: {classes}. Do not include any text other than one of these options.\n{text_type}: {text}\nAnswer:": 0
-}

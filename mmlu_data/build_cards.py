@@ -2,7 +2,7 @@ from unitxt import add_to_catalog
 from unitxt.blocks import (
     LoadHF,
     TaskCard,
-    AddFields,
+    Set,
 )
 from unitxt.templates import MultipleChoiceTemplate
 from unitxt.splitters import RenameSplits
@@ -97,7 +97,7 @@ if __name__ == "__main__":
                 loader=LoadHF(path="cais/mmlu", name=subtask),
                 preprocess_steps=[
                     RenameSplits({"dev": "train"}),
-                    AddFields({"topic": subtask.replace("_", " ")}),
+                    Set({"topic": subtask.replace("_", " ")}),
                 ],
                 task="tasks.qa.multiple_choice.with_topic",
                 templates=template_list[j][0],
@@ -108,10 +108,6 @@ if __name__ == "__main__":
             add_to_catalog(template_list[j][0], template_name, overwrite=True)
             card_names.append(card_suffix)
             template_names.append(template_name)
-
-    if not os.path.exists(os.path.join(unitxt_task_dir, "mmlu_datasets")):
-        with open('mmlu_datasets', 'w') as f:
-            pass
 
     with open(os.path.join(unitxt_task_dir, "mmlu_datasets"), "w") as file:
         for i, card_name in enumerate(card_names):

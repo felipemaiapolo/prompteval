@@ -1,0 +1,3 @@
+include: unitxt_tasks.classification.multi_class
+task: csv_example.card_0
+dataset_name: card=cards.csv_example.card_0,template=templates.classification.multi_class.csv_example.0

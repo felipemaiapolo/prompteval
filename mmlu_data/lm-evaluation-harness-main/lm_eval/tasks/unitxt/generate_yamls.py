@@ -130,7 +130,7 @@ def main():
             print(f"Unable to generate YAML for {task} due to:")
             print(e)
             raise (e)
-    with open("mmlu_datasets") as f:
+    with open("arc_datasets") as f:
         for unitxt_dataset in f:
             unitxt_dataset = unitxt_dataset.strip()
             if unitxt_dataset.startswith("### END ###"):

@@ -73,16 +73,12 @@ if __name__ == "__main__":
             templates=template_list[j][0],
         )
         
-        card_suffix = f"csv_example.{template_list[j][1]}"
-        template_name = f"templates.classification.multi_class.csv_example_{template_list[j][1]}"
+        card_suffix = f"csv_example.card_{template_list[j][1]}"
+        template_name = f"templates.classification.multi_class.csv_example.{template_list[j][1]}"
         add_to_catalog(card, "cards." + card_suffix, overwrite=True)
         add_to_catalog(template_list[j][0], template_name, overwrite=True)
         card_names.append(card_suffix)
         template_names.append(template_name)
-
-    if not os.path.exists(os.path.join(unitxt_task_dir, "csv_example_datasets")):
-        with open('csv_example_datasets', 'w') as f:
-            pass
 
     with open(os.path.join(unitxt_task_dir, "csv_example_datasets"), "w") as file:
         for i, card_name in enumerate(card_names):

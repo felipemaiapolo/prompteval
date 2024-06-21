@@ -11,7 +11,7 @@ from . import (
     optimum_lm,
     textsynth,
     vllm_causallms,
-    model_bam
+    model_bam,
 )
 
 

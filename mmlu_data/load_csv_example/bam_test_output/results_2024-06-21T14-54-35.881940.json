@@ -1,0 +1,115 @@
+{
+  "results": {
+    "csv_example.card_0": {
+      "unitxt_f1_micro,none": 0.5166204986149584,
+      "unitxt_f1_micro_stderr,none": "N/A",
+      "unitxt_accuracy,none": 0.5166204986149584,
+      "unitxt_accuracy_stderr,none": "N/A",
+      "unitxt_f1_macro,none": 0.5168741916270456,
+      "unitxt_f1_macro_stderr,none": "N/A",
+      "alias": "csv_example.card_0"
+    }
+  },
+  "group_subtasks": {
+    "csv_example.card_0": []
+  },
+  "configs": {
+    "csv_example.card_0": {
+      "task": "csv_example.card_0",
+      "group": [
+        "unitxt"
+      ],
+      "dataset_path": "unitxt/data",
+      "dataset_name": "card=cards.csv_example.card_0,template=templates.classification.multi_class.csv_example.0",
+      "training_split": "train",
+      "validation_split": "test",
+      "doc_to_text": "{{source}}",
+      "doc_to_target": "target",
+      "process_results": "def process_results(doc, results):\n    metrics = doc[\"metrics\"]\n    scores = {}\n    for metric in metrics:\n        metric = metric.replace(\"metrics.\", \"unitxt_\")\n        scores[metric] = (results, doc, metric)\n\n        if metric not in METRIC_REGISTRY:\n            register_metric(\n                metric=metric,\n                higher_is_better=True,\n                output_type=\"generate_until\",\n                aggregation=\"unitxt\",\n            )(unitxt_metric)\n    return scores\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "unitxt_f1_micro",
+          "aggregation": "unitxt",
+          "higher_is_better": true
+        },
+        {
+          "metric": "unitxt_accuracy",
+          "aggregation": "unitxt",
+          "higher_is_better": true
+        },
+        {
+          "metric": "unitxt_f1_macro",
+          "aggregation": "unitxt",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "until": [
+          "</s>"
+        ]
+      },
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "verison": 1.0
+      }
+    }
+  },
+  "versions": {
+    "csv_example.card_0": "Yaml"
+  },
+  "n-shot": {
+    "csv_example.card_0": 0
+  },
+  "higher_is_better": {
+    "csv_example.card_0": {
+      "unitxt_f1_micro": true,
+      "unitxt_accuracy": true,
+      "unitxt_f1_macro": true
+    }
+  },
+  "n-samples": {
+    "csv_example.card_0": {
+      "original": 2888,
+      "effective": 2888
+    }
+  },
+  "config": {
+    "model": "ibm_genai",
+    "model_args": "model_id=meta-llama/llama-3-8b-instruct",
+    "batch_size": "auto",
+    "batch_sizes": [],
+    "device": null,
+    "use_cache": null,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "gen_kwargs": null,
+    "random_seed": 0,
+    "numpy_seed": 1234,
+    "torch_seed": 1234,
+    "fewshot_seed": 1234
+  },
+  "git_hash": "8e438f9",
+  "date": 1718995728.9956598,
+  "pretty_env_info": "PyTorch version: 2.3.1+cu121\nIs debug build: False\nCUDA used to build PyTorch: 12.1\nROCM used to build PyTorch: N/A\n\nOS: Red Hat Enterprise Linux release 8.9 (Ootpa) (x86_64)\nGCC version: (GCC) 8.5.0 20210514 (Red Hat 8.5.0-20)\nClang version: 16.0.6 (Red Hat 16.0.6-2.module+el8.9.0+19521+190d7aba)\nCMake version: version 3.26.5\nLibc version: glibc-2.28\n\nPython version: 3.10.14 (main, May  6 2024, 19:42:50) [GCC 11.2.0] (64-bit runtime)\nPython platform: Linux-4.18.0-513.24.1.el8_9.x86_64-x86_64-with-glibc2.28\nIs CUDA available: False\nCUDA runtime version: No CUDA\nCUDA_MODULE_LOADING set to: N/A\nGPU models and configuration: No CUDA\nNvidia driver version: No CUDA\ncuDNN version: No CUDA\nHIP runtime version: N/A\nMIOpen runtime version: N/A\nIs XNNPACK available: True\n\nCPU:\nArchitecture:        x86_64\nCPU op-mode(s):      32-bit, 64-bit\nByte Order:          Little Endian\nCPU(s):              16\nOn-line CPU(s) list: 0-15\nThread(s) per core:  1\nCore(s) per socket:  8\nSocket(s):           2\nNUMA node(s):        2\nVendor ID:           GenuineIntel\nCPU family:          6\nModel:               62\nModel name:          Intel(R) Xeon(R) CPU E5-2667 v2 @ 3.30GHz\nStepping:            4\nCPU MHz:             3300.000\nCPU max MHz:         4000.0000\nCPU min MHz:         1200.0000\nBogoMIPS:            6584.62\nVirtualization:      VT-x\nL1d cache:           32K\nL1i cache:           32K\nL2 cache:            256K\nL3 cache:            25600K\nNUMA node0 CPU(s):   0-7\nNUMA node1 CPU(s):   8-15\nFlags:               fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm cpuid_fault epb pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms xsaveopt dtherm ida arat pln pts md_clear flush_l1d\n\nVersions of relevant libraries:\n[pip3] numpy==2.0.0\n[pip3] torch==2.3.1\n[pip3] triton==2.3.1\n[conda] numpy                     2.0.0                    pypi_0    pypi\n[conda] torch                     2.3.1                    pypi_0    pypi\n[conda] triton                    2.3.1                    pypi_0    pypi",
+  "transformers_version": "4.41.2",
+  "upper_git_hash": null,
+  "task_hashes": {
+    "csv_example.card_0": "548f619bf7762e89313b0cdac191c34f9b2a767710e5d1c6a5403819caa3d22c"
+  },
+  "model_source": "ibm_genai",
+  "model_name": "",
+  "model_name_sanitized": "",
+  "system_instruction": null,
+  "system_instruction_sha": null,
+  "chat_template": null,
+  "chat_template_sha": null,
+  "start_time": 5424897.866609639,
+  "end_time": 5425252.193534399,
+  "total_evaluation_time_seconds": "354.32692476082593"
+}

@@ -1,0 +1,12 @@
+{
+  "The following are multiple choice questions (with answers) about {topic}.\n{question}.\nAnswers: \n{choices}.\nAnswer:": {
+    "sep": "\n",
+    "space": "\n",
+    "op": "lambda x: x"
+  },
+  "The following are multiple choice questions (with answers) about {topic}:{question}:Answers: {choices}:Answer:": {
+    "sep": ":",
+    "space": "",
+    "op": "lambda x: x.lower()"
+  }
+}

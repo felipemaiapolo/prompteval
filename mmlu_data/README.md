@@ -5,8 +5,9 @@
 1. run `conda create --name mmlu_data python=3.10`.
 2. run `conda activate mmlu_data`.
 3. cd `mmlu_data`.
-4. run `pip install -r requirements.txt`.
-5. cd to `./lm-evaluation-harness-main` and run `pip install -e ".[unitxt]"`.
+4. run `pip install python-dotenv ibm-generative-ai editdistance`.
+5. install unitxt from source [here](https://github.com/IBM/unitxt).
+6. cd to `./lm-evaluation-harness-main` and run `pip install -e ".[unitxt]"`. 
 
 ## Building Templates and Cards
 

@@ -7,9 +7,9 @@ import os
 
 if __name__ == "__main__":
 
-    initial_template = "Classify the {type_of_class} of the following {text_type} to one of these options: {classes}. {text_type}: {text}"
+    initial_template = "Classify the {type_of_class} of the following {text_type} to one of these options: {classes}. Do not include any text other than one of these options.\n{text_type}: {text}\nAnswer:"
 
-    temps = list(utils.generateNTemplates(initial_template, " ", 3))
+    temps = list(utils.generateNTemplates(initial_template, " ", 1))
 
     with open("templates.json", "w") as json_file:
         json.dump([template for template, _, _, _ in temps], json_file, indent=2)

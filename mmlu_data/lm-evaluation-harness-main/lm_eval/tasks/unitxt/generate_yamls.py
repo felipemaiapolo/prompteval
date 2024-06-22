@@ -130,6 +130,9 @@ def main():
             print(f"Unable to generate YAML for {task} due to:")
             print(e)
             raise (e)
+    # mmlu_datasets
+    # csv_example_datasets
+    # arc_datasets
     with open("arc_datasets") as f:
         for unitxt_dataset in f:
             unitxt_dataset = unitxt_dataset.strip()

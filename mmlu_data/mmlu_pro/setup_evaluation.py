@@ -15,7 +15,7 @@ if __name__ == '__main__':
 
     for i in tqdm(indices, desc='building'):
         
-        output_path = os.path.join('output', f't_{i}')
+        output_path = os.path.join(f'{constants.prefix}_output', f't_{i}')
         if os.path.exists(output_path) and len(os.listdir(output_path)) > 0:
             continue
         

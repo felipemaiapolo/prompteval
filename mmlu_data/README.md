@@ -5,7 +5,7 @@
 1. run `conda create --name mmlu_data python=3.10`.
 2. run `conda activate mmlu_data`.
 3. cd `mmlu_data`.
-4. run `pip install python-dotenv ibm-generative-ai editdistance fire`.
+4. run `pip install python-dotenv ibm-generative-ai editdistance fire matplotlib`.
 5. install unitxt from source [here](https://github.com/IBM/unitxt).
 6. cd to `./lm-evaluation-harness-main` and run `pip install -e ".[unitxt]"`.
 

@@ -324,6 +324,8 @@ def StratSample(seen_examples, max_seen, random_seed, active_arms=None, random_c
     """
     Generates a stratified sample from the seen examples matrix until the maximum number of seen examples is reached.
 
+    The updated (run faster) version of the function was suggested by Qinlin Zhao.
+    
     Parameters:
     seen_examples (array-like): The matrix of seen examples.
     max_seen (int): The maximum number of seen examples.
@@ -342,33 +344,38 @@ def StratSample(seen_examples, max_seen, random_seed, active_arms=None, random_c
     else:
         active_arms = list(range(rows))
 
-    current_ones = np.sum(matrix)  # noqa
     local_state = np.random.RandomState(random_seed)
-
+    
+    # initialize the sums of each row and column
+    row_sums = matrix.sum(1)
+    col_sums = matrix.sum(0)
+    
     while True:
-        if np.sum(matrix) >= max_seen:
+        
+        if row_sums.sum() >= max_seen:
             return matrix
+        
+        min_row_sum = row_sums[active_arms].min()
+        min_sum_rows = [i for i in active_arms if row_sums[i] == min_row_sum]
+        next_row = local_state.choice(min_sum_rows)
+        
+        avail_columns = [i for i in range(columns) if not matrix[next_row, i]]
 
-        next_row = local_state.choice(
-            [
-                i
-                for i in range(len(active_arms))
-                if (matrix[active_arms].sum(1) == np.min(matrix[active_arms].sum(1)))[i]
-            ]
-        )
-        next_row = active_arms[next_row]
-        avail_columns = [i for i in range(matrix.shape[1]) if matrix[next_row, i] == False]
-
-        if avail_columns == []:  # nothing else to see
+        if not avail_columns:  # nothing else to see
             return matrix
 
         if random_column:
             next_column = local_state.choice(avail_columns)
         else:
-            next_columns = [i for i in avail_columns if matrix[:, i].sum() == matrix[:, avail_columns].sum(0).min()]
-            next_column = local_state.choice(next_columns)
+            # the most time-consuming step, so we speed it up by reduct the repeated calculation
+            min_column_sum = col_sums[avail_columns].min()
+            min_sum_columns = [i for i in avail_columns if col_sums[i] == min_column_sum]
+            next_column = local_state.choice(min_sum_columns)
 
         matrix[next_row, next_column] = True
+        
+        row_sums[next_row] += 1
+        col_sums[next_column] += 1
 
 
 def GenXY(seen_items, Y, X, Z):

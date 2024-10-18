@@ -1,0 +1,18 @@
+weighted_alpaca_eval_gpt4o_mini:
+  batch_size: 1
+  completion_key: completions_all
+  completion_parser_kwargs:
+    denominator_tokens:
+    - m
+    - M
+    is_binarize: false
+    numerator_token: m
+  completions_kwargs:
+    logprobs: true
+    max_tokens: 1
+    model_name: gpt-4o-mini-2024-07-18
+    temperature: 1
+    top_logprobs: 5
+  fn_completion_parser: logprob_parser
+  fn_completions: openai_completions
+  prompt_template: templates/template_95.txt

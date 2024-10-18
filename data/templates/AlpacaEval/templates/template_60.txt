@@ -1,0 +1,34 @@
+<|im_start|>system
+In your role as an efficient assistant, you assess and select the premier large language models (LLMs) based on their response quality to specific instructions. This will create a leaderboard displaying the most accurate and human-preferred responses.
+<|im_end|>
+
+<|im_start|>user
+I am looking for a ranking of different large language models. You'll receive the prompts and the resulting outputs from these models. Your role is to assess these responses and choose the model that produces the best human-preferred output.
+
+## Instruction
+
+{
+    "instruction": """{instruction}""",
+}
+
+## Model Outputs
+
+Here are the outputs from the models, listed in no particular order. Each output is connected to a distinct model, marked by a unique identifier.
+
+{
+    {
+        "model_identifier": "m",
+        "output": """{output_1}"""
+    }},
+    {{
+        "model_identifier": "M",
+        "output": """{output_2}"""
+    }
+}
+
+## Task
+
+Evaluate the models based on the relevance and quality of their outputs, and select the model that generated the top output. Reply with the model identifier of the best one. Your output will serve as the name of the best model, so make sure it contains only one of these identifiers: m or M.
+
+## Best Model Identifier
+<|im_end|>

@@ -30,16 +30,16 @@ cd prompteval
 pip install -e .
 ```
 
-## Reproducing the results of the paper
+## Reproducing the main results of the paper
 
 To reproduce the results in our paper, please follow the steps after cloning the repo and installing dependencies:
 1. Download the BBH and LMentry data, produced by the authors of "[State of What Art? A Call for Multi-Prompt LLM Evaluation](https://arxiv.org/abs/2401.00595)", from [here](https://www.dropbox.com/scl/fo/y9dd8zbteyf0xrjxdtm3e/h/raw%20open-source%20model%20responses%20with%20gold%20and%20auto%20validation%20values.zip?rlkey=okp52gleuibw72fhe62egr6lp&e=1&dl=0). Place the unzipped folder "raw open-source model responses with gold and auto validation values" inside the data directory;
-2. Process data by running ``create_data.py``;
-3. Run main experiments by running ``dist_evaluation.py``. Example: ``python dist_evaluation.py --bench 'BBH' --random_seeds 5``;
-4. Run best prompt identification by running ``bai_evaluation.py``. Example: ``python bai_evaluation.py --bench 'BBH' --random_seeds 5``.
+2. Process data by running ``./prompteval/create_data.py``;
+3. Run main experiments by running ``./prompteval/dist_evaluation.py``. Example: ``python ./prompteval/dist_evaluation.py --bench 'BBH' --random_seeds 5``;
+4. Run best prompt identification by running ``./prompteval/bai_evaluation.py``. Example: ``python ./prompteval/bai_evaluation.py --bench 'BBH' --random_seeds 5``.
 5. Create plots using the notebooks in the notebooks directory.
 
-## Fine-tuning embeddings
+### Fine-tuning embeddings
 
 To fine-tune BERT representations run the following:
 
@@ -54,6 +54,15 @@ python ./prompteval/ft_representations.py --model_name "bert-base-uncased" \
                              --bench "BBH" 
 ```
 Note, that this requires the file `./data/Ys.pickle` to contain correctness data for the respective benchmark as the `create_data.py` script creates it. Add `--push_to_hub`, to automatically push the resulting model to your namespace on the huggingface hub (remember to `huggingface-cli login` before training).
+
+## LLM-as-a-judge experiment
+To run the LLM-as-a-judge experiment, please follow the steps:
+1. Install AlpacaEval 2.0 using the command `pip install alpaca-eval==0.6.4`;
+2. Run ``python ./prompteval/generate_prompts.py`` to generate prompt variations. Having a GPU will accelerate this step because we use SentenceTransformers to encode texts;
+3. Move the directories `./prompteval/data/templates/AlpacaEval/configs` and `./prompteval/data/templates/AlpacaEval/templates` to your `evaluators_configs` AlpacaEval folder; for example, if you are using a Miniconda 3 (or Anaconda) environment, your folder should be in the directory `miniconda3/envs/{ENV_NAME}/lib/python{PYTHON_VERSION}/site-packages/alpaca_eval`;
+4. Open `./prompteval/evaluate.py` and, at the top of the file, create an object called `evaluators_configs_path` and paste the path to the `evaluators_configs` directory to it; if you are using a Miniconda 3 (or Anaconda) environment, your `evaluators_configs` directory should be in the directory `home/miniconda3/envs/{ENV_NAME}/lib/python{PYTHON_VERSION}/site-packages/alpaca_eval/evaluators_configs`;
+5. Export your OpenAI API key following https://pypi.org/project/alpaca-eval/0.6.4/ and run `./prompteval/evaluate.py` to conduct the evaluation step;
+6. Run the notebook `./notebooks/llm_judge_plots.ipynb` to get the plots.
 
 ## MMLU Data
 

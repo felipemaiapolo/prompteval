@@ -30,6 +30,16 @@ cd prompteval
 pip install -e .
 ```
 
+## NEW: Multi-prompt evaluation with `lm-evaluation-harness`
+
+To learn how to combine PromptEval with `lm-evaluation-harness`, please follow these steps:
+
+1. Please Git clone our version of [`lm-evaluation-harness`](https://github.com/mirianfsilva/lm-evaluation-harness) into the main directory of PromptEval; we have already submitted a [PR](https://github.com/EleutherAI/lm-evaluation-harness/pull/2520) to the main version of the package.
+2. Git checkout the `examples-arg` branch of the `lm-evaluation-harness` repository you have just cloned.
+3. Inside the `lm-evaluation-harness` main directory, please install `pip install -e .`.
+4. Please check our [demo](https://github.com/felipemaiapolo/prompteval/blob/main/notebooks/bai_plots.ipynb). We focus on MMLU; however, the ideas we present can be used for other benchmarks as well.
+
+
 ## Reproducing the main results of the paper
 
 To reproduce the results in our paper, please follow the steps after cloning the repo and installing dependencies:

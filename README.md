@@ -30,7 +30,13 @@ cd prompteval
 pip install -e .
 ```
 
-## NEW: Multi-prompt evaluation with `lm-evaluation-harness`
+## NEW: Efficient multi-prompt evaluation with `PromptBench` and `lm-evaluation-harness`
+
+### PromptBench
+
+PromptEval was implemented by PromptBench. Please check it (here)[https://github.com/microsoft/promptbench].
+
+### lm-evaluation-harness
 
 To learn how to combine PromptEval with `lm-evaluation-harness`, please follow these steps:
 

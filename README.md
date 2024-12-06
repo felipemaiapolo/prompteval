@@ -34,7 +34,7 @@ pip install -e .
 
 ### PromptBench
 
-PromptEval was implemented by PromptBench. Please check it (here)[https://github.com/microsoft/promptbench].
+PromptEval was implemented by PromptBench. Please check it [here](https://github.com/microsoft/promptbench).
 
 ### lm-evaluation-harness
 
